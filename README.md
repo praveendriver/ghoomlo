@@ -8,8 +8,13 @@ An India-first consumer travel-planning product in discovery and prototype devel
 - `LAUNCH_PLAN.md` — staged validation and launch plan.
 - `DISCOVERY_NOTES.md` — traveler discovery findings so far.
 - `FRAMEWORK_REVIEW.md` — product and UX framework review.
+- `web/` — the real multi-user product (Next.js + Postgres). Start here; see `web/README.md`.
 - `prototype/index.html` — interactive concept prototype. Its itinerary prices, provider offers, and travel content are simulated.
 - `travel-agent-bundle/app/` — the imported travel-planning harness, scripts, skills, and trip pages.
+
+## Run the product
+
+Follow `web/README.md`.
 
 ## Open the prototype
 
