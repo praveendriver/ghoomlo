@@ -1,0 +1,40 @@
+{
+  "destination": "New York",
+  "country": "US",
+  "lat": 40.71,
+  "lon": -74.01,
+  "generated_at": "2026-05-30T03:50:51.038848+00:00",
+  "items_total": 2,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [
+      {
+        "name": "New York City",
+        "score": 2.25,
+        "creators": [
+          "The Planet D"
+        ],
+        "creator_count": 1,
+        "mentions": 1,
+        "positive": 0,
+        "negative": 0,
+        "city": "Hawaii",
+        "quote": "We’ll never forget the first time we visited New York City in December. We’d seen it in movies, but standing there, seeing the Rockefeller Center tree all lit up for the first time, with skaters below and festive music in the air… it was pu",
+        "quote_creator": "The Planet D",
+        "quote_source": "blog",
+        "quote_url": "https://theplanetd.com/best-places-to-visit-december-usa/",
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.1",
+          "review_count": "144",
+          "ranking": "#201 of 2,764 things to do in New York City",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g60763-d10031098-Reviews-New_York_City_Hall-New_York_City_New_York.html?m=66827",
+          "city": "New York City"
+        }
+      }
+    ],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

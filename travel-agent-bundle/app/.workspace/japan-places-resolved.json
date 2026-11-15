@@ -1,0 +1,5596 @@
+[
+  {
+    "name": "Shibuya Sky",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 15,
+    "timing_hints": [
+      "Pre-book 2 weeks in advance",
+      "Visit at sunset/night for views; book in advance",
+      "book in advance; sunset slots popular",
+      "book tickets online in advance, sunset slots sell out",
+      "booking recommended",
+      "pre-book 2-4 weeks in advance",
+      "pre-book in advance",
+      "pre-book ~1 week in advance"
+    ],
+    "notes": [
+      "Activity #1 on pre-book list",
+      "Day 1 - open-air observation deck on Shibuya Scramble Square, great sunset views",
+      "List item 1"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7630.jpg",
+      "IMG_7648.jpg",
+      "IMG_7670.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@japantravelbasics",
+      "@mahirslens",
+      "@mahirslens (Klook code: MAHIRSLENS)",
+      "@simranrluthria",
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "5db1240443598d00073edbe0",
+      "name": "SHIBUYA SKY",
+      "category": "Scenic Lookout",
+      "address": "渋谷2-24-12 (渋谷スクランブルスクエア 14F/45F-RF), 渋谷区, 東京都, 150-0002",
+      "lat": 35.65831,
+      "lng": 139.70222,
+      "rating": null
+    },
+    "google": {
+      "title": "Shibuya Sky",
+      "rating": 4.6,
+      "reviews": 25000,
+      "address": "Shibuya, 2 Chome−24−12 スクランブルスクエア 14階・45階 46階・屋上",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.658672,
+        "longitude": 139.701985
+      },
+      "place_id": "8067212359343678579"
+    }
+  },
+  {
+    "name": "TeamLab Planets",
+    "kind": "activity",
+    "city_hint": "Tokyo",
+    "mentions": 12,
+    "timing_hints": [
+      "Book tickets in advance; located in Toyosu",
+      "Pre-book 2-3 months in advance",
+      "booking recommended",
+      "pre-book 2-4 weeks in advance",
+      "pre-book in advance",
+      "pre-book ~1 week in advance"
+    ],
+    "notes": [
+      "Immersive digital art museum (Toyosu); great for kids",
+      "Immersive digital art museum - kid-friendly, books out far ahead",
+      "Immersive digital art museum in Odaiba"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7671.jpg",
+      "IMG_7673.jpg",
+      "IMG_7675.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens",
+      "@mahirslens (Klook code: MAHIRSLENS)",
+      "@simranrluthria",
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "5b3306103731ee002c2b3e78",
+      "name": "teamLab Planets (チームラボプラネッツ)",
+      "category": "Art Museum",
+      "address": "豊洲6-1-16, 江東区, 東京都, 135-0061",
+      "lat": 35.64912152012237,
+      "lng": 139.78982716798782,
+      "rating": null
+    },
+    "google": {
+      "title": "teamLab Planets TOKYO DMM",
+      "rating": null,
+      "reviews": null,
+      "address": "6 Chome-1-16 Toyosu",
+      "phone": null,
+      "hours": "Open · Closes 10 PM",
+      "gps": {
+        "latitude": 35.64908,
+        "longitude": 139.789816
+      },
+      "place_id": "7918542870314997282"
+    }
+  },
+  {
+    "name": "Ghibli Museum",
+    "kind": "sight",
+    "city_hint": "Mitaka (Tokyo)",
+    "mentions": 9,
+    "timing_hints": [
+      "Pre-book 1 month in advance",
+      "advance tickets required",
+      "pre-book 2-4 weeks in advance",
+      "pre-book in advance; tickets via Lawson lottery",
+      "pre-book ~1 week in advance",
+      "pre-book ~1 week in advance (tickets release earlier)"
+    ],
+    "notes": [
+      "Klook code MAHIRSLENS available",
+      "List item 3",
+      "Pre-book list item #3"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7673.jpg",
+      "IMG_7675.jpg",
+      "IMG_7676.jpg",
+      "IMG_7677.jpg"
+    ],
+    "handles": [
+      "@mahirslens",
+      "@mahirslens (Klook code: MAHIRSLENS)",
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b56ac4ff964a5202e1828e3",
+      "name": "Ghibli Museum (三鷹の森ジブリ美術館)",
+      "category": "Art Museum",
+      "address": "下連雀1-1-83, 三鷹市, 東京都, 181-0013",
+      "lat": 35.696236,
+      "lng": 139.570432,
+      "rating": null
+    },
+    "google": {
+      "title": "Ghibli Museum",
+      "rating": 4.5,
+      "reviews": 19000,
+      "address": "1 Chome-1-83 Shimorenjaku",
+      "phone": null,
+      "hours": "Closed · Opens 10 AM Wed",
+      "gps": {
+        "latitude": 35.696238,
+        "longitude": 139.570432
+      },
+      "place_id": "5611860688709652997"
+    }
+  },
+  {
+    "name": "Kamakura",
+    "kind": "neighborhood",
+    "city_hint": "Kamakura",
+    "mentions": 9,
+    "timing_hints": [
+      "Day 5 day trip option",
+      "Day trip",
+      "Day trip option",
+      "day trip from Tokyo"
+    ],
+    "notes": [
+      "Caption says 'Kamakura' but image shows Mt Fuji with Chureito Pagoda (Fujiyoshida) - likely creator confusion; both are Tokyo day-trip options",
+      "Coastal historic town with Great Buddha",
+      "Day-trip from Tokyo - Great Buddha"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7626.jpg",
+      "IMG_7631.jpg",
+      "IMG_7636.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@japantravelbasics",
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b515360f964a520f64a27e3",
+      "name": "Great Buddha of Kamakura (鎌倉大仏)",
+      "category": "Historic and Protected Site",
+      "address": "長谷4-2-28 (高徳院), 鎌倉市, 神奈川県, 248-0016",
+      "lat": 35.316851,
+      "lng": 139.535729,
+      "rating": null
+    }
+  },
+  {
+    "name": "Akihabara",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 7,
+    "timing_hints": [
+      "Day 2",
+      "Day 2 (evening)"
+    ],
+    "notes": [
+      "Anime/electronics district",
+      "Day 2 itinerary - electronics, anime, gaming district",
+      "Day 2 itinerary destination"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7626.jpg",
+      "IMG_7631.jpg",
+      "IMG_7632.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "5003c391e4b0a7c21378d0ad",
+      "name": "JAM Akihabara",
+      "category": "Café",
+      "address": "外神田3-2-13 (山口ビル B1F), 千代田区, 東京都, 101-0021",
+      "lat": 35.700287424848725,
+      "lng": 139.7699932299444,
+      "rating": null
+    }
+  },
+  {
+    "name": "Asakusa",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 7,
+    "timing_hints": [
+      "Day 2"
+    ],
+    "notes": [
+      "Day 2 - kimono rental experience shown in image",
+      "Day 2 itinerary - traditional Tokyo with Senso-ji temple",
+      "Day 2 pairing in tier list"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7626.jpg",
+      "IMG_7631.jpg",
+      "IMG_7632.jpg",
+      "IMG_7633.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "576661f4498eaf09a255c646",
+      "name": "ASAKUSA",
+      "category": "Art Gallery",
+      "address": "西浅草1-6-16, 台東区, 東京都, 111-0035",
+      "lat": 35.71099464262497,
+      "lng": 139.7907257080078,
+      "rating": null
+    }
+  },
+  {
+    "name": "Mount Fuji Day Tour",
+    "kind": "activity",
+    "city_hint": "Mt Fuji area",
+    "mentions": 7,
+    "timing_hints": [
+      "Pre-book 1 week in advance",
+      "pre-book 2-4 weeks in advance",
+      "pre-book in advance",
+      "pre-book ~1 week in advance"
+    ],
+    "notes": [
+      "Day tour to Mt Fuji area - bookable closer to date",
+      "Day trip from Tokyo to Fuji 5 lakes / Hakone area",
+      "Klook code MAHIRSLENS available"
+    ],
+    "source_files": [
+      "IMG_7675.jpg",
+      "IMG_7676.jpg",
+      "IMG_7677.jpg",
+      "IMG_7679.jpg",
+      "IMG_7681.jpg"
+    ],
+    "handles": [
+      "@mahirslens",
+      "@mahirslens (Klook code: MAHIRSLENS)"
+    ],
+    "fsq": {
+      "fsq_id": "5d79156faf6b840008855d44",
+      "name": "All Day Dining Orchid (オールデイダイニング オーキッド)",
+      "category": "Restaurant",
+      "address": "虎ノ門2-10-4 (オークラプレステージタワー 5F), 港区, 東京都, 105-0001",
+      "lat": 35.6667278906574,
+      "lng": 139.74443078041077,
+      "rating": null
+    }
+  },
+  {
+    "name": "Shinjuku",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 7,
+    "timing_hints": [
+      "Day 4",
+      "Day trip option",
+      "evening for neon/nightlife"
+    ],
+    "notes": [
+      "Day 4 of Tokyo itinerary tier list",
+      "Iconic neon-lit Shinjuku night scene with giant 3D cat billboard (Cross Shinjuku Vision); part of 5-night Tokyo plan",
+      "Listed in day-trip carousel at bottom"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7626.jpg",
+      "IMG_7631.jpg",
+      "IMG_7636.jpg",
+      "IMG_7638.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b0587a6f964a5203d9e22e3",
+      "name": "Shinjuku Station (新宿駅)",
+      "category": "Rail Station",
+      "address": "新宿3/西新宿1/代々木2, 新宿区, 東京都",
+      "lat": 35.689608,
+      "lng": 139.70056,
+      "rating": null
+    }
+  },
+  {
+    "name": "Shibuya",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 6,
+    "timing_hints": [
+      "Day 1",
+      "Day trip option"
+    ],
+    "notes": [
+      "Bottom thumbnail re-listing Shibuya as alt option",
+      "Day 1 itinerary destination",
+      "Day 1 of a 5-day Tokyo itinerary tier list"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7626.jpg",
+      "IMG_7628.jpg",
+      "IMG_7636.jpg",
+      "IMG_7638.jpg"
+    ],
+    "handles": [
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "5c0b9edc1b0ea5002cce4b1a",
+      "name": "Shibuya",
+      "category": "Travel Lounge",
+      "address": "新宿区, 東京都, 160-0023",
+      "lat": 35.689835,
+      "lng": 139.692033,
+      "rating": null
+    }
+  },
+  {
+    "name": "Ginza",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 5,
+    "timing_hints": [
+      "Day 3"
+    ],
+    "notes": [
+      "Day 3 pairing in tier list",
+      "Listed in day-trip carousel - upscale shopping district",
+      "Tokyo must-see"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7631.jpg",
+      "IMG_7635.jpg",
+      "IMG_7636.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b9c571af964a520f56036e3",
+      "name": "銀座アスター 新宿賓館",
+      "category": "Chinese Restaurant",
+      "address": "新宿3-5-4 (新宿レインボービレッジ 5F), 新宿区, 東京都, 160-0022",
+      "lat": 35.6913913469565,
+      "lng": 139.7052361188299,
+      "rating": null
+    }
+  },
+  {
+    "name": "Hozugawa River Boat",
+    "kind": "activity",
+    "city_hint": "Kyoto (Arashiyama/Kameoka)",
+    "mentions": 5,
+    "timing_hints": [
+      "pre-book 2-4 weeks in advance",
+      "pre-book in advance",
+      "pre-book ~1 week in advance"
+    ],
+    "notes": [
+      "List item 6",
+      "Photo of wooden boat with passengers and boatmen on rapids",
+      "Traditional wooden boat ride down the Hozu river to Arashiyama"
+    ],
+    "source_files": [
+      "IMG_7679.jpg",
+      "IMG_7680.jpg",
+      "IMG_7681.jpg",
+      "IMG_7683.jpg",
+      "IMG_7684.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "691bf6b23956881d5d533978",
+      "name": "Hozu-Gawa River Boat Ride",
+      "category": "Waterfront",
+      "address": "京都市, 京都府",
+      "lat": 35.030457,
+      "lng": 135.650944,
+      "rating": null
+    },
+    "google": {
+      "title": "Hozugawa River Boat Ride Start Point",
+      "rating": 4.6,
+      "reviews": 5400,
+      "address": "Shimonakajima-2 Hozucho",
+      "phone": null,
+      "hours": "Closed · Opens 9 AM Tue",
+      "gps": {
+        "latitude": 35.017202,
+        "longitude": 135.586859
+      },
+      "place_id": "3737094025798721879"
+    }
+  },
+  {
+    "name": "Nikko",
+    "kind": "neighborhood",
+    "city_hint": "Nikko",
+    "mentions": 5,
+    "timing_hints": [
+      "Day 5 day trip option",
+      "Day trip",
+      "Day trip option",
+      "day trip from Tokyo; allow full day"
+    ],
+    "notes": [
+      "Day-trip from Tokyo",
+      "Day-trip strip option (autumn foliage)",
+      "Shinkyo Bridge over Daiya River - sacred red bridge at entrance to Nikko shrines/temples; lush green forest setting"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7636.jpg",
+      "IMG_7638.jpg",
+      "IMG_7645.jpg",
+      "IMG_7653.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "535b4600498e3c05940da1dd",
+      "name": "Nikko (日光市)",
+      "category": "City",
+      "address": "栃木県",
+      "lat": 36.72594124610388,
+      "lng": 139.68841552734375,
+      "rating": null
+    }
+  },
+  {
+    "name": "Harajuku",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 4,
+    "timing_hints": [
+      "Day 1"
+    ],
+    "notes": [
+      "Day 1 itinerary destination",
+      "Day 1 of itinerary",
+      "Pop-culture/youth fashion district paired with Shibuya"
+    ],
+    "source_files": [
+      "IMG_7626.jpg",
+      "IMG_7628.jpg",
+      "IMG_7636.jpg",
+      "IMG_7716.jpg"
+    ],
+    "handles": [
+      "@mahirslens",
+      "@simranrluthria"
+    ],
+    "fsq": {
+      "fsq_id": "4b67a5c4f964a52069592be3",
+      "name": "Harajuku Station (原宿駅)",
+      "category": "Rail Station",
+      "address": "神宮前1-18-20, 渋谷区, 東京都, 150-0001",
+      "lat": 35.6706789104606,
+      "lng": 139.70262989401817,
+      "rating": null
+    }
+  },
+  {
+    "name": "Nike Mind (Nike flagship/concept store)",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 4,
+    "timing_hints": [],
+    "notes": [
+      "Close-up of Nike Mind shoes with red 'Nike Mind Science Department' insoles; Tokyo purchase",
+      "Close-up of Nike Mind sole branding",
+      "Hundreds of pressure-point nodes on the sole; designed for wellness/walking comfort"
+    ],
+    "source_files": [
+      "IMG_7692.jpg",
+      "IMG_7693.jpg",
+      "IMG_7694.jpg",
+      "IMG_7695.jpg"
+    ],
+    "handles": [
+      "@aditiaryawellness"
+    ],
+    "fsq": {
+      "fsq_id": "5549cf33498e11c2982bf3e2",
+      "name": "adidas Originals Flagship Store Tokyo (adidas Originals Flagship Store Harajuku)",
+      "category": "Sporting Goods Retail",
+      "address": "神宮前5-17-4 (神宮前トーラス), 渋谷区, 東京都, 150-0001",
+      "lat": 35.6662748356842,
+      "lng": 139.7060407104334,
+      "rating": null
+    },
+    "google": {
+      "title": "Nike Store",
+      "rating": null,
+      "reviews": null,
+      "address": "Ff, 3 Chome-26 Shinjuku",
+      "phone": "+81 3-6380-0450",
+      "hours": "Open · Closes 10 PM",
+      "gps": {
+        "latitude": 35.691478,
+        "longitude": 139.70183
+      },
+      "place_id": "16275897251944032072"
+    }
+  },
+  {
+    "name": "Odaiba",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 4,
+    "timing_hints": [
+      "Day 3"
+    ],
+    "notes": [
+      "Bayfront entertainment area paired with Ginza",
+      "Bayside entertainment district",
+      "Listed in day-trip carousel - waterfront entertainment"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7626.jpg",
+      "IMG_7631.jpg",
+      "IMG_7636.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "680391af9a22d2439dfa99ae",
+      "name": "ODAIBAモニュメント",
+      "category": "Public Art",
+      "address": "港区, 東京都, 135-0091",
+      "lat": 35.629555,
+      "lng": 139.77591,
+      "rating": null
+    }
+  },
+  {
+    "name": "Sagano Romantic Train",
+    "kind": "activity",
+    "city_hint": "Kyoto (Arashiyama)",
+    "mentions": 4,
+    "timing_hints": [
+      "pre-book 2-4 weeks in advance",
+      "pre-book ~1 week in advance"
+    ],
+    "notes": [
+      "List item 5",
+      "Same list, item 5"
+    ],
+    "source_files": [
+      "IMG_7679.jpg",
+      "IMG_7681.jpg",
+      "IMG_7683.jpg",
+      "IMG_7684.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "5388331c498e636caeb8b22d",
+      "name": "Sagano Romantic Train (嵯峨野観光鉄道)",
+      "category": "Train",
+      "address": "京都市, 京都府",
+      "lat": 35.018615,
+      "lng": 135.680334,
+      "rating": null
+    }
+  },
+  {
+    "name": "Atago Jinja Shrine",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 3,
+    "timing_hints": [],
+    "notes": [
+      "Omikuji (paper fortunes) tied to ropes near torii - in the Toranomon Hills area",
+      "Serene shrine setting with red gate at top of stairs - great quick stop near Toranomon Hills",
+      "Tokyo hidden gem shrine with steep red torii gate stairs (Otoko-zaka, Stairs of Success) in Toranomon area"
+    ],
+    "source_files": [
+      "IMG_7701.jpg",
+      "IMG_7702.jpg",
+      "IMG_7704.jpg"
+    ],
+    "handles": [
+      "@mcstops"
+    ],
+    "fsq": {
+      "fsq_id": "4b429ccff964a5207bd725e3",
+      "name": "Atago-jinja Shrine (愛宕神社)",
+      "category": "Shrine",
+      "address": "愛宕1-5-3, 港区, 東京都, 105-0002",
+      "lat": 35.66476617989808,
+      "lng": 139.7487280084102,
+      "rating": null
+    },
+    "google": {
+      "title": "Atago Jinja",
+      "rating": 4.4,
+      "reviews": 4100,
+      "address": "1 Chome-5-3 Atago",
+      "phone": "+81 3-3431-0327",
+      "hours": "Open 24 hours",
+      "gps": {
+        "latitude": 35.664744,
+        "longitude": 139.748468
+      },
+      "place_id": "6293486250244485330"
+    }
+  },
+  {
+    "name": "Kawaguchiko",
+    "kind": "neighborhood",
+    "city_hint": "Kawaguchiko",
+    "mentions": 3,
+    "timing_hints": [
+      "Day 5 day trip option",
+      "Day trip",
+      "Day trip option"
+    ],
+    "notes": [
+      "Day-trip strip option",
+      "Fuji Five Lakes - classic Mt. Fuji reflection view",
+      "Lake at base of Mt. Fuji day trip"
+    ],
+    "source_files": [
+      "IMG_7636.jpg",
+      "IMG_7638.jpg",
+      "IMG_7645.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b5e7a1cf964a520399029e3",
+      "name": "Lake Kawaguchi-ko (河口湖)",
+      "category": "Lake",
+      "address": "船津, 富士河口湖町, 山梨県, 401-0392",
+      "lat": 35.517819,
+      "lng": 138.74921,
+      "rating": null
+    }
+  },
+  {
+    "name": "Omoide Yokocho",
+    "kind": "food",
+    "city_hint": "Tokyo",
+    "mentions": 3,
+    "timing_hints": [
+      "Day 4 (dinner)",
+      "Evening"
+    ],
+    "notes": [
+      "Cherry-blossom-decorated izakaya alley with red stools; reel headline '5 nights in Tokyo' then plan Osaka",
+      "Memory Lane / Piss Alley izakaya street",
+      "Narrow lantern-lit alley of yakitori/izakaya stalls in Shinjuku ('Memory Lane'); not very veg-friendly but atmospheric"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7643.jpg",
+      "IMG_7646.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@japantravelbasics",
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b545279f964a5207cb727e3",
+      "name": "Omoide Yokocho (思い出横丁)",
+      "category": "Neighborhood",
+      "address": "新宿区, 東京都, 160-0023",
+      "lat": 35.69285700630512,
+      "lng": 139.69952543815089,
+      "rating": null
+    },
+    "google": {
+      "title": "Omoide Yokocho Memory Lane",
+      "rating": 4.2,
+      "reviews": 15000,
+      "address": "1 Chome-2 Nishishinjuku",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.692701,
+        "longitude": 139.699578
+      },
+      "place_id": "10416638554535967955"
+    }
+  },
+  {
+    "name": "Sensoji Temple",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 3,
+    "timing_hints": [
+      "Morning (avoid crowds)",
+      "go early morning to avoid crowds"
+    ],
+    "notes": [
+      "Day 2 - Tokyo's oldest temple in Asakusa; pagoda visible in image",
+      "Iconic Asakusa temple",
+      "Iconic Asakusa temple with giant red lantern at Kaminarimon gate; flagged as a must-see iconic spot"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7632.jpg",
+      "IMG_7647.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@japantravelbasics",
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b0587a1f964a5207f9d22e3",
+      "name": "Senso-ji Temple (浅草寺)",
+      "category": "Buddhist Temple",
+      "address": "浅草2-3-1, 台東区, 東京都, 111-0032",
+      "lat": 35.71466210373382,
+      "lng": 139.79676067829132,
+      "rating": null
+    },
+    "google": {
+      "title": "Sensō-ji",
+      "rating": 4.6,
+      "reviews": 96000,
+      "address": "2 Chome-3-1 Asakusa",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.714765,
+        "longitude": 139.796655
+      },
+      "place_id": "7785923974874169613"
+    }
+  },
+  {
+    "name": "Shibuya Crossing",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 3,
+    "timing_hints": [
+      "Best at night for neon signage",
+      "best at night for neon lights"
+    ],
+    "notes": [
+      "Day 1 - world's busiest pedestrian scramble, neon-lit at night",
+      "Iconic Shibuya scramble crossing with Sunpark / neon billboards",
+      "World famous scramble crossing"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7630.jpg",
+      "IMG_7713.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens",
+      "@simranrluthria"
+    ],
+    "fsq": {
+      "fsq_id": "4b654f7df964a520beec2ae3",
+      "name": "Shibuya Crossing (渋谷駅前スクランブル交差点)",
+      "category": "Intersection",
+      "address": "道玄坂2/宇田川町/神南1 (井の頭通り), 渋谷区, 東京都, 150-0043",
+      "lat": 35.659443,
+      "lng": 139.700502,
+      "rating": null
+    },
+    "google": {
+      "title": "Shibuya Crossing",
+      "rating": 4.5,
+      "reviews": 22000,
+      "address": "Shibuya, Tokyo, Japan",
+      "phone": null,
+      "hours": "Open now",
+      "gps": {
+        "latitude": 35.659482,
+        "longitude": 139.70056
+      },
+      "place_id": "2370410330085837161"
+    }
+  },
+  {
+    "name": "Tokyo Skytree",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 3,
+    "timing_hints": [
+      "book tickets online to skip lines",
+      "booking recommended"
+    ],
+    "notes": [
+      "Day 2 - tallest tower in Japan, observation decks, near Asakusa",
+      "Day 2 Asakusa/Ueno itinerary",
+      "Marked on the ward map"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7627.jpg",
+      "IMG_7632.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b569977f964a520551628e3",
+      "name": "Tokyo Skytree (東京スカイツリー)",
+      "category": "Monument",
+      "address": "押上1-1-2, 墨田区, 東京都, 131-0045",
+      "lat": 35.710054,
+      "lng": 139.81071,
+      "rating": null
+    },
+    "google": {
+      "title": "Tokyo Skytree",
+      "rating": 4.4,
+      "reviews": 116000,
+      "address": "1 Chome-1-2 Oshiage",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.710063,
+        "longitude": 139.8107
+      },
+      "place_id": "9015449659807889194"
+    }
+  },
+  {
+    "name": "Tokyo Tower",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 3,
+    "timing_hints": [
+      "Evening"
+    ],
+    "notes": [
+      "Iconic red tower",
+      "Marked on the ward map",
+      "Visible across the bay from Odaiba"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7627.jpg",
+      "IMG_7640.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b56a5e8f964a5208e1728e3",
+      "name": "Tokyo Tower (東京タワー)",
+      "category": "Monument",
+      "address": "芝公園4-2-8, 港区, 東京都, 105-0011",
+      "lat": 35.65857854321072,
+      "lng": 139.74544197320938,
+      "rating": null
+    },
+    "google": {
+      "title": "Tokyo Tower",
+      "rating": 4.5,
+      "reviews": 98000,
+      "address": "4 Chome-2-8 Shibakoen",
+      "phone": "+81 3-3433-5111",
+      "hours": "Open · Closes 11 PM",
+      "gps": {
+        "latitude": 35.658581,
+        "longitude": 139.745433
+      },
+      "place_id": "5195627782660688349"
+    }
+  },
+  {
+    "name": "7-Eleven (Seven Cafe) Japan",
+    "kind": "food",
+    "city_hint": "Tokyo",
+    "mentions": 2,
+    "timing_hints": [],
+    "notes": [
+      "7-Eleven Seven Cafe DIY drink hack - jelly/syrup poured into cup with ice, very vegetarian-friendly konbini option",
+      "7-Eleven Seven Cafe drink - tastes amazing, cheap konbini snack idea kids may enjoy"
+    ],
+    "source_files": [
+      "IMG_7699.jpg",
+      "IMG_7700.jpg"
+    ],
+    "handles": [
+      "@jenniesuk"
+    ],
+    "fsq": {
+      "fsq_id": "4b6bae96f964a5205a152ce3",
+      "name": "BEAMS Japan",
+      "category": "Boutique",
+      "address": "新宿3-32-6, 新宿区, 東京都, 160-0022",
+      "lat": 35.69038670478231,
+      "lng": 139.7040376043331,
+      "rating": null
+    },
+    "google": {
+      "title": "7-Eleven Tokyo Sankei Building Store",
+      "rating": null,
+      "reviews": null,
+      "address": "Ōtemachi, 1 Chome−7−2 Tokyo Sankei Building, 地下１階",
+      "phone": "+81 3-3273-3077",
+      "hours": "Open · Closes 11 PM",
+      "gps": {
+        "latitude": 35.687075,
+        "longitude": 139.765238
+      },
+      "place_id": "6504226756036289179"
+    }
+  },
+  {
+    "name": "Ikebukuro",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 2,
+    "timing_hints": [],
+    "notes": [
+      "Marked on the ward map",
+      "Tokyo must-see"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b243a7df964a520356424e3",
+      "name": "Ikebukuro Station (池袋駅)",
+      "category": "Rail Station",
+      "address": "南池袋1/西池袋1/西池袋3, 豊島区, 東京都, 171-0022",
+      "lat": 35.729722,
+      "lng": 139.710921,
+      "rating": null
+    },
+    "google": {
+      "title": "Ikebukuro",
+      "rating": null,
+      "reviews": null,
+      "address": "Toshima City, Tokyo, Japan",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.734831,
+        "longitude": 139.707731
+      },
+      "place_id": "12979563490952635066"
+    }
+  },
+  {
+    "name": "Kabukicho",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 2,
+    "timing_hints": [
+      "Day 4 (evening)"
+    ],
+    "notes": [
+      "Shinjuku entertainment district",
+      "Shinjuku entertainment district with neon signage; cat 3D billboard at Cross Shinjuku Vision visible"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7642.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4cb836e19552b60c2f82ca8b",
+      "name": "Kabukicho (歌舞伎町)",
+      "category": "Neighborhood",
+      "address": "新宿区, 東京都, 160-0021",
+      "lat": 35.693891567611026,
+      "lng": 139.70159038836985,
+      "rating": null
+    }
+  },
+  {
+    "name": "Loft Shibuya",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 2,
+    "timing_hints": [
+      "11:00-21:00; 7 floors"
+    ],
+    "notes": [
+      "6 floors of aesthetic stationery, planners, and lifestyle goods",
+      "Cool stationery, cosmetics, unique Japanese gifts"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg",
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple",
+      "@japan_trip_guide_"
+    ],
+    "fsq": {
+      "fsq_id": "4b5bfbfcf964a5201a2029e3",
+      "name": "Loft (渋谷ロフト)",
+      "category": "Stationery Store",
+      "address": "宇田川町21-1, 渋谷区, 東京都, 150-0042",
+      "lat": 35.660966,
+      "lng": 139.699509,
+      "rating": null
+    },
+    "google": {
+      "title": "Loft",
+      "rating": null,
+      "reviews": null,
+      "address": "21-1 Udagawacho",
+      "phone": "+81 3-3462-3807",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.660935,
+        "longitude": 139.699723
+      },
+      "place_id": "14502424858922825908"
+    }
+  },
+  {
+    "name": "Mt. Fuji",
+    "kind": "sight",
+    "city_hint": "Hakone",
+    "mentions": 2,
+    "timing_hints": [
+      "weather/clouds permitting"
+    ],
+    "notes": [
+      "Day-trip from Tokyo",
+      "Visible in carousel thumbnail - iconic Japan view"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7631.jpg"
+    ],
+    "handles": [
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4bd7bb03dc4b95215be07788",
+      "name": "Fujiya Hotel (富士屋ホテル)",
+      "category": "Hotel",
+      "address": "宮ノ下359, 箱根町, 神奈川県, 250-0404",
+      "lat": 35.24418411250752,
+      "lng": 139.0591502979073,
+      "rating": null
+    }
+  },
+  {
+    "name": "Sagano Romantic Train (Sagano Scenic Railway)",
+    "kind": "activity",
+    "city_hint": "Kyoto (Arashiyama)",
+    "mentions": 2,
+    "timing_hints": [
+      "pre-book in advance"
+    ],
+    "notes": [
+      "Open-window scenic train through Hozugawa gorge",
+      "Visual of the scenic train in autumn foliage along the river"
+    ],
+    "source_files": [
+      "IMG_7677.jpg",
+      "IMG_7678.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "54bba439498ee95958b25fbb",
+      "name": "Kyoto Railway Museum (京都鉄道博物館)",
+      "category": "Museum",
+      "address": "下京区観喜寺町 (梅小路公園), 京都市, 京都府, 600-8835",
+      "lat": 34.986963,
+      "lng": 135.742854,
+      "rating": null
+    }
+  },
+  {
+    "name": "Takeshita Street",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 2,
+    "timing_hints": [],
+    "notes": [
+      "Day 1 - main shopping street in Harajuku, kawaii fashion and street food, very crowded",
+      "Harajuku shopping street"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7628.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b63f221f964a5203d982ae3",
+      "name": "Takeshita Street (竹下通り)",
+      "category": "Road",
+      "address": "神宮前1, 渋谷区, 東京都, 150-0001",
+      "lat": 35.67156945509823,
+      "lng": 139.70318578404834,
+      "rating": null
+    }
+  },
+  {
+    "name": "Tokyo DisneySea",
+    "kind": "activity",
+    "city_hint": "Tokyo",
+    "mentions": 2,
+    "timing_hints": [
+      "advance tickets recommended"
+    ],
+    "notes": [
+      "Recommended for older kids and adults; nautical/exploration-themed Disney park unique to Tokyo",
+      "Tokyo highlight"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7614.jpg"
+    ],
+    "handles": [
+      "@musyatravel",
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b05879af964a520b69b22e3",
+      "name": "Park Hyatt Tokyo (パークハイアット東京)",
+      "category": "Hotel",
+      "address": "西新宿3-7-1-2 (新宿パークタワー), 新宿区, 東京都, 163-1055",
+      "lat": 35.68557476,
+      "lng": 139.6906391,
+      "rating": null
+    },
+    "google": {
+      "title": "Tokyo DisneySea",
+      "rating": 4.5,
+      "reviews": 107000,
+      "address": "1-13 Maihama",
+      "phone": null,
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.626711,
+        "longitude": 139.885078
+      },
+      "place_id": "4703760703938833701"
+    }
+  },
+  {
+    "name": "Uniqlo Ginza Flagship",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 2,
+    "timing_hints": [
+      "11:00-21:00; 12 floors"
+    ],
+    "notes": [
+      "12 floors + Uniqlo Coffee; high-quality basics and Japan-exclusive collabs",
+      "Essential life wear and high-quality basics"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg",
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple",
+      "@japan_trip_guide_"
+    ],
+    "fsq": {
+      "fsq_id": "5549cf33498e11c2982bf3e2",
+      "name": "adidas Originals Flagship Store Tokyo (adidas Originals Flagship Store Harajuku)",
+      "category": "Sporting Goods Retail",
+      "address": "神宮前5-17-4 (神宮前トーラス), 渋谷区, 東京都, 150-0001",
+      "lat": 35.6662748356842,
+      "lng": 139.7060407104334,
+      "rating": null
+    },
+    "google": {
+      "title": "Uniqlo Ginza Flagship Store",
+      "rating": null,
+      "reviews": null,
+      "address": "Ginza, 6 Chome−9−5 ギンザコマツ東館 １階～１２階",
+      "phone": "+81 50-3098-0754",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.670245,
+        "longitude": 139.763469
+      },
+      "place_id": "5036491705805576403"
+    }
+  },
+  {
+    "name": "7-Eleven",
+    "kind": "food",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Konbini fluffy pancake sandwich; creator visited 7/11 every single day in Tokyo"
+    ],
+    "source_files": [
+      "IMG_7712.jpg"
+    ],
+    "handles": [
+      "@simranrluthria"
+    ],
+    "fsq": {
+      "fsq_id": "69ea00e227720e7cda026129",
+      "name": "7-Eleven",
+      "category": "Convenience Store",
+      "address": "新宿区, 東京都, 160-0023",
+      "lat": 35.689594,
+      "lng": 139.69475,
+      "rating": null
+    },
+    "google": {
+      "title": "7-Eleven",
+      "rating": null,
+      "reviews": null,
+      "address": "2 Chome-8-20 Kyobashi",
+      "phone": "+81 3-5579-5810",
+      "hours": "Open 24 hours",
+      "gps": {
+        "latitude": 35.677408,
+        "longitude": 139.770812
+      },
+      "place_id": "6939582722445145709"
+    }
+  },
+  {
+    "name": "7-Eleven Japan",
+    "kind": "food",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Konbini must-try foods at 7-Eleven: Tamago Sando, Onigiri, NanaChiki Fried Chicken, Ohayo Brulee Ice Cream, Japanese Bento Meals, Nikuman pork bun, Fruit Sandwiches, Fruit Smoothie, Melon Pan, Matcha Desserts; items mostly Y100-Y600"
+    ],
+    "source_files": [
+      "974b3027-af21-4823-b5f8-c5741006d78f.jpg"
+    ],
+    "handles": [
+      "@wanderinjapan1"
+    ],
+    "fsq": {
+      "fsq_id": "4b6bae96f964a5205a152ce3",
+      "name": "BEAMS Japan",
+      "category": "Boutique",
+      "address": "新宿3-32-6, 新宿区, 東京都, 160-0022",
+      "lat": 35.69038670478231,
+      "lng": 139.7040376043331,
+      "rating": null
+    },
+    "google": {
+      "title": "7-Eleven",
+      "rating": null,
+      "reviews": null,
+      "address": "2 Chome-8-20 Kyobashi",
+      "phone": "+81 3-5579-5810",
+      "hours": "Open 24 hours",
+      "gps": {
+        "latitude": 35.677408,
+        "longitude": 139.770812
+      },
+      "place_id": "6939582722445145709"
+    }
+  },
+  {
+    "name": "ABC-Mart Grand Stage (Shinjuku or Harajuku)",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Japan-exclusive sneakers (Nike, Adidas, NB)"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple"
+    ],
+    "fsq": {
+      "fsq_id": "4bcbd4680687ef3b057fdecc",
+      "name": "ABC-MARTグランドステージ原宿",
+      "category": "Shoe Store",
+      "address": "神宮前1-9-18 (パトリアビル), 渋谷区, 東京都, 150-0001",
+      "lat": 35.669221347198935,
+      "lng": 139.70601215554697,
+      "rating": null
+    },
+    "google": {
+      "title": "ABC-MART GRAND STAGE LUMINE EST Shop",
+      "rating": null,
+      "reviews": null,
+      "address": "Shinjuku, 3 Chome−38 38番1号 6F ルミネエスト",
+      "phone": "+81 3-5357-7085",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.691517,
+        "longitude": 139.701198
+      },
+      "place_id": "18317312147616589198"
+    }
+  },
+  {
+    "name": "Angel Harajuku Crepe",
+    "kind": "food",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Iconic Harajuku crepe stand on Takeshita Street - photogenic, kid-friendly (vegetarian options available)"
+    ],
+    "source_files": [
+      "IMG_7629.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b56d3b2f964a520471c28e3",
+      "name": "Baird Taproom Harajuku (原宿タップルーム)",
+      "category": "Beer Bar",
+      "address": "神宮前1-20-13 (ノーサレンダービル 2F), 渋谷区, 東京都, 150-0001",
+      "lat": 35.671754,
+      "lng": 139.704331,
+      "rating": null
+    },
+    "google": {
+      "title": "Angel Crepes エンジェルクレープ",
+      "rating": 2.8,
+      "reviews": 107,
+      "address": "1 Chome-16-9 Jingumae",
+      "phone": null,
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.671012,
+        "longitude": 139.705081
+      },
+      "place_id": "10401260075549365146"
+    }
+  },
+  {
+    "name": "Animate Flagship Ikebukuro",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Anime/manga megastore"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "5549cf33498e11c2982bf3e2",
+      "name": "adidas Originals Flagship Store Tokyo (adidas Originals Flagship Store Harajuku)",
+      "category": "Sporting Goods Retail",
+      "address": "神宮前5-17-4 (神宮前トーラス), 渋谷区, 東京都, 150-0001",
+      "lat": 35.6662748356842,
+      "lng": 139.7060407104334,
+      "rating": null
+    },
+    "google": {
+      "title": "animate Ikebukuro Flagship Store",
+      "rating": null,
+      "reviews": null,
+      "address": "1 Chome-20-7 Higashiikebukuro",
+      "phone": "+81 3-3988-1351",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.731144,
+        "longitude": 139.715459
+      },
+      "place_id": "5782044568649909786"
+    }
+  },
+  {
+    "name": "Arashiyama",
+    "kind": "sight",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Bamboo grove area"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "b0abbd9610314821d4a5aa33",
+      "name": "Arashiyama",
+      "category": "Historic and Protected Site",
+      "address": "京都府",
+      "lat": 35.014019,
+      "lng": 135.678055,
+      "rating": null
+    },
+    "google": {
+      "title": "Arashiyama",
+      "rating": 4.5,
+      "reviews": 7300,
+      "address": "Kyoto, Japan",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.009449,
+        "longitude": 135.666773
+      },
+      "place_id": "12369934962818482508"
+    }
+  },
+  {
+    "name": "Atago Jinja Shrine - Ema (wishing plaques)",
+    "kind": "activity",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Ema wooden plaques with wishes; activity for kids - write a wish (handwritten note mentions Tokyu Corporation interview, Shibuya 2026)"
+    ],
+    "source_files": [
+      "IMG_7703.jpg"
+    ],
+    "handles": [
+      "@mcstops"
+    ],
+    "fsq": {
+      "fsq_id": "4b5bd0a2f964a520c31729e3",
+      "name": "Meiji Jingu Shrine (明治神宮)",
+      "category": "Shrine",
+      "address": "代々木神園町1-1, 渋谷区, 東京都, 151-8557",
+      "lat": 35.67637194402257,
+      "lng": 139.6993589401245,
+      "rating": null
+    },
+    "google": {
+      "title": "Atago Jinja",
+      "rating": 4.4,
+      "reviews": 4100,
+      "address": "1 Chome-5-3 Atago",
+      "phone": "+81 3-3431-0327",
+      "hours": "Open 24 hours",
+      "gps": {
+        "latitude": 35.664744,
+        "longitude": 139.748468
+      },
+      "place_id": "6293486250244485330"
+    }
+  },
+  {
+    "name": "Azabudai Hills",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "New mixed-use complex"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "65f907e4fdcb1247c683a738",
+      "name": "Caban Azabudai Hills (キャバン 麻布台ヒルズ店)",
+      "category": "Clothing Store",
+      "address": "麻布台ヒルズ店, 미나토구, 도쿄, 106-0041",
+      "lat": 35.660853,
+      "lng": 139.740524,
+      "rating": null
+    },
+    "google": {
+      "title": "Azabudai Hills",
+      "rating": 4.4,
+      "reviews": 7200,
+      "address": "1 Chome-3-1 Azabudai",
+      "phone": "+81 3-6433-8100",
+      "hours": null,
+      "gps": {
+        "latitude": 35.661545,
+        "longitude": 139.74083
+      },
+      "place_id": "4583000254307789249"
+    }
+  },
+  {
+    "name": "Bamboo Grove",
+    "kind": "sight",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Arashiyama bamboo path"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4ba41893f964a5200a8138e3",
+      "name": "Arashiyama Bamboo Grove (竹林の小径)",
+      "category": "Forest",
+      "address": "右京区嵯峨小倉山田淵山町, 京都市, 京都府, 616-8394",
+      "lat": 35.016819927750625,
+      "lng": 135.67132472991943,
+      "rating": null
+    },
+    "google": {
+      "title": "Arashiyama Bamboo Forest",
+      "rating": 4.3,
+      "reviews": 23000,
+      "address": "Sagaogurayama Tabuchiyamacho",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.016819,
+        "longitude": 135.671301
+      },
+      "place_id": "18131488233213033693"
+    }
+  },
+  {
+    "name": "Cat Street",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Harajuku/Shibuya area"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4b822982f964a52015cc30e3",
+      "name": "Cat Street (キャットストリート)",
+      "category": "Road",
+      "address": "神宮前, 渋谷区, 東京都, 150-0001",
+      "lat": 35.66570807175471,
+      "lng": 139.70487356185913,
+      "rating": null
+    }
+  },
+  {
+    "name": "Chiyoda-ku",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Imperial Palace, Akihabara"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b0587aff964a520c49f22e3",
+      "name": "Chiyoda",
+      "category": "Japanese Restaurant",
+      "address": "飯田橋1-1-1, 東京, 東京都, 102-0072",
+      "lat": 35.697324841270785,
+      "lng": 139.75012107430058,
+      "rating": null
+    }
+  },
+  {
+    "name": "Chocola BB vitamin drink",
+    "kind": "food",
+    "city_hint": "unknown",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Vitamin drink for active days"
+    ],
+    "source_files": [
+      "IMG_7698.jpg"
+    ],
+    "handles": [
+      "@jenniesuk"
+    ],
+    "fsq": {
+      "fsq_id": "4b9878acf964a520af4335e3",
+      "name": "coffee&tea BBB",
+      "category": "Café",
+      "address": "西新宿8-5-3 (渡邊ビル 2F), 新宿区, 東京都, 160-0023",
+      "lat": 35.694619678898924,
+      "lng": 139.69270169734955,
+      "rating": null
+    },
+    "google": {
+      "title": "Daimaru Tokyo",
+      "rating": 4.0,
+      "reviews": 22000,
+      "address": "1 Chome-9-1 Marunouchi",
+      "phone": "+81 50-1782-0000",
+      "hours": "Closed · Opens 10 AM Tue",
+      "gps": {
+        "latitude": 35.681474,
+        "longitude": 139.768929
+      },
+      "place_id": "17121555650926573336"
+    }
+  },
+  {
+    "name": "Chureito Pagoda / Mt Fuji viewpoint",
+    "kind": "sight",
+    "city_hint": "Fujiyoshida",
+    "mentions": 1,
+    "timing_hints": [
+      "clear-weather mornings best for Fuji view"
+    ],
+    "notes": [
+      "Classic five-storey pagoda framing Mt Fuji"
+    ],
+    "source_files": [
+      "IMG_7651.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "4b5d5eeff964a520145b29e3",
+      "name": "Mt. Ishii Sports (Mt.石井スポーツ 登山本店)",
+      "category": "Outdoor Supply Store",
+      "address": "神田神保町1-6-1 (タキイ東京ビル 2F), 千代田区, 東京都, 101-0051",
+      "lat": 35.696149076408425,
+      "lng": 139.759646444235,
+      "rating": null
+    },
+    "google": {
+      "title": "Arakurayama Sengen Park Observation Deck",
+      "rating": 4.6,
+      "reviews": 528,
+      "address": "3360 Shimoyoshida",
+      "phone": null,
+      "hours": "Closed · Opens 8:30 AM Tue",
+      "gps": {
+        "latitude": 35.501366,
+        "longitude": 138.801551
+      },
+      "place_id": "6806611005213388481"
+    }
+  },
+  {
+    "name": "Cross Shinjuku Vision (3D Cat Billboard)",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Day 4"
+    ],
+    "notes": [
+      "Famous 3D calico cat digital billboard at Shinjuku east exit"
+    ],
+    "source_files": [
+      "IMG_7642.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "54826fb0498eb80c2a5d1426",
+      "name": "TOHO Cinemas (TOHOシネマズ 新宿)",
+      "category": "Movie Theater",
+      "address": "歌舞伎町1-19-1 (新宿東宝ビル 3F-6F), 新宿区, 東京都, 160-0021",
+      "lat": 35.695285,
+      "lng": 139.701932,
+      "rating": null
+    },
+    "google": {
+      "title": "Cross Shinjuku Vision",
+      "rating": 4.5,
+      "reviews": 672,
+      "address": "Shinjuku City, Tokyo, Japan",
+      "phone": null,
+      "hours": "Open · Closes 1 AM",
+      "gps": {
+        "latitude": 35.692687,
+        "longitude": 139.70083
+      },
+      "place_id": "17514809483684983835"
+    }
+  },
+  {
+    "name": "Daikanyama",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Upscale neighborhood"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "50c1db1ce4b0f5b29daf9dee",
+      "name": "Brighton Studio Daikanyama",
+      "category": "Event Space",
+      "address": "鶯谷町1-2 (PAL代官山 3F/RF), 渋谷区, 東京都, 106-0032",
+      "lat": 35.65369396719669,
+      "lng": 139.70500473438724,
+      "rating": null
+    }
+  },
+  {
+    "name": "Day trip from Kyoto",
+    "kind": "transport",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [
+      "leave one day open for a day trip"
+    ],
+    "notes": [
+      "Train cockpit view - reel recommends keeping one day for a Kyoto-area day trip (Nara or Ine)"
+    ],
+    "source_files": [
+      "IMG_7658.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "4b59b9c3f964a520ca9428e3",
+      "name": "Kyoto Gyoen (京都御苑)",
+      "category": "Park",
+      "address": "上京区京都御苑3, 京都市, 京都府, 602-0881",
+      "lat": 35.023290694641325,
+      "lng": 135.76330572366714,
+      "rating": null
+    },
+    "google": {
+      "title": "Kyoto Daily Tours",
+      "rating": 4.9,
+      "reviews": 181,
+      "address": null,
+      "phone": "+81 90-9889-1640",
+      "hours": "Open 24 hours",
+      "gps": {
+        "latitude": 35.187759,
+        "longitude": 137.64589
+      },
+      "place_id": "9222102551110962134"
+    }
+  },
+  {
+    "name": "Day trips from Tokyo (Shinkansen / limited express)",
+    "kind": "transport",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Reel suggests basing in Tokyo for 5 nights and taking a couple of day trips; train view toward snowy Mt Fuji area"
+    ],
+    "source_files": [
+      "IMG_7650.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "4b05879af964a520b69b22e3",
+      "name": "Park Hyatt Tokyo (パークハイアット東京)",
+      "category": "Hotel",
+      "address": "西新宿3-7-1-2 (新宿パークタワー), 新宿区, 東京都, 163-1055",
+      "lat": 35.68557476,
+      "lng": 139.6906391,
+      "rating": null
+    },
+    "google": {
+      "title": "JR Tokai Tours",
+      "rating": 3.9,
+      "reviews": 851,
+      "address": "Marunouchi, 1 Chome−9−1 ＪＲ東京駅 八重洲南口",
+      "phone": null,
+      "hours": "Closed · Opens 11 AM Tue",
+      "gps": {
+        "latitude": 35.680188,
+        "longitude": 139.767847
+      },
+      "place_id": "13410852666843020457"
+    }
+  },
+  {
+    "name": "Don Quijote (Donki) Shibuya Mega Store",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "open 24/7, 7 floors"
+    ],
+    "notes": [
+      "Famous for viral snacks, KitKats, and skincare"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple"
+    ],
+    "fsq": {
+      "fsq_id": "4b7797fcf964a5201ea32ee3",
+      "name": "Shibuya Publishing & Booksellers",
+      "category": "Bookstore",
+      "address": "神山町17-3, 渋谷区, 東京都, 150-0047",
+      "lat": 35.66429630096961,
+      "lng": 139.69345460291737,
+      "rating": null
+    },
+    "google": {
+      "title": "MEGA Don Quijote",
+      "rating": null,
+      "reviews": null,
+      "address": "28-6 Udagawacho",
+      "phone": "+81 570-076-311",
+      "hours": "Open 24 hours",
+      "gps": {
+        "latitude": 35.660387,
+        "longitude": 139.697817
+      },
+      "place_id": "9124525651654476405"
+    }
+  },
+  {
+    "name": "Don Quijote (Mega Donki)",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Open late / 24-7 at many locations"
+    ],
+    "notes": [
+      "Famous discount mega-store; souvenirs, snacks, electronics, cosmetics"
+    ],
+    "source_files": [
+      "IMG_7715.jpg"
+    ],
+    "handles": [
+      "@simranrluthria"
+    ],
+    "fsq": {
+      "fsq_id": "4b584af5f964a5205a5128e3",
+      "name": "Don Quijote (ドン・キホーテ 六本木店)",
+      "category": "Discount Store",
+      "address": "六本木3-14-10, 港区, 東京都, 106-0032",
+      "lat": 35.66221083481903,
+      "lng": 139.73459994336883,
+      "rating": null
+    },
+    "google": {
+      "title": "Don Quijote Ginza Honkan",
+      "rating": null,
+      "reviews": null,
+      "address": "GINZA NINE 3, 8 Chome-10 Ginza",
+      "phone": "+81 570-023-811",
+      "hours": "Open 24 hours",
+      "gps": {
+        "latitude": 35.667122,
+        "longitude": 139.761894
+      },
+      "place_id": "6877499818092145610"
+    }
+  },
+  {
+    "name": "Don Quijote (Shinjuku flagship)",
+    "kind": "shop",
+    "city_hint": "Tokyo (Shinjuku)",
+    "mentions": 1,
+    "timing_hints": [
+      "Open 24/7 or very late; many floors"
+    ],
+    "notes": [
+      "Vast discount treasures and late-night shopping fun"
+    ],
+    "source_files": [
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@japan_trip_guide_"
+    ],
+    "fsq": {
+      "fsq_id": "54826fb0498eb80c2a5d1426",
+      "name": "TOHO Cinemas (TOHOシネマズ 新宿)",
+      "category": "Movie Theater",
+      "address": "歌舞伎町1-19-1 (新宿東宝ビル 3F-6F), 新宿区, 東京都, 160-0021",
+      "lat": 35.695285,
+      "lng": 139.701932,
+      "rating": null
+    },
+    "google": {
+      "title": "Don Quijote Shinjuku Tonanguchi",
+      "rating": null,
+      "reviews": null,
+      "address": "3 Chome-36-16 Shinjuku",
+      "phone": "+81 570-077-611",
+      "hours": "Open 24 hours",
+      "gps": {
+        "latitude": 35.690099,
+        "longitude": 139.702
+      },
+      "place_id": "15508147815392580529"
+    }
+  },
+  {
+    "name": "Enoden Line",
+    "kind": "transport",
+    "city_hint": "Kamakura",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Scenic local train along the coast between Kamakura and Fujisawa"
+    ],
+    "source_files": [
+      "IMG_7652.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "4b55b231f964a52033ec27e3",
+      "name": "Enoden Kamakura Station (EN15) (江ノ電 鎌倉駅)",
+      "category": "Rail Station",
+      "address": "御成町1-15, 鎌倉市, 神奈川県, 248-0012",
+      "lat": 35.31834048294078,
+      "lng": 139.55015175598845,
+      "rating": null
+    },
+    "google": {
+      "title": "Kamakura Station",
+      "rating": null,
+      "reviews": null,
+      "address": "Transport hub",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.319065,
+        "longitude": 139.550412
+      },
+      "place_id": "10126820322969569051"
+    }
+  },
+  {
+    "name": "FamilyMart",
+    "kind": "food",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Konbini must-try foods: Famichiki fried chicken, Yakitori skewers, Oden, Tuna Mayo Onigiri, Tamago Sando, Fried Chicken & Tartar Bento, Melonpan, Souffle Pudding, Choco Monaka Jumbo, Milk Custard Cream Puff"
+    ],
+    "source_files": [
+      "81b0f910-092d-4ee9-ada8-838691caeb01.jpg"
+    ],
+    "handles": [
+      "@wanderinjapan1"
+    ],
+    "fsq": {
+      "fsq_id": "4bac322bf964a5207aea3ae3",
+      "name": "FamilyMart (ファミリーマート 南台二丁目店)",
+      "category": "Convenience Store",
+      "address": "南台2-52-6 (南台林ビル 1F), 中野, 東京都, 164-0014",
+      "lat": 35.68603702616411,
+      "lng": 139.66933697462082,
+      "rating": null
+    },
+    "google": {
+      "title": "FamilyMart",
+      "rating": null,
+      "reviews": null,
+      "address": "1 Chome-5-9 Yaesu",
+      "phone": "+81 3-5204-0236",
+      "hours": "Open 24 hours",
+      "gps": {
+        "latitude": 35.681738,
+        "longitude": 139.771327
+      },
+      "place_id": "18301682693746362531"
+    }
+  },
+  {
+    "name": "Fibe-Mini (Otsuka digestion fiber drink)",
+    "kind": "tip",
+    "city_hint": "Tokyo (Japan-wide convenience stores)",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Japanese fiber drink found at convenience stores; creator says it 'does not work' as a digestion fix"
+    ],
+    "source_files": [
+      "IMG_7697.jpg"
+    ],
+    "handles": [
+      "@jenniesuk"
+    ],
+    "fsq": {
+      "fsq_id": "4b6ce681f964a5208b5c2ce3",
+      "name": "Mini Shinjuku (MINI 新宿)",
+      "category": "Car Dealership",
+      "address": "西新宿6-14-1 (新宿グリーンタワービル 1F), 新宿区, 東京都, 160-0023",
+      "lat": 35.691960141749725,
+      "lng": 139.69034229881947,
+      "rating": null
+    }
+  },
+  {
+    "name": "Fibe-Mini digestion fiber drink",
+    "kind": "food",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Japanese convenience store digestion/fiber drinks recommended for daily consumption"
+    ],
+    "source_files": [
+      "IMG_7698.jpg"
+    ],
+    "handles": [
+      "@jenniesuk"
+    ],
+    "fsq": {
+      "fsq_id": "4b6ce681f964a5208b5c2ce3",
+      "name": "Mini Shinjuku (MINI 新宿)",
+      "category": "Car Dealership",
+      "address": "西新宿6-14-1 (新宿グリーンタワービル 1F), 新宿区, 東京都, 160-0023",
+      "lat": 35.691960141749725,
+      "lng": 139.69034229881947,
+      "rating": null
+    }
+  },
+  {
+    "name": "Fuji-Q Highland",
+    "kind": "activity",
+    "city_hint": "Yamanashi",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "#4 in Japan theme parks list; thrill-ride park near Mt Fuji (most rides have height limits, may not suit a 6-yr-old)"
+    ],
+    "source_files": [
+      "IMG_7617.jpg"
+    ],
+    "handles": [
+      "@musyatravel"
+    ],
+    "fsq": {
+      "fsq_id": "318de7341b42406e4bb11c12",
+      "name": "タオルの花輪FUJI",
+      "category": "Flower Store",
+      "address": "上神内川1053-1, 山梨市, 山梨県, 405-0018",
+      "lat": 35.69048199551509,
+      "lng": 138.68754478452198,
+      "rating": null
+    },
+    "google": {
+      "title": "Fuji-Q Highland",
+      "rating": 4.3,
+      "reviews": 26000,
+      "address": "5 Chome-6-1 Shinnishihara",
+      "phone": null,
+      "hours": "Closed · Opens 9 AM Tue",
+      "gps": {
+        "latitude": 35.486947,
+        "longitude": 138.780551
+      },
+      "place_id": "5173000043195545392"
+    }
+  },
+  {
+    "name": "Fushimi Inari Shrine",
+    "kind": "sight",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Iconic torii path"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b6e5cddf964a52034ba2ce3",
+      "name": "Fushimi Inari Taisha (伏見稲荷大社)",
+      "category": "Shrine",
+      "address": "伏見区深草藪之内町68, 京都市, 京都府, 612-0882",
+      "lat": 34.967336258277186,
+      "lng": 135.7725535003124,
+      "rating": null
+    },
+    "google": {
+      "title": "Fushimi Inari Taisha",
+      "rating": 4.6,
+      "reviews": 89000,
+      "address": "68 Fukakusa Yabunouchicho",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 34.967695,
+        "longitude": 135.779188
+      },
+      "place_id": "8870624639634301673"
+    }
+  },
+  {
+    "name": "Fushimi Inari Taisha",
+    "kind": "sight",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [
+      "go very early (sunrise) or after dark to avoid crowds; free"
+    ],
+    "notes": [
+      "Famous shrine with thousands of vermillion torii gates winding up Mt Inari"
+    ],
+    "source_files": [
+      "IMG_7655.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "4b6e5cddf964a52034ba2ce3",
+      "name": "Fushimi Inari Taisha (伏見稲荷大社)",
+      "category": "Shrine",
+      "address": "伏見区深草藪之内町68, 京都市, 京都府, 612-0882",
+      "lat": 34.967336258277186,
+      "lng": 135.7725535003124,
+      "rating": null
+    },
+    "google": {
+      "title": "Fushimi Inari Taisha",
+      "rating": 4.6,
+      "reviews": 89000,
+      "address": "68 Fukakusa Yabunouchicho",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 34.967695,
+        "longitude": 135.779188
+      },
+      "place_id": "8870624639634301673"
+    }
+  },
+  {
+    "name": "GU",
+    "kind": "shop",
+    "city_hint": "Japan",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Trendy low-price fashion; wide-leg pants under 2000 yen"
+    ],
+    "source_files": [
+      "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg"
+    ],
+    "handles": [
+      "#JapanTips (Wanderfly / Japan Tips)"
+    ],
+    "fsq": {
+      "fsq_id": "5264ef86498e7f3d55adb2a6",
+      "name": "GU",
+      "category": "Clothing Store",
+      "address": "新宿3-29-1 (ビックカメラ 7F), 新宿区, 東京都, 160-8455",
+      "lat": 35.69133920249514,
+      "lng": 139.70290314520025,
+      "rating": null
+    },
+    "google": {
+      "title": "GU Ginza Store",
+      "rating": null,
+      "reviews": null,
+      "address": "Ginza, 5 Chome−7−7 すずらん通り ワシントンビル",
+      "phone": "+81 50-3093-3313",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.670881,
+        "longitude": 139.764263
+      },
+      "place_id": "7136140662215394480"
+    }
+  },
+  {
+    "name": "GU (Ginza)",
+    "kind": "shop",
+    "city_hint": "Tokyo (Ginza)",
+    "mentions": 1,
+    "timing_hints": [
+      "11:00-21:00; 5 floors"
+    ],
+    "notes": [
+      "Trendy affordable Japanese fashion for everyday wear"
+    ],
+    "source_files": [
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@japan_trip_guide_"
+    ],
+    "fsq": {
+      "fsq_id": "6163babcc842e50fcf19b6a9",
+      "name": "Kaiten Sushi Ginza Onodera (廻転鮨 銀座おのでら本店)",
+      "category": "Sushi Restaurant",
+      "address": "神宮前5-1-6 (イルパラッツィーノ表参道 1F), 渋谷区, 東京都, 150-0001",
+      "lat": 35.665969,
+      "lng": 139.710306,
+      "rating": null
+    },
+    "google": {
+      "title": "GU Ginza Store",
+      "rating": null,
+      "reviews": null,
+      "address": "Ginza, 5 Chome−7−7 すずらん通り ワシントンビル",
+      "phone": "+81 50-3093-3313",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.670881,
+        "longitude": 139.764263
+      },
+      "place_id": "7136140662215394480"
+    }
+  },
+  {
+    "name": "GU (Shibuya or Ginza)",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Trendy ultra-affordable fashion, cheaper than Uniqlo"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple"
+    ],
+    "fsq": {
+      "fsq_id": "4b7797fcf964a5201ea32ee3",
+      "name": "Shibuya Publishing & Booksellers",
+      "category": "Bookstore",
+      "address": "神山町17-3, 渋谷区, 東京都, 150-0047",
+      "lat": 35.66429630096961,
+      "lng": 139.69345460291737,
+      "rating": null
+    },
+    "google": {
+      "title": "GU Ginza Store",
+      "rating": null,
+      "reviews": null,
+      "address": "Ginza, 5 Chome−7−7 すずらん通り ワシントンビル",
+      "phone": "+81 50-3093-3313",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.670881,
+        "longitude": 139.764263
+      },
+      "place_id": "7136140662215394480"
+    }
+  },
+  {
+    "name": "Ginkaku-ji Temple",
+    "kind": "sight",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Silver Pavilion"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b6293b5f964a520d84b2ae3",
+      "name": "Ginkaku-ji Temple (慈照寺 (銀閣寺))",
+      "category": "Buddhist Temple",
+      "address": "左京区銀閣寺町2, 京都市, 京都府, 606-8402",
+      "lat": 35.02683403696554,
+      "lng": 135.79820662736893,
+      "rating": null
+    },
+    "google": {
+      "title": "Ginkaku-ji",
+      "rating": 4.5,
+      "reviews": 17000,
+      "address": "2 Ginkakujicho",
+      "phone": null,
+      "hours": "Closed · Opens 8:30 AM Tue",
+      "gps": {
+        "latitude": 35.027021,
+        "longitude": 135.798206
+      },
+      "place_id": "2705196751698570185"
+    }
+  },
+  {
+    "name": "Gion District",
+    "kind": "neighborhood",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Geisha district"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4e1aa243aeb7eb0120e008ba",
+      "name": "Niti (祇園 日)",
+      "category": "Wagashi Place",
+      "address": "東山区祇園町南側570-8, 京都市, 京都府, 605-0074",
+      "lat": 35.00185671825347,
+      "lng": 135.77483109347716,
+      "rating": null
+    }
+  },
+  {
+    "name": "Golden Gai Bars",
+    "kind": "food",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tiny bar alleys in Shinjuku"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "51643be7e4b0fe302457adad",
+      "name": "GOLDEN MEAT BAR (ゴールデンミートバル)",
+      "category": "Italian Restaurant",
+      "address": "西五反田1-11-6 (安藤ビル 1F), 品川区, 東京都, 141-0031",
+      "lat": 35.62418732627043,
+      "lng": 139.72347453729057,
+      "rating": null
+    },
+    "google": {
+      "title": "Shinjuku Golden-Gai",
+      "rating": 4.3,
+      "reviews": 13000,
+      "address": "Kabukicho, 1 Chome−1−6 あかるい花園 五番街",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.694112,
+        "longitude": 139.704761
+      },
+      "place_id": "8189163570396404367"
+    }
+  },
+  {
+    "name": "Gundam Statue (Odaiba)",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tokyo highlight"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b6c0f00f964a520c6212ce3",
+      "name": "Hachiko Statue (忠犬ハチ公)",
+      "category": "Monument",
+      "address": "道玄坂2-1 (ハチ公広場), 渋谷区, 東京都, 150-0043",
+      "lat": 35.65906062016762,
+      "lng": 139.70059543848038,
+      "rating": null
+    },
+    "google": {
+      "title": "Unicorn Gundam",
+      "rating": 4.6,
+      "reviews": 30000,
+      "address": "Aomi, 1 Chome−1−10 ダイバーシティ東京プラザ内 2Fフェスティバル広場",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.624451,
+        "longitude": 139.775492
+      },
+      "place_id": "16300115339830217555"
+    }
+  },
+  {
+    "name": "Hachiko Statue",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Iconic dog statue at Shibuya station"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4b6c0f00f964a520c6212ce3",
+      "name": "Hachiko Statue (忠犬ハチ公)",
+      "category": "Monument",
+      "address": "道玄坂2-1 (ハチ公広場), 渋谷区, 東京都, 150-0043",
+      "lat": 35.65906062016762,
+      "lng": 139.70059543848038,
+      "rating": null
+    },
+    "google": {
+      "title": "Hachiko Statue",
+      "rating": 4.4,
+      "reviews": 26000,
+      "address": "2 Chome-1 Dogenzaka",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.659058,
+        "longitude": 139.700629
+      },
+      "place_id": "150846235021963194"
+    }
+  },
+  {
+    "name": "Hanayashiki",
+    "kind": "activity",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "#5 in Japan theme parks list; Japan's oldest amusement park, in Asakusa - small, retro, kid-friendly"
+    ],
+    "source_files": [
+      "IMG_7618.jpg"
+    ],
+    "handles": [
+      "@musyatravel"
+    ],
+    "fsq": {
+      "fsq_id": "4b571d7af964a520042728e3",
+      "name": "Hanayashiki (花やしき)",
+      "category": "Amusement Park",
+      "address": "浅草2-28-1, 台東区, 東京都, 111-0032",
+      "lat": 35.715479277502766,
+      "lng": 139.79472830582557,
+      "rating": null
+    },
+    "google": {
+      "title": "Asakusa Hanayashiki",
+      "rating": 4.1,
+      "reviews": 6900,
+      "address": "2 Chome-28-1 Asakusa",
+      "phone": null,
+      "hours": "Closed · Opens 10 AM Tue",
+      "gps": {
+        "latitude": 35.715461,
+        "longitude": 139.794877
+      },
+      "place_id": "7760273331863324849"
+    }
+  },
+  {
+    "name": "Hands (Shibuya flagship)",
+    "kind": "shop",
+    "city_hint": "Tokyo (Shibuya)",
+    "mentions": 1,
+    "timing_hints": [
+      "10:00-21:00; 8 floors"
+    ],
+    "notes": [
+      "Comprehensive DIY, creative supplies, practical home goods"
+    ],
+    "source_files": [
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@japan_trip_guide_"
+    ],
+    "fsq": {
+      "fsq_id": "4b7797fcf964a5201ea32ee3",
+      "name": "Shibuya Publishing & Booksellers",
+      "category": "Bookstore",
+      "address": "神山町17-3, 渋谷区, 東京都, 150-0047",
+      "lat": 35.66429630096961,
+      "lng": 139.69345460291737,
+      "rating": null
+    },
+    "google": {
+      "title": "Hands Shibuya",
+      "rating": 4.2,
+      "reviews": 9500,
+      "address": "12-18 Udagawacho",
+      "phone": "+81 3-5489-5111",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.662034,
+        "longitude": 139.697932
+      },
+      "place_id": "1440888599151889393"
+    }
+  },
+  {
+    "name": "Hands Shibuya",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Massive multi-zone maze with home gadgets, DIY crafts, and stationery"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple"
+    ],
+    "fsq": {
+      "fsq_id": "4b5960e0f964a520838628e3",
+      "name": "Hands (ハンズ)",
+      "category": "Furniture and Home Store",
+      "address": "宇田川町12-18, 渋谷区, 東京都, 150-0042",
+      "lat": 35.66201929108489,
+      "lng": 139.69792932271957,
+      "rating": null
+    },
+    "google": {
+      "title": "Hands Shibuya",
+      "rating": null,
+      "reviews": null,
+      "address": "12-18 Udagawacho",
+      "phone": "+81 3-5489-5111",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.662034,
+        "longitude": 139.697932
+      },
+      "place_id": "1440888599151889393"
+    }
+  },
+  {
+    "name": "Haneda Airport",
+    "kind": "transport",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Closer airport to central Tokyo than Narita"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b89fd41f964a520685a32e3",
+      "name": "Tokyo International (Haneda) Airport (東京国際空港 (羽田空港))",
+      "category": "International Airport",
+      "address": "羽田空港3-3-2, 大田区, 東京都, 144-0041",
+      "lat": 35.54846517643472,
+      "lng": 139.7802546992898,
+      "rating": null
+    },
+    "google": {
+      "title": "Haneda Airport",
+      "rating": 4.4,
+      "reviews": 38000,
+      "address": "Hanedakuko",
+      "phone": "+81 3-5757-8111",
+      "hours": null,
+      "gps": {
+        "latitude": 35.548296,
+        "longitude": 139.777995
+      },
+      "place_id": "951037605456574687"
+    }
+  },
+  {
+    "name": "Heian Shrine",
+    "kind": "sight",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Kyoto must-see"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b5f9400f964a520aec229e3",
+      "name": "Heian Jingu Shrine (平安神宮)",
+      "category": "Shrine",
+      "address": "左京区岡崎西天王町97, 京都市, 京都府, 606-8341",
+      "lat": 35.016499,
+      "lng": 135.782441,
+      "rating": null
+    },
+    "google": {
+      "title": "Heian-jingū Shrine",
+      "rating": 4.4,
+      "reviews": 16000,
+      "address": "97 Okazaki Nishitennocho",
+      "phone": null,
+      "hours": "Closed · Opens 6 AM Tue",
+      "gps": {
+        "latitude": 35.015982,
+        "longitude": 135.782426
+      },
+      "place_id": "8484457972734838095"
+    }
+  },
+  {
+    "name": "Higashiyama district",
+    "kind": "neighborhood",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [
+      "early morning or evening for atmosphere with fewer crowds"
+    ],
+    "notes": [
+      "Historic preserved streets with traditional machiya houses, pagoda (Yasaka/Hokan-ji) visible; great walking area"
+    ],
+    "source_files": [
+      "IMG_7657.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "520211c4498e5896916966bf",
+      "name": "Higashiyama Saryo (東山茶寮)",
+      "category": "Café",
+      "address": "東山区五条橋東4-448, 京都市東山区, 京都府, 605-0846",
+      "lat": 34.99516123523419,
+      "lng": 135.7738631792122,
+      "rating": null
+    },
+    "google": {
+      "title": "Higashiyama Ward",
+      "rating": null,
+      "reviews": null,
+      "address": "Kyoto, Japan",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 34.99261,
+        "longitude": 135.774863
+      },
+      "place_id": "14364157197469847729"
+    }
+  },
+  {
+    "name": "Honeys",
+    "kind": "shop",
+    "city_hint": "Japan",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Girly affordable womenswear; floral dresses under 3000 yen"
+    ],
+    "source_files": [
+      "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg"
+    ],
+    "handles": [
+      "#JapanTips (Wanderfly / Japan Tips)"
+    ],
+    "fsq": {
+      "fsq_id": "4f5058a6e4b020de96c85691",
+      "name": "FabCafe",
+      "category": "Café",
+      "address": "道玄坂1-22-7 (道玄坂ピア 1F), 渋谷区, 東京都, 150-0043",
+      "lat": 35.656063,
+      "lng": 139.695491,
+      "rating": null
+    },
+    "google": {
+      "title": "Honeys Iidabashi",
+      "rating": null,
+      "reviews": null,
+      "address": "Iidabashi, 4 Chome−10−1 飯田橋ラムラ 1F",
+      "phone": "+81 3-6280-8296",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.701762,
+        "longitude": 139.744641
+      },
+      "place_id": "569356677946298780"
+    }
+  },
+  {
+    "name": "Ikoma Cable Car (Blacky/Mike-chan)",
+    "kind": "transport",
+    "city_hint": "Nara",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Whimsical dog-shaped cable car on Mt Ikoma - kid-friendly photo op"
+    ],
+    "source_files": [
+      "IMG_7667.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "4bf108bc24f020a17ba9684f",
+      "name": "Honda Cars 南近畿奈良 新大宮店",
+      "category": "Car Dealership",
+      "address": "大宮町5-3-22, 奈良市, 奈良県, 630-8115",
+      "lat": 34.68402207186565,
+      "lng": 135.807493251357,
+      "rating": null
+    }
+  },
+  {
+    "name": "Ikoma cable car area",
+    "kind": "transport",
+    "city_hint": "Nara",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Mention of charming little Ikoma cable car (Mt Ikoma)"
+    ],
+    "source_files": [
+      "IMG_7666.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "4bf108bc24f020a17ba9684f",
+      "name": "Honda Cars 南近畿奈良 新大宮店",
+      "category": "Car Dealership",
+      "address": "大宮町5-3-22, 奈良市, 奈良県, 630-8115",
+      "lat": 34.68402207186565,
+      "lng": 135.807493251357,
+      "rating": null
+    },
+    "google": {
+      "title": "Ikoma Cable Car",
+      "rating": null,
+      "reviews": null,
+      "address": "Mountain cable car",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 34.685705,
+        "longitude": 135.688934
+      },
+      "place_id": "11887772606765155132"
+    }
+  },
+  {
+    "name": "Imperial Palace",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Marked on the ward map"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b566b84f964a5209e0f28e3",
+      "name": "Imperial Palace (皇居)",
+      "category": "Palace",
+      "address": "千代田1-1, 千代田区, 東京都, 100-0001",
+      "lat": 35.6825,
+      "lng": 139.7521,
+      "rating": null
+    },
+    "google": {
+      "title": "Imperial Palace",
+      "rating": 4.4,
+      "reviews": 31000,
+      "address": "1-1 Chiyoda",
+      "phone": null,
+      "hours": "Open now",
+      "gps": {
+        "latitude": 35.685175,
+        "longitude": 139.752799
+      },
+      "place_id": "15067460005103824311"
+    }
+  },
+  {
+    "name": "Ine",
+    "kind": "neighborhood",
+    "city_hint": "Ine (Kyoto Prefecture)",
+    "mentions": 1,
+    "timing_hints": [
+      "day trip from Kyoto; long but scenic - consider overnight"
+    ],
+    "notes": [
+      "Coastal fishing village on the Sea of Japan known for funaya (boathouses); overlooks Ine Bay"
+    ],
+    "source_files": [
+      "IMG_7660.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "53e97676498ede14665b1091",
+      "name": "Ine (伊根町)",
+      "category": "Town",
+      "address": "伊根町, 京都府, 626-0424",
+      "lat": 35.675144,
+      "lng": 135.272666,
+      "rating": null
+    }
+  },
+  {
+    "name": "Japanese pharmacy / drugstore",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "consult pharmacist first"
+    ],
+    "notes": [
+      "Constipation guide listing OTC products: Strong Wakamoto, Daichi n Kampo Benpiyaku, Colac II, Kyobashu Mg Oxide"
+    ],
+    "source_files": [
+      "4823ee3b-6dbc-4d75-94f4-59c861ba89b1.jpg"
+    ],
+    "handles": [
+      "@itsgracechin"
+    ],
+    "fsq": {
+      "fsq_id": "5ddfd24c610af200088db485",
+      "name": "Japanese Soba Noodles Tsuta (Japanese Soba Noodles 蔦)",
+      "category": "Ramen Restaurant",
+      "address": "西原3-2-4 (フロンティア代々木上原 B1F), 渋谷区, 東京都, 151-0066",
+      "lat": 35.670431,
+      "lng": 139.682438,
+      "rating": null
+    },
+    "google": {
+      "title": "Keiyo Drug",
+      "rating": 3.0,
+      "reviews": 54,
+      "address": "Marunouchi, 1 Chome−9−1 京葉線改札内",
+      "phone": "+81 3-6269-0593",
+      "hours": "Open · Closes 10:30 PM",
+      "gps": {
+        "latitude": 35.677562,
+        "longitude": 139.765864
+      },
+      "place_id": "4525985771940606718"
+    }
+  },
+  {
+    "name": "Kappabashi Street",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Kitchenware/knife district"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "53a8f903498e838bfdf6a8df",
+      "name": "Street Pasta Company (ストリート パスタ カンパニー)",
+      "category": "Italian Restaurant",
+      "address": "代々木1-37-1 (大善ビル 1F), 渋谷区, 東京都, 151-0053",
+      "lat": 35.68400399611563,
+      "lng": 139.70074027776715,
+      "rating": null
+    },
+    "google": {
+      "title": "Kappabashi Kitchen Supply Town",
+      "rating": 4.3,
+      "reviews": 13000,
+      "address": "3 Chome-18-2 Matsugaya",
+      "phone": "+81 3-3844-1225",
+      "hours": "Closed · Opens 9 AM Tue",
+      "gps": {
+        "latitude": 35.71058,
+        "longitude": 139.787965
+      },
+      "place_id": "2397099946291010547"
+    }
+  },
+  {
+    "name": "Kawagoe",
+    "kind": "sight",
+    "city_hint": "Kawagoe",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Edo-period little Edo day-trip"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4b5bba98f964a520b21229e3",
+      "name": "Kawagoe Kumano Shrine (川越熊野神社)",
+      "category": "Shrine",
+      "address": "連雀町17-1, 川越市, 埼玉県, 350-0066",
+      "lat": 35.919066082704035,
+      "lng": 139.48319417964524,
+      "rating": null
+    }
+  },
+  {
+    "name": "Kawai Shrine",
+    "kind": "sight",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Beauty shrine within Tadasu no Mori (near Shimogamo Shrine); buy face-shaped ema, drink beauty water, get mirror charm with hidden message in sunlight. Address: 59 Shimogamoizumigawa-cho, Sakyo-ku, Kyoto 606-0807"
+    ],
+    "source_files": [
+      "b80fb8af-f182-4c38-90e0-77c736589001.jpg"
+    ],
+    "handles": [
+      "@daddy.xj and @ourhappyfinds"
+    ],
+    "fsq": {
+      "fsq_id": "4b5a5b3bf964a520a1bf28e3",
+      "name": "Yasaka Shrine (八坂神社)",
+      "category": "Shrine",
+      "address": "東山区祇園町北側625, 京都市, 京都府, 605-0073",
+      "lat": 35.00365372137186,
+      "lng": 135.7785594463348,
+      "rating": null
+    },
+    "google": {
+      "title": "Kawai Shrine",
+      "rating": 4.3,
+      "reviews": 3300,
+      "address": "59 Shimogamo Izumikawacho",
+      "phone": null,
+      "hours": "Closed · Opens 9 AM Tue",
+      "gps": {
+        "latitude": 35.034673,
+        "longitude": 135.771959
+      },
+      "place_id": "17258213867964211309"
+    }
+  },
+  {
+    "name": "Kinkaku-ji Temple",
+    "kind": "sight",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Golden Pavilion"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b779d4af964a52016a42ee3",
+      "name": "Kinkaku-ji Temple (鹿苑寺 (金閣寺))",
+      "category": "Buddhist Temple",
+      "address": "北区金閣寺町1, 京都市, 京都府, 603-8361",
+      "lat": 35.0393873419367,
+      "lng": 135.7293999195099,
+      "rating": null
+    },
+    "google": {
+      "title": "Kinkaku-ji",
+      "rating": 4.6,
+      "reviews": 68000,
+      "address": "1 Kinkakujicho",
+      "phone": null,
+      "hours": "Closed · Opens 9 AM Tue",
+      "gps": {
+        "latitude": 35.03937,
+        "longitude": 135.729243
+      },
+      "place_id": "1073025677330113631"
+    }
+  },
+  {
+    "name": "Kiyomizu-dera",
+    "kind": "sight",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [
+      "early morning best; allow 1-2 hrs"
+    ],
+    "notes": [
+      "Hilltop wooden temple with sweeping Kyoto view; Kyoto Tower visible in background; kimono-rental photo spot"
+    ],
+    "source_files": [
+      "IMG_7656.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "4b5bda8ff964a520ee1929e3",
+      "name": "Kiyomizu-dera Temple (清水寺)",
+      "category": "Buddhist Temple",
+      "address": "東山区清水1-294, 京都市, 京都府, 605-0862",
+      "lat": 34.994844,
+      "lng": 135.785001,
+      "rating": null
+    },
+    "google": {
+      "title": "Kiyomizu-dera",
+      "rating": 4.6,
+      "reviews": 70000,
+      "address": "1 Chome-294 Kiyomizu",
+      "phone": null,
+      "hours": "Closed · Opens 6 AM Tue",
+      "gps": {
+        "latitude": 34.994666,
+        "longitude": 135.784661
+      },
+      "place_id": "7111013964196361402"
+    }
+  },
+  {
+    "name": "Kiyomizu-dera Temple",
+    "kind": "sight",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Hillside temple"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b5bda8ff964a520ee1929e3",
+      "name": "Kiyomizu-dera Temple (清水寺)",
+      "category": "Buddhist Temple",
+      "address": "東山区清水1-294, 京都市, 京都府, 605-0862",
+      "lat": 34.994844,
+      "lng": 135.785001,
+      "rating": null
+    },
+    "google": {
+      "title": "Kiyomizu-dera",
+      "rating": 4.6,
+      "reviews": 70000,
+      "address": "1 Chome-294 Kiyomizu",
+      "phone": null,
+      "hours": "Closed · Opens 6 AM Tue",
+      "gps": {
+        "latitude": 34.994666,
+        "longitude": 135.784661
+      },
+      "place_id": "7111013964196361402"
+    }
+  },
+  {
+    "name": "Koami Shrine (Koami Jinja)",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Money-washing shrine in Nihonbashi - wash your money here for good fortune; recommended for next Tokyo trip"
+    ],
+    "source_files": [
+      "IMG_7612.jpg"
+    ],
+    "handles": [
+      "@joyceee.tan / @travelwithjoyceee"
+    ],
+    "fsq": {
+      "fsq_id": "4b5bd0a2f964a520c31729e3",
+      "name": "Meiji Jingu Shrine (明治神宮)",
+      "category": "Shrine",
+      "address": "代々木神園町1-1, 渋谷区, 東京都, 151-8557",
+      "lat": 35.67637194402257,
+      "lng": 139.6993589401245,
+      "rating": null
+    },
+    "google": {
+      "title": "Koami Shrine",
+      "rating": 4.5,
+      "reviews": 10000,
+      "address": "16-23 Nihonbashikoamicho",
+      "phone": null,
+      "hours": "Closed · Opens 9 AM Tue",
+      "gps": {
+        "latitude": 35.684093,
+        "longitude": 139.780516
+      },
+      "place_id": "13892260786903066591"
+    }
+  },
+  {
+    "name": "Kumargic Eye Cream (Hada Riki Medi)",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Must-buy item from Japan drugstore - under-eye concentrated treatment"
+    ],
+    "source_files": [
+      "93086c80-c0b7-4822-a200-1fb8ad9d4933.jpg"
+    ],
+    "handles": [
+      "@twoontheglobe"
+    ],
+    "fsq": {
+      "fsq_id": "56274793498ed527890aca98",
+      "name": "Kippy's! Coco-Cream",
+      "category": "Ice Cream Parlor",
+      "address": "千駄ヶ谷2-6-3 (千駄ヶ谷RFビル 1F), 渋谷区, 東京都, 151-0051",
+      "lat": 35.67514812864347,
+      "lng": 139.7093431079996,
+      "rating": null
+    },
+    "google": {
+      "title": "APii COSMETICS",
+      "rating": 4.5,
+      "reviews": 12,
+      "address": "3 Chome-2-2 Shinjuku",
+      "phone": "+81 3-3356-6026",
+      "hours": "Closed · Opens 10:30 AM Tue",
+      "gps": {
+        "latitude": 35.693224,
+        "longitude": 139.702831
+      },
+      "place_id": "5208459114445835823"
+    }
+  },
+  {
+    "name": "Kyoto Tower",
+    "kind": "sight",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Visible landmark from Kiyomizu-dera viewpoint"
+    ],
+    "source_files": [
+      "IMG_7656.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "4bb451aa643cd13ac799395c",
+      "name": "Nidec Kyoto Tower (ニデック京都タワー)",
+      "category": "Monument",
+      "address": "下京区東塩小路町721-1 (烏丸七条下ル), 京都市, 京都府, 600-8216",
+      "lat": 34.987562,
+      "lng": 135.759348,
+      "rating": null
+    },
+    "google": {
+      "title": "Nidec Kyoto Tower",
+      "rating": null,
+      "reviews": null,
+      "address": "烏丸通七条下るHigashishiokojicho, 721-1",
+      "phone": "+81 75-361-3215",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 34.98752,
+        "longitude": 135.759252
+      },
+      "place_id": "17017157882742292436"
+    }
+  },
+  {
+    "name": "Lawson",
+    "kind": "food",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Konbini must-try foods at Lawson: Karaage-kun fried chicken, Uchi Cafe Premium Roll Cake, Tamago Sando, L-Chiki, Baschee Basque Cheesecake, Onigiri (tuna mayo / salmon), Nikuman pork bun, Hokkaido Kitaakari Beef Croquette, Premium Fruit Sandwich, Mochi Puyo"
+    ],
+    "source_files": [
+      "83668700-30ba-491a-949a-dcbdfcc9283f.jpg"
+    ],
+    "handles": [
+      "@wanderinjapan1"
+    ],
+    "fsq": {
+      "fsq_id": "6562bada5b0f5772c39d701c",
+      "name": "Lawson",
+      "category": "Convenience Store",
+      "address": "神宮前6-28-3, 渋谷区, 東京都, 150-0001",
+      "lat": 35.66753,
+      "lng": 139.704429,
+      "rating": null
+    },
+    "google": {
+      "title": "Lawson",
+      "rating": null,
+      "reviews": null,
+      "address": "1 Chome-8-2 Marunouchi",
+      "phone": "+81 3-6273-4255",
+      "hours": "Open 24 hours",
+      "gps": {
+        "latitude": 35.682167,
+        "longitude": 139.769701
+      },
+      "place_id": "3282576231852771862"
+    }
+  },
+  {
+    "name": "MUJI",
+    "kind": "shop",
+    "city_hint": "Japan",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Minimalist comfy fashion; must-buy organic cotton T-shirts"
+    ],
+    "source_files": [
+      "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg"
+    ],
+    "handles": [
+      "#JapanTips (Wanderfly / Japan Tips)"
+    ],
+    "fsq": {
+      "fsq_id": "4c481f4f31e41b8de2e94e35",
+      "name": "MUJI (無印良品)",
+      "category": "Clothing Store",
+      "address": "新宿3-15-15 (新宿ピカデリー 2F-B1F), 新宿区, 東京都, 160-0022",
+      "lat": 35.69274840373113,
+      "lng": 139.70368628469214,
+      "rating": null
+    },
+    "google": {
+      "title": "MUJI Ginza",
+      "rating": null,
+      "reviews": null,
+      "address": "3 Chome-3-5 Ginza",
+      "phone": "+81 3-3538-1311",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.673214,
+        "longitude": 139.765368
+      },
+      "place_id": "771702428473144825"
+    }
+  },
+  {
+    "name": "MUJI (Yurakucho - now Ginza Flagship)",
+    "kind": "shop",
+    "city_hint": "Tokyo (Yurakucho/Ginza)",
+    "mentions": 1,
+    "timing_hints": [
+      "Many floors"
+    ],
+    "notes": [
+      "Minimalist lifestyle items, travel gear, healthy snacks"
+    ],
+    "source_files": [
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@japan_trip_guide_"
+    ],
+    "fsq": {
+      "fsq_id": "4c481f4f31e41b8de2e94e35",
+      "name": "MUJI (無印良品)",
+      "category": "Clothing Store",
+      "address": "新宿3-15-15 (新宿ピカデリー 2F-B1F), 新宿区, 東京都, 160-0022",
+      "lat": 35.69274840373113,
+      "lng": 139.70368628469214,
+      "rating": null
+    },
+    "google": {
+      "title": "MUJI Ginza",
+      "rating": null,
+      "reviews": null,
+      "address": "3 Chome-3-5 Ginza",
+      "phone": "+81 3-3538-1311",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.673214,
+        "longitude": 139.765368
+      },
+      "place_id": "771702428473144825"
+    }
+  },
+  {
+    "name": "Mario Kart Street Go-Karting",
+    "kind": "activity",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Requires international driving permit (adults only - not for kids 6/9)"
+    ],
+    "notes": [
+      "Costume go-karting tour through Tokyo streets; adults only"
+    ],
+    "source_files": [
+      "IMG_7718.jpg"
+    ],
+    "handles": [
+      "@simranrluthria"
+    ],
+    "fsq": {
+      "fsq_id": "53a8f903498e838bfdf6a8df",
+      "name": "Street Pasta Company (ストリート パスタ カンパニー)",
+      "category": "Italian Restaurant",
+      "address": "代々木1-37-1 (大善ビル 1F), 渋谷区, 東京都, 151-0053",
+      "lat": 35.68400399611563,
+      "lng": 139.70074027776715,
+      "rating": null
+    },
+    "google": {
+      "title": "STREET KART Tokyo",
+      "rating": null,
+      "reviews": null,
+      "address": "2 Chome-10-8 Shin-Kiba",
+      "phone": "+81 80-8899-8899",
+      "hours": null,
+      "gps": {
+        "latitude": 35.637995,
+        "longitude": 139.824304
+      },
+      "place_id": "9422057127000757573"
+    }
+  },
+  {
+    "name": "Mega Don Quijote Shibuya",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day 1 stop"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4b7797fcf964a5201ea32ee3",
+      "name": "Shibuya Publishing & Booksellers",
+      "category": "Bookstore",
+      "address": "神山町17-3, 渋谷区, 東京都, 150-0047",
+      "lat": 35.66429630096961,
+      "lng": 139.69345460291737,
+      "rating": null
+    },
+    "google": {
+      "title": "MEGA Don Quijote",
+      "rating": 4.2,
+      "reviews": 22000,
+      "address": "28-6 Udagawacho",
+      "phone": "+81 570-076-311",
+      "hours": "Open 24 hours",
+      "gps": {
+        "latitude": 35.660387,
+        "longitude": 139.697817
+      },
+      "place_id": "9124525651654476405"
+    }
+  },
+  {
+    "name": "Meiji Shrine",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day 1 Harajuku/Shibuya itinerary"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4b5bd0a2f964a520c31729e3",
+      "name": "Meiji Jingu Shrine (明治神宮)",
+      "category": "Shrine",
+      "address": "代々木神園町1-1, 渋谷区, 東京都, 151-8557",
+      "lat": 35.67637194402257,
+      "lng": 139.6993589401245,
+      "rating": null
+    },
+    "google": {
+      "title": "Meiji Jingu",
+      "rating": 4.6,
+      "reviews": 51000,
+      "address": "1-1 Yoyogikamizonocho",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.676398,
+        "longitude": 139.699326
+      },
+      "place_id": "10361244767556222835"
+    }
+  },
+  {
+    "name": "Mikami Shrine (Mikami Jinja)",
+    "kind": "sight",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [
+      "open 24 hours"
+    ],
+    "notes": [
+      "Shinto shrine for hair growth at 10 Sagaogurayama Tabuchiyamacho, Ukyo Ward, Kyoto 616-8394; rated 4.3"
+    ],
+    "source_files": [
+      "IMG_7610.jpg"
+    ],
+    "handles": [
+      "@ankit_purohit_japan / mikami-jinya-kyoto.com"
+    ],
+    "fsq": {
+      "fsq_id": "4b5be445f964a520f41b29e3",
+      "name": "Seimei Shrine (晴明神社)",
+      "category": "Shrine",
+      "address": "上京区晴明町806 (堀川通一条上る), 京都市, 京都府, 602-8222",
+      "lat": 35.027744,
+      "lng": 135.75139,
+      "rating": null
+    },
+    "google": {
+      "title": "Mikami Shrine",
+      "rating": 4.3,
+      "reviews": 766,
+      "address": "10 Sagaogurayama Tabuchiyamacho",
+      "phone": null,
+      "hours": "Closed · Opens 9 AM Tue",
+      "gps": {
+        "latitude": 35.017651,
+        "longitude": 135.66974
+      },
+      "place_id": "16886009701502434322"
+    }
+  },
+  {
+    "name": "Minato-ku",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Includes Roppongi, Tokyo Tower"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "57087066498e071a46ec4200",
+      "name": "KURAND SAKE MARKET",
+      "category": "Sake Bar",
+      "address": "新宿3-9-9 (ワタセイビル 4F), 新宿区, 東京都, 160-0022",
+      "lat": 35.69123,
+      "lng": 139.70682,
+      "rating": null
+    }
+  },
+  {
+    "name": "Moffu",
+    "kind": "activity",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "reservation recommended"
+    ],
+    "notes": [
+      "Samoyed dog cafe - kid-friendly experience in Harajuku/Shibuya area"
+    ],
+    "source_files": [
+      "IMG_7629.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4be4078f1dd22d7f48f497bd",
+      "name": "Moffu",
+      "category": "Bar",
+      "address": null,
+      "lat": 35.70580776147881,
+      "lng": 139.6482156736595,
+      "rating": null
+    },
+    "google": {
+      "title": "Samoyed Cafe moffu harajuku / Samoyed Lounge moffu",
+      "rating": 4.9,
+      "reviews": 11000,
+      "address": "Jingumae, 3 Chome−21−21 地下1F",
+      "phone": null,
+      "hours": "Closed · Opens 11 AM Tue",
+      "gps": {
+        "latitude": 35.670727,
+        "longitude": 139.707479
+      },
+      "place_id": "6036243207313651831"
+    }
+  },
+  {
+    "name": "Mount Fuji",
+    "kind": "sight",
+    "city_hint": "Hakone",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day-trip option from Tokyo"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4bd7bb03dc4b95215be07788",
+      "name": "Fujiya Hotel (富士屋ホテル)",
+      "category": "Hotel",
+      "address": "宮ノ下359, 箱根町, 神奈川県, 250-0404",
+      "lat": 35.24418411250752,
+      "lng": 139.0591502979073,
+      "rating": null
+    }
+  },
+  {
+    "name": "Mt Takao",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Hiking day-trip option"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4d7d94a187003704965d6199",
+      "name": "家庭料理&コミュニTea Mt. TAKAO",
+      "category": "Deli",
+      "address": "日本橋箱崎町42-1 (日本橋箱崎町), 中央区, 東京都, 103-0015",
+      "lat": 35.68191629006152,
+      "lng": 139.7872679209745,
+      "rating": null
+    }
+  },
+  {
+    "name": "NTT Docomo Yoyogi Building",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Visible spire on Shinjuku skyline backdrop"
+    ],
+    "source_files": [
+      "IMG_7641.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b79074af964a52067e92ee3",
+      "name": "NTT Docomo Yoyogi Building (NTTドコモ代々木ビル)",
+      "category": "Office Building",
+      "address": "千駄ヶ谷5-24-10, 渋谷区, 東京都, 151-0051",
+      "lat": 35.684293,
+      "lng": 139.702883,
+      "rating": null
+    },
+    "google": {
+      "title": "Docomo Tower",
+      "rating": 4.0,
+      "reviews": 367,
+      "address": "5 Chome-24-10 Sendagaya",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.684401,
+        "longitude": 139.703085
+      },
+      "place_id": "16915171932715911135"
+    }
+  },
+  {
+    "name": "Nakameguro",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Trendy canal-side area"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4d6a19b1b6f46dcbef502cb2",
+      "name": "Nakameguro (中目黒)",
+      "category": "Neighborhood",
+      "address": "目黒区, 東京都",
+      "lat": 35.64444043857499,
+      "lng": 139.7002640341184,
+      "rating": null
+    }
+  },
+  {
+    "name": "Nakamise Street",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Shopping street leading to Sensoji"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "53a8f903498e838bfdf6a8df",
+      "name": "Street Pasta Company (ストリート パスタ カンパニー)",
+      "category": "Italian Restaurant",
+      "address": "代々木1-37-1 (大善ビル 1F), 渋谷区, 東京都, 151-0053",
+      "lat": 35.68400399611563,
+      "lng": 139.70074027776715,
+      "rating": null
+    },
+    "google": {
+      "title": "Nakamise Shopping Street",
+      "rating": 4.3,
+      "reviews": 15000,
+      "address": "1 Chome-36-3 Asakusa",
+      "phone": "+81 3-3844-3350",
+      "hours": "Closed · Opens 9 AM Tue",
+      "gps": {
+        "latitude": 35.711841,
+        "longitude": 139.796454
+      },
+      "place_id": "5851620788043619772"
+    }
+  },
+  {
+    "name": "Nara (alternate side)",
+    "kind": "neighborhood",
+    "city_hint": "Nara",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Torii gate with shimenawa rope at a shrine - 'visit a different side of Nara' (likely off-the-beaten-path shrine, possibly Mt Wakakusa or Tamukeyama area)"
+    ],
+    "source_files": [
+      "IMG_7665.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "4bb80f961261d13aa04fe898",
+      "name": "Nara Palace Site (平城宮跡)",
+      "category": "Historic and Protected Site",
+      "address": "佐紀町, 奈良市, 奈良県, 630-8003",
+      "lat": 34.690338,
+      "lng": 135.794311,
+      "rating": null
+    },
+    "google": {
+      "title": "arru...cafe&dining",
+      "rating": 4.9,
+      "reviews": 369,
+      "address": "Sanjocho, 484-1-1 マルシンビル 2F",
+      "phone": "+81 742-94-8855",
+      "hours": "Open · Closes 10 PM",
+      "gps": {
+        "latitude": 34.682143,
+        "longitude": 135.82225
+      },
+      "place_id": "1530887760812316374"
+    }
+  },
+  {
+    "name": "Nara Park deer",
+    "kind": "activity",
+    "city_hint": "Nara",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Buy shika senbei crackers to feed the bowing deer"
+    ],
+    "source_files": [
+      "IMG_7659.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "4bb80f961261d13aa04fe898",
+      "name": "Nara Palace Site (平城宮跡)",
+      "category": "Historic and Protected Site",
+      "address": "佐紀町, 奈良市, 奈良県, 630-8003",
+      "lat": 34.690338,
+      "lng": 135.794311,
+      "rating": null
+    },
+    "google": {
+      "title": "Nara Park",
+      "rating": 4.6,
+      "reviews": 74000,
+      "address": "Nara, Japan",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 34.685047,
+        "longitude": 135.843012
+      },
+      "place_id": "17972930374069941334"
+    }
+  },
+  {
+    "name": "Nike Mind store / installation",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "In-store 'Wellness, for...' Nike Mind 001 display with mannequin and Japanese signage"
+    ],
+    "source_files": [
+      "IMG_7696.jpg"
+    ],
+    "handles": [
+      "@aditiaryawellness"
+    ],
+    "fsq": {
+      "fsq_id": "4b62ec84f964a52016592ae3",
+      "name": "Ahiru Store (アヒルストア)",
+      "category": "Bistro",
+      "address": "富ヶ谷1-19-4, 渋谷区, 東京都, 151-0063",
+      "lat": 35.66578686857216,
+      "lng": 139.69204138318034,
+      "rating": null
+    },
+    "google": {
+      "title": "KICKS LAB. Pino Harajuku Branch",
+      "rating": 5.0,
+      "reviews": 10000,
+      "address": "Jingumae, 4 Chome−28−18 ピノ原宿",
+      "phone": "+81 3-6455-4234",
+      "hours": "Closed · Opens 12 PM Tue",
+      "gps": {
+        "latitude": 35.668766,
+        "longitude": 139.706591
+      },
+      "place_id": "8408905569986491818"
+    }
+  },
+  {
+    "name": "Odaiba Statue of Liberty",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Day 3 (evening for lit-up Rainbow Bridge)"
+    ],
+    "notes": [
+      "Replica Statue of Liberty with Rainbow Bridge and Tokyo Tower in background"
+    ],
+    "source_files": [
+      "IMG_7640.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4bce9d18fb84c9b64b25243e",
+      "name": "Statue of Liberty (自由の女神像)",
+      "category": "Monument",
+      "address": "台場1-4-1, 港区, 東京都, 135-0091",
+      "lat": 35.62786009141172,
+      "lng": 139.77184563875196,
+      "rating": null
+    },
+    "google": {
+      "title": "Statue of Liberty",
+      "rating": 4.5,
+      "reviews": 4800,
+      "address": "1 Chome-4-2 Daiba",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.627873,
+        "longitude": 139.771835
+      },
+      "place_id": "13582406982295785891"
+    }
+  },
+  {
+    "name": "Omotesando",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Marked on the ward map - upscale shopping street"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "5dd38b0119f6a900083a06ec",
+      "name": "u omotesando",
+      "category": "Gluten-Free Restaurant",
+      "address": "渋谷区, 東京都, 150-0001",
+      "lat": 35.667783557127244,
+      "lng": 139.70559217947346,
+      "rating": null
+    }
+  },
+  {
+    "name": "Omotesando Street",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Upscale Harajuku boulevard"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "53a8f903498e838bfdf6a8df",
+      "name": "Street Pasta Company (ストリート パスタ カンパニー)",
+      "category": "Italian Restaurant",
+      "address": "代々木1-37-1 (大善ビル 1F), 渋谷区, 東京都, 151-0053",
+      "lat": 35.68400399611563,
+      "lng": 139.70074027776715,
+      "rating": null
+    },
+    "google": {
+      "title": "Omotesando Hills",
+      "rating": 4.0,
+      "reviews": 8400,
+      "address": "4 Chome-12-10 Jingumae",
+      "phone": "+81 3-3497-0310",
+      "hours": "Closed · Opens 11 AM Tue",
+      "gps": {
+        "latitude": 35.667287,
+        "longitude": 139.708616
+      },
+      "place_id": "11085515402136645797"
+    }
+  },
+  {
+    "name": "Onitsuka Tiger (Omotesando)",
+    "kind": "shop",
+    "city_hint": "Tokyo (Omotesando)",
+    "mentions": 1,
+    "timing_hints": [
+      "11:00-20:00; 2 floors"
+    ],
+    "notes": [
+      "Stylish retro-designed Japanese sneakers"
+    ],
+    "source_files": [
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@japan_trip_guide_"
+    ],
+    "fsq": {
+      "fsq_id": "4f9721b9e4b087cfaae73881",
+      "name": "Onitsuka Tiger (オニツカタイガー)",
+      "category": "Shoe Store",
+      "address": "神宮前4-24-14, 渋谷区, 東京都, 150-0001",
+      "lat": 35.668327647431795,
+      "lng": 139.7078736126423,
+      "rating": null
+    },
+    "google": {
+      "title": "Onitsuka Tiger Omotesando Store",
+      "rating": null,
+      "reviews": null,
+      "address": "4 Chome-24-14 Jingumae",
+      "phone": "+81 3-3405-6671",
+      "hours": "Closed · Opens 11 AM Tue",
+      "gps": {
+        "latitude": 35.668347,
+        "longitude": 139.707854
+      },
+      "place_id": "12837052031731595244"
+    }
+  },
+  {
+    "name": "Onitsuka Tiger Nippon Made flagship",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Premium Nippon Made line store; reel compares Mexico 66 vs Nippon Made pricing"
+    ],
+    "source_files": [
+      "404d8e38-1880-4e06-88a5-1544d6fc0a2c.jpg"
+    ],
+    "handles": [
+      "@theninadaniels"
+    ],
+    "fsq": {
+      "fsq_id": "6711db39206070017650a2ee",
+      "name": "Onitsuka Tiger Nippon Made",
+      "category": "Shoe Store",
+      "address": "中央区, 東京都, 104-0061",
+      "lat": 35.668679,
+      "lng": 139.762893,
+      "rating": null
+    },
+    "google": {
+      "title": "Onitsuka Tiger NIPPON MADE Tokyo Midtown Yaesu Store",
+      "rating": null,
+      "reviews": null,
+      "address": "Yaesu, 2 Chome−2−1 東京ミッドタウン八重洲 1F",
+      "phone": "+81 3-6262-7126",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.679408,
+        "longitude": 139.768931
+      },
+      "place_id": "4407589467395726153"
+    }
+  },
+  {
+    "name": "Onitsuka Tiger Shibuya / Ueno Flagship",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Iconic Mexico 66 sneakers; Ueno flagship has better stock"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple"
+    ],
+    "fsq": {
+      "fsq_id": "59fd5ee5db1d813e71cae46b",
+      "name": "Onitsuka Tiger (オニツカタイガー)",
+      "category": "Shoe Store",
+      "address": "新宿4-1-4 (第3スカイビル 1F-2F), 新宿区, 東京都, 160-0022",
+      "lat": 35.68828196223477,
+      "lng": 139.70244537217908,
+      "rating": null
+    },
+    "google": {
+      "title": "Onitsuka Tiger Shibuya",
+      "rating": null,
+      "reviews": null,
+      "address": "Jinnan, 1 Chome−21−3 渋谷神南共同ビル 1・2Ｆ",
+      "phone": "+81 3-3464-9040",
+      "hours": "Closed · Opens 11 AM Tue",
+      "gps": {
+        "latitude": 35.661587,
+        "longitude": 139.700478
+      },
+      "place_id": "3789441036380451471"
+    }
+  },
+  {
+    "name": "Pizza Bar on 38th",
+    "kind": "food",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Reservation required; located in Mandarin Oriental Tokyo"
+    ],
+    "notes": [
+      "High-end pizza counter in Mandarin Oriental on 38th floor"
+    ],
+    "source_files": [
+      "IMG_7719.jpg"
+    ],
+    "handles": [
+      "@simranrluthria"
+    ],
+    "fsq": {
+      "fsq_id": "537c14ea498eaeb3ef2a64e9",
+      "name": "The Pizza Bar On 38th",
+      "category": "Pizzeria",
+      "address": "2-1-1 Nihonbashi Muromachi (マンダリンオリエンタル 38F), 中央区, 東京都, 103-8328",
+      "lat": 35.6869744,
+      "lng": 139.7730333,
+      "rating": null
+    },
+    "google": {
+      "title": "The Pizza Bar On 38th",
+      "rating": 4.4,
+      "reviews": 488,
+      "address": "2 Chome-1-1 Nihonbashimuromachi",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.686974,
+        "longitude": 139.773033
+      },
+      "place_id": "16411248613557931469"
+    }
+  },
+  {
+    "name": "Pokemon Center (Nihonbashi)",
+    "kind": "shop",
+    "city_hint": "Tokyo (Nihonbashi)",
+    "mentions": 1,
+    "timing_hints": [
+      "10:30-21:00; 1 floor"
+    ],
+    "notes": [
+      "Exclusive merchandise and iconic Pokemon experiences - great for kids"
+    ],
+    "source_files": [
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@japan_trip_guide_"
+    ],
+    "fsq": {
+      "fsq_id": "5dd3ed93e6b4a60007942d18",
+      "name": "Pokémon Center Shibuya (ポケモンセンターシブヤ)",
+      "category": "Hobby Store",
+      "address": "宇田川町15-1 (渋谷PARCO 6F), 渋谷区, 東京都, 150-8377",
+      "lat": 35.6619557,
+      "lng": 139.6984408,
+      "rating": null
+    },
+    "google": {
+      "title": "Pokémon Center Tokyo DX",
+      "rating": 4.5,
+      "reviews": 3900,
+      "address": "Nihonbashi, 2 Chome−11−2 髙島屋S.C.東館 5F",
+      "phone": null,
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.68029,
+        "longitude": 139.77427
+      },
+      "place_id": "17206393884080941756"
+    }
+  },
+  {
+    "name": "Pokemon Center DX Nihonbashi",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Largest Pokemon Center in Japan; giant Mewtwo display and every plushie imaginable"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple"
+    ],
+    "fsq": {
+      "fsq_id": "51c26361498e42f9c9dc41ab",
+      "name": "Vision Center Nihonbashi",
+      "category": "Meeting Room",
+      "address": null,
+      "lat": 35.68591674619706,
+      "lng": 139.77463556158958,
+      "rating": null
+    },
+    "google": {
+      "title": "Pokémon Center Tokyo DX",
+      "rating": 4.5,
+      "reviews": 3900,
+      "address": "Nihonbashi, 2 Chome−11−2 髙島屋S.C.東館 5F",
+      "phone": null,
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.68029,
+        "longitude": 139.77427
+      },
+      "place_id": "17206393884080941756"
+    }
+  },
+  {
+    "name": "Pokemon Center Mega Tokyo",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tokyo highlight"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "546688fa498efb616379c044",
+      "name": "Pokémon Center Mega Tokyo (ポケモンセンターメガトウキョー)",
+      "category": "Hobby Store",
+      "address": "東池袋3-1-2 (サンシャインシティアルパ 2F), 豊島区, 東京都, 170-0013",
+      "lat": 35.729057990726034,
+      "lng": 139.71891489552084,
+      "rating": null
+    },
+    "google": {
+      "title": "Pokémon Center Mega Tokyo & Pikachu Sweets",
+      "rating": null,
+      "reviews": null,
+      "address": "Higashiikebukuro, 3 Chome−1−2 サンシャインシティ 専門店街アルパ 2F",
+      "phone": "+81 3-5927-9290",
+      "hours": "Temporarily closed",
+      "gps": {
+        "latitude": 35.728906,
+        "longitude": 139.719325
+      },
+      "place_id": "6655307181794378837"
+    }
+  },
+  {
+    "name": "Pokka Sapporo Kireto Lemon 2700",
+    "kind": "food",
+    "city_hint": "unknown",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Japanese citric acid fatigue-relief drink"
+    ],
+    "source_files": [
+      "IMG_7698.jpg"
+    ],
+    "handles": [
+      "@jenniesuk"
+    ],
+    "fsq": {
+      "fsq_id": "4bacb5e0f964a520df053be3",
+      "name": "Le Monde (ル・モンド)",
+      "category": "Steakhouse",
+      "address": "西新宿1-16-11 (伊藤ビル 1F), 新宿区, 東京都, 160-0023",
+      "lat": 35.689331279943154,
+      "lng": 139.69761818647385,
+      "rating": null
+    }
+  },
+  {
+    "name": "Rainbow Bridge",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Evening"
+    ],
+    "notes": [
+      "Iconic illuminated bridge connecting Odaiba to mainland"
+    ],
+    "source_files": [
+      "IMG_7640.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b56d7f0f964a520c21c28e3",
+      "name": "Rainbow Bridge (レインボーブリッジ)",
+      "category": "Bridge",
+      "address": "海岸3/台場1/有明1 (首都高11号台場線/臨港道路海岸青海線/ゆりかもめ), 港区, 東京都, 108-0022",
+      "lat": 35.636564,
+      "lng": 139.763144,
+      "rating": null
+    },
+    "google": {
+      "title": "Rainbow Bridge",
+      "rating": 4.5,
+      "reviews": 4000,
+      "address": "Minato City, Tokyo, Japan",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.636564,
+        "longitude": 139.763144
+      },
+      "place_id": "2376980447905880495"
+    }
+  },
+  {
+    "name": "Right-on",
+    "kind": "shop",
+    "city_hint": "Japan",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Casual denim and American-style fashion; Japanese denim jeans"
+    ],
+    "source_files": [
+      "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg"
+    ],
+    "handles": [
+      "#JapanTips (Wanderfly / Japan Tips)"
+    ],
+    "fsq": {
+      "fsq_id": "4be93a9ac5220f47f28daaca",
+      "name": "Right-on",
+      "category": "Clothing Store",
+      "address": "東池袋1-9-1 (セイコーサンシャインビルXI), 豊島区, 東京都, 170-0013",
+      "lat": 35.7307534,
+      "lng": 139.7145593,
+      "rating": null
+    },
+    "google": {
+      "title": "Right-on Ikebukuroten",
+      "rating": null,
+      "reviews": null,
+      "address": "Higashiikebukuro, 1 Chome−9−1 セイコーサンシャインビル XI",
+      "phone": "+81 3-5954-2067",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.730753,
+        "longitude": 139.714559
+      },
+      "place_id": "18244276342482298679"
+    }
+  },
+  {
+    "name": "Roppongi",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Marked on the ward map"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "526f7a1411d2a55308623dcb",
+      "name": "EX THEATER ROPPONGI",
+      "category": "Rock Club",
+      "address": "西麻布1-2-9, 港区, 東京都, 106-0031",
+      "lat": 35.661297,
+      "lng": 139.727206,
+      "rating": null
+    }
+  },
+  {
+    "name": "Roppongi Hills",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day 3 area option"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4b0587a6f964a520529e22e3",
+      "name": "Roppongi Hills (六本木ヒルズ)",
+      "category": "Shopping Mall",
+      "address": "六本木6-10-1, 港区, 東京都, 106-6108",
+      "lat": 35.66045,
+      "lng": 139.72923,
+      "rating": null
+    },
+    "google": {
+      "title": "Roppongi Hills",
+      "rating": 4.2,
+      "reviews": 40000,
+      "address": "6 Chome-10-1 Roppongi",
+      "phone": "+81 3-6406-6000",
+      "hours": "Open now",
+      "gps": {
+        "latitude": 35.66074,
+        "longitude": 139.729232
+      },
+      "place_id": "6628738211295053826"
+    }
+  },
+  {
+    "name": "Sanrio Puroland",
+    "kind": "activity",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "#6 in Japan theme parks list; indoor Hello Kitty / Sanrio theme park in Tama, Tokyo - great for young kids"
+    ],
+    "source_files": [
+      "IMG_7619.jpg"
+    ],
+    "handles": [
+      "@musyatravel"
+    ],
+    "fsq": {
+      "fsq_id": "74a53a830a7e45bd23461f8c",
+      "name": "Sanrio Puroland",
+      "category": "Historic and Protected Site",
+      "address": "東京都, 206-8588",
+      "lat": 35.62445,
+      "lng": 139.429141,
+      "rating": null
+    },
+    "google": {
+      "title": "Sanrio Puroland",
+      "rating": null,
+      "reviews": null,
+      "address": "1 Chome-31 Ochiai",
+      "phone": "+81 42-339-1111",
+      "hours": "Closed · Opens 10 AM Tue",
+      "gps": {
+        "latitude": 35.624512,
+        "longitude": 139.429293
+      },
+      "place_id": "17341861633689413717"
+    }
+  },
+  {
+    "name": "Shibuya Parco",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Trendy department store in Shibuya"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4b755d84f964a5206e082ee3",
+      "name": "Shibuya BALL",
+      "category": "Night Club",
+      "address": "宇田川町4-9 (くれたけビル 4F), 渋谷区, 東京都, 150-0042",
+      "lat": 35.66254872299326,
+      "lng": 139.6975565162315,
+      "rating": null
+    },
+    "google": {
+      "title": "Shibuya Parco",
+      "rating": 4.3,
+      "reviews": 8000,
+      "address": "Udagawacho, 15−1 渋谷パルコ・ヒューリックビル B1-10階",
+      "phone": "+81 3-3464-5111",
+      "hours": "Closes soon · 9 PM",
+      "gps": {
+        "latitude": 35.662048,
+        "longitude": 139.698777
+      },
+      "place_id": "1935335699422656795"
+    }
+  },
+  {
+    "name": "Shibuya-ku",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tokyo ward map"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "5db1240443598d00073edbe0",
+      "name": "SHIBUYA SKY",
+      "category": "Scenic Lookout",
+      "address": "渋谷2-24-12 (渋谷スクランブルスクエア 14F/45F-RF), 渋谷区, 東京都, 150-0002",
+      "lat": 35.65831,
+      "lng": 139.70222,
+      "rating": null
+    }
+  },
+  {
+    "name": "Shimamura",
+    "kind": "shop",
+    "city_hint": "Japan",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Local favorite ultra-affordable; cute loungewear sets"
+    ],
+    "source_files": [
+      "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg"
+    ],
+    "handles": [
+      "#JapanTips (Wanderfly / Japan Tips)"
+    ],
+    "fsq": {
+      "fsq_id": "67db7653252cc22e67636eee",
+      "name": "Shimamura (しまむら)",
+      "category": "Women's Store",
+      "address": "中野区, 東京都, 164-0001",
+      "lat": 35.701559,
+      "lng": 139.678263,
+      "rating": null
+    },
+    "google": {
+      "title": "Fashion Center Shimamura Asakusa ROX · 3G shop",
+      "rating": null,
+      "reviews": null,
+      "address": "1 Chome-26-5 Asakusa",
+      "phone": "+81 3-5806-1128",
+      "hours": "Closed · Opens 10:30 AM Tue",
+      "gps": {
+        "latitude": 35.712683,
+        "longitude": 139.793475
+      },
+      "place_id": "11894486857423583961"
+    }
+  },
+  {
+    "name": "Shinjuku Golden Gai",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Evening / nightlife area - not kid-friendly"
+    ],
+    "notes": [
+      "Dense alley of tiny themed bars in Shinjuku; adults-only nightlife"
+    ],
+    "source_files": [
+      "IMG_7720.jpg"
+    ],
+    "handles": [
+      "@simranrluthria"
+    ],
+    "fsq": {
+      "fsq_id": "4beac2d861aca593f61c8400",
+      "name": "Shinjuku Golden-gai (新宿ゴールデン街)",
+      "category": "Neighborhood",
+      "address": "新宿区, 東京都, 160-0021",
+      "lat": 35.693939,
+      "lng": 139.704701,
+      "rating": null
+    },
+    "google": {
+      "title": "Shinjuku Golden-Gai",
+      "rating": 4.3,
+      "reviews": 13000,
+      "address": "Kabukicho, 1 Chome−1−6 あかるい花園 五番街",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.694112,
+        "longitude": 139.704761
+      },
+      "place_id": "8189163570396404367"
+    }
+  },
+  {
+    "name": "Shinjuku Gyoen",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Large garden in Shinjuku"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4b5ff761f964a520f1d129e3",
+      "name": "Shinjuku Gyoen (新宿御苑)",
+      "category": "Garden",
+      "address": "内藤町11, 新宿区, 東京都, 160-0014",
+      "lat": 35.685267844287104,
+      "lng": 139.70952773146564,
+      "rating": null
+    },
+    "google": {
+      "title": "Shinjuku Gyoen National Garden",
+      "rating": 4.6,
+      "reviews": 45000,
+      "address": "11 Naitomachi",
+      "phone": null,
+      "hours": "Closed · Opens 9 AM Tue",
+      "gps": {
+        "latitude": 35.685176,
+        "longitude": 139.710052
+      },
+      "place_id": "7646744610971579015"
+    }
+  },
+  {
+    "name": "Shinjuku Gyoen National Garden",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Day 4 (cherry blossom in season)"
+    ],
+    "notes": [
+      "Large landscaped garden with sakura and pond; family-friendly walk"
+    ],
+    "source_files": [
+      "IMG_7641.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b5ff761f964a520f1d129e3",
+      "name": "Shinjuku Gyoen (新宿御苑)",
+      "category": "Garden",
+      "address": "内藤町11, 新宿区, 東京都, 160-0014",
+      "lat": 35.685267844287104,
+      "lng": 139.70952773146564,
+      "rating": null
+    },
+    "google": {
+      "title": "Shinjuku Gyoen National Garden",
+      "rating": 4.6,
+      "reviews": 45000,
+      "address": "11 Naitomachi",
+      "phone": null,
+      "hours": "Closed · Opens 9 AM Tue",
+      "gps": {
+        "latitude": 35.685176,
+        "longitude": 139.710052
+      },
+      "place_id": "7646744610971579015"
+    }
+  },
+  {
+    "name": "Shinjuku Toho Building (Godzilla Head)",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Day 4"
+    ],
+    "notes": [
+      "Famous Godzilla head statue atop Hotel Gracery in Kabukicho"
+    ],
+    "source_files": [
+      "IMG_7642.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "54826fb0498eb80c2a5d1426",
+      "name": "TOHO Cinemas (TOHOシネマズ 新宿)",
+      "category": "Movie Theater",
+      "address": "歌舞伎町1-19-1 (新宿東宝ビル 3F-6F), 新宿区, 東京都, 160-0021",
+      "lat": 35.695285,
+      "lng": 139.701932,
+      "rating": null
+    },
+    "google": {
+      "title": "Godzilla Head",
+      "rating": 4.4,
+      "reviews": 5000,
+      "address": "1 Chome-19-1 Kabukicho",
+      "phone": null,
+      "hours": "Open now",
+      "gps": {
+        "latitude": 35.695052,
+        "longitude": 139.701912
+      },
+      "place_id": "3278137894263719495"
+    }
+  },
+  {
+    "name": "Shinjuku-ku",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tokyo ward map showing all 23 wards - reference for trip planning"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b5ff761f964a520f1d129e3",
+      "name": "Shinjuku Gyoen (新宿御苑)",
+      "category": "Garden",
+      "address": "内藤町11, 新宿区, 東京都, 160-0014",
+      "lat": 35.685267844287104,
+      "lng": 139.70952773146564,
+      "rating": null
+    }
+  },
+  {
+    "name": "Shinkyo Bridge",
+    "kind": "sight",
+    "city_hint": "Nikko",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Iconic red lacquered bridge - photo spot"
+    ],
+    "source_files": [
+      "IMG_7653.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "4e43474e1495455b10c014a5",
+      "name": "Shinkyo Bridge (神橋)",
+      "category": "Bridge",
+      "address": "上鉢石町 (日光二荒山神社参道), 日光市, 栃木県, 321-1401",
+      "lat": 36.753349,
+      "lng": 139.603998,
+      "rating": null
+    },
+    "google": {
+      "title": "Shinkyō Bridge",
+      "rating": 4.2,
+      "reviews": 10000,
+      "address": "Kamihatsuishimachi",
+      "phone": null,
+      "hours": "Closed · Opens 9:30 AM Tue",
+      "gps": {
+        "latitude": 36.75337,
+        "longitude": 139.604003
+      },
+      "place_id": "4119280645435830247"
+    }
+  },
+  {
+    "name": "Sumida-ku",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tokyo Skytree"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "57087066498e071a46ec4200",
+      "name": "KURAND SAKE MARKET",
+      "category": "Sake Bar",
+      "address": "新宿3-9-9 (ワタセイビル 4F), 新宿区, 東京都, 160-0022",
+      "lat": 35.69123,
+      "lng": 139.70682,
+      "rating": null
+    }
+  },
+  {
+    "name": "Sunshine City",
+    "kind": "shop",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Ikebukuro entertainment complex"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4b0587a1f964a520989d22e3",
+      "name": "Sunshine City (サンシャインシティ)",
+      "category": "Shopping Mall",
+      "address": "東池袋3-1-1, 豊島区, 東京都, 170-8630",
+      "lat": 35.729433409162645,
+      "lng": 139.71868606526226,
+      "rating": null
+    },
+    "google": {
+      "title": "Sunshine 60",
+      "rating": 4.1,
+      "reviews": 35000,
+      "address": "3 Chome-1-2 Higashiikebukuro",
+      "phone": "+81 3-3989-3331",
+      "hours": "Closed · Opens 10 AM Tue",
+      "gps": {
+        "latitude": 35.728971,
+        "longitude": 139.719542
+      },
+      "place_id": "5902843909250360002"
+    }
+  },
+  {
+    "name": "Taito-ku",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Asakusa, Ueno Park"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "57087066498e071a46ec4200",
+      "name": "KURAND SAKE MARKET",
+      "category": "Sake Bar",
+      "address": "新宿3-9-9 (ワタセイビル 4F), 新宿区, 東京都, 160-0022",
+      "lat": 35.69123,
+      "lng": 139.70682,
+      "rating": null
+    }
+  },
+  {
+    "name": "TeamLab Borderless",
+    "kind": "activity",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "booking recommended"
+    ],
+    "notes": [
+      "Borderless digital art at Azabudai Hills"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "65b8a487690bf5175ceaaf37",
+      "name": "teamLab Borderless (チームラボボーダレス)",
+      "category": "Art Museum",
+      "address": "麻布台1-2-4 (ガーデンプラザB B1F), 港区, 東京都, 105-0001",
+      "lat": 35.66226908319263,
+      "lng": 139.74293611943722,
+      "rating": null
+    },
+    "google": {
+      "title": "Teamlab Borderless Museum",
+      "rating": null,
+      "reviews": null,
+      "address": "Parking lot, 5 Chome-4-21 Toranomon",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.662103,
+        "longitude": 139.743261
+      },
+      "place_id": "11371140182125258157"
+    }
+  },
+  {
+    "name": "Tokyo Disney",
+    "kind": "activity",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "booking recommended"
+    ],
+    "notes": [
+      "Day 5 day-trip option"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4b05879af964a520b69b22e3",
+      "name": "Park Hyatt Tokyo (パークハイアット東京)",
+      "category": "Hotel",
+      "address": "西新宿3-7-1-2 (新宿パークタワー), 新宿区, 東京都, 163-1055",
+      "lat": 35.68557476,
+      "lng": 139.6906391,
+      "rating": null
+    },
+    "google": {
+      "title": "Tokyo Disneyland",
+      "rating": 4.6,
+      "reviews": 124000,
+      "address": "1-1 Maihama",
+      "phone": null,
+      "hours": "Closed · Opens 9 AM Tue",
+      "gps": {
+        "latitude": 35.632896,
+        "longitude": 139.880394
+      },
+      "place_id": "16490271119724106699"
+    }
+  },
+  {
+    "name": "Tokyo Disney Resort",
+    "kind": "activity",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "advance tickets recommended"
+    ],
+    "notes": [
+      "Reel ranking #1 Tokyo Disney Resort"
+    ],
+    "source_files": [
+      "IMG_7613.jpg"
+    ],
+    "handles": [
+      "@musyatravel"
+    ],
+    "fsq": {
+      "fsq_id": "5882157203cf2556a1fbb675",
+      "name": "tokyo girls resort",
+      "category": "Lounge",
+      "address": "赤坂2-13-18, 港区, 東京都, 107-0052",
+      "lat": 35.672495,
+      "lng": 139.738297,
+      "rating": null
+    },
+    "google": {
+      "title": "Tokyo Disney Resort",
+      "rating": 4.6,
+      "reviews": 109000,
+      "address": "1-1 Maihama",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.630658,
+        "longitude": 139.88287
+      },
+      "place_id": "15720337363631174495"
+    }
+  },
+  {
+    "name": "Tokyo Disneyland",
+    "kind": "activity",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tokyo highlight"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b59ebdaf964a52002a128e3",
+      "name": "Tokyo Disneyland (東京ディズニーランド)",
+      "category": "Amusement Park",
+      "address": "舞浜1-1, 浦安市, 千葉県, 279-8511",
+      "lat": 35.632922,
+      "lng": 139.880391,
+      "rating": null
+    },
+    "google": {
+      "title": "Tokyo Disneyland",
+      "rating": 4.6,
+      "reviews": 124000,
+      "address": "1-1 Maihama",
+      "phone": null,
+      "hours": "Closed · Opens 9 AM Tue",
+      "gps": {
+        "latitude": 35.632896,
+        "longitude": 139.880394
+      },
+      "place_id": "16490271119724106699"
+    }
+  },
+  {
+    "name": "Tokyo Disneyland / Tokyo DisneySea",
+    "kind": "activity",
+    "city_hint": "Tokyo (Urayasu)",
+    "mentions": 1,
+    "timing_hints": [
+      "pre-book ~1 week in advance"
+    ],
+    "notes": [
+      "List item 8; major kid draw, especially DisneySea (unique to Tokyo)"
+    ],
+    "source_files": [
+      "IMG_7684.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b05879af964a520b69b22e3",
+      "name": "Park Hyatt Tokyo (パークハイアット東京)",
+      "category": "Hotel",
+      "address": "西新宿3-7-1-2 (新宿パークタワー), 新宿区, 東京都, 163-1055",
+      "lat": 35.68557476,
+      "lng": 139.6906391,
+      "rating": null
+    },
+    "google": {
+      "title": "Tokyo DisneySea",
+      "rating": 4.5,
+      "reviews": 107000,
+      "address": "1-13 Maihama",
+      "phone": null,
+      "hours": "Closed · Opens 9 AM Tue",
+      "gps": {
+        "latitude": 35.626711,
+        "longitude": 139.885078
+      },
+      "place_id": "4703760703938833701"
+    }
+  },
+  {
+    "name": "Tokyo Metropolitan Government Building",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Free observation decks in Shinjuku"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4b525412f964a520807727e3",
+      "name": "Tokyo Metropolitan Government Building (東京都庁)",
+      "category": "Government Building",
+      "address": "西新宿2-8-1, 新宿区, 東京都, 163-8001",
+      "lat": 35.6894830237914,
+      "lng": 139.69166368246078,
+      "rating": null
+    },
+    "google": {
+      "title": "Tokyo Metropolitan Government Building",
+      "rating": 4.5,
+      "reviews": 7400,
+      "address": "2 Chome-8-1 Nishishinjuku",
+      "phone": "+81 3-5321-1111",
+      "hours": "Closed · Opens 8:30 AM Tue",
+      "gps": {
+        "latitude": 35.689481,
+        "longitude": 139.691686
+      },
+      "place_id": "17394692006143746536"
+    }
+  },
+  {
+    "name": "Tokyo Metropolitan Government Building Observation Deck",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Day 4 (free; sunset best)"
+    ],
+    "notes": [
+      "Skyline view from Shinjuku skyscraper district; free observatory"
+    ],
+    "source_files": [
+      "IMG_7639.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "4b525412f964a520807727e3",
+      "name": "Tokyo Metropolitan Government Building (東京都庁)",
+      "category": "Government Building",
+      "address": "西新宿2-8-1, 新宿区, 東京都, 163-8001",
+      "lat": 35.6894830237914,
+      "lng": 139.69166368246078,
+      "rating": null
+    },
+    "google": {
+      "title": "Tokyo Metropolitan Government Building | North Observation Deck",
+      "rating": 4.5,
+      "reviews": 8700,
+      "address": "Nishishinjuku, 2 Chome−8−1 Tochomae Station, 45F",
+      "phone": null,
+      "hours": "Closed · Opens 9:30 AM Tue",
+      "gps": {
+        "latitude": 35.689733,
+        "longitude": 139.691656
+      },
+      "place_id": "16551227205725519406"
+    }
+  },
+  {
+    "name": "Toranomon Hills",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Modern business/shopping district near Atago Jinja Shrine"
+    ],
+    "source_files": [
+      "IMG_7704.jpg"
+    ],
+    "handles": [
+      "@mcstops"
+    ],
+    "fsq": {
+      "fsq_id": "51320e17011ce8969c605099",
+      "name": "Toranomon Hills (虎ノ門ヒルズ)",
+      "category": "Business Center",
+      "address": "虎ノ門1-23, 港区, 東京都, 105-6390",
+      "lat": 35.66698938058532,
+      "lng": 139.74918365478516,
+      "rating": null
+    },
+    "google": {
+      "title": "Toranomon Hills Mori Tower",
+      "rating": 3.9,
+      "reviews": 6200,
+      "address": "４号, 1 Chome-23-1 Toranomon",
+      "phone": "+81 3-6406-6192",
+      "hours": "Open · Closes 11 PM",
+      "gps": {
+        "latitude": 35.666827,
+        "longitude": 139.749154
+      },
+      "place_id": "6034271049730277787"
+    }
+  },
+  {
+    "name": "Tsukiji Outer Market",
+    "kind": "food",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day 3 food market"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4b57cb7cf964a5208b4128e3",
+      "name": "Tsukiji Outer Market (築地場外市場)",
+      "category": "Market",
+      "address": "築地4, 中央区, 東京都, 104-0045",
+      "lat": 35.665158933103505,
+      "lng": 139.76979911327362,
+      "rating": null
+    },
+    "google": {
+      "title": "Fish Market Tsukiji Outer Market",
+      "rating": 4.2,
+      "reviews": 56000,
+      "address": "Tsukiji, 4 Chome および６丁目一部",
+      "phone": "+81 3-3541-9444",
+      "hours": null,
+      "gps": {
+        "latitude": 35.66477,
+        "longitude": 139.770252
+      },
+      "place_id": "11704332758705177180"
+    }
+  },
+  {
+    "name": "Ueno",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tokyo must-see"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b0587a1f964a5209b9d22e3",
+      "name": "Ueno Park (上野恩賜公園)",
+      "category": "Park",
+      "address": "上野公園/池之端3, 台東区, 東京都, 110-0007",
+      "lat": 35.71467517039568,
+      "lng": 139.7734871506691,
+      "rating": null
+    },
+    "google": {
+      "title": "Ueno Park",
+      "rating": 4.4,
+      "reviews": 34000,
+      "address": "Uenokoen",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.714756,
+        "longitude": 139.773431
+      },
+      "place_id": "12811393089244390490"
+    }
+  },
+  {
+    "name": "Ueno Ameyoko",
+    "kind": "neighborhood",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Market street under the rail tracks"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4b0587a1f964a5209b9d22e3",
+      "name": "Ueno Park (上野恩賜公園)",
+      "category": "Park",
+      "address": "上野公園/池之端3, 台東区, 東京都, 110-0007",
+      "lat": 35.71467517039568,
+      "lng": 139.7734871506691,
+      "rating": null
+    },
+    "google": {
+      "title": "Ameyoko market",
+      "rating": 4.3,
+      "reviews": 11000,
+      "address": "6 Chome-10-7 Ueno",
+      "phone": "+81 3-3832-5053",
+      "hours": null,
+      "gps": {
+        "latitude": 35.709004,
+        "longitude": 139.774626
+      },
+      "place_id": "7298938795051699978"
+    }
+  },
+  {
+    "name": "Ueno Park",
+    "kind": "sight",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Large park with museums"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ],
+    "fsq": {
+      "fsq_id": "4b0587a1f964a5209b9d22e3",
+      "name": "Ueno Park (上野恩賜公園)",
+      "category": "Park",
+      "address": "上野公園/池之端3, 台東区, 東京都, 110-0007",
+      "lat": 35.71467517039568,
+      "lng": 139.7734871506691,
+      "rating": null
+    },
+    "google": {
+      "title": "Ueno Park",
+      "rating": 4.4,
+      "reviews": 34000,
+      "address": "Uenokoen",
+      "phone": null,
+      "hours": null,
+      "gps": {
+        "latitude": 35.714756,
+        "longitude": 139.773431
+      },
+      "place_id": "12811393089244390490"
+    }
+  },
+  {
+    "name": "Uniqlo",
+    "kind": "shop",
+    "city_hint": "Japan",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Must-buy: Heattech innerwear; simple high-quality basics for all ages"
+    ],
+    "source_files": [
+      "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg"
+    ],
+    "handles": [
+      "#JapanTips (Wanderfly / Japan Tips)"
+    ],
+    "fsq": {
+      "fsq_id": "4c904be5de3d236a04dd6a18",
+      "name": "UNIQLO (ユニクロ)",
+      "category": "Clothing Store",
+      "address": "赤坂9-7-4 (東京ミッドタウン B1F), 港区, 東京都, 107-6290",
+      "lat": 35.665881,
+      "lng": 139.731,
+      "rating": null
+    },
+    "google": {
+      "title": "UNIQLO",
+      "rating": null,
+      "reviews": null,
+      "address": "Marunouchi, 1 Chome−9−1 東京駅構内 1階",
+      "phone": "+81 50-3096-6555",
+      "hours": "Closes soon · 10 PM",
+      "gps": {
+        "latitude": 35.679955,
+        "longitude": 139.767056
+      },
+      "place_id": "11861746513144368840"
+    }
+  },
+  {
+    "name": "WEGO",
+    "kind": "shop",
+    "city_hint": "Japan",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Street-style brand loved by Gen Z; funky graphic tops"
+    ],
+    "source_files": [
+      "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg"
+    ],
+    "handles": [
+      "#JapanTips (Wanderfly / Japan Tips)"
+    ],
+    "fsq": {
+      "fsq_id": "50e971ebe4b005f7aac6c317",
+      "name": "WEGO",
+      "category": "Clothing Store",
+      "address": "新宿3-38-1 (ルミネエスト新宿 6F), 新宿区, 東京都, 160-0022",
+      "lat": 35.691005957877685,
+      "lng": 139.70139758323157,
+      "rating": null
+    },
+    "google": {
+      "title": "Wego Clothing",
+      "rating": null,
+      "reviews": null,
+      "address": "Dogenzaka, 2 Chome−29−1 7F Shibuya 109",
+      "phone": "+81 3-3477-5091",
+      "hours": "Closed · Opens 10 AM Tue",
+      "gps": {
+        "latitude": 35.659653,
+        "longitude": 139.69881
+      },
+      "place_id": "1971404962789470421"
+    }
+  },
+  {
+    "name": "Warner Bros. Studio Tour Tokyo - The Making of Harry Potter",
+    "kind": "activity",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "tickets sell out - book weeks in advance via official site"
+    ],
+    "notes": [
+      "Studio tour in Toshimaen, Nerima - very popular with families"
+    ],
+    "source_files": [
+      "IMG_7622.jpg"
+    ],
+    "handles": [
+      "@musyatravel"
+    ],
+    "fsq": {
+      "fsq_id": "647563fbdf40de235b24fe67",
+      "name": "Warner Bros. Studio Tour Tokyo - The Making of Harry Potter (ワーナー ブラザース スタジオツアー東京 - メイキング・オブ・ハリー・ポッター)",
+      "category": "Amusement Park",
+      "address": "春日町1-1-7, 練馬区, 東京都, 179-0074",
+      "lat": 35.745794,
+      "lng": 139.646299,
+      "rating": null
+    },
+    "google": {
+      "title": "The Making of Harry Potter - Warner Bros. Studio Tour Tokyo",
+      "rating": 4.7,
+      "reviews": 17000,
+      "address": "1 Chome-1-7 Kasugacho",
+      "phone": null,
+      "hours": "Closed · Opens 8:30 AM Tue",
+      "gps": {
+        "latitude": 35.745183,
+        "longitude": 139.646091
+      },
+      "place_id": "9641848556797388443"
+    }
+  },
+  {
+    "name": "Yasaka Pagoda (Hokan-ji)",
+    "kind": "sight",
+    "city_hint": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Five-storey pagoda landmark of Higashiyama"
+    ],
+    "source_files": [
+      "IMG_7657.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ],
+    "fsq": {
+      "fsq_id": "4b5e82d3f964a5204e9129e3",
+      "name": "Daitoku-ji Temple (大徳寺)",
+      "category": "Buddhist Temple",
+      "address": "北区紫野大徳寺町53, 京都市, 京都府, 603-8231",
+      "lat": 35.0438602876853,
+      "lng": 135.74602282512586,
+      "rating": null
+    },
+    "google": {
+      "title": "Hōkan-ji Temple (Yasaka Pagoda)",
+      "rating": 4.6,
+      "reviews": 5800,
+      "address": "清水八坂上町388",
+      "phone": null,
+      "hours": "Closed · Opens 10 AM Sat",
+      "gps": {
+        "latitude": 34.998558,
+        "longitude": 135.779178
+      },
+      "place_id": "12811373430337320265"
+    }
+  },
+  {
+    "name": "Yokohama",
+    "kind": "sight",
+    "city_hint": "Yokohama",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day-trip from Tokyo"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ],
+    "fsq": {
+      "fsq_id": "4b596a4af964a5209e8728e3",
+      "name": "Yokohama Cosmo World (よこはまコスモワールド)",
+      "category": "Amusement Park",
+      "address": "中区新港2-8-1, 横浜市, 神奈川県, 231-0001",
+      "lat": 35.45491962442496,
+      "lng": 139.63696002960205,
+      "rating": null
+    }
+  },
+  {
+    "name": "teamLab Borderless / teamLab Planets",
+    "kind": "activity",
+    "city_hint": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Day 3 (book in advance)"
+    ],
+    "notes": [
+      "Immersive digital art installation (silhouette in light-rain room); paired with Ginza+Odaiba day - kid-friendly"
+    ],
+    "source_files": [
+      "IMG_7637.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ],
+    "fsq": {
+      "fsq_id": "50131b05e4b097af89fe5a54",
+      "name": "B-SIDE LABEL 原宿店",
+      "category": "Design Studio",
+      "address": "神宮前4-25-6 (ハナエビル 1F), 渋谷区, 東京都, 155-0031",
+      "lat": 35.66913597939402,
+      "lng": 139.70806356100687,
+      "rating": null
+    },
+    "google": {
+      "title": "teamLab Planets TOKYO DMM",
+      "rating": null,
+      "reviews": null,
+      "address": "6 Chome-1-16 Toyosu",
+      "phone": null,
+      "hours": "Closes soon · 10 PM",
+      "gps": {
+        "latitude": 35.64908,
+        "longitude": 139.789816
+      },
+      "place_id": "7918542870314997282"
+    }
+  }
+]

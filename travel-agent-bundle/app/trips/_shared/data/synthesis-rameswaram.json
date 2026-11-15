@@ -1,0 +1,85 @@
+{
+  "destination": "Rameswaram",
+  "country": "IN",
+  "lat": 9.29,
+  "lon": 79.31,
+  "generated_at": "2026-05-30T04:48:35.747254+00:00",
+  "items_total": 0,
+  "creators_total": 0,
+  "buckets": {
+    "must_do": [
+      {
+        "name": "Ramanathaswamy Temple",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Rameswaram",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.6",
+          "review_count": "1771",
+          "ranking": "#1 of 38 things to do in Rameswaram",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g303894-d1373128-Reviews-Arulmigu_Ramanatha_Swamy_Temple-Rameswaram_Ramanathapuram_District_Tamil_Nadu.html?m=66827",
+          "city": "Rameswaram"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Pamban Bridge",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Rameswaram",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.6",
+          "review_count": "17",
+          "ranking": "#3 of 6 Boat Tours &amp; Water Sports in Rameswaram",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g303894-d15856568-Reviews-Rameshwaram_Tourism-Rameswaram_Ramanathapuram_District_Tamil_Nadu.html?m=66827",
+          "city": "Rameswaram"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Dhanushkodi Beach",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Rameswaram",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "3.2",
+          "review_count": "5",
+          "ranking": "#31 of 38 things to do in Rameswaram",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g303894-d25183411-Reviews-Old_Dhanushkodi_Railway_Station-Rameswaram_Ramanathapuram_District_Tamil_Nadu.html?m=66827",
+          "city": "Rameswaram"
+        },
+        "is_seed": true
+      }
+    ],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

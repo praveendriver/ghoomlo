@@ -1,0 +1,176 @@
+# Yatra travel-agent influencer watchlist
+#
+# Hand-curated. The corpus_builder.py reads this and fetches recent uploads/posts
+# from each entry. Add/remove entries here; first run resolves channel_ids and
+# caches them under .workspace/.influencer-cache/channels.json.
+#
+# region_focus values are free-form labels used by the scoring step.
+# veg_friendly_signal=true means past content has shown veg/Indian-food preference.
+
+youtube:
+  # India / Asia lens — top priority for veg + family signal
+  - handle: "@tanyakhanijow"
+    region_focus: ["India", "Asia", "Europe", "global"]
+    veg_friendly_signal: true
+    notes: "Hindi/English; family vibe, vegetarian-aware, strong with Asia + Europe"
+  - handle: "@Visa2explore"
+    region_focus: ["India", "Asia"]
+    veg_friendly_signal: true
+    notes: "Hindi; deeply Indian-traveller perspective, food/transport heavy"
+  - handle: "@bruisedpassports"
+    region_focus: ["global"]
+    veg_friendly_signal: true
+    notes: "Indian couple, primarily Instagram but YouTube too"
+  - handle: "@MountainTrekker"
+    region_focus: ["India", "Himalaya"]
+    veg_friendly_signal: true
+    notes: "Hindi; Himalaya/road-trip focus"
+  - handle: "@LarissaDsa"
+    region_focus: ["India", "Asia", "global"]
+    veg_friendly_signal: false
+    notes: "English; Indian creator with global reach"
+  - handle: "@CurlyTales"
+    region_focus: ["India", "UAE", "Asia"]
+    veg_friendly_signal: true
+    notes: "English; food + experience-led"
+  - handle: "@MumbikerNikhil"
+    region_focus: ["India"]
+    veg_friendly_signal: true
+    notes: "Hindi; biking + India-domestic"
+  - handle: "@gauravtanejaa"
+    region_focus: ["India", "global"]
+    veg_friendly_signal: true
+    notes: "Hindi/English; Flying Beast, family vlogs"
+  - handle: "@WanderingVegetables"
+    region_focus: ["global"]
+    veg_friendly_signal: true
+    notes: "English; explicitly vegetarian travel"
+  - handle: "@ShenazTreasury"
+    region_focus: ["India", "global"]
+    veg_friendly_signal: false
+    notes: "English; lifestyle + travel"
+
+  # Global creators — pure-veg signal weak, used for itinerary insight only
+  - handle: "@MarkWiens"
+    region_focus: ["Asia", "global"]
+    veg_friendly_signal: false
+    notes: "English; food-focused, surfaces non-veg context — filter aggressively"
+  - handle: "@drewbinsky"
+    region_focus: ["global"]
+    veg_friendly_signal: false
+    notes: "English; off-beat destinations"
+  - handle: "@KaraandNate"
+    region_focus: ["global"]
+    veg_friendly_signal: false
+    notes: "English; long-form vlogs, family/couple"
+  - handle: "@LostLeBlanc"
+    region_focus: ["Asia", "global"]
+    veg_friendly_signal: false
+    notes: "English; SE Asia + working-traveller angle"
+  - handle: "@HeyNadine"
+    region_focus: ["global"]
+    veg_friendly_signal: false
+    notes: "English; mainstream solo-traveller"
+  - handle: "@evazubeck"
+    region_focus: ["Central Asia", "Middle East", "global"]
+    veg_friendly_signal: false
+    notes: "English; off-beat, Central Asia, Pakistan"
+  - handle: "@TravellingDesi"
+    region_focus: ["global"]
+    veg_friendly_signal: true
+    notes: "English; Indian-origin global traveller"
+  - handle: "@RajivPerera"
+    region_focus: ["Sri Lanka", "Asia"]
+    veg_friendly_signal: false
+    notes: "English; Sri Lanka focus"
+  - handle: "@yesmoyz"
+    region_focus: ["Japan"]
+    veg_friendly_signal: false
+    notes: "English; Japan-resident perspective"
+  - handle: "@JapanByFood"
+    region_focus: ["Japan"]
+    veg_friendly_signal: false
+    notes: "English; Japan food-led, look for vegetarian segments only"
+
+instagram:
+  - handle: "bruisedpassports"
+    region_focus: ["global"]
+    veg_friendly_signal: true
+    notes: "Indian couple, polished imagery"
+  - handle: "tanyakhanijow"
+    region_focus: ["India", "Asia", "global"]
+    veg_friendly_signal: true
+  - handle: "shivya"
+    region_focus: ["India", "global"]
+    veg_friendly_signal: true
+    notes: "Shivya Nath — solo female Indian traveller"
+  - handle: "lakshmisharath"
+    region_focus: ["India"]
+    veg_friendly_signal: true
+    notes: "India heritage + culture"
+  - handle: "thedelhifoodie"
+    region_focus: ["India"]
+    veg_friendly_signal: true
+  - handle: "thefooddee"
+    region_focus: ["India", "global"]
+    veg_friendly_signal: true
+  - handle: "savitascollages"
+    region_focus: ["global"]
+    veg_friendly_signal: false
+  - handle: "doyoutravel"
+    region_focus: ["global"]
+    veg_friendly_signal: false
+  - handle: "muradosmann"
+    region_focus: ["global"]
+    veg_friendly_signal: false
+  - handle: "_shenazaa"
+    region_focus: ["global"]
+    veg_friendly_signal: false
+  - handle: "wanderwithjo"
+    region_focus: ["global"]
+    veg_friendly_signal: true
+  - handle: "thebrokebackpacker"
+    region_focus: ["Asia", "global"]
+    veg_friendly_signal: false
+
+blogs:
+  - url: "https://www.nomadicmatt.com/feed/"
+    name: "Nomadic Matt"
+    region_focus: ["global"]
+    veg_friendly_signal: false
+  - url: "https://breathedreamgo.com/feed/"
+    name: "Breathedreamgo (Mariellen Ward)"
+    region_focus: ["India"]
+    veg_friendly_signal: true
+  - url: "https://bruisedpassports.com/feed/"
+    name: "Bruised Passports"
+    region_focus: ["global"]
+    veg_friendly_signal: true
+  - url: "https://www.theblondeabroad.com/feed/"
+    name: "The Blonde Abroad"
+    region_focus: ["global"]
+    veg_friendly_signal: false
+  - url: "https://theplanetd.com/feed/"
+    name: "The Planet D"
+    region_focus: ["global"]
+    veg_friendly_signal: false
+  - url: "https://www.shivya.com/feed/"
+    name: "The Shooting Star (Shivya Nath)"
+    region_focus: ["India", "global"]
+    veg_friendly_signal: true
+  - url: "https://www.indianbackpacker.com/feed/"
+    name: "Indian Backpacker"
+    region_focus: ["India", "Asia"]
+    veg_friendly_signal: true
+  - url: "https://www.travellingslacker.com/feed/"
+    name: "Travelling Slacker (Jitaditya Narzary)"
+    region_focus: ["India"]
+    veg_friendly_signal: true
+  - url: "https://www.thrillingtravel.in/feed"
+    name: "Thrilling Travel"
+    region_focus: ["India", "global"]
+    veg_friendly_signal: true
+  - url: "https://www.nerdnomads.com/feed"
+    name: "Nerd Nomads"
+    region_focus: ["global"]
+    veg_friendly_signal: false

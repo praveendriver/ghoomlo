@@ -1,0 +1,190 @@
+[
+  {
+    "file": "21eb64d8-4579-44f1-b276-b745368efd5f.jpg",
+    "places": [
+      {"name": "Don Quijote (Donki) Shibuya Mega Store", "kind": "shop", "city": "Tokyo", "timing_hint": "open 24/7, 7 floors", "notes": "Famous for viral snacks, KitKats, and skincare"},
+      {"name": "Uniqlo Ginza Flagship", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "12 floors + Uniqlo Coffee; high-quality basics and Japan-exclusive collabs"},
+      {"name": "GU (Shibuya or Ginza)", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Trendy ultra-affordable fashion, cheaper than Uniqlo"},
+      {"name": "Loft Shibuya", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "6 floors of aesthetic stationery, planners, and lifestyle goods"},
+      {"name": "Hands Shibuya", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Massive multi-zone maze with home gadgets, DIY crafts, and stationery"},
+      {"name": "Pokemon Center DX Nihonbashi", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Largest Pokemon Center in Japan; giant Mewtwo display and every plushie imaginable"},
+      {"name": "ABC-Mart Grand Stage (Shinjuku or Harajuku)", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Japan-exclusive sneakers (Nike, Adidas, NB)"},
+      {"name": "Onitsuka Tiger Shibuya / Ueno Flagship", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Iconic Mexico 66 sneakers; Ueno flagship has better stock"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@checkoutcouple"
+  },
+  {
+    "file": "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+    "places": [
+      {"name": "Meiji Shrine", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Day 1 Harajuku/Shibuya itinerary"},
+      {"name": "Takeshita Street", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Harajuku shopping street"},
+      {"name": "Omotesando Street", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Upscale Harajuku boulevard"},
+      {"name": "Cat Street", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Harajuku/Shibuya area"},
+      {"name": "Shibuya Parco", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Trendy department store in Shibuya"},
+      {"name": "Mega Don Quijote Shibuya", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Day 1 stop"},
+      {"name": "Shibuya Crossing", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "World famous scramble crossing"},
+      {"name": "Hachiko Statue", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Iconic dog statue at Shibuya station"},
+      {"name": "Shibuya Sky", "kind": "sight", "city": "Tokyo", "timing_hint": "booking recommended", "notes": "Observation deck; book ahead"},
+      {"name": "Tokyo Skytree", "kind": "sight", "city": "Tokyo", "timing_hint": "booking recommended", "notes": "Day 2 Asakusa/Ueno itinerary"},
+      {"name": "Sensoji Temple", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Iconic Asakusa temple"},
+      {"name": "Nakamise Street", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Shopping street leading to Sensoji"},
+      {"name": "Kappabashi Street", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Kitchenware/knife district"},
+      {"name": "Ueno Park", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Large park with museums"},
+      {"name": "Ueno Ameyoko", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Market street under the rail tracks"},
+      {"name": "Akihabara", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Anime/electronics district"},
+      {"name": "Tsukiji Outer Market", "kind": "food", "city": "Tokyo", "timing_hint": null, "notes": "Day 3 food market"},
+      {"name": "Ginza", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Upscale shopping district"},
+      {"name": "TeamLab Planets", "kind": "activity", "city": "Tokyo", "timing_hint": "booking recommended", "notes": "Immersive digital art museum in Odaiba"},
+      {"name": "TeamLab Borderless", "kind": "activity", "city": "Tokyo", "timing_hint": "booking recommended", "notes": "Borderless digital art at Azabudai Hills"},
+      {"name": "Odaiba", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Bayside entertainment district"},
+      {"name": "Azabudai Hills", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "New mixed-use complex"},
+      {"name": "Tokyo Tower", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Iconic red tower"},
+      {"name": "Roppongi Hills", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Day 3 area option"},
+      {"name": "Sunshine City", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Ikebukuro entertainment complex"},
+      {"name": "Animate Flagship Ikebukuro", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Anime/manga megastore"},
+      {"name": "Tokyo Metropolitan Government Building", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Free observation decks in Shinjuku"},
+      {"name": "Shinjuku Gyoen", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Large garden in Shinjuku"},
+      {"name": "Omoide Yokocho", "kind": "food", "city": "Tokyo", "timing_hint": null, "notes": "Memory Lane / Piss Alley izakaya street"},
+      {"name": "Kabukicho", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Shinjuku entertainment district"},
+      {"name": "Golden Gai Bars", "kind": "food", "city": "Tokyo", "timing_hint": null, "notes": "Tiny bar alleys in Shinjuku"},
+      {"name": "Tokyo Disney", "kind": "activity", "city": "Tokyo", "timing_hint": "booking recommended", "notes": "Day 5 day-trip option"},
+      {"name": "Mount Fuji", "kind": "sight", "city": "Hakone", "timing_hint": null, "notes": "Day-trip option from Tokyo"},
+      {"name": "Kamakura", "kind": "sight", "city": "Kamakura", "timing_hint": null, "notes": "Day-trip option from Tokyo"},
+      {"name": "Hakone", "kind": "sight", "city": "Hakone", "timing_hint": null, "notes": "Onsen/Fuji day-trip option"},
+      {"name": "Kawagoe", "kind": "sight", "city": "Kawagoe", "timing_hint": null, "notes": "Edo-period little Edo day-trip"},
+      {"name": "Mt Takao", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Hiking day-trip option"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@japantravelbasics"
+  },
+  {
+    "file": "404d8e38-1880-4e06-88a5-1544d6fc0a2c.jpg",
+    "places": [
+      {"name": "Onitsuka Tiger Nippon Made flagship", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Premium Nippon Made line store; reel compares Mexico 66 vs Nippon Made pricing"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@theninadaniels"
+  },
+  {
+    "file": "4823ee3b-6dbc-4d75-94f4-59c861ba89b1.jpg",
+    "places": [
+      {"name": "Japanese pharmacy / drugstore", "kind": "shop", "city": "Tokyo", "timing_hint": "consult pharmacist first", "notes": "Constipation guide listing OTC products: Strong Wakamoto, Daichi n Kampo Benpiyaku, Colac II, Kyobashu Mg Oxide"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@itsgracechin"
+  },
+  {
+    "file": "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+    "places": [
+      {"name": "Shibuya", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo must-see"},
+      {"name": "Shinjuku", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo must-see"},
+      {"name": "Ginza", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo must-see"},
+      {"name": "Asakusa", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo must-see"},
+      {"name": "Ueno", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo must-see"},
+      {"name": "Akihabara", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo must-see"},
+      {"name": "Nakameguro", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Trendy canal-side area"},
+      {"name": "Daikanyama", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Upscale neighborhood"},
+      {"name": "Ikebukuro", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo must-see"},
+      {"name": "TeamLab Planets", "kind": "activity", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo highlight"},
+      {"name": "Shibuya Sky", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo highlight"},
+      {"name": "Tokyo Disneyland", "kind": "activity", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo highlight"},
+      {"name": "Tokyo DisneySea", "kind": "activity", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo highlight"},
+      {"name": "Ghibli Museum", "kind": "activity", "city": "Tokyo", "timing_hint": "advance tickets required", "notes": "Tokyo highlight"},
+      {"name": "Gundam Statue (Odaiba)", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo highlight"},
+      {"name": "Pokemon Center Mega Tokyo", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo highlight"},
+      {"name": "Osaka Castle", "kind": "sight", "city": "Osaka", "timing_hint": null, "notes": "Osaka must-see"},
+      {"name": "Dotonbori", "kind": "food", "city": "Osaka", "timing_hint": null, "notes": "Osaka food/nightlife street"},
+      {"name": "Kuromon Market", "kind": "food", "city": "Osaka", "timing_hint": null, "notes": "Osaka must-see"},
+      {"name": "Shinsekai", "kind": "neighborhood", "city": "Osaka", "timing_hint": null, "notes": "Old downtown area"},
+      {"name": "Tsutenkaku Tower", "kind": "sight", "city": "Osaka", "timing_hint": null, "notes": "Shinsekai landmark"},
+      {"name": "Umeda Sky Building", "kind": "sight", "city": "Osaka", "timing_hint": null, "notes": "Floating garden observatory"},
+      {"name": "Abeno Harukas", "kind": "sight", "city": "Osaka", "timing_hint": null, "notes": "Tallest building observatory"},
+      {"name": "Tennoji Park", "kind": "sight", "city": "Osaka", "timing_hint": null, "notes": "Osaka must-see"},
+      {"name": "Mt. Fuji", "kind": "sight", "city": "Hakone", "timing_hint": null, "notes": "Day-trip from Tokyo"},
+      {"name": "Hakone", "kind": "sight", "city": "Hakone", "timing_hint": null, "notes": "Day-trip from Tokyo"},
+      {"name": "Nikko", "kind": "sight", "city": "Nikko", "timing_hint": null, "notes": "Day-trip from Tokyo"},
+      {"name": "Kamakura", "kind": "sight", "city": "Kamakura", "timing_hint": null, "notes": "Day-trip from Tokyo - Great Buddha"},
+      {"name": "Yokohama", "kind": "sight", "city": "Yokohama", "timing_hint": null, "notes": "Day-trip from Tokyo"},
+      {"name": "Fushimi Inari Shrine", "kind": "sight", "city": "Kyoto", "timing_hint": null, "notes": "Iconic torii path"},
+      {"name": "Kinkaku-ji Temple", "kind": "sight", "city": "Kyoto", "timing_hint": null, "notes": "Golden Pavilion"},
+      {"name": "Kiyomizu-dera Temple", "kind": "sight", "city": "Kyoto", "timing_hint": null, "notes": "Hillside temple"},
+      {"name": "Ginkaku-ji Temple", "kind": "sight", "city": "Kyoto", "timing_hint": null, "notes": "Silver Pavilion"},
+      {"name": "Arashiyama", "kind": "sight", "city": "Kyoto", "timing_hint": null, "notes": "Bamboo grove area"},
+      {"name": "Bamboo Grove", "kind": "sight", "city": "Kyoto", "timing_hint": null, "notes": "Arashiyama bamboo path"},
+      {"name": "Gion District", "kind": "neighborhood", "city": "Kyoto", "timing_hint": null, "notes": "Geisha district"},
+      {"name": "Heian Shrine", "kind": "sight", "city": "Kyoto", "timing_hint": null, "notes": "Kyoto must-see"},
+      {"name": "Nara", "kind": "sight", "city": "Nara", "timing_hint": null, "notes": "Day-trip from Kyoto - deer park"},
+      {"name": "Kobe", "kind": "sight", "city": "Kobe", "timing_hint": null, "notes": "Day-trip from Kyoto"},
+      {"name": "Hiroshima", "kind": "sight", "city": "Hiroshima", "timing_hint": null, "notes": "Day-trip from Kyoto"},
+      {"name": "Miyajima", "kind": "sight", "city": "Miyajima", "timing_hint": null, "notes": "Floating torii day-trip"},
+      {"name": "Nagoya", "kind": "sight", "city": "Nagoya", "timing_hint": null, "notes": "Day-trip from Kyoto"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "Japan Must-See visual checklist"
+  },
+  {
+    "file": "81b0f910-092d-4ee9-ada8-838691caeb01.jpg",
+    "places": [
+      {"name": "FamilyMart", "kind": "food", "city": "Tokyo", "timing_hint": null, "notes": "Konbini must-try foods: Famichiki fried chicken, Yakitori skewers, Oden, Tuna Mayo Onigiri, Tamago Sando, Fried Chicken & Tartar Bento, Melonpan, Souffle Pudding, Choco Monaka Jumbo, Milk Custard Cream Puff"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@wanderinjapan1"
+  },
+  {
+    "file": "83668700-30ba-491a-949a-dcbdfcc9283f.jpg",
+    "places": [
+      {"name": "Lawson", "kind": "food", "city": "Tokyo", "timing_hint": null, "notes": "Konbini must-try foods at Lawson: Karaage-kun fried chicken, Uchi Cafe Premium Roll Cake, Tamago Sando, L-Chiki, Baschee Basque Cheesecake, Onigiri (tuna mayo / salmon), Nikuman pork bun, Hokkaido Kitaakari Beef Croquette, Premium Fruit Sandwich, Mochi Puyo"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@wanderinjapan1"
+  },
+  {
+    "file": "93086c80-c0b7-4822-a200-1fb8ad9d4933.jpg",
+    "places": [
+      {"name": "Kumargic Eye Cream (Hada Riki Medi)", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Must-buy item from Japan drugstore - under-eye concentrated treatment"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@twoontheglobe"
+  },
+  {
+    "file": "974b3027-af21-4823-b5f8-c5741006d78f.jpg",
+    "places": [
+      {"name": "7-Eleven Japan", "kind": "food", "city": "Tokyo", "timing_hint": null, "notes": "Konbini must-try foods at 7-Eleven: Tamago Sando, Onigiri, NanaChiki Fried Chicken, Ohayo Brulee Ice Cream, Japanese Bento Meals, Nikuman pork bun, Fruit Sandwiches, Fruit Smoothie, Melon Pan, Matcha Desserts; items mostly Y100-Y600"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@wanderinjapan1"
+  },
+  {
+    "file": "IMG_7610.jpg",
+    "places": [
+      {"name": "Mikami Shrine (Mikami Jinja)", "kind": "sight", "city": "Kyoto", "timing_hint": "open 24 hours", "notes": "Shinto shrine for hair growth at 10 Sagaogurayama Tabuchiyamacho, Ukyo Ward, Kyoto 616-8394; rated 4.3"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@ankit_purohit_japan / mikami-jinya-kyoto.com"
+  },
+  {
+    "file": "IMG_7612.jpg",
+    "places": [
+      {"name": "Koami Shrine (Koami Jinja)", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Money-washing shrine in Nihonbashi - wash your money here for good fortune; recommended for next Tokyo trip"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@joyceee.tan / @travelwithjoyceee"
+  },
+  {
+    "file": "IMG_7613.jpg",
+    "places": [
+      {"name": "Tokyo Disney Resort", "kind": "activity", "city": "Tokyo", "timing_hint": "advance tickets recommended", "notes": "Reel ranking #1 Tokyo Disney Resort"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@musyatravel"
+  },
+  {
+    "file": "IMG_7614.jpg",
+    "places": [
+      {"name": "Tokyo DisneySea", "kind": "activity", "city": "Tokyo", "timing_hint": "advance tickets recommended", "notes": "Recommended for older kids and adults; nautical/exploration-themed Disney park unique to Tokyo"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@musyatravel"
+  }
+]

@@ -1,0 +1,1178 @@
+{
+  "generated_at": "2026-11-01T02:36:43.604200+00:00",
+  "mode": "full",
+  "items": [
+    {
+      "id": "yt:0ZW2sxIFFjI",
+      "source": "youtube",
+      "creator": "@Visa2explore",
+      "url": "https://www.youtube.com/watch?v=0ZW2sxIFFjI",
+      "title": "Ep 3 Ella to Nuwara Eliya on Train, Is it worth it | 30 Dish Village lunch , Minneriya Jungle Safari",
+      "published": "2026-10-18T03:30:39Z",
+      "destinations": [
+        {
+          "name": "Kandy",
+          "country": "LK",
+          "lat": 7.29,
+          "lon": 80.64,
+          "relevance_score": 11,
+          "matched_alias": "Nuwara Eliya"
+        },
+        {
+          "name": "Colombo",
+          "country": "LK",
+          "lat": 6.93,
+          "lon": 79.86,
+          "relevance_score": 5,
+          "matched_alias": "Sri Lanka"
+        }
+      ],
+      "places_mentioned": [
+        {
+          "name": "Gayathri Peetham Temple",
+          "city": "Kandy",
+          "sentiment": "neutral",
+          "quote": "t's go inside. Food would take another 15-20 minutes to be ready. So, I visited Gayathri Peetham Temple. I offered prayers to Ganesh Lorda. There is an idol of Gayatri Devi ji. Mantras are being chanted here. This place has a positive vibe."
+        }
+      ],
+      "transcript_lang": "hi",
+      "translation_engine": "argos",
+      "transcript_en_excerpt": "Have you ever thought why many elephants gather...at the same place in Sri Lanka in August? Imagine a buffet with 30 items, each tasting equally good! You will end up getting confused right? Have you tried a day spent a day at the ancient capital Polonnaruwa? How beautifully the rock has been carved into a Why are tourists crazy for Nuwara Eliya to Ella Train? You will find all the questions in this video. Copyright © 2017 Visa2explore.com. All rights reserved. This is a glass window, so you can easily see outside. But for fresh air, you need a second class ticket. It’s interesting to stand at the gate and see the curves. You can also enjoy the valley from here. You can get off at some stations too. You can observe the scene while the train is at halt and board again. Ambewala railway station. On stepping out I felt the cool breeze. There are a lot of dairy farms here. People are here to visit dairy farm, do sightseeing and back. They will go back to Nuwara Eliya as few stay back here. You can stay here at night. We have 2 minutes of this journey left. We will reach Nanu Oya, near Nuwara Eliya. These tea plantations look beautiful! It’s wonderful to see so many tea plantations. Tha",
+      "veg_friendly": true,
+      "tags": [
+        "monsoon",
+        "veg-creator"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/0ZW2sxIFFjI/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.75,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:XYYrKZEUDag",
+      "source": "youtube",
+      "creator": "@drewbinsky",
+      "url": "https://www.youtube.com/watch?v=XYYrKZEUDag",
+      "title": "People Pay $700 a Month to Live Like This in Paris",
+      "published": "2026-10-17T10:51:37Z",
+      "destinations": [
+        {
+          "name": "Paris",
+          "country": "FR",
+          "lat": 48.86,
+          "lon": 2.35,
+          "relevance_score": 8,
+          "matched_alias": "Paris"
+        },
+        {
+          "name": "New York",
+          "country": "US",
+          "lat": 40.71,
+          "lon": -74.01,
+          "relevance_score": 3,
+          "matched_alias": "New York"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "translation_engine": "passthrough",
+      "transcript_en_excerpt": "If this isn't tight living, I don't know what is. This is my bed, toilet, shower, and sink. In Paris, more than 50,000 people are squeezing their lives into apartments smaller than your closet. Some of them are so tiny they're illegal to rent out. These rooftop rooms were built in the 1800s for the servants of rich tenants down below. But today, they are mostly occupied by students and young professionals who want to save money to live in Paris. In this video, I'm traveling across the French capital to meet the people living in these tiny homes, to see how they eat, how they sleep, and what they sacrifice to stay here. First up, I'm meeting Ulysses, who claims he lives in the smallest apartment in the entire city. How many people live in this building? A lot! It is huge. I mean, you can see like, it goes down, and it's super tall and it's like super wide. Yeah, yeah. So it could be... Whoaa! And with families, maybe 1,000? I don't know. But this is a nice little corridor. I think it's sweet. But the moment you walk in here, it is, like, insanely quiet. It's beautiful. Yeah, it cuts off the noise quite well. Yeah. Yeah. We're actually right here. This is like the back doors. So, the",
+      "veg_friendly": false,
+      "tags": [
+        "family",
+        "winter",
+        "monsoon"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/XYYrKZEUDag/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.7,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:f9MzCYWnZG4",
+      "source": "youtube",
+      "creator": "@Visa2explore",
+      "url": "https://www.youtube.com/watch?v=f9MzCYWnZG4",
+      "title": "Ep 2 Exploring Ella, Sri Lanka | Nine Arch Bridge | Little Adam’s Peak | Nil Diya Pokuna- Blue water",
+      "published": "2026-10-11T03:30:17Z",
+      "destinations": [
+        {
+          "name": "Kandy",
+          "country": "LK",
+          "lat": 7.29,
+          "lon": 80.64,
+          "relevance_score": 8,
+          "matched_alias": "Ella"
+        },
+        {
+          "name": "Colombo",
+          "country": "LK",
+          "lat": 6.93,
+          "lon": 79.86,
+          "relevance_score": 3,
+          "matched_alias": "Sri Lanka"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "hi",
+      "translation_engine": "argos",
+      "transcript_en_excerpt": "Can you imagine there being a cave underground....and to reach there you have to cross big boulders? It’s pitch dark. You keep walking and coming across a After half an hour. You can also swim in that pond. Shocking Right? You will see this video in this video. We’ll explore and show you the Nine Arch Bridge. Copyright © 2017 Harish Bali. All rights reserved. We are here to visit Little Adam’s Peak. It’s taken me half an hour to climb the mountain and reach here. I’ll reach the viewpoint in 2-4 minutes. I’m at such a great height. I can see the road far away there. There is a valley view in-between. These mountains look beautiful. The clouds are floating amidst these mountains. I'm seeing this view from a different mountain. There isn't much difference in the view though. It's just an experience of being on a different mountain. This is the beauty of Ella, to enjoy nature. From where we took an auto. It costs us LKR 500. By walking it would have taken 15 minutes. There were tea gardens on the way too. From the base point where there are about 470 steps. You can do some adventure activities here too. The activities start from 9am. This is a low difficulty hike. This is how the place",
+      "veg_friendly": true,
+      "tags": [
+        "monsoon",
+        "veg-creator"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/f9MzCYWnZG4/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.7,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:229EbrJKt9w",
+      "source": "youtube",
+      "creator": "@Visa2explore",
+      "url": "https://www.youtube.com/watch?v=229EbrJKt9w",
+      "title": "Ep 1 - Kandy to Nuwara Eliya, Sri Lanka Tour | Seetha Amman Temple | Ramboda Falls",
+      "published": "2026-10-04T03:30:10Z",
+      "destinations": [
+        {
+          "name": "Kandy",
+          "country": "LK",
+          "lat": 7.29,
+          "lon": 80.64,
+          "relevance_score": 11,
+          "matched_alias": "Kandy"
+        },
+        {
+          "name": "Colombo",
+          "country": "LK",
+          "lat": 6.93,
+          "lon": 79.86,
+          "relevance_score": 8,
+          "matched_alias": "Colombo"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "hi",
+      "translation_engine": "argos",
+      "transcript_en_excerpt": "Namaskar Friends! Welcome to Visa2explore! I am your host, Harish Bali. This is the start of my Sri Lanka tour. I’m in Kandy, 114KM away from Colombo. I’m starting the day standing beside Kandy Lake. You’ll visit this lake at least 3-5 times a day when in Kandy. Most of the tourist places are near this lake. I’ll have local Sri Lankan breakfast at Sahas Uyana. After that, we will explore Kandy. For breakfast, we are going to Hela Bojun. You can eat local food based on the time of the day you come. For breakfast I have taken Valithalapa, Lavariya, Naran Kavum and Kiri Bhaat, also known as Milk Rice. It is a popular dish here. Naran Kavum is prepared during festivals here. Since it was available here, I thought of tasting it. There is a Coconut stuffing inside. The outer coating is of rice flour with turmeric. It is fried with a pinch of salt in it, and sweet inside. They have two types of milk rice, one with Moong Dal. The other one is without the Moong Dal. I chose this variant. I'm having this combination first time, rice with coconut milk. Having it on its own doesn't have a great taste. The dip has chilli in it. I liked this combination as a Part of local breakfast This is the s",
+      "veg_friendly": true,
+      "tags": [
+        "first-timer",
+        "veg-creator"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/229EbrJKt9w/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.7,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://thrillingtravel.in/2-days-in-seville-itinerary-guide.html",
+      "source": "blog",
+      "creator": "Thrilling Travel",
+      "url": "https://thrillingtravel.in/2-days-in-seville-itinerary-guide.html",
+      "title": "How to plan a 2 days in Seville itinerary  – includes top things to do , stay and other insider tips",
+      "published": "2026-05-21T14:39:57+00:00",
+      "destinations": [
+        {
+          "name": "Seville",
+          "country": "ES",
+          "lat": 37.39,
+          "lon": -5.99,
+          "relevance_score": 8,
+          "matched_alias": "Seville"
+        },
+        {
+          "name": "Madrid",
+          "country": "ES",
+          "lat": 40.42,
+          "lon": -3.7,
+          "relevance_score": 3,
+          "matched_alias": "Madrid"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "The Royal Alcázar's palaces and the Cathedral's majestic dome,\nThe labyrinthine lanes of Barrio Santa Cruz that make you feel at home,\nOrange blossom streets and Moorish sunsets nothing short of extraordinary,\nYou can live it all through this perfect 2 days in Seville itinerary.\nExplore the the 4th largest city of Spain with this travel guide to Seville. Discover the top things to do in Seville in 2 days, with insider tips on where to stay, what to eat and the ideal time to visit. Get suggestions on how to plan 3 days or just 1 day in Seville.\nThe romantic spell of Seville had ensured that I include this Andalusian destination in my Spain itinerary. The city came with a reputation of vibrant cultural experiences, architectural extravaganza, and tons and tons of stories. Having spent 48 hours in Seville, I can totally attest to this reputation and assure you that you are in for a treat if you are planning to visit Seville.\nSeville was like a gateway to the hotpot of cultures Andalucia is known for. The blend of Islamic culture with its Spanish roots is so evident in every part of the city and makes it unique — the scent of orange blossoms in the air, the sound of flamenco drifting o",
+      "veg_friendly": true,
+      "tags": [
+        "monsoon",
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.7,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:DUGB_7Hs_ew",
+      "source": "youtube",
+      "creator": "@JapanByFood",
+      "url": "https://www.youtube.com/watch?v=DUGB_7Hs_ew",
+      "title": "A Hidden Food Town ONLY Locals Know! (1h from Tokyo) | Japan byFood",
+      "published": "2026-10-12T01:00:07Z",
+      "destinations": [
+        {
+          "name": "Tokyo",
+          "country": "JP",
+          "lat": 35.68,
+          "lon": 139.77,
+          "relevance_score": 8,
+          "matched_alias": "Tokyo"
+        }
+      ],
+      "places_mentioned": [
+        {
+          "name": "Shinjuku",
+          "city": "Tokyo",
+          "sentiment": "neutral",
+          "quote": "Looks like really silence. This is still in Tokyo, believe it not. Ozaku is just around an hour to Shinjuku Station. And I just want to train. My tour guide job is around Tokyo. So, this place is like a my healing places, and also my hometown, too. So, I'm born and raised in here around 26 or 7 year",
+          "lat": 35.6938,
+          "lon": 139.7036
+        },
+        {
+          "name": "Shibuya",
+          "city": "Tokyo",
+          "sentiment": "neutral",
+          "quote": "tasting or Japanese whiskey tasting. And also we have bar crawl, bar hopping around Shinjuku area, Shibuya. So, yeah. My liver is already dead, but when I drink, my liver is going to reborn. So, like this. Thank you so much. That was So, we have eight tours and a most of seven is going to be drinkin",
+          "lat": 35.658,
+          "lon": 139.7016
+        }
+      ],
+      "transcript_lang": "en",
+      "translation_engine": "passthrough",
+      "transcript_en_excerpt": "Hi, my name is Zane Azumi. I'm a tour guide, and this is Hidden Bikes. >> [music] >> You're going to feel like Disneyland in here. The night is getting started. Yes, finally. This is Hamura City. That is Ozaku Station. Looks like really silence. This is still in Tokyo, believe it not. Ozaku is just around an hour to Shinjuku Station. And I just want to train. My tour guide job is around Tokyo. So, this place is like a my healing places, and also my hometown, too. So, I'm born and raised in here around 26 or 7 years in here. Let me show one photo. I'm >> [music] >> standing over here, like that, you know? Yeah, a lot of people thinking about like countryside, like it looks like more for farm or nature places. But kind of like this place is also like a more business-ish. They have a lot of places like a restaurant or bar. I don't have any struggle to buy something or eat something. So, yeah, I'm really comfortable [music] for here this places. So, yeah, that's why I'm still living here. Right now, we going to heading my elementary school. I have a lot of memory in here. So, this [music] is my elementary school's graduation album. This is me. Also, I have a one thing I want to show of",
+      "veg_friendly": false,
+      "tags": [
+        "first-timer",
+        "monsoon"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/DUGB_7Hs_ew/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.65,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:weMvxB2_Jnk",
+      "source": "youtube",
+      "creator": "@tanyakhanijow",
+      "url": "https://www.youtube.com/watch?v=weMvxB2_Jnk",
+      "title": "Spend your next long weekend in Singapore!",
+      "published": "2026-10-23T12:45:28Z",
+      "destinations": [
+        {
+          "name": "Singapore",
+          "country": "SG",
+          "lat": 1.35,
+          "lon": 103.82,
+          "relevance_score": 8,
+          "matched_alias": "Singapore"
+        }
+      ],
+      "places_mentioned": [
+        {
+          "name": "Merlion Park",
+          "city": "Singapore",
+          "sentiment": "neutral",
+          "quote": "irport, and my first day's  experience was just great. Early  morning I went to Merlion Park at  sunrise time, and after seeing the  Merlion statue, I went to Chinatown. To  see the famous Buddha Tooth Relic  Temple. Then Gardens by the Bay"
+        }
+      ],
+      "transcript_lang": "en",
+      "translation_engine": "passthrough",
+      "transcript_en_excerpt": "If you are planning for a long weekend,  come to Singapore. Let me convince you  why. The visa process is not  complicated. And so many direct flights  from Chennai, Kochi, Delhi, Mumbai,  Bangalore, Hyderabad. And you can do so  much in just two to three days. Sentosa  Island for theme parks like Universal,  beautiful Gardens by the Bay, Marina  Bay Sands hotel, Clarke Quay, Chinatown , Changi Airport, and my first day's  experience was just great. Early  morning I went to Merlion Park at  sunrise time, and after seeing the  Merlion statue, I went to Chinatown. To  see the famous Buddha Tooth Relic  Temple. Then Gardens by the Bay where  you can walk as much as you want. But  the Flower Dome, Skyway, and Cloud  Forest are ticketed. And among the free  locations, I liked Dragonfly Lake the  best. It is just so peaceful, and among  the ticketed attractions, I found the  Cloud Forest amazing. In the evening,  either stay here and watch the free  light and sound show at the Supertree  Grove. But to end the day, I went to  the top of Marina Bay Sands and it was  the most spectacular view ever. And  after this, don't miss the light and  water show of Marina Bay Sands, which  is also fre",
+      "veg_friendly": true,
+      "tags": [
+        "veg-creator"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/weMvxB2_Jnk/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.6,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:QzoyXoUdSw8",
+      "source": "youtube",
+      "creator": "@Visa2explore",
+      "url": "https://www.youtube.com/watch?v=QzoyXoUdSw8",
+      "title": "Sri Lanka - live from Trincomalee- eastern coast",
+      "published": "2026-09-12T02:01:21Z",
+      "destinations": [
+        {
+          "name": "Colombo",
+          "country": "LK",
+          "lat": 6.93,
+          "lon": 79.86,
+          "relevance_score": 8,
+          "matched_alias": "Colombo"
+        }
+      ],
+      "places_mentioned": [
+        {
+          "name": "Nara Park",
+          "city": "Colombo",
+          "sentiment": "neutral",
+          "quote": "ant Safari. At least 60-70 elephants together to see Open Grassland Pay. The Hill Station is here’s Nara Elia. As we have a hill station like Shimla Musoorie, there is no height. I need a sweater to me once I went to the night. So I bought the sweater from there again. So how many days we have done?",
+          "lat": 34.6851,
+          "lon": 135.843
+        }
+      ],
+      "transcript_lang": "hi",
+      "translation_engine": "argos",
+      "transcript_en_excerpt": "Now we’ve come to the East Coast here. This place speaks of trincho malay. I stand on the side between the seaside. Time is 7:30 pm in the morning. I think I’m live on YouTube Pay Harish Bali Travels for the first time. I never live before today. I had a subscriber said that you go somewhere and you have a time of 10 minutes. So I said, Let’s try it. This is the beach side where I stand and front is our hotel. In 2 minutes, the hotel shows you from the outside. At the moment the setting here is understood that the subussion is by the middle. When I was coming here, I was uttered by a lot of people that you did not want to live. In the middle of the subputy, I received the booking here. Now, let’s see if we don’t like to come to South India in June, we don’t like to come to South India as the rains are rainy in June August. From November to Jan and the time it’s on July and September is a peak time to visit East Coast Sri Lanka. Let us understand that we saw Heritage Locations. Also Heritage location is a place. went there. Then we went to Minaria and made Elephant Safari. At least 60-70 elephants together to see Open Grassland Pay. The Hill Station is here’s Nara Elia. As we have a",
+      "veg_friendly": true,
+      "tags": [
+        "first-timer",
+        "monsoon",
+        "veg-creator"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/QzoyXoUdSw8/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.6,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:XAHd9xHjWfk",
+      "source": "youtube",
+      "creator": "@tanyakhanijow",
+      "url": "https://www.youtube.com/watch?v=XAHd9xHjWfk",
+      "title": "Is the $500 Disney Cruise worth it? I tested 30 experiences | Singapore",
+      "published": "2026-10-30T12:30:06Z",
+      "destinations": [
+        {
+          "name": "Singapore",
+          "country": "SG",
+          "lat": 1.35,
+          "lon": 103.82,
+          "relevance_score": 3,
+          "matched_alias": "Singapore"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "translation_engine": "passthrough",
+      "transcript_en_excerpt": "30 experiences that I tried on Disney Adventure. First, infinity pool with a view. The world's longest roller coaster on a cruise ship. Unlimited soft serves, pizzas, and all-you-can-eat food at so many of their quick-service restaurants. Broadway-style shows that felt surreal. Casual meet-ups with timeless Disney characters, watching movies by the pool or on a full-fledged cinema screen. Voyages at sea which feel very magical. 10-on-10 sunset views straight from the balcony, Toy Story-themed water slides that brought out my inner child, and that’s just nine out of the 30 experiences that I tried, so go catch the full list in my latest YouTube video .",
+      "veg_friendly": true,
+      "tags": [
+        "veg-creator"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/XAHd9xHjWfk/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:sl-D2uHAhAc",
+      "source": "youtube",
+      "creator": "@drewbinsky",
+      "url": "https://www.youtube.com/watch?v=sl-D2uHAhAc",
+      "title": "The Truth About Paris’ Tiniest Apartments",
+      "published": "2026-10-28T14:00:33Z",
+      "destinations": [
+        {
+          "name": "Paris",
+          "country": "FR",
+          "lat": 48.86,
+          "lon": 2.35,
+          "relevance_score": 4,
+          "matched_alias": "Paris"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "translation_engine": "passthrough",
+      "transcript_en_excerpt": "I found apartments in Paris that were never meant to be homes. >> If this isn't tight living, I don't know what is. >> Over 100 years ago, these spaces were built on the top floors as tiny rooms for the servants of the rich families living below. Today, 50,000 people pay around $600 a month to rent them. They're so tight and there's so little airflow that in summer [music] they turn into full-on saunas. >> When they say tight living spaces, this is about as tight as it gets. >> So, people stack their beds on top of shelves, hide showers behind a curtain, and fold tables into the wall just to have room to stand. [music] >> This is my bed, toilet, shower, and sink. >> But, everyone who lives there said it's 100% worth",
+      "veg_friendly": false,
+      "tags": [
+        "summer"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/sl-D2uHAhAc/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:LPHK_r4iVQg",
+      "source": "youtube",
+      "creator": "@JapanByFood",
+      "url": "https://www.youtube.com/watch?v=LPHK_r4iVQg",
+      "title": "Touring Tokyo Backstreets With a Local Guide | NEW VIDEO OUT!",
+      "published": "2026-10-26T03:00:03Z",
+      "destinations": [
+        {
+          "name": "Tokyo",
+          "country": "JP",
+          "lat": 35.68,
+          "lon": 139.77,
+          "relevance_score": 5,
+          "matched_alias": "Tokyo"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "translation_engine": "passthrough",
+      "transcript_en_excerpt": "Hey guys, my name's Alejandro. I'm a local tour guide here in Tokyo. I mean, I think I always tell people Kichijoji used to be, but I still think it is the number [music] one place to live here in Tokyo, Japan. >> [laughter] >> Like he's very just easy to talk to. Like I think if you meet him on your own, I mean, he'll try his best to like help you out, make you feel welcome. I might have a little bit of Corona right now. >> [laughter] >> And welcome to Hidden Bites.",
+      "veg_friendly": false,
+      "tags": [],
+      "thumbnail": "https://i.ytimg.com/vi/LPHK_r4iVQg/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:dZailm6dRWw",
+      "source": "youtube",
+      "creator": "@JapanByFood",
+      "url": "https://www.youtube.com/watch?v=dZailm6dRWw",
+      "title": "Inside Tokyo’s Most Famous Hidden Night Street! | Japan byFood",
+      "published": "2026-10-26T01:00:14Z",
+      "destinations": [
+        {
+          "name": "Tokyo",
+          "country": "JP",
+          "lat": 35.68,
+          "lon": 139.77,
+          "relevance_score": 5,
+          "matched_alias": "Tokyo"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "translation_engine": "passthrough",
+      "transcript_en_excerpt": "Hey guys, my name is Alejandro. I'm a local tour guide here in Tokyo, Japan, and welcome to Hidden Bites. Kumayo. >> [laughter] >> She fell asleep having too much tequila. >> [music] >> Right now we are in Kichijoji. In total, I've been in Japan about 10 years, but one of the first places I stayed at here in Japan [music] was Kichijoji. I stayed with a friend for a few months. He introduced me to all the places here in Kichijoji, specifically Harmonica, and I just kind of fell in love with the area and wanted to stay here myself in the future. I mean, I think I always tell people Kichijoji used to be, but I still think it is >> [music] >> the number one place to live here in Tokyo, Japan. You can see why because of all the things you have is here in Kichijoji from like eating, restaurants, the park. So much stuff here in Kichijoji, that's why I picked here. [music] I just feel like at the core of it all, a lot of Kichijoji has stayed the same [music] since 10 years ago, even like 20 years ago from what I've seen. [music] The only thing that has changed a lot about Kichijoji is just how much more popular it has gotten over the years, especially with more international folks. I reall",
+      "veg_friendly": false,
+      "tags": [],
+      "thumbnail": "https://i.ytimg.com/vi/dZailm6dRWw/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:CRGc7NBKO6k",
+      "source": "youtube",
+      "creator": "@MumbikerNikhil",
+      "url": "https://www.youtube.com/watch?v=CRGc7NBKO6k",
+      "title": "MUMBAI’s AQI IS GETTING OUT OF CONTROL",
+      "published": "2026-10-25T06:00:28Z",
+      "destinations": [
+        {
+          "name": "Mumbai",
+          "country": "IN",
+          "lat": 19.08,
+          "lon": 72.88,
+          "relevance_score": 3,
+          "matched_alias": "Mumbai"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "ar",
+      "translation_engine": "lang-pair-missing",
+      "transcript_en_excerpt": "ماذا تفعلين؟ لماذا  ترتدين حقيبة الظهر؟ >> كنت أرتديها، أريد  اللعب مع إيانا. >> إذن إيانا وسكايلر،  المعلمة والطالبة،  كانتا تلعبان بالخطر. >> هذا ليس بخاخاً خطيراً . هل يمكنني الحصول  عليه؟ >> لا، أنتِ تريدين رشي  الآن. طبق. إذاً، علبة  بخاخ إكليل الجبل.  شكراً لكِ يا حبيبتي.  بالمناسبة يا رفاق،  إيانا بصحة ممتازة.  مرحباً بعودتكم إلى  القناة، كل شيء على ما  يرام. قلت لا تخرجي في  الشمس. اخرجي للأسفل  وامشي فقط على العشب  والشمس لأنكِ تعلمين... اخرجي في الشمس، اجلسي ، ودعي جسمك يسخن لمدة  10 إلى 15 دقيقة ثم عودي.  ماذا تفعلين؟ أيضاً،  الجو ضبابي جداً جداً.  ملوث جداً جداً. يا  إلهي. 350. 370. يا إلهي. هي ، اخرجي. ادخلي للداخل.  ادخلي للداخل. ادخلي  للداخل. ادخلي للداخل.  380. جيد جداً. أنفي  مسدود تماماً. >> الجسم. >> هل يمكننا الخروج  اليوم؟ >> أجل. >> إذا كنتِ لا تشعرين  برغبة في الخروج، فلا  تخرجي. لا، لا. >> بشكل جيد. >> أجل. ذاكرة. >> هذا ما يوجد بالداخل.  رأيتِ هذا، 2.0. هذا هو  مستوى تلوث الهواء  الحقيقي. هذا 280 داخل  المنزل، و 380 خارج  المنزل. أوه، مستوى. >> ماذا؟ >> قهوة. >> ماذا؟ >> قهوة. >> عطر. أنا حرفياً منقي  هواء. شكراً لله على  الأقل. حسناً، سأتقدم  قليلاً لأركن السيارة  فقط. ما هو الطعام؟  دلهي. 64. V10. عذراً. V90  أساساً فئة أو V60. V9.  سرعة. نفس الـ 300. أو",
+      "veg_friendly": true,
+      "tags": [
+        "veg-creator"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/CRGc7NBKO6k/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:CfKhfU9DpGo",
+      "source": "youtube",
+      "creator": "@Visa2explore",
+      "url": "https://www.youtube.com/watch?v=CfKhfU9DpGo",
+      "title": "Ep 4 Snorkeling With Sharks in Trincomalee | Pigeon Island, Sri Lanka Tour",
+      "published": "2026-10-25T03:30:08Z",
+      "destinations": [
+        {
+          "name": "Colombo",
+          "country": "LK",
+          "lat": 6.93,
+          "lon": 79.86,
+          "relevance_score": 6,
+          "matched_alias": "Sri Lanka"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "hi",
+      "translation_engine": "argos",
+      "transcript_en_excerpt": "We are on the East Coast of Sri Lanka. We are starting days from Trincomalee. It is 5:30AM. What a great start to the day! I'll walk a bit and show you the sunrise. The sunrise looks like an orange ball from the sea. This is the fun of seeing the sunrise and sunset by the sea. I am at Uppuveli Beach. Blue Sand Beach Resort The hotel is located on the beach. If you are confused about whether to explore South or East coast beaches of Sri Lanka, then you are on the go. This is the ideal for East Coast Beaches. There is a difference in the experience of the two coasts too. In school and college time, I liked just two sports. Football and Volleyball. I hardly play the sportsmore. Seeing this net, I feel like playing volleyball. After my meniscus tear, I don't play these sports anymore. I have walked it to Fernando Beach Market. We do scuba diving, whale-watching and snorkeling. Charges are $80 per person for scuba diving. For 3-4 people, the charges are $70 per person. This activity takes 4 hours. How far is the scuba place from here? It is only 20 minutes by a boat. Lagoon side snorkeling is $30. The charge for Pigeon Island is $30 + forest entry fee. We will visit the Pigeon Island to",
+      "veg_friendly": true,
+      "tags": [
+        "first-timer",
+        "veg-creator"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/CfKhfU9DpGo/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:EUS6Y21zw98",
+      "source": "youtube",
+      "creator": "@JapanByFood",
+      "url": "https://www.youtube.com/watch?v=EUS6Y21zw98",
+      "title": "Inside a Tokyo Baker’s Home Kitchen | NEW VIDEO OUT!",
+      "published": "2026-10-19T03:00:36Z",
+      "destinations": [
+        {
+          "name": "Tokyo",
+          "country": "JP",
+          "lat": 35.68,
+          "lon": 139.77,
+          "relevance_score": 3,
+          "matched_alias": "Tokyo"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "translation_engine": "passthrough",
+      "transcript_en_excerpt": "Hello, I'm Kaori. I'm baking instructor. I teach baking at my kitchen over 20 years. >> And hi, I'm Clara. I'm Finnish-Cuban lifestyle creator and a huge foodie. >> Now that you actually say it, reminds me of the Alps. Like snow on the mountain. >> Mont Blanc. >> Mont Blanc, yeah. It does. Very, very good. >> Yeah, yeah, yeah, yeah, yeah, yeah. This is shibukawa-ni. It's so unique Japanese chestnut. >> It's not looking It's not soft though. >> Yeah, it does work. >> And after eating, they like, I want to teach Japanese style baking to my international student without hiding >> Without hiding the secrets. >> the secrets. >> I love that you now are willing to show that and share that experience to everyone else. >> Itadakimasu. >> Itadakimasu.",
+      "veg_friendly": false,
+      "tags": [],
+      "thumbnail": "https://i.ytimg.com/vi/EUS6Y21zw98/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:A-lHdxsfYCE",
+      "source": "youtube",
+      "creator": "@MarkWiens",
+      "url": "https://www.youtube.com/watch?v=A-lHdxsfYCE",
+      "title": "Is This London's Best Steak? 🥩",
+      "published": "2026-10-13T09:35:04Z",
+      "destinations": [
+        {
+          "name": "London",
+          "country": "GB",
+          "lat": 51.51,
+          "lon": -0.13,
+          "relevance_score": 6,
+          "matched_alias": "London"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "translation_engine": "passthrough",
+      "transcript_en_excerpt": "This is the best steak I ate in London at a historical British chop house. And along with their steak, some say they have London's best potatoes. The Quality Chop House is an institution founded in 1869, you walk inside and you really feel like you're back in the 1800s. I think British beef is severely underrated, and they serve the absolute best quality you can get. I chose a Hereford bone-in ribeye, the peak of all British beef. From the butcher your steak goes straight to the kitchen, and straight to the pan to render off the fat cap so it can sear in its own melted fat. So that looks pretty good, we're starting to get there. Then your steak is seared on all sides basted in its own juices. That sizzle is just insane! And then at the precise moment, in goes some rosemary, garlic, and butter, and it's basted some more. Then it goes into the oven to roast until it's perfectly medium-rare. But in the meantime, I couldn't resist some starters. First up, Padron peppers dipped in whipped smoked cod roe and grated egg yolk. Then their Parker House roll with chicken liver and foie gras parfait with truffle. And chef also recommended their Chalk Stream trout, which was outstanding. But th",
+      "veg_friendly": false,
+      "tags": [],
+      "thumbnail": "https://i.ytimg.com/vi/A-lHdxsfYCE/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:MbBvbETWICY",
+      "source": "youtube",
+      "creator": "@JapanByFood",
+      "url": "https://www.youtube.com/watch?v=MbBvbETWICY",
+      "title": "Tokyo’s Secret Food Escape 1h From Shinjuku | NEW VIDEO OUT!",
+      "published": "2026-10-12T02:30:17Z",
+      "destinations": [
+        {
+          "name": "Tokyo",
+          "country": "JP",
+          "lat": 35.68,
+          "lon": 139.77,
+          "relevance_score": 6,
+          "matched_alias": "Tokyo"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "translation_engine": "passthrough",
+      "transcript_en_excerpt": "Hi, my name is Zane Ozil. I'm a tour guide. I know it's weird, but the soup is really fit for rice. So, noodle on a top, chashu on a here, you know. This is Japanese style, I guess. >> [music] >> So good. May I do something? >> [laughter] >> That looks so good, right? You're going to feel like Disneyland in here. >> [laughter] >> Every story started in here. And this is hidden. Combines.",
+      "veg_friendly": false,
+      "tags": [],
+      "thumbnail": "https://i.ytimg.com/vi/MbBvbETWICY/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://thrillingtravel.in/chandor-heritage-trail-south-goa.html",
+      "source": "blog",
+      "creator": "Thrilling Travel",
+      "url": "https://thrillingtravel.in/chandor-heritage-trail-south-goa.html",
+      "title": "A Self-Guided Chandor Heritage Trail – includes a tour of Braganza House, Fernandes House and other South Goa Attractions",
+      "published": "2026-10-08T06:08:39+00:00",
+      "destinations": [
+        {
+          "name": "Goa",
+          "country": "IN",
+          "lat": 15.3,
+          "lon": 74.12,
+          "relevance_score": 8,
+          "matched_alias": "Goa"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "Church bells echo down a village hushed and old,\nBraganza House glows with chandeliers of gold,\nFernandes House still hides a tunnel and a tale untold,\njust a few of the sights this Chandor Heritage Trail will unfold.\nGet tips on planning a self-guided Chandor Heritage Trail through Braganza House and Fernandes House. Discover other places to see in South Goa, with routes, timings and practical tips for your visit.\nIt wasn’t my first time in South Goa. I had already spent lazy holidays discovering Varca, Colva, Palolem and a fair few hidden beaches along this coastline. This time I wanted to discover something different. Maybe a dose of heritage like what I had found on my Panjim heritage walk. That is how I discovered this intriguing village dotted with larger-than-life mansions and whispers of a lingering curse. Chandor had me curious! I boked myself a spot on the Chandor Heritage Trail and it sure was an unforgettable experience.\nChandor did not disappoint. It was a Goan village frozen in time. Quiet secrets lurked in corners. Unlike the colorful Portuguese homes of Fontainhas, the mansions here were like sets straight out of Pride and Prejudice. The Braganza House in Chandor ho",
+      "veg_friendly": true,
+      "tags": [
+        "family",
+        "first-timer",
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:hmhIZkGXK0c",
+      "source": "youtube",
+      "creator": "@KaraandNate",
+      "url": "https://www.youtube.com/watch?v=hmhIZkGXK0c",
+      "title": "We Drove a School Bus to Asia (Mongol Rally Ep. 5)",
+      "published": "2026-09-26T15:00:21Z",
+      "destinations": [
+        {
+          "name": "Istanbul",
+          "country": "TR",
+          "lat": 41.01,
+          "lon": 28.98,
+          "relevance_score": 5,
+          "matched_alias": "Istanbul"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "translation_engine": "passthrough",
+      "transcript_en_excerpt": "Welcome to episode 5 of our biggest adventure ever. Every year around a 100 teams set off to drive over 5,000 miles [music] from Europe to Asia in tiny cars that were never designed to make it that far. But we needed something a little bigger for our team of nine. Meet Big Bertha. We bought this retired school bus off a government auction website in Colorado. >> We're just bus owners now. >> Roadt tripped [music] it all the way across the US. Shipped it across the Atlantic to Germany. then finally drove it to the start line in [music] Prague. Then the real adventure began. >> I cannot believe this moment is finally here. >> This is actually what the Mongol Rally is about. >> So, there's no official route for the Mongol Rally. [music] And it's not a race. I don't know where we're going. I don't know when we're going to get there. I don't know what country we're going to today. Just a massive challenge to make it to the finish line party in 6 weeks and have as much fun as possible along the way. Oh, >> but it's completely [music] unsupported, which means once you leave the start line, you're on your own to navigate unpredictable border crossings. >> So, where do how do we get to Kaza",
+      "veg_friendly": false,
+      "tags": [
+        "family",
+        "first-timer",
+        "summer",
+        "monsoon"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/hmhIZkGXK0c/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "yt:UKqFqovB_ZY",
+      "source": "youtube",
+      "creator": "@Visa2explore",
+      "url": "https://www.youtube.com/watch?v=UKqFqovB_ZY",
+      "title": "Ep 5 Omkareshwar Jyotirlinga Yatra, Madhya Pradesh | Mamleshwar Temple | Gori Somnath Mandir",
+      "published": "2026-09-20T03:30:27Z",
+      "destinations": [
+        {
+          "name": "Khajuraho",
+          "country": "IN",
+          "lat": 24.85,
+          "lon": 79.93,
+          "relevance_score": 4,
+          "matched_alias": "Madhya Pradesh"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "hi",
+      "translation_engine": "argos",
+      "transcript_en_excerpt": "Copyright © 2017 Visa2explore.com. All rights reserved. The Holy Land of Madhya Pradesh This is the shore of River Narmada. Omkareshwar Temple is among the 12 Jyotirlingas. I will soon visit the temple. This is River Narmada. These boats take you to the temple, located on the island. It’s called Omkareshwar as the island makes ‘OM’ image. That’s how it has got its name. We can take a boat and go to the other side. But I’ll go by the bridge to the temple. Let’s talk about Gaumukh. The water flows at all times at the Gaumukh. This place where I am known as Gaumukh Ghat. On one side is Omkareshwar Temple. On its opposite side is Mamleshwar Temple. I’ll first go to Omkareshwar Temple, then Mamleshwar Temple. The way to the Temple is special. On one side is River Narmada, and on the other Lord Shiva’s Temple. Devotees come here in huge numbers to offer. I took the foundation of Lord Bholenath inside the temple. This site provides information about this site. Why is this place so important? Why did Adi Guru Shankaracharya come here? In 8th Century, 4 Hindu pilgrim spots and 12 Jyotirlingas were lost. At that time, in Kaladi, Adi Guru Shankaracharya ji was born. At 8 years old, he got kno",
+      "veg_friendly": true,
+      "tags": [
+        "veg-creator"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/UKqFqovB_ZY/mqdefault.jpg",
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://thrillingtravel.in/self-guided-tour-of-royal-alcazar-seville.html",
+      "source": "blog",
+      "creator": "Thrilling Travel",
+      "url": "https://thrillingtravel.in/self-guided-tour-of-royal-alcazar-seville.html",
+      "title": "How to plan a self-guided tour of Royal Alcazar in Seville (what to see inside, tickets, timings & tips for 2026 – 27)",
+      "published": "2026-09-07T15:34:47+00:00",
+      "destinations": [
+        {
+          "name": "Seville",
+          "country": "ES",
+          "lat": 37.39,
+          "lon": -5.99,
+          "relevance_score": 8,
+          "matched_alias": "Seville"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "Not one palace here but a layering of will,\nMoorish arch, Gothic vault, sunken garden and rill,\nTen centuries deep and unfolding it still.\nVisiting Alcázar Seville can be quite a thrill.\nDiscover one of the most popular UNESCO World Heritage sites in Seville with this self-guided tour of Royal Alcázar . It includes the famous courtyards and the corners most visitors walk straight past. Along with the key highlights, get tickets, timings, a route map and tips to plan an Alcazar Seville visit in 2026 - 27.\nI have always had a soft spot for old palaces, and this one came pre-loaded with recognition — a set from Lawrence of Arabia, later a stand-in for Dorne in Game of Thrones (GOT). It went straight onto my must-do list for Seville. I ensured I booked in advance to visit Alcazar Seville. What I hadn’t quite registered until I got there: this is one of the oldest palaces in Europe still in active use by the same Spanish royalty, whose other residence in Madrid I had just visited.\nThat said, the Royal Palace of Madrid could not be more different from the eclectic Real Alcázar. For one, the royal residence of Seville is much older and, more importantly, a stunning fusion of architectural",
+      "veg_friendly": true,
+      "tags": [
+        "family",
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://breathedreamgo.com/jaipur-tours-getaways-and-places-to-see/",
+      "source": "blog",
+      "creator": "Breathedreamgo (Mariellen Ward)",
+      "url": "https://breathedreamgo.com/jaipur-tours-getaways-and-places-to-see/",
+      "title": "Jaipur tours, getaways, and places to see",
+      "published": "2026-05-19T07:01:24+00:00",
+      "destinations": [
+        {
+          "name": "Jaipur",
+          "country": "IN",
+          "lat": 26.91,
+          "lon": 75.79,
+          "relevance_score": 8,
+          "matched_alias": "Jaipur"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "Table of Contents\nJaipur tours, getaways, and places to see\nJaipur is a historical and cultural treasure house. It’s the capital of the great state of Rajasthan, gateway to the Thar desert, home of architectural marvels and UNESCO heritage sites, and so much more. I have planned this list of Jaipur tours, getaways, and places to see to showcase the best this magnificent city has to offer. The day tours include the arts and crafts of Jaipur, and the many talented artisans that work in the city and surrounding area. Jaipur is known for a wide range of products such as textiles, block printing, gemstones, jewellery, shoes, rugs, pottery, art, and much more.\nAbout Jaipur\nJaipur was one of the world’s first planned cities when it was founded by Maharaja Sawai Jai Singh II in 1727. Today the city is a colourful blend of magnificent forts and palaces, bustling bazaars and markets, and hip cafes and opulent hotels. Jaipur is known as the Pink City because the walls and buildings of the old city are all painted a terracotta-pink. A city of artisans, Jaipur is known for arts and crafts such as gemstones and jewelry, enamel work, block-print fabrics and hand-embroidered textiles, leather jutt",
+      "veg_friendly": true,
+      "tags": [
+        "family",
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://www.nomadicmatt.com/travel-blogs/madrid-five-day-itinerary/",
+      "source": "blog",
+      "creator": "Nomadic Matt",
+      "url": "https://www.nomadicmatt.com/travel-blogs/madrid-five-day-itinerary/",
+      "title": "Madrid 5-Day Itinerary: A Guide to Culture, Gastronomy, and Local Life",
+      "published": "2026-05-06T07:50:57+00:00",
+      "destinations": [
+        {
+          "name": "Madrid",
+          "country": "ES",
+          "lat": 40.42,
+          "lon": -3.7,
+          "relevance_score": 8,
+          "matched_alias": "Madrid"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "Madrid 5-Day Itinerary: A Guide to Culture, Gastronomy, and Local Life\nHome to some 3.5 million people, Madrid is the capital of Spain and the country’s largest city. Though it’s somewhat sprawling, the city boasts stunning architecture, incredible food, and an energetic nightlife that stretches until dawn. Over 10 million people visit the city each year, and the minute you step out to explore, you’ll understand why Madrid is one of Europe’s top destinations.\nLike Barcelona, Madrid is a city that starts late and goes slow. It’s a city for night owls, where dinner starts late and the parties even later. But if you can embrace the laid-back pace of life, the slow meals, and the late-night vibes, you’ll have a more authentic visit and uncover the true beating heart of the city’s culture.\nI love all my visits to Madrid. I’ve been a few times over the years and the city never ceases to amaze me. The food, the energy, the art (so much art!). Madrid is just cool.\nBeing such a big city, I know it can be easy to feel lost. Where do you start with what you want to do? Where do you go? It took me a few visits to figure it out.\nIn this post, I’ll help you plan an epic five-day visit to Madrid ",
+      "veg_friendly": false,
+      "tags": [
+        "family"
+      ],
+      "score_components": {
+        "recency": 1.0,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://thrillingtravel.in/jagat-shiromani-temple-story-guide.html",
+      "source": "blog",
+      "creator": "Thrilling Travel",
+      "url": "https://thrillingtravel.in/jagat-shiromani-temple-story-guide.html",
+      "title": "The Jagat Shiromani Temple story  – The History, Architecture & legacy of Meera Bai mandir in Amer, Jaipur",
+      "published": "2026-04-14T12:31:54+00:00",
+      "destinations": [
+        {
+          "name": "Jaipur",
+          "country": "IN",
+          "lat": 26.91,
+          "lon": 75.79,
+          "relevance_score": 8,
+          "matched_alias": "Jaipur"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "A queen built it in tears, for a son she lost too soon\nA saint poured her soul here, her Krishna her only boon.\nThe world rushed past to the Amer fort on the hill,\nWhile Jagat Shiromani temple Jaipur kept its secrets still.\nDiscover one of the hidden temples in Jaipur. Learn about the Jagat Shiromani temple story that not only includes its history but the legend of Meera Bai. Get ready for a visit with my insider tips on how to get to Jagat Shiromani mandir, its timings and more.\nHave you ever walked past something extraordinary without even realizing it?\nI did — and I did it at Amer, of all places. Like most visitors, my eyes were fixed on the Amer fort crowning the hill, and everything else on that road just blurred into the background. It was only when I slowed down and did an Amer walking tour that a carved stone façade stopped me in my tracks. I stood there staring, genuinely stunned, asking myself one question — how on earth did I miss this?\nThat was my first encounter with the Jagat Shiromani Temple, Amer — and it was far from my last. I have returned to it more than once since, and each visit has peeled back another layer. The architecture reveals new details every time you",
+      "veg_friendly": true,
+      "tags": [
+        "family",
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 0.97,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://thrillingtravel.in/walking-tour-of-amer-town-jaipur.html",
+      "source": "blog",
+      "creator": "Thrilling Travel",
+      "url": "https://thrillingtravel.in/walking-tour-of-amer-town-jaipur.html",
+      "title": "A walking tour of Amer town, Jaipur (with a map & itinerary)",
+      "published": "2026-03-31T07:00:26+00:00",
+      "destinations": [
+        {
+          "name": "Jaipur",
+          "country": "IN",
+          "lat": 26.91,
+          "lon": 75.79,
+          "relevance_score": 8,
+          "matched_alias": "Jaipur"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "A maze of lanes that twist past temples old,\nA stepwell whose legends have never been told.\nDevotion carved in stone, Meera Bai's song still rings,\nWelcome to Amer town — beyond the fort of kings.\nDiscover the walking tour of Amer town with stories and a map to plan your own self-guided one. Learn about the various attractions of Amer town like the Panna Meena ka Kund, Jagat Shiromani temple and other historic structures.\nIf you ask most visitors what to see in Amer, they will say the fort. And they wouldn’t be wrong — the Amer Fort is magnificent, a UNESCO world heritage Hill Fort of Rajasthan that deserves every hour you give it. But here’s the thing most visitors miss entirely. The town that wraps around the fort’s feet is older, quieter, and far more layered than the fortress that overshadowed it. As I discovered, it is here — in the lanes of Amer town, Jaipur — that the real story of this place lives.\nI had my eyes on this town from my first visit to Amer fort. On my way to the fort, I found myself intrigued by many sights. For one, there was the Jagat Shiromani mandir, its intricate carvings glowing in the early light and then there were majestic havelis and whispers of one o",
+      "veg_friendly": true,
+      "tags": [
+        "first-timer",
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 0.95,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://breathedreamgo.com/complete-guide-to-the-jaipur-literature-festival/",
+      "source": "blog",
+      "creator": "Breathedreamgo (Mariellen Ward)",
+      "url": "https://breathedreamgo.com/complete-guide-to-the-jaipur-literature-festival/",
+      "title": "Complete Guide to the Jaipur Literature Festival",
+      "published": "2025-12-16T12:20:05+00:00",
+      "destinations": [
+        {
+          "name": "Jaipur",
+          "country": "IN",
+          "lat": 26.91,
+          "lon": 75.79,
+          "relevance_score": 8,
+          "matched_alias": "Jaipur"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "Table of Contents\nComplete Guide to the Jaipur Literature Festival\nThe Jaipur Literature Festival is the world’s largest free literature festival and one of the most prestigious. It attracts writers, scholars, critics, artists, and readers from all over the globe in a five-day celebration of the written word. I have been to the Jaipur Literature Festival about five or six times and it’s always fun, inspiring, and well worth the trip to India.\nUPDATED FOR 2027: The dates for the Jaipur Literature Festival change each year, so you have to check the website. This upcoming year, the dates are January 14-18, 2027.\nTo buy Friends of the Festival passes or book a JLF partner hotel, please use this link: Book here.\nEach year, the festival attracts some of the most well-known and well-regarded authors and writers in India, and also from around the world. The writers come to speak, to read, to take part in panel discussions, and to be the subject of interviews. I have seen many of my favourite writers on stage including William Dalrymple (who is also one of the founders of JLF), Margaret Atwood, Paul Theroux, Ruskin Bond, V.S. Naipul, Elizabeth Gilbert, Simon Schama, Yuvan Aves and more incl",
+      "veg_friendly": true,
+      "tags": [
+        "monsoon",
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 0.81,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://www.bruisedpassports.com/wheres/a-winter-escape-to-vienna-the-magic-of-austria-at-christmas",
+      "source": "blog",
+      "creator": "Bruised Passports",
+      "url": "https://www.bruisedpassports.com/wheres/a-winter-escape-to-vienna-the-magic-of-austria-at-christmas",
+      "title": "A Winter Escape to Vienna: The Magic of Austria at Christmas",
+      "published": "2025-12-05T06:15:13+00:00",
+      "destinations": [
+        {
+          "name": "Vienna",
+          "country": "AT",
+          "lat": 48.21,
+          "lon": 16.37,
+          "relevance_score": 8,
+          "matched_alias": "Vienna"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "Vienna in winter feels like a living snow globe — elegant, golden, and wrapped in the soft glow of centuries-old charm. With grand cafés, imperial palaces, and markets that fill the air with cinnamon and mulled wine, the city transforms into one of Europe’s most enchanting Christmas destinations. Whether it’s your first visit or a seasonal tradition, Vienna offers a mix of culture, comfort, and holiday warmth that feels both timeless and electric\nChristmas Must-Dos In Vienna\nHere is a list of things You Definitely Must Do at Christmas Time in Vienna and the best part is most of these are free\n- Rathausplatz Christmas Market (Christkindlmarkt)\n- Belvedere Palace Christmas Market\n- Red Ribbon Christmas Decorations at Popp & Kretschmer\n- St. Stephen’s Cathedral\n- Giant Chandeliers on Graben Street\n- Schönbrunn Palace Christmas Market\n- Kunsthistorisches Museum and Café\n- Wien Museum Rooftop\n- Palace Kinsky\n- St. Peter’s Church\n- Old Viennese Christmas Kräuterhaus Market on Freyung\n- Museum of Change\nWhere to stay in Vienna\nPalais Rudolf is one of Vienna’s most distinctive boutique stays – owned by Miiro Hotels, an Indian boutique luxury brand. The hotel is centrally located and offers",
+      "veg_friendly": true,
+      "tags": [
+        "family",
+        "first-timer",
+        "winter",
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 0.8,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://breathedreamgo.com/off-the-beaten-track-in-vietnam-and-cambodia/",
+      "source": "blog",
+      "creator": "Breathedreamgo (Mariellen Ward)",
+      "url": "https://breathedreamgo.com/off-the-beaten-track-in-vietnam-and-cambodia/",
+      "title": "Off the beaten track in Vietnam and Cambodia",
+      "published": "2025-08-09T14:37:36+00:00",
+      "destinations": [
+        {
+          "name": "Hanoi",
+          "country": "VN",
+          "lat": 21.03,
+          "lon": 105.85,
+          "relevance_score": 5,
+          "matched_alias": "Hanoi"
+        },
+        {
+          "name": "Ho Chi Minh",
+          "country": "VN",
+          "lat": 10.82,
+          "lon": 106.63,
+          "relevance_score": 5,
+          "matched_alias": "Ho Chi Minh"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "Table of Contents\n8 unique and offbeat places you must visit in Vietnam and Cambodia\nIf you are planning a visit to Southeast Asia, pairing Vietnam and Cambodia makes a lot of sense. The two countries are side by side, share the Mekong River, and have some overlapping cultures and histories. In this post, we are suggesting secret travel spots Vietnam and Cambodia, including offbeat Vietnam destinations and rural Cambodia cultural immersion. These are unique Southeast Asia travel experiences that you can enjoy either on luxury tours in Vietnam and Cambodia, or by organizing your own self-paced tour.\n1. Try street food in Hanoi and Ho Chi Minh City (Saigon)\nThe street food of Vietnam is readily available and really delicious. Don’t shy away from sitting on a tiny stool by the side of the road to sample some of the many local specialties such as phở, bánh mì, and bún chả. Just ensure the cart looks clean, the food looks fresh, and that plenty of locals are also eating there. Both Hanoi and Ho Chi Minh City are known for having plentiful street‑stalls amid market alleys, such as Hanoi‘s Old Quarter Market and Ben Thanh Market in HCMC.\nREAD: For more food options in Asia, read The best ",
+      "veg_friendly": true,
+      "tags": [
+        "monsoon",
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 0.64,
+        "topical_match": 0.7,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://travellingslacker.com/pin-valley-national-park-a-quick-guide/",
+      "source": "blog",
+      "creator": "Travelling Slacker (Jitaditya Narzary)",
+      "url": "https://travellingslacker.com/pin-valley-national-park-a-quick-guide/",
+      "title": "Pin Valley National Park: A Quick Guide",
+      "published": "2025-11-11T06:03:24+00:00",
+      "destinations": [
+        {
+          "name": "Leh",
+          "country": "IN",
+          "lat": 34.15,
+          "lon": 77.58,
+          "relevance_score": 5,
+          "matched_alias": "Spiti"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "While I have been to Spiti many times, the Pin Valley region had remained elusive. I don’t know why, but it was probably because it needed a separate detour of multiple days (as I usually do not hire vehicles and rely on public transport). Anyway, I finally paid a visit to the area. I just stayed at Mud for two nights and did not do much except some local walking/hiking beyond the village. So, let me put together a quick post about Pin Valley National Park to help you plan. You can also book a whole Spiti tour package if that is your style..\nPin Valley National Park, established in 1987, spans over 675 square kilometers and forms a core part of the Cold Desert Biosphere Reserve. Characterized by dramatic Himalayan landscapes, sharp ridges, and an array of brown, purple, and pink rock hues, Pin Valley’s elevation ranges from 3,300 to more than 6,000 meters, giving rise to a combination of alpine meadows, deep valleys, and stark, rugged peaks.\nThe environments here are harsh, with frigid winters and sparse vegetation—yet Pin Valley shelters some of India’s rarest flora and fauna. Most famous among its inhabitants is the elusive and endangered snow leopard, a flagship species for cons",
+      "veg_friendly": true,
+      "tags": [
+        "winter",
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 0.77,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://travellingslacker.com/spiti-cold-desert-biosphere-reserve-a-quick-guide-to-indias-first-unesco-biosphere-reserve/",
+      "source": "blog",
+      "creator": "Travelling Slacker (Jitaditya Narzary)",
+      "url": "https://travellingslacker.com/spiti-cold-desert-biosphere-reserve-a-quick-guide-to-indias-first-unesco-biosphere-reserve/",
+      "title": "Spiti Cold Desert Biosphere Reserve: A Quick Guide to India’s First UNESCO Biosphere Reserve",
+      "published": "2025-11-10T19:08:02+00:00",
+      "destinations": [
+        {
+          "name": "Leh",
+          "country": "IN",
+          "lat": 34.15,
+          "lon": 77.58,
+          "relevance_score": 8,
+          "matched_alias": "Ladakh"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "So, the Spiti Valley has recently been recognized as a UNESCO Biosphere Reserve, officially becoming the Spiti Cold Desert Biosphere Reserve. This high-altitude landscape in Himachal Pradesh spans nearly 7,770 sq km across the Lahaul-Spiti district. However, do note that Lahal and Spiti are distinct regions, although they form the same district. I have discussed both in different posts over the years, but this one is focusing on Spiti.\nThis remote terrain, shaped by extreme climate and rugged mountain passes, features unique biodiversity, including rare fauna like the snow leopard, alpine lakes, and centuries-old monasteries. The biosphere reserve not only protects the region’s fragile ecosystem but also acknowledges the vital role of local communities—whose traditional agro-pastoral lifestyles have harmonized with these stark surroundings for generations—making Spiti a global model for responsible tourism and cultural preservation.\nWhile I already have a backpacker’s guide on Spiti Valley, I am writing this one keeping its cold desert status in mind.\nUnderstanding Spiti Cold Desert Biosphere Reserve\nThis region is called so because it is located in a high-altitude region, between ",
+      "veg_friendly": true,
+      "tags": [
+        "summer",
+        "winter",
+        "monsoon",
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 0.77,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://breathedreamgo.com/celebrating-20-years-of-india/",
+      "source": "blog",
+      "creator": "Breathedreamgo (Mariellen Ward)",
+      "url": "https://breathedreamgo.com/celebrating-20-years-of-india/",
+      "title": "Celebrating 20 Years of India",
+      "published": "2025-10-16T09:01:54+00:00",
+      "destinations": [
+        {
+          "name": "Delhi",
+          "country": "IN",
+          "lat": 28.61,
+          "lon": 77.21,
+          "relevance_score": 4,
+          "matched_alias": "Delhi"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "Table of Contents\nDecember 2025 marks 20 years of India\nOn December 4, 2005, I faced a moment of sheer terror. I was about to board a plane in Toronto, Canada bound for Delhi, India. My return ticket was dated for June 2006. And I had no idea what would happen in those six months in between. I had never been to a place like India, never travelled alone for such an extended period of time, and had absolutely no idea what to expect. I had given up my apartment, put my stuff in storage, gave my cat to a friend for safekeeping … and with a feeling of anxiety bordering on dread, took a flying leap of faith. It felt like I was stepping off the cliff into the unknown, with a bottomless abyss opening up before me. But I also felt I had to go …\nMy plan was to travel across India for six months, to study Yoga in Chennai, to volunteer in Dharamsala, to see the Ganga River and the Himalayas, to seek wellness in Kerala, to visit the forts and palaces of Rajasthan and walk the storied streets of Delhi. But most of all, my plan was to recover from depression, to heal, and to start again.\nI was what is now called a “digital nomad” and “solo female traveller” – but at the time, I just considered my",
+      "veg_friendly": true,
+      "tags": [
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 0.73,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://breathedreamgo.com/guide-indian-visa-application-tourists/",
+      "source": "blog",
+      "creator": "Breathedreamgo (Mariellen Ward)",
+      "url": "https://breathedreamgo.com/guide-indian-visa-application-tourists/",
+      "title": "Updated guide to Indian Tourist Visa with top 4 tips",
+      "published": "2025-10-01T08:57:00+00:00",
+      "destinations": [
+        {
+          "name": "Delhi",
+          "country": "IN",
+          "lat": 28.61,
+          "lon": 77.21,
+          "relevance_score": 5,
+          "matched_alias": "Delhi"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "Table of Contents\nTraveling to India? Updated Indian Tourist Visa news and application tips\nMOST IMPORTANT LINKS:\n- Indian Visa Online — official government site.\n- India Ministry of Health — latest government guidelines for travel to India\n- New Delhi airport information\n- iVisa for India tourist visa — iVisa will help expedite your tourist visa\nUPDATED FEBRUARY 2026: India has issued a digital Arrival Card that you can fill out 72 hours in advance here. This is a digital version of the Arrival Card you fill out at the airport when you arrive in India.\niVisa to the rescue!\nMany people find the official government eVisa website glitchy, confusing, and finicky. In my ongoing quest to help people travel well in India, Breathedreamgo has partnered with iVisa for India tourist visa to provide a pain-free solution. iVisa facilitates the tourist eVisa process, and makes it a much less irritating experience.\nThis private company will help expedite your tourist visa for India. It is much easier to use than the official government website. Though it is also more expensive, with the code * breathedreamgo5 * you will get a 5% discount. Click this link to apply for the Indian tourist visa, and",
+      "veg_friendly": true,
+      "tags": [
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 0.71,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://breathedreamgo.com/guide-to-jaipur/",
+      "source": "blog",
+      "creator": "Breathedreamgo (Mariellen Ward)",
+      "url": "https://breathedreamgo.com/guide-to-jaipur/",
+      "title": "Curated Guide to the best of Jaipur",
+      "published": "2025-06-25T13:10:16+00:00",
+      "destinations": [
+        {
+          "name": "Jaipur",
+          "country": "IN",
+          "lat": 26.91,
+          "lon": 75.79,
+          "relevance_score": 8,
+          "matched_alias": "Jaipur"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "Table of Contents\nMy personal Guide to Jaipur\nJaipur is one of my favourite cities in India (in fact, I liked it so much, I moved there!). This curated guide is a labour of love, showcasing my favourite places, the best things to do, where to stay, and where to shop in this magnificent city. Jaipur is a shopper’s paradise and arguably India’s best city for hotels. There’s an incredible amount to see, experience, and enjoy here, and my guide to Jaipur is a collection of my personal favourites. Jaipur is also the capital of the wonderful state of Rajasthan.\nWhile tourists know Jaipur for its gorgeous architecture—including top sites like Amber Fort, City Palace, Jantar Mantar, and Hawa Mahal—and for its pink-hued old city (the famous Pink City), it’s also a vibrant cultural, culinary, and crafts centre.\nJaipur was founded as a commercial hub, designed to be home to artisans and dozens of different crafts and trades. That spirit thrives today. The city is now India’s gemstone capital and one of the world’s leading gemstone cutting and polishing centres. Jewellery stores dot the cityscape, including iconic names like Gem Plaza, Gem Palace, Gem Paradise, and Amrapali.\nExplore Jaipur wit",
+      "veg_friendly": true,
+      "tags": [
+        "family",
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 0.58,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    },
+    {
+      "id": "blog:https://www.bruisedpassports.com/wheres/planning-itinerary-four-days-doha-qatar",
+      "source": "blog",
+      "creator": "Bruised Passports",
+      "url": "https://www.bruisedpassports.com/wheres/planning-itinerary-four-days-doha-qatar",
+      "title": "The Ultimate 4-Day Guide to Exploring Doha, Qatar",
+      "published": "2025-06-06T12:32:23+00:00",
+      "destinations": [
+        {
+          "name": "Doha",
+          "country": "QA",
+          "lat": 25.29,
+          "lon": 51.53,
+          "relevance_score": 11,
+          "matched_alias": "Doha"
+        }
+      ],
+      "places_mentioned": [],
+      "transcript_lang": "en",
+      "transcript_en_excerpt": "Doha, the shimmering capital of Qatar, is a city of striking contrasts—where futuristic skylines meet time-honoured souqs, and luxury lifestyle mingles with deep-rooted tradition. This 4-day guide will walk you through an elevated and thoughtfully curated itinerary, featuring beach clubs, dhow cruises, cultural landmarks, and glamorous shopping districts – perfect for a refreshing city break.\nFlight and Visa for Qatar\nDoha is well connected to most major cities in the world and offers visa free access to citizens of many countries such as UK, USA etc. If you’re flying from India, you can get a free visa on arrival if you book hotels on the Discover Qatar website – This is very convenient and takes just minutes upon arrival.\nDoha is really well connected by air from major cities in India – we’d suggest booking a flight with Qatar Airways to enjoy the amazing service\nWhere to stay in Qatar\nBegin your journey at the Mondrian Doha, a five-star fantasyland designed by Dutch designer Marcel Wanders. Known for its bold interiors and art-centric spaces, the hotel makes an immediate impression with its grand staircase, lavish spa, and skyline views. Take a moment to unwind and soak in the b",
+      "veg_friendly": true,
+      "tags": [
+        "summer",
+        "veg-creator"
+      ],
+      "score_components": {
+        "recency": 0.56,
+        "topical_match": 0.55,
+        "channel_authority": 0.5
+      }
+    }
+  ],
+  "stats": {
+    "total": 34,
+    "by_source": {
+      "youtube": 18,
+      "blog": 16,
+      "instagram": 0
+    }
+  }
+}

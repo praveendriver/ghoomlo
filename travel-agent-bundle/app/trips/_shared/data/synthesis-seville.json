@@ -1,0 +1,15 @@
+{
+  "destination": "Seville",
+  "country": "ES",
+  "lat": 37.39,
+  "lon": -5.99,
+  "generated_at": "2026-05-30T03:51:07.930781+00:00",
+  "items_total": 1,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

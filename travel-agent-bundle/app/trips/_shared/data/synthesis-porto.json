@@ -1,0 +1,15 @@
+{
+  "destination": "Porto",
+  "country": "PT",
+  "lat": 41.16,
+  "lon": -8.61,
+  "generated_at": "2026-05-30T03:51:07.929888+00:00",
+  "items_total": 1,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

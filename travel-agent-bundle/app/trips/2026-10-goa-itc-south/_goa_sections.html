@@ -1,0 +1,842 @@
+<!-- ==== Goa-only extra styles (photo grid + drive table; everything else reuses the site CSS) ==== -->
+<style>
+  .goa-herogrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+  .goa-herocard { border-radius: var(--r-lg); overflow: hidden; background: var(--card);
+    border: 1px solid var(--line); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; }
+  .goa-herocard .ph { height: 170px; background-size: cover; background-position: center; }
+  .goa-herocard .bd { padding: 16px 18px; }
+  .goa-herocard .nm { font-family: 'Fraunces', serif; font-size: 18px; font-weight: 600; color: var(--teal-deep); }
+  .goa-herocard .lo { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--saffron-deep); font-weight: 600; margin: 3px 0 8px; }
+  .goa-herocard p { margin: 0; font-size: 13.5px; color: var(--ink-soft); line-height: 1.55; }
+  .goa-herocard a { display: inline-block; margin-top: 10px; font-size: 12.5px; font-weight: 600; color: var(--saffron-deep); text-decoration: none; }
+  .goa-drive { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin-top: 8px; }
+  .goa-drive .dc { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-md); padding: 16px 18px; }
+  .goa-drive .dc .leg { font-weight: 700; color: var(--ink); font-size: 14px; }
+  .goa-drive .dc .tm { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 600; color: var(--teal-deep); margin: 4px 0 2px; }
+  .goa-drive .dc .nt { font-size: 12.5px; color: var(--ink-soft); }
+  .goa-note { font-size: 12.5px; color: var(--muted); margin-top: 16px; }
+  .est { font-size: 11px; font-weight: 700; letter-spacing: .04em; color: var(--saffron-deep); }
+</style>
+
+<!-- ========== NAV ========== -->
+<nav class="site-nav">
+  <div class="container inner">
+    <a href="../index.html" class="logo">
+      <span class="logo-mark">◈</span>
+      <span class="logo-word"><span class="logo-line">gama<span class="logo-slash">/</span></span><span class="logo-line">adventures</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">All trips</a>
+      <a href="#hero" class="active">This trip</a>
+      <a href="#itinerary">Timeline</a>
+      <a href="#transport">Getting around</a>
+      <a href="#veg-restaurants">Veg dining</a>
+      <a href="#anchors">Heritage</a>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-pin-btn" id="trip-pin-btn" data-pin-id="2026-10-goa-itc-south" aria-label="Pin trip" title="Pin trip">
+        <svg class="icon icon-sm"><use href="#i-bookmark"/></svg>
+      </button>
+      <a href="GOA-FIELD-GUIDE.html" class="btn btn-saffron btn-sm">
+        <svg class="icon icon-sm"><use href="#i-landmark"/></svg>
+        Field guide
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<header class="hero" id="hero">
+  <div class="hero-decor">
+    <div class="ring filled"></div>
+    <div class="line"></div>
+    <div class="ring"></div>
+    <div class="line"></div>
+    <div class="ring"></div>
+  </div>
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          October 2026 · Dussehra break · South Goa
+        </div>
+        <h1 data-parallax="0.05">Temples, Old Goa,<br>and a <em>waterfall</em>.</h1>
+        <p class="hero-sub">
+          Five nights at ITC Grand Goa in Arossim, used as a calm base. Four sightseeing days — the
+          UNESCO churches of Old Goa with Panjim's Latin Quarter, the living Hindu temples around Ponda,
+          the Dudhsagar waterfall by jeep at near-peak October flow, and a North Goa day for the famous
+          Bollywood forts. A late-arrival Friday and a slow beach morning bracket it. Strictly
+          lacto-vegetarian throughout, kid-paced.
+        </p>
+        <div class="hero-meta">
+          <div class="meta-item"><div class="label">Window</div><div class="value">Oct 16 – 21</div></div>
+          <div class="meta-item"><div class="label">Travelers</div><div class="value">4</div></div>
+          <div class="meta-item"><div class="label">Nights</div><div class="value">5</div></div>
+          <div class="meta-item"><div class="label">From</div><div class="value">BLR</div></div>
+        </div>
+        <div class="hero-actions">
+          <a href="#itinerary" class="btn btn-primary">See timeline <svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></a>
+          <a href="GOA-FIELD-GUIDE.html" class="btn btn-ghost">Open full field guide</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="h-card h-card-1" data-parallax="0.06">
+          <div class="h-card-img" style="background-image:url('images/dudhsagar.jpg'); background-size:cover; background-position:center;">
+            <span class="h-card-tag">
+              <svg class="icon icon-sm" style="display:inline; vertical-align: middle; margin-right: 4px;"><use href="#i-star"/></svg>
+              Day 4
+            </span>
+          </div>
+          <div class="h-card-body">
+            <div class="place">Dudhsagar Falls</div>
+            <div class="meta">300 m · near-peak October flow · jeep safari</div>
+          </div>
+        </div>
+        <div class="h-card h-card-2" data-parallax="0.10">
+          <div class="h-card-img" style="background-image:url('images/bom-jesus.jpg'); background-size:cover; background-position:center;">
+            <span class="h-card-tag">Day 2</span>
+          </div>
+          <div class="h-card-body">
+            <div class="place">Basilica of Bom Jesus</div>
+            <div class="meta">Old Goa · St Francis Xavier · UNESCO</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ========== HIGHLIGHTS STRIP ========== -->
+<section class="strip" aria-label="Trip highlights">
+  <div class="strip-eyebrow">Sites you'll see</div>
+  <div class="strip-track" id="strip-track">
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/bom-jesus.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Heritage</span><div class="strip-card-name">Basilica of Bom Jesus</div><div class="strip-card-loc">Old Goa · St Francis Xavier</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/se-cathedral.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Church</span><div class="strip-card-name">Sé Cathedral</div><div class="strip-card-loc">Old Goa · largest in Asia</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/fontainhas.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Pretty</span><div class="strip-card-name">Fontainhas</div><div class="strip-card-loc">Panjim · Latin Quarter</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/mangueshi.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Temple</span><div class="strip-card-name">Shri Mangueshi</div><div class="strip-card-loc">Ponda · lamp tower &amp; tank</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/dudhsagar.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Kid magnet</span><div class="strip-card-name">Dudhsagar Falls</div><div class="strip-card-loc">Mollem · 300 m waterfall</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/goa-beach.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Resort</span><div class="strip-card-name">Arossim Beach</div><div class="strip-card-loc">South Goa · calm &amp; quiet</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/chapora-fort.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Bollywood</span><div class="strip-card-name">Chapora Fort</div><div class="strip-card-loc">North Goa · Dil Chahta Hai</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/fort-aguada.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Film fort</span><div class="strip-card-name">Fort Aguada</div><div class="strip-card-loc">Sinquerim · Dhoom · Rangeela</div></div>
+    </article>
+    <!-- Duplicates for seamless loop -->
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/bom-jesus.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Heritage</span><div class="strip-card-name">Basilica of Bom Jesus</div><div class="strip-card-loc">Old Goa · St Francis Xavier</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/se-cathedral.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Church</span><div class="strip-card-name">Sé Cathedral</div><div class="strip-card-loc">Old Goa · largest in Asia</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/fontainhas.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Pretty</span><div class="strip-card-name">Fontainhas</div><div class="strip-card-loc">Panjim · Latin Quarter</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/mangueshi.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Temple</span><div class="strip-card-name">Shri Mangueshi</div><div class="strip-card-loc">Ponda · lamp tower &amp; tank</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/dudhsagar.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Kid magnet</span><div class="strip-card-name">Dudhsagar Falls</div><div class="strip-card-loc">Mollem · 300 m waterfall</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/goa-beach.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Resort</span><div class="strip-card-name">Arossim Beach</div><div class="strip-card-loc">South Goa · calm &amp; quiet</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/chapora-fort.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Bollywood</span><div class="strip-card-name">Chapora Fort</div><div class="strip-card-loc">North Goa · Dil Chahta Hai</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/fort-aguada.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Film fort</span><div class="strip-card-name">Fort Aguada</div><div class="strip-card-loc">Sinquerim · Dhoom · Rangeela</div></div>
+    </article>
+  </div>
+</section>
+
+<!-- ========== ITINERARY (with map) ========== -->
+<section class="itinerary" id="itinerary">
+  <div class="container with-map">
+    <aside class="section-with-map__map" data-trip-map="itinerary" aria-label="Map of itinerary stops"></aside>
+    <div class="with-map__main">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Day by day · grounded, with honest trust labels</div>
+        <h2>The <em>timeline</em></h2>
+      </div>
+      <p>Four full sightseeing days from a single base at ITC Grand Goa, Arossim. All drive times are
+        estimates <span class="est">(EST)</span> to confirm with the concierge. Most temple/church hours
+        could not be machine-verified, so they are flagged <strong>⚠️ confirm</strong> rather than invented.
+        Strictly lacto-vegetarian — no meat, fish, seafood or egg. Mid-October: monsoon just withdrawn,
+        countryside green, Dudhsagar near peak flow, warm &amp; humid with the odd short shower.</p>
+    </div>
+
+    <div class="leg-tabs-head">
+      <div class="leg-summary">
+        <span><strong>5 nights</strong> · Fri Oct 16 → Wed Oct 21, 2026</span>
+        <span>· Family of <strong>4</strong> · BLR origin</span>
+        <span>· Vegetarian only · 5★ Bonvoy</span>
+      </div>
+    </div>
+
+    <div class="tab-panel active">
+      <div class="timeline">
+
+        <!-- DAY 1 -->
+        <details class="day" open>
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-plane"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Fri · Oct 16</div>
+                <div class="day-title">Fly in to Dabolim → ITC Grand Goa, Arossim</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Arrival</span>
+                <span class="day-tag">No sightseeing</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">Evening</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-plane"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Kids finish school → evening BLR → GOI flight</span> — a departure that clears school comfortably (sized at booking). About 1h in the air. No school missed.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">On landing</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dabolim (GOI) → ITC Grand Goa · <span class="est">~15–20 min EST</span></span> — one of the closest 5-stars to the airport. Pre-book the hotel car with the concierge.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.marriott.com/en-us/hotels/goils-itc-grand-goa-a-luxury-collection-resort-and-spa-goa/overview/" target="_blank"><svg class="icon"><use href="#i-bed"/></svg> ITC Grand Goa</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Check-in</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-key"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Check in on Bonvoy Titanium</span> — ask about suite upgrade, late checkout and lounge access. <strong>⚠️ No pure-veg claim online</strong> — ask for separate veg preparation, no egg, and whether a Jain/veg-only option exists.
+              </div>
+            </div>
+            <div class="row" data-rest-name="ITC Grand Goa dining" data-rest-city="Arossim">
+              <div class="row-time">Dinner</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner at the resort</span> — safest first-night bets are the 24-hour all-day venue and the Indian restaurant. Say <strong>“no fish stock, no egg.”</strong>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 2 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-landmark"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Sat · Oct 17</div>
+                <div class="day-title">Old Goa churches + Panjim's Latin Quarter</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">History</span>
+                <span class="day-tag">UNESCO</span>
+                <span class="day-tag">Modest dress</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">Morning</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Basilica of Bom Jesus + Sé Cathedral · Old Goa <span class="est">(~45–60 min EST)</span></span> — the Basilica holds St Francis Xavier's remains (begun 1594); Sé Cathedral is the largest church the Portuguese built in Asia, with the “Golden Bell.” <strong>⚠️ Mass times not verified</strong> — don't use <code>bomjesus.org</code> (redirects to an unrelated site); use <code>stfrancisxavierofficial.com</code> or ask the concierge.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Basilica+of+Bom+Jesus+Old+Goa" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Bom Jesus</a>
+                  <a class="chip" href="https://www.google.com/maps/search/Se+Cathedral+Old+Goa" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Sé Cathedral</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Late morning</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">St Francis of Assisi + Archaeological Museum</span> — and St Cajetan (modelled on St Peter's, Rome) + Our Lady of the Rosary if the kids are still game. Lots of walking, little shade — eat right after.
+              </div>
+            </div>
+            <div class="row" data-rest-name="The Rasoda Old Goa" data-rest-city="Old Goa">
+              <div class="row-time">Lunch</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">The Rasoda, Old Goa · <strong>✅ pure-veg</strong></span> — two floors, North Indian/Rajasthani, right by the churches. No hours online → call <strong>+91 84477 43753</strong>.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/The+Rasoda+Old+Goa" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> The Rasoda</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Afternoon</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Fontainhas &amp; Panjim riverfront <span class="est">(~15 min from Old Goa)</span></span> — Panjim's photogenic Portuguese quarter: coloured houses, narrow lanes, chapels, and Our Lady of the Immaculate Conception above the city. A lovely slow walk.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Fontainhas+Panjim" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Fontainhas</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Snack</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Café Tato / Café Bhonsle · Goan veg cafés <span class="est">⚠️ confirm</span></span> — old-school bhaji-puri, buns, samosas near the Municipal Garden. Then back to ITC <span class="est">(~45–60 min EST)</span>.
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 3 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-landmark"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Sun · Oct 18</div>
+                <div class="day-title">Ponda temples + spice-farm walk + Loutolim</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Temples</span>
+                <span class="day-tag">Nature</span>
+                <span class="day-tag">Kids</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">Morning</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Shri Mangueshi Temple, Priol <span class="est">(~45–60 min EST)</span> — the anchor</span> — Shiva temple with a seven-storey lamp tower, sacred tank and Nandi bull. Dress code (covered shoulders/knees) but <strong>no foreigner ban</strong>. Great for kids. Nearby Shri Naguesh &amp; Shri Mahalaxmi (Bandora) are easy add-ons.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Shri+Mangueshi+Temple+Priol+Goa" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Mangueshi</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Note</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-shield"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">⚠️ Foreigner-entry flag (your US-passport child)</span> — Shri Shantadurga (Kavlem) &amp; Shri Mahalasa (Mardol) reportedly bar foreigner entry. Call ahead before relying on them. <strong>⛔ Trap:</strong> “Shantadurga Bhojanalay” next to Mangueshi serves a fish plate — it is NOT the temple canteen.
+              </div>
+            </div>
+            <div class="row" data-rest-name="Navtara Ponda" data-rest-city="Ponda">
+              <div class="row-time">Lunch</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Navtara, Ponda · <strong>✅ 100% veg</strong> (locked)</span> — opposite Ponda Municipal Garden. We do the spice-plantation <strong>walk only</strong> (skip the mixed buffet) so there's zero fish-on-the-line risk.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Navtara+Ponda+Goa" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Navtara</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Afternoon</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Ancestral Goa / Big Foot, Loutolim <span class="est">(~25–30 min — closest attraction to the hotel)</span></span> — a recreated old-Goa village + handicrafts; the best single stop for the kids. <span class="est">⚠️ hours unverified → concierge.</span> Then slow time at the ITC pool / Arossim beach.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Ancestral+Goa+Big+Foot+Loutolim" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Ancestral Goa</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 4 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-mountain"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Mon · Oct 19</div>
+                <div class="day-title">Dudhsagar Falls jeep safari + Tambdi Surla</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Waterfall</span>
+                <span class="day-tag">Early start</span>
+                <span class="day-tag">Long day</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">Early</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Depart to Collem (Kulem) · <span class="est">~1h15–1h45 EST</span></span> — hire a <strong>4WD jeep</strong> there (local association) for the ~10 km forest track to the falls. <strong>⚠️ Jeep price, booking and this week's running status → concierge to confirm.</strong>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Falls</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-mountain"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dudhsagar Falls · 300 m, near-peak October flow</span> — a short walk + a stream crossing at the end. <strong>⛔ Do NOT walk the railway track</strong> — banned by the Forest Dept and fined. Jeep only. Kid kit: change of clothes, non-slip shoes, water, snacks.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Dudhsagar+Falls+Goa" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Dudhsagar</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Pair with</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Tambdi Surla Mahadev Temple</span> — a 12th-century stone temple, the oldest in Goa, quiet and beautiful (plausible add-on to the Dudhsagar/Mollem day).
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Tambdi+Surla+Mahadev+Temple" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Tambdi Surla</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Navtara Ponda" data-rest-city="Ponda">
+              <div class="row-time">Food</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Food out here is sparse</span> — have the hotel pack a veg lunch/snacks, or eat pure-veg on the way back via Ponda (<strong>Navtara ✅</strong>). Flagged so no one is stranded hungry. Back to the resort for a hot shower and an early dinner.
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 5 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-landmark"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Tue · Oct 20</div>
+                <div class="day-title">North Goa: Chapora Fort (Dil Chahta Hai) + Fort Aguada + souvenirs</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Bollywood</span>
+                <span class="day-tag">Long drive</span>
+                <span class="day-tag">Shopping</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">Note</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-calendar"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Oct 20 is Dussehra (Vijayadashami), a Goa public holiday</span> — a festival day out and about. <strong>⚠️ Shops and markets may close or keep short hours</strong> — have the concierge check before you set out. (Some calendars put Dussehra on Oct 21 instead.)
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Reality</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">A long-drive day — North Goa is <span class="est">~1h15–1h30 each way EST</span></span> from Arossim. Leave right after an early breakfast. <strong>Prefer not to drive ~3 hrs round-trip with the kids?</strong> Swap it for a calmer South-Goa day: <a href="https://www.google.com/maps/search/Cabo+de+Rama+Fort+Goa" target="_blank">Cabo de Rama clifftop fort</a> <span class="est">(~1h–1h15 EST)</span> + <a href="https://www.google.com/maps/search/Palolem+Beach+Goa" target="_blank">Palolem Beach</a> <span class="est">(~45 min EST)</span>.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Morning</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Chapora Fort — the <em>Dil Chahta Hai</em> fort · <strong>✅ confirmed</strong></span> — the hilltop ramparts from the 2001 film, with wide views over Vagator and the Chapora river. A short uphill walk; the kids will clock it as “the fort from the poster.” <strong>⚠️ Opening hours (~9:30–17:30) &amp; free entry come from tourism portals, not an official notice</strong> — treat as unconfirmed.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Chapora+Fort+Goa" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Chapora Fort</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Below</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-waves"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Vagator Beach — the cove under the fort</span> — the beach Chapora looks down on. <strong>⚠️ Mid-October:</strong> the season is only just opening — few shacks, quiet sand, swimming may be rough. A photo-and-paddle stop more than a swim.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Midday</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Fort Aguada &amp; lighthouse, Sinquerim</span> — a 17th-century Portuguese sea fort that's appeared in <em>Dhoom</em>, <em>Dil Chahta Hai</em> and <em>Rangeela</em> (and the <em>Golmaal</em> films) — <strong>⚠️ film credits per Hindustan Times/Holidify, not an official list.</strong> Big ramparts, a lighthouse, Arabian-Sea views. <span class="est">⚠️ hours/fee unverified → concierge.</span>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Fort+Aguada+Sinquerim+Goa" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Fort Aguada</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Shopping</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-shopping"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Souvenirs &amp; handicrafts · Calangute / Candolim</span> — shops and the Tibetan market near the forts: spices, cashews, feni, Goan handicrafts, beachwear. <strong>⛔ The famous flea markets are NOT on today</strong> — Anjuna runs Wednesdays, Arpora's night market Saturdays, and neither falls on this Tuesday (the season has barely started). <span class="est">⚠️ confirm shop hours — it's Dussehra.</span>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Café Tato Panjim" data-rest-city="Panjim">
+              <div class="row-time">Late lunch</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Veg lunch on the drive back · Panjim</span> — break the journey south at Panjim for pure-veg (<strong>Café Tato ⚠️ confirm</strong>, already on your veg list). Ask the driver for a <em>shuddh shakahari</em> place; say <strong>“no fish, no egg.”</strong> Then the long drive back to Arossim and an early resort dinner.
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 6 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-waves"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Wed · Oct 21</div>
+                <div class="day-title">Slow morning at Arossim → afternoon flight home</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Beach</span>
+                <span class="day-tag">Departure</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">Morning</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-waves"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lazy breakfast · Arossim / Utorda beach &amp; pool</span> — the resort's own calm South-Goa stretch. No rushing on the last morning.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Optional</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">A quick Colva Beach stop <span class="est">(South Goa, close to the hotel)</span></span> — if there's time before checkout: Colva is where Shah Rukh Khan's <em>Kabhi Haan Kabhi Naa</em> was filmed — a short, close south-Goa film tie-in. <span class="est">⚠️ keep it short — afternoon flight.</span>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Colva+Beach+Goa" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Colva Beach</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="The Veggies Pure Veg Utorda" data-rest-city="Utorda">
+              <div class="row-time">Checkout</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Late checkout (Titanium 4 pm helps) → GOI · <span class="est">15–20 min</span></span> — lunch at the resort or The Veggies Pure Veg, Utorda, then the short transfer to the airport for the afternoon flight home.
+              </div>
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== GETTING AROUND ========== -->
+<section class="transport" id="transport">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Getting around</div>
+        <h2>One car, <em>out and back each day</em></h2>
+      </div>
+      <p>No self-drive needed. Book a hotel car or a reliable local driver through the ITC concierge for
+        each sightseeing day — South Goa to the sights and back. All times below are estimates
+        <span class="est">(EST)</span>; confirm the real morning-of drive time with the concierge.</p>
+    </div>
+    <div class="goa-drive">
+      <div class="dc"><div class="leg">Dabolim (GOI) → ITC Grand Goa</div><div class="tm">~15–20 min</div><div class="nt">Airport transfer · one of the closest 5-stars</div></div>
+      <div class="dc"><div class="leg">Arossim → Old Goa &amp; Panjim</div><div class="tm">~45–60 min</div><div class="nt">Day 2 · churches + Latin Quarter</div></div>
+      <div class="dc"><div class="leg">Arossim → Ponda temples</div><div class="tm">~45–60 min</div><div class="nt">Day 3 · Mangueshi + spice farm</div></div>
+      <div class="dc"><div class="leg">Arossim → Loutolim (Big Foot)</div><div class="tm">~25–30 min</div><div class="nt">Day 3 · closest attraction to the hotel</div></div>
+      <div class="dc"><div class="leg">Arossim → Collem (for Dudhsagar)</div><div class="tm">~1h15–1h45</div><div class="nt">Day 4 · then 4WD jeep on the forest track</div></div>
+      <div class="dc"><div class="leg">Arossim → North Goa forts</div><div class="tm">~1h15–1h30</div><div class="nt">Day 5 · Chapora + Aguada (est, each way)</div></div>
+      <div class="dc"><div class="leg">ITC Grand Goa → Dabolim (GOI)</div><div class="tm">~15–20 min</div><div class="nt">Day 6 · departure</div></div>
+    </div>
+    <p class="goa-note">⚠️ The Dudhsagar leg needs a 4WD jeep from the Collem association for the last ~10 km — price, booking and this week's running status are all concierge-confirm items. Never walk the railway track (banned &amp; fined).</p>
+  </div>
+</section>
+
+<!-- ========== VEG DINING (with map) ========== -->
+<section class="veg-section" id="veg-restaurants">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Eating safely</div>
+        <h2>Verified vegetarian anchors <em>to carry</em></h2>
+      </div>
+      <p>Strict lacto-vegetarian — no meat, fish, seafood or egg; dairy and tofu are fine. Goan “veg”
+        gravies can hide fish/prawn paste and baked goods can contain egg, so always say
+        <strong>“no fish stock, no egg.”</strong> These are the vetted anchors; the full list with dish
+        names is in the field guide. Map pins are approximate — tap any card's Maps link for the real listing.</p>
+    </div>
+
+    <div class="section-map-split">
+      <div class="section-map-split__list">
+        <div class="veg-grid">
+
+          <article class="veg-card" data-reveal data-lat="15.4030" data-lon="74.0100" data-name="Navtara, Ponda" data-map-scope="restaurants" tabindex="0" role="button">
+            <div class="veg-card-head">
+              <div class="veg-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div style="flex:1">
+                <div class="veg-card-title">Navtara, Ponda <span class="veg-card-source osm">✅ Verified</span></div>
+                <div class="veg-card-cuisine">100% pure-vegetarian · thali · South &amp; North Indian</div>
+              </div>
+            </div>
+            <div class="veg-card-hours"><svg class="icon"><use href="#i-clock"/></svg> Opp. Ponda Municipal Garden · your Day 3 &amp; Day 4 anchor</div>
+            <div class="veg-card-actions">
+              <a class="chip" href="https://www.google.com/maps/search/Navtara+Ponda+Goa" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+            </div>
+          </article>
+
+          <article class="veg-card" data-reveal data-lat="15.5005" data-lon="73.9125" data-name="The Rasoda, Old Goa" data-map-scope="restaurants" tabindex="0" role="button">
+            <div class="veg-card-head">
+              <div class="veg-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div style="flex:1">
+                <div class="veg-card-title">The Rasoda, Old Goa <span class="veg-card-source osm">✅ Verified</span></div>
+                <div class="veg-card-cuisine">pure-veg · North Indian / Rajasthani · by the churches</div>
+              </div>
+            </div>
+            <div class="veg-card-hours unverified"><svg class="icon"><use href="#i-clock"/></svg> Hours not online — call +91 84477 43753</div>
+            <div class="veg-card-actions">
+              <a class="chip" href="https://www.google.com/maps/search/The+Rasoda+Old+Goa" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+            </div>
+          </article>
+
+          <article class="veg-card" data-reveal data-lat="15.4989" data-lon="73.8278" data-name="Café Tato, Panjim" data-map-scope="restaurants" tabindex="0" role="button">
+            <div class="veg-card-head">
+              <div class="veg-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div style="flex:1">
+                <div class="veg-card-title">Café Tato, Panjim <span class="veg-card-source google">⚠️ Confirm</span></div>
+                <div class="veg-card-cuisine">old-school Goan veg café · bhaji-puri, buns, samosas</div>
+              </div>
+            </div>
+            <div class="veg-card-hours unverified"><svg class="icon"><use href="#i-clock"/></svg> Near Municipal Garden — verify hours on Maps</div>
+            <div class="veg-card-actions">
+              <a class="chip" href="https://www.google.com/maps/search/Cafe+Tato+Panjim" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+            </div>
+          </article>
+
+          <article class="veg-card" data-reveal data-lat="15.3200" data-lon="73.9000" data-name="The Veggies Pure Veg, Utorda" data-map-scope="restaurants" tabindex="0" role="button">
+            <div class="veg-card-head">
+              <div class="veg-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div style="flex:1">
+                <div class="veg-card-title">The Veggies Pure Veg, Utorda <span class="veg-card-source google">⚠️ Confirm</span></div>
+                <div class="veg-card-cuisine">pure-veg · near the hotel beach · handy low-key dinner</div>
+              </div>
+            </div>
+            <div class="veg-card-hours unverified"><svg class="icon"><use href="#i-clock"/></svg> Listing only — verify on Maps</div>
+            <div class="veg-card-actions">
+              <a class="chip" href="https://www.google.com/maps/search/The+Veggies+Pure+Veg+Utorda+Goa" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+            </div>
+          </article>
+
+        </div>
+        <p class="veg-attribution">
+          ✅ = loaded the source myself and the fact was on the page. ⚠️ = the place is real but a detail
+          (hours, veg-only) couldn't be machine-checked — the concierge confirms in one call.
+          ⛔ Trap: “Shantadurga Bhojanalay” next to Mangueshi Temple serves fish — not the temple canteen.
+        </p>
+      </div>
+      <aside class="section-map-split__map" data-trip-map="restaurants" aria-label="Map of vegetarian anchors"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HERITAGE (photos) ========== -->
+<section class="anchors-section" id="anchors">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">The beautiful &amp; the old</div>
+        <h2>Heritage anchors <em>worth planning around</em></h2>
+      </div>
+      <p>The sights that make this a temples-history-and-beauty trip, not a beach trip. Photos are of the
+        actual landmarks (Wikimedia Commons). Hours and fees are mostly concierge-confirm items.</p>
+    </div>
+    <div class="goa-herogrid">
+      <div class="goa-herocard">
+        <div class="ph" style="background-image:url('images/bom-jesus.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Basilica of Bom Jesus</div>
+          <div class="lo">Old Goa · Day 2</div>
+          <p>Holds St Francis Xavier's remains in a silver urn (begun 1594) — the single most important church in Goa, a UNESCO World Heritage site.</p>
+          <a href="https://www.google.com/maps/search/Basilica+of+Bom+Jesus+Old+Goa" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="goa-herocard">
+        <div class="ph" style="background-image:url('images/se-cathedral.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Sé Cathedral</div>
+          <div class="lo">Old Goa · Day 2</div>
+          <p>The largest church the Portuguese built in Asia (91 m), home to the famous “Golden Bell.” A short walk from the Basilica.</p>
+          <a href="https://www.google.com/maps/search/Se+Cathedral+Old+Goa" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="goa-herocard">
+        <div class="ph" style="background-image:url('images/fontainhas.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Fontainhas</div>
+          <div class="lo">Panjim · Day 2</div>
+          <p>Panjim's photogenic Portuguese Latin Quarter — coloured houses, narrow lanes and chapels. A lovely slow afternoon walk.</p>
+          <a href="https://www.google.com/maps/search/Fontainhas+Panjim" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="goa-herocard">
+        <div class="ph" style="background-image:url('images/mangueshi.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Shri Mangueshi Temple</div>
+          <div class="lo">Priol, Ponda · Day 3</div>
+          <p>A Shiva temple with a seven-storey lamp tower, sacred tank and Nandi bull. The temple-day anchor — dress code, but no foreigner ban.</p>
+          <a href="https://www.google.com/maps/search/Shri+Mangueshi+Temple+Priol+Goa" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="goa-herocard">
+        <div class="ph" style="background-image:url('images/dudhsagar.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Dudhsagar Falls</div>
+          <div class="lo">Mollem · Day 4</div>
+          <p>Goa's spectacular 300 m “sea of milk” waterfall at near-peak October flow, reached by a bumpy 4WD jeep safari. The kids will love it.</p>
+          <a href="https://www.google.com/maps/search/Dudhsagar+Falls+Goa" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="goa-herocard">
+        <div class="ph" style="background-image:url('images/chapora-fort.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Chapora Fort</div>
+          <div class="lo">North Goa · Day 5 · ✅ Dil Chahta Hai</div>
+          <p>The hilltop fort from <em>Dil Chahta Hai</em> (2001), overlooking Vagator — confirmed by Goa Tourism and India Today. A long drive north, but the headline Bollywood stop.</p>
+          <a href="https://www.google.com/maps/search/Chapora+Fort+Goa" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="goa-herocard">
+        <div class="ph" style="background-image:url('images/fort-aguada.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Fort Aguada</div>
+          <div class="lo">Sinquerim, North Goa · Day 5</div>
+          <p>A 17th-century Portuguese sea fort and lighthouse — screen credits include <em>Dhoom</em>, <em>Dil Chahta Hai</em> and <em>Rangeela</em> (⚠️ per press/travel sites, not an official list).</p>
+          <a href="https://www.google.com/maps/search/Fort+Aguada+Sinquerim+Goa" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="goa-herocard">
+        <div class="ph" style="background-image:url('images/goa-beach.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Arossim / Utorda Beach</div>
+          <div class="lo">South Goa · Day 6</div>
+          <p>The resort's own calm, quiet South-Goa stretch — the slow bookend to four busy days of sightseeing before the afternoon flight home.</p>
+          <a href="https://www.google.com/maps/search/Arossim+Beach+Goa" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FIELD GUIDE CTA ========== -->
+<section class="costs" id="guide">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Carry it on your phone</div>
+        <h2>The full <em>field guide</em></h2>
+      </div>
+      <p>Everything here in bullet-proof detail — day-by-day timelines, verified veg anchors with phone
+        numbers, the hidden-fish problem, emergency numbers, kids' ID cards, and an honest trust label on
+        every fact. Built in the same format as the Japan guide.</p>
+    </div>
+    <div class="hero-actions" style="gap:14px;">
+      <a href="GOA-FIELD-GUIDE.html" class="btn btn-primary"><svg class="icon icon-sm"><use href="#i-landmark"/></svg> Read the guide</a>
+      <a href="GOA-FIELD-GUIDE.pdf" class="btn btn-ghost" download><svg class="icon icon-sm"><use href="#i-arrow-up-right"/></svg> Download PDF (22 pages)</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-foot">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="../index.html" class="logo" style="color: var(--cream); margin-bottom: 16px;">
+          <span class="logo-mark">◈</span>
+          <span class="logo-word" style="color: var(--cream);"><span class="logo-line">gama<span class="logo-slash" style="color: var(--saffron-soft);">/</span></span><span class="logo-line">adventures</span></span>
+        </a>
+        <p style="max-width: 360px; margin-top: 16px;">Personal travel planner for the family. Each trip is regenerable, version-tracked, and tuned to BLR origin, school calendar, and Marriott / Hilton / Hyatt loyalty.</p>
+      </div>
+      <div>
+        <h6>This trip</h6>
+        <ul>
+          <li><a href="#itinerary">Day-by-day</a></li>
+          <li><a href="#transport">Getting around</a></li>
+          <li><a href="#veg-restaurants">Veg dining</a></li>
+          <li><a href="#anchors">Heritage</a></li>
+          <li><a href="GOA-FIELD-GUIDE.html">Full field guide</a></li>
+          <li><a href="GOA-FIELD-GUIDE.pdf">PDF (offline)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Base</h6>
+        <ul>
+          <li>ITC Grand Goa · Arossim</li>
+          <li>Luxury Collection · Bonvoy</li>
+          <li>South Goa · ~15 min from GOI</li>
+          <li>Strict lacto-vegetarian</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Family travel agent · Built locally</span>
+      <span>Generated · Oct 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.YATRA_TRIP_DEFAULTS = {
+    country: 'IN',
+    cities: [
+      { name: 'Arossim',   lat: 15.3160, lon: 73.9060 },
+      { name: 'Old Goa',   lat: 15.5009, lon: 73.9116 },
+      { name: 'Panjim',    lat: 15.4989, lon: 73.8278 },
+      { name: 'Ponda',     lat: 15.4027, lon: 74.0083 },
+      { name: 'Dudhsagar', lat: 15.3144, lon: 74.3144 },
+      { name: 'Chapora',   lat: 15.6033, lon: 73.7369 },
+      { name: 'Aguada',    lat: 15.4925, lon: 73.7736 }
+    ]
+  };
+</script>
+<script src="../_shared/data-sources.js"></script>
+<script src="../_shared/claude-agent.js"></script>
+<script src="../_shared/agent-toast.js"></script>
+<script src="../_shared/trip-map.js"></script>
+<script src="../_shared/site.js"></script>

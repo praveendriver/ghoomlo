@@ -1,0 +1,64 @@
+{
+  "destination": "Dubai",
+  "country": "AE",
+  "lat": 25.2,
+  "lon": 55.27,
+  "generated_at": "2026-05-30T03:51:07.928586+00:00",
+  "items_total": 1,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [
+      {
+        "name": "Bolahnierst Police Station",
+        "score": 2.25,
+        "creators": [
+          "@MumbikerNikhil"
+        ],
+        "creator_count": 1,
+        "mentions": 1,
+        "positive": 0,
+        "negative": 0,
+        "city": "Dubai",
+        "quote": "is speaking so much so I don’t expect in Dubai to get me so easily. He went to Bolahnierst Police Station and said to me, I will give you what I was talking about and the police station was right next to the parking I went to Police Station",
+        "quote_creator": "@MumbikerNikhil",
+        "quote_source": "youtube",
+        "quote_url": "https://www.youtube.com/watch?v=vmJJSwzconk",
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.6",
+          "review_count": "63",
+          "ranking": "#148 of 737 things to do in Dubai",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g295424-d13568481-Reviews-Dubai_Smart_Police_Station-Dubai_Emirate_of_Dubai.html?m=66827",
+          "city": "Dubai"
+        }
+      },
+      {
+        "name": "Police Station",
+        "score": 2.25,
+        "creators": [
+          "@MumbikerNikhil"
+        ],
+        "creator_count": 1,
+        "mentions": 1,
+        "positive": 0,
+        "negative": 0,
+        "city": "Dubai",
+        "quote": "as talking about and the police station was right next to the parking I went to Police Station. He was so good to talk about the English. He filled me a form. I did all right down. Sit you. I sit. I sit 10-15 minutes. I'm okay. Bolla is pro",
+        "quote_creator": "@MumbikerNikhil",
+        "quote_source": "youtube",
+        "quote_url": "https://www.youtube.com/watch?v=vmJJSwzconk",
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.6",
+          "review_count": "63",
+          "ranking": "#148 of 737 things to do in Dubai",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g295424-d13568481-Reviews-Dubai_Smart_Police_Station-Dubai_Emirate_of_Dubai.html?m=66827",
+          "city": "Dubai"
+        }
+      }
+    ],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

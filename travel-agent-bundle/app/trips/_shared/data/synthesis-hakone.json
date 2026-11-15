@@ -1,0 +1,154 @@
+{
+  "destination": "Hakone",
+  "country": "JP",
+  "lat": 35.23,
+  "lon": 139.02,
+  "generated_at": "2026-05-30T04:46:57.877290+00:00",
+  "items_total": 0,
+  "creators_total": 0,
+  "buckets": {
+    "must_do": [
+      {
+        "name": "Hakone Open-Air Museum",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Hakone",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.6",
+          "review_count": "2854",
+          "ranking": "#1 of 123 things to do in Hakone-machi",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g298171-d320696-Reviews-The_Hakone_Open_Air_Museum-Hakone_machi_Ashigarashimo_gun_Kanagawa_Prefecture_Kant.html?m=66827",
+          "city": "Hakone-machi"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Pola Museum of Art",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Hakone",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.5",
+          "review_count": "813",
+          "ranking": "#2 of 123 things to do in Hakone-machi",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g298171-d1515632-Reviews-Pola_Museum_of_Art-Hakone_machi_Ashigarashimo_gun_Kanagawa_Prefecture_Kanto.html?m=66827",
+          "city": "Hakone-machi"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Mount Fuji viewpoint",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Hakone",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.4",
+          "review_count": "81",
+          "ranking": "#88 of 2,708 things to do in Shizuoka Prefecture",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g298121-d555137-Reviews-Fuji_Hakone_Izu_National_Park-Shizuoka_Prefecture_Tokai_Chubu.html?m=66827",
+          "city": "Chubu"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Lake Ashi",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Hakone",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.2",
+          "review_count": "2845",
+          "ranking": "#4 of 123 things to do in Hakone-machi",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g298171-d319900-Reviews-Lake_Ashinoko-Hakone_machi_Ashigarashimo_gun_Kanagawa_Prefecture_Kanto.html?m=66827",
+          "city": "Hakone-machi"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Hakone Ropeway",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Hakone",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.2",
+          "review_count": "2508",
+          "ranking": "#6 of 123 things to do in Hakone-machi",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g298171-d324309-Reviews-Hakone_Ropeway-Hakone_machi_Ashigarashimo_gun_Kanagawa_Prefecture_Kanto.html?m=66827",
+          "city": "Hakone-machi"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Owakudani",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Hakone",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.1",
+          "review_count": "2233",
+          "ranking": "#8 of 123 things to do in Hakone-machi",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g298171-d1310916-Reviews-Owaku_dani_Valley-Hakone_machi_Ashigarashimo_gun_Kanagawa_Prefecture_Kanto.html?m=66827",
+          "city": "Hakone-machi"
+        },
+        "is_seed": true
+      }
+    ],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

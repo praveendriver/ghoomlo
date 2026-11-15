@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Japan Field Guide — Kyoto &amp; Tokyo · Jul 2026</title>
+<style>
+/* === Yatra. design system — self-hosted fonts so the PDF renders offline === */
+@font-face{ font-family:'Fraunces'; font-style:normal; font-weight:400 700;
+  src:url('images/fonts/fraunces-latin.woff2') format('woff2'); font-display:swap; }
+@font-face{ font-family:'InterGuide'; font-style:normal; font-weight:400 700;
+  src:url('images/fonts/inter-latin.woff2') format('woff2'); font-display:swap; }
+:root{
+  /* Palette lifted from trips/_shared/style.css (the "site") */
+  --ink:#1a2128; --ink-soft:#4a5560; --muted:#6a7480;
+  --paper:#f6f1e8; --card:#fffdf9; --sand:#efe7d6;
+  --line:#d9cfbc; --line-strong:#c3b8a1;
+  --teal:#1f3a3d; --teal-deep:#122729;
+  --saffron:#d97a3a; --saffron-deep:#b15f24; --saffron-soft:#e8a572;
+  --gold:#b07d2e;
+  /* semantic accents (kept for the color-coded system, but every use also has a
+     non-colour cue — border, weight, glyph or shape — so it survives B&W print) */
+  --accent:#b15f24; --accent2:#1f6f6b;
+}
+*{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; }
+body{ font-family:'InterGuide',-apple-system,"Helvetica Neue","Hiragino Sans",Arial,sans-serif;
+  color:var(--ink); line-height:1.58; max-width:820px; margin:0 auto; padding:34px 26px 64px;
+  background:#fff; font-size:14.5px; -webkit-font-smoothing:antialiased;
+  font-feature-settings:"liga" 1,"kern" 1; }
+@media screen{ body{ background:var(--paper); } }
+h1,h2,h3,.big,.serif{ font-family:'Fraunces','Times New Roman',Georgia,serif; }
+h1{ font-size:30px; line-height:1.14; margin:.25em 0 .12em; color:var(--teal-deep);
+  font-weight:600; letter-spacing:-.01em; border:0; }
+h1 + h3{ margin-top:0; color:var(--saffron-deep); font-weight:600; font-size:14px;
+  font-family:'InterGuide',sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+/* Section heads read like the site: a saffron eyebrow rule + serif title, not a filled bar */
+h2{ font-size:22px; font-weight:600; color:var(--teal-deep); margin:1.7em 0 .55em;
+  padding:0 0 8px; border-bottom:1.5px solid var(--line-strong); position:relative;
+  letter-spacing:-.01em; }
+h2::before{ content:""; position:absolute; left:0; bottom:-1.5px; width:56px; height:1.5px;
+  background:var(--saffron); }
+h3{ font-size:17.5px; margin:1.4em 0 .4em; color:var(--teal); font-weight:600; }
+h4{ font-size:14.5px; margin:1.15em 0 .3em; color:var(--ink); font-weight:700;
+  font-family:'InterGuide',sans-serif; }
+p,li{ font-size:14.5px; }
+a.u{ color:var(--saffron-deep); word-break:break-all; text-decoration:none; }
+a{ color:var(--saffron-deep); }
+code{ background:var(--sand); padding:1px 5px; border-radius:5px; font-size:12.5px;
+  font-family:"SF Mono",Menlo,Consolas,monospace; }
+pre{ background:var(--sand); border:1px solid var(--line); border-radius:10px; padding:12px 14px;
+  overflow-x:auto; font-size:12.5px; line-height:1.45; }
+pre code{ background:none; padding:0; }
+table{ border-collapse:collapse; width:100%; margin:.9em 0; font-size:13px; }
+th,td{ border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+th{ background:var(--sand); font-family:'InterGuide',sans-serif; font-weight:700;
+  color:var(--teal-deep); }
+hr{ border:0; border-top:1px solid var(--line-strong); margin:2.2em 0; }
+blockquote{ margin:1.1em 0; padding:12px 16px; background:var(--card);
+  border:1px solid var(--line); border-left:3px solid var(--saffron); border-radius:12px;
+  color:var(--ink-soft); }
+blockquote p{ margin:.3em 0; }
+ul,ol{ padding-left:22px; }
+li{ margin:.28em 0; }
+strong{ color:var(--ink); font-weight:700; }
+/* Figures: images with italic captions. The markdown emits <p><img><em>caption</em></p>. */
+img{ max-width:100%; height:auto; border:1px solid var(--line); border-radius:6px;
+  margin:.6em 0 .2em; display:inline-block; vertical-align:top; }
+p:has(img){ margin:1em 0 1.2em; }
+p:has(img) em{ display:block; font-size:12.5px; color:var(--muted); line-height:1.4;
+  margin-top:.15em; font-style:italic; }
+/* two side-by-side images in one paragraph (USJ steps) shrink to fit */
+p:has(img + img) img{ max-width:48%; }
+/* The Keikyu line map is a tall, narrow diagram only 456px wide at source.
+   Cap it at native width and center it so the PDF never upscales it (upscaling = blur). */
+img[src$="arr-08-keikyu-linemap.png"]{ max-width:300px; display:block; margin:.6em auto .2em;
+  image-rendering:-webkit-optimize-contrast; }
+/* Thumbnails of saved Instagram screenshots (tall phone caps). Keep small. */
+img[src*="/jul2/"]{ width:64px; max-width:64px; height:auto; border-radius:5px;
+  margin:2px 3px 2px 0; vertical-align:middle; }
+/* Appendix phone-screenshot dumps (tall 9:16 caps) — cap the height so a single
+   screenshot doesn't swallow a whole page in the PDF. */
+img[src*="/dumps/"]{ max-height:360px; width:auto; max-width:100%; display:block; }
+td img[src*="/jul2/"]{ width:52px; max-width:52px; }
+/* "Today's picks" photo strip inside day sections */
+.picks{ display:flex; flex-wrap:wrap; gap:12px; margin:.6em 0 1.1em; }
+.pick{ width:122px; font-size:11.5px; line-height:1.32; color:var(--muted); }
+.pick img{ width:122px; max-width:122px; height:150px; object-fit:cover; display:block;
+  border:1px solid var(--line); border-radius:12px; margin:0 0 4px; }
+.pick b{ color:var(--ink); display:block; font-size:11.5px; font-weight:700; }
+.pick .tagb{ display:inline-block; font-size:9px; font-weight:700; letter-spacing:.6px;
+  text-transform:uppercase; padding:2px 7px; border-radius:999px; margin-bottom:3px;
+  border:1px solid var(--line-strong); background:var(--card); color:var(--ink-soft); }
+.pick .buy{ border-color:var(--saffron); color:var(--saffron-deep); }
+.pick .eat{ border-color:var(--teal); color:var(--teal); }
+.pick .see{ border-color:var(--gold); color:var(--gold); }
+/* === Day TIMELINE === a vertical time-rail with sequenced stops ===
+   B&W-safe: node SHAPE + glyph distinguishes stop type, not just colour. */
+.tl{ position:relative; margin:1.2em 0 1.5em; }
+.stop{ display:grid; grid-template-columns:52px 1fr; }
+.stop .tmark{ text-align:right; padding:1px 13px 0 0; font-size:12px; font-weight:700;
+  color:var(--saffron-deep); white-space:nowrap; letter-spacing:-.2px;
+  font-family:'Fraunces',serif; }
+.stop .scard{ position:relative; border-left:2px solid var(--line-strong); padding:0 0 20px 22px; }
+.stop:last-child .scard{ border-left-color:transparent; }
+.stop .scard::before{ content:""; position:absolute; left:-8px; top:3px; width:14px; height:14px;
+  border-radius:50%; background:var(--teal); border:2px solid var(--card);
+  box-shadow:0 0 0 1.5px var(--line-strong); }
+.stop .stitle{ font-weight:700; font-size:14.5px; color:var(--ink); margin:0 0 3px; line-height:1.3; }
+.stop .sbody{ font-size:12.7px; line-height:1.52; color:var(--ink-soft); }
+.stop .sbody .warn{ color:var(--saffron-deep); font-weight:700; }
+.stop .sbody a{ color:var(--saffron-deep); word-break:break-all; }
+/* meal stop: teal ring + fork glyph; transit: gold square + arrow glyph */
+.stop.meal .scard::before{ background:var(--card); border-color:var(--teal);
+  box-shadow:0 0 0 1.5px var(--teal); }
+.stop.meal .scard::after{ content:"\1F374"; position:absolute; left:-6px; top:1px; font-size:8px;
+  line-height:1; }
+.stop.move .scard::before{ background:var(--gold); border-radius:3px; }
+/* OPTIONAL stop: hollow dashed node + skip route */
+.stop.opt .scard{ border-left-style:dashed; }
+.stop.opt .scard::before{ background:var(--card); border:2px dashed var(--saffron-deep);
+  box-shadow:none; }
+.stop.opt .tmark{ color:var(--muted); font-weight:700; font-size:10px; text-transform:uppercase;
+  padding-top:3px; }
+.stop.opt .stitle{ color:var(--saffron-deep); }
+.optbadge{ display:inline-block; font-size:9px; font-weight:700; letter-spacing:.6px;
+  text-transform:uppercase; background:var(--card); color:var(--saffron-deep);
+  border:1px solid var(--saffron); padding:1px 7px; border-radius:999px;
+  margin-right:6px; vertical-align:middle; }
+.skip{ margin-top:8px; font-size:11.5px; background:var(--sand); border:1px dashed var(--line-strong);
+  border-radius:10px; padding:6px 11px; color:var(--muted); }
+.skip b{ color:var(--teal); }
+.skip::before{ content:"\21B3 skip \2192 "; font-weight:700; color:var(--saffron-deep); }
+/* === Glanceable transport FACTS chips inside a move stop === */
+.facts{ display:flex; flex-wrap:wrap; gap:5px 6px; margin:6px 0 4px; }
+.facts .f{ font-size:11px; font-weight:600; background:var(--card); border:1px solid var(--line-strong);
+  border-radius:999px; padding:2px 9px; color:var(--ink-soft); white-space:nowrap; }
+.facts .f b{ color:var(--ink); font-weight:700; }
+.facts .f.tap{ border-color:var(--teal); color:var(--teal); }
+.facts .f.buy{ border-color:var(--saffron); color:var(--saffron-deep); }
+/* === Named pick list inside an eat/see/shop stop (replaces flip-to-Part-10/11) ===
+   B&W-safe: outline pills with a leading glyph per type instead of solid fills. */
+.picklist{ margin:7px 0 2px; padding:0; list-style:none; }
+.picklist li{ font-size:12px; line-height:1.48; margin:4px 0; padding-left:2px; }
+.picklist .nm{ font-weight:700; color:var(--ink); }
+.picklist .tg{ display:inline-block; font-size:8.5px; font-weight:700; letter-spacing:.5px;
+  text-transform:uppercase; padding:1px 7px; border-radius:999px; margin-right:6px;
+  vertical-align:middle; background:var(--card); border:1px solid var(--line-strong);
+  color:var(--ink-soft); }
+.picklist .tg::before{ font-weight:700; margin-right:3px; }
+.picklist .tg.veg{ border-color:var(--teal); color:var(--teal); }
+.picklist .tg.veg::before{ content:"\25C9 "; }        /* veg = filled ring */
+.picklist .tg.ind{ border-color:var(--saffron); color:var(--saffron-deep); }
+.picklist .tg.ind::before{ content:"\2691 "; }        /* india flag glyph */
+.picklist .tg.buy{ border-color:var(--gold); color:var(--gold); }
+.picklist .tg.buy::before{ content:"\25B8 "; }        /* buy = triangle */
+.picklist .tg.safe{ border-color:var(--teal); color:var(--teal); }
+.picklist .tg.safe::before{ content:"\2713 "; }       /* safe = check */
+.picklist .tg.see{ border-color:var(--ink-soft); color:var(--ink-soft); }
+.picklist .tg.see::before{ content:"\25C6 "; }        /* see = diamond */
+.picklist a{ color:var(--saffron-deep); word-break:break-all; }
+.maplink{ font-size:10.5px; color:var(--saffron-deep); }
+/* "Carry today" strip on each day divider */
+.daysep .carry{ margin-top:18px; font-size:12.5px; background:rgba(246,241,232,.10);
+  border:1px solid rgba(246,241,232,.35); border-radius:14px; padding:10px 16px; display:inline-block;
+  line-height:1.6; color:rgba(246,241,232,.9); }
+.daysep .carry b{ color:#fff; }
+/* photo inside a stop */
+.sphoto{ margin:8px 0 1px; display:flex; gap:11px; flex-wrap:wrap; align-items:flex-start; }
+.stop .sphoto img{ width:104px; max-width:104px; height:130px; object-fit:cover; margin:0;
+  border:1px solid var(--line); border-radius:12px; display:block; }
+.sphoto .cap{ font-size:10.5px; color:var(--muted); line-height:1.4; max-width:150px; }
+.sphoto .cap b{ color:var(--ink); display:block; font-weight:700; }
+/* Landmark ID photo — bigger than a thumbnail so the user can recognise the
+   place on the ground (used where a confusing Japanese name needs a picture). */
+.sphoto.idcard{ align-items:flex-start; }
+.stop .sphoto.idcard img{ width:264px; max-width:264px; height:auto; max-height:200px;
+  object-fit:cover; border-radius:14px; }
+.sphoto.idcard .cap{ max-width:220px; font-size:11px; }
+/* Day separator / divider pages — deep teal, editorial, grayscale-graceful */
+.daysep{ margin:0; padding:70px 34px; background:var(--teal-deep); color:var(--paper);
+  border-radius:20px; text-align:center; position:relative; overflow:hidden; }
+.daysep::before{ content:""; position:absolute; inset:14px; border:1px solid rgba(246,241,232,.28);
+  border-radius:12px; pointer-events:none; }
+.daysep .kicker{ font-size:12px; letter-spacing:.34em; text-transform:uppercase;
+  color:var(--saffron-soft); font-weight:600; position:relative; }
+.daysep .big{ font-family:'Fraunces',serif; font-size:46px; font-weight:600; line-height:1.08;
+  margin:10px 0 8px; color:var(--paper); letter-spacing:-.01em; position:relative; }
+.daysep .sub{ font-size:16.5px; color:rgba(246,241,232,.85); position:relative; }
+.daysep .tag{ display:inline-block; margin-top:18px; padding:6px 16px;
+  border:1px solid var(--saffron-soft); border-radius:999px; font-size:12.5px;
+  color:var(--saffron-soft); position:relative; }
+/* === Index / table of contents (tap-to-jump grid) — site card style === */
+.toc{ border:1px solid var(--line-strong); border-radius:20px; padding:20px 22px 22px;
+  margin:1.5em 0 1.3em; background:var(--card); scroll-margin-top:60px; }
+.toc-h{ font-family:'Fraunces',serif; font-size:22px; font-weight:600; color:var(--teal-deep);
+  margin-bottom:3px; }
+.toc-note{ font-size:11.5px; color:var(--muted); margin-bottom:15px; line-height:1.45; }
+.toc-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-bottom:10px; }
+.tci{ display:block; text-decoration:none; border:1px solid var(--line); border-radius:13px;
+  padding:9px 12px; background:#fff; line-height:1.28; break-inside:avoid; }
+.tci b{ display:block; font-size:13px; color:var(--ink); font-weight:700; }
+.tci span{ display:block; font-size:10px; color:var(--muted); margin-top:1px; }
+.tci.day{ border-left:3px solid var(--saffron); }
+.tci.day b{ color:var(--saffron-deep); }
+.tci.ref{ border-left:3px solid var(--teal); background:var(--card); }
+.tci.ref b{ color:var(--teal); }
+/* === Floating "back to index" chip — repeats on every printed page === */
+.idxchip{ position:fixed; top:6mm; right:6mm; z-index:999; text-decoration:none;
+  background:var(--teal-deep); color:var(--paper); font-size:12px; font-weight:700; letter-spacing:.3px;
+  padding:5px 13px; border-radius:999px; box-shadow:0 1px 4px rgba(0,0,0,.25);
+  border:1px solid var(--saffron-soft); }
+@media screen{ .idxchip{ position:fixed; } }
+@media print{
+  body{ padding:0 6mm; font-size:11.5pt; max-width:none; }
+  h2{ break-inside:avoid; }
+  h2,h3,h4{ break-after:avoid; }
+  table,pre,blockquote{ break-inside:avoid; }
+  p:has(img){ break-inside:avoid; }
+  img{ break-inside:avoid; }
+  .picks{ break-inside:avoid; } .pick{ break-inside:avoid; }
+  .stop{ break-inside:avoid; } .sphoto{ break-inside:avoid; } .skip{ break-inside:avoid; }
+  .facts{ break-inside:avoid; } .picklist li{ break-inside:avoid; }
+  a.u,a{ color:#0a58ca; }
+  /* Each day divider starts on a fresh page; force its dark ground to print */
+  .daysep{ break-before:page; break-inside:avoid; min-height:80vh;
+    display:flex; flex-direction:column; justify-content:center;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  th,.pick .tagb,.facts .f,.picklist .tg,blockquote,.toc,.tci{
+    -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  /* The index chip is position:fixed, so Chromium paints it on EVERY printed page.
+     In Chromium's print engine a fixed element lands in the BOTTOM-margin band of every
+     page (consistent), so we anchor it bottom-right as a repeating "back to index" tab. */
+  .idxchip{ position:fixed; bottom:-11mm; top:auto; right:0; font-size:9.5pt; padding:3px 10px;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .toc{ break-inside:avoid; }
+  .tci{ break-inside:avoid; }
+  @page{ margin:18mm 10mm 14mm; }
+}
+</style>
+</head>
+<body>
+<div class="toc" style="text-align:center"><div class="toc-h">Days-only print copy</div><div class="toc-note">Day 1–12 timelines + the Master Sheet — the self-contained daily kit. Keep the full guide (Parts 1–11 + Appendix) on your phone for planning, trains, eating, shopping &amp; emergencies.</div></div><h1 id="part-9-day-by-day">PART 9 — 📅 DAY BY DAY</h1>
+<blockquote>
+<p><strong>📄 EACH DAY IS SELF-CONTAINED — print just that day.</strong> Everything you need for a day lives <em>on that day's pages</em>: the transport (which line, where to buy, how long, how much), the named veg restaurant picks with photos, the day's shopping picks with map links, and the warnings — all inline in the timeline. <strong>You never have to flip to another section mid-street.</strong> Print the 3–4 pages for the day + the one <strong>Master Sheet</strong> (right after Day 12) and that's your whole kit for the day. The big reference sections at the back (Parts 3, 5, 10, 11) are for <em>planning at home</em> — leave them behind.</p>
+<p><strong>How a day reads:</strong> it starts on a deep-teal <strong>divider page</strong> that lists <strong>what to carry today</strong>, then runs as a <strong>timeline</strong> top-to-bottom — time down the left, each stop (breakfast → train → sight → lunch → …) a dot on the line.</p>
+<p><strong>Reading the dots &amp; chips:</strong> each stop's node on the time-rail tells you the kind of stop by its <strong>shape</strong> — a <strong>solid circle</strong> = a sight/activity, a <strong>ringed circle with a fork</strong> = a meal, a <strong>filled square</strong> = a train/move. Inside a <strong>move</strong> stop, the little <strong>chips</strong> tell you at a glance: <em>TAP SUICA</em> (no ticket to buy) or <em>BUY</em> (needs a ticket), plus the line, journey time and cost. Inside a <strong>meal</strong> stop, the <strong>① ② ③ picks</strong> are named restaurants — <span style="border:1px solid #1f6f6b;color:#1f6f6b;padding:0 5px;border-radius:999px;font-size:11px">◉ VEG</span> vegan/veg, <span style="border:1px solid #d97a3a;color:#b15f24;padding:0 5px;border-radius:999px;font-size:11px">⚑ IND</span> Indian, <span style="border:1px solid #1f6f6b;color:#1f6f6b;padding:0 5px;border-radius:999px;font-size:11px">✓ SAFE</span> konbini/quick — each with a 📍 map link to pin the night before. A <strong>hollow dashed circle</strong> marked <strong>OPTIONAL</strong> is skippable; its <strong>"↳ skip →"</strong> box says exactly where to jump next.</p>
+<p><strong>Golden rules baked into every day:</strong> hard things early (heat + crowds build by 10:00), long A/C lunch break in the middle, early dinner, meeting-point + outfit-photo before any crowded place. Swap freely — nothing here is load-bearing except the <strong>dated tickets (USJ Jul 10, DisneySea Jul 15)</strong> and the <strong>hotel change (Jul 13)</strong>.</p>
+</blockquote>
+<div class="daysep" id="d1"><div class="kicker">Day 1 · Tuesday</div><div class="big">July 7</div><div class="sub">Arrive Haneda → Kyoto</div><div class="tag">Sleep: Westin Miyako Kyoto</div><div class="carry"><b>Carry today:</b> all 4 passports · Smart-EX QR (or buy at Shinagawa) · cash for ATM pull · phones charged · <b>Master Sheet</b></div></div>
+
+<h2 id="day-1-tue-jul-7-arrival-settle-in">Day 1 — Tue Jul 7 · Arrival &amp; settle in</h2>
+<p><strong>Headline:</strong> Land AI356 ~04:55 → <strong>rest &amp; breakfast at Haneda</strong> → mid-morning Shinkansen → lunch at Kyoto Station → hotel by mid-afternoon → <strong>rest</strong>, gentle evening. <em>(Full minute-by-minute is in </em><em>Part 2</em><em>; the train details are in </em><em>Part 3</em><em>.)</em></p>
+<div class="tl">
+
+<div class="stop"><div class="tmark">04:55</div><div class="scard">
+<div class="stitle">🛬 Land Haneda (AI356), Terminal 3</div>
+<div class="sbody">Immigration + bags + customs, unhurried — budget 60–90 min with the family. Aim to be through into the arrivals hall by ~06:15–06:45. (Full walkthrough: Part 2.)</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">06:30</div><div class="scard">
+<div class="stitle">🍳 Airport reset + breakfast at T3</div>
+<div class="sbody">Wash up, then eat — the main hall / train-line level has your picks.
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">AGRO Fruit Parlor</span> — fruit/parfait, near the train lines. <span class="maplink">📍 Haneda T3</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Honolulu Coffee / "Honolu" Premier</span> — pancakes, coffee, in the main hall.</li>
+<li><span class="tg safe">SAFE</span><span class="nm">7-Eleven</span> — veg onigiri (梅 ume / 昆布 konbu; avoid ツナ tuna, 鮭 salmon), fruit, bread if kids won't wait.</li>
+</ul></div>
+</div></div>
+
+<div class="stop"><div class="tmark">07:30</div><div class="scard">
+<div class="stitle">🎫 Kids' Suica + cash + top-ups</div>
+<div class="sbody">Buy Welcome Suica for the kids, pull ¥40–50k from a 7-Bank ATM, load IC cards. Test your card tops up before you rely on it. (Part 4.)</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">08:30</div><div class="scard">
+<div class="stitle">🚆 Leg 1 — Keikyu: Haneda T3 → Shinagawa</div>
+<div class="sbody">From arrivals, follow the <b>red Keikyu signs</b> down to the trains. Board at <b>Haneda Airport T3 (KK16)</b>, ride to <b>Shinagawa (KK01)</b> — any orange "Airport Ltd Express" or through-train; almost all stop at Shinagawa. Everyone <b>taps their Suica</b> through the gate.
+<div class="facts"><span class="f tap">🟩 TAP SUICA</span><span class="f">Keikyu Airport Line</span><span class="f"><b>~20 min</b></span><span class="f">~¥330/adult</span></div></div>
+</div></div>
+
+<div class="stop move"><div class="tmark">09:15</div><div class="scard">
+<div class="stitle">🚄 Leg 2 — Nozomi: Shinagawa → Kyoto (~10:00 train)</div>
+<div class="sbody">At Shinagawa, follow blue <b>Shinkansen</b> signs to the <b>separate Shinkansen gates</b> (not the JR-local gates) — tap your Smart-EX QR/IC through. The <b>~10:00 Nozomi</b> is your anchor (changeable free on Smart-EX; a Nozomi leaves every ~15 min so pull it earlier/later on the day). <b>Stand on your painted car number</b> ~10 min early; reserved seats. Kyoto ~12:10.
+<div class="facts"><span class="f buy">🟥 BUY (Smart-EX)</span><span class="f">Tokaido Shinkansen NOZOMI</span><span class="f"><b>~2h15m</b></span><span class="f">~¥13,960/adult · kids 6–11 half</span></div>
+Book: <a href="https://smart-ex.jp/en/">smart-ex.jp/en</a> · fallback = green-sign <b>JR office (みどりの窓口)</b> at Shinagawa, staff speak English.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">12:15</div><div class="scard">
+<div class="stitle">🍽️ Lunch right at Kyoto Station (your HappyCow picks)</div>
+<div class="sbody">Eat before the shuttle — the station is a food destination. Show the veg card (on your Master Sheet).
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Kyoto Soba Morihei</span> — vegan noodles. <span class="maplink">📍 Maps: "Kyoto Soba Morihei"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Sushi no Musashi</span> — has vegan sushi options (ask). <span class="maplink">📍 Kyoto Station</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Ramen Iroha</span> / <span class="nm">Kyotofu Fujina</span> — check broth is dashi-free; tofu specialities. <span class="maplink">📍 Kyoto Station</span></li>
+<li><span class="tg safe">SAFE</span><span class="nm">Biople (Porta, north side, underground)</span> — health-food shop, grab-and-go snacks · <span class="nm">vegeteria</span> juices/smoothies · <span class="nm">Gong Cha (The Cube)</span> drinks only. <span class="maplink">📍 Porta / The Cube</span></li>
+</ul></div>
+</div></div>
+
+<div class="stop move"><div class="tmark">13:30</div><div class="scard">
+<div class="stitle">🚌 Westin free shuttle → hotel + check in</div>
+<div class="sbody">Go to the <b>Hachijō (south) Exit</b> — NOT the central exit. The hotel bus stop is signed (white bus, yellow stripe, "THE WESTIN MIYAKO KYOTO"). It leaves at <b>:10 and :40</b> past the hour; if you just miss one, next is ~30 min. Then <b>unpack, shower, nap</b> — you've been up all night, schedule nothing demanding.
+<div class="facts"><span class="f">Free shuttle · no booking</span><span class="f"><b>25–40 min</b></span><span class="f">Backup: taxi ~¥2,000–3,000</span></div>
+Shuttle times: <a href="https://en.miyakohotels.ne.jp/westinkyoto/access/bus/">miyakohotels.ne.jp</a></div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">16:30 · if awake</div><div class="scard">
+<div class="stitle"><span class="optbadge">Gentle add</span>🌳 Higashiyama easy evening — pick ONE, all next to the hotel</div>
+<div class="sbody">You landed at dawn, so keep it flat, close and low-commitment — but the Westin sits right among some of Kyoto's calmest sights, so you don't have to waste the whole afternoon in the room. All of these are a short flat walk or one taxi hop; do <b>one</b>, then dinner.
+<ul class="picklist">
+<li><span class="tg see">SEE</span><span class="nm">Nanzen-ji temple + brick aqueduct</span> — a serene, free temple complex with the photogenic Meiji-era <b>Suirokaku aqueduct</b>; ~10-min walk / 3-min taxi from the Westin. Grounds are open and free to wander even late afternoon. <span class="maplink">📍 Maps: "Nanzen-ji"</span></li>
+<li><span class="tg see">SEE</span><span class="nm">Heian Shrine giant torii + garden</span> — huge vermilion torii gate, big open shrine plaza, easy for tired kids; ~5-min taxi. <span class="maplink">📍 Maps: "Heian Shrine"</span></li>
+<li><span class="tg see">SEE</span><span class="nm">Philosopher's Path (south end)</span> — flat canal-side tree walk starting near Nanzen-ji; stroll as little as you like and turn back. <span class="maplink">📍 Maps: "Philosopher's Path"</span></li>
+</ul>
+<span class="warn">Jet-lag rule:</span> daylight + a gentle walk now helps everyone sleep tonight — but the second anyone melts, bail to dinner. Nothing here needs tickets or timing.</div>
+<div class="skip"><b>Everyone crashed?</b> Skip it entirely — go straight to an early dinner and bed. Fushimi Inari at dawn tomorrow matters more than tonight.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">18:30</div><div class="scard">
+<div class="stitle">🍽️ Early veg dinner near the Westin → bed early</div>
+<div class="sbody">Keep it easy — these are all a short walk from the hotel (your <b>near-Westin</b> picks, reused on quiet Kyoto nights).
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Junsei</span> — 8-min walk NE from hotel; tofu/yudōfu, garden setting. <span class="maplink">📍 Maps: "Junsei Kyoto"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Oshokuji-dokoro Asuka</span> — 7-min walk W; homey set meals, show the veg card. <span class="maplink">📍 Maps: "Asuka Kyoto Higashiyama"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Okutan Nanzen-ji</span> — 13-min / 1km walk (just past Junsei); famous yudōfu, confirm kombu-only broth. · <span class="nm">Beer Komachi</span> (900m W, near Higashiyama Stn) for a casual bite.</li>
+</ul>
+<span class="warn">Set alarms:</span> Day 2 wants you at Fushimi Inari by ~07:30. <i>(First night: too tired? In-hotel dining is the zero-effort fallback — flag "strict lacto-veg, no dashi.")</i></div>
+</div></div>
+
+</div>
+
+<div class="daysep" id="d2"><div class="kicker">Day 2 · Wednesday</div><div class="big">July 8</div><div class="sub">Kyoto — Fushimi Inari & Higashiyama</div><div class="tag">Sleep: Westin Miyako Kyoto</div><div class="carry"><b>Carry today:</b> Suica ×4 · ~¥15,000 cash (temples are cash-only) · veg card · hats + water + sunscreen · <b>Master Sheet</b></div></div>
+
+<h2 id="day-2-wed-jul-8-classic-kyoto-go-early">Day 2 — Wed Jul 8 · Classic Kyoto (go early!)</h2>
+<p><strong>Headline:</strong> The two most crowded, most beautiful sights — done at dawn before the heat and buses. Your hotel is <em>in</em> Higashiyama, so the afternoon is a short hop.</p>
+<div class="tl">
+
+<div class="stop meal"><div class="tmark">07:00</div><div class="scard">
+<div class="stitle">🍳 Early breakfast at the Westin</div>
+<div class="sbody">Eat fast — the whole day depends on beating the crowds and heat to Fushimi Inari.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">07:30</div><div class="scard">
+<div class="stitle">🚆 To Fushimi Inari (go early!)</div>
+<div class="sbody">Simplest with sleepy kids = a <b>taxi</b> from the hotel. By train: JR <b>Nara Line</b> from Kyoto Station to <b>Inari</b> (2 stops, the shrine is right outside), or Keihan to <b>Fushimi-Inari</b>. Aim to be walking by ~07:30–08:00 while it's near-empty. <b>⚠️ Take the train, not the tourist buses</b> — buses are slow and mobbed here.
+<div class="facts"><span class="f tap">🟩 TAP SUICA</span><span class="f">JR Nara Line / Keihan</span><span class="f"><b>~15–25 min</b></span><span class="f">train ~¥150 · taxi ~¥1,500–2,500</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">08:00</div><div class="scard">
+<div class="stitle">⛩️ Fushimi Inari — the red torii tunnels</div>
+<div class="sbody">Magical and quiet at this hour; <span class="warn">by 10:00 it's a crush.</span> Walk up as far as the kids are happy — the first 30–40 min is the best bit; the full summit loop is 2–3 h, don't force it. <b>Free entry.</b></div>
+<div class="sphoto idcard"><img src="images/dumps/fushimi-inari.jpg" alt="Fushimi Inari red torii tunnels"><span class="cap"><b>Fushimi Inari</b>The endless tunnels of vermilion torii gates up the hillside — this is that place. (Photo: Wikimedia Commons)</span></div></div>
+</div>
+
+<div class="stop move"><div class="tmark">10:15</div><div class="scard">
+<div class="stitle">🚆 To Kiyomizu-dera (Higashiyama)</div>
+<div class="sbody">Back toward your hotel's district. Keihan to <b>Kiyomizu-Gojō</b> then a walk uphill, or a short taxi (easiest with the 6-year-old in the heat).
+<div class="facts"><span class="f tap">🟩 TAP SUICA</span><span class="f">Keihan + walk, or taxi</span><span class="f"><b>~20–30 min</b></span><span class="f">taxi ~¥1,500</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">10:45</div><div class="scard">
+<div class="stitle">🏯 Kiyomizu-dera + Sannenzaka / Ninenzaka lanes</div>
+<div class="sbody">Grand hillside temple with the wooden stage, then the old souvenir/matcha-ice-cream lanes. <span class="warn">⚠️ Cash entry ~¥400–500 (adult) / ~¥200 (child).</span></div>
+<div class="sphoto idcard"><img src="images/dumps/kiyomizudera.jpg" alt="Kiyomizu-dera wooden stage temple"><span class="cap"><b>Kiyomizu-dera</b>The big temple on tall wooden stilts jutting over the hillside — you walk out onto that stage. (Photo: Wikimedia Commons)</span></div></div>
+</div>
+
+<div class="stop"><div class="tmark">11:45</div><div class="scard">
+<div class="stitle">📸 Yasaka Pagoda photo — the exact spot</div>
+<div class="sbody">This is <b>the</b> classic Kyoto shot: the five-storey <b>Yasaka Pagoda (八坂の塔 / Hōkan-ji temple)</b> framed by the old sloping street. Here's exactly where to stand — the Japanese names are confusing, so follow this:
+<ul class="picklist">
+<li><span class="tg see">STAND HERE</span><span class="nm">On <b>Yasaka-dōri (八坂通)</b>, the sloping stone street</span> — walk <b>down the hill on Yasaka-dōri</b> with the pagoda in front of you. The postcard angle is from the <b>upper (east) end looking down/west</b>, roughly outside the "Rakushо̄ / Starbucks-area" stretch. Point the camera <i>down</i> the slope so the pagoda towers over the street. <span class="maplink">📍 Maps: "Yasaka Pagoda" (Hokan-ji), stand on Yasaka-dori just uphill of it</span></li>
+<li><span class="tg safe">TIP</span><span class="nm">Get there early</span> — by late morning this one narrow street fills up. You'll pass it naturally walking Kiyomizu → Ninenzaka → Sannenzaka → down toward Gion.</li>
+</ul>
+<div class="sphoto idcard"><img src="images/dumps/yasaka-pagoda.jpg" alt="Yasaka Pagoda from Yasaka-dori street"><span class="cap"><b>Yasaka Pagoda</b>Shot from Yasaka-dōri looking down the slope — this is the exact street & angle. (Photo: Wikimedia Commons)</span></div></div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">12:30</div><div class="scard">
+<div class="stitle">🍽️ Lunch near Yasaka / Gion-Shijō (your HappyCow picks)</div>
+<div class="sbody">You come down off Kiyomizu → Ninenzaka → Yasaka into the Gion-Shijō area — eat there.
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Uno Yukiko Soy-Milk Ramen</span> — fully vegan ramen (S+E of Gion-Shijō Stn). <span class="maplink">📍 Maps: "Uno Yukiko soy milk ramen Kyoto"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Crunch Salad</span> — salads/bowls, just S of Gion-Shijō Stn. · <span class="nm">Bali Bali Indonesia</span> (3F, E+N of stn) — Nasi Lengko / tempeh, veg-friendly.</li>
+<li><span class="tg safe">SAFE</span><span class="nm">Ohagi no Tanbaya</span> — dango / mochi / ohagi bakery (next to Bali Bali); guaranteed kid-win. <span class="maplink">📍 Maps: "Ohagi no Tanbaya Gion"</span></li>
+</ul></div>
+</div></div>
+
+<div class="stop"><div class="tmark">16:00</div><div class="scard">
+<div class="stitle">🏮 Gion stroll (old teahouse district)</div>
+<div class="sbody"><span class="warn">⚠️ No photos in the private alleys</span> (fines ~¥10,000). Stay on main streets; don't chase geisha/maiko.</div>
+<div class="sphoto idcard"><img src="images/dumps/gion.jpg" alt="Gion old wooden teahouse street"><span class="cap"><b>Gion</b>Preserved wooden teahouse lanes (Hanamikoji) — the historic geisha district; atmospheric at dusk. (Photo: Wikimedia Commons)</span></div></div>
+</div>
+
+<div class="stop opt"><div class="tmark">Optional</div><div class="scard">
+<div class="stitle"><span class="optbadge">Buy</span>🛍️ Salamanca Vintage (Kawaramachi)</div>
+<div class="sbody">Curated vintage / second-hand — your saved pick, "best prices for Chanel bags." Quick browse after Gion; Shijō & Sanjō branches. <b>Keep Kyoto buys light</b> — you carry all bags to Tokyo Jul 13.
+<div class="sphoto"><img src="images/jul2/30904bab.jpg" alt="Salamanca Vintage Kyoto"><span class="cap"><b>Salamanca Vintage</b>IG @salvntg_kyoto · <span class="maplink">📍 Maps: "Salamanca Vintage Kyoto"</span></span></div></div>
+<div class="skip"><b>Not shopping?</b> Head straight to an early dinner.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">18:00</div><div class="scard">
+<div class="stitle">🍽️ Dinner in Kawaramachi / Pontocho (your HappyCow picks)</div>
+<div class="sbody">You're already down at Shijō — eat before heading back up to the hotel.
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Chao Chao Gyoza (Shijō-Kawaramachi)</span> — veg gyoza; just off Shijō-dōri (go E, turn right, a little S). <span class="maplink">📍 Maps: "Chao Chao Gyoza Kawaramachi"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Hyssop</span> — veg café, 4F of Good Nature Station. <span class="maplink">📍 Maps: "Hyssop Good Nature Station"</span></li>
+<li><span class="tg safe">SAFE</span><span class="nm">(THIS IS) NATURE</span> — flower-shaped ice-cream cones, 1F near the Shijō-dōri entrance; kids will love it. <span class="maplink">📍 Good Nature Station</span></li>
+</ul>
+<span class="warn">Reminders:</span> temples close ~16:30–17:00 & are cash-only; take the <b>train, not the tourist buses</b>; water every 30–60 min.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">~20:00</div><div class="scard">
+<div class="stitle">🏨 Back to the Westin (from Kawaramachi/Gion)</div>
+<div class="sbody">Your hotel's home station is <b>Keage (蹴上)</b> on the <b>Tōzai subway line</b> — a <b>2-min covered walk</b> up to the lobby from <b>Exit 2</b>. From the Shijō-Kawaramachi/Gion dinner area:
+<ul class="picklist">
+<li><span class="tg safe">TRAIN</span><span class="nm">Walk ~7 min N along the river to Sanjō</span> → enter <b>Sanjō-Keihan Station</b> → take the <b>Tōzai line toward Rokujizō (六地蔵)</b> → get off at <b>Keage</b> (3 stops, ~6 min) → Exit 2, 2-min walk. <span class="maplink">🟩 TAP SUICA · ~¥260</span></li>
+<li><span class="tg safe">TAXI</span><span class="nm">Simplest with tired kids</span> — grab a taxi on Shijō-dōri or Kawaramachi-dōri, say <b>"Westin Miyako Kyoto, Keage"</b>. ~15–20 min, <b>~¥1,500–2,200</b>.</li>
+</ul>
+<span class="warn">⚠️ Confirm the Tōzai train is heading toward Rokujizō, not Uzumasa-Tenjingawa</span> (opposite direction). Set alarms — Day 3 has an early Arashiyama start.</div>
+</div></div>
+
+</div>
+
+<div class="daysep" id="d3"><div class="kicker">Day 3 · Thursday</div><div class="big">July 9</div><div class="sub">Arashiyama bamboo + river boat → Osaka afternoon</div><div class="tag">Sleep: Westin Miyako Kyoto</div><div class="carry"><b>Carry today:</b> Suica ×4 · Sagano Torokko ticket (if booked) · <b>~¥20,000 cash</b> (boat + Osaka Castle are cash) · veg card · hats + water · <b>Master Sheet</b></div></div>
+
+<h2 id="day-3-thu-jul-9-arashiyama-osaka">Day 3 — Thu Jul 9 · Arashiyama + Osaka</h2>
+<p><strong>Headline:</strong> Bamboo grove at dawn → scenic Sagano train up the gorge → <strong>Hozugawa river boat back down (the must-do)</strong> → then across to <strong>Osaka</strong> for the Castle + Dōtonbori in the afternoon/evening (the Osaka sights you can't fit on USJ day). A full but flat-paced day.</p>
+<div class="tl">
+
+<div class="stop meal"><div class="tmark">07:30</div><div class="scard">
+<div class="stitle">🍳 Breakfast at the Westin</div>
+<div class="sbody">Your safe daily base — flag lacto-veg. Eat well; today has an early train and not much guaranteed veg out west.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">08:15</div><div class="scard">
+<div class="stitle">🚆 To Saga-Arashiyama</div>
+<div class="sbody">JR <b>Sagano / San-in Line</b> from Kyoto Station to <b>Saga-Arashiyama</b> (the bamboo grove is ~10 min walk from there). Or hotel taxi to the JR line. Aim to be walking by ~08:45 while it's still cool and quiet.
+<div class="facts"><span class="f tap">🟩 TAP SUICA</span><span class="f">JR Sagano/San-in Line</span><span class="f"><b>~20 min</b></span><span class="f">~¥240</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">08:45</div><div class="scard">
+<div class="stitle">🎋 Bamboo Grove + Togetsukyo Bridge</div>
+<div class="sbody">Walk the grove <b>first thing</b> — it's <b>tiny (~5–10 min)</b> and becomes an unbearable crush by mid-morning, so this is why you came early. Then stroll to the <b>Togetsukyo bridge</b> and the riverside.</div>
+<div class="sphoto idcard"><img src="images/dumps/arashiyama-bamboo.jpg" alt="Arashiyama bamboo grove path"><span class="cap"><b>Bamboo Grove</b>The tall green bamboo walking path — short but unmistakable.</span><img src="images/dumps/togetsukyo.jpg" alt="Togetsukyo Bridge Arashiyama"><span class="cap"><b>Togetsukyo Bridge</b>The wide wooden-railed bridge over the river with the green hills behind. (Photos: Wikimedia Commons)</span></div></div>
+</div>
+
+<div class="stop opt"><div class="tmark">Optional</div><div class="scard">
+<div class="stitle"><span class="optbadge">Niche · 10 min</span>💇 Mikami Shrine (御髪神社) — the "hair shrine"</div>
+<div class="sbody">Right here in <b>Sagano</b>, by <b>Torokko Arashiyama</b> station: Japan's only shrine to the <b>god of hair &amp; beauty</b> — hairdressers and anyone praying for hair health leave locks of hair as offerings. A quiet little 10-min curiosity if it appeals while you're between the grove and the train.
+<div class="sphoto idcard"><img src="images/dumps/mikami-shrine.jpg" alt="Mikami hair shrine Arashiyama"><span class="cap"><b>Mikami Shrine</b>Small forest shrine (御髪神社) tucked in Sagano near the Torokko line — the "hair &amp; beauty" shrine. (Photo: your saved reel)</span></div></div>
+<div class="skip"><b>Not interested?</b> Skip straight to the Sagano Torokko below.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">09:30</div><div class="scard">
+<div class="stitle">🚂 Sagano Romantic Train (Torokko) UP the gorge</div>
+<div class="sbody">Scenic open-car railway up the gorge. Boards at <b>Torokko Saga</b> station (right next to JR Saga-Arashiyama); ride up to <b>Torokko Kameoka</b>. <span class="warn">⚠️ Reserved paper ticket — sells out in peak July</span>, book ahead. If you didn't get seats, the <b>regular JR Sagano line to Kameoka is the always-works fallback</b> — then walk/shuttle to the boat dock.
+<div class="facts"><span class="f buy">🟥 BUY (reserve ahead)</span><span class="f">Sagano Torokko</span><span class="f"><b>~25 min</b></span><span class="f">~¥880/adult · ~¥440 child</span></div></div>
+<div class="sphoto idcard"><img src="images/dumps/sagano-torokko.jpg" alt="Sagano Romantic Train open-car railway"><span class="cap"><b>Sagano Torokko</b>The old-fashioned open-sided sightseeing train that trundles along the gorge. (Photo: Wikimedia Commons)</span></div></div>
+</div>
+
+<div class="stop move"><div class="tmark">10:15</div><div class="scard">
+<div class="stitle">🚌 Torokko Kameoka → Hozugawa boat dock</div>
+<div class="sbody">From Torokko Kameoka, a short <b>shuttle bus (~15 min, ~¥310)</b> or taxi takes you to the <b>Hozugawa boat boarding dock</b> (Kameoka Sanban-noriba). Boats are walk-up, first-come — get there in good time so you're on an ~11:00 departure.
+<div class="facts"><span class="f">Shuttle bus / taxi</span><span class="f"><b>~15 min</b></span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">11:00</div><div class="scard">
+<div class="stitle">🚣 Hozugawa River Boat back down to Arashiyama <span class="optbadge">must-do</span></div>
+<div class="sbody">The highlight of the day — a <b>~90-min traditional wooden boat</b> ride down the gorge rapids, boatmen poling and steering, back to Arashiyama by the Togetsukyo bridge. Kids love it; genuinely scenic and shaded on the water. <span class="warn">⚠️ Walk-up (no online booking) — arrive by ~10:45. Runs stop in heavy rain</span> (if cancelled, take the Torokko back down instead).
+<div class="facts"><span class="f buy">🟥 PAY AT DOCK (cash)</span><span class="f">Hozugawa Kudari</span><span class="f"><b>~90 min</b></span><span class="f">¥4,100/adult · ¥2,700 child</span></div>
+Info: <a href="https://www.hozugawakudari.jp/en">hozugawakudari.jp/en</a></div>
+<div class="sphoto idcard"><img src="images/dumps/hozugawa-boat.jpg" alt="Hozugawa river wooden boat ride"><span class="cap"><b>Hozugawa Boat</b>Long flat-bottomed wooden boat, boatmen poling you down the river gorge — this is the "boat ride." (Photo: Wikimedia Commons)</span></div></div>
+</div>
+
+<div class="stop meal"><div class="tmark">13:00</div><div class="scard">
+<div class="stitle">🍽️ Lunch in Arashiyama (your HappyCow picks)</div>
+<div class="sbody">All on/near the Nakanoshima main street between Randen Arashiyama Stn and the bridge.
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">BonBon Soba</span> — Japanese soba, yuba, veg ramen; right by Arashiyama Stn toward the bridge. <span class="maplink">📍 Maps: "BonBon Soba Arashiyama"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Seizan Sodo</span> — 6-course set menu (~¥4,000pp), N of the station; · <span class="nm">Gyatei</span> onigiri / soy-meat, N of stn. <span class="maplink">📍 Maps: "Seizan Sodo Arashiyama"</span></li>
+<li><span class="tg safe">SAFE</span><span class="nm">Kumahiko Café</span> (ice cream + coffee, near the boat-ride end) · <span class="nm">Arashiyama Yoshiya</span> / <span class="nm">Yoshiya</span> yuba — <span class="warn">confirm no dashi/egg.</span></li>
+</ul></div>
+</div></div>
+
+<div class="stop move"><div class="tmark">14:00</div><div class="scard">
+<div class="stitle">🚄 Afternoon: over to OSAKA (the sightseeing you can't do on USJ day)</div>
+<div class="sbody"><b>Why now:</b> Jul 10 is a full theme-park day at USJ, so <b>Osaka's actual city sights (Castle + Dōtonbori) don't fit then</b> — this afternoon is your window. From Arashiyama:
+<ul class="picklist">
+<li><span class="tg safe">TRAIN</span><span class="nm">Saga-Arashiyama → Osaka</span> — JR <b>Sagano/San-in Line</b> to <b>Kyoto Station</b> (~20 min), then JR <b>Special Rapid</b> Kyoto → <b>Osaka</b> (~30 min). Leave bags/shopping light. <span class="maplink">🟩 TAP SUICA · ~¥1,100/adult · ~55 min total</span></li>
+</ul>
+<span class="warn">Reality check:</span> this makes Jul 9 a genuinely full day (dawn bamboo + boat + Osaka). It's very doable because the morning ends by ~13:00 and the afternoon is flat city sightseeing — but if the kids are cooked after the river boat, the honest call is to <b>skip Osaka, ride JR back to Kyoto and rest</b> (old plan: subway to Keage, pool, early dinner near the Westin). Osaka is the bonus, not the backbone.</div>
+</div></div>
+
+<div class="stop"><div class="tmark">15:00</div><div class="scard">
+<div class="stitle">🏯 Osaka Castle (Ōsaka-jō)</div>
+<div class="sbody">The great white-and-gold keep in a big moated park — one of Japan's most famous castles and an easy kid win. From Osaka Stn, JR <b>Osaka Loop Line</b> to <b>Osakajōkōen</b> (~10 min), then a walk through the park to the tower. <span class="warn">⚠️ Castle-tower entry ~¥600 adult / free under-15s, cash; last entry ~16:30 — or just enjoy the grounds for free.</span>
+<div class="sphoto idcard"><img src="images/dumps/osaka-castle.jpg" alt="Osaka Castle keep"><span class="cap"><b>Osaka Castle</b>The main keep — this is what "Ōsaka-jō" looks like. (Photo: Wikimedia Commons)</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">17:00</div><div class="scard">
+<div class="stitle">🌃 Dōtonbori + Hozenji Yokocho (Osaka Minami)</div>
+<div class="sbody">The neon canal heart of Osaka — the <b>Glico running-man</b> sign, giant moving crab, and the buzzy covered arcades. From Osaka Castle, JR Loop to <b>Morinomiya</b> → subway, or Loop to <b>Tennōji</b> → Midōsuji line to <b>Namba</b> (~20 min). Bright, buzzy and kid-safe in the early evening.
+<ul class="picklist">
+<li><span class="tg see">SEE</span><span class="nm">Dōtonbori canal + Glico sign</span> — the classic Osaka night photo, right on the water. <span class="maplink">📍 Maps: "Dotonbori Glico Sign"</span></li>
+<li><span class="tg see">SEE</span><span class="nm">Hozenji Yokocho</span> — a tiny stone-paved lantern alley 2 min off the canal; splash the moss-covered <b>Hōzen-ji</b> statue for luck. <span class="maplink">📍 Maps: "Hozenji Yokocho"</span></li>
+</ul>
+<div class="sphoto idcard"><img src="images/dumps/dotonbori.jpg" alt="Dotonbori canal at night"><span class="cap"><b>Dōtonbori</b>The neon canal — the Glico sign is the photo everyone takes. (Photo: Wikimedia Commons)</span></div>
+<span class="warn">⚠️ Dōtonbori street food is mostly meat/takoyaki</span> — come for the sights, do a proper veg dinner below.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">18:30</div><div class="scard">
+<div class="stitle">🍽️ Veg dinner in Osaka (Namba / Shinsaibashi)</div>
+<div class="sbody">Namba has more reliable veg than the canal itself. Reconfirm on Maps the morning-of (small places move):
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Paprika Shokudō Vegan</span> — long-running all-vegan Japanese diner (set meals, karaage-style soy, curry), a short walk from Namba/Shinsaibashi. <span class="maplink">📍 Maps: "Paprika Shokudo Vegan Osaka"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">CoCo Ichibanya (veg curry roux)</span> — chain, kid-proof; ask specifically for the <b>vegetarian roux</b>. Branches around Namba. <span class="maplink">📍 Maps: "CoCo Ichibanya Namba"</span></li>
+<li><span class="tg safe">SAFE</span><span class="nm">Namba depachika / konbini</span> — Takashimaya food hall + konbini for guaranteed kid snacks (inarizushi, fruit, melon pan).</li>
+</ul></div>
+</div></div>
+
+<div class="stop move"><div class="tmark">~20:00</div><div class="scard">
+<div class="stitle">🏨 Osaka → Kyoto → up to the Westin</div>
+<div class="sbody">Head back to Kyoto. <span class="warn">⚠️ The free hotel shuttle has stopped for the night</span> — use the subway or a taxi at the Kyoto end (same as USJ day):
+<ul class="picklist">
+<li><span class="tg safe">TRAIN</span><span class="nm">Namba/Osaka → Kyoto → Keage</span> — JR <b>Special Rapid</b> Osaka → <b>Kyoto Station</b> (~30 min); then <b>Karasuma subway → Karasuma-Oike</b>, transfer to <b>Tōzai line toward Rokujizō → Keage</b> (蹴上), Exit 2, 2-min walk up. <span class="maplink">🟩 TAP SUICA · ~¥1,100 total</span></li>
+<li><span class="tg safe">TAXI</span><span class="nm">From Kyoto Station with wiped-out kids</span> — say <b>"Westin Miyako Kyoto, Keage"</b>, ~15 min, ~¥1,800–2,500.</li>
+</ul>
+Aim to be on a train out of Osaka by ~21:00 so you're not fighting last-train timing with tired kids. Early night — the USJ marathon is tomorrow.</div>
+</div></div>
+
+</div>
+
+<div class="daysep" id="d4"><div class="kicker">Day 4 · Friday</div><div class="big">July 10</div><div class="sub">Universal Studios Japan (Osaka)</div><div class="tag">Sleep: Westin Miyako Kyoto</div><div class="carry"><b>Carry today:</b> Suica ×4 · <b>Studio Pass + Express Pass (pre-bought)</b> · USJ app w/ payment set up · power bank · konbini snacks · veg card · <b>Master Sheet</b></div></div>
+
+<h2 id="day-4-fri-jul-10-usj-dated-tickets">Day 4 — Fri Jul 10 · USJ 🎢 (dated tickets)</h2>
+<p><strong>Headline:</strong> Big theme-park day trip to Osaka. This one needs <strong>early start + pre-bought tickets + a plan for Nintendo World.</strong></p>
+<div class="tl">
+
+<div class="stop meal"><div class="tmark">06:15</div><div class="scard">
+<div class="stitle">🍳 Early breakfast + pack konbini snacks</div>
+<div class="sbody">Grab kid fuel for ride queues at any 7-Eleven/Lawson — veg options are thin inside the park.
+<div class="sphoto"><img src="images/jul2/974b3027.jpg" alt="7-Eleven veg picks"><span class="cap"><b>7-Eleven</b>Melon pan, fruit sando, matcha sweets.</span><img src="images/jul2/83668700.jpg" alt="Lawson veg picks"><span class="cap"><b>Lawson</b>Roll cake, Baschee, fruit sando, Mochi Puyo.</span></div></div>
+</div></div>
+
+<div class="stop move"><div class="tmark">06:45</div><div class="scard">
+<div class="stitle">🚆 To USJ: Kyoto → Osaka → Universal City</div>
+<div class="sbody">JR from <b>Kyoto Station</b> to <b>Osaka Station</b> (Special Rapid, ~30 min), then the <b>JR Yumesaki (Sakurajima) Line</b> to <b>Universal-City</b> station — the park is a 5-min walk. Google Maps shows the exact platform live. <b>Set up the USJ app with payment BEFORE you arrive.</b>
+<div class="facts"><span class="f tap">🟩 TAP SUICA</span><span class="f">JR Kyoto→Osaka→Universal-City</span><span class="f"><b>~75–90 min</b></span><span class="f">~¥1,200/adult</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">08:00</div><div class="scard">
+<div class="stitle">🎢 At the gate before official open</div>
+<div class="sbody"><b>First move: rope-drop Super Nintendo World</b> (+ Donkey Kong Country). <span class="warn">⚠️ Needs a timed-entry ticket that vanishes by mid-morning</span> unless your Express Pass includes it (Part 8).</div>
+</div></div>
+
+<div class="stop"><div class="tmark">Morning</div><div class="scard">
+<div class="stitle">📏 Mind the height limits</div>
+<div class="sbody"><span class="warn">⚠️ ~102 cm for Nintendo rides, 117 cm for big coasters</span> — measure the 6-year-old at home. Indoor rides (Minion, Harry Potter) double as A/C breaks. <b>Empty pockets before big rides</b> — lockers are mandatory and strict.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">11:30</div><div class="scard">
+<div class="stitle">🍽️ Lunch inside USJ (your picks — mobile-order early)</div>
+<div class="sbody"><span class="warn">Mobile-order in the app early</span> — 11:30 slots are gone by 10:00.
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Three Broomsticks</span> — vegetable Irish stew (Harry Potter area). · <span class="nm">Kinopio's Café</span> (Nintendo World) — spaghetti + meat-free "meatballs", pizza; <span class="warn">reservation/timed-entry needed.</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Azzurra di Capri</span> — pizza. Confirm no meat/fish in sauces.</li>
+<li><span class="tg safe">SAFE</span><span class="nm">Your packed konbini snacks</span> — the guaranteed backup for the kids.</li>
+</ul></div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">~17:30</div><div class="scard">
+<div class="stitle">🍽️ EARLY dinner as you EXIT — at Universal CityWalk</div>
+<div class="sbody"><span class="warn">Eat BEFORE you board.</span> CityWalk is the mall you walk through to reach the station — feed everyone here so the trip home is pure logistics. <b>Osaka Station is just your transfer</b> (change platforms, no food-hunting with tired kids), then straight to Kyoto.
+<ul class="picklist">
+<li><span class="tg safe">SAFE</span><span class="nm">Universal CityWalk casual spots</span> — pizza / pasta / crêpes / ice-cream; or re-use a lunch pick (Azzurra di Capri) for an early bite. Show the veg card. <span class="maplink">📍 Maps: "Universal CityWalk Osaka"</span></li>
+<li><span class="tg safe">SAFE</span><span class="nm">Grab-and-go for the train</span> — konbini onigiri/fruit at Universal-City Stn if kids fade later.</li>
+</ul>
+<i>Default plan: eat here, skip Umeda, head home to Kyoto. But if everyone still has energy, the optional Minami loop below is right there on the way.</i></div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">Optional · eve</div><div class="scard">
+<div class="stitle"><span class="optbadge">Only if you skipped Jul 9</span>🌃 Dōtonbori + Hozenji Yokocho (Osaka Minami)</div>
+<div class="sbody"><b>You've likely already done Osaka on Jul 9 (Castle + Dōtonbori)</b> — so treat this as a fallback only if the Jul 9 Osaka afternoon got cut. If so, and the kids somehow still have gas: from Universal-City, JR to <b>Nishikujo</b> → Hanshin/subway to <b>Namba</b> (~25–30 min).
+<ul class="picklist">
+<li><span class="tg see">SEE</span><span class="nm">Dōtonbori</span> — the canal, <b>Glico running-man</b> sign, giant crab; the classic Osaka night photo.</li>
+<li><span class="tg see">SEE</span><span class="nm">Hozenji Yokocho + Shinsekai/Tsūtenkaku</span> — lantern alley and retro-neon district, only if fresh.</li>
+</ul>
+<span class="warn">⚠️ Reality check: this is a full theme-park day already. If you already saw Osaka on Jul 9, just go home. Dōtonbori food is mostly meat/takoyaki — sights, not dinner.</span></div>
+<div class="skip"><b>Already did Osaka Jul 9 / kids melting?</b> Skip entirely — straight back to Kyoto from Universal-City.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">Getting home</div><div class="scard">
+<div class="stitle">🏨 Kyoto Station → the Westin (evening — no shuttle late)</div>
+<div class="sbody">You arrive back at <b>Kyoto Station</b> from Osaka/USJ. <span class="warn">⚠️ The free hotel shuttle stops running in the evening</span> (last departure ~18:00–19:00 — check the board), so at night use:
+<ul class="picklist">
+<li><span class="tg safe">TRAIN</span><span class="nm">Subway to Keage</span> — <b>Karasuma line</b> from <b>Kyoto Station → Karasuma-Oike</b> (2 stops) → transfer to <b>Tōzai line toward Rokujizō</b> → <b>Keage</b> (蹴上), Exit 2, 2-min walk up to the lobby. ~15–20 min total. <span class="maplink">🟩 TAP SUICA · ~¥260</span></li>
+<li><span class="tg safe">TAXI</span><span class="nm">Fastest with wiped-out kids</span> — taxi rank at the <b>Hachijō (south) or Karasuma (central) exit</b>; say <b>"Westin Miyako Kyoto, Keage"</b>. ~15 min, <b>~¥1,800–2,500</b>.</li>
+</ul></div>
+</div></div>
+
+</div>
+
+<blockquote>
+<p><strong>Book now (Part 7):</strong> Studio Pass + Express Pass, <strong>online only.</strong></p>
+</blockquote>
+<div class="daysep" id="d5"><div class="kicker">Day 5 · Saturday</div><div class="big">July 11</div><div class="sub">Nara — deer, Great Buddha, lanterns & old town</div><div class="tag">Sleep: Westin Miyako Kyoto</div><div class="carry"><b>Carry today:</b> Suica ×4 · ~¥10,000 cash (Todai-ji + Kasuga entries) · veg card · hats + water · <b>Master Sheet</b> · <i>no bookings needed today</i></div></div>
+
+<h2 id="day-5-sat-jul-11-nara-day-trip">Day 5 — Sat Jul 11 · Nara day trip 🦌</h2>
+<p><strong>Headline:</strong> All walk-up, no bookings — an easy, joyful <em>full</em> day. Deer → Great Buddha → <strong>Kasuga Taisha lanterns</strong> → <strong>Naramachi old town + a garden</strong>. A relaxed pace but with a real afternoon, not a 4pm retreat to the hotel.</p>
+<div class="tl">
+
+<div class="stop meal"><div class="tmark">08:00</div><div class="scard">
+<div class="stitle">🍳 Relaxed breakfast</div>
+<div class="sbody">No bookings today, so no rush. Sleep in a little after yesterday's USJ marathon.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">09:30</div><div class="scard">
+<div class="stitle">🚆 To Nara</div>
+<div class="sbody">From <b>Kyoto Station</b>: JR <b>Nara Line rapid</b> to <b>Nara</b>, or <b>Kintetsu</b> to <b>Kintetsu-Nara</b> (closer to the deer park; Kintetsu has its own gates on the south/Hachijō side). No advance booking — just tap and go.
+<div class="facts"><span class="f tap">🟩 TAP SUICA</span><span class="f">JR Nara Line / Kintetsu</span><span class="f"><b>~45 min</b></span><span class="f">~¥720 JR · ~¥640 Kintetsu</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">10:30</div><div class="scard">
+<div class="stitle">🦌 Nara Park — free-roaming deer</div>
+<div class="sbody"><span class="warn">⚠️ Deer safety:</span> keep crackers hidden until ready, feed fast, then show empty open hands. Don't let the 6-year-old wave a stack around — they head-butt. They're calmer after ~13:00.</div>
+<div class="sphoto idcard"><img src="images/dumps/nara-deer.jpg" alt="Nara Park free-roaming deer"><span class="cap"><b>Nara Park</b>Tame deer wandering the open park — the kids can feed them special crackers. (Photo: Wikimedia Commons)</span></div></div>
+</div>
+
+<div class="stop"><div class="tmark">11:30</div><div class="scard">
+<div class="stitle">🛕 Todai-ji — the Great Buddha hall</div>
+<div class="sbody">¥600 adult / ¥300 child, cash. One of Japan's great sights and easy for kids.</div>
+<div class="sphoto idcard"><img src="images/dumps/todaiji.jpg" alt="Todai-ji Great Buddha Hall"><span class="cap"><b>Tōdai-ji</b>The enormous wooden hall housing a giant bronze Buddha — a short walk uphill through the deer park. (Photo: Wikimedia Commons)</span></div></div>
+</div>
+
+<div class="stop meal"><div class="tmark">13:00</div><div class="scard">
+<div class="stitle">🍽️ Lunch near Kintetsu-Nara / Higashimuki arcade (your picks)</div>
+<div class="sbody">All on Higashimuki shopping street, 2 min from the park & Todaiji.
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Zagin Kintetsu-Nara</span> — vegan ramen (down the road S from the station). <span class="maplink">📍 Maps: "Zagin Kintetsu Nara"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">China Dining Hiten</span> — veg options (fried rice, stir-fried soy). · <span class="nm">Cafe Groovy</span> — vegan spaghetti, further S on Higashimuki. <span class="maplink">📍 Maps: "Cafe Groovy Nara"</span></li>
+</ul></div>
+</div></div>
+
+<div class="stop"><div class="tmark">14:00</div><div class="scard">
+<div class="stitle">🏮 Kasuga Taisha — the lantern shrine</div>
+<div class="sbody"><b>What it is:</b> Nara's most important shrine, at the far (east) end of the deer park. It's famous for its <b>~3,000 lanterns</b> — hundreds of moss-covered <b>stone lanterns lining the forest approach</b>, plus rows of <b>bronze hanging lanterns</b> along the vermilion shrine buildings. The forest walk in to it is half the charm (you'll pass more deer). ~15-min walk uphill from Todai-ji, or a short bus.
+<ul class="picklist">
+<li><span class="tg see">SEE</span><span class="nm">Stone-lantern forest path</span> — free to walk the wooded approach lined with lanterns. <span class="maplink">📍 Maps: "Kasuga Taisha"</span></li>
+<li><span class="tg safe">TIP</span><span class="nm">Inner hall (bronze lantern corridor)</span> — small paid area (~¥500 cash) if you want the dark lantern hall; the free outer paths already give you the iconic look.</li>
+</ul>
+<div class="sphoto idcard"><img src="images/dumps/kasuga-lanterns.jpg" alt="Kasuga Taisha bronze lanterns"><span class="cap"><b>Kasuga Taisha</b>The hanging bronze lanterns along the shrine — plus stone lanterns line the forest path in. (Photo: Wikimedia Commons)</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">15:15</div><div class="scard">
+<div class="stitle">🍵 Naramachi old town + a garden (fills the afternoon)</div>
+<div class="sbody">Instead of heading back at 4pm, wander <b>Naramachi (ならまち)</b> — the lattice-fronted former merchant quarter just south of the park: traditional machiya townhouses, craft shops, cafés, and the little <b>"sleeping cat" lanes</b>. Add a cool-down garden if everyone's game:
+<ul class="picklist">
+<li><span class="tg see">SEE</span><span class="nm">Naramachi lanes</span> — free to stroll; kid-friendly craft/sweet shops, mochi pounding demos nearby. <span class="maplink">📍 Maps: "Naramachi"</span></li>
+<li><span class="tg see">SEE</span><span class="nm">Isuien Garden</span> or <span class="nm">Yoshikien Garden</span> — beautiful strolling gardens between Todai-ji and Naramachi (Yoshikien is free for foreign visitors). A shady 30–40 min. <span class="maplink">📍 Maps: "Isuien Garden Nara"</span></li>
+<li><span class="tg safe">SAFE</span><span class="nm">Nakatanidou</span> — famous high-speed mochi-pounding shop near Higashimuki; fresh yomogi mochi, a guaranteed kid-win. <span class="maplink">📍 Maps: "Nakatanidou"</span></li>
+</ul>
+<span class="warn">This is your buffer day</span> — you now have a full afternoon, but everything here is optional and flat. If anyone's genuinely wiped, cut it and head back; nothing is time-critical.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">16:30</div><div class="scard">
+<div class="stitle">🍨 Snack / early bite in Naramachi before the train</div>
+<div class="sbody">Regroup with a cold drink and a sweet before the ride home (dinner is back near the Westin):
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Cafe/teahouse in Naramachi</span> — matcha, warabi-mochi, kakigōri (shaved ice) in the old-town cafés. Reconfirm no-egg on baked items. <span class="maplink">📍 Maps: "Naramachi cafe"</span></li>
+<li><span class="tg safe">SAFE</span><span class="nm">Higashimuki arcade konbini</span> — grab-and-go for the train if the kids fade.</li>
+</ul></div>
+</div></div>
+
+<div class="stop move"><div class="tmark">17:30</div><div class="scard">
+<div class="stitle">🚆 Train back to Kyoto → up to the Westin</div>
+<div class="sbody">Reverse of the morning — JR or Kintetsu, tap Suica, back to <b>Kyoto Station</b> (~45 min). Then up to the hotel (home station = <b>Keage</b> on the Tōzai line, Exit 2, 2-min walk):
+<ul class="picklist">
+<li><span class="tg safe">SHUTTLE</span><span class="nm">Free Westin shuttle</span> — <b>only if you're back by ~18:00–19:00</b> (check the board). Board at the <b>Hachijō (south) exit</b>, white bus, :10/:40 past the hour, ~25 min.</li>
+<li><span class="tg safe">TRAIN</span><span class="nm">Subway if later</span> — <b>Karasuma line → Karasuma-Oike</b>, transfer to <b>Tōzai line toward Rokujizō → Keage</b>. ~15–20 min. <span class="maplink">🟩 TAP SUICA · ~¥260</span></li>
+<li><span class="tg safe">TAXI</span><span class="nm">Easiest with tired kids</span> — <b>"Westin Miyako Kyoto, Keage"</b>, ~15 min, ~¥1,800–2,500.</li>
+</ul>
+<b>This is your buffer day</b> — if anyone's wiped, cut it to a half-day and rest.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">18:30</div><div class="scard">
+<div class="stitle">🍽️ Relaxed dinner near the Westin</div>
+<div class="sbody">Your <b>near-Westin</b> picks, a short walk from the hotel:
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Junsei</span> (8-min NE) · <span class="nm">Oshokuji-dokoro Asuka</span> (7-min W) · <span class="nm">Okutan Nanzen-ji</span> (13-min) · <span class="nm">Beer Komachi</span> (near Higashiyama Stn). <span class="maplink">📍 Maps: "Junsei Kyoto"</span></li>
+</ul>
+Nothing demanding tomorrow morning — Day 6 is your gentle Kyoto wind-down.</div>
+</div></div>
+
+</div>
+
+<div class="daysep" id="d6"><div class="kicker">Day 6 · Sunday</div><div class="big">July 12</div><div class="sub">Golden Pavilion + Nijō Castle → last Kyoto sights</div><div class="tag">Sleep: Westin Miyako Kyoto</div><div class="carry"><b>Carry today:</b> Suica ×4 · ~¥12,000 cash (Kinkaku-ji + Nijō entries) · veg card · <b>Master Sheet</b> · <i>tonight: pack tight + reserve Jul 13 oversized-baggage seats on Smart-EX</i></div></div>
+
+<h2 id="day-6-sun-jul-12-golden-pavilion-nijo-castle-last-kyoto-sights">Day 6 — Sun Jul 12 · Golden Pavilion, Nijō Castle &amp; last Kyoto sights</h2>
+<p><strong>Headline:</strong> Your last full Kyoto day — knock out the two big remaining "must-see" sights (<strong>Kinkaku-ji + Nijō Castle</strong>) in the morning, a downtown lunch, then an easy afternoon of your choice. You carry all bags on the train tomorrow, so <strong>tonight's non-negotiable job is packing tight</strong> (see the Day 7 luggage note) — that's why the late afternoon stays flexible.</p>
+<div class="tl">
+
+<div class="stop"><div class="tmark">09:00</div><div class="scard">
+<div class="stitle">🏯 Kinkaku-ji (Golden Pavilion) — go first, go early</div>
+<div class="sbody"><b>What it is:</b> a Zen temple whose top two floors are <b>completely covered in gold leaf</b>, mirrored in the pond in front — arguably the single most dazzling sight in Kyoto and an instant kid "wow." It's a <b>one-way garden stroll (~30–40 min)</b>, not a climb, so it's easy with the 6-year-old. Go early — it's packed by mid-morning. NW Kyoto; easiest = <b>taxi</b> from the Westin (~25 min), or subway + bus.
+<div class="facts"><span class="f tap">🟩 TAP SUICA / TAXI</span><span class="f">~25–30 min from Westin</span><span class="f">¥500 cash entry</span></div>
+<div class="sphoto idcard"><img src="images/dumps/kinkakuji.jpg" alt="Kinkaku-ji Golden Pavilion"><span class="cap"><b>Kinkaku-ji</b>The gold-leaf pavilion over its mirror pond — this is "Golden Pavilion." (Photo: Wikimedia Commons)</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">10:45</div><div class="scard">
+<div class="stitle">🏯 Nijō Castle — the shogun's palace (pairs with Kinkaku-ji)</div>
+<div class="sbody"><b>What it is:</b> the <b>Kyoto castle-palace of the Tokugawa shogun</b> — not a tall keep but a sprawling moated compound with lavish painted screens and the famous <b>"nightingale floors"</b> that chirp when you walk (built to detect intruders — kids love testing them). It's a flat walk-through between Kinkaku-ji and downtown, so it slots in naturally. <span class="warn">⚠️ ~¥1,300 adult / cheaper kids, cash; last entry ~16:00.</span>
+<div class="facts"><span class="f tap">🟩 TAP SUICA / TAXI</span><span class="f">~15 min from Kinkaku-ji</span><span class="f">~¥1,300 adult</span></div>
+<div class="sphoto idcard"><img src="images/dumps/nijo-castle.jpg" alt="Nijo Castle Ninomaru Palace"><span class="cap"><b>Nijō Castle</b>The Ninomaru Palace — long low buildings with painted screens & nightingale floors. (Photo: Wikimedia Commons)</span></div></div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">Optional</div><div class="scard">
+<div class="stitle"><span class="optbadge">Only if not done</span>🎋 Arashiyama — if you somehow skipped Jul 9</div>
+<div class="sbody">You already did <b>Arashiyama on Jul 9</b> (bamboo grove + river boat), so you can skip this. It's only here as a catch-up if Day 3 got rained out. It's the green NW district — the <b>bamboo grove</b>, Togetsukyo bridge, and riverside.
+<div class="sphoto idcard"><img src="images/dumps/arashiyama-bamboo.jpg" alt="Arashiyama bamboo grove"><span class="cap"><b>Arashiyama</b>The bamboo grove — NW Kyoto's green district (already on your Jul 9). (Photo: Wikimedia Commons)</span></div></div>
+<div class="skip"><b>Already did Jul 9?</b> Skip — do Kinkaku-ji + Nijō above instead.</div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">Optional · kids</div><div class="scard">
+<div class="stitle"><span class="optbadge">Kid-first swap</span>🥷 Toei Kyoto Studio Park</div>
+<div class="sbody">If the kids would rather have a fun day than a second temple, <b>swap Nijō Castle for this</b> — a samurai/ninja film-set park with costumes, ninja shows, and a haunted house. A genuine hit for a 6-year-old. Half-day, west Kyoto (near Kinkaku-ji's side of town). JR Sagano Line to <b>Uzumasa</b> or a taxi.
+<div class="facts"><span class="f tap">🟩 TAP SUICA</span><span class="f">JR Sagano → Uzumasa, or taxi</span><span class="f"><b>~30 min</b></span></div>
+<a href="https://www.toei-eigamura.com/global/en/">toei-eigamura.com</a> · <span class="maplink">📍 Maps: "Toei Kyoto Studio Park"</span>
+<div class="sphoto"><img src="images/jul2/f022ab95.jpg" alt="Toei Kyoto Studio Park"><span class="cap"><b>Toei Studio Park</b>Your saved pick — very "old Japan," great for kids.</span></div></div>
+<div class="skip"><b>Prefer the classic sight?</b> Stick with Kinkaku-ji above and skip this.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">12:30</div><div class="scard">
+<div class="stitle">🍽️ Lunch — Nishiki east end / Shijō-Kawaramachi (your picks)</div>
+<div class="sbody">Nishiki's east end runs right into Shijō-Kawaramachi — the same cluster as your Day 2 picks:
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Chao Chao Gyoza</span> (veg gyoza, off Shijō-dōri) · <span class="nm">Hyssop</span> (veg café, 4F Good Nature Station). <span class="maplink">📍 Maps: "Good Nature Station Kyoto"</span></li>
+<li><span class="tg safe">SAFE</span><span class="nm">Nishiki Market grazing</span> — yuba, tofu doughnuts, matcha sweets, soy-milk (check no-bonito). · <span class="nm">(THIS IS) NATURE</span> flower ice-cream cones.</li>
+</ul></div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">14:00 · pick one</div><div class="scard">
+<div class="stitle"><span class="optbadge">Fill the afternoon</span>🍵 One last easy Kyoto thing (all near the hotel side)</div>
+<div class="sbody">You're downtown after lunch with a few hours before packing — do <b>one</b> calm thing rather than heading straight back:
+<ul class="picklist">
+<li><span class="tg see">SEE</span><span class="nm">Ginkaku-ji (Silver Pavilion) + Philosopher's Path</span> — the serene counterpart to Kinkaku-ji, plus the pretty canal walk; close to the Westin's side of town. <span class="maplink">📍 Maps: "Ginkaku-ji"</span></li>
+<li><span class="tg see">SEE</span><span class="nm">Heian Shrine + garden</span> — giant orange torii, big plaza, a short taxi from the hotel; low-effort and photogenic. <span class="maplink">📍 Maps: "Heian Shrine"</span></li>
+<li><span class="tg see">SEE</span><span class="nm">💄 Kawai Shrine (beauty shrine)</span> — in the <b>Shimogamo Shrine</b> forest (~5-min walk from <b>Demachiyanagi Stn</b>, Keihan line, N of downtown). Famous for <b>face-shaped "beautiful face" ema</b> you decorate with your own cosmetics; pairs with a cool Kamo-river / Shimogamo forest stroll. <span class="maplink">📍 Maps: "Kawai Shrine Kyoto"</span></li>
+<li><span class="tg buy">SHOP</span><span class="nm">Nishiki Market + Teramachi/Shinkyōgoku arcades</span> — last light Kyoto souvenir grazing (keep it small — you carry all bags tomorrow). <span class="maplink">📍 Maps: "Nishiki Market"</span></li>
+</ul>
+<span class="warn">⚠️ Keep purchases light</span> — everything you buy today gets wheeled onto the Shinkansen tomorrow.
+<div class="sphoto idcard"><img src="images/dumps/kawai-shrine.jpg" alt="Kawai beauty shrine face-shaped ema"><span class="cap"><b>Kawai Shrine</b>The "beauty" shrine in the Shimogamo forest — you decorate a <b>face-shaped ema</b> with your own cosmetics. (Photo: your saved reel)</span></div></div>
+<div class="skip"><b>Everyone tired / want to swim + pack?</b> Skip and head back now — the onsen/pool option is below.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">16:30</div><div class="scard">
+<div class="stitle">🚆 Back to the Westin (from Shijō-Kawaramachi / Nishiki / Higashiyama)</div>
+<div class="sbody">Home station = <b>Keage (蹴上)</b>, <b>Tōzai line</b>, Exit 2, 2-min walk up. From the Nishiki/Shijō-Kawaramachi cluster:
+<ul class="picklist">
+<li><span class="tg safe">TRAIN</span><span class="nm">Walk ~7 min N to Sanjō</span> → <b>Sanjō-Keihan</b> → <b>Tōzai line toward Rokujizō (六地蔵)</b> → <b>Keage</b> (3 stops, ~6 min). <span class="maplink">🟩 TAP SUICA · ~¥260</span> <span class="warn">⚠️ toward Rokujizō, not Uzumasa-Tenjingawa.</span></li>
+<li><span class="tg safe">TAXI</span><span class="nm">With kids + any bags</span> — <b>"Westin Miyako Kyoto, Keage"</b>, ~15 min, ~¥1,500–2,200.</li>
+</ul></div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">Optional</div><div class="scard">
+<div class="stitle"><span class="optbadge">Add-on</span>♨️ Westin onsen this afternoon</div>
+<div class="sbody"><span class="warn">⚠️ Brief the kids on onsen rules</span> — wash first, no swimwear (Part 8).</div>
+<div class="skip"><b>Skip the onsen?</b> Pool + pack the carry-alongs instead.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">18:30</div><div class="scard">
+<div class="stitle">🍽️ Farewell-to-Kyoto veg dinner near the Westin</div>
+<div class="sbody">Your <b>near-Westin</b> picks — or splurge on the shōjin send-off:
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Junsei</span> / <span class="nm">Okutan Nanzen-ji</span> — a proper yudōfu farewell (confirm kombu-only broth). <span class="maplink">📍 Maps: "Okutan Nanzenji"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Oshokuji-dokoro Asuka</span> (7-min W) · <span class="nm">Beer Komachi</span> (casual) · or concierge-booked <span class="nm">shōjin ryōri</span> for the special temple-veg send-off.</li>
+</ul>
+<span class="warn">Tonight's jobs:</span> <b>pack tight</b> (you wheel everything onto the Shinkansen tomorrow), <b>reserve the oversized-baggage seats on Smart-EX</b> for the Jul 13 Nozomi (see Day 7), confirm the train, charge everything.</div>
+</div></div>
+
+</div>
+
+<div class="daysep" id="d7"><div class="kicker">Day 7 · Monday</div><div class="big">July 13</div><div class="sub">Kyoto → Tokyo (JW Marriott)</div><div class="tag">Sleep: JW Marriott Tokyo</div><div class="carry"><b>Carry today:</b> all 4 passports · <b>Smart-EX QR w/ oversized-baggage seats reserved</b> · Suica ×4 · all luggage · veg card · <b>Master Sheet</b></div></div>
+
+<h2 id="day-7-mon-jul-13-move-to-tokyo">Day 7 — Mon Jul 13 · Move to Tokyo 🚄</h2>
+<p><strong>Headline:</strong> The full-luggage transfer. You're wheeling all 4 bags onto the Nozomi, so the one thing that matters is <strong>reserving the right seats</strong> (below). You <strong>get off at Shinagawa, not Tokyo Station.</strong></p>
+<blockquote>
+<p><strong>🧳 Book the oversized-baggage seats.</strong> Any suitcase where <strong>length + width + height is 161–250 cm</strong> (most large check-in bags) needs a <strong>"特大荷物スペースつき座席 / Oversized Baggage Seat"</strong> on the Nozomi — it's the last row of the car, with locking storage space behind it, at <strong>no extra charge if reserved in advance</strong>. Book these on Smart-EX when you reserve. <span class="warn">⚠️ Board without one and it's a ¥1,000/bag penalty + no guaranteed space.</span> Bags <strong>under 160 cm total</strong> need no reservation (overhead rack / at your feet). Full rule + photo in <strong>Part 3</strong>.</p>
+</blockquote>
+<div class="tl">
+
+<div class="stop meal"><div class="tmark">08:30</div><div class="scard">
+<div class="stitle">🍳 Relaxed breakfast + final pack</div>
+<div class="sbody">No need to rush — trains are frequent. Checkout when ready (Westin holds bags if needed). Double-check nothing's left in the room safe.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">11:15</div><div class="scard">
+<div class="stitle">🚌 Westin shuttle → Kyoto Station (with all bags)</div>
+<div class="sbody">Take the hotel shuttle from the lobby (free, :10/:40, ~15 min). At Kyoto Station, follow blue <b>Shinkansen</b> signs to the <b>central Shinkansen gates</b> — use lifts/escalators with the bags, not stairs. Grab platform <i>ekiben</i>/veg snacks before boarding. <span class="warn">Give yourself margin</span> — 4 bags + a 6-year-old through a station is slow.
+<div class="facts"><span class="f">Free shuttle · no booking</span><span class="f"><b>~15 min</b></span><span class="f">Satellite Concierge in-station can help</span></div></div>
+</div></div>
+
+<div class="stop move"><div class="tmark">12:30</div><div class="scard">
+<div class="stitle">🚄 Nozomi → alight at SHINAGAWA</div>
+<div class="sbody">Sit in your reserved <b>oversized-baggage row</b> (bags lock behind the last row). <b>Fuji on the left (seats D/E)</b> going this way, if clear. Line up on your painted car-number mark ~10 min early. <b>Get off at Shinagawa</b> (the stop before Tokyo Station) — the Shinkansen doesn't stop at Takanawa Gateway, and Shinagawa skips the Tokyo-Station maze.
+<div class="facts"><span class="f buy">🟥 BUY (Smart-EX)</span><span class="f">Tokaido Shinkansen NOZOMI</span><span class="f"><b>~2h15m</b></span><span class="f">~¥13,960/adult</span></div></div>
+</div></div>
+
+<div class="stop move"><div class="tmark">14:50</div><div class="scard">
+<div class="stitle">🚕 Shinagawa → JW Marriott → DROP BAGS + check in</div>
+<div class="sbody">With 4 bags, <b>take a taxi</b> from the Shinagawa Takanawa-gate/West-exit rank (~5 min) — easiest with luggage. <i>(Travelling light you'd just hop the Yamanote ONE stop Shinagawa → Takanawa Gateway, which walk-connects to the hotel in 1 min — but with 4 cases, taxi.)</i> Titanium — ask about the upgrade/lounge. <b>Drop the bags, check in, THEN go eat</b> — don't drag luggage to lunch.
+<div class="facts"><span class="f">Taxi (easiest w/ bags)</span><span class="f"><b>~5 min</b></span><span class="f">¥1,000–1,500</span></div></div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">15:30</div><div class="scard">
+<div class="stitle">🍽️ Late lunch near the JW (bags already dropped)</div>
+<div class="sbody">Hands-free now — eat within a few min of the hotel / Takanawa Gateway.
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Equal Café</span> — Buddha bowls, vegan curry, ice cream; 5F of NEWoMan Takanawa, right behind the JW. <span class="maplink">📍 Maps: "Equal Cafe NEWoMan Takanawa"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Obica Mozzarella Bar</span> — Italian/cheese-forward, by the Shinagawa Prince Hotel. <span class="maplink">📍 Maps: "Obica Takanawa"</span></li>
+<li><span class="tg safe">SAFE</span><span class="nm">Ekiben on the train</span> — if kids can't wait, eat the plain-onigiri/fruit ekiben en route and just settle in.</li>
+</ul></div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">Optional</div><div class="scard">
+<div class="stitle"><span class="optbadge">Buy · easy + indoor</span>🛍️ Ginza run — Uniqlo/MUJI + electronics + watches</div>
+<div class="sbody">A gentle first-evening errand if everyone's rested — all A/C, one short train (Shinagawa → Shinbashi/Ginza). <b>You're not moving hotels again, so heavy stuff is fine from here on.</b>
+<ul class="picklist">
+<li><span class="tg buy">HOME</span><span class="nm">Uniqlo Ginza (12 floors) · MUJI Ginza · GU</span> — Japan-exclusive lines, tax-free w/ passport. <span class="maplink">📍 Maps: "Uniqlo Ginza"</span></li>
+<li><span class="tg buy">TECH</span><span class="nm">Bic Camera Yūrakuchō</span> — Sony cameras/headphones, Nintendo Switch, <b>Seiko/Casio/Citizen watches</b>, tax-free counter. <span class="warn">⚠️ confirm 100–240V dual-voltage.</span> <span class="maplink">📍 Maps: "Bic Camera Yurakucho"</span></li>
+<li><span class="tg buy">TECH</span><span class="nm">Ginza Sony Park</span> — Sony's own experiential showroom building (reopened Jan 2025), 5 min from Uniqlo Ginza. Free to wander; ever-changing exhibits + a café. Hours ~11:00–19:00. <a href="https://www.sonypark.com/e/">sonypark.com</a> <span class="maplink">📍 Maps: "Ginza Sony Park"</span></li>
+<li><span class="tg buy">WATCH</span><span class="nm">Grand Seiko Flagship Boutique</span> — Japan's largest GS boutique, on Ginza Namiki St (6-6-5 Ginza). Mon–Sat 11:00–20:00 / Sun &amp; hols 11:00–19:00. <span class="warn">⚠️ high-end — browsing welcome; a real destination if a GS is on the wishlist.</span> <span class="maplink">📍 Maps: "Grand Seiko Boutique Ginza Namiki"</span></li>
+</ul></div>
+<div class="skip"><b>Too tired first night?</b> Skip — the big shopping day is Jul 16. Go straight to dinner.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">18:30</div><div class="scard">
+<div class="stitle">🍽️ Gentle first Tokyo dinner near the JW</div>
+<div class="sbody">Your <b>near-JW</b> picks (Takanawa Gateway / Shinagawa Takanawa-gate side — reused on quiet Tokyo nights):
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Obica Mozzarella Bar</span> — near the Shinagawa Prince Hotel; cheese/Italian, veg-friendly. <span class="maplink">📍 Maps: "Obica Takanawa"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Equal Café</span> (NEWoMan, behind JW) — if not used at lunch. · <span class="nm">Green Market MOA</span> — grocery/deli for a light in-room night, E of Obica.</li>
+<li><span class="tg safe">SAFE</span><span class="nm">Natural Café Tabunoki</span> — <span class="warn">⚠️ veg options unclear & hours erratic — call/check Maps before going; treat as a maybe, not a plan.</span></li>
+</ul></div>
+</div></div>
+
+</div>
+
+<div class="daysep" id="d8"><div class="kicker">Day 8 · Tuesday</div><div class="big">July 14</div><div class="sub">Tokyo — Asakusa & Shibuya</div><div class="tag">Sleep: JW Marriott Tokyo</div><div class="carry"><b>Carry today:</b> Suica ×4 · passport (tax-free shopping) · veg card · hats + water · <b>Master Sheet</b> · <i>stand LEFT on Tokyo escalators</i></div></div>
+
+<h2 id="day-8-tue-jul-14-tokyo-classics">Day 8 — Tue Jul 14 · Tokyo classics</h2>
+<p><strong>Headline:</strong> Old Tokyo in the morning, iconic modern Tokyo in the evening — with a big A/C break between.</p>
+<div class="tl">
+
+<div class="stop meal"><div class="tmark">07:30</div><div class="scard">
+<div class="stitle">🍳 Breakfast → early start</div>
+<div class="sbody">Get to Asakusa before the crowds and heat build.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">08:00</div><div class="scard">
+<div class="stitle">🚆 To Asakusa</div>
+<div class="sbody">From Shinagawa/Takanawa Gateway: JR to a transfer, then the <b>Ginza subway line</b> to <b>Asakusa</b> — Google Maps shows the live platform + best route. Go early.
+<div class="facts"><span class="f tap">🟩 TAP SUICA</span><span class="f">JR + Ginza line</span><span class="f"><b>~40 min</b></span><span class="f">~¥400</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">08:30</div><div class="scard">
+<div class="stitle">🏮 Asakusa & Senso-ji + Nakamise street</div>
+<div class="sbody">Tokyo's great old temple + its souvenir/snack street. Go early — by late morning it's packed and hot. <i>Add-ons right here: <b>Kappabashi Kitchen Town</b> (plastic food, knives) and <b>Hanayashiki</b> retro amusement park for the 6-year-old.</i></div>
+<div class="sphoto idcard"><img src="images/dumps/sensoji.jpg" alt="Senso-ji temple and Kaminarimon gate Asakusa"><span class="cap"><b>Sensō-ji (Asakusa)</b>The big red temple gate + lantern and the shop-lined Nakamise street leading up to it. (Photo: Wikimedia Commons)</span></div></div>
+</div>
+
+<div class="stop opt"><div class="tmark">Optional</div><div class="scard">
+<div class="stitle"><span class="optbadge">Add-on</span>🗼 Tokyo Skytree</div>
+<div class="sbody">Right nearby — observation decks with big city views.</div>
+<div class="sphoto idcard"><img src="images/dumps/skytree.jpg" alt="Tokyo Skytree tower"><span class="cap"><b>Tokyo Skytree</b>The tall lattice broadcast tower (world's tallest tower) — glass observation decks near the top. (Photo: Wikimedia Commons)</span></div>
+<div class="skip"><b>Skip the tower?</b> Head to the A/C lunch break.</div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">Optional · 15 min</div><div class="scard">
+<div class="stitle"><span class="optbadge">Luck detour</span>💰 Koami Shrine (小網神社) — the "money-washing" shrine</div>
+<div class="sbody">A tiny, atmospheric good-fortune shrine in <b>Nihonbashi</b> — people <b>wash their money in the spring</b> for prosperity, and it's known for warding off misfortune. An easy 15-min detour on the way between Asakusa and Shibuya (<b>Ningyōchō / Kayabachō Stn</b>, Hibiya line). Often a short queue — go early if you want a photo.
+<div class="sphoto idcard"><img src="images/dumps/koami-shrine.jpg" alt="Koami money-washing shrine Nihonbashi"><span class="cap"><b>Koami Shrine</b>Small ornate shrine (小網神社) in Nihonbashi — the <b>money-washing</b> good-luck spot. (Photo: your saved reel)</span></div></div>
+<div class="skip"><b>Not detouring?</b> Carry on to the A/C lunch + Shibuya below.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">12:30</div><div class="scard">
+<div class="stitle">🍽️ Lunch in Asakusa (before the A/C break)</div>
+<div class="sbody">Eat around Senso-ji / the station before the midday heat peaks.
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Yoroiya</span> — vegan ramen &amp; gyoza, near Senso-ji. <span class="maplink">📍 Maps: "Yoroiya Asakusa"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Hatoya's</span> — top-rated vegan <b>fruit sandwiches</b> (unique, kid-friendly). · <span class="nm">Injoy Etsunou</span> — vegan, just E of the station. <span class="maplink">📍 Maps: "Hatoya Asakusa"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Veganic to go / Monkey Magic</span> — N side. <span class="warn">⚠️ reservation needed — call ahead or treat as a maybe.</span></li>
+</ul></div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">Optional</div><div class="scard">
+<div class="stitle"><span class="optbadge">A/C pick</span>🎨 Museum / depachika A/C break</div>
+<div class="sbody">A cool indoor refuge for the hot part of the day. <i><b>TeamLab Planets is on the dedicated Jul 16 day</b> (wife + kids) — don't double-book it here.</i> Any department-store <i>depachika</i> or a nearby museum works as today's A/C break.</div>
+<div class="skip"><b>Kids still fresh?</b> Push straight on to Shibuya at dusk.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">16:00</div><div class="scard">
+<div class="stitle">🚆 To Shibuya</div>
+<div class="sbody">From Asakusa: Ginza line + transfer, or JR — Maps shows the live route. Aim to arrive at dusk for the lights.
+<div class="facts"><span class="f tap">🟩 TAP SUICA</span><span class="f">subway / JR</span><span class="f"><b>~35–45 min</b></span><span class="f">~¥300</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">16:30</div><div class="scard">
+<div class="stitle">🌆 Shibuya — Scramble Crossing & Hachiko</div>
+<div class="sbody">Bright, buzzy, kid-friendly at dusk. <b>Shibuya Sky</b> for sunset views (<span class="warn">⚠️ book ahead</span>). Shibuya is also drugstore + secondhand-luxury central — the errands below fit right here.</div>
+<div class="sphoto idcard"><img src="images/dumps/shibuya-crossing.jpg" alt="Shibuya Scramble Crossing crowds and neon"><span class="cap"><b>Shibuya Crossing</b>The giant neon-lit intersection where crowds cross from every direction at once. (Photo: Wikimedia Commons)</span></div></div>
+</div>
+
+<div class="stop opt"><div class="tmark">Optional</div><div class="scard">
+<div class="stitle"><span class="optbadge">Buy</span>🛍️ Shibuya shopping run</div>
+<div class="sbody">Tax-free with passport (¥5,000 min pre-tax). <b>This is a big shopping-city day</b> — heavy stuff is fine now, you're not moving hotels again.
+<ul class="picklist">
+<li><span class="tg buy">KIDS</span><span class="nm">Nintendo TOKYO + Pokémon Center Shibuya</span> — <b>both on the 6th floor of Shibuya PARCO</b> (5-min walk from the crossing), 10:00–21:00. Japan's first official Nintendo store + a full Pokémon Center side by side — the big win for your 6-year-old. <span class="warn">⚠️ can be crowded weekends/holidays; numbered-entry tickets issued at peak — go earlier if it's mobbed.</span> <a href="https://www.nintendo.co.jp/officialstore/">nintendo.co.jp/officialstore</a> <span class="maplink">📍 Maps: "Shibuya PARCO"</span></li>
+<li><span class="tg buy">SKIN</span><span class="nm">Matsukiyo / Ainz &amp; Tulpe / Don Quijote</span> — your full skincare + haircare list (Melano CC, Hada Labo, Fino, etc.). Bring the shelf photos.</li>
+<li><span class="tg buy">LUX</span><span class="nm">Komehyo / 2nd Street</span> — pre-loved Chanel/LV bags &amp; watches, authenticated. <span class="maplink">📍 Maps: "Komehyo Shibuya"</span></li>
+<li><span class="tg buy">EYE</span><span class="nm">Blue Elephant</span> — your saved eyewear brand (Shinjuku/Harajuku flagships). <a href="https://en.blueelephant.co/">blueelephant.co</a></li>
+<li><span class="tg buy">HOME</span><span class="nm">Loft / Hands Shibuya</span> — cosmetics, stationery, travel goods, gifts.</li>
+</ul>
+<div class="sphoto"><img src="images/jul2/1c092ab9.jpg" alt="Where to shop cosmetics"><span class="cap"><b>Drugstores</b>Matsukiyo / Ainz&amp;Tulpe / @cosme.</span><img src="images/jul2/4e213cd2.jpg" alt="Secondhand luxury"><span class="cap"><b>Komehyo / 2nd St</b>Pre-loved bags &amp; watches.</span><img src="images/jul2/2c4711cc.jpg" alt="Blue Elephant eyewear"><span class="cap"><b>Blue Elephant</b>Eyewear.</span></div>
+<i>Your full skincare product list with photos is in Part 11 — screenshot it before you go.</i></div>
+<div class="skip"><b>Not shopping tonight?</b> Save it for the Jul 16 shopping afternoon and go to dinner.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">19:00</div><div class="scard">
+<div class="stitle">🍽️ Dinner in Shibuya (Hachikō / Center-Gai side)</div>
+<div class="sbody">
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Gyumon Shibuya (Center-Gai)</span> — vegan ramen + tofu burger (also serves halal wagyu — order the veg items). <span class="maplink">📍 Maps: "Gyumon Shibuya"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">CARVAAN Delicatessen</span> — veg wraps &amp; mezze. <span class="maplink">📍 Maps: "CARVAAN Shibuya"</span></li>
+<li><span class="tg ind">IND</span><span class="nm">Milan Nataraj</span> — Indian veg, a little N of the crossing. <span class="maplink">📍 Maps: "Milan Nataraj Shibuya"</span></li>
+</ul>
+<span class="warn">Reminders:</span> stand <b>left</b> on Tokyo escalators; carry your rubbish; live location on in crowds.</div>
+</div></div>
+
+</div>
+
+<div class="daysep" id="d9"><div class="kicker">Day 9 · Wednesday</div><div class="big">July 15</div><div class="sub">Tokyo DisneySea 🌊 · your son's 7th birthday 🎂</div><div class="tag">Sleep: JW Marriott Tokyo</div><div class="carry"><b>Carry today:</b> Suica ×4 · <b>DisneySea tickets dated JUL 15 (on phones)</b> · Tokyo Disney app w/ payment · <b>10,000mAh power bank</b> · packed snacks · veg card · <b>Master Sheet</b></div></div>
+
+<h2 id="day-9-wed-jul-15-disneysea-birthday-dated-tickets">Day 9 — Wed Jul 15 · DisneySea 🎂 (birthday + dated tickets)</h2>
+<p><strong>Headline:</strong> The big magical one — <strong>and it's the birthday.</strong> Date-locked ticket (make sure it's <strong>dated Jul 15</strong>), app-driven, rope-drop early. <strong>Fantasy Springs</strong> (Frozen / Rapunzel / Peter Pan, opened 2024) is the newest and most birthday-worthy land. Read the DisneySea gotchas (Part 8) the night before.</p>
+<div class="tl">
+
+<div class="stop"><div class="tmark">🎂 First</div><div class="scard">
+<div class="stitle">🎈 Make it his birthday — free celebration badge</div>
+<div class="sbody">At the entrance (or any shop / cast member), say <b>"It's my son's birthday today"</b> — they give a free <b>"Happy Birthday" sticker/badge</b> and write his name on it. Cast members and characters all over the park then wish him <i>"Happy Birthday!"</i> all day. <b>Nice touches:</b> a birthday-ear headband from any merch shop; and if you pre-booked a table-service restaurant (<b>Ristorante di Canaletto</b> / <b>Magellan's</b>), ask for a small <b>birthday dessert plate</b> when you reserve.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">06:30</div><div class="scard">
+<div class="stitle">🍳 Early breakfast + battery check</div>
+<div class="sbody"><span class="warn">🔋 The Disney app kills your battery</span> — carry a 10,000 mAh power bank. Pack snacks (kids reject the themed-restaurant meat dishes).</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">07:00</div><div class="scard">
+<div class="stitle">🚆 JW → Maihama → Disney Resort Line</div>
+<div class="sbody">Shinagawa/Tokyo Stn → <b>JR Keiyō Line</b> to <b>Maihama</b>, then the <b>Disney Resort Line</b> monorail to DisneySea. <span class="warn">⚠️ The Keiyō-line platform at Tokyo Station is a ~10-min walk from the main concourse</span> — pad time. <span class="warn">Not central Tokyo</span> (it's in Urayasu). Leave early to rope-drop.
+<div class="facts"><span class="f tap">🟩 TAP SUICA</span><span class="f">JR Keiyō → Maihama → monorail</span><span class="f"><b>60–90 min</b></span><span class="f">~¥400 JR + ¥260 monorail</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">08:15</div><div class="scard">
+<div class="stitle">🎟️ At the gate (08:15–08:45)</div>
+<div class="sbody"><b>The moment you scan in</b>, open the Tokyo Disney app and <b>buy Fantasy Springs / Frozen DPA first</b> — <span class="warn">it sells out by ~09:30–10:00.</span> The app won't let you buy before you're scanned in. This is the birthday headliner — grab it first.</div>
+</div></div>
+
+<div class="stop"><div class="tmark">Morning</div><div class="scard">
+<div class="stitle">📱 Work the 3 pass systems</div>
+<div class="sbody">Free Standby Pass / free anniversary passes / paid DPA — check each headliner in the app. Only one DPA at a time; <b>stagger across both parents' phones.</b> <b>Height:</b> a 7-year-old clears almost everything — just check the tall coasters (Journey / Raging Spirits ~117 cm).</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">11:00</div><div class="scard">
+<div class="stitle">🍽️ Veg lunch inside DisneySea — mobile-order before 11:00</div>
+<div class="sbody"><span class="warn">Order in the app before 11:00 or slots vanish.</span> Your in-park picks (pizza/pasta are the safest veg bets — confirm no meat/egg/dashi):
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Ristorante di Canaletto</span> — pizza &amp; pasta (waterside, Mediterranean Harbor); table-service = <b>the birthday-cake spot</b> if you reserved. <span class="maplink">📍 in-park</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Zambini Brothers' Ristorante</span> — pizza, pasta, the famous tomato-basil roll. · <span class="nm">Casbah Food Court</span> — veg curry &amp; naan (<span class="warn">ask about meat/dashi</span>).</li>
+<li><span class="tg safe">SAFE</span><span class="nm">Sebastian's Calypso Kitchen</span> — tortilla wraps / soft tacos (pick the veg filling). · <span class="nm">Packed snacks</span> — backup if kids reject the themed dishes.</li>
+</ul></div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">Optional</div><div class="scard">
+<div class="stitle"><span class="optbadge">If kids last</span>🎆 Stay for the water / night show</div>
+<div class="sbody">A great birthday finale — but it's a very long day.</div>
+<div class="skip"><b>Kids melting down?</b> Leave <b>before</b> the closing crush — don't push it.</div>
+</div></div>
+
+<div class="stop"><div class="tmark">Exit</div><div class="scard">
+<div class="stitle">🎫 Scan ticket at the exit</div>
+<div class="sbody"><span class="warn">⚠️ Re-entry uses ticket scans, no stamps</span> — keep every ticket on the phone. Long day — build slack, expect meltdowns. <i>Tomorrow: TeamLab + shopping (a gentler day).</i></div>
+</div></div>
+
+</div>
+
+<blockquote>
+<p><strong>🎂 Birthday note:</strong> if you'd prefer the <em>classic</em> little-kid birthday (castle, parade, Mickey up close), <strong>Tokyo DisneyLand</strong> is the more character-forward park than DisneySea. But DisneySea's new <strong>Fantasy Springs</strong> (Frozen / Rapunzel / Peter Pan) is genuinely magical for a 7-year-old, and it's what you've planned — either works. Just make sure the <strong>dated ticket says Jul 15</strong>, not Jul 16.</p>
+</blockquote>
+<div class="daysep" id="d10"><div class="kicker">Day 10 · Thursday</div><div class="big">July 16</div><div class="sub">Tokyo — TeamLab + shopping (Dad works AM) · Fuji swap if clearer</div><div class="tag">Sleep: JW Marriott Tokyo</div><div class="carry"><b>Carry today:</b> Suica ×4 · <b>passport (tax-free — bring for every store)</b> · <b>TeamLab Planets timed tickets</b> · shoe/watch sizes + shelf photos · veg card · <b>Master Sheet</b> · <i>check Fuji forecast — swap to Day 11 plan if today's clearer</i></div></div>
+
+<h2 id="day-10-thu-jul-16-teamlab-shopping-day">Day 10 — Thu Jul 16 · TeamLab + shopping day</h2>
+<p><strong>Headline:</strong> <strong>You're in the office this morning; wife + kids do TeamLab Planets, then Harajuku shopping; you join for the evening electronics / watch run in Akihabara + dinner.</strong> This is now the <strong>Fuji-swap day</strong> — if Jul 16 looks clearer than Jul 17, run the Day 11 Fuji timeline today instead (DisneySea's Jul 15 date is fixed, so Fuji swaps with <em>this</em> day now).</p>
+<div class="tl">
+
+<div class="stop"><div class="tmark">Night before</div><div class="scard">
+<div class="stitle">🌦️ Decide: Fuji today, or this plan?</div>
+<div class="sbody"><b>If Jul 16 looks clearer than Jul 17</b> → run the <b>Day 11 Fuji timeline</b> today and move this TeamLab/shopping plan to Jul 17. Otherwise carry on (Fuji odds are fickle in July — Part 8). <span class="warn">Book TeamLab Planets timed tickets ahead</span> either way — pick a late-morning slot.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">08:00</div><div class="scard">
+<div class="stitle">🍳 Breakfast → Dad to office, wife + kids set out</div>
+<div class="sbody">Split the day: you head to work; wife + kids do the two easy, kid-loved things below. Share live location; regroup late afternoon in Akihabara for the electronics run.</div>
+</div></div>
+
+<div class="stop"><div class="tmark">10:00</div><div class="scard">
+<div class="stitle">🎨 TeamLab Planets TOKYO (Toyosu) — wife + kids</div>
+<div class="sbody">Barefoot, wade-through-water immersive digital art — <b>kids adore it</b> and it's fully indoor A/C. In <b>Toyosu</b>: Yurikamome line to <b>Shin-Toyosu</b> (1-min walk). <span class="warn">⚠️ Timed entry — book ahead; you wade knee-deep, so shorts &gt; long skirts.</span> ~1.5–2 h.
+<div class="facts"><span class="f tap">🟩 TAP SUICA</span><span class="f">→ Shin-Toyosu (Yurikamome)</span><span class="f"><b>~2 h visit</b></span><span class="f">~¥3,800 adult</span></div>
+<a href="https://planets.teamlab.art/tokyo/">planets.teamlab.art</a>
+<div class="sphoto idcard"><img src="images/dumps/teamlab-planets.jpg" alt="TeamLab Planets mirrored light room"><span class="cap"><b>TeamLab Planets</b>Barefoot mirrored light &amp; water rooms in Toyosu — this is the place. (Photo: Wikimedia Commons)</span></div></div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">Optional</div><div class="scard">
+<div class="stitle"><span class="optbadge">Nearby</span>🤖 Odaiba — Gundam statue + malls</div>
+<div class="sbody">Toyosu sits right by <b>Odaiba</b> — a couple of Yurikamome stops on: the life-size <b>Unicorn Gundam statue</b> (DiverCity), waterfront malls, and the <b>Miraikan</b> science museum. Easy kid add if TeamLab finishes early.</div>
+<div class="sphoto idcard"><img src="images/dumps/gundam-odaiba.jpg" alt="Life-size Unicorn Gundam statue Odaiba"><span class="cap"><b>Unicorn Gundam</b>The ~20 m robot statue standing outside the DiverCity mall — it transforms on a light show at night. (Photo: Wikimedia Commons)</span></div>
+<div class="skip"><b>Heading to Harajuku instead?</b> Skip Odaiba and go straight to lunch + shops.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">12:30</div><div class="scard">
+<div class="stitle">🍽️ Lunch (wife + kids)</div>
+<div class="sbody">
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Ain Soph.</span> — fully vegan café (Ginza / Shinjuku / Ikebukuro branches); pancakes, burgers, bento. <span class="warn">⚠️ book ahead.</span> <a href="https://www.ain-soph.jp/">ain-soph.jp</a></li>
+<li><span class="tg safe">SAFE</span><span class="nm">Harajuku café / depachika</span> — lots of veg-friendly cafés around Omotesandō; show the veg card.</li>
+</ul></div>
+</div></div>
+
+<div class="stop"><div class="tmark">13:30</div><div class="scard">
+<div class="stitle">🛍️ Harajuku &amp; Takeshita Street — crepes, character shops, sneakers (wife + kids)</div>
+<div class="sbody">The kid-heaven strip. All tax-free with passport (¥5,000 min pre-tax).
+<ul class="picklist">
+<li><span class="tg safe">EAT</span><span class="nm">Takeshita-dōri crepe stands</span> — <b>Marion Crepes</b> / <b>Angel's Heart</b>, the famous Harajuku crepes. <span class="warn">⚠️ batter has egg</span> — fruit + cream fillings are the win; skip if strict no-egg.</li>
+<li><span class="tg buy">KIDS</span><span class="nm">Kiddy Land Harajuku</span> — 5 floors Sanrio / Ghibli / Pokémon / Snoopy. · <span class="nm">@cosme TOKYO</span> — Japan's biggest cosmetics store (bring shelf photos).</li>
+<li><span class="tg buy">SHOES</span><span class="nm">Nike Harajuku</span> — flagship; Japan-exclusive colourways + the <b>Nike Mind</b> wellness insoles you saved (pressure-point sole). · <span class="nm">Onitsuka Tiger Omotesandō</span> (Yellow Concept Store).</li>
+</ul>
+<div class="sphoto"><img src="images/dumps/nike-mind-sole.png" alt="Nike Mind insole"><span class="cap"><b>Nike Mind</b>Pressure-point sole — ask at Nike Harajuku.</span><img src="images/dumps/nike-mind-red-sole.png" alt="Nike Mind red sole"><span class="cap"><b>Nike Mind</b>"How you feel when you walk."</span><img src="images/dumps/harajuku-takeshita.jpg" alt="Takeshita Street entrance arch, Harajuku"><span class="cap"><b>Takeshita St · Harajuku</b>The flagship-lined lane — Nike, Onitsuka &amp; the youth-fashion cluster start here. (Photo: Wikimedia Commons)</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">15:00</div><div class="scard">
+<div class="stitle">🛒 Don Quijote + drugstore run (viral snacks · skincare · pharmacy)</div>
+<div class="sbody"><b>Don Quijote (Donki)</b> — the 7-floor Shibuya mega-store, open 24/7: viral snacks, KitKats, cheap cosmetics, souvenirs. Pair with any <b>Matsukiyo / Ainz&amp;Tulpe</b> for the skincare list + the digestion/constipation supplements you saved.
+<ul class="picklist">
+<li><span class="tg buy">SKIN</span><span class="nm">Your full skincare + haircare list</span> — Melano CC, Hada Labo, Fino, etc. (Part 11 — bring the shelf photos).</li>
+<li><span class="tg buy">💊 GUT</span><span class="nm">Digestion / constipation picks</span> — <b>Strong Wakamoto</b> (gut support) · <b>Daichi Kampo Benpiyaku</b> (herbal, mild–moderate) · <b>Colac II</b> (4+ days) · <b>Kyobashu Mg Oxide</b> (osmotic). <span class="warn">⚠️ ask the pharmacist; gelatin caps may not be veg.</span></li>
+</ul>
+<div class="sphoto"><img src="images/dumps/tokyo-must-visit-stores.jpg" alt="Tokyo must-visit stores"><span class="cap"><b>Must-visit stores</b>Donki · Uniqlo · GU · Loft · Hands · Pokémon · ABC-Mart · Onitsuka.</span><img src="images/dumps/constipation-guide.jpg" alt="Constipation pharmacy guide"><span class="cap"><b>Pharmacy picks</b>Wakamoto · Benpiyaku · Colac II · Mg Oxide.</span></div></div>
+</div></div>
+
+<div class="stop move"><div class="tmark">17:00</div><div class="scard">
+<div class="stitle">🚆 Dad joins → Akihabara (electronics · cameras · watches · games)</div>
+<div class="sbody">Regroup at <b>Akihabara</b> (JR Yamanote, ~15 min from Harajuku/Shibuya). A/C megastores, open late.
+<div class="facts"><span class="f tap">🟩 TAP SUICA</span><span class="f">JR Yamanote</span><span class="f"><b>~15 min</b></span><span class="f">~¥170</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">17:30</div><div class="scard">
+<div class="stitle">📷 Akihabara big-box + retro games (your buy list)</div>
+<div class="sbody"><span class="warn">⚠️ Confirm every appliance is 100–240V dual-voltage before buying — Japan runs 100V.</span>
+<ul class="picklist">
+<li><span class="tg buy">TECH</span><span class="nm">Yodobashi Camera Akihabara</span> — 9 floors: <b>Sony cameras/headphones, Nintendo Switch, Seiko/Casio/Citizen watches</b>. Also stocks <b>ReFa</b> beauty tools. <span class="maplink">📍 Maps: "Yodobashi Akihabara"</span></li>
+<li><span class="tg buy">GAMES</span><span class="nm">Super Potato · Mandarake</span> — retro games / anime for the kids &amp; collectors, along Chūō-dōri.</li>
+<li><span class="tg buy">SHOES</span><span class="nm">Nippon Made (Onitsuka premium)</span> — the top-craftsmanship line; flagship at <b>Tokyo Midtown Yaesu</b> (by Tokyo Stn, one Yamanote hop) — detour only if you want the premium pair.</li>
+</ul>
+<div class="sphoto"><img src="images/dumps/nippon-made.jpg" alt="Nippon Made store"><span class="cap"><b>Nippon Made</b>Onitsuka's premium line · Midtown Yaesu.</span><img src="images/dumps/shopping-guide-stores.jpg" alt="Ultimate shopping guide store hours"><span class="cap"><b>Store-hours cheat-sheet</b>Donki · Uniqlo · Loft · Onitsuka · Pokémon · Hands · GU · MUJI.</span></div>
+<i>Full electronics + watch wishlist: Part 11 — screenshot before you go.</i></div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">Optional · late</div><div class="scard">
+<div class="stitle"><span class="optbadge">Adult-leaning</span>🦖 Shinjuku by night — Godzilla head + Omoide Yokocho</div>
+<div class="sbody">If energy allows, hop to <b>Shinjuku</b> (Yamanote, ~20 min) for the neon. <b>Godzilla head:</b> at <b>Hotel Gracery Shinjuku</b> (Toho Building, Kabukichō) — take the lift to the <b>8th-floor Godzilla Terrace</b> (free, wraps the café entrance), or grab a drink at the 8F <i>Bonjour</i> café for the close-up. A 2-min walk away: <b>Omoide Yokocho</b> lantern alleys and <b>Golden Gai</b> tiny-bar lanes — <span class="warn">nightlife / yakitori, adult-leaning; walk through at dusk for the vibe, don't plan to eat (mostly meat/skewers).</span>
+<div class="facts"><span class="f tap">🟩 TAP SUICA</span><span class="f">→ Shinjuku (Yamanote)</span><span class="f"><b>~20 min</b></span></div>
+<div class="sphoto"><img src="images/dumps/golden-gai.png" alt="Shinjuku Golden Gai lanes"><span class="cap"><b>Golden Gai</b>Tiny-bar lanes — walk-through at dusk.</span><img src="images/dumps/atago-jinja.png" alt="Atago Jinja stairs of success"><span class="cap"><b>Atago Jinja</b>"Stairs of Success" (Kamiyachō, daytime).</span></div></div>
+<div class="skip"><b>Kids fried?</b> Skip — head to dinner near the JW. Godzilla keeps for next time.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">19:30</div><div class="scard">
+<div class="stitle">🍽️ Dinner near the JW (or Indian on the way back)</div>
+<div class="sbody">
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Obica Mozzarella Bar</span> (Takanawa) · <span class="nm">Equal Café</span> (NEWoMan, behind JW). <span class="maplink">📍 Maps: "Obica Takanawa"</span></li>
+<li><span class="tg ind">IND</span><span class="nm">Nirvanam</span> (Toranomon, vegan section) or <span class="nm">Dhaba India</span> (near Tokyo Stn, veg thali) — short train. <span class="maplink">📍 Maps: "Nirvanam Toranomon"</span></li>
+</ul>
+Tomorrow may be Fuji — check the webcam tonight.</div>
+</div></div>
+
+</div>
+
+<div class="daysep" id="d11"><div class="kicker">Day 11 · Friday</div><div class="big">July 17</div><div class="sub">Mt Fuji / Kawaguchiko 🗻</div><div class="tag">Sleep: JW Marriott Tokyo</div><div class="carry"><b>Carry today:</b> Suica ×4 · <b>Fuji Excursion tickets, cars 1–3</b> · ~¥10,000 cash · veg card · hats + water · <b>Master Sheet</b> · <i>go/no-go on Fuji webcam first</i></div></div>
+
+<h2 id="day-11-fri-jul-17-mt-fuji-day-trip-weather-dependent">Day 11 — Fri Jul 17 · Mt Fuji day trip (weather-dependent)</h2>
+<p><strong>Headline:</strong> ⚠️ <strong>Only go if Fuji is actually visible</strong> — July is the haziest season and people burn a day seeing nothing. Check a <strong>live Fuji webcam + Windy</strong> the night before and that morning. <strong>Swap with Jul 16</strong> (the TeamLab/shopping day) if that day looks clearer — DisneySea's Jul 15 date is fixed.</p>
+<div class="tl">
+
+<div class="stop"><div class="tmark">Night + dawn</div><div class="scard">
+<div class="stitle">🌦️ Go / no-go call</div>
+<div class="sbody">Check a <b>live Fuji webcam + Windy</b> the night before <i>and</i> at dawn. <span class="warn">If socked in → do a Tokyo flex day instead, no regrets.</span> July is the haziest season.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">05:45</div><div class="scard">
+<div class="stitle">🍳 Very early breakfast / grab-and-go</div>
+<div class="sbody">The <b>06:00–09:00 window</b> has the best odds before haze builds. Pack snacks.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">07:00</div><div class="scard">
+<div class="stitle">🚆 Fuji Excursion express: Shinjuku → Kawaguchiko</div>
+<div class="sbody">Get to <b>Shinjuku</b> first (JR from Shinagawa, ~20 min). <span class="warn">⚠️ Reserve cars 1–3 ONLY</span> — the train <b>splits at Ōtsuki</b>, the rear goes to Matsumoto (wrong prefecture!). Confirm the car destination before boarding. <i>(Shinjuku is a maze — pad 20 min, note your platform.)</i>
+<div class="facts"><span class="f buy">🟥 BUY (reserve ahead)</span><span class="f">Fuji Excursion Ltd Express</span><span class="f"><b>~2 h</b></span><span class="f">~¥4,000/adult · weekend seats sell out</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">09:30</div><div class="scard">
+<div class="stitle">🗻 At the lake — Kawaguchiko</div>
+<div class="sbody">Lake views, ropeway, <b>Ōishi Park</b> (Fuji + flowers), boat. Get around on the retro <b>sightseeing buses</b> from Kawaguchiko Station. <span class="warn">⚠️ Red/Green/Blue loops look alike — check colour + direction on the signboard before boarding.</span>
+<div class="facts"><span class="f tap">🟩 TAP SUICA / cash</span><span class="f">Sightseeing bus loops</span><span class="f">~¥1,500 day pass</span></div></div>
+<div class="sphoto idcard"><img src="images/dumps/kawaguchiko.jpg" alt="Mount Fuji over Lake Kawaguchi"><span class="cap"><b>Kawaguchiko</b>Lake with Mt Fuji rising behind it — the classic Fuji view (clearest early morning). (Photo: Wikimedia Commons)</span></div></div>
+</div>
+
+<div class="stop opt"><div class="tmark">Optional</div><div class="scard">
+<div class="stitle"><span class="optbadge">Add-on</span>⛩️ Chureito Pagoda (the classic shot)</div>
+<div class="sbody"><span class="warn">⚠️ ~400 steps in the heat</span> — hard with a 6-year-old.</div>
+<div class="sphoto idcard"><img src="images/dumps/chureito.jpg" alt="Chureito Pagoda with Mount Fuji"><span class="cap"><b>Chureito Pagoda</b>The five-storey red pagoda on the hillside with Mt Fuji behind — the postcard shot (up ~400 steps). (Photo: Wikimedia Commons)</span></div>
+<div class="skip"><b>Too much with kids?</b> Skip it — the lakeside Fuji views are the payoff anyway.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">12:30</div><div class="scard">
+<div class="stitle">🍽️ Lunch near Kawaguchiko Station</div>
+<div class="sbody">Your picks are all a short walk W of the station (bags-free, hands-free).
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Shaw's Sushi Bar &amp; Dining</span> — has a dedicated vegan plate. <span class="maplink">📍 Maps: "Shaw's Kawaguchiko"</span></li>
+<li><span class="tg veg">VEG</span><span class="nm">Vegan Nation</span> — burgers, W of the station. · <span class="nm">Fuji Tempura Idaten</span> — veg tempura, further W. <span class="maplink">📍 Maps: "Vegan Nation Kawaguchiko"</span></li>
+<li><span class="tg safe">SAFE</span><span class="nm">Packed snacks + konbini</span> — reliable backup for the kids. <span class="warn">⚠️ local Hōtō noodles are usually meat/dashi broth — skip unless confirmed veg.</span></li>
+</ul></div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">Evening</div><div class="scard">
+<div class="stitle">🍽️ Easy dinner back in Tokyo</div>
+<div class="sbody">Head back mid/late afternoon (Fuji Excursion Kawaguchiko→Shinjuku, tap Suica onward). Your <b>near-JW</b> block:
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Obica Mozzarella Bar</span> (Takanawa) · <span class="nm">Equal Café</span> (NEWoMan, behind JW). <span class="maplink">📍 Maps: "Obica Takanawa"</span></li>
+<li><span class="tg ind">IND</span><span class="nm">Nirvanam</span> or <span class="nm">Dhaba India</span> — veg thali, short train. <span class="maplink">📍 Maps: "Nirvanam Toranomon"</span></li>
+</ul>
+<b>Start light packing tonight</b> — you fly tomorrow.</div>
+</div></div>
+
+</div>
+
+<div class="daysep" id="d12"><div class="kicker">Day 12 · Saturday</div><div class="big">July 18</div><div class="sub">Fly home — AI357</div><div class="tag">Depart Haneda ~11:50</div><div class="carry"><b>Carry today:</b> all 4 passports · AI357 boarding info · Suica ×4 (spend down) · tax-free purchases (may be checked) · <b>Master Sheet</b></div></div>
+
+<h2 id="day-12-sat-jul-18-departure">Day 12 — Sat Jul 18 · Departure ✈️</h2>
+<p><strong>Headline:</strong> <strong>AI357 departs Haneda late-morning (~11:50)</strong> — and Haneda is only ~20 min from the JW, so the morning is calmer than most departure days. But an international flight + 4 people = leave enough margin.</p>
+<div class="tl">
+
+<div class="stop meal"><div class="tmark">07:00</div><div class="scard">
+<div class="stitle">🍳 Breakfast, final pack, checkout</div>
+<div class="sbody">Ask the JW to arrange a taxi/van big enough for 4 + luggage. <span class="warn">⚠️ Confirm AI357's exact time</span> on your ticket and check the onward Delhi→Bangalore connection.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">08:15</div><div class="scard">
+<div class="stitle">🚕 JW → Haneda Terminal 3</div>
+<div class="sbody"><b>Taxi</b> is easiest with 4 bags (ask the JW to arrange a van). Or Keikyu from Shinagawa/Takanawa Gateway. <b>Be at Haneda by ~08:45–09:00</b> — ~3 h before an international departure.
+<div class="facts"><span class="f">Taxi (easiest w/ bags)</span><span class="f"><b>~20 min</b></span><span class="f">~¥6,000–8,000</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">09:00</div><div class="scard">
+<div class="stitle">✈️ Check in, bag drop, immigration (T3)</div>
+<div class="sbody">Air India departs Haneda Terminal 3. <span class="warn">Veg meal:</span> you pre-ordered — ⚠️ reconfirm; still grab safe backup snacks for the kids.</div>
+</div></div>
+
+<div class="stop"><div class="tmark">10:00</div><div class="scard">
+<div class="stitle">💴 Spend down leftover cash & coins (airside)</div>
+<div class="sbody"><span class="warn">The airport won't exchange coins</span> — burn them at konbini/shops on flight snacks & gifts, or dump coins onto a Suica. T3's <b>Edo Koji</b> food street + shops if you're early.</div>
+</div></div>
+
+<div class="stop"><div class="tmark">11:50</div><div class="scard">
+<div class="stitle">🛫 AI357 Haneda → Delhi</div>
+<div class="sbody">You made it. Otsukaresama! 🎌</div>
+</div></div>
+
+</div>
+
+<div class="daysep" id="master"><div class="kicker">Print this + carry it EVERY day</div><div class="big">Master Sheet</div><div class="sub">Emergencies · veg card · phrases · hotels · money</div><div class="tag">One sheet, always in your pocket</div></div>
+
+<h2 id="master-sheet-carry-this-every-day-alongside-the-days-pages">🆘 MASTER SHEET — carry this every day alongside the day's pages</h2>
+<blockquote>
+<p><strong>This is the one page that makes every single-day print safe.</strong> It has the numbers, the veg card, the phrases and the addresses you'd otherwise have to flip 70 pages to find. Print it, fold it, keep it on you all 12 days. <em>(Fill the three blanks by hand once you have your bookings.)</em></p>
+</blockquote>
+<h3 id="emergency-numbers">☎️ Emergency numbers</h3>
+<table>
+<thead>
+<tr>
+<th>Who</th>
+<th>Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Police</strong></td>
+<td><strong>110</strong></td>
+</tr>
+<tr>
+<td><strong>Fire / Ambulance</strong></td>
+<td><strong>119</strong></td>
+</tr>
+<tr>
+<td><strong>Nurse triage (English)</strong></td>
+<td><strong>#7119</strong></td>
+</tr>
+<tr>
+<td><strong>JNTO Visitor Hotline (24 h English)</strong></td>
+<td><strong>050-3816-2787</strong></td>
+</tr>
+<tr>
+<td><strong>Indian Embassy Tokyo — emergency (24 h)</strong></td>
+<td><strong>+81-80-3301-5242</strong></td>
+</tr>
+<tr>
+<td><strong>The Westin Miyako Kyoto</strong> (to Jul 13)</td>
+<td><strong><em>_</em></strong><strong><em>_</em></strong>_</td>
+</tr>
+<tr>
+<td><strong>JW Marriott Tokyo</strong> (Jul 13–18)</td>
+<td><strong><em>_</em></strong><strong><em>_</em></strong>_</td>
+</tr>
+<tr>
+<td><strong>Travel insurance 24 h line</strong></td>
+<td><strong><em>_</em></strong><strong><em>_</em></strong>_</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hotel-addresses-show-a-taxi-write-on-kids-cards">🏨 Hotel addresses (show a taxi / write on kids' cards)</h3>
+<ul>
+<li><strong>The Westin Miyako Kyoto</strong> — Keage, Higashiyama-ku, Kyoto. <em>(Keage subway 2–3 min; free shuttle from Kyoto Stn Hachijō Exit.)</em> ウェスティン都ホテル京都</li>
+<li><strong>JW Marriott Tokyo</strong> — Takanawa Gateway City, Minato-ku, Tokyo. <em>(Above Takanawa Gateway Stn; taxi from Shinagawa ~5 min.)</em></li>
+</ul>
+<h3 id="vegetarian-card-show-at-every-restaurant">🥗 Vegetarian card — show at EVERY restaurant</h3>
+<pre><code>私はベジタリアンです。 I am a vegetarian. Please NO:
+肉・魚・魚介類 (No meat, fish, seafood)
+卵 (No EGGS)
+だし・鰹節 (No fish stock / bonito flakes)
+
+大丈夫です (OK for me): 乳製品 チーズ・牛乳・バター (dairy) ・ 豆腐 (tofu)
+
+野菜だけの料理をお願いできますか？
+Can you make a dish with only vegetables (plus dairy/tofu)?
+ご協力ありがとうございます。 Thank you for your help.
+</code></pre>
+<h3 id="phrases-youll-actually-use">🗣️ Phrases you'll actually use</h3>
+<table>
+<thead>
+<tr>
+<th>English</th>
+<th>Say it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Is there fish stock (dashi)?</td>
+<td><em>Kore wa dashi ga haitte imasu ka?</em></td>
+</tr>
+<tr>
+<td>Does this have egg?</td>
+<td><em>Tamago wa haitte imasu ka?</em></td>
+</tr>
+<tr>
+<td>Vegetables only, please</td>
+<td><em>Yasai dake de onegaishimasu</em></td>
+</tr>
+<tr>
+<td>Dairy &amp; tofu are OK</td>
+<td><em>Nyūseihin to tōfu wa daijōbu</em></td>
+</tr>
+<tr>
+<td>Where is…?</td>
+<td><em>…wa doko desu ka?</em></td>
+</tr>
+<tr>
+<td>How much?</td>
+<td><em>Ikura desu ka?</em></td>
+</tr>
+<tr>
+<td>Excuse me / Sorry</td>
+<td><em>Sumimasen</em></td>
+</tr>
+<tr>
+<td>Thank you</td>
+<td><em>Arigatō gozaimasu</em></td>
+</tr>
+<tr>
+<td>Help!</td>
+<td><em>Tasukete!</em></td>
+</tr>
+<tr>
+<td>I'm lost</td>
+<td><em>Mayoimashita</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="kids-id-cards-print-one-per-child-cut-out-tuck-in-each-kids-pocket">🧒 Kids' ID cards — print ONE PER CHILD, cut out, tuck in each kid's pocket</h3>
+<blockquote>
+<p>Two separate cards below (one per child). Each has a <strong>Japanese side</strong> (for any local who finds them) and an <strong>English side</strong> (for you / airport / hotel staff). The Japanese is translation-validated. <strong>Fill the phone numbers by hand.</strong></p>
+</blockquote>
+<p><strong>───────── ARSHI GUPTA (アルシ・グプタ) ─────────</strong></p>
+<pre><code>【日本語】
+私は迷子です。名前は「アルシ・グプタ」です。
+両親に電話していただけますか。電話番号は下に書いてあります。
+お手伝いありがとうございます。
+父・母の電話：+91 ____________  /  +91 ____________
+泊まっているホテル：
+・7月13日まで：ウェスティン都ホテル京都
+・7月18日まで：JWマリオット・ホテル東京
+
+[ENGLISH]
+My name is ARSHI GUPTA. I am lost — please help me.
+Could you please call my parents?
+Mum/Dad: +91 ____________  /  +91 ____________
+Staying at: The Westin Miyako Kyoto (to Jul 13)
+            JW Marriott Hotel Tokyo (to Jul 18)
+</code></pre>
+<p><strong>───────── AVYAN GUPTA (アヴィヤン・グプタ) ─────────</strong></p>
+<pre><code>【日本語】
+私は迷子です。名前は「アヴィヤン・グプタ」です。
+両親に電話していただけますか。電話番号は下に書いてあります。
+お手伝いありがとうございます。
+父・母の電話：+91 ____________  /  +91 ____________
+泊まっているホテル：
+・7月13日まで：ウェスティン都ホテル京都
+・7月18日まで：JWマリオット・ホテル東京
+
+[ENGLISH]
+My name is AVYAN GUPTA. I am lost — please help me.
+Could you please call my parents?
+Mum/Dad: +91 ____________  /  +91 ____________
+Staying at: The Westin Miyako Kyoto (to Jul 13)
+            JW Marriott Hotel Tokyo (to Jul 18)
+</code></pre>
+<p><em>(Japanese meaning, both cards: "I am lost. My name is [name]. Could you please call my parents? The numbers are written below. Thank you for your help." — back-translation-validated.)</em></p>
+<h3 id="money-ic-in-one-glance">💴 Money &amp; IC in one glance</h3>
+<ul>
+<li>Carry <strong>¥10,000–20,000/day</strong> — Japan is cash-heavy; temples &amp; small shops are cash-only.</li>
+<li>Foreign-card ATMs that work: <strong>7-Bank</strong> (every 7-Eleven, 24 h) · <strong>Japan Post Bank</strong> (post offices + FamilyMart).</li>
+<li><strong>Everyone taps their own Suica</strong> on trains/buses/konbini. Top up with cash at any konbini. Shinkansen reserved fare is separate (Smart-EX / paper).</li>
+<li><strong>Lost card?</strong> Freeze in the app instantly, then call your bank's India line, fall back to card #2 + cash.</li>
+</ul>
+<h3 id="daily-reflexes">⚠️ Daily reflexes</h3>
+<p>Meeting-point + outfit-photo before any crowd · live location ON between parents · water every 30–60 min · A/C break every 2–3 h · stand <strong>left</strong> on Tokyo escalators / <strong>right</strong> in Kyoto-Osaka · carry your rubbish · no tipping · shoes off in temples.</p>
+<hr />
+</body>
+</html>

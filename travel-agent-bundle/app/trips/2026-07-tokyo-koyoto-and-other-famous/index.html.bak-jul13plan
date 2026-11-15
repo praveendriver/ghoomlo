@@ -1,0 +1,3550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gama Adventures — Japan: Tokyo · Kyoto · Mt. Fuji · Jul 13–24, 2026</title>
+<link rel="icon" type="image/svg+xml" href="../_shared/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_shared/style.css">
+<style>
+
+  /* Trip-page specific */
+  .hero {
+    position: relative;
+    padding: 80px 0 100px;
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 20%, rgba(217, 122, 58, 0.10), transparent 60%),
+      radial-gradient(ellipse 70% 50% at 20% 80%, rgba(31, 58, 61, 0.08), transparent 60%);
+    overflow: hidden;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .hero h1 { font-size: clamp(48px, 6vw, 84px); margin-bottom: 28px; }
+  .hero-sub {
+    font-size: 19px; color: var(--ink-soft);
+    margin-bottom: 40px; max-width: 480px;
+  }
+  .hero-meta {
+    display: grid; grid-template-columns: repeat(4, auto); gap: 36px;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 36px;
+  }
+  .meta-item .label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--ink-soft); margin-bottom: 6px;
+  }
+  .meta-item .value {
+    font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500;
+  }
+  .hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+
+  .hero-visual { position: relative; height: 560px; }
+  .h-card {
+    position: absolute;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    color: var(--cream);
+    transition: transform .4s cubic-bezier(.2,.8,.2,1);
+    display: flex;
+    flex-direction: column;
+  }
+  .h-card:hover { transform: translateY(-6px) scale(1.02); }
+  .h-card-1 { width: 290px; height: 380px; top: 20px; right: 60px; }
+  .h-card-2 { width: 240px; height: 320px; bottom: 20px; left: 0; }
+  .h-card-img { width: 100%; flex: 1 1 auto; position: relative; min-height: 0; }
+  .h-card-1 .h-card-img {
+    background-image: url('https://images.pexels.com/photos/13621055/pexels-photo-13621055.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+  }
+  .h-card-2 .h-card-img {
+    background-image: url('https://images.pexels.com/photos/36530015/pexels-photo-36530015.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+  }
+  .h-card-img::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.45) 100%);
+  }
+  .h-card-tag {
+    position: absolute; top: 18px; right: 18px;
+    background: rgba(255,255,255,0.92); color: var(--ink);
+    padding: 6px 12px; border-radius: 999px;
+    font-size: 11px; font-weight: 600;
+    backdrop-filter: blur(10px);
+  }
+  .h-card-body { padding: 18px 22px; background: var(--ink); flex: 0 0 auto; }
+  .h-card-body .place {
+    font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .h-card-body .meta { font-size: 13px; opacity: 0.7; }
+
+  .hero-decor {
+    position: absolute; top: 50%; left: -40px;
+    transform: translateY(-50%);
+    display: flex; flex-direction: column; gap: 24px;
+    z-index: 1;
+  }
+  .hero-decor .ring {
+    width: 12px; height: 12px; border-radius: 50%;
+    border: 2px solid var(--ink);
+  }
+  .hero-decor .ring.filled { background: var(--ink); }
+  .hero-decor .line { width: 2px; height: 60px; background: var(--ink); margin-left: 5px; }
+
+  /* ---------- HERO IMAGE STRIP ---------- */
+  .strip {
+    padding: 60px 0 40px;
+    overflow: hidden;
+    position: relative;
+  }
+  .strip-eyebrow {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--saffron);
+    font-weight: 600;
+  }
+  .strip-track {
+    display: flex;
+    gap: 18px;
+    width: max-content;
+    animation: strip-scroll 60s linear infinite;
+    will-change: transform;
+  }
+  .strip:hover .strip-track { animation-play-state: paused; }
+  @keyframes strip-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  /* Edge fade so the loop seam is invisible */
+  .strip::before,
+  .strip::after {
+    content: '';
+    position: absolute;
+    top: 60px; bottom: 40px;
+    width: 120px;
+    z-index: 5;
+    pointer-events: none;
+  }
+  .strip::before {
+    left: 0;
+    background: linear-gradient(to right, var(--cream) 0%, transparent 100%);
+  }
+  .strip::after {
+    right: 0;
+    background: linear-gradient(to left, var(--cream) 0%, transparent 100%);
+  }
+  .strip-card {
+    flex: 0 0 auto;
+    width: 280px;
+    height: 360px;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s;
+  }
+  .strip-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-lg);
+  }
+  .strip-card-img {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform .8s cubic-bezier(.2,.8,.2,1);
+  }
+  .strip-card:hover .strip-card-img { transform: scale(1.08); }
+  .strip-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 35%, rgba(0,0,0,0.75) 100%);
+  }
+  .strip-card-meta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 22px;
+    color: white;
+    z-index: 2;
+  }
+  .strip-card-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(10px);
+    border-radius: 999px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .strip-card-tag.alt {
+    background: rgba(255, 200, 130, 0.25);
+  }
+  .strip-card-name {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 4px;
+  }
+  .strip-card-loc {
+    font-size: 12px;
+    opacity: 0.85;
+  }
+
+  @media (max-width: 640px) {
+    .strip-card { width: 220px; height: 300px; }
+    .strip-card-name { font-size: 18px; }
+    .strip-track { animation-duration: 40s; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .strip-track { animation: none; }
+  }
+
+  /* ---------- COMPARE ---------- */
+  .compare { padding: 100px 0; }
+  .compare-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+  }
+  .opt-card {
+    background: var(--cream-dark);
+    border-radius: var(--r-xl);
+    padding: 8px;
+    transition: transform .3s;
+  }
+  .opt-card.recommended {
+    background: linear-gradient(135deg, #1f3a3d 0%, #122729 100%);
+    color: var(--cream);
+  }
+  .opt-card-image {
+    height: 240px;
+    border-radius: 36px;
+    background-size: cover; background-position: center;
+    position: relative; overflow: hidden;
+  }
+  .opt-card.recommended .opt-card-image {
+    background-image: url('https://images.pexels.com/photos/10271157/pexels-photo-10271157.jpeg?auto=compress&cs=tinysrgb&w=900');
+    background-size: cover;
+    background-position: center;
+  }
+  .opt-card:not(.recommended) .opt-card-image {
+    background-image: url('https://images.pexels.com/photos/23601365/pexels-photo-23601365.jpeg?auto=compress&cs=tinysrgb&w=900');
+    background-size: cover;
+    background-position: center;
+  }
+  .opt-card-image::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.5) 100%);
+  }
+  .opt-badge {
+    position: absolute; top: 20px; left: 20px;
+    background: rgba(255,255,255,0.95); color: var(--ink);
+    padding: 8px 14px; border-radius: 999px;
+    font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    z-index: 2;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .opt-badge.rec { background: var(--saffron); color: white; }
+  .opt-card-body { padding: 32px 28px 28px; }
+  .opt-card h3 { font-size: 32px; margin-bottom: 6px; }
+  .opt-card.recommended h3 { color: var(--cream); }
+  .opt-card .opt-sub { font-size: 14px; color: var(--ink-soft); margin-bottom: 24px; }
+  .opt-card.recommended .opt-sub { color: rgba(246, 241, 232, 0.65); }
+
+  .opt-stats {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+  }
+  .opt-card.recommended .opt-stats { border-color: rgba(246, 241, 232, 0.12); }
+  .stat .stat-val {
+    font-family: 'Fraunces', serif; font-size: 24px; font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .stat .stat-lbl {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-soft);
+  }
+  .opt-card.recommended .stat-lbl { color: rgba(246, 241, 232, 0.6); }
+  .opt-features { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+  .feature-pill {
+    padding: 6px 14px;
+    background: rgba(0,0,0,0.06);
+    border-radius: 999px;
+    font-size: 12px; color: var(--ink-soft);
+  }
+  .opt-card.recommended .feature-pill {
+    background: rgba(246, 241, 232, 0.10);
+    color: rgba(246, 241, 232, 0.85);
+  }
+  .feature-pill.warn { background: rgba(217, 122, 58, 0.15); color: var(--saffron); }
+  .opt-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-weight: 500; color: var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 4px;
+    transition: gap .2s;
+  }
+  .opt-card.recommended .opt-link {
+    color: var(--saffron-soft); border-color: var(--saffron-soft);
+  }
+  .opt-link:hover { gap: 14px; }
+
+  /* ---------- ITINERARY ---------- */
+  .itinerary {
+    padding: 100px 0;
+    background: var(--ink);
+    color: var(--cream);
+    border-radius: var(--r-xl);
+    margin: 0 32px 80px;
+  }
+  @media (min-width: 1300px) {
+    .itinerary {
+      margin-left: calc((100vw - 1240px) / 2 + 32px);
+      margin-right: calc((100vw - 1240px) / 2 + 32px);
+    }
+  }
+  .itinerary .section-eyebrow { color: var(--saffron-soft); }
+  .itinerary h2 { color: var(--cream); }
+  .itinerary .section-head p { color: rgba(246, 241, 232, 0.65); }
+
+  .tabs {
+    display: inline-flex;
+    background: rgba(246, 241, 232, 0.08);
+    border-radius: 999px;
+    padding: 6px;
+    margin-bottom: 56px;
+  }
+  .tab {
+    padding: 12px 28px;
+    background: transparent;
+    color: rgba(246, 241, 232, 0.6);
+    border: none; border-radius: 999px;
+    font-size: 14px; font-weight: 500;
+    transition: all .25s;
+  }
+  .tab.active {
+    background: var(--cream); color: var(--ink);
+  }
+
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; animation: fadeIn .4s; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* timeline */
+  .timeline { position: relative; padding-left: 60px; }
+  .timeline::before {
+    content: ''; position: absolute;
+    left: 16px; top: 14px; bottom: 14px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--saffron) 0%, var(--saffron) 90%, transparent 100%);
+    opacity: 0.3;
+  }
+  .day {
+    position: relative;
+    margin-bottom: 24px;
+    background: rgba(246, 241, 232, 0.04);
+    border: 1px solid rgba(246, 241, 232, 0.08);
+    border-radius: var(--r-md);
+    overflow: hidden;
+    transition: all .3s;
+  }
+  .day:hover {
+    background: rgba(246, 241, 232, 0.07);
+    border-color: rgba(246, 241, 232, 0.15);
+  }
+  .day-marker {
+    position: absolute; left: -52px; top: 22px;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--ink);
+    border: 2px solid var(--saffron);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--saffron-soft);
+    z-index: 2;
+  }
+  .day-marker .icon { width: 16px; height: 16px; }
+  .day summary {
+    padding: 22px 28px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 24px;
+    cursor: pointer;
+    list-style: none;
+  }
+  .day summary::-webkit-details-marker { display: none; }
+  .day-head { flex: 1; display: flex; align-items: center; gap: 24px; }
+  .day-date {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: rgba(246, 241, 232, 0.55);
+    min-width: 110px;
+  }
+  .day-title {
+    font-family: 'Fraunces', serif;
+    font-size: 22px; font-weight: 500;
+    color: var(--cream);
+  }
+  .day-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .day-tag {
+    padding: 3px 10px;
+    background: rgba(217, 122, 58, 0.18);
+    color: var(--saffron-soft);
+    font-size: 11px;
+    border-radius: 999px;
+  }
+  .chev {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: rgba(246, 241, 232, 0.06);
+    display: inline-flex; align-items: center; justify-content: center;
+    transition: transform .3s;
+    flex-shrink: 0;
+    color: var(--cream);
+  }
+  details[open] .chev { transform: rotate(180deg); }
+
+  .day-body {
+    padding: 0 28px 24px 28px;
+    border-top: 1px solid rgba(246, 241, 232, 0.08);
+  }
+
+  /* day rows with icon glyph */
+  .row {
+    padding: 18px 0;
+    display: grid;
+    grid-template-columns: 100px 32px 1fr;
+    gap: 18px;
+    border-bottom: 1px solid rgba(246, 241, 232, 0.05);
+    align-items: flex-start;
+  }
+  .row:last-child { border-bottom: none; }
+  .row-time {
+    font-family: 'Fraunces', serif;
+    font-size: 16px; font-weight: 500;
+    color: var(--saffron-soft);
+    padding-top: 2px;
+  }
+  .row-icon {
+    width: 32px; height: 32px;
+    border-radius: 10px;
+    background: rgba(246, 241, 232, 0.08);
+    color: var(--saffron-soft);
+    display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .row-icon .icon { width: 16px; height: 16px; }
+  .row-icon.transit { background: rgba(180, 200, 230, 0.15); color: #b8d4ee; }
+  .row-icon.temple { background: rgba(217, 122, 58, 0.18); color: var(--saffron-soft); }
+  .row-icon.food { background: rgba(200, 230, 180, 0.10); color: #c8e6b4; }
+  .row-icon.hotel { background: rgba(232, 165, 114, 0.15); color: var(--saffron-soft); }
+  .row-icon.outdoor { background: rgba(150, 200, 200, 0.15); color: #98d4d4; }
+  .row-icon.shopping { background: rgba(210, 180, 230, 0.12); color: #d4b8e6; }
+
+  .row-content {
+    font-size: 15px;
+    color: rgba(246, 241, 232, 0.85);
+    line-height: 1.65;
+  }
+  .row-title { color: var(--cream); font-weight: 500; }
+  .row-content .price {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 10px;
+    background: rgba(246, 241, 232, 0.08);
+    border-radius: 999px;
+    font-size: 12px;
+    color: rgba(246, 241, 232, 0.7);
+  }
+
+  /* ---------- COSTS ---------- */
+  .costs { padding: 100px 0; }
+  .costs-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+    margin-top: 48px;
+  }
+  .cost-card {
+    background: white;
+    border-radius: var(--r-lg);
+    padding: 36px;
+    box-shadow: var(--shadow-sm);
+  }
+  .cost-card.featured {
+    background: linear-gradient(135deg, var(--saffron) 0%, var(--gold) 100%);
+    color: white;
+  }
+  .cost-card h4 {
+    font-size: 24px; font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .cost-card .cost-sub {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+  }
+  .cost-card.featured .cost-sub { color: rgba(255,255,255,0.85); }
+  .cost-row {
+    display: flex; justify-content: space-between;
+    padding: 14px 0;
+    font-size: 15px;
+    border-bottom: 1px solid var(--line);
+  }
+  .cost-card.featured .cost-row { border-color: rgba(255,255,255,0.2); }
+  .cost-row:last-child { border: none; }
+  .cost-row.total {
+    font-family: 'Fraunces', serif;
+    font-size: 22px; font-weight: 500;
+    margin-top: 12px; padding-top: 22px;
+    border-top: 2px solid var(--ink);
+  }
+  .cost-card.featured .cost-row.total { border-color: rgba(255,255,255,0.3); }
+  .cap-bar {
+    height: 8px;
+    background: var(--cream-dark);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  .cap-fill {
+    height: 100%; background: var(--saffron);
+    border-radius: 999px;
+  }
+  .cost-card.featured .cap-bar { background: rgba(255,255,255,0.25); }
+  .cost-card.featured .cap-fill { background: white; }
+  .cap-meta {
+    display: flex; justify-content: space-between;
+    font-size: 12px; margin-top: 8px;
+    color: var(--ink-soft);
+  }
+  .cost-card.featured .cap-meta { color: rgba(255,255,255,0.85); }
+
+  .loyalty-strip {
+    margin-top: 56px;
+    background: var(--ink);
+    color: var(--cream);
+    border-radius: var(--r-lg);
+    padding: 48px;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .loyalty-strip h3 {
+    font-size: 32px;
+    color: var(--cream);
+    margin-bottom: 16px;
+  }
+  .loyalty-strip p {
+    color: rgba(246, 241, 232, 0.7);
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  .loyalty-points {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+  }
+  .lp-item {
+    background: rgba(246, 241, 232, 0.06);
+    padding: 22px; border-radius: var(--r-sm);
+  }
+  .lp-prog {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em;
+    color: rgba(246, 241, 232, 0.5);
+    margin-bottom: 10px;
+  }
+  .lp-bal {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    color: var(--saffron-soft);
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .lp-tier {
+    font-size: 13px;
+    color: rgba(246, 241, 232, 0.85);
+  }
+
+  /* ---------- TRANSPORT (CARS) ---------- */
+  .transport { padding: 100px 0; background: var(--cream-dark); }
+  .transport-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .car-card {
+    background: var(--cream);
+    border-radius: var(--r-lg);
+    padding: 32px;
+    transition: transform .25s, box-shadow .25s;
+    display: flex; flex-direction: column;
+  }
+  .car-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .car-head {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 20px;
+  }
+  .car-icon {
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    background: var(--ink);
+    color: var(--saffron-soft);
+    display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .car-icon .icon { width: 26px; height: 26px; }
+  .car-head h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  .car-leg {
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .car-detail {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+  .car-stats {
+    display: flex; gap: 24px;
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 18px;
+  }
+  .car-stat {
+    flex: 1;
+  }
+  .car-stat-lbl {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  .car-stat-val {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .car-providers {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-top: auto;
+  }
+  .provider-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 14px;
+    background: var(--cream-dark);
+    color: var(--ink);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all .2s;
+  }
+  .provider-link:hover {
+    background: var(--ink); color: var(--cream);
+  }
+  .provider-link .icon { width: 13px; height: 13px; }
+
+  /* ---------- PREP ---------- */
+  .prep { padding: 100px 0; }
+  .prep-grid {
+    display: grid; grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    margin-top: 48px;
+  }
+  .prep-list { display: flex; flex-direction: column; gap: 12px; }
+  .prep-item {
+    background: var(--cream-dark);
+    border-radius: var(--r-md);
+    padding: 24px 28px;
+    display: flex; align-items: center; gap: 24px;
+    transition: transform .25s, box-shadow .25s;
+  }
+  .prep-item:hover {
+    transform: translateX(4px); box-shadow: var(--shadow-sm);
+  }
+  .prep-num {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: var(--ink); color: var(--cream);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-size: 18px; font-weight: 500;
+    flex-shrink: 0;
+  }
+  .prep-item.urgent .prep-num { background: var(--saffron); }
+  .prep-text { flex: 1; }
+  .prep-when {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  .prep-what { font-size: 16px; font-weight: 500; }
+  .prep-what small {
+    display: block;
+    font-weight: 400;
+    color: var(--ink-soft);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .booking-card {
+    background: var(--cream-dark);
+    border-radius: var(--r-lg);
+    padding: 36px;
+    position: sticky;
+    top: 100px;
+  }
+  .booking-card h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .booking-link {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    border-radius: var(--r-sm);
+    background: var(--cream);
+    transition: all .2s;
+  }
+  .booking-link:hover {
+    background: var(--ink); color: var(--cream);
+  }
+  .bl-text { display: flex; flex-direction: column; }
+  .bl-cat {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin-bottom: 2px;
+  }
+  .booking-link:hover .bl-cat { color: rgba(246, 241, 232, 0.65); }
+  .bl-name { font-size: 14px; font-weight: 500; }
+
+  /* ---------- DOOR TO DOOR ---------- */
+  .door {
+    padding: 100px 0;
+    background: var(--ink);
+    color: var(--cream);
+    border-radius: var(--r-xl);
+    margin: 0 32px 80px;
+  }
+  @media (min-width: 1300px) {
+    .door {
+      margin-left: calc((100vw - 1240px) / 2 + 32px);
+      margin-right: calc((100vw - 1240px) / 2 + 32px);
+    }
+  }
+  .door .section-eyebrow { color: var(--saffron-soft); }
+  .door h2 { color: var(--cream); }
+  .door .section-head p { color: rgba(246, 241, 232, 0.65); }
+  .door-flow {
+    position: relative;
+    padding-left: 60px;
+    margin-top: 40px;
+  }
+  .door-flow::before {
+    content: ''; position: absolute;
+    left: 16px; top: 14px; bottom: 14px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--saffron) 0%, var(--saffron) 90%, transparent 100%);
+    opacity: 0.25;
+  }
+  .stage {
+    position: relative;
+    margin-bottom: 28px;
+    background: rgba(246, 241, 232, 0.04);
+    border: 1px solid rgba(246, 241, 232, 0.08);
+    border-radius: var(--r-md);
+    padding: 24px 28px;
+  }
+  .stage-marker {
+    position: absolute; left: -52px; top: 22px;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--ink);
+    border: 2px solid var(--saffron);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--saffron-soft);
+  }
+  .stage-marker .icon { width: 16px; height: 16px; }
+  .stage-head {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; margin-bottom: 12px; flex-wrap: wrap;
+  }
+  .stage-title {
+    font-family: 'Fraunces', serif;
+    font-size: 22px; font-weight: 500;
+    color: var(--cream);
+  }
+  .stage-when {
+    font-size: 12px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--saffron-soft);
+    background: rgba(217, 122, 58, 0.15);
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+  .stage-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 14px;
+  }
+  .stage-col h6 {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: rgba(246, 241, 232, 0.55);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .stage-col ul { list-style: none; }
+  .stage-col li {
+    padding-left: 20px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.55;
+    color: rgba(246, 241, 232, 0.85);
+    margin-bottom: 8px;
+  }
+  .stage-col li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 9px;
+    width: 8px; height: 2px;
+    background: var(--saffron-soft);
+  }
+  .stage .link-chips { margin-top: 12px; }
+
+  /* ---------- POST-TRIP UPDATE ---------- */
+  .post-trip { padding: 100px 0; }
+  .post-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    margin-top: 48px;
+  }
+  .post-prompt {
+    background: var(--cream-dark);
+    border-radius: var(--r-md);
+    padding: 28px;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--ink);
+    user-select: all;
+    white-space: pre-wrap;
+  }
+  .post-fields {
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .post-field {
+    background: white;
+    border-radius: var(--r-sm);
+    padding: 18px 20px;
+    box-shadow: var(--shadow-sm);
+  }
+  .post-field-lbl {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+  .post-field-val {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .post-field-help {
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  /* Pin button on trip nav */
+  .nav-pin-btn {
+    background: transparent;
+    border: 1px solid var(--line-strong);
+    color: var(--ink);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: all .2s;
+  }
+  .nav-pin-btn:hover, .nav-pin-btn.pinned {
+    background: var(--ink); color: var(--cream);
+    border-color: var(--ink);
+  }
+  .nav-pin-btn.pinned { background: var(--saffron); border-color: var(--saffron); color: white; }
+
+  /* ---------- WHY ---------- */
+  section.why { padding: 80px 0 100px; background: var(--cream-dark); }
+  .why-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+    margin-top: 56px;
+  }
+  .why-card {
+    padding: 36px 28px;
+    background: var(--cream);
+    border-radius: var(--r-md);
+    transition: transform .25s, box-shadow .25s;
+  }
+  .why-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-sm);
+  }
+  .why-icon {
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    background: var(--ink); color: var(--saffron-soft);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 24px;
+  }
+  .why-icon .icon { width: 24px; height: 24px; }
+  .why-card h5 {
+    font-size: 22px; font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .why-card p { color: var(--ink-soft); font-size: 15px; }
+
+  @media (max-width: 980px) {
+    .hero-grid, .compare-grid, .costs-grid, .loyalty-strip, .prep-grid, .why-grid, .transport-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero-visual { height: 460px; margin-top: 40px; }
+    .h-card-1 { right: 0; }
+    .booking-card { position: static; }
+  }
+  @media (max-width: 640px) {
+    .hero { padding: 50px 0; }
+    .hero-meta { grid-template-columns: 1fr 1fr; gap: 20px; }
+    .timeline { padding-left: 44px; }
+    .day-marker { left: -38px; width: 28px; height: 28px; }
+    .day-marker .icon { width: 12px; height: 12px; }
+    .day-head { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .day-date { min-width: 0; }
+    .row { grid-template-columns: 1fr; gap: 8px; }
+    .row-icon { width: 28px; height: 28px; }
+    .itinerary { margin: 0 16px 60px; padding: 60px 0; }
+  }
+
+  /* Trip-page custom additions for Japan */
+
+  /* Trip-specific tweaks */
+  .visa-grid, .health-grid {
+    display: grid; gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin-top: 28px;
+  }
+  .visa-card, .health-card {
+    background: white; border-radius: var(--r-md);
+    padding: 22px; box-shadow: var(--shadow-sm);
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .visa-card h5, .health-card h5 {
+    font-size: 16px; margin: 0; display: flex; align-items: center; gap: 8px;
+  }
+  .visa-card p, .health-card p { font-size: 13.5px; color: var(--ink-soft); margin: 0; line-height: 1.55; }
+  .visa-card .meta, .health-card .meta {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+    display: flex; gap: 14px; flex-wrap: wrap;
+  }
+  .visa-card .meta strong { color: var(--ink); }
+  .visa-card .links, .health-card .links {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px;
+  }
+  .visa-card .links a, .health-card .links a {
+    font-size: 12px; padding: 5px 10px; border-radius: 999px;
+    background: var(--cream-dark); color: var(--ink);
+    display: inline-flex; align-items: center; gap: 5px;
+  }
+  .visa-card .links a:hover { background: var(--saffron-soft); }
+
+  .anchor-grid {
+    display: grid; gap: 28px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 28px;
+  }
+  .anchor-card-wrap {
+    position: relative;
+    display: flex; flex-direction: column;
+  }
+  .anchor-card {
+    background: white;
+    border-radius: var(--r-md);
+    padding: 26px 26px 24px;
+    box-shadow: 0 4px 14px rgba(20, 20, 30, 0.06);
+    position: relative;
+    z-index: 2;
+    display: flex; flex-direction: column;
+  }
+  .anchor-head {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: 12px;
+  }
+  .anchor-card .name {
+    font-family: 'Fraunces', serif; font-size: 22px;
+    font-weight: 600; line-height: 1.2; margin: 0;
+  }
+  .anchor-card .where {
+    font-size: 13px; color: var(--ink-soft);
+    margin-top: 4px;
+  }
+  .anchor-kind {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em;
+    font-weight: 700;
+    padding: 5px 11px; border-radius: 999px;
+    background: rgba(214, 132, 60, 0.14);
+    color: var(--saffron-deep);
+    flex-shrink: 0;
+  }
+  .anchor-kind::before {
+    content: "★"; font-size: 10px;
+  }
+  .anchor-card-wrap.kind-heritage .anchor-kind {
+    background: rgba(20, 90, 71, 0.10); color: #145a47;
+  }
+  .anchor-card-wrap.kind-hotel .anchor-kind {
+    background: rgba(107, 70, 193, 0.10); color: #6b46c1;
+  }
+  .anchor-divider {
+    border: none;
+    border-top: 1px solid rgba(20, 20, 30, 0.08);
+    margin: 18px 0 16px;
+  }
+  .anchor-section-label {
+    font-size: 13px; font-weight: 600; color: var(--ink);
+    margin-bottom: 14px;
+  }
+  .anchor-checklist {
+    list-style: none; padding: 0; margin: 0 0 18px;
+    display: flex; flex-direction: column; gap: 11px;
+  }
+  .anchor-checklist li {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 14px; color: var(--ink); line-height: 1.45;
+  }
+  .anchor-checklist li::before {
+    content: "✓";
+    flex-shrink: 0;
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: rgba(214, 132, 60, 0.18);
+    color: var(--saffron-deep);
+    font-size: 12px; font-weight: 700;
+    display: inline-flex; align-items: center; justify-content: center;
+    margin-top: 1px;
+  }
+  .anchor-card-wrap.kind-heritage .anchor-checklist li::before {
+    background: rgba(20, 90, 71, 0.12); color: #145a47;
+  }
+  .anchor-card-wrap.kind-hotel .anchor-checklist li::before {
+    background: rgba(107, 70, 193, 0.12); color: #6b46c1;
+  }
+  .anchor-meta { margin-top: 4px; }
+  .anchor-meta-headline {
+    font-family: 'Fraunces', serif;
+    font-size: 18px; font-weight: 600;
+    color: var(--ink);
+    line-height: 1.25;
+  }
+  .anchor-meta-sub {
+    display: block;
+    font-size: 13px; color: var(--ink-soft);
+    margin-top: 4px;
+  }
+  .anchor-cta {
+    display: flex; align-items: center; justify-content: center;
+    gap: 8px;
+    background: var(--saffron);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; font-size: 15px;
+    text-decoration: none;
+    padding: 26px 24px 18px;
+    border-radius: 0 0 var(--r-md) var(--r-md);
+    margin: -14px 12px 0;
+    position: relative;
+    z-index: 1;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .anchor-cta::after {
+    content: "→"; font-weight: 600;
+    transition: transform 0.2s;
+  }
+  .anchor-cta:hover { background: var(--saffron-deep); }
+  .anchor-cta:hover::after { transform: translateX(3px); }
+  .anchor-card-wrap.kind-heritage .anchor-cta { background: #145a47; }
+  .anchor-card-wrap.kind-heritage .anchor-cta:hover { background: #0e3f31; }
+  .anchor-card-wrap.kind-hotel .anchor-cta { background: #6b46c1; }
+  .anchor-card-wrap.kind-hotel .anchor-cta:hover { background: #553691; }
+  .anchor-secondary-links {
+    margin-top: 12px;
+    display: flex; gap: 6px; flex-wrap: wrap;
+    justify-content: center;
+  }
+  .anchor-secondary-links a {
+    font-size: 12px; padding: 5px 11px; border-radius: 999px;
+    background: var(--cream); color: var(--ink);
+    text-decoration: none;
+  }
+  .anchor-secondary-links a:hover { background: var(--cream-dark); }
+
+  .heritage-section, .anchors-section, .visa-section, .restaurants-section {
+    padding: 80px 0; background: var(--cream);
+  }
+  .heritage-section { background: var(--cream-dark); }
+  .visa-section { background: var(--cream-dark); }
+
+  .leg-tabs-head {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px; margin-bottom: 18px;
+  }
+  .leg-summary {
+    font-size: 13px; color: var(--ink-soft);
+    display: inline-flex; align-items: center; gap: 14px;
+    flex-wrap: wrap;
+  }
+  .leg-summary strong { color: var(--ink); font-weight: 500; }
+
+  .stop-marker {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 4px 12px; border-radius: 999px;
+    background: var(--ink); color: var(--cream);
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+    margin-bottom: 18px;
+  }
+</style>
+</head>
+<body data-trip-slug="2026-07-tokyo-koyoto-and-other-famous">
+
+<!-- ICONS -->
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+  <defs>
+    <symbol id="i-plane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="i-utensils" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></symbol>
+    <symbol id="i-landmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></symbol>
+    <symbol id="i-sunrise" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m8 6 4-4 4 4"/><path d="M16 18a4 4 0 0 0-8 0"/></symbol>
+    <symbol id="i-sunset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10V2"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m16 6-4 4-4-4"/><path d="M16 18a4 4 0 0 0-8 0"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></symbol>
+    <symbol id="i-waves" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-shopping" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M3 21v-5h5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></symbol>
+    <symbol id="i-thermo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></symbol>
+    <symbol id="i-train" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a8 8 0 0 1 8-8h0a8 8 0 0 1 8 8v5a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/><path d="M4 11h16"/><path d="M9 19l-2 3"/><path d="M15 19l2 3"/><circle cx="8.5" cy="15" r="1"/><circle cx="15.5" cy="15" r="1"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+    <symbol id="i-luggage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20h0a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h0"/><path d="M8 18V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14"/><path d="M10 20h4"/><circle cx="16" cy="20" r="2"/><circle cx="8" cy="20" r="2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+    <symbol id="i-passport" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 2h16.99c.55 0 1 .45 1 1v18c0 .55-.45 1-1 1H3.5c-.83 0-1.5-.67-1.5-1.5V3.5C2 2.67 2.67 2 3.5 2z"/><circle cx="12" cy="11" r="3"/><path d="M9 18h6"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></symbol>
+  </defs>
+</svg>
+
+<!-- ========== NAV ========== -->
+<nav class="site-nav">
+  <div class="container inner">
+    <a href="../index.html" class="logo">
+      <span class="logo-mark">◈</span>
+      <span class="logo-word"><span class="logo-line">gama<span class="logo-slash">/</span></span><span class="logo-line">adventures</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">All trips</a>
+      <a href="#options" class="active">This trip</a>
+      <a href="#itinerary">Timeline</a>
+      <a href="#veg-restaurants">Veg dining</a>
+      <a href="#influencer-voices">Influencers</a>
+      <a href="#door-to-door">Door to door</a>
+      <a href="#transport">Transport</a>
+      <a href="#visa">Visa &amp; health</a>
+      <a href="#must-include">Add items</a>
+      <a href="#post-trip">After</a>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-pin-btn" id="trip-pin-btn" data-pin-id="2026-07-tokyo-koyoto-and-other-famous" aria-label="Pin trip" title="Pin trip">
+        <svg class="icon icon-sm"><use href="#i-bookmark"/></svg>
+      </button>
+      <button class="btn btn-saffron btn-sm" data-refresh-trigger
+        data-refresh-name="July 2026 · Tokyo · Kyoto · Mt. Fuji"
+        data-refresh-prompt="Refresh the trip plan at trips/2026-07-tokyo-koyoto-and-other-famous/index.html.
+
+Re-run the full planner chain for Mon Jul 13 → Fri Jul 24, 2026 (11 nights), family of 4 (kids 6 + 9), BLR origin, Japan (Tokyo + Kyoto + Hakone/Mt. Fuji):
+
+1. Re-check fares BLR ↔ NRT/HND on the actual dates. Use scripts/api/amadeus_flights.py first; if unavailable fall back to the SerpAPI proxy at /api/flights, then web search Skyscanner / Google Flights / Cathay / Malaysia Airlines / JAL / ANA. Note OneWorld (QR/JL/CX/MH) opportunities for Avios redemption.
+2. Re-verify Marriott Bonvoy properties in Tokyo (Ritz-Carlton, St. Regis, Westin, Sheraton, Tokyo Marriott, JW), Kyoto (Westin Miyako, Sheraton Miyako, Mitsui Kyoto Luxury Collection, Translation Suites), and Hakone/Fuji (Hyatt Regency Hakone Resort + Spa, Hilton Odawara Resort). Re-evaluate Marriott 40K free-night cert candidacy (cert expires 2026-12-31; July fits before expiry).
+3. Re-search Booking.com for top 4-5 star ryokans in Hakone (kid-friendly with private onsen if possible).
+4. Re-verify all Foursquare / Google Local entries for vegetarian + shojin ryori restaurants in Tokyo, Kyoto, Hakone.
+5. Recompute budget envelope vs ₹7L Lux cap. Surface flight cabin upgrades only if exceptionally low.
+6. Refresh weather forecast via scripts/api/weather_forecast.py for Jul 13–24 in Tokyo/Kyoto/Hakone with --aqi.
+7. Re-verify all booking links resolve (no 404s). Replace any broken hotel page with a Booking.com search URL.
+8. Overwrite trips/2026-07-tokyo-koyoto-and-other-famous/index.html using the existing trips/_shared/style.css and trips/_shared/site.js. Maintain structure: Hero → Compare → Itinerary tabs → Costs → Hotels → Transport → Veg dining → Door-to-door → Visa & health → Post-trip.
+9. Update the card on trips/index.html with the new total cost.
+
+Read .workspace/user_travel_prefs.md and .workspace/loyalty.md before recommending — never override constraints (school days, hotel tier, cabin policy, vegetarian)."
+      >
+        <svg class="icon icon-sm"><use href="#i-refresh"/></svg>
+        Refresh
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<header class="hero">
+  <div class="hero-decor">
+    <div class="ring filled"></div>
+    <div class="line"></div>
+    <div class="ring"></div>
+    <div class="line"></div>
+    <div class="ring"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          July 2026 · Summer Break · Wishlist Japan
+        </div>
+        <h1 data-parallax="0.05">Tokyo, Kyoto<br>and the <em>shadow</em> of Fuji.</h1>
+        <p class="hero-sub">
+          Eleven nights across modern Tokyo, ancient Kyoto, and Hakone's hot-spring valleys at the foot of Mt. Fuji. Built around your kids' pace, vegetarian-only meals (shojin ryori, Indian veg, vegan ramen), and Marriott Bonvoy + Hilton + Hyatt leverage.
+        </p>
+
+        <div class="hero-meta">
+          <div class="meta-item">
+            <div class="label">Window</div>
+            <div class="value">Jul 13 – 24</div>
+          </div>
+          <div class="meta-item">
+            <div class="label">Travelers</div>
+            <div class="value">4</div>
+          </div>
+          <div class="meta-item">
+            <div class="label">Nights</div>
+            <div class="value">11</div>
+          </div>
+          <div class="meta-item">
+            <div class="label">From</div>
+            <div class="value">BLR</div>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#options" class="btn btn-primary">Compare options <svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></a>
+          <a href="#itinerary" class="btn btn-ghost">See timeline</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="h-card h-card-1" data-parallax="0.06">
+          <div class="h-card-img" style="background-image:url('https://images.pexels.com/photos/32886338/pexels-photo-32886338.jpeg?auto=compress&cs=tinysrgb&w=900'); background-size:cover; background-position:center;">
+            <span class="h-card-tag">
+              <svg class="icon icon-sm" style="display:inline; vertical-align: middle; margin-right: 4px;"><use href="#i-star"/></svg>
+              Recommended
+            </span>
+          </div>
+          <div class="h-card-body">
+            <div class="place">Tokyo · Kyoto · Hakone</div>
+            <div class="meta">Loop · 11 nights · ~₹6.57L</div>
+          </div>
+        </div>
+        <div class="h-card h-card-2" data-parallax="0.10">
+          <div class="h-card-img" style="background-image:url('https://images.pexels.com/photos/23557100/pexels-photo-23557100.jpeg?auto=compress&cs=tinysrgb&w=900'); background-size:cover; background-position:center;">
+            <span class="h-card-tag">Built from</span>
+          </div>
+          <div class="h-card-body">
+            <div class="place">104 influencer screenshots</div>
+            <div class="meta">151 unique places · APIs verified · 10 nights</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ========== HERO IMAGE STRIP ========== -->
+<section class="strip" aria-label="Trip highlights">
+  <div class="strip-eyebrow">Sites you'll see</div>
+  <div class="strip-track" id="strip-track">
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/2070033/pexels-photo-2070033.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Iconic</span><div class="strip-card-name">Mt. Fuji</div><div class="strip-card-loc">Hakone · Lake Ashi view</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/3408353/pexels-photo-3408353.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Heritage</span><div class="strip-card-name">Fushimi Inari</div><div class="strip-card-loc">Kyoto · 10K torii gates</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Kid magnet</span><div class="strip-card-name">Shibuya Crossing</div><div class="strip-card-loc">Tokyo · neon scramble</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/161251/senso-ji-temple-japan-kyoto-landmark-161251.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Temple</span><div class="strip-card-name">Senso-ji</div><div class="strip-card-loc">Asakusa · oldest temple</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/2614818/pexels-photo-2614818.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Bamboo</span><div class="strip-card-name">Arashiyama Grove</div><div class="strip-card-loc">Kyoto · morning light</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/8845353/pexels-photo-8845353.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Onsen</span><div class="strip-card-name">Hakone Open-Air</div><div class="strip-card-loc">Hakone · sculpture park</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/4151484/pexels-photo-4151484.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Castle</span><div class="strip-card-name">Nijo Castle</div><div class="strip-card-loc">Kyoto · nightingale floors</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/3408355/pexels-photo-3408355.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Family</span><div class="strip-card-name">teamLab Planets</div><div class="strip-card-loc">Toyosu · digital art</div></div>
+    </article>
+    <!-- Duplicates for seamless loop -->
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/2070033/pexels-photo-2070033.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Iconic</span><div class="strip-card-name">Mt. Fuji</div><div class="strip-card-loc">Hakone · Lake Ashi view</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/3408353/pexels-photo-3408353.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Heritage</span><div class="strip-card-name">Fushimi Inari</div><div class="strip-card-loc">Kyoto · 10K torii gates</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Kid magnet</span><div class="strip-card-name">Shibuya Crossing</div><div class="strip-card-loc">Tokyo · neon scramble</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/161251/senso-ji-temple-japan-kyoto-landmark-161251.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Temple</span><div class="strip-card-name">Senso-ji</div><div class="strip-card-loc">Asakusa · oldest temple</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/2614818/pexels-photo-2614818.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Bamboo</span><div class="strip-card-name">Arashiyama Grove</div><div class="strip-card-loc">Kyoto · morning light</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/8845353/pexels-photo-8845353.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Onsen</span><div class="strip-card-name">Hakone Open-Air</div><div class="strip-card-loc">Hakone · sculpture park</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/4151484/pexels-photo-4151484.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Castle</span><div class="strip-card-name">Nijo Castle</div><div class="strip-card-loc">Kyoto · nightingale floors</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/3408355/pexels-photo-3408355.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Family</span><div class="strip-card-name">teamLab Planets</div><div class="strip-card-loc">Toyosu · digital art</div></div>
+    </article>
+  </div>
+</section>
+
+<!-- ========== ITINERARY ========== -->
+<section class="itinerary" id="itinerary">
+  <div class="container with-map">
+    <aside class="section-with-map__map" data-trip-map="itinerary" aria-label="Map of itinerary stops"></aside>
+    <div class="with-map__main">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Day by day · refreshed from your influencer dump (104 images, 151 unique places)</div>
+        <h2>The <em>timeline</em></h2>
+      </div>
+      <p>10 nights · Tokyo 5 → Kyoto 3 → Hakone 2 → NRT. Every place below was prioritized from your image dump and verified live via Foursquare + Google Local. Slow pace, kid-energy aware. July is hot &amp; humid (28-32°C, afternoon thunderstorms) — anchors run morning or late afternoon, mid-day = AC + food + transit.</p>
+    </div>
+
+    <div class="leg-tabs-head">
+      <div class="leg-summary">
+        <span><strong>10 nights</strong> · Mon Jul 13 → Thu Jul 23, 2026</span>
+        <span>· Family of <strong>4</strong> · BLR origin</span>
+        <span>· Vegetarian only · 5★ hotels</span>
+      </div>
+    </div>
+
+    <div class="tab-panel active">
+      <div class="timeline">
+
+        <!-- DAY 1 — Mon Jul 13 -->
+        <details class="day" open>
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-plane"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Mon · Jul 13</div>
+                <div class="day-title">BLR → NRT · arrive Tokyo · JW Marriott check-in</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Travel</span>
+                <span class="day-tag">Easy first night</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">All day</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-plane"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">BLR → NRT (existing booking)</span> — see Transport section for door-to-door breakdown. Land at Narita, Narita Express to Tokyo, taxi to JW Marriott Tokyo (booking already locked).
+                <div style="font-size:12px; color: rgba(246,241,232,0.65); margin-top:6px;">
+                  <strong>JW Marriott Tokyo</strong>: trim from Jul 13-21 to <strong>Jul 13-18 (5 nights)</strong> — change today before the cancellation window closes.
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="FamilyMart" data-rest-city="Tokyo">
+              <div class="row-time">20:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Konbini dinner — FamilyMart / 7-Eleven crawl</span> — kids' first taste of Japan: tamago sando, melon pan, edamame onigiri, matcha mochi, fruit cups. Easy, vegetarian-safe, jet-lag friendly. Featured 6× across the dump.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/FamilyMart+near+JW+Marriott+Tokyo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> FamilyMart nearby</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 2 — Tue Jul 14 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-landmark"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Tue · Jul 14</div>
+                <div class="day-title">Asakusa + Skytree · East Tokyo cluster</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Heritage</span>
+                <span class="day-tag">Kid-magnet view</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">09:30</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Senso-ji Temple + Nakamise-dori, Asakusa</span> — Tokyo's oldest temple (645 AD), the Kaminarimon thunder gate is the iconic photo. Free entry. <strong>3× in dump.</strong>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Senso-ji+Temple+Asakusa" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                  <a class="chip" href="https://www.senso-ji.jp/about/index_e.html" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Temple site</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Komaki Shokudo" data-rest-city="Tokyo">
+              <div class="row-time">12:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Komaki Shokudo (Asakusa)</span> — pure-veg shojin ryori, daily teishoku ¥1,200. Kid-easy.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Komaki+Shokudo+Asakusa" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">15:30</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Tokyo Skytree</span> — 634m observation deck, world's tallest free-standing tower. Pre-book skip-the-line. <strong>3× in dump.</strong>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.tokyo-skytree.jp/en/ticket/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Skytree tickets</a>
+                  <a class="chip" href="https://www.klook.com/activity/917-tokyo-skytree-tickets/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Klook</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="T's TanTan" data-rest-city="Tokyo">
+              <div class="row-time">19:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · T's TanTan (Tokyo Station Keiyo St.)</span> — vegan ramen famous worldwide; pure-veg, kid-friendly, fast. On the way back to JW.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/T's+Tantan+Tokyo+Station" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 3 — Wed Jul 15 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-sparkles"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Wed · Jul 15</div>
+                <div class="day-title">Shibuya + Harajuku · West Tokyo cluster</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Sunset Shibuya Sky</span>
+                <span class="day-tag">Pop culture</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">09:00</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Meiji Shrine + Yoyogi Park</span> — cool morning forest walk before the heat builds. 100,000 trees donated post-1920. Free.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Meiji+Shrine+Yoyogi" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">11:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-shopping-bag"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Takeshita Street + Angel Harajuku Crepes</span> — kawaii heart of Harajuku. Crepes are vegetarian (banana-Nutella, strawberry-cream). <strong>Takeshita 2×, Crepes 1× in dump.</strong>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Takeshita+Street+Harajuku" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="AIN SOPH.Ripple" data-rest-city="Tokyo">
+              <div class="row-time">13:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · AIN SOPH.Ripple Shinjuku</span> — vegan Japanese curry + matcha desserts. Book ahead (small space, popular).
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/AIN+SOPH+Ripple+Shinjuku" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">15:30</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Shibuya Crossing + Hachiko statue</span> — busiest intersection on earth, classic photo from Starbucks 2F.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Shibuya+Crossing" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">17:30</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Shibuya Sky · sunset slot</span> — 230m open-air rooftop, the most-mentioned place in your dump (<strong>15×</strong>). <em>Pre-book the sunset slot 2 weeks ahead — sells out.</em>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.shibuya-scramble-square.com/sky/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Official site</a>
+                  <a class="chip" href="https://www.klook.com/activity/57723-shibuya-sky-tickets/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Klook · MAHIRSLENS code</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">20:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-shopping-bag"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Don Quijote Mega Donki Shibuya</span> — open 24/7, kid loot heaven. Konbini supplies + souvenirs.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Don+Quijote+Mega+Shibuya" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 4 — Thu Jul 16 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-sparkles"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Thu · Jul 16</div>
+                <div class="day-title">teamLab Planets + Odaiba · Bay cluster</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Top kid pick</span>
+                <span class="day-tag">Pre-book required</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">10:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-sparkles"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">teamLab Planets, Toyosu</span> — immersive digital-art water-walking experience. Rated #1 activity in your dump (<strong>12×</strong>). 90min, all ages, transformative for the 6yo.
+                <div style="font-size:12px; color: var(--saffron); margin-top:6px; font-weight:600;">
+                  ⚠ Book NOW — 2-3 week lead time normal; you're 28 days out (right at the edge).
+                </div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.teamlab.art/e/planets/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Official site</a>
+                  <a class="chip" href="https://www.klook.com/activity/57723-teamlab-planets-tokyo/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Klook</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Saishoku Kenbi" data-rest-city="Tokyo">
+              <div class="row-time">12:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Saishoku Kenbi (Toyosu)</span> — pure-veg natural foods cafe, walking distance from teamLab.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Saishoku+Kenbi+Toyosu" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">14:30</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Odaiba — DiverCity Gundam, Statue of Liberty viewpoint, Aqua City</span> — kid loop. Life-size Gundam transforms hourly. Rainbow Bridge view at dusk. <strong>4× in dump.</strong>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/DiverCity+Tokyo+Plaza+Gundam" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> DiverCity</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 5 — Fri Jul 17 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-leaf"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Fri · Jul 17</div>
+                <div class="day-title">Ghibli Museum (Mitaka) + Inokashira Park</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Booking-critical</span>
+                <span class="day-tag">Soft day</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">10:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-sparkles"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Ghibli Museum, Mitaka</span> — most-mentioned sight after Shibuya Sky &amp; teamLab (<strong>9×</strong>). Designed by Miyazaki. Magic for the kids.
+                <div style="font-size:12px; color: #d97a3a; margin-top:6px; font-weight:600;">
+                  🚨 Tickets release on the 10th of the month BEFORE visit. <strong>June 10 has already passed for July tickets.</strong> Try Boutique Japan, JTB resale, or pivot to <strong>Warner Bros. Studio Tour Tokyo · The Making of Harry Potter</strong> (4-6 weeks lead, tickets usually still available).
+                </div>
+                <div class="link-chips">
+                  <a class="chip" href="https://l-tike.com/st1/ghibli-en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Lawson lottery</a>
+                  <a class="chip" href="https://boutiquejapan.com/ghibli-museum/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Boutique Japan resale</a>
+                  <a class="chip" href="https://www.wbstudiotour.jp/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> WB Harry Potter (fallback)</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">13:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-leaf"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Inokashira Park · pedal swans + late lunch in Kichijoji</span> — adjacent to Ghibli Museum. Kichijoji has Sun Road shopping arcade + tons of veg cafes.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Inokashira+Park" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">17:30</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-shopping-bag"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Optional: Pokemon Center Mega Tokyo (Ikebukuro) on the way back</span> — only if Ghibli day stays light. <strong>1× in dump but flagged "kid-magnet largest in Japan".</strong>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Pokemon+Center+Mega+Tokyo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 6 — Sat Jul 18 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-train"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Sat · Jul 18</div>
+                <div class="day-title">Tokyo → Kyoto · Shinkansen + check-in</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Transit</span>
+                <span class="day-tag">Bags forwarded</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">09:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-package"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Yamato Transport · Tokyo → Kyoto bag forward</span> — concierge ships big bags overnight (~₹1,200 each). Family carries day packs only on the train.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.global-yamato.com/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Yamato site</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">10:30</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-shopping-bag"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Last Tokyo morning · Akihabara Pokemon Center DX or Shinjuku Gyoen</span> — kid choice.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">13:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-train"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Shinkansen Nozomi Tokyo → Kyoto (2h 15m)</span> — book reserved seats; family of 4 RT ≈ ₹37k.
+                <div class="link-chips">
+                  <a class="chip" href="https://smart-ex.jp/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> SmartEX (English booking)</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">16:30</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-bed"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Check in Westin Miyako Kyoto</span> — Bonvoy Cat 5 (40K cert candidate). Quiet hilltop, family rooms.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.marriott.com/hotels/travel/osamd-the-westin-miyako-kyoto/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Westin Miyako</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Mumokuteki Cafe" data-rest-city="Kyoto">
+              <div class="row-time">19:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · Mumokuteki Cafe (Teramachi)</span> — pure-vegan multi-cuisine. Walking distance from Pontocho riverside stroll.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Mumokuteki+Cafe+Kyoto" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 7 — Sun Jul 19 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-sunrise"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Sun · Jul 19</div>
+                <div class="day-title">Fushimi Inari (sunrise) + Higashiyama walk</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Start at 5:30am</span>
+                <span class="day-tag">Heat-aware</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">05:30</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Fushimi Inari Taisha · 10,000 torii sunrise</span> — beat heat + crowds. Climb to Yotsutsuji viewpoint (40min one-way), descend. Free.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Fushimi+Inari+Taisha" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">10:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Brunch · Inariya at the foot of Inari hill</span> — inari sushi (sweet tofu pouches, vegetarian).
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">14:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-train"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Kyoto Railway Museum (cool indoor PM)</span> — kid-magnet. SL steam train experience, Shinkansen simulators. Skip if too tired.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.kyotorailwaymuseum.jp/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Museum site</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">17:00</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Higashiyama walk · Kiyomizu-dera → Sannenzaka → Yasaka Pagoda → Maruyama Park</span> — golden-hour photo walk through old Kyoto.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Kiyomizu-dera" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Kiyomizu-dera</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Cafe Veg Out" data-rest-city="Kyoto">
+              <div class="row-time">19:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · Cafe Veg Out (Higashiyama)</span> — chill vegan plate-set, kid-friendly.
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 8 — Mon Jul 20 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-train"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Mon · Jul 20</div>
+                <div class="day-title">Arashiyama · Sagano train + Hozugawa boat + bamboo</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Top kid-magic</span>
+                <span class="day-tag">Pre-book combo</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">09:30</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-train"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Sagano Romantic Train · Saga-Arashiyama → Kameoka</span> — open-side scenic train through Hozugawa river canyon. <strong>4× in dump.</strong> Book 2 weeks ahead.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.sagano-kanko.co.jp/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Sagano site</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">11:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Hozugawa River Boat · Kameoka → Arashiyama (2h downstream)</span> — wooden traditional boats, kids age 6+ allowed with adult. <strong>5× in dump.</strong>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.hozugawakudari.jp/en" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Hozugawa site</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Shigetsu" data-rest-city="Kyoto">
+              <div class="row-time">13:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Shigetsu shojin ryori (inside Tenryu-ji)</span> — multi-course Buddhist temple cuisine, all-vegan. Book day before via temple.
+                <div class="link-chips">
+                  <a class="chip" href="http://www.tenryuji.com/en/shigetsu/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Shigetsu booking</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">15:30</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-leaf"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Arashiyama Bamboo Grove + Iwatayama Monkey Park</span> — bamboo path is short (10min) but iconic. Monkey Park is a moderate climb (the 6yo can do it slowly), ~150 wild macaques.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Arashiyama+Bamboo+Grove" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Bamboo</a>
+                  <a class="chip" href="https://www.google.com/maps/search/Iwatayama+Monkey+Park" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Monkey Park</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">19:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Evening Gion stroll</span> — Hanamikoji, Shirakawa canal. Geiko sometimes spotted around dusk.
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 9 — Tue Jul 21 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-train"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Tue · Jul 21</div>
+                <div class="day-title">Kyoto → Hakone · last temples + Romance Car</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Transit</span>
+                <span class="day-tag">Ryokan check-in</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">07:30</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Kinkaku-ji + Ryoan-ji (cool morning, 2 hours)</span> — golden pavilion + zen rock garden, walkable between.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">10:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-package"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Yamato bag forward Kyoto → Hakone ryokan</span> — concierge handles. Bags arrive same evening.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">11:30</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-train"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Shinkansen Kyoto → Odawara (2h)</span> — Hikari/Nozomi.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">15:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-train"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Hakone Tozan to Hakone-Yumoto, taxi to ryokan</span> — Hakone Free Pass covers all transit modes.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.odakyu.jp/english/passes/hakone/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Hakone Free Pass</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">17:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-bed"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Check in Hyatt Regency Hakone Resort &amp; Spa</span> — Bonvoy/Hyatt cobranded; family rooms, kid-allowed onsen times. ₹37k/night seen on live LiteAPI.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.hyatt.com/en-US/hotel/japan/hyatt-regency-hakone-resort-and-spa/hkrhr" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Hyatt Regency Hakone</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">19:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Kaiseki dinner (vegetarian if pre-requested) + onsen</span> — most ryokan accept "shojin" or "veg-only" with 48h notice. Confirm at booking.
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 10 — Wed Jul 22 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-leaf"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Wed · Jul 22</div>
+                <div class="day-title">Hakone Round Tour · Mt Fuji loop</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Mt Fuji weather permitting</span>
+                <span class="day-tag">Onsen evening</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">09:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-mountain"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Hakone Round Tour</span> — Tozan railway → Gora → Sounzan ropeway → Owakudani sulfur valley (black eggs photo) → Lake Ashi pirate ship → Hakone Shrine torii at lake edge. Use Hakone Free Pass.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  Mt Fuji visibility in July is hit-or-miss (~30% clear days). If clouded: focus on Owakudani + onsen + Hakone Open-Air Museum (Picasso pavilion + outdoor sculpture park, kids-free).
+                </div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Hakone+Owakudani" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Owakudani</a>
+                  <a class="chip" href="https://www.hakone-oam.or.jp/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Open-Air Museum</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Bakery and Table Hakone" data-rest-city="Hakone">
+              <div class="row-time">12:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Bakery &amp; Table Hakone (Lake Ashi)</span> — lakeside bakery + cafe, foot-onsen seating downstairs. Veg sandwiches + pastries.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Bakery+and+Table+Hakone" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">17:30</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-bed"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Back to ryokan · onsen + kaiseki</span> — last evening, slowest pace.
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 11 — Thu Jul 23 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-plane"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Thu · Jul 23</div>
+                <div class="day-title">Hakone → NRT → BLR · departure</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Travel</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">08:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-package"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Yamato bag forward Hakone → NRT</span> — concierge pickup. Bags meet you at NRT departure-level counter.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">10:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-leaf"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Last onsen + late ryokan breakfast</span> — slow morning.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">12:30</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-train"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Romance Car / Shinkansen → Tokyo → Narita Express → NRT</span> — ~3h door to airport. Allow 3h pre-flight.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">19:00+</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-plane"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">NRT → BLR (existing return ticket)</span> — see Transport section.
+              </div>
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+
+    </div><!-- /.with-map__main -->
+  </div>
+</section>
+
+<!-- ========== COSTS ========== -->
+<section class="costs" id="costs">
+  <div class="container">
+    <div id="holiday-alert-trip" data-trip-start="2026-07-13" data-trip-end="2026-07-24" style="display:none;"></div>
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">The numbers</div>
+        <h2>Locked plan, <em>under</em> Lux cap of ₹7L</h2>
+      </div>
+      <p>Per-trip cap: ₹7L (₹2.5L flights / ₹3L hotels / ₹1.5L other). This refresh-built itinerary lands ~₹6.5L total, well under the ₹7L Lux cap. <strong>May-30 SerpAPI refresh:</strong> MH KUL combo holds at ₹2.15L economy / 13h55m (best time-cost trade); CX HKG ₹2.49L / 11h20m (fastest, OneWorld for Avios upgrade); Vietjet SGN ₹2.14L but 28h50m — too long for the 6yo. PE/biz are not "exceptionally cheap" right now, so economy stays headline per cabin policy.</p>
+    </div>
+
+    <div class="costs-grid">
+      <div class="cost-card featured" data-reveal data-live-cost="A">
+        <h4>Tokyo · Kyoto · Hakone (locked plan)</h4>
+        <p class="cost-sub">All-in estimate, family of 4 · <span data-live-stamp>live as of May 30, 2026</span></p>
+        <div class="cost-row" data-live-flight="BLR-NRT-2026-07-13-2026-07-24">
+          <span>Flights · BLR ⇄ NRT via KUL × 4 (MH) <span data-live-flight-note style="display:block;font-size:11px;color:rgba(255,255,255,.7);"></span></span>
+          <strong>₹2,15,000</strong>
+        </div>
+        <div class="cost-row" data-live-hotel="Tokyo-Kyoto-Hakone">
+          <span>Hotels · 4n Tokyo + 4n Kyoto + 2n Hakone + 1n Odaiba (cert + points applied) <span data-live-hotel-note style="display:block;font-size:11px;color:rgba(255,255,255,.7);"></span></span>
+          <strong>₹2,47,000</strong>
+        </div>
+        <div class="cost-row"><span>Trains · Nozomi BLR/JPY + Romance Car (4 pax)</span><strong>₹28,000</strong></div>
+        <div class="cost-row"><span>Cabs + Suica + Hakone Free Pass</span><strong>₹22,000</strong></div>
+        <div class="cost-row"><span>Food (Titanium breakfast saves ~25K)</span><strong>₹65,000</strong></div>
+        <div class="cost-row"><span>Activities · teamLab + Ghibli + Klook tickets</span><strong>₹35,000</strong></div>
+        <div class="cost-row"><span>Visa eVisa × 4 + insurance + eSIM + misc</span><strong>₹45,000</strong></div>
+        <div class="cost-row total"><span>Total</span><strong>₹6,57,000</strong></div>
+        <div style="margin-top: 28px;">
+          <div class="cap-bar"><div class="cap-fill" style="width: 94%"></div></div>
+          <div class="cap-meta"><span>94% of Lux cap</span><span>6% headroom</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="loyalty-strip" data-reveal>
+      <div>
+        <div class="section-eyebrow">Your leverage</div>
+        <h3>Bonvoy <em>actually delivers</em> in Tokyo + Kyoto</h3>
+        <p>Tokyo has 12+ Marriott/Bonvoy properties (Westin, EDITION, Ritz, Sheraton). Kyoto has Westin Miyako, Ritz, Marriott, Sheraton — perfect for the <strong>40K free-night cert (expires Dec 31, 2026)</strong>. Plan to apply it at Westin Miyako Kyoto Cat 5 night (Day 5 or 6).</p>
+        <p style="color: rgba(246, 241, 232, 0.5); font-size: 13px;">Hakone is light on Bonvoy — Hyatt Regency Hakone is the strong 5★ play there. Avios + Cathay/Malaysia award routes are an option for late-window flight rebooking.</p>
+      </div>
+      <div class="loyalty-points">
+        <div class="lp-item"><div class="lp-prog">Marriott Bonvoy</div><div class="lp-bal">359,343</div><div class="lp-tier">Titanium Elite</div></div>
+        <div class="lp-item"><div class="lp-prog">40K free-night cert</div><div class="lp-bal">USE THIS</div><div class="lp-tier">Expires Dec 31, 2026</div></div>
+        <div class="lp-item"><div class="lp-prog">Qatar Avios</div><div class="lp-bal">24,507</div><div class="lp-tier">OneWorld Sapphire</div></div>
+        <div class="lp-item"><div class="lp-prog">Hilton Honors</div><div class="lp-bal">30,299</div><div class="lp-tier">Gold</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LIVE HOTELS (SerpAPI Google Hotels) ========== -->
+<section class="hotels-section" id="hotels">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Live hotel rates</div>
+        <h2>What's <em>actually available</em></h2>
+      </div>
+      <p>Live rates from Google Hotels for your exact dates and family of 4. Featured cards = your loyalty plays (Marriott/Hilton/Hyatt 5★). Click any to open in Google Hotels for the full booking flow.</p>
+    </div>
+
+    <div class="section-map-split">
+     <div class="section-map-split__list">
+    <div class="hotels-stops">
+
+      <div data-hotels-stop="tokyo" data-dest="Tokyo" data-checkin="2026-07-13" data-checkout="2026-07-17" data-adults="2" data-kids="2" data-kid-ages="6,9" data-class="4,5" data-featured-name="Westin">
+        <div class="hotels-stop-head">
+          <h3>Tokyo</h3>
+          <span class="stop-meta">Mon Jul 13 → Fri Jul 17 · 4 nights · 4-5★ Bonvoy/Hilton priority</span>
+        </div>
+        <div class="hotels-grid"><div class="veg-loading">Loading hotel rates…</div></div>
+      </div>
+
+      <div data-hotels-stop="kyoto" data-dest="Kyoto" data-checkin="2026-07-17" data-checkout="2026-07-21" data-adults="2" data-kids="2" data-kid-ages="6,9" data-class="4,5" data-featured-name="Westin Miyako">
+        <div class="hotels-stop-head">
+          <h3>Kyoto <span style="font-weight:400;font-size:14px;color:var(--ink-soft);">· 40K cert candidate</span></h3>
+          <span class="stop-meta">Fri Jul 17 → Tue Jul 21 · 4 nights · Westin Miyako = Bonvoy Cat 5</span>
+        </div>
+        <div class="hotels-grid"><div class="veg-loading">Loading hotel rates…</div></div>
+      </div>
+
+      <div data-hotels-stop="hakone" data-dest="Hakone" data-checkin="2026-07-21" data-checkout="2026-07-23" data-adults="2" data-kids="2" data-kid-ages="6,9" data-class="4,5">
+        <div class="hotels-stop-head">
+          <h3>Hakone <span style="font-weight:400;font-size:14px;color:var(--ink-soft);"></span></h3>
+          <span class="stop-meta">Tue Jul 21 → Thu Jul 23 · 2 nights · Hyatt Regency featured</span>
+        </div>
+        <div class="hotels-grid"><div class="veg-loading">Loading hotel rates…</div></div>
+      </div>
+
+    </div>
+     </div>
+     <aside class="section-map-split__map" data-trip-map="hotels" aria-label="Map of hotels"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TRANSPORT ========== -->
+<section class="transport" id="transport">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Ground transport</div>
+        <h2>Every drive, ride, and rail <em>booked in advance</em></h2>
+      </div>
+      <p>Japan rewards pre-booking: Shinkansen seats sell out for early-morning trains, Hakone day-pass saves ~40% vs single tickets, and Narita arrival-day taxi is more sane than Keisei Skyliner with two tired kids and 4 suitcases.</p>
+    </div>
+
+    <div class="transport-grid">
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-car"/></svg></div>
+          <div>
+            <h4>Home → BLR T2 (outbound)</h4>
+            <div class="car-leg">Mon Jul 13 · Pre-dawn airport run</div>
+          </div>
+        </div>
+        <p class="car-detail">For an international 06:00 departure, leave home by 02:30. Pre-book Uber Reserve 48h prior — early-morning surge is real. Family of 4 + 4 large suitcases needs Uber XL or Ola Prime SUV. Reach BLR T2 by 03:30 for a 4h check-in window.</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Distance</div><div class="car-stat-val">~40 km</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Drive</div><div class="car-stat-val">~1 hr (off-peak)</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Est.</div><div class="car-stat-val">₹1.8–2.5K</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://m.uber.com/reserve/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Uber Reserve</a>
+          <a class="provider-link" href="https://book.olacabs.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Ola Prime</a>
+          <a class="provider-link" href="https://www.savaari.com/airport-transfer/bengaluru-airport-cabs/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Savaari</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-car"/></svg></div>
+          <div>
+            <h4>Narita Airport → Tokyo hotel</h4>
+            <div class="car-leg">Mon Jul 13 evening · Arrival transfer</div>
+          </div>
+        </div>
+        <p class="car-detail">Pre-book a private van via Klook or Welcome Pickups. After 14h+ in transit with two kids, a fixed-price van with a name-board pickup is worth the ₹2K premium over Skyliner+taxi. Skyliner+local cab is the budget option (~₹6K total) but punishing with luggage.</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Distance</div><div class="car-stat-val">~75 km</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Drive</div><div class="car-stat-val">~75 min</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Est.</div><div class="car-stat-val">¥18-25K (₹10-14K)</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://www.klook.com/en-IN/activity/2107-narita-airport-private-transfer-tokyo/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Klook private van</a>
+          <a class="provider-link" href="https://www.welcomepickups.com/tokyo/airport-taxi/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Welcome Pickups</a>
+          <a class="provider-link" href="https://www.keisei.co.jp/keisei/tetudou/skyliner/us/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Keisei Skyliner</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-train"/></svg></div>
+          <div>
+            <h4>Tokyo → Kyoto (Shinkansen Nozomi)</h4>
+            <div class="car-leg">Fri Jul 17 · Bullet train </div>
+          </div>
+        </div>
+        <p class="car-detail">Nozomi is the fastest (2h 15m, Tokyo Station → Kyoto Station). Reserved seats only — book on Smart-EX (JR Central app, English, foreign cards accepted). Pick the right side coming from Tokyo for Mt. Fuji view (~40 min in). 1 large suitcase per person fits overhead; oversized luggage requires advance reservation.</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Distance</div><div class="car-stat-val">~520 km</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Time</div><div class="car-stat-val">2h 15m</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Est.</div><div class="car-stat-val">¥14K × 4 (₹32K)</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://smart-ex.jp/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Smart-EX (JR app)</a>
+          <a class="provider-link" href="https://www.klook.com/en-IN/activity/27840-shinkansen-bullet-train-japan/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Klook Shinkansen</a>
+          <a class="provider-link" href="https://www.google.com/maps/dir/Tokyo+Station/Kyoto+Station" target="_blank"><svg class="icon"><use href="#i-route"/></svg> Route</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-train"/></svg></div>
+          <div>
+            <h4>Kyoto → Hakone (via Odawara)</h4>
+            <div class="car-leg">Tue Jul 21 · Shinkansen + Romance Car </div>
+          </div>
+        </div>
+        <p class="car-detail">Two legs: (1) Kyoto → Odawara on Hikari Shinkansen (1h 45m, Kodama is slower — pick Hikari). (2) Odawara → Hakone-Yumoto on Hakone Tozan or taxi (15 min). Add the Hakone Free Pass at Odawara for unlimited 2-day rides on Hakone's loop (cable car, ropeway, pirate ship, mountain trains). Suitcases can be sent ahead via Yamato Takkyubin (¥2K/bag, hotel-to-hotel, arrives next day).</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Time</div><div class="car-stat-val">~3h door-door</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Trains</div><div class="car-stat-val">¥12K × 4</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Free Pass</div><div class="car-stat-val">¥6K × 4</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://smart-ex.jp/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Smart-EX</a>
+          <a class="provider-link" href="https://www.odakyu.jp/english/passes/hakone/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Hakone Free Pass</a>
+          <a class="provider-link" href="https://www.kuronekoyamato.co.jp/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Yamato luggage</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-train"/></svg></div>
+          <div>
+            <h4>Hakone → Tokyo (Romance Car)</h4>
+            <div class="car-leg">Thu Jul 23 · Odakyu Romance Car </div>
+          </div>
+        </div>
+        <p class="car-detail">Direct from Hakone-Yumoto to Shinjuku in 85 min on the Odakyu Romance Car (limited express, all-reserved, panoramic windows). Kids love the front-row "vista car". Reserve seats 30 days ahead. Then Shinjuku → Hilton Tokyo Odaiba via Yurikamome line (45 min) or taxi (₹3K).</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Time</div><div class="car-stat-val">85 min direct</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Est.</div><div class="car-stat-val">¥2.5K × 4</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Reserve</div><div class="car-stat-val">30 days ahead</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://www.odakyu.jp/english/romancecar/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Romance Car</a>
+          <a class="provider-link" href="https://www.klook.com/en-IN/search/?keyword=hakone+romance+car/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Klook</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-route"/></svg></div>
+          <div>
+            <h4>Daily intra-city — Tokyo + Kyoto</h4>
+            <div class="car-leg">Tue Jul 14 → Wed Jul 22 · Suica IC + walking</div>
+          </div>
+        </div>
+        <p class="car-detail">Get a Suica IC card on arrival (mobile via Apple Wallet preferred — works for trains, buses, vending machines, conbini). For evening with tired kids, taxis are clean + metered + safe (~₹500-1500 per ride in central Tokyo). Uber is sparse outside central Tokyo — use the standard taxi flag-down or the GO taxi app.</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Suica top-up</div><div class="car-stat-val">¥3-5K start</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Avg fare</div><div class="car-stat-val">¥250-400</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Taxi base</div><div class="car-stat-val">¥500 / 1km</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://www.global.jr-central.co.jp/en/info/icca/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Suica info</a>
+          <a class="provider-link" href="https://go.goinc.jp/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> GO Taxi app</a>
+          <a class="provider-link" href="https://m.uber.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Uber Tokyo</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-bus"/></svg></div>
+          <div>
+            <h4>Hilton Odaiba → NRT airport</h4>
+            <div class="car-leg">Fri Jul 24 · Pre-dawn return transfer</div>
+          </div>
+        </div>
+        <p class="car-detail">Limousine Bus from Odaiba directly to Narita (~85 min, ¥3.6K/adult, kids half-price) — easiest with luggage, runs every 30 min. Alternative: pre-book a private van via Klook for door-to-door (₹14K). Departure at 11:30 AM means leave Odaiba by 07:30 (3h pre-flight + 1h transfer + 30 min buffer).</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Time</div><div class="car-stat-val">~85 min</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Bus est.</div><div class="car-stat-val">¥10K family</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Van est.</div><div class="car-stat-val">¥25K (₹14K)</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://webservice.limousinebus.co.jp/web/en/Default.aspx" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Limousine Bus</a>
+          <a class="provider-link" href="https://www.klook.com/en-IN/activity/2108-tokyo-narita-airport-private-transfer/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Klook van</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-car"/></svg></div>
+          <div>
+            <h4>BLR T2 → Home (return)</h4>
+            <div class="car-leg">Sat Jul 25 · 03:00 → 04:30 home</div>
+          </div>
+        </div>
+        <p class="car-detail">MH 192 lands at BLR ~02:00 on Jul 25. By the time the family clears immigration + bags it'll be ~03:00. Pre-book Uber Reserve from BLR for the homebound leg too — much easier than queueing at the kerbside in the dark with two sleepy kids.</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Distance</div><div class="car-stat-val">~40 km</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Drive</div><div class="car-stat-val">~1 hr</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Est.</div><div class="car-stat-val">₹1.8-2.5K</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://m.uber.com/reserve/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Uber Reserve</a>
+          <a class="provider-link" href="https://www.savaari.com/airport-transfer/bengaluru-airport-cabs/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Savaari</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== LIVE VEG RESTAURANTS (SerpAPI Google Local) ========== -->
+<section class="veg-section" id="veg-restaurants">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Live veg dining</div>
+        <h2>Vegetarian-safe restaurants <em>near each stay</em></h2>
+      </div>
+      <p>Pulled live via Google Local for the exact stops. Tokyo + Kyoto have a real (and growing) Indian-veg + shojin-ryori scene; Hakone is leaner — your hotel kaiseki menu is the answer there. Click any to open in Google Maps for hours, photos, and directions.</p>
+    </div>
+
+    <div class="section-map-split">
+     <div class="section-map-split__list">
+    <h3 style="font-family: Fraunces, serif; font-size: 20px; margin-bottom: 12px; margin-top: 16px;">Tokyo · near Bonvoy properties + Shibuya/Ginza/Akihabara</h3>
+    <div class="veg-grid" id="veg-tokyo" data-lat="35.6595" data-lon="139.7005" data-radius="3500" data-city="Tokyo" data-country="Japan">
+      <div class="veg-loading">Loading veg restaurants…</div>
+    </div>
+
+    <h3 style="font-family: Fraunces, serif; font-size: 20px; margin-bottom: 12px; margin-top: 48px;">Kyoto · near Westin Miyako + Gion + Higashiyama</h3>
+    <div class="veg-grid" id="veg-kyoto" data-lat="35.0117" data-lon="135.7681" data-radius="3500" data-city="Kyoto" data-country="Japan">
+      <div class="veg-loading">Loading veg restaurants…</div>
+    </div>
+
+    <h3 style="font-family: Fraunces, serif; font-size: 20px; margin-bottom: 12px; margin-top: 48px;">Hakone-Yumoto + Gora</h3>
+    <div class="veg-grid" id="veg-hakone" data-lat="35.2329" data-lon="139.1058" data-radius="2500" data-city="Hakone, Japan">
+      <div class="veg-loading">Loading veg restaurants…</div>
+    </div>
+
+    <p class="veg-attribution">
+      Live data via Google Local (SerpAPI). Names, hours, and ratings refresh on every page load — verify with the restaurant directly before going (some shojin-ryori places require advance booking by 1-2 days).
+    </p>
+     </div>
+     <aside class="section-map-split__map" data-trip-map="restaurants" aria-label="Map of vegetarian restaurants"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DOOR TO DOOR ========== -->
+<section class="door" id="door-to-door">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Door to door</div>
+        <h2>Front door to <em>front door</em></h2>
+      </div>
+      <p>Every leg of the trip with timing, links, and what to carry. Built for the locked Tokyo (5n) → Kyoto (3n) → Hakone (2n) shape.</p>
+    </div>
+
+    <div class="door-flow">
+
+      <!-- Stage 1: Home → BLR T2 -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-home"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">Home → BLR T2</div>
+          <span class="stage-when">Mon Jul 13 · 02:30 dep · 03:30 arrival</span>
+        </div>
+        <div data-route="car"
+          data-from="HOME" data-from-label="Bangalore" data-from-time="Mon · 02:30"
+          data-to="BLR" data-to-label="BLR T2" data-to-time="Mon · 03:30"
+          data-duration="1h · ~40 km"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Pre-book Uber Reserve <strong style="color: var(--saffron-soft);">48h prior</strong>. Family of 4 + 4 large suitcases needs Uber XL or Ola Prime SUV. Reach BLR T2 by 03:30 for a 06:00 international departure — at least 3h before takeoff.</p>
+        <div class="stage-body">
+          <div class="stage-col">
+            <h6>Check before leaving</h6>
+            <ul>
+              <li>Passports for all 4 with eVisa printed (validity 6+ months)</li>
+              <li>Hotel + flight + Klook + Shinkansen confirmations on phone + 1 printed copy</li>
+              <li>Web check-in done T-1 day · seat selection confirmed</li>
+              <li>Wallet · ₹15K cash · ¥30K (or forex card pre-loaded) · cards activated for international use</li>
+              <li>Power: phones + power banks ≤27000mAh in carry-on, USB-C cables, Japan-compatible adapters (Type A — same as US, no adapter needed for two-pin)</li>
+              <li>Travel insurance papers · pediatric script copies</li>
+            </ul>
+          </div>
+          <div class="stage-col">
+            <h6>Carry vs check</h6>
+            <ul>
+              <li>Carry-on: docs, electronics, ORS, kid snacks, change of clothes for 6yo</li>
+              <li>Checked: bulk clothes, toiletries, gifts, summer light layers (Tokyo Jul = 30°C+)</li>
+              <li>Each adult 23kg + each kid 23kg = 92kg checked allowance (Malaysia Airlines economy)</li>
+              <li>Liquids ≤100ml each in transparent pouch (carry-on rule, applied at KUL too)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="link-chips">
+          <a class="chip" href="https://m.uber.com/reserve/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Uber Reserve</a>
+          <a class="chip" href="https://book.olacabs.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Ola Prime</a>
+          <a class="chip" href="https://www.savaari.com/airport-transfer/bengaluru-airport-cabs/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Savaari</a>
+        </div>
+      </div>
+
+      <!-- Stage 2: BLR T2 → boarding -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-luggage"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">BLR T2 — international check-in to gate</div>
+          <span class="stage-when">03:30 → 06:00 boarding</span>
+        </div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">International terminal at T2. Malaysia Airlines counters typically open ~3.5h before departure. Use Family-with-Kids security lane. After security, head to lounge for breakfast — flight breakfast on MH economy is ~07:30 KUL time which is after takeoff with kids already drowsy.</p>
+        <div class="stage-body">
+          <div class="stage-col">
+            <h6>Lounges (Amex Plat covers all 4)</h6>
+            <ul>
+              <li>Adani Lounge — international departures, level 4 (Priority Pass + Amex Plat)</li>
+              <li>080 Lounge — Plaza Premium, alternative if Adani is full</li>
+              <li>Light breakfast + work corner + kid play area + nap zone</li>
+            </ul>
+          </div>
+          <div class="stage-col">
+            <h6>Practical</h6>
+            <ul>
+              <li>Confirm passport stamping (immigration officer) before lounge — saves a 20-min queue at boarding</li>
+              <li>Power banks must be in carry-on, not checked (≤27000mAh)</li>
+              <li>Strollers tag-on-aircraft for the 6yo if needed</li>
+              <li>Boarding 30 min before; gates close 10 min before departure</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 3: BLR → KUL flight -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-plane"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">BLR → KUL · MH 193</div>
+          <span class="stage-when">06:00 → 12:30 KUL · 4h 30m</span>
+        </div>
+        <div data-route="flight"
+          data-from="BLR" data-from-label="Bangalore" data-from-time="Mon · 06:00"
+          data-to="KUL" data-to-label="Kuala Lumpur" data-to-time="Mon · 12:30 (KUL)"
+          data-duration="4h 30m · MH 193"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Malaysia Airlines, Boeing 738. Pre-order Asian Vegetarian Meal (AVML) when booking. Tablet for kids essential — IFE library is decent but limited. KUL layover ~3h is right-sized: long enough to clear transit security, short enough to keep kid morale up.</p>
+        <div class="link-chips">
+          <a class="chip" href="https://www.malaysiaairlines.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Malaysia Airlines</a>
+          <a class="chip" href="https://www.skyscanner.co.in/transport/flights/blr/nrt/260713/260724/?adults=2&children=2" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Skyscanner</a>
+        </div>
+      </div>
+
+      <!-- Stage 4: KUL transit -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-luggage"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">KUL — transit</div>
+          <span class="stage-when">12:30 → 15:30 KUL · 3h layover</span>
+        </div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Stay airside (transit). KLIA Plaza Premium Lounge (Amex Plat) for shower + lunch — kids will need a stretch. KLIA → KLIA2 transfer is automated train, ~3 min. Re-check security at gate. Verify boarding gate has changed (common at KUL).</p>
+        <div class="link-chips">
+          <a class="chip" href="https://www.malaysiaairports.com.my/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> KLIA map</a>
+          <a class="chip" href="https://www.plazapremiumlounge.com/en-uk/find/asia/malaysia/kuala-lumpur/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Plaza Premium KUL</a>
+        </div>
+      </div>
+
+      <!-- Stage 5: KUL → NRT flight -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-plane"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">KUL → NRT · MH 70</div>
+          <span class="stage-when">15:30 KUL → 23:55 NRT · 7h</span>
+        </div>
+        <div data-route="flight"
+          data-from="KUL" data-from-label="Kuala Lumpur" data-from-time="Mon · 15:30 (KUL)"
+          data-to="NRT" data-to-label="Tokyo Narita" data-to-time="Mon · 23:55 (JST)"
+          data-duration="7h · MH 70"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Boeing 738 (some routes A330). AVML pre-ordered. Kids will likely sleep most of this leg — bring a thin blanket each. Land at Narita at midnight: immigration clears in ~30 min for foreign passports (Trusted Traveler does not apply for Indians yet). Bag claim ~20 min. Outside the gate by 01:00.</p>
+        <div class="link-chips">
+          <a class="chip" href="https://www.malaysiaairlines.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Malaysia Airlines</a>
+          <a class="chip" href="https://www.narita-airport.jp/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Narita Arrivals</a>
+        </div>
+      </div>
+
+      <!-- Stage 6: NRT → Tokyo hotel -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-car"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">NRT → Westin Tokyo (Ebisu)</div>
+          <span class="stage-when">Mon Jul 13 · 01:00 → 02:30</span>
+        </div>
+        <div data-route="car"
+          data-from="NRT" data-from-label="Narita" data-from-time="Tue · 01:00"
+          data-to="HOTEL" data-to-label="Westin Tokyo" data-to-time="Tue · 02:30"
+          data-duration="1h 30m · ~75 km · pre-booked van"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Pre-book a private van via Klook or Welcome Pickups. Driver waits with name-board at arrivals (Trusted Vendor zone). Westin Tokyo offers 24h check-in (Bonvoy Titanium gets late check-out + suite upgrade subject to availability). Crash, hydrate, reset for Day 1.</p>
+        <div class="link-chips">
+          <a class="chip" href="https://www.klook.com/en-IN/activity/2107-narita-airport-private-transfer-tokyo/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Klook van</a>
+          <a class="chip" href="https://www.welcomepickups.com/tokyo/airport-taxi/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Welcome Pickups</a>
+          <a class="chip" href="https://www.marriott.com/en-us/hotels/tyowi-the-westin-tokyo/overview/" target="_blank"><svg class="icon"><use href="#i-bed"/></svg> Westin Tokyo</a>
+        </div>
+      </div>
+
+      <!-- Stage 7: Tokyo → Kyoto Shinkansen -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-train"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">Tokyo → Kyoto · Nozomi Shinkansen</div>
+          <span class="stage-when">Fri Jul 17 · 09:00 → 11:15 Kyoto</span>
+        </div>
+        <div data-route="train"
+          data-from="TYO" data-from-label="Tokyo Station" data-from-time="Fri · 09:00"
+          data-to="KIX" data-to-label="Kyoto Station" data-to-time="Fri · 11:15"
+          data-duration="2h 15m · Nozomi · 520 km"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Reserved seats on Smart-EX. Pick the right side coming from Tokyo for Mt. Fuji view (~40 min in, weather-dependent). Buy bento at Tokyo Station's Ekiben market — kid-friendly options abound. Send big bags ahead via Yamato (¥2K/bag) to Westin Miyako.</p>
+        <div class="link-chips">
+          <a class="chip" href="https://smart-ex.jp/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Smart-EX</a>
+          <a class="chip" href="https://www.kuronekoyamato.co.jp/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Yamato luggage</a>
+          <a class="chip" href="https://www.google.com/maps/dir/Tokyo+Station/Kyoto+Station" target="_blank"><svg class="icon"><use href="#i-route"/></svg> Route</a>
+        </div>
+      </div>
+
+      <!-- Stage 8: Kyoto → Hakone -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-train"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">Kyoto → Hakone (via Odawara)</div>
+          <span class="stage-when">Tue Jul 21 · 09:30 → 12:30 Hyatt</span>
+        </div>
+        <div data-route="train"
+          data-from="KIX" data-from-label="Kyoto Station" data-from-time="Tue · 09:30"
+          data-to="HAK" data-to-label="Hyatt Regency Hakone" data-to-time="Tue · 12:30"
+          data-duration="3h door-door · Hikari + Hakone Tozan/taxi"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Hikari Shinkansen Kyoto → Odawara (1h 45m). At Odawara: pick up Hakone Free Pass (¥6K × 4, 2-day unlimited Hakone loop transport). Then Odawara → Gora via Hakone Tozan + cable car (~30 min) or hotel pickup taxi (~15 min, ¥4K). Hyatt Regency is in Gora.</p>
+        <div class="link-chips">
+          <a class="chip" href="https://smart-ex.jp/en/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Smart-EX</a>
+          <a class="chip" href="https://www.odakyu.jp/english/passes/hakone/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Hakone Free Pass</a>
+          <a class="chip" href="https://www.hyatt.com/hyatt-regency/jp/hakone/hyatt-regency-hakone-resort-and-spa" target="_blank"><svg class="icon"><use href="#i-bed"/></svg> Hyatt Regency Hakone</a>
+        </div>
+      </div>
+
+      <!-- Stage 9: Hakone → Tokyo -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-train"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">Hakone → Hilton Tokyo Odaiba</div>
+          <span class="stage-when">Thu Jul 23 · 11:00 → 14:30</span>
+        </div>
+        <div data-route="train"
+          data-from="HAK" data-from-label="Hakone-Yumoto" data-from-time="Thu · 11:00"
+          data-to="HOTEL" data-to-label="Hilton Odaiba" data-to-time="Thu · 14:30"
+          data-duration="3h 30m · Romance Car + Yurikamome"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Romance Car Hakone-Yumoto → Shinjuku (85 min, reserved). Then Shinjuku → Shimbashi → Yurikamome to Daiba (~45 min) or taxi (₹3-4K, faster with luggage). Hilton Odaiba check-in by 14:30 — Odaiba/Akihabara afternoon for kids.</p>
+        <div class="link-chips">
+          <a class="chip" href="https://www.odakyu.jp/english/romancecar/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Romance Car</a>
+          <a class="chip" href="https://www.hilton.com/en/hotels/tyodahi-hilton-tokyo-odaiba/" target="_blank"><svg class="icon"><use href="#i-bed"/></svg> Hilton Odaiba</a>
+        </div>
+      </div>
+
+      <!-- Stage 10: NRT departure -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-bus"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">Hilton Odaiba → NRT</div>
+          <span class="stage-when">Fri Jul 24 · 07:30 → 09:00 NRT</span>
+        </div>
+        <div data-route="bus"
+          data-from="HOTEL" data-from-label="Hilton Odaiba" data-from-time="Fri · 07:30"
+          data-to="NRT" data-to-label="Narita" data-to-time="Fri · 09:00"
+          data-duration="1h 30m · Limousine Bus / private van"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Limousine Bus Hilton Odaiba → NRT picks up at the hotel kerbside (¥3.6K/adult, kids half-price, family ~₹10K). Easier than a taxi for 4 people + luggage. Departs every 30-45 min from the Odaiba waterfront cluster. Arrive NRT by 09:00 for an 11:30 KUL connection departure.</p>
+        <div class="link-chips">
+          <a class="chip" href="https://webservice.limousinebus.co.jp/web/en/Default.aspx" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Limousine Bus</a>
+          <a class="chip" href="https://www.klook.com/en-IN/activity/2108-tokyo-narita-airport-private-transfer/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Klook van</a>
+        </div>
+      </div>
+
+      <!-- Stage 11: NRT → KUL → BLR -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-plane"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">NRT → KUL → BLR · MH 89 + MH 192</div>
+          <span class="stage-when">Fri Jul 24 · 11:30 NRT → Sat Jul 25 · 02:00 BLR</span>
+        </div>
+        <div data-route="flight"
+          data-from="NRT" data-from-label="Narita" data-from-time="Fri · 11:30 (JST)"
+          data-to="BLR" data-to-label="Bangalore" data-to-time="Sat · 02:00 (IST)"
+          data-duration="14h 30m total · MH 89 + 192"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">MH 89 NRT → KUL (7h 20m) lands ~17:00 KUL. MH 192 KUL → BLR (4h 30m) lands BLR 02:00 IST. AVML pre-ordered both legs. Lounge access at KUL covers the layover.</p>
+      </div>
+
+      <!-- Stage 12: BLR → Home -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-home"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">BLR → Home</div>
+          <span class="stage-when">Sat Jul 25 · 03:00 → 04:30</span>
+        </div>
+        <div data-route="car"
+          data-from="BLR" data-from-label="BLR T2" data-from-time="Sat · 03:00"
+          data-to="HOME" data-to-label="Bangalore" data-to-time="Sat · 04:30"
+          data-duration="1h · ~40 km"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Pre-book Uber Reserve from BLR for the homebound leg too — much easier than queueing at the kerbside in the dark with two sleepy kids. Pre-stocked groceries at home (set on T-1) saves a tired-Saturday-morning problem. Schedule a buffer Sunday at home for the kids' jet-lag reset before school resumes Mon Aug 3.</p>
+        <div class="link-chips">
+          <a class="chip" href="https://m.uber.com/reserve/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Uber Reserve</a>
+          <a class="chip" href="https://www.savaari.com/airport-transfer/bengaluru-airport-cabs/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Savaari</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== VISA + HEALTH + INSURANCE ========== -->
+<section class="visa-section" id="visa-health">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Paperwork + safety</div>
+        <h2>Visa, insurance, health · <em>before you go</em></h2>
+      </div>
+      <p>Japan is one of the safest destinations on earth — but Indian passport holders need an eVisa, kid vaccines need a pediatrician sign-off, and travel insurance is genuinely worth the ₹3-5K. Don't skip these.</p>
+    </div>
+
+    <div class="visa-grid">
+
+      <div class="visa-card">
+        <h5><svg class="icon"><use href="#i-shield"/></svg> Japan eVisa (Indian passports)</h5>
+        <p>Japan accepts eVisa applications from Indian citizens since 2024 — single-entry tourist eVisa is the standard. <strong>Apply 4 weeks before departure</strong> — average processing 5-10 working days. Apply for all 4 family members in one batch.</p>
+        <div class="meta">
+          <span>Cost: <strong>FREE</strong> for Indians (eVisa fee waived)</span>
+          <span>Validity: 90 days from issue</span>
+          <span>Stay: up to 30 days</span>
+        </div>
+        <div class="links">
+          <a href="https://www.evisa.mofa.go.jp/" target="_blank"><svg class="icon icon-sm"><use href="#i-arrow-up-right"/></svg> Apply on MOFA eVisa portal</a>
+          <a href="https://www.in.emb-japan.go.jp/itpr_en/visa.html" target="_blank"><svg class="icon icon-sm"><use href="#i-arrow-up-right"/></svg> Embassy India</a>
+        </div>
+      </div>
+
+      <div class="visa-card">
+        <h5><svg class="icon"><use href="#i-shield"/></svg> Travel insurance · 3 options surfaced</h5>
+        <p>Get comprehensive coverage covering medical (₹50L+), trip cancellation, baggage loss, and adventure activity riders (Mt. Fuji ropeway, Hakone trails). 11-day coverage for family of 4 ≈ ₹3-5K total.</p>
+        <div class="meta">
+          <span>Required: <strong>Yes (medical proof at immigration on request)</strong></span>
+          <span>Cost: <strong>₹3-5K family / 11 days</strong></span>
+        </div>
+        <div class="links">
+          <a href="https://www.tataaig.com/travel-insurance/japan-travel-insurance" target="_blank"><svg class="icon icon-sm"><use href="#i-arrow-up-right"/></svg> Tata AIG · Japan plan</a>
+          <a href="https://www.iciciprulife.com/travel-insurance.html" target="_blank"><svg class="icon icon-sm"><use href="#i-arrow-up-right"/></svg> ICICI Lombard</a>
+          <a href="https://www.policybazaar.com/travel-insurance/" target="_blank"><svg class="icon icon-sm"><use href="#i-arrow-up-right"/></svg> Policybazaar (compare)</a>
+        </div>
+        <p style="margin-top:8px; font-size:12px; color: var(--ink-soft); font-style: italic;">Compare 3+ before buying. Look for: pre-existing conditions covered (Y/N), kid coverage, USD vs INR settlement, network hospital list in Japan.</p>
+      </div>
+
+      <div class="visa-card">
+        <h5><svg class="icon"><use href="#i-shield"/></svg> Vaccinations &amp; medication</h5>
+        <p><strong>Always check with your pediatrician</strong> before final dosing decisions. Routine kid vaccines (MMR, DPT, Polio, Hep A/B, Typhoid) should be up-to-date. Japan does not require any specific travel-vax for tourists from India.</p>
+        <div class="meta">
+          <span>Carry: <strong>paracetamol syrup, ORS, anti-diarrheal, motion-sickness</strong></span>
+          <span>Heat: Kyoto Jul highs 30-33°C; Tokyo 28-30°C; humid</span>
+        </div>
+        <div class="links">
+          <a href="https://www.cdc.gov/travel/destinations/traveler/none/japan" target="_blank"><svg class="icon icon-sm"><use href="#i-arrow-up-right"/></svg> CDC Japan</a>
+          <a href="https://www.mofa.go.jp/j_info/visit/medical/" target="_blank"><svg class="icon icon-sm"><use href="#i-arrow-up-right"/></svg> MOFA medical info</a>
+        </div>
+      </div>
+
+      <div class="visa-card">
+        <h5><svg class="icon"><use href="#i-arrow-up-right"/></svg> eSIM · stay connected</h5>
+        <p>Japan WiFi is patchy outside hotels; eSIM beats pocket WiFi rentals for a family of 4 (1 eSIM per phone). Ubigi 10GB / 30 days is plenty for navigation + Maps + WhatsApp. Activate the eSIM before you fly so it auto-connects on landing.</p>
+        <div class="meta">
+          <span>Cost: <strong>₹1-2K per phone</strong></span>
+          <span>Activation: at least 24h before</span>
+        </div>
+        <div class="links">
+          <a href="https://cellulardata.ubigi.com/japan/" target="_blank"><svg class="icon icon-sm"><use href="#i-arrow-up-right"/></svg> Ubigi Japan</a>
+          <a href="https://www.airalo.com/japan-esim" target="_blank"><svg class="icon icon-sm"><use href="#i-arrow-up-right"/></svg> Airalo Japan</a>
+        </div>
+      </div>
+
+      <div class="visa-card">
+        <h5><svg class="icon"><use href="#i-shield"/></svg> Safety + emergency</h5>
+        <p>Japan ranks #1 globally on safety for tourists. Crime rate is negligible. Real risks: heat exhaustion, getting lost in Shinjuku, queue confusion at major shrines. Police: <strong>110</strong>. Ambulance + Fire: <strong>119</strong>. English-speaking line at major hospitals.</p>
+        <div class="meta">
+          <span>Hospital · St. Luke's Tokyo (English)</span>
+          <span>India embassy Tokyo: +81-3-3262-2391</span>
+        </div>
+        <div class="links">
+          <a href="https://hospital.luke.ac.jp/eng/" target="_blank"><svg class="icon icon-sm"><use href="#i-arrow-up-right"/></svg> St. Luke's Tokyo</a>
+          <a href="https://www.indembassy-tokyo.gov.in/" target="_blank"><svg class="icon icon-sm"><use href="#i-arrow-up-right"/></svg> India Embassy Tokyo</a>
+        </div>
+      </div>
+
+      <div class="visa-card">
+        <h5><svg class="icon"><use href="#i-thermo"/></svg> Heat &amp; air quality</h5>
+        <p>Climate-model projection (May-30 refresh, EC_Earth3P_HR): Tokyo highs 28-30°C, lows 22-25, with a heavy rain spike around Jul 22 (~44 mm). Kyoto runs hotter — highs 30-33°C — and the inland basin traps heat, so the 6yo will wilt. Hakone is cooler (26-29°C) but expect rain Jul 21-22. Real heat-stroke risk in Kyoto: anchor outdoor activities pre-09:30 or post-17:00. Mid-day = museums, malls, indoor lunches. AQI typically 50-80 (good) per IQAir.</p>
+        <div class="meta">
+          <span>ORS sachets: 2/kid/day</span>
+          <span>Cooling towels: ₹500 from Tokyu Hands</span>
+          <span>Pace: 1 anchor + 1 light per day max</span>
+        </div>
+        <div class="links">
+          <a href="https://www.jma.go.jp/jma/indexe.html" target="_blank"><svg class="icon icon-sm"><use href="#i-arrow-up-right"/></svg> Japan Met Agency</a>
+          <a href="https://www.iqair.com/japan/tokyo" target="_blank"><svg class="icon icon-sm"><use href="#i-arrow-up-right"/></svg> Tokyo AQI live</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== HERITAGE / VEG ANCHORS ========== -->
+<section class="anchors-section" id="anchors">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Vegetarian-safe + heritage</div>
+        <h2>Local specialties <em>worth seeking out</em></h2>
+      </div>
+      <p>Japan is more vegetarian-accommodating than most realize — but it requires planning. Below are the dish + temple anchors to plan around (book ahead where noted), plus Indian-veg fallbacks for kid days when Japanese cuisine has been "enough".</p>
+    </div>
+
+    <div class="anchor-grid">
+
+      <div class="anchor-card-wrap kind-food">
+        <div class="anchor-card">
+          <div class="anchor-head">
+            <div>
+              <div class="name">Buddhist temple cuisine</div>
+              <div class="where">Kyoto · Tenryu-ji "Shigetsu"</div>
+            </div>
+            <span class="anchor-kind">Restaurant</span>
+          </div>
+          <hr class="anchor-divider">
+          <div class="anchor-section-label">What to expect</div>
+          <ul class="anchor-checklist">
+            <li>Multi-course Zen meal, entirely plant-based</li>
+            <li>No garlic / onion — Shojin tradition</li>
+            <li>Books up 1-2 weeks ahead</li>
+            <li>Kid-acceptable: ask for less wasabi</li>
+          </ul>
+          <div class="anchor-meta">
+            <div class="anchor-meta-headline">Shojin Ryori</div>
+            <span class="anchor-meta-sub">most "real" cultural meal of the trip</span>
+          </div>
+        </div>
+        <a class="anchor-cta" href="https://www.tenryuji.com/en/shigetsu/" target="_blank" rel="noopener">Book Shigetsu</a>
+        <div class="anchor-secondary-links">
+          <a href="https://www.google.com/maps/search/Shigetsu+Tenryu-ji+Arashiyama" target="_blank" rel="noopener">Maps ↗</a>
+        </div>
+      </div>
+
+      <div class="anchor-card-wrap kind-food">
+        <div class="anchor-card">
+          <div class="anchor-head">
+            <div>
+              <div class="name">Tofu skin · Kyoto staple</div>
+              <div class="where">Kyoto · Gion · Higashiyama</div>
+            </div>
+            <span class="anchor-kind">Restaurant</span>
+          </div>
+          <hr class="anchor-divider">
+          <div class="anchor-section-label">What to expect</div>
+          <ul class="anchor-checklist">
+            <li>Soy milk skin — silky, mild, kid-friendly</li>
+            <li>Yuba Kichi (Higashiyama) — casual sets</li>
+            <li>Tousuiro (Pontocho) — kaiseki-style</li>
+            <li>Request "no dashi" sets in advance</li>
+          </ul>
+          <div class="anchor-meta">
+            <div class="anchor-meta-headline">Yuba</div>
+            <span class="anchor-meta-sub">silky tofu skin · Kyoto specialty</span>
+          </div>
+        </div>
+        <a class="anchor-cta" href="https://www.google.com/maps/search/yuba+kichi+kyoto" target="_blank" rel="noopener">Find Yuba Kichi</a>
+        <div class="anchor-secondary-links">
+          <a href="https://www.google.com/maps/search/tousuiro+pontocho+kyoto" target="_blank" rel="noopener">Tousuiro ↗</a>
+        </div>
+      </div>
+
+      <div class="anchor-card-wrap kind-food">
+        <div class="anchor-card">
+          <div class="anchor-head">
+            <div>
+              <div class="name">Tea + sweets ritual</div>
+              <div class="where">Kyoto · Uji · Arashiyama</div>
+            </div>
+            <span class="anchor-kind">Experience</span>
+          </div>
+          <hr class="anchor-divider">
+          <div class="anchor-section-label">What to expect</div>
+          <ul class="anchor-checklist">
+            <li>Wagashi (rice + bean sweets) + matcha</li>
+            <li>Camellia Garden — kid-friendly 45-min ceremony</li>
+            <li>Nakatanidou (Nara) — live mochi-pounding demo</li>
+            <li>Entertainment + snack rolled into one</li>
+          </ul>
+          <div class="anchor-meta">
+            <div class="anchor-meta-headline">Mochi + Matcha</div>
+            <span class="anchor-meta-sub">tea ceremony built for short attention spans</span>
+          </div>
+        </div>
+        <a class="anchor-cta" href="https://www.tea-kyoto.com/" target="_blank" rel="noopener">Book Camellia Garden</a>
+        <div class="anchor-secondary-links">
+          <a href="https://www.google.com/maps/search/Nakatanidou+Nara+mochi" target="_blank" rel="noopener">Nakatanidou ↗</a>
+        </div>
+      </div>
+
+      <div class="anchor-card-wrap kind-food">
+        <div class="anchor-card">
+          <div class="anchor-head">
+            <div>
+              <div class="name">Familiar + fallback</div>
+              <div class="where">Tokyo · Shibuya · Ginza · Akihabara</div>
+            </div>
+            <span class="anchor-kind">Restaurant</span>
+          </div>
+          <hr class="anchor-divider">
+          <div class="anchor-section-label">When dashi-fatigue hits</div>
+          <ul class="anchor-checklist">
+            <li>T's Tantan — vegan ramen at Tokyo Station</li>
+            <li>Erick South Yaesu — south-Indian thali</li>
+            <li>Veg Kitchen — Shibuya, all-veg</li>
+            <li>Nataraj Ginza — vegetarian since 1956</li>
+          </ul>
+          <div class="anchor-meta">
+            <div class="anchor-meta-headline">Vegan ramen / Indian-veg</div>
+            <span class="anchor-meta-sub">a familiar plate, when 5 days of "is there dashi?" gets old</span>
+          </div>
+        </div>
+        <a class="anchor-cta" href="https://www.google.com/maps/search/T%27s+Tantan+Tokyo+Station" target="_blank" rel="noopener">Find T's Tantan</a>
+        <div class="anchor-secondary-links">
+          <a href="https://www.google.com/maps/search/Erick+South+Yaesu+Tokyo" target="_blank" rel="noopener">Erick South ↗</a>
+          <a href="https://www.google.com/maps/search/Nataraj+Ginza+vegetarian" target="_blank" rel="noopener">Nataraj Ginza ↗</a>
+        </div>
+      </div>
+
+      <div class="anchor-card-wrap kind-hotel">
+        <div class="anchor-card">
+          <div class="anchor-head">
+            <div>
+              <div class="name">Hyatt Regency Hakone</div>
+              <div class="where">Hakone · Gora</div>
+            </div>
+            <span class="anchor-kind">Hotel dining</span>
+          </div>
+          <hr class="anchor-divider">
+          <div class="anchor-section-label">What to request at booking</div>
+          <ul class="anchor-checklist">
+            <li>Veg multi-course at "Living Room" restaurant</li>
+            <li>Flag dietary requirement when reserving the stay</li>
+            <li>Adults get a true kaiseki, kids get a kid-set</li>
+            <li>Outside Kyoto, this is the rare veg kaiseki</li>
+          </ul>
+          <div class="anchor-meta">
+            <div class="anchor-meta-headline">Kaiseki (veg)</div>
+            <span class="anchor-meta-sub">in-house at Hyatt Regency Hakone</span>
+          </div>
+        </div>
+        <a class="anchor-cta" href="https://www.hyatt.com/hyatt-regency/jp/hakone/hyatt-regency-hakone-resort-and-spa/dining" target="_blank" rel="noopener">Hyatt dining</a>
+      </div>
+
+      <div class="anchor-card-wrap kind-heritage">
+        <div class="anchor-card">
+          <div class="anchor-head">
+            <div>
+              <div class="name">Fushimi Inari Taisha</div>
+              <div class="where">Kyoto · early morning</div>
+            </div>
+            <span class="anchor-kind">Heritage</span>
+          </div>
+          <hr class="anchor-divider">
+          <div class="anchor-section-label">Plan around</div>
+          <ul class="anchor-checklist">
+            <li>10,000 vermillion torii gates up Mt. Inari</li>
+            <li>06:30 arrival for empty-shrine photos</li>
+            <li>30-min lower-loop is kid-easy</li>
+            <li>FREE entry · open 24/7</li>
+          </ul>
+          <div class="anchor-meta">
+            <div class="anchor-meta-headline">Shrine</div>
+            <span class="anchor-meta-sub">the iconic Kyoto image, best at dawn</span>
+          </div>
+        </div>
+        <a class="anchor-cta" href="https://inari.jp/en/" target="_blank" rel="noopener">Visit official site</a>
+        <div class="anchor-secondary-links">
+          <a href="https://www.google.com/maps/search/Fushimi+Inari+Taisha" target="_blank" rel="noopener">Maps ↗</a>
+        </div>
+      </div>
+
+      <div class="anchor-card-wrap kind-heritage">
+        <div class="anchor-card">
+          <div class="anchor-head">
+            <div>
+              <div class="name">Kinkaku-ji (Golden Pavilion)</div>
+              <div class="where">Kyoto · Day 6 · 09:00</div>
+            </div>
+            <span class="anchor-kind">Heritage</span>
+          </div>
+          <hr class="anchor-divider">
+          <div class="anchor-section-label">Plan around</div>
+          <ul class="anchor-checklist">
+            <li>Three-story Zen temple in gold leaf</li>
+            <li>Reflected in a perfect pond — short, photo-heavy</li>
+            <li>Kid-friendly 45-min visit</li>
+            <li>Pair with Ryoan-ji rock garden (10 min away)</li>
+          </ul>
+          <div class="anchor-meta">
+            <div class="anchor-meta-headline">Temple</div>
+            <span class="anchor-meta-sub">a short, photogenic stop in north Kyoto</span>
+          </div>
+        </div>
+        <a class="anchor-cta" href="https://www.shokoku-ji.jp/en/kinkakuji/" target="_blank" rel="noopener">Visit official site</a>
+        <div class="anchor-secondary-links">
+          <a href="https://www.google.com/maps/search/Kinkaku-ji" target="_blank" rel="noopener">Maps ↗</a>
+        </div>
+      </div>
+
+      <div class="anchor-card-wrap kind-heritage">
+        <div class="anchor-card">
+          <div class="anchor-head">
+            <div>
+              <div class="name">Mt. Fuji loop · Hakone</div>
+              <div class="where">Hakone · Day 9 · all-day</div>
+            </div>
+            <span class="anchor-kind">Heritage</span>
+          </div>
+          <hr class="anchor-divider">
+          <div class="anchor-section-label">Loop highlights</div>
+          <ul class="anchor-checklist">
+            <li>Hakone Free Pass covers everything</li>
+            <li>Owakudani ropeway + sulphur eggs (kid magnet)</li>
+            <li>Cable car + Lake Ashi pirate ship</li>
+            <li>Clear morning = best Fuji vista</li>
+          </ul>
+          <div class="anchor-meta">
+            <div class="anchor-meta-headline">Nature loop</div>
+            <span class="anchor-meta-sub">the day Hakone really earns its slot</span>
+          </div>
+        </div>
+        <a class="anchor-cta" href="https://www.odakyu.jp/english/passes/hakone/" target="_blank" rel="noopener">Buy Free Pass</a>
+        <div class="anchor-secondary-links">
+          <a href="https://www.hakone-tozan.co.jp/foreign/en/" target="_blank" rel="noopener">Tozan loop ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CURATOR'S PICKS ========== -->
+<section class="curator-section" id="curator-picks">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Curator's picks</div>
+        <h2>Must-do, must-eat, must-buy <em>by city</em></h2>
+      </div>
+      <p>Synthesized from creator mentions + TripAdvisor ratings. Each pick shows why it made the list — creator validation, rank, or both.</p>
+    </div>
+
+    <div class="section-map-split">
+     <div class="section-map-split__list">
+    <div id="curator-picks-root" class="curator-cities">
+      <div class="influencer-empty">Loading picks…</div>
+    </div>
+     </div>
+     <aside class="section-map-split__map" data-trip-map="curator" aria-label="Map of curator picks"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== INFLUENCER VOICES ========== -->
+<section class="influencer-section" id="influencer-voices">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Influencer voices</div>
+        <h2>What creators say <em>about Tokyo, Kyoto, Hakone</em></h2>
+      </div>
+      <p>Pull-quotes from travel bloggers, YouTubers, and Instagram creators in our watchlist. Refreshed weekly by <code>scripts/influencers/corpus_builder.py</code>.</p>
+    </div>
+
+    <div class="section-map-split">
+     <div class="section-map-split__list">
+    <div id="influencer-top-places" class="influencer-top-places"></div>
+    <div id="influencer-voices-grid" class="influencer-grid">
+      <div class="influencer-empty">Loading creator quotes…</div>
+    </div>
+     </div>
+     <aside class="section-map-split__map" data-trip-map="creators" aria-label="Map of creator-mentioned places"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MUST-INCLUDE (ADD-TO-NEXT-REFRESH) ========== -->
+<section class="must-include" id="must-include">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Add items · Your cart</div>
+        <h2>Build the trip <em>around what you actually want</em></h2>
+      </div>
+      <p>Hover any card on this page (restaurants, hotels, anchors, day rows, route segments, the two paths) and click <strong>+</strong> to drop it in your cart below. Or use the chip inputs to type new items, paste comma-separated lists, or paste a YouTube / Instagram / TripAdvisor / blog URL — the planner will fetch + transcribe it and extract every place mentioned. In the cart, drag to reorder and set <strong>Day + Time</strong> per item, or leave on "AI decides" and the planner will sequence everything by proximity, time saved, traveller effort, and cost. Hit <strong>Refresh with these items</strong> to rebuild this page around your cart — existing suggestions that don't fit the new flow are dropped. Items that genuinely can't be included show up in a callout at the top of the itinerary with the reason. Saved per-trip in this browser.</p>
+    </div>
+
+    <div class="mi-card">
+      <div class="mi-grid">
+        <div class="mi-category" data-mi-category="places">
+          <div class="mi-category-label">Places to visit</div>
+          <div class="mi-chip-input">
+            <input type="text" placeholder="Type and press Enter — e.g. Yanaka Ginza" autocomplete="off">
+          </div>
+        </div>
+        <div class="mi-category" data-mi-category="todo">
+          <div class="mi-category-label">Things to do</div>
+          <div class="mi-chip-input">
+            <input type="text" placeholder="Type and press Enter — e.g. Sumo morning practice" autocomplete="off">
+          </div>
+        </div>
+        <div class="mi-category" data-mi-category="buy">
+          <div class="mi-category-label">Things to buy</div>
+          <div class="mi-chip-input">
+            <input type="text" placeholder="Type and press Enter — e.g. Don Quijote run" autocomplete="off">
+          </div>
+        </div>
+        <div class="mi-category" data-mi-category="eat">
+          <div class="mi-category-label">Things to eat</div>
+          <div class="mi-chip-input">
+            <input type="text" placeholder="Type or paste comma-separated — e.g. T's Tantan, Afuri vegan ramen" autocomplete="off">
+          </div>
+        </div>
+      </div>
+
+      <div class="mi-category mi-category--full" data-mi-category="links">
+        <div class="mi-category-label">Source links — YouTube · Instagram · TripAdvisor · blog</div>
+        <div class="mi-chip-input">
+          <input type="url" placeholder="Paste a URL and press Enter — the planner will fetch, transcribe, and extract place names" autocomplete="off">
+        </div>
+        <div class="mi-help">YouTube videos are auto-transcribed (Whisper fallback if no captions). Every place mentioned in a parsed source is researched and slotted just like a typed item.</div>
+      </div>
+
+      <div class="mi-notes">
+        <label class="mi-category-label" for="mi-notes">Notes / context (optional)</label>
+        <textarea id="mi-notes" placeholder="Anything the planner should know — e.g. 'avoid 5am temple visits', 'kids loved Owakudani last time'"></textarea>
+      </div>
+
+      <div class="mi-actions">
+        <button class="btn btn-saffron btn-sm" id="mi-submit">
+          <svg class="icon icon-sm"><use href="#i-refresh"/></svg>
+          Refresh with these items
+        </button>
+        <span class="mi-status" id="mi-status"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== POST-TRIP UPDATE ========== -->
+<section class="post-trip" id="post-trip">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">After the trip</div>
+        <h2>Log it, <em>so we plan better</em></h2>
+      </div>
+      <p>When you return: paste the prompt below into Claude Code in this project. The system appends this trip to your visited journal, captures actual costs, saves lessons learned, and updates recommendation scoring for next time.</p>
+    </div>
+
+    <div class="post-grid">
+      <div>
+        <pre class="post-prompt" id="post-trip-prompt">Log my completed trip: 2026-07-tokyo-koyoto-and-other-famous (Tokyo + Kyoto + Hakone, Jul 13–24 2026, family of 4).
+
+I'll provide:
+- Which option I actually went with (A or B)
+- Actual flight costs (₹) — outbound + return separately
+- Actual hotel costs (₹) — paid + points used + cert applied (yes/no, which night)
+- Bonvoy / Hilton / Hyatt nights stayed + points earned
+- Marriott 40K cert: used or unused (and where)
+- Actual activities + food + transfers + Shinkansen + Hakone Free Pass spend
+- Top 3 highlights · top 1 regret
+- The 6yo's "wall" moment (when energy gave out) — informs future kid-pace planning
+- Photos (URLs or local paths)
+- Anything that will help future planning (e.g., "Owakudani sulphur eggs were a hit; Ghibli Museum was over-booked, skip without lottery wins")
+
+Then:
+1. Append a row to trips/_shared/data/visited.json with: city Tokyo + Kyoto, country Japan, month Jul, year 2026.
+2. Update .workspace/loyalty.md with new balances + cert status (mark as used/expired).
+3. Append lessons-learned to .workspace/user_travel_prefs.md under a "Trip lessons" section if non-trivial — heat tolerance, kid-pace, restaurant winners, transit notes.
+4. Update trips/2026-07-tokyo-koyoto-and-other-famous/index.html: add a "Completed" status badge + actuals-vs-estimates row in costs section + a "Highlights" gallery.
+5. Update trips/index.html: change card status from Active to Archived; bump trips-logged counter.
+6. Trigger a regeneration of trips/_shared/data/recommendations.json so the next-trip suggestions reflect the new visit (12-month exclusion for Japan).
+
+Read .workspace/user_travel_prefs.md for hard rules.</pre>
+        <div style="margin-top: 16px; display: flex; gap: 12px;">
+          <button class="btn btn-saffron btn-sm" onclick="copyPostPrompt()">
+            <svg class="icon icon-sm"><use href="#i-sparkles"/></svg>
+            Copy post-trip prompt
+          </button>
+          <span id="post-copy-state" style="font-size: 13px; color: var(--ink-soft); align-self: center;"></span>
+        </div>
+      </div>
+      <div class="post-fields">
+        <div class="post-field">
+          <div class="post-field-lbl">What you'll capture</div>
+          <div class="post-field-val">Actual costs vs estimates</div>
+          <div class="post-field-help">Flights, hotels, activities, transfers, food. Each line item updates the budget envelope's lessons tab.</div>
+        </div>
+        <div class="post-field">
+          <div class="post-field-lbl">What you'll capture</div>
+          <div class="post-field-val">Loyalty deltas</div>
+          <div class="post-field-help">Bonvoy nights + points earned · 40K cert used Y/N · Hilton + Hyatt earned · Avios redeemed if any.</div>
+        </div>
+        <div class="post-field">
+          <div class="post-field-lbl">What you'll capture</div>
+          <div class="post-field-val">Highlights + regrets</div>
+          <div class="post-field-help">Best meal · best moment · what to skip. The 6yo's "wall" timing is gold for future itineraries.</div>
+        </div>
+        <div class="post-field">
+          <div class="post-field-lbl">What you'll capture</div>
+          <div class="post-field-val">Photos + memories</div>
+          <div class="post-field-help">Drop URLs or local paths · the system embeds them into a gallery on this trip page.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHY ========== -->
+<section class="why">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Designed around</div>
+        <h2>Three things that <em>matter</em></h2>
+      </div>
+      <p>Defaults set to your family pace, not a generic Tokyo-influencer itinerary. Heat, kid-energy, and loyalty leverage shape every recommendation.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card" data-reveal>
+        <div class="why-icon"><svg class="icon"><use href="#i-thermo"/></svg></div>
+        <h5>Heat-aware pace</h5>
+        <p>Tokyo Jul = 32-35°C + humid. Anchor outdoor activities pre-09:30 or post-17:00. Mid-day = museums, malls, AC. The 6yo gets a daily nap window — non-negotiable.</p>
+      </div>
+      <div class="why-card" data-reveal>
+        <div class="why-icon"><svg class="icon"><use href="#i-sparkles"/></svg></div>
+        <h5>Kid-anchor variety</h5>
+        <p>Shrine + bullet train + ramen + monkeys + ropeway + Pokemon + Ghibli. Cultural depth without the kid revolt — every "adult day" is bracketed by a kid-magnet.</p>
+      </div>
+      <div class="why-card" data-reveal>
+        <div class="why-icon"><svg class="icon"><use href="#i-key"/></svg></div>
+        <h5>Loyalty leverage</h5>
+        <p>Bonvoy Titanium upgrades + 40K cert applied at Westin Miyako Kyoto + Hilton Honors at Odaiba turn balances into real value. Saves ~₹40K in cash hotel cost.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-foot">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="../index.html" class="logo" style="color: var(--cream); margin-bottom: 16px;">
+          <span class="logo-mark">◈</span>
+          <span class="logo-word" style="color: var(--cream);"><span class="logo-line">gama<span class="logo-slash" style="color: var(--saffron-soft);">/</span></span><span class="logo-line">adventures</span></span>
+        </a>
+        <p style="max-width: 360px; margin-top: 16px;">Personal travel planner for the family. Each trip is regenerable, version-tracked, and tuned to BLR origin, school calendar, and Marriott / Hilton / Hyatt loyalty.</p>
+      </div>
+      <div>
+        <h6>This trip</h6>
+        <ul>
+          <li><a href="#options">Both options</a></li>
+          <li><a href="#itinerary">Day-by-day</a></li>
+          <li><a href="#costs">Cost roll-up</a></li>
+          <li><a href="#hotels">Live hotels</a></li>
+          <li><a href="#transport">Transport</a></li>
+          <li><a href="#veg-restaurants">Veg dining</a></li>
+          <li><a href="#door-to-door">Door to door</a></li>
+          <li><a href="#visa-health">Visa + health</a></li>
+          <li><a href="#anchors">Heritage anchors</a></li>
+          <li><a href="#curator-picks">Curator's picks</a></li>
+          <li><a href="#influencer-voices">Influencer voices</a></li>
+          <li><a href="#post-trip">After the trip</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Live data</h6>
+        <ul>
+          <li>Flights · SerpAPI · Google Flights</li>
+          <li>Hotels · SerpAPI · Google Hotels</li>
+          <li>Restaurants · SerpAPI · Google Local</li>
+          <li>Holidays · Calendarific</li>
+          <li>Weather · Open-Meteo</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Family travel agent · Built locally</span>
+      <span>Generated · May 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.YATRA_TRIP_DEFAULTS = {
+    country: 'JP',
+    cities: [
+      { name: 'Tokyo',  lat: 35.68, lon: 139.77 },
+      { name: 'Kyoto',  lat: 35.01, lon: 135.77 },
+      { name: 'Hakone', lat: 35.23, lon: 139.02 },
+      { name: 'Osaka',  lat: 34.69, lon: 135.50 },
+      { name: 'Nara',   lat: 34.69, lon: 135.83 }
+    ]
+  };
+</script>
+<script src="../_shared/data-sources.js"></script>
+<script src="../_shared/claude-agent.js"></script>
+<script src="../_shared/agent-toast.js"></script>
+<script src="../_shared/trip-map.js"></script>
+<script src="../_shared/site.js"></script>
+<script>
+  // Pin button for this trip page
+  document.addEventListener('DOMContentLoaded', () => {
+    const PIN_KEY = 'yatra:pinned-trips';
+    const btn = document.getElementById('trip-pin-btn');
+    if (!btn) return;
+    const id = btn.dataset.pinId;
+    const get = () => { try { return JSON.parse(localStorage.getItem(PIN_KEY) || '[]'); } catch (_) { return []; } };
+    const sync = () => {
+      const list = get();
+      const isPinned = list.includes(id);
+      btn.classList.toggle('pinned', isPinned);
+      const tip = isPinned ? 'Unpin trip' : 'Pin trip';
+      btn.setAttribute('aria-label', tip);
+      btn.setAttribute('title', tip);
+    };
+    btn.addEventListener('click', () => {
+      const list = get();
+      const idx = list.indexOf(id);
+      if (idx === -1) list.push(id); else list.splice(idx, 1);
+      localStorage.setItem(PIN_KEY, JSON.stringify(list));
+      sync();
+    });
+    sync();
+  });
+
+  // Post-trip prompt copy
+  function copyPostPrompt() {
+    const txt = document.getElementById('post-trip-prompt').innerText;
+    navigator.clipboard.writeText(txt).then(() => {
+      const s = document.getElementById('post-copy-state');
+      s.textContent = '✓ Copied — paste into Claude Code in ~/projects/personal/travel agent';
+      s.style.color = 'var(--saffron-deep)';
+      setTimeout(() => { s.textContent = ''; }, 4000);
+    });
+  }
+
+  // Curator's Picks — must-do/must-eat/must-buy/unique blocks per city
+  (async function renderCuratorPicks() {
+    const root = document.getElementById('curator-picks-root');
+    if (!root || !window.YatraData || !YatraData.CuratorsPicks) return;
+    const cities = ['Tokyo', 'Kyoto', 'Hakone'];
+    function escapeHtml(s) {
+      return String(s || '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+    const labels = {
+      must_do:           { title: 'Must do',         icon: '◈' },
+      must_eat:          { title: 'Must eat',        icon: '◉' },
+      must_buy:          { title: 'Must buy',        icon: '◆' },
+      unique_experience: { title: 'Unique to here',  icon: '✦' },
+    };
+    function pickAttribution(p) {
+      const bits = [];
+      if (p.creator_count > 0) bits.push(`${p.creator_count} creator${p.creator_count > 1 ? 's' : ''}`);
+      if (p.tripadvisor && p.tripadvisor.rating) {
+        bits.push(`★ ${p.tripadvisor.rating}`);
+      }
+      if (p.tripadvisor && p.tripadvisor.ranking) {
+        const m = String(p.tripadvisor.ranking).match(/#(\d+)/);
+        if (m) bits.push(`#${m[1]} ranked`);
+      }
+      if (p.is_seed && p.creator_count === 0) bits.push('Editorial pick');
+      return bits.join(' · ');
+    }
+    function pickCard(p) {
+      const ta = p.tripadvisor || {};
+      const taLink = ta.url ? `<a class="tripadvisor-rating-pill" href="${ta.url}" target="_blank" rel="noopener" title="${escapeHtml(ta.ranking || '')}">TripAdvisor ★ ${escapeHtml(ta.rating || '')}${ta.review_count ? ' · ' + Number(ta.review_count).toLocaleString('en-IN') : ''}</a>` : '';
+      const quote = p.quote && p.quote.length >= 20
+        ? `<blockquote class="curator-quote">"${escapeHtml(p.quote.slice(0, 180))}${p.quote.length > 180 ? '…' : ''}"<cite>— ${escapeHtml(p.quote_creator || 'creator')}${p.quote_url ? ` <a href="${p.quote_url}" target="_blank" rel="noopener">↗</a>` : ''}</cite></blockquote>`
+        : '';
+      const attr = pickAttribution(p);
+      return `
+        <article class="curator-card">
+          <div class="curator-card-head">
+            <div class="curator-card-name">${escapeHtml(p.name)}</div>
+            ${attr ? `<div class="curator-card-attr">${attr}</div>` : ''}
+          </div>
+          ${quote}
+          <div class="curator-card-foot">
+            ${taLink}
+            <a href="https://www.google.com/maps/search/${encodeURIComponent(p.name + ' ' + (p.city || ''))}" target="_blank" rel="noopener">Map ↗</a>
+          </div>
+        </article>`;
+    }
+    const blocks = [];
+    for (const city of cities) {
+      const data = await YatraData.CuratorsPicks.forDestination(city);
+      if (!data || !data.buckets) continue;
+      const totalPicks = Object.values(data.buckets).reduce((a, b) => a + b.length, 0);
+      if (!totalPicks) continue;
+      const buckets = ['must_do', 'must_eat', 'must_buy', 'unique_experience']
+        .filter((k) => (data.buckets[k] || []).length)
+        .map((k) => `
+          <div class="curator-bucket">
+            <h4 class="curator-bucket-head"><span class="curator-bucket-icon">${labels[k].icon}</span> ${labels[k].title}</h4>
+            <div class="curator-bucket-grid">
+              ${data.buckets[k].map(pickCard).join('')}
+            </div>
+          </div>`).join('');
+      blocks.push(`
+        <div class="curator-city">
+          <h3 class="curator-city-head">${escapeHtml(city)} <span class="curator-city-meta">${data.creators_total} creators · ${totalPicks} picks</span></h3>
+          ${buckets}
+        </div>`);
+    }
+    if (!blocks.length) {
+      root.innerHTML = '<div class="influencer-empty">No curator picks cached yet. Run <code>scripts/influencers/synthesizer.py --all</code> to populate.</div>';
+      return;
+    }
+    root.innerHTML = blocks.join('');
+    // Stamp data-lat/lon on each curator card so they are clickable into the map.
+    try {
+      if (YatraData.Influencers && YatraData.Influencers._loadAll) {
+        const payload = await YatraData.Influencers._loadAll();
+        const lookup = {};
+        (payload.items || []).forEach((it) => {
+          (it.places_mentioned || []).forEach((pm) => {
+            if (typeof pm.lat === 'number' && typeof pm.lon === 'number' && pm.name) {
+              const k = pm.name.toLowerCase().trim();
+              if (!lookup[k]) lookup[k] = { lat: pm.lat, lon: pm.lon };
+            }
+          });
+        });
+        const tripCities = (window.YATRA_TRIP_DEFAULTS && window.YATRA_TRIP_DEFAULTS.cities) || [];
+        root.querySelectorAll('.curator-card').forEach((card) => {
+          const nameEl = card.querySelector('.curator-card-name');
+          if (!nameEl) return;
+          const name = nameEl.textContent.trim();
+          const cityWrap = card.closest('.curator-city');
+          const cityHeadEl = cityWrap ? cityWrap.querySelector('.curator-city-head') : null;
+          const cityName = cityHeadEl ? cityHeadEl.firstChild.textContent.trim() : null;
+          let coords = lookup[name.toLowerCase()];
+          if (!coords && cityName) {
+            const matched = tripCities.find((c) => c.name.toLowerCase() === cityName.toLowerCase());
+            if (matched) coords = { lat: matched.lat, lon: matched.lon };
+          }
+          if (!coords) return;
+          card.setAttribute('data-map-scope', 'curator');
+          card.setAttribute('data-lat', String(coords.lat));
+          card.setAttribute('data-lon', String(coords.lon));
+          card.setAttribute('data-name', name);
+          card.setAttribute('tabindex', '0');
+          card.setAttribute('role', 'button');
+        });
+      }
+    } catch (_) { /* fall through silently */ }
+    if (window.TripMap && typeof window.TripMap.refresh === 'function') window.TripMap.refresh();
+  })();
+
+  // Influencer voices: render quotes from corpus
+  (async function renderInfluencerVoices() {
+    const grid = document.getElementById('influencer-voices-grid');
+    const topPlacesRoot = document.getElementById('influencer-top-places');
+    if (!grid || !window.YatraData || !YatraData.Influencers) return;
+    const cities = ['Tokyo', 'Kyoto', 'Hakone'];
+    const seen = new Set();
+    const merged = [];
+    for (const city of cities) {
+      const items = await YatraData.Influencers.forDestination(city, 12);
+      for (const it of items) {
+        if (seen.has(it.id)) continue;
+        seen.add(it.id);
+        merged.push({ ...it, _city: city });
+      }
+    }
+    if (!merged.length) {
+      grid.innerHTML = '<div class="influencer-empty">No creator content cached yet for these cities. Run <code>scripts/influencers/corpus_builder.py --for-destination Tokyo</code> to populate.</div>';
+      return;
+    }
+
+    // Top recommended places: aggregate across creators, score by mention count + sentiment
+    const placeScores = new Map();
+    merged.forEach((it) => {
+      (it.places_mentioned || []).forEach((p) => {
+        if (!p.name) return;
+        const key = p.name;
+        const e = placeScores.get(key) || { name: p.name, mentions: 0, positive: 0, negative: 0, creators: new Set(), city: p.city, firstQuote: null, firstUrl: null, firstCreator: null };
+        e.mentions += 1;
+        if (p.sentiment === 'positive') e.positive += 1;
+        if (p.sentiment === 'negative') e.negative += 1;
+        e.creators.add(it.creator);
+        if (!e.firstQuote && p.quote) { e.firstQuote = p.quote; e.firstUrl = it.url; e.firstCreator = it.creator; }
+        placeScores.set(key, e);
+      });
+    });
+    const ranked = [...placeScores.values()]
+      .filter((p) => p.creators.size >= 1)
+      .sort((a, b) => (b.creators.size * 2 + b.positive - b.negative) - (a.creators.size * 2 + a.positive - a.negative))
+      .slice(0, 6);
+    if (ranked.length && topPlacesRoot) {
+      topPlacesRoot.innerHTML = `
+        <h3 class="influencer-top-heading">Most-recommended places by creators</h3>
+        <div class="influencer-top-grid">
+          ${ranked.map((p) => `
+            <article class="top-place-card">
+              <div class="top-place-name">${escapeHtml(p.name)}</div>
+              <div class="top-place-meta">
+                <span class="creator-count-pill">${p.creators.size} creator${p.creators.size === 1 ? '' : 's'}</span>
+                ${p.positive ? `<span class="sentiment-pill positive">${p.positive}+</span>` : ''}
+                ${p.negative ? `<span class="sentiment-pill negative">${p.negative}-</span>` : ''}
+              </div>
+              ${p.firstQuote ? `<blockquote class="top-place-quote">"${escapeHtml(p.firstQuote.slice(0, 160))}${p.firstQuote.length > 160 ? '…' : ''}"</blockquote>` : ''}
+              <div class="top-place-foot">
+                ${p.firstCreator ? `<span class="ink-mute">— ${escapeHtml(p.firstCreator)}</span>` : ''}
+                <a href="https://www.google.com/maps/search/${encodeURIComponent(p.name + (p.city ? ' ' + p.city : ''))}" target="_blank" rel="noopener">Map ↗</a>
+              </div>
+              <div class="top-place-ta" data-ta-place="${escapeHtml(p.name)}" data-ta-city="${escapeHtml(p.city || '')}"></div>
+            </article>
+          `).join('')}
+        </div>`;
+      // Async TripAdvisor fetch for each — uses YATRA_TRIP_DEFAULTS for geo filter.
+      ranked.forEach(async (p) => {
+        const slot = document.querySelector(`.top-place-ta[data-ta-place="${CSS.escape(p.name)}"]`);
+        if (!slot || !YatraData.TripAdvisor) return;
+        const defaults = window.YATRA_TRIP_DEFAULTS || {};
+        const cityEntry = (defaults.cities || []).find((c) => c.name === p.city) || (defaults.cities || [])[0] || {};
+        const ta = await YatraData.TripAdvisor.search({
+          query: p.name,
+          type: 'attraction',
+          country: defaults.country,
+          city: cityEntry.name,
+          lat: cityEntry.lat,
+          lon: cityEntry.lon,
+        });
+        if (!ta || !ta.rating) return;
+        slot.innerHTML = `
+          <a class="tripadvisor-rating-pill" href="${ta.url}" target="_blank" rel="noopener" title="${escapeHtml(ta.ranking || '')}">
+            TripAdvisor ★ ${escapeHtml(ta.rating)}${ta.review_count ? ' · ' + Number(ta.review_count).toLocaleString('en-IN') : ''}
+          </a>`;
+      });
+    }
+    function pickQuote(item) {
+      // GUARDRAIL: only surface excerpts that mention a specific place.
+      // No more raw transcript fallbacks — those produced "(no excerpt)" or
+      // off-topic Hindi/Turkey excerpts.
+      const place = (item.places_mentioned || [])[0];
+      if (place && place.quote && place.quote.length >= 30) {
+        return { quote: place.quote, sentiment: place.sentiment, place: place.name, lat: place.lat, lon: place.lon };
+      }
+      return null;
+    }
+    function escapeHtml(s) {
+      return String(s || '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+    const cards = merged
+      .map((it) => ({ it, q: pickQuote(it) }))
+      .filter((x) => x.q)
+      .slice(0, 8);
+    if (!cards.length) {
+      grid.innerHTML = '<div class="influencer-empty">No place-specific creator excerpts cached yet for these cities. The pipeline drops items without recognised place mentions to keep this section trustworthy. Re-run <code>scripts/influencers/corpus_builder.py --for-destination Tokyo --whisper-fallback</code>.</div>';
+      return;
+    }
+    grid.innerHTML = cards.map(({ it, q }) => {
+      const sentClass = q.sentiment === 'positive' ? 'positive' : q.sentiment === 'negative' ? 'negative' : 'neutral';
+      const placeNote = q.place ? `· <strong>${escapeHtml(q.place)}</strong>` : '';
+      const datePart = it.published ? new Date(it.published).toLocaleDateString('en-IN', { month: 'short', year: 'numeric' }) : '';
+      const hasCoords = typeof q.lat === 'number' && typeof q.lon === 'number';
+      const cardAttrs = hasCoords
+        ? ` data-map-scope="creators" data-lat="${q.lat}" data-lon="${q.lon}" data-name="${escapeHtml(q.place || '')}" tabindex="0" role="button"`
+        : '';
+      return `
+        <article class="influencer-card"${cardAttrs}>
+          <div class="creator-row">
+            <span class="creator-badge">${escapeHtml(it.creator || 'Unknown')}</span>
+            <span class="creator-source">${escapeHtml(it.source || '')}</span>
+          </div>
+          <blockquote class="influencer-quote compact">${escapeHtml(q.quote)}</blockquote>
+          <div class="influencer-meta">
+            <span class="sentiment-pill ${sentClass}">${q.sentiment}</span>
+            <span>${escapeHtml(it._city)}</span>${placeNote ? ' ' + placeNote : ''}
+            ${datePart ? `<span>· ${datePart}</span>` : ''}
+            ${it.url ? `<a href="${it.url}" target="_blank" rel="noopener">Source ↗</a>` : ''}
+          </div>
+        </article>`;
+    }).join('');
+    if (window.TripMap && typeof window.TripMap.refresh === 'function') window.TripMap.refresh();
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!--
+Email template for Travel Deals Finder.
+Placeholders use {{double_braces}} — replace at send time.
+Keep inline styles only (most email clients strip <style>).
+-->
+<div style="font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:#1f2937; max-width:760px; margin:0 auto;">
+
+  <h2 style="margin:0 0 4px 0; color:#0f766e;">✈️ Travel Deals — {{report_month}}</h2>
+  <p style="margin:0 0 16px 0; color:#475569; font-size:14px;">
+    Top picks from <strong>Bangalore (BLR)</strong> for 1 adult · 5-star Marriott / Hilton properties · ranked by total cost.
+  </p>
+
+  <p style="margin:0 0 12px 0; font-size:14px;">
+    Analyzed <strong>{{n_destinations}}</strong> destinations across <strong>{{n_combos}}</strong> date combinations.
+    Full breakdown in the
+    <a href="{{tracker_url}}" style="color:#0d9488; font-weight:600;">Travel Deals Tracker</a>
+    → see the <strong>{{report_month}}</strong> tab.
+  </p>
+
+  <table style="border-collapse:collapse; width:100%; font-size:13px; margin-top:8px;">
+    <thead>
+      <tr style="background:#0f766e; color:#fff; text-align:left;">
+        <th style="padding:8px 10px;">Destination</th>
+        <th style="padding:8px 10px;">Dates</th>
+        <th style="padding:8px 10px;">Nights</th>
+        <th style="padding:8px 10px;">Flight (cheapest)</th>
+        <th style="padding:8px 10px;">Hotel (5★)</th>
+        <th style="padding:8px 10px;">Total</th>
+        <th style="padding:8px 10px;">Links</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Repeat this row per top combo -->
+      {{#each rows}}
+      <tr style="border-bottom:1px solid #e5e7eb;">
+        <td style="padding:8px 10px; font-weight:600;">{{destination}}</td>
+        <td style="padding:8px 10px;">{{depart}} → {{return}}</td>
+        <td style="padding:8px 10px; text-align:center;">{{nights}}</td>
+        <td style="padding:8px 10px;">₹{{flight_cost}} <span style="color:#64748b;">({{flight_class}})</span></td>
+        <td style="padding:8px 10px;">{{hotel_property}}<br><span style="color:#64748b; font-size:12px;">{{hotel_brand}} · ₹{{hotel_per_night}}/night</span></td>
+        <td style="padding:8px 10px; font-weight:700; color:#0f766e;">₹{{total_cost}}</td>
+        <td style="padding:8px 10px;">
+          <a href="{{flight_link}}" style="color:#0d9488;">Flight</a> ·
+          <a href="{{hotel_link}}" style="color:#0d9488;">Hotel</a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  <p style="margin-top:18px; color:#64748b; font-size:12px;">
+    All hotels are Marriott Bonvoy or Hilton Honors eligible — book direct to earn membership reward points.
+    Prices are estimates from public listings; click through for live fares and final booking.
+  </p>
+
+  <hr style="border:none; border-top:1px solid #e5e7eb; margin:18px 0;">
+  <p style="font-size:12px; color:#94a3b8; margin:0;">
+    Generated automatically by your Travel Planner agent. Adjust destinations or dates by replying to this thread.
+  </p>
+</div>

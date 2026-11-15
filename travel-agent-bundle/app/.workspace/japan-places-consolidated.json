@@ -1,0 +1,3214 @@
+[
+  {
+    "name": "Shibuya Sky",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 15,
+    "timing_hints": [
+      "Pre-book 2 weeks in advance",
+      "Visit at sunset/night for views; book in advance",
+      "book in advance; sunset slots popular",
+      "book tickets online in advance, sunset slots sell out",
+      "booking recommended",
+      "pre-book 2-4 weeks in advance",
+      "pre-book in advance",
+      "pre-book ~1 week in advance"
+    ],
+    "notes": [
+      "Activity #1 on pre-book list",
+      "Day 1 - open-air observation deck on Shibuya Scramble Square, great sunset views",
+      "List item 1"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7630.jpg",
+      "IMG_7648.jpg",
+      "IMG_7670.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@japantravelbasics",
+      "@mahirslens",
+      "@mahirslens (Klook code: MAHIRSLENS)",
+      "@simranrluthria",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "TeamLab Planets",
+    "kind": "activity",
+    "city": "Tokyo",
+    "mentions": 12,
+    "timing_hints": [
+      "Book tickets in advance; located in Toyosu",
+      "Pre-book 2-3 months in advance",
+      "booking recommended",
+      "pre-book 2-4 weeks in advance",
+      "pre-book in advance",
+      "pre-book ~1 week in advance"
+    ],
+    "notes": [
+      "Immersive digital art museum (Toyosu); great for kids",
+      "Immersive digital art museum - kid-friendly, books out far ahead",
+      "Immersive digital art museum in Odaiba"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7671.jpg",
+      "IMG_7673.jpg",
+      "IMG_7675.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens",
+      "@mahirslens (Klook code: MAHIRSLENS)",
+      "@simranrluthria",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Ghibli Museum",
+    "kind": "sight",
+    "city": "Mitaka (Tokyo)",
+    "mentions": 9,
+    "timing_hints": [
+      "Pre-book 1 month in advance",
+      "advance tickets required",
+      "pre-book 2-4 weeks in advance",
+      "pre-book in advance; tickets via Lawson lottery",
+      "pre-book ~1 week in advance",
+      "pre-book ~1 week in advance (tickets release earlier)"
+    ],
+    "notes": [
+      "Klook code MAHIRSLENS available",
+      "List item 3",
+      "Pre-book list item #3"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7673.jpg",
+      "IMG_7675.jpg",
+      "IMG_7676.jpg",
+      "IMG_7677.jpg"
+    ],
+    "handles": [
+      "@mahirslens",
+      "@mahirslens (Klook code: MAHIRSLENS)",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Kamakura",
+    "kind": "neighborhood",
+    "city": "Kamakura",
+    "mentions": 9,
+    "timing_hints": [
+      "Day 5 day trip option",
+      "Day trip",
+      "Day trip option",
+      "day trip from Tokyo"
+    ],
+    "notes": [
+      "Caption says 'Kamakura' but image shows Mt Fuji with Chureito Pagoda (Fujiyoshida) - likely creator confusion; both are Tokyo day-trip options",
+      "Coastal historic town with Great Buddha",
+      "Day-trip from Tokyo - Great Buddha"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7626.jpg",
+      "IMG_7631.jpg",
+      "IMG_7636.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@japantravelbasics",
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Akihabara",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 7,
+    "timing_hints": [
+      "Day 2",
+      "Day 2 (evening)"
+    ],
+    "notes": [
+      "Anime/electronics district",
+      "Day 2 itinerary - electronics, anime, gaming district",
+      "Day 2 itinerary destination"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7626.jpg",
+      "IMG_7631.jpg",
+      "IMG_7632.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Asakusa",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 7,
+    "timing_hints": [
+      "Day 2"
+    ],
+    "notes": [
+      "Day 2 - kimono rental experience shown in image",
+      "Day 2 itinerary - traditional Tokyo with Senso-ji temple",
+      "Day 2 pairing in tier list"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7626.jpg",
+      "IMG_7631.jpg",
+      "IMG_7632.jpg",
+      "IMG_7633.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Mount Fuji Day Tour",
+    "kind": "activity",
+    "city": "Mt Fuji area",
+    "mentions": 7,
+    "timing_hints": [
+      "Pre-book 1 week in advance",
+      "pre-book 2-4 weeks in advance",
+      "pre-book in advance",
+      "pre-book ~1 week in advance"
+    ],
+    "notes": [
+      "Day tour to Mt Fuji area - bookable closer to date",
+      "Day trip from Tokyo to Fuji 5 lakes / Hakone area",
+      "Klook code MAHIRSLENS available"
+    ],
+    "source_files": [
+      "IMG_7675.jpg",
+      "IMG_7676.jpg",
+      "IMG_7677.jpg",
+      "IMG_7679.jpg",
+      "IMG_7681.jpg"
+    ],
+    "handles": [
+      "@mahirslens",
+      "@mahirslens (Klook code: MAHIRSLENS)"
+    ]
+  },
+  {
+    "name": "Shinjuku",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 7,
+    "timing_hints": [
+      "Day 4",
+      "Day trip option",
+      "evening for neon/nightlife"
+    ],
+    "notes": [
+      "Day 4 of Tokyo itinerary tier list",
+      "Iconic neon-lit Shinjuku night scene with giant 3D cat billboard (Cross Shinjuku Vision); part of 5-night Tokyo plan",
+      "Listed in day-trip carousel at bottom"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7626.jpg",
+      "IMG_7631.jpg",
+      "IMG_7636.jpg",
+      "IMG_7638.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Hakone",
+    "kind": "neighborhood",
+    "city": "Hakone",
+    "mentions": 6,
+    "timing_hints": [
+      "Day 5 day trip option",
+      "Day trip",
+      "Day trip option"
+    ],
+    "notes": [
+      "Day-trip from Tokyo",
+      "Day-trip option from Tokyo - hot springs and Mt Fuji views",
+      "Day-trip strip option"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7626.jpg",
+      "IMG_7636.jpg",
+      "IMG_7638.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Katsuoji Temple",
+    "kind": "sight",
+    "city": "Osaka",
+    "mentions": 6,
+    "timing_hints": [
+      "About 2 hours from Osaka"
+    ],
+    "notes": [
+      "Hidden gem near Osaka famous for thousands of Daruma dolls (luck/perseverance), kid-friendly novelty",
+      "Legendary wind-wishing pagoda/temple with rows of small Daruma dolls along stone path",
+      "Mountain temple with koi pond, cherry blossoms; offbeat place near Osaka"
+    ],
+    "source_files": [
+      "IMG_7668.jpg",
+      "IMG_7705.jpg",
+      "IMG_7706.jpg",
+      "IMG_7707.jpg",
+      "IMG_7710.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@travelwithkashika"
+    ]
+  },
+  {
+    "name": "Shibuya",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 6,
+    "timing_hints": [
+      "Day 1",
+      "Day trip option"
+    ],
+    "notes": [
+      "Bottom thumbnail re-listing Shibuya as alt option",
+      "Day 1 itinerary destination",
+      "Day 1 of a 5-day Tokyo itinerary tier list"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7626.jpg",
+      "IMG_7628.jpg",
+      "IMG_7636.jpg",
+      "IMG_7638.jpg"
+    ],
+    "handles": [
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Ginza",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 5,
+    "timing_hints": [
+      "Day 3"
+    ],
+    "notes": [
+      "Day 3 pairing in tier list",
+      "Listed in day-trip carousel - upscale shopping district",
+      "Tokyo must-see"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7631.jpg",
+      "IMG_7635.jpg",
+      "IMG_7636.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Hozugawa River Boat",
+    "kind": "activity",
+    "city": "Kyoto (Arashiyama/Kameoka)",
+    "mentions": 5,
+    "timing_hints": [
+      "pre-book 2-4 weeks in advance",
+      "pre-book in advance",
+      "pre-book ~1 week in advance"
+    ],
+    "notes": [
+      "List item 6",
+      "Photo of wooden boat with passengers and boatmen on rapids",
+      "Traditional wooden boat ride down the Hozu river to Arashiyama"
+    ],
+    "source_files": [
+      "IMG_7679.jpg",
+      "IMG_7680.jpg",
+      "IMG_7681.jpg",
+      "IMG_7683.jpg",
+      "IMG_7684.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Nikko",
+    "kind": "neighborhood",
+    "city": "Nikko",
+    "mentions": 5,
+    "timing_hints": [
+      "Day 5 day trip option",
+      "Day trip",
+      "Day trip option",
+      "day trip from Tokyo; allow full day"
+    ],
+    "notes": [
+      "Day-trip from Tokyo",
+      "Day-trip strip option (autumn foliage)",
+      "Shinkyo Bridge over Daiya River - sacred red bridge at entrance to Nikko shrines/temples; lush green forest setting"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7636.jpg",
+      "IMG_7638.jpg",
+      "IMG_7645.jpg",
+      "IMG_7653.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Harajuku",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 4,
+    "timing_hints": [
+      "Day 1"
+    ],
+    "notes": [
+      "Day 1 itinerary destination",
+      "Day 1 of itinerary",
+      "Pop-culture/youth fashion district paired with Shibuya"
+    ],
+    "source_files": [
+      "IMG_7626.jpg",
+      "IMG_7628.jpg",
+      "IMG_7636.jpg",
+      "IMG_7716.jpg"
+    ],
+    "handles": [
+      "@mahirslens",
+      "@simranrluthria"
+    ]
+  },
+  {
+    "name": "Nike Mind (Nike flagship/concept store)",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 4,
+    "timing_hints": [],
+    "notes": [
+      "Close-up of Nike Mind shoes with red 'Nike Mind Science Department' insoles; Tokyo purchase",
+      "Close-up of Nike Mind sole branding",
+      "Hundreds of pressure-point nodes on the sole; designed for wellness/walking comfort"
+    ],
+    "source_files": [
+      "IMG_7692.jpg",
+      "IMG_7693.jpg",
+      "IMG_7694.jpg",
+      "IMG_7695.jpg"
+    ],
+    "handles": [
+      "@aditiaryawellness"
+    ]
+  },
+  {
+    "name": "Odaiba",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 4,
+    "timing_hints": [
+      "Day 3"
+    ],
+    "notes": [
+      "Bayfront entertainment area paired with Ginza",
+      "Bayside entertainment district",
+      "Listed in day-trip carousel - waterfront entertainment"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7626.jpg",
+      "IMG_7631.jpg",
+      "IMG_7636.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Sagano Romantic Train",
+    "kind": "activity",
+    "city": "Kyoto (Arashiyama)",
+    "mentions": 4,
+    "timing_hints": [
+      "pre-book 2-4 weeks in advance",
+      "pre-book ~1 week in advance"
+    ],
+    "notes": [
+      "List item 5",
+      "Same list, item 5"
+    ],
+    "source_files": [
+      "IMG_7679.jpg",
+      "IMG_7681.jpg",
+      "IMG_7683.jpg",
+      "IMG_7684.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Atago Jinja Shrine",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 3,
+    "timing_hints": [],
+    "notes": [
+      "Omikuji (paper fortunes) tied to ropes near torii - in the Toranomon Hills area",
+      "Serene shrine setting with red gate at top of stairs - great quick stop near Toranomon Hills",
+      "Tokyo hidden gem shrine with steep red torii gate stairs (Otoko-zaka, Stairs of Success) in Toranomon area"
+    ],
+    "source_files": [
+      "IMG_7701.jpg",
+      "IMG_7702.jpg",
+      "IMG_7704.jpg"
+    ],
+    "handles": [
+      "@mcstops"
+    ]
+  },
+  {
+    "name": "Kawaguchiko",
+    "kind": "neighborhood",
+    "city": "Kawaguchiko",
+    "mentions": 3,
+    "timing_hints": [
+      "Day 5 day trip option",
+      "Day trip",
+      "Day trip option"
+    ],
+    "notes": [
+      "Day-trip strip option",
+      "Fuji Five Lakes - classic Mt. Fuji reflection view",
+      "Lake at base of Mt. Fuji day trip"
+    ],
+    "source_files": [
+      "IMG_7636.jpg",
+      "IMG_7638.jpg",
+      "IMG_7645.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Nara",
+    "kind": "sight",
+    "city": "Nara",
+    "mentions": 3,
+    "timing_hints": [
+      "easy day trip from Kyoto (~45 min)"
+    ],
+    "notes": [
+      "Day-trip from Kyoto - deer park",
+      "Nara Park - feeding the famous free-roaming deer; great with kids",
+      "Pagoda and traditional temple buildings in forested setting near Ikoma area"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7659.jpg",
+      "IMG_7666.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Omoide Yokocho",
+    "kind": "food",
+    "city": "Tokyo",
+    "mentions": 3,
+    "timing_hints": [
+      "Day 4 (dinner)",
+      "Evening"
+    ],
+    "notes": [
+      "Cherry-blossom-decorated izakaya alley with red stools; reel headline '5 nights in Tokyo' then plan Osaka",
+      "Memory Lane / Piss Alley izakaya street",
+      "Narrow lantern-lit alley of yakitori/izakaya stalls in Shinjuku ('Memory Lane'); not very veg-friendly but atmospheric"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7643.jpg",
+      "IMG_7646.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@japantravelbasics",
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Sensoji Temple",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 3,
+    "timing_hints": [
+      "Morning (avoid crowds)",
+      "go early morning to avoid crowds"
+    ],
+    "notes": [
+      "Day 2 - Tokyo's oldest temple in Asakusa; pagoda visible in image",
+      "Iconic Asakusa temple",
+      "Iconic Asakusa temple with giant red lantern at Kaminarimon gate; flagged as a must-see iconic spot"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7632.jpg",
+      "IMG_7647.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "@japantravelbasics",
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Shibuya Crossing",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 3,
+    "timing_hints": [
+      "Best at night for neon signage",
+      "best at night for neon lights"
+    ],
+    "notes": [
+      "Day 1 - world's busiest pedestrian scramble, neon-lit at night",
+      "Iconic Shibuya scramble crossing with Sunpark / neon billboards",
+      "World famous scramble crossing"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7630.jpg",
+      "IMG_7713.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens",
+      "@simranrluthria"
+    ]
+  },
+  {
+    "name": "Shinsekai",
+    "kind": "neighborhood",
+    "city": "Osaka",
+    "mentions": 3,
+    "timing_hints": [],
+    "notes": [
+      "Old downtown area",
+      "Retro neon-lit shopping/food district around Tsutenkaku Tower",
+      "Retro shopping/food street with Tsutenkaku Tower view, crowded daytime scene"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7661.jpg",
+      "IMG_7663.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Tokyo Skytree",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 3,
+    "timing_hints": [
+      "book tickets online to skip lines",
+      "booking recommended"
+    ],
+    "notes": [
+      "Day 2 - tallest tower in Japan, observation decks, near Asakusa",
+      "Day 2 Asakusa/Ueno itinerary",
+      "Marked on the ward map"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7627.jpg",
+      "IMG_7632.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Tokyo Tower",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 3,
+    "timing_hints": [
+      "Evening"
+    ],
+    "notes": [
+      "Iconic red tower",
+      "Marked on the ward map",
+      "Visible across the bay from Odaiba"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7627.jpg",
+      "IMG_7640.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Tsutenkaku Tower",
+    "kind": "sight",
+    "city": "Osaka",
+    "mentions": 3,
+    "timing_hints": [],
+    "notes": [
+      "Iconic tower in Shinsekai district, visible above bustling shopping street",
+      "Landmark tower at heart of Shinsekai",
+      "Shinsekai landmark"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7661.jpg",
+      "IMG_7663.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Universal Studios Japan",
+    "kind": "activity",
+    "city": "Osaka",
+    "mentions": 3,
+    "timing_hints": [
+      "buy Express Pass in advance to skip lines",
+      "pre-book ~1 week in advance"
+    ],
+    "notes": [
+      "#3 in Japan theme parks list; major theme park in Osaka",
+      "List item 7",
+      "Theme park, Super Nintendo World; very kid-friendly for 6 & 9"
+    ],
+    "source_files": [
+      "IMG_7616.jpg",
+      "IMG_7683.jpg",
+      "IMG_7684.jpg"
+    ],
+    "handles": [
+      "@mahirslens",
+      "@musyatravel"
+    ]
+  },
+  {
+    "name": "7-Eleven (Seven Cafe) Japan",
+    "kind": "food",
+    "city": "Tokyo",
+    "mentions": 2,
+    "timing_hints": [],
+    "notes": [
+      "7-Eleven Seven Cafe DIY drink hack - jelly/syrup poured into cup with ice, very vegetarian-friendly konbini option",
+      "7-Eleven Seven Cafe drink - tastes amazing, cheap konbini snack idea kids may enjoy"
+    ],
+    "source_files": [
+      "IMG_7699.jpg",
+      "IMG_7700.jpg"
+    ],
+    "handles": [
+      "@jenniesuk"
+    ]
+  },
+  {
+    "name": "Dotonbori",
+    "kind": "food",
+    "city": "Osaka",
+    "mentions": 2,
+    "timing_hints": [],
+    "notes": [
+      "Famous Osaka food/nightlife district with giant gyoza and Osaka Ohsho signage",
+      "Osaka food/nightlife street"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7662.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Ikebukuro",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 2,
+    "timing_hints": [],
+    "notes": [
+      "Marked on the ward map",
+      "Tokyo must-see"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Kabukicho",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 2,
+    "timing_hints": [
+      "Day 4 (evening)"
+    ],
+    "notes": [
+      "Shinjuku entertainment district",
+      "Shinjuku entertainment district with neon signage; cat 3D billboard at Cross Shinjuku Vision visible"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7642.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Loft Shibuya",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 2,
+    "timing_hints": [
+      "11:00-21:00; 7 floors"
+    ],
+    "notes": [
+      "6 floors of aesthetic stationery, planners, and lifestyle goods",
+      "Cool stationery, cosmetics, unique Japanese gifts"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg",
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple",
+      "@japan_trip_guide_"
+    ]
+  },
+  {
+    "name": "Mt. Fuji",
+    "kind": "sight",
+    "city": "Hakone",
+    "mentions": 2,
+    "timing_hints": [
+      "weather/clouds permitting"
+    ],
+    "notes": [
+      "Day-trip from Tokyo",
+      "Visible in carousel thumbnail - iconic Japan view"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7631.jpg"
+    ],
+    "handles": [
+      "@mahirslens",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Sagano Romantic Train (Sagano Scenic Railway)",
+    "kind": "activity",
+    "city": "Kyoto (Arashiyama)",
+    "mentions": 2,
+    "timing_hints": [
+      "pre-book in advance"
+    ],
+    "notes": [
+      "Open-window scenic train through Hozugawa gorge",
+      "Visual of the scenic train in autumn foliage along the river"
+    ],
+    "source_files": [
+      "IMG_7677.jpg",
+      "IMG_7678.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Takeshita Street",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 2,
+    "timing_hints": [],
+    "notes": [
+      "Day 1 - main shopping street in Harajuku, kawaii fashion and street food, very crowded",
+      "Harajuku shopping street"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg",
+      "IMG_7628.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics",
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Tokyo DisneySea",
+    "kind": "activity",
+    "city": "Tokyo",
+    "mentions": 2,
+    "timing_hints": [
+      "advance tickets recommended"
+    ],
+    "notes": [
+      "Recommended for older kids and adults; nautical/exploration-themed Disney park unique to Tokyo",
+      "Tokyo highlight"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg",
+      "IMG_7614.jpg"
+    ],
+    "handles": [
+      "@musyatravel",
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Uniqlo Ginza Flagship",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 2,
+    "timing_hints": [
+      "11:00-21:00; 12 floors"
+    ],
+    "notes": [
+      "12 floors + Uniqlo Coffee; high-quality basics and Japan-exclusive collabs",
+      "Essential life wear and high-quality basics"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg",
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple",
+      "@japan_trip_guide_"
+    ]
+  },
+  {
+    "name": "7-Eleven",
+    "kind": "food",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Konbini fluffy pancake sandwich; creator visited 7/11 every single day in Tokyo"
+    ],
+    "source_files": [
+      "IMG_7712.jpg"
+    ],
+    "handles": [
+      "@simranrluthria"
+    ]
+  },
+  {
+    "name": "7-Eleven Japan",
+    "kind": "food",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Konbini must-try foods at 7-Eleven: Tamago Sando, Onigiri, NanaChiki Fried Chicken, Ohayo Brulee Ice Cream, Japanese Bento Meals, Nikuman pork bun, Fruit Sandwiches, Fruit Smoothie, Melon Pan, Matcha Desserts; items mostly Y100-Y600"
+    ],
+    "source_files": [
+      "974b3027-af21-4823-b5f8-c5741006d78f.jpg"
+    ],
+    "handles": [
+      "@wanderinjapan1"
+    ]
+  },
+  {
+    "name": "ABC-Mart Grand Stage (Shinjuku or Harajuku)",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Japan-exclusive sneakers (Nike, Adidas, NB)"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple"
+    ]
+  },
+  {
+    "name": "Abeno Harukas",
+    "kind": "sight",
+    "city": "Osaka",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tallest building observatory"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Angel Harajuku Crepe",
+    "kind": "food",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Iconic Harajuku crepe stand on Takeshita Street - photogenic, kid-friendly (vegetarian options available)"
+    ],
+    "source_files": [
+      "IMG_7629.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Animate Flagship Ikebukuro",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Anime/manga megastore"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Arashiyama",
+    "kind": "sight",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Bamboo grove area"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Atago Jinja Shrine - Ema (wishing plaques)",
+    "kind": "activity",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Ema wooden plaques with wishes; activity for kids - write a wish (handwritten note mentions Tokyu Corporation interview, Shibuya 2026)"
+    ],
+    "source_files": [
+      "IMG_7703.jpg"
+    ],
+    "handles": [
+      "@mcstops"
+    ]
+  },
+  {
+    "name": "Azabudai Hills",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "New mixed-use complex"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Bamboo Grove",
+    "kind": "sight",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Arashiyama bamboo path"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Cat Street",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Harajuku/Shibuya area"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Chiyoda-ku",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Imperial Palace, Akihabara"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Chocola BB vitamin drink",
+    "kind": "food",
+    "city": "unknown",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Vitamin drink for active days"
+    ],
+    "source_files": [
+      "IMG_7698.jpg"
+    ],
+    "handles": [
+      "@jenniesuk"
+    ]
+  },
+  {
+    "name": "Chureito Pagoda / Mt Fuji viewpoint",
+    "kind": "sight",
+    "city": "Fujiyoshida",
+    "mentions": 1,
+    "timing_hints": [
+      "clear-weather mornings best for Fuji view"
+    ],
+    "notes": [
+      "Classic five-storey pagoda framing Mt Fuji"
+    ],
+    "source_files": [
+      "IMG_7651.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Cross Shinjuku Vision (3D Cat Billboard)",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Day 4"
+    ],
+    "notes": [
+      "Famous 3D calico cat digital billboard at Shinjuku east exit"
+    ],
+    "source_files": [
+      "IMG_7642.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Daikanyama",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Upscale neighborhood"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Day trip from Kyoto",
+    "kind": "transport",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [
+      "leave one day open for a day trip"
+    ],
+    "notes": [
+      "Train cockpit view - reel recommends keeping one day for a Kyoto-area day trip (Nara or Ine)"
+    ],
+    "source_files": [
+      "IMG_7658.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Day trips from Tokyo (Shinkansen / limited express)",
+    "kind": "transport",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Reel suggests basing in Tokyo for 5 nights and taking a couple of day trips; train view toward snowy Mt Fuji area"
+    ],
+    "source_files": [
+      "IMG_7650.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Don Quijote (Donki) Shibuya Mega Store",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "open 24/7, 7 floors"
+    ],
+    "notes": [
+      "Famous for viral snacks, KitKats, and skincare"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple"
+    ]
+  },
+  {
+    "name": "Don Quijote (Mega Donki)",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Open late / 24-7 at many locations"
+    ],
+    "notes": [
+      "Famous discount mega-store; souvenirs, snacks, electronics, cosmetics"
+    ],
+    "source_files": [
+      "IMG_7715.jpg"
+    ],
+    "handles": [
+      "@simranrluthria"
+    ]
+  },
+  {
+    "name": "Don Quijote (Shinjuku flagship)",
+    "kind": "shop",
+    "city": "Tokyo (Shinjuku)",
+    "mentions": 1,
+    "timing_hints": [
+      "Open 24/7 or very late; many floors"
+    ],
+    "notes": [
+      "Vast discount treasures and late-night shopping fun"
+    ],
+    "source_files": [
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@japan_trip_guide_"
+    ]
+  },
+  {
+    "name": "Enoden Line",
+    "kind": "transport",
+    "city": "Kamakura",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Scenic local train along the coast between Kamakura and Fujisawa"
+    ],
+    "source_files": [
+      "IMG_7652.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "FamilyMart",
+    "kind": "food",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Konbini must-try foods: Famichiki fried chicken, Yakitori skewers, Oden, Tuna Mayo Onigiri, Tamago Sando, Fried Chicken & Tartar Bento, Melonpan, Souffle Pudding, Choco Monaka Jumbo, Milk Custard Cream Puff"
+    ],
+    "source_files": [
+      "81b0f910-092d-4ee9-ada8-838691caeb01.jpg"
+    ],
+    "handles": [
+      "@wanderinjapan1"
+    ]
+  },
+  {
+    "name": "Fibe-Mini (Otsuka digestion fiber drink)",
+    "kind": "tip",
+    "city": "Tokyo (Japan-wide convenience stores)",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Japanese fiber drink found at convenience stores; creator says it 'does not work' as a digestion fix"
+    ],
+    "source_files": [
+      "IMG_7697.jpg"
+    ],
+    "handles": [
+      "@jenniesuk"
+    ]
+  },
+  {
+    "name": "Fibe-Mini digestion fiber drink",
+    "kind": "food",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Japanese convenience store digestion/fiber drinks recommended for daily consumption"
+    ],
+    "source_files": [
+      "IMG_7698.jpg"
+    ],
+    "handles": [
+      "@jenniesuk"
+    ]
+  },
+  {
+    "name": "Fuji-Q Highland",
+    "kind": "activity",
+    "city": "Yamanashi",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "#4 in Japan theme parks list; thrill-ride park near Mt Fuji (most rides have height limits, may not suit a 6-yr-old)"
+    ],
+    "source_files": [
+      "IMG_7617.jpg"
+    ],
+    "handles": [
+      "@musyatravel"
+    ]
+  },
+  {
+    "name": "Fushimi Inari Shrine",
+    "kind": "sight",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Iconic torii path"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Fushimi Inari Taisha",
+    "kind": "sight",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [
+      "go very early (sunrise) or after dark to avoid crowds; free"
+    ],
+    "notes": [
+      "Famous shrine with thousands of vermillion torii gates winding up Mt Inari"
+    ],
+    "source_files": [
+      "IMG_7655.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "GU",
+    "kind": "shop",
+    "city": "Japan",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Trendy low-price fashion; wide-leg pants under 2000 yen"
+    ],
+    "source_files": [
+      "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg"
+    ],
+    "handles": [
+      "#JapanTips (Wanderfly / Japan Tips)"
+    ]
+  },
+  {
+    "name": "GU (Ginza)",
+    "kind": "shop",
+    "city": "Tokyo (Ginza)",
+    "mentions": 1,
+    "timing_hints": [
+      "11:00-21:00; 5 floors"
+    ],
+    "notes": [
+      "Trendy affordable Japanese fashion for everyday wear"
+    ],
+    "source_files": [
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@japan_trip_guide_"
+    ]
+  },
+  {
+    "name": "GU (Shibuya or Ginza)",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Trendy ultra-affordable fashion, cheaper than Uniqlo"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple"
+    ]
+  },
+  {
+    "name": "Ghibli Park",
+    "kind": "activity",
+    "city": "Nagoya",
+    "mentions": 1,
+    "timing_hints": [
+      "tickets typically need advance booking"
+    ],
+    "notes": [
+      "#2 in a Japan theme parks list; Studio Ghibli theme park near Nagoya"
+    ],
+    "source_files": [
+      "IMG_7615.jpg"
+    ],
+    "handles": [
+      "@musyatravel"
+    ]
+  },
+  {
+    "name": "Ginkaku-ji Temple",
+    "kind": "sight",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Silver Pavilion"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Gion District",
+    "kind": "neighborhood",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Geisha district"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Golden Gai Bars",
+    "kind": "food",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tiny bar alleys in Shinjuku"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Gundam Statue (Odaiba)",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tokyo highlight"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Hachiko Statue",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Iconic dog statue at Shibuya station"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Hanayashiki",
+    "kind": "activity",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "#5 in Japan theme parks list; Japan's oldest amusement park, in Asakusa - small, retro, kid-friendly"
+    ],
+    "source_files": [
+      "IMG_7618.jpg"
+    ],
+    "handles": [
+      "@musyatravel"
+    ]
+  },
+  {
+    "name": "Hands (Shibuya flagship)",
+    "kind": "shop",
+    "city": "Tokyo (Shibuya)",
+    "mentions": 1,
+    "timing_hints": [
+      "10:00-21:00; 8 floors"
+    ],
+    "notes": [
+      "Comprehensive DIY, creative supplies, practical home goods"
+    ],
+    "source_files": [
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@japan_trip_guide_"
+    ]
+  },
+  {
+    "name": "Hands Shibuya",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Massive multi-zone maze with home gadgets, DIY crafts, and stationery"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple"
+    ]
+  },
+  {
+    "name": "Haneda Airport",
+    "kind": "transport",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Closer airport to central Tokyo than Narita"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Heian Shrine",
+    "kind": "sight",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Kyoto must-see"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Higashiyama district",
+    "kind": "neighborhood",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [
+      "early morning or evening for atmosphere with fewer crowds"
+    ],
+    "notes": [
+      "Historic preserved streets with traditional machiya houses, pagoda (Yasaka/Hokan-ji) visible; great walking area"
+    ],
+    "source_files": [
+      "IMG_7657.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Hiroshima",
+    "kind": "sight",
+    "city": "Hiroshima",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day-trip from Kyoto"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Honeys",
+    "kind": "shop",
+    "city": "Japan",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Girly affordable womenswear; floral dresses under 3000 yen"
+    ],
+    "source_files": [
+      "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg"
+    ],
+    "handles": [
+      "#JapanTips (Wanderfly / Japan Tips)"
+    ]
+  },
+  {
+    "name": "Hozenji Yokocho",
+    "kind": "neighborhood",
+    "city": "Osaka",
+    "mentions": 1,
+    "timing_hints": [
+      "Evening - lanterns lit"
+    ],
+    "notes": [
+      "Atmospheric narrow stone-paved alley with red lanterns; described as 'some of the best' food spots"
+    ],
+    "source_files": [
+      "IMG_7664.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Ikoma Cable Car (Blacky/Mike-chan)",
+    "kind": "transport",
+    "city": "Nara",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Whimsical dog-shaped cable car on Mt Ikoma - kid-friendly photo op"
+    ],
+    "source_files": [
+      "IMG_7667.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Ikoma cable car area",
+    "kind": "transport",
+    "city": "Nara",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Mention of charming little Ikoma cable car (Mt Ikoma)"
+    ],
+    "source_files": [
+      "IMG_7666.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Imperial Palace",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Marked on the ward map"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Ine",
+    "kind": "neighborhood",
+    "city": "Ine (Kyoto Prefecture)",
+    "mentions": 1,
+    "timing_hints": [
+      "day trip from Kyoto; long but scenic - consider overnight"
+    ],
+    "notes": [
+      "Coastal fishing village on the Sea of Japan known for funaya (boathouses); overlooks Ine Bay"
+    ],
+    "source_files": [
+      "IMG_7660.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Japanese pharmacy / drugstore",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "consult pharmacist first"
+    ],
+    "notes": [
+      "Constipation guide listing OTC products: Strong Wakamoto, Daichi n Kampo Benpiyaku, Colac II, Kyobashu Mg Oxide"
+    ],
+    "source_files": [
+      "4823ee3b-6dbc-4d75-94f4-59c861ba89b1.jpg"
+    ],
+    "handles": [
+      "@itsgracechin"
+    ]
+  },
+  {
+    "name": "Kappabashi Street",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Kitchenware/knife district"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Katsuoji Temple - Daruma Mikuji fortune",
+    "kind": "activity",
+    "city": "Osaka",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Mikuji paper fortune scroll (with QR code) drawn at temple - hidden fortune inside small Daruma doll"
+    ],
+    "source_files": [
+      "IMG_7709.jpg"
+    ],
+    "handles": [
+      "@travelwithkashika"
+    ]
+  },
+  {
+    "name": "Katsuoji Temple - Daruma dolls",
+    "kind": "activity",
+    "city": "Osaka",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Thousands of red Daruma luck dolls displayed - photogenic and fun for kids"
+    ],
+    "source_files": [
+      "IMG_7708.jpg"
+    ],
+    "handles": [
+      "@travelwithkashika"
+    ]
+  },
+  {
+    "name": "Kawagoe",
+    "kind": "sight",
+    "city": "Kawagoe",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Edo-period little Edo day-trip"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Kawai Shrine",
+    "kind": "sight",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Beauty shrine within Tadasu no Mori (near Shimogamo Shrine); buy face-shaped ema, drink beauty water, get mirror charm with hidden message in sunlight. Address: 59 Shimogamoizumigawa-cho, Sakyo-ku, Kyoto 606-0807"
+    ],
+    "source_files": [
+      "b80fb8af-f182-4c38-90e0-77c736589001.jpg"
+    ],
+    "handles": [
+      "@daddy.xj and @ourhappyfinds"
+    ]
+  },
+  {
+    "name": "Kinkaku-ji Temple",
+    "kind": "sight",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Golden Pavilion"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Kiyomizu-dera",
+    "kind": "sight",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [
+      "early morning best; allow 1-2 hrs"
+    ],
+    "notes": [
+      "Hilltop wooden temple with sweeping Kyoto view; Kyoto Tower visible in background; kimono-rental photo spot"
+    ],
+    "source_files": [
+      "IMG_7656.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Kiyomizu-dera Temple",
+    "kind": "sight",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Hillside temple"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Koami Shrine (Koami Jinja)",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Money-washing shrine in Nihonbashi - wash your money here for good fortune; recommended for next Tokyo trip"
+    ],
+    "source_files": [
+      "IMG_7612.jpg"
+    ],
+    "handles": [
+      "@joyceee.tan / @travelwithjoyceee"
+    ]
+  },
+  {
+    "name": "Kobe",
+    "kind": "sight",
+    "city": "Kobe",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day-trip from Kyoto"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Kumargic Eye Cream (Hada Riki Medi)",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Must-buy item from Japan drugstore - under-eye concentrated treatment"
+    ],
+    "source_files": [
+      "93086c80-c0b7-4822-a200-1fb8ad9d4933.jpg"
+    ],
+    "handles": [
+      "@twoontheglobe"
+    ]
+  },
+  {
+    "name": "Kuromon Market",
+    "kind": "food",
+    "city": "Osaka",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Osaka must-see"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Kyoto",
+    "kind": "neighborhood",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [
+      "3 nights recommended"
+    ],
+    "notes": [
+      "Reel transitions to '3 nights in Kyoto' - cafe/ryokan-style interior with garden and temple view through glass"
+    ],
+    "source_files": [
+      "IMG_7654.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Kyoto Tower",
+    "kind": "sight",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Visible landmark from Kiyomizu-dera viewpoint"
+    ],
+    "source_files": [
+      "IMG_7656.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Lawson",
+    "kind": "food",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Konbini must-try foods at Lawson: Karaage-kun fried chicken, Uchi Cafe Premium Roll Cake, Tamago Sando, L-Chiki, Baschee Basque Cheesecake, Onigiri (tuna mayo / salmon), Nikuman pork bun, Hokkaido Kitaakari Beef Croquette, Premium Fruit Sandwich, Mochi Puyo"
+    ],
+    "source_files": [
+      "83668700-30ba-491a-949a-dcbdfcc9283f.jpg"
+    ],
+    "handles": [
+      "@wanderinjapan1"
+    ]
+  },
+  {
+    "name": "MUJI",
+    "kind": "shop",
+    "city": "Japan",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Minimalist comfy fashion; must-buy organic cotton T-shirts"
+    ],
+    "source_files": [
+      "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg"
+    ],
+    "handles": [
+      "#JapanTips (Wanderfly / Japan Tips)"
+    ]
+  },
+  {
+    "name": "MUJI (Yurakucho - now Ginza Flagship)",
+    "kind": "shop",
+    "city": "Tokyo (Yurakucho/Ginza)",
+    "mentions": 1,
+    "timing_hints": [
+      "Many floors"
+    ],
+    "notes": [
+      "Minimalist lifestyle items, travel gear, healthy snacks"
+    ],
+    "source_files": [
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@japan_trip_guide_"
+    ]
+  },
+  {
+    "name": "Mario Kart Street Go-Karting",
+    "kind": "activity",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Requires international driving permit (adults only - not for kids 6/9)"
+    ],
+    "notes": [
+      "Costume go-karting tour through Tokyo streets; adults only"
+    ],
+    "source_files": [
+      "IMG_7718.jpg"
+    ],
+    "handles": [
+      "@simranrluthria"
+    ]
+  },
+  {
+    "name": "Mega Don Quijote Shibuya",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day 1 stop"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Meiji Shrine",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day 1 Harajuku/Shibuya itinerary"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Mikami Shrine (Mikami Jinja)",
+    "kind": "sight",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [
+      "open 24 hours"
+    ],
+    "notes": [
+      "Shinto shrine for hair growth at 10 Sagaogurayama Tabuchiyamacho, Ukyo Ward, Kyoto 616-8394; rated 4.3"
+    ],
+    "source_files": [
+      "IMG_7610.jpg"
+    ],
+    "handles": [
+      "@ankit_purohit_japan / mikami-jinya-kyoto.com"
+    ]
+  },
+  {
+    "name": "Minato-ku",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Includes Roppongi, Tokyo Tower"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Minoh-kayano Station",
+    "kind": "transport",
+    "city": "Osaka",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Take Midosuji Line to last stop, then direct bus (800 yen one way) to reach Katsuoji"
+    ],
+    "source_files": [
+      "IMG_7711.jpg"
+    ],
+    "handles": [
+      "@travelwithkashika"
+    ]
+  },
+  {
+    "name": "Miyajima",
+    "kind": "sight",
+    "city": "Miyajima",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Floating torii day-trip"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Moffu",
+    "kind": "activity",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "reservation recommended"
+    ],
+    "notes": [
+      "Samoyed dog cafe - kid-friendly experience in Harajuku/Shibuya area"
+    ],
+    "source_files": [
+      "IMG_7629.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Mount Fuji",
+    "kind": "sight",
+    "city": "Hakone",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day-trip option from Tokyo"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Mt Takao",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Hiking day-trip option"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "NTT Docomo Yoyogi Building",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Visible spire on Shinjuku skyline backdrop"
+    ],
+    "source_files": [
+      "IMG_7641.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Nagoya",
+    "kind": "sight",
+    "city": "Nagoya",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day-trip from Kyoto"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Nakameguro",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Trendy canal-side area"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Nakamise Street",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Shopping street leading to Sensoji"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Nara (alternate side)",
+    "kind": "neighborhood",
+    "city": "Nara",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Torii gate with shimenawa rope at a shrine - 'visit a different side of Nara' (likely off-the-beaten-path shrine, possibly Mt Wakakusa or Tamukeyama area)"
+    ],
+    "source_files": [
+      "IMG_7665.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Nara Park deer",
+    "kind": "activity",
+    "city": "Nara",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Buy shika senbei crackers to feed the bowing deer"
+    ],
+    "source_files": [
+      "IMG_7659.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Nike Mind store / installation",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "In-store 'Wellness, for...' Nike Mind 001 display with mannequin and Japanese signage"
+    ],
+    "source_files": [
+      "IMG_7696.jpg"
+    ],
+    "handles": [
+      "@aditiaryawellness"
+    ]
+  },
+  {
+    "name": "Odaiba Statue of Liberty",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Day 3 (evening for lit-up Rainbow Bridge)"
+    ],
+    "notes": [
+      "Replica Statue of Liberty with Rainbow Bridge and Tokyo Tower in background"
+    ],
+    "source_files": [
+      "IMG_7640.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Omotesando",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Marked on the ward map - upscale shopping street"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Omotesando Street",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Upscale Harajuku boulevard"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Onitsuka Tiger (Omotesando)",
+    "kind": "shop",
+    "city": "Tokyo (Omotesando)",
+    "mentions": 1,
+    "timing_hints": [
+      "11:00-20:00; 2 floors"
+    ],
+    "notes": [
+      "Stylish retro-designed Japanese sneakers"
+    ],
+    "source_files": [
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@japan_trip_guide_"
+    ]
+  },
+  {
+    "name": "Onitsuka Tiger Nippon Made flagship",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Premium Nippon Made line store; reel compares Mexico 66 vs Nippon Made pricing"
+    ],
+    "source_files": [
+      "404d8e38-1880-4e06-88a5-1544d6fc0a2c.jpg"
+    ],
+    "handles": [
+      "@theninadaniels"
+    ]
+  },
+  {
+    "name": "Onitsuka Tiger Shibuya / Ueno Flagship",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Iconic Mexico 66 sneakers; Ueno flagship has better stock"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple"
+    ]
+  },
+  {
+    "name": "Osaka",
+    "kind": "neighborhood",
+    "city": "Osaka",
+    "mentions": 1,
+    "timing_hints": [
+      "After Tokyo"
+    ],
+    "notes": [
+      "Suggested follow-on city after Tokyo segment"
+    ],
+    "source_files": [
+      "IMG_7646.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Osaka Castle",
+    "kind": "sight",
+    "city": "Osaka",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Osaka must-see"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Osaka Ohsho (Dotonbori)",
+    "kind": "food",
+    "city": "Osaka",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Gyoza chain restaurant in Dotonbori (vegetarian gyoza availability uncertain - check menu)"
+    ],
+    "source_files": [
+      "IMG_7662.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Pizza Bar on 38th",
+    "kind": "food",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Reservation required; located in Mandarin Oriental Tokyo"
+    ],
+    "notes": [
+      "High-end pizza counter in Mandarin Oriental on 38th floor"
+    ],
+    "source_files": [
+      "IMG_7719.jpg"
+    ],
+    "handles": [
+      "@simranrluthria"
+    ]
+  },
+  {
+    "name": "Pokemon Center (Nihonbashi)",
+    "kind": "shop",
+    "city": "Tokyo (Nihonbashi)",
+    "mentions": 1,
+    "timing_hints": [
+      "10:30-21:00; 1 floor"
+    ],
+    "notes": [
+      "Exclusive merchandise and iconic Pokemon experiences - great for kids"
+    ],
+    "source_files": [
+      "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg"
+    ],
+    "handles": [
+      "@japan_trip_guide_"
+    ]
+  },
+  {
+    "name": "Pokemon Center DX Nihonbashi",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Largest Pokemon Center in Japan; giant Mewtwo display and every plushie imaginable"
+    ],
+    "source_files": [
+      "21eb64d8-4579-44f1-b276-b745368efd5f.jpg"
+    ],
+    "handles": [
+      "@checkoutcouple"
+    ]
+  },
+  {
+    "name": "Pokemon Center Mega Tokyo",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tokyo highlight"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Pokka Sapporo Kireto Lemon 2700",
+    "kind": "food",
+    "city": "unknown",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Japanese citric acid fatigue-relief drink"
+    ],
+    "source_files": [
+      "IMG_7698.jpg"
+    ],
+    "handles": [
+      "@jenniesuk"
+    ]
+  },
+  {
+    "name": "Rainbow Bridge",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Evening"
+    ],
+    "notes": [
+      "Iconic illuminated bridge connecting Odaiba to mainland"
+    ],
+    "source_files": [
+      "IMG_7640.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Right-on",
+    "kind": "shop",
+    "city": "Japan",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Casual denim and American-style fashion; Japanese denim jeans"
+    ],
+    "source_files": [
+      "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg"
+    ],
+    "handles": [
+      "#JapanTips (Wanderfly / Japan Tips)"
+    ]
+  },
+  {
+    "name": "Roppongi",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Marked on the ward map"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Roppongi Hills",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day 3 area option"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Sanrio Puroland",
+    "kind": "activity",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "#6 in Japan theme parks list; indoor Hello Kitty / Sanrio theme park in Tama, Tokyo - great for young kids"
+    ],
+    "source_files": [
+      "IMG_7619.jpg"
+    ],
+    "handles": [
+      "@musyatravel"
+    ]
+  },
+  {
+    "name": "Shibuya Parco",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Trendy department store in Shibuya"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Shibuya-ku",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tokyo ward map"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Shimamura",
+    "kind": "shop",
+    "city": "Japan",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Local favorite ultra-affordable; cute loungewear sets"
+    ],
+    "source_files": [
+      "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg"
+    ],
+    "handles": [
+      "#JapanTips (Wanderfly / Japan Tips)"
+    ]
+  },
+  {
+    "name": "Shinjuku Golden Gai",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Evening / nightlife area - not kid-friendly"
+    ],
+    "notes": [
+      "Dense alley of tiny themed bars in Shinjuku; adults-only nightlife"
+    ],
+    "source_files": [
+      "IMG_7720.jpg"
+    ],
+    "handles": [
+      "@simranrluthria"
+    ]
+  },
+  {
+    "name": "Shinjuku Gyoen",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Large garden in Shinjuku"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Shinjuku Gyoen National Garden",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Day 4 (cherry blossom in season)"
+    ],
+    "notes": [
+      "Large landscaped garden with sakura and pond; family-friendly walk"
+    ],
+    "source_files": [
+      "IMG_7641.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Shinjuku Toho Building (Godzilla Head)",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Day 4"
+    ],
+    "notes": [
+      "Famous Godzilla head statue atop Hotel Gracery in Kabukicho"
+    ],
+    "source_files": [
+      "IMG_7642.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Shinjuku-ku",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tokyo ward map showing all 23 wards - reference for trip planning"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Shinkyo Bridge",
+    "kind": "sight",
+    "city": "Nikko",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Iconic red lacquered bridge - photo spot"
+    ],
+    "source_files": [
+      "IMG_7653.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Sumida-ku",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tokyo Skytree"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Sunshine City",
+    "kind": "shop",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Ikebukuro entertainment complex"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Taito-ku",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Asakusa, Ueno Park"
+    ],
+    "source_files": [
+      "IMG_7627.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "TeamLab Borderless",
+    "kind": "activity",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "booking recommended"
+    ],
+    "notes": [
+      "Borderless digital art at Azabudai Hills"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Tennoji Park",
+    "kind": "sight",
+    "city": "Osaka",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Osaka must-see"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Tokyo",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "5 nights base"
+    ],
+    "notes": [
+      "Creator recommends 5 nights in Tokyo before moving to Osaka"
+    ],
+    "source_files": [
+      "IMG_7646.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Tokyo Disney",
+    "kind": "activity",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "booking recommended"
+    ],
+    "notes": [
+      "Day 5 day-trip option"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Tokyo Disney Resort",
+    "kind": "activity",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "advance tickets recommended"
+    ],
+    "notes": [
+      "Reel ranking #1 Tokyo Disney Resort"
+    ],
+    "source_files": [
+      "IMG_7613.jpg"
+    ],
+    "handles": [
+      "@musyatravel"
+    ]
+  },
+  {
+    "name": "Tokyo Disneyland",
+    "kind": "activity",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tokyo highlight"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Tokyo Disneyland / Tokyo DisneySea",
+    "kind": "activity",
+    "city": "Tokyo (Urayasu)",
+    "mentions": 1,
+    "timing_hints": [
+      "pre-book ~1 week in advance"
+    ],
+    "notes": [
+      "List item 8; major kid draw, especially DisneySea (unique to Tokyo)"
+    ],
+    "source_files": [
+      "IMG_7684.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Tokyo Metropolitan Government Building",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Free observation decks in Shinjuku"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Tokyo Metropolitan Government Building Observation Deck",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Day 4 (free; sunset best)"
+    ],
+    "notes": [
+      "Skyline view from Shinjuku skyscraper district; free observatory"
+    ],
+    "source_files": [
+      "IMG_7639.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  },
+  {
+    "name": "Toranomon Hills",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Modern business/shopping district near Atago Jinja Shrine"
+    ],
+    "source_files": [
+      "IMG_7704.jpg"
+    ],
+    "handles": [
+      "@mcstops"
+    ]
+  },
+  {
+    "name": "Tsukiji Outer Market",
+    "kind": "food",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day 3 food market"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Ueno",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Tokyo must-see"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Ueno Ameyoko",
+    "kind": "neighborhood",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Market street under the rail tracks"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Ueno Park",
+    "kind": "sight",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Large park with museums"
+    ],
+    "source_files": [
+      "33bb02f4-f504-4e6b-8042-fcad556b8ecb.jpg"
+    ],
+    "handles": [
+      "@japantravelbasics"
+    ]
+  },
+  {
+    "name": "Umeda Sky Building",
+    "kind": "sight",
+    "city": "Osaka",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Floating garden observatory"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "Uniqlo",
+    "kind": "shop",
+    "city": "Japan",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Must-buy: Heattech innerwear; simple high-quality basics for all ages"
+    ],
+    "source_files": [
+      "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg"
+    ],
+    "handles": [
+      "#JapanTips (Wanderfly / Japan Tips)"
+    ]
+  },
+  {
+    "name": "WEGO",
+    "kind": "shop",
+    "city": "Japan",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Street-style brand loved by Gen Z; funky graphic tops"
+    ],
+    "source_files": [
+      "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg"
+    ],
+    "handles": [
+      "#JapanTips (Wanderfly / Japan Tips)"
+    ]
+  },
+  {
+    "name": "Warner Bros. Studio Tour Tokyo - The Making of Harry Potter",
+    "kind": "activity",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "tickets sell out - book weeks in advance via official site"
+    ],
+    "notes": [
+      "Studio tour in Toshimaen, Nerima - very popular with families"
+    ],
+    "source_files": [
+      "IMG_7622.jpg"
+    ],
+    "handles": [
+      "@musyatravel"
+    ]
+  },
+  {
+    "name": "Yasaka Pagoda (Hokan-ji)",
+    "kind": "sight",
+    "city": "Kyoto",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Five-storey pagoda landmark of Higashiyama"
+    ],
+    "source_files": [
+      "IMG_7657.jpg"
+    ],
+    "handles": [
+      "@global.and.beyond.travel"
+    ]
+  },
+  {
+    "name": "Yokohama",
+    "kind": "sight",
+    "city": "Yokohama",
+    "mentions": 1,
+    "timing_hints": [],
+    "notes": [
+      "Day-trip from Tokyo"
+    ],
+    "source_files": [
+      "6c8eb2ff-2abe-4e5f-9504-5b2a5a5ed218.jpg"
+    ],
+    "handles": [
+      "Japan Must-See visual checklist"
+    ]
+  },
+  {
+    "name": "teamLab Borderless / teamLab Planets",
+    "kind": "activity",
+    "city": "Tokyo",
+    "mentions": 1,
+    "timing_hints": [
+      "Day 3 (book in advance)"
+    ],
+    "notes": [
+      "Immersive digital art installation (silhouette in light-rain room); paired with Ginza+Odaiba day - kid-friendly"
+    ],
+    "source_files": [
+      "IMG_7637.jpg"
+    ],
+    "handles": [
+      "@mahirslens"
+    ]
+  }
+]

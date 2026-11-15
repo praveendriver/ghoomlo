@@ -1,0 +1,341 @@
+{
+  "destination": "Tokyo",
+  "country": "JP",
+  "lat": 35.68,
+  "lon": 139.77,
+  "generated_at": "2026-05-30T03:56:56.921053+00:00",
+  "items_total": 1,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [
+      {
+        "name": "Senso-ji",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Tokyo",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.4",
+          "review_count": "9850",
+          "ranking": "#1 of 134 things to do in Asakusa",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g14134311-d320447-Reviews-Senso_ji_Temple-Asakusa_Taito_Tokyo_Tokyo_Prefecture_Kanto.html?m=66827",
+          "city": "Asakusa"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Ueno Park",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Tokyo",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.3",
+          "review_count": "5407",
+          "ranking": "#1 of 111 things to do in Uenokoen",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g14134278-d320441-Reviews-Ueno_Park-Uenokoen_Taito_Tokyo_Tokyo_Prefecture_Kanto.html?m=66827",
+          "city": "Uenokoen"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Meiji Jingu",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Tokyo",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.2",
+          "review_count": "449",
+          "ranking": "#6 of 501 things to do in Shinjuku",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g1066457-d1847875-Reviews-Meiji_Jingu_Baseball_Stadium-Shinjuku_Tokyo_Tokyo_Prefecture_Kanto.html?m=66827",
+          "city": "Shinjuku"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Shibuya Crossing",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Tokyo",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.1",
+          "review_count": "252",
+          "ranking": "#5 of 220 things to do in Ginza",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g14129573-d8148431-Reviews-Nissan_Crossing-Ginza_Chuo_Tokyo_Tokyo_Prefecture_Kanto.html?m=66827",
+          "city": "Ginza"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Roppongi Hills",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Tokyo",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.0",
+          "review_count": "1901",
+          "ranking": "#4 of 57 things to do in Roppongi",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g14129735-d307881-Reviews-Roppongi_Hills_Shops_Restaurants-Roppongi_Minato_Tokyo_Tokyo_Prefecture_Kanto.html?m=66827",
+          "city": "Roppongi"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Imperial Palace East Garden",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Tokyo",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "3.8",
+          "review_count": "2927",
+          "ranking": "#26 of 623 things to do in Chiyoda",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g1066443-d320050-Reviews-Imperial_Palace-Chiyoda_Tokyo_Tokyo_Prefecture_Kanto.html?m=66827",
+          "city": "Chiyoda"
+        },
+        "is_seed": true
+      }
+    ],
+    "must_eat": [
+      {
+        "name": "Ramen Street Tokyo Station",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Tokyo",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_eat",
+        "tripadvisor": {
+          "rating": "4.1",
+          "review_count": "667",
+          "ranking": "#2 of 995 Places to Eat in Marunouchi",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g14129528-d1698070-Reviews-Rokurinsha_Tokyo_Ramen_Street-Marunouchi_Chiyoda_Tokyo_Tokyo_Prefecture_Kanto.html?m=66827",
+          "city": "Marunouchi"
+        },
+        "is_seed": true
+      }
+    ],
+    "must_buy": [
+      {
+        "name": "Harajuku Takeshita Street",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Tokyo",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_buy",
+        "tripadvisor": {
+          "rating": "4.3",
+          "review_count": "24",
+          "ranking": "#46 of 462 Shopping in Shibuya",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g1066456-d2152007-Reviews-Pet_Paradise_Harajuku_Takeshita_Street-Shibuya_Tokyo_Tokyo_Prefecture_Kanto.html?m=66827",
+          "city": "Shibuya"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Tsukiji Outer Market",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Tokyo",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_buy",
+        "tripadvisor": {
+          "rating": "4.2",
+          "review_count": "843",
+          "ranking": "#1 of 48 things to do in Tsukiji",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g14129610-d11867754-Reviews-Tsukiji_Fish_Market-Tsukiji_Chuo_Tokyo_Tokyo_Prefecture_Kanto.html?m=66827",
+          "city": "Tsukiji"
+        },
+        "is_seed": true
+      }
+    ],
+    "unique_experience": [
+      {
+        "name": "teamLab Planets TOKYO",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Tokyo",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "unique_experience",
+        "tripadvisor": {
+          "rating": "4.3",
+          "review_count": "5143",
+          "ranking": "#1 of 15 things to do in Toyosu",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g14134359-d14951238-Reviews-TeamLab_Planets_TOKYO-Toyosu_Koto_Tokyo_Tokyo_Prefecture_Kanto.html?m=66827",
+          "city": "Toyosu"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Ghibli Museum",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Tokyo",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "unique_experience",
+        "tripadvisor": {
+          "rating": "4.3",
+          "review_count": "438",
+          "ranking": "#1 of 60 things to do in Marunouchi",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g14129528-d1604472-Reviews-Mitsubishi_Ichigokan_Museum-Marunouchi_Chiyoda_Tokyo_Tokyo_Prefecture_Kanto.html?m=66827",
+          "city": "Marunouchi"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Tokyo Skytree",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Tokyo",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "unique_experience",
+        "tripadvisor": {
+          "rating": "4.2",
+          "review_count": "8159",
+          "ranking": "#2 of 13 things to do in Oshiage",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g14134337-d1872416-Reviews-Tokyo_Skytree-Oshiage_Sumida_Tokyo_Tokyo_Prefecture_Kanto.html?m=66827",
+          "city": "Oshiage"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Tokyo Tower",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Tokyo",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "unique_experience",
+        "tripadvisor": {
+          "rating": "4.2",
+          "review_count": "8532",
+          "ranking": "#1 of 63 things to do in Shibakoen",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g14129730-d320047-Reviews-Tokyo_Tower-Shibakoen_Minato_Tokyo_Tokyo_Prefecture_Kanto.html?m=66827",
+          "city": "Shibakoen"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Shibuya Sky",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Tokyo",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "unique_experience",
+        "tripadvisor": {
+          "rating": "2.6",
+          "review_count": "311",
+          "ranking": "#3 of 19 Transportation in Marunouchi",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g14129528-d1718856-Reviews-Sky_Bus_Tokyo-Marunouchi_Chiyoda_Tokyo_Tokyo_Prefecture_Kanto.html?m=66827",
+          "city": "Marunouchi"
+        },
+        "is_seed": true
+      }
+    ]
+  }
+}

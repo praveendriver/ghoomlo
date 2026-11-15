@@ -1,0 +1,15 @@
+{
+  "destination": "Delhi",
+  "country": "IN",
+  "lat": 28.61,
+  "lon": 77.21,
+  "generated_at": "2026-05-30T03:51:07.930971+00:00",
+  "items_total": 3,
+  "creators_total": 2,
+  "buckets": {
+    "must_do": [],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

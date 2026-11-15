@@ -1,0 +1,120 @@
+[
+  {
+    "file": "IMG_7711.jpg",
+    "places": [
+      {"name": "Katsuoji Temple", "kind": "sight", "city": "Osaka (Minoh)", "timing_hint": null, "notes": "Offbeat temple near Osaka with koi pond; famous for Daruma dolls"},
+      {"name": "Minoh-kayano Station", "kind": "transport", "city": "Osaka", "timing_hint": null, "notes": "Take Midosuji Line to last stop, then direct bus (800 yen one way) to reach Katsuoji"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@travelwithkashika"
+  },
+  {
+    "file": "IMG_7712.jpg",
+    "places": [
+      {"name": "7-Eleven", "kind": "food", "city": "Tokyo", "timing_hint": null, "notes": "Konbini fluffy pancake sandwich; creator visited 7/11 every single day in Tokyo"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@simranrluthria"
+  },
+  {
+    "file": "IMG_7713.jpg",
+    "places": [
+      {"name": "Shibuya Crossing", "kind": "sight", "city": "Tokyo", "timing_hint": "Best at night for neon signage", "notes": "Iconic Shibuya scramble crossing with Sunpark / neon billboards"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@simranrluthria"
+  },
+  {
+    "file": "IMG_7714.jpg",
+    "places": [
+      {"name": "Shibuya Sky", "kind": "sight", "city": "Tokyo", "timing_hint": "Visit at sunset/night for views; book in advance", "notes": "Rooftop observation deck with panoramic Tokyo skyline views"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@simranrluthria"
+  },
+  {
+    "file": "IMG_7715.jpg",
+    "places": [
+      {"name": "Don Quijote (Mega Donki)", "kind": "shop", "city": "Tokyo", "timing_hint": "Open late / 24-7 at many locations", "notes": "Famous discount mega-store; souvenirs, snacks, electronics, cosmetics"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@simranrluthria"
+  },
+  {
+    "file": "IMG_7716.jpg",
+    "places": [
+      {"name": "Harajuku", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Recommended for thrift shops and street fashion"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@simranrluthria"
+  },
+  {
+    "file": "IMG_7717.jpg",
+    "places": [
+      {"name": "teamLab Planets", "kind": "activity", "city": "Tokyo", "timing_hint": "Book tickets in advance; located in Toyosu", "notes": "Immersive digital art museum with metallic egg installations; great for kids"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@simranrluthria"
+  },
+  {
+    "file": "IMG_7718.jpg",
+    "places": [
+      {"name": "Mario Kart Street Go-Karting", "kind": "activity", "city": "Tokyo", "timing_hint": "Requires international driving permit (adults only - not for kids 6/9)", "notes": "Costume go-karting tour through Tokyo streets; adults only"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@simranrluthria"
+  },
+  {
+    "file": "IMG_7719.jpg",
+    "places": [
+      {"name": "Pizza Bar on 38th", "kind": "food", "city": "Tokyo", "timing_hint": "Reservation required; located in Mandarin Oriental Tokyo", "notes": "High-end pizza counter in Mandarin Oriental on 38th floor"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@simranrluthria"
+  },
+  {
+    "file": "IMG_7720.jpg",
+    "places": [
+      {"name": "Shinjuku Golden Gai", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Evening / nightlife area - not kid-friendly", "notes": "Dense alley of tiny themed bars in Shinjuku; adults-only nightlife"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@simranrluthria"
+  },
+  {
+    "file": "aefce2ab-912e-4b9e-9d92-de0889bca811.jpg",
+    "places": [
+      {"name": "Uniqlo", "kind": "shop", "city": "Japan", "timing_hint": null, "notes": "Must-buy: Heattech innerwear; simple high-quality basics for all ages"},
+      {"name": "GU", "kind": "shop", "city": "Japan", "timing_hint": null, "notes": "Trendy low-price fashion; wide-leg pants under 2000 yen"},
+      {"name": "MUJI", "kind": "shop", "city": "Japan", "timing_hint": null, "notes": "Minimalist comfy fashion; must-buy organic cotton T-shirts"},
+      {"name": "Shimamura", "kind": "shop", "city": "Japan", "timing_hint": null, "notes": "Local favorite ultra-affordable; cute loungewear sets"},
+      {"name": "Right-on", "kind": "shop", "city": "Japan", "timing_hint": null, "notes": "Casual denim and American-style fashion; Japanese denim jeans"},
+      {"name": "Honeys", "kind": "shop", "city": "Japan", "timing_hint": null, "notes": "Girly affordable womenswear; floral dresses under 3000 yen"},
+      {"name": "WEGO", "kind": "shop", "city": "Japan", "timing_hint": null, "notes": "Street-style brand loved by Gen Z; funky graphic tops"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "#JapanTips (Wanderfly / Japan Tips)"
+  },
+  {
+    "file": "b80fb8af-f182-4c38-90e0-77c736589001.jpg",
+    "places": [
+      {"name": "Kawai Shrine", "kind": "sight", "city": "Kyoto", "timing_hint": null, "notes": "Beauty shrine within Tadasu no Mori (near Shimogamo Shrine); buy face-shaped ema, drink beauty water, get mirror charm with hidden message in sunlight. Address: 59 Shimogamoizumigawa-cho, Sakyo-ku, Kyoto 606-0807"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@daddy.xj and @ourhappyfinds"
+  },
+  {
+    "file": "eaf374ee-44ab-45de-b66c-07f69fb24cd9.jpg",
+    "places": [
+      {"name": "Don Quijote (Shinjuku flagship)", "kind": "shop", "city": "Tokyo (Shinjuku)", "timing_hint": "Open 24/7 or very late; many floors", "notes": "Vast discount treasures and late-night shopping fun"},
+      {"name": "Uniqlo (Ginza flagship)", "kind": "shop", "city": "Tokyo (Ginza)", "timing_hint": "11:00-21:00; 12 floors", "notes": "Essential life wear and high-quality basics"},
+      {"name": "Loft (Shibuya)", "kind": "shop", "city": "Tokyo (Shibuya)", "timing_hint": "11:00-21:00; 7 floors", "notes": "Cool stationery, cosmetics, unique Japanese gifts"},
+      {"name": "Onitsuka Tiger (Omotesando)", "kind": "shop", "city": "Tokyo (Omotesando)", "timing_hint": "11:00-20:00; 2 floors", "notes": "Stylish retro-designed Japanese sneakers"},
+      {"name": "Pokemon Center (Nihonbashi)", "kind": "shop", "city": "Tokyo (Nihonbashi)", "timing_hint": "10:30-21:00; 1 floor", "notes": "Exclusive merchandise and iconic Pokemon experiences - great for kids"},
+      {"name": "Hands (Shibuya flagship)", "kind": "shop", "city": "Tokyo (Shibuya)", "timing_hint": "10:00-21:00; 8 floors", "notes": "Comprehensive DIY, creative supplies, practical home goods"},
+      {"name": "GU (Ginza)", "kind": "shop", "city": "Tokyo (Ginza)", "timing_hint": "11:00-21:00; 5 floors", "notes": "Trendy affordable Japanese fashion for everyday wear"},
+      {"name": "MUJI (Yurakucho - now Ginza Flagship)", "kind": "shop", "city": "Tokyo (Yurakucho/Ginza)", "timing_hint": "Many floors", "notes": "Minimalist lifestyle items, travel gear, healthy snacks"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@japan_trip_guide_"
+  }
+]

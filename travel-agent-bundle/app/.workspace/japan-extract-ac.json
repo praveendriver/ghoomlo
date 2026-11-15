@@ -1,0 +1,135 @@
+[
+  {
+    "file": "IMG_7633.jpg",
+    "places": [
+      {"name": "Asakusa", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Day 2", "notes": "Featured as Day 2 destination in Tokyo itinerary tier list"},
+      {"name": "Akihabara", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Day 2 (evening)", "notes": "Electric Town with arcades/claw machines, neon signage; pair with Asakusa on Day 2"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7635.jpg",
+    "places": [
+      {"name": "Ginza", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Day 3", "notes": "Upscale shopping district shown with glass-fronted retail tower"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7636.jpg",
+    "places": [
+      {"name": "Shibuya", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Day 1", "notes": "Tier list pairs Shibuya with Harajuku for Day 1"},
+      {"name": "Harajuku", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Day 1", "notes": "Pop-culture/youth fashion district paired with Shibuya"},
+      {"name": "Asakusa", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Day 2", "notes": "Day 2 pairing in tier list"},
+      {"name": "Akihabara", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Day 2", "notes": "Day 2 pairing in tier list"},
+      {"name": "Ginza", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Day 3", "notes": "Day 3 pairing in tier list"},
+      {"name": "Odaiba", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Day 3", "notes": "Bayfront entertainment area paired with Ginza"},
+      {"name": "Shinjuku", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Day trip option", "notes": "Listed in day-trip option strip"},
+      {"name": "Hakone", "kind": "neighborhood", "city": "Hakone", "timing_hint": "Day trip", "notes": "Mt. Fuji view hot springs day trip option"},
+      {"name": "Kamakura", "kind": "neighborhood", "city": "Kamakura", "timing_hint": "Day trip", "notes": "Historic temple/Buddha day trip option"},
+      {"name": "Kawaguchiko", "kind": "neighborhood", "city": "Kawaguchiko", "timing_hint": "Day trip", "notes": "Lake at base of Mt. Fuji day trip"},
+      {"name": "Nikko", "kind": "neighborhood", "city": "Nikko", "timing_hint": "Day trip", "notes": "UNESCO shrines/nature day trip option"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7637.jpg",
+    "places": [
+      {"name": "teamLab Borderless / teamLab Planets", "kind": "activity", "city": "Tokyo", "timing_hint": "Day 3 (book in advance)", "notes": "Immersive digital art installation (silhouette in light-rain room); paired with Ginza+Odaiba day - kid-friendly"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7638.jpg",
+    "places": [
+      {"name": "Shinjuku", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Day 4", "notes": "Day 4 of Tokyo itinerary tier list"},
+      {"name": "Hakone", "kind": "neighborhood", "city": "Hakone", "timing_hint": "Day trip option", "notes": "Day-trip strip option"},
+      {"name": "Kamakura", "kind": "neighborhood", "city": "Kamakura", "timing_hint": "Day trip option", "notes": "Day-trip strip option"},
+      {"name": "Shibuya", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Day trip option", "notes": "Day-trip strip option"},
+      {"name": "Kawaguchiko", "kind": "neighborhood", "city": "Kawaguchiko", "timing_hint": "Day trip option", "notes": "Day-trip strip option"},
+      {"name": "Nikko", "kind": "neighborhood", "city": "Nikko", "timing_hint": "Day trip option", "notes": "Day-trip strip option (autumn foliage)"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7639.jpg",
+    "places": [
+      {"name": "Tokyo Metropolitan Government Building Observation Deck", "kind": "sight", "city": "Tokyo", "timing_hint": "Day 4 (free; sunset best)", "notes": "Skyline view from Shinjuku skyscraper district; free observatory"},
+      {"name": "Shinjuku", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Day 4", "notes": "Skyscraper district aerial view"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7640.jpg",
+    "places": [
+      {"name": "Odaiba Statue of Liberty", "kind": "sight", "city": "Tokyo", "timing_hint": "Day 3 (evening for lit-up Rainbow Bridge)", "notes": "Replica Statue of Liberty with Rainbow Bridge and Tokyo Tower in background"},
+      {"name": "Rainbow Bridge", "kind": "sight", "city": "Tokyo", "timing_hint": "Evening", "notes": "Iconic illuminated bridge connecting Odaiba to mainland"},
+      {"name": "Tokyo Tower", "kind": "sight", "city": "Tokyo", "timing_hint": "Evening", "notes": "Visible across the bay from Odaiba"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7641.jpg",
+    "places": [
+      {"name": "Shinjuku Gyoen National Garden", "kind": "sight", "city": "Tokyo", "timing_hint": "Day 4 (cherry blossom in season)", "notes": "Large landscaped garden with sakura and pond; family-friendly walk"},
+      {"name": "NTT Docomo Yoyogi Building", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Visible spire on Shinjuku skyline backdrop"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7642.jpg",
+    "places": [
+      {"name": "Shinjuku Toho Building (Godzilla Head)", "kind": "sight", "city": "Tokyo", "timing_hint": "Day 4", "notes": "Famous Godzilla head statue atop Hotel Gracery in Kabukicho"},
+      {"name": "Kabukicho", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "Day 4 (evening)", "notes": "Shinjuku entertainment district with neon signage; cat 3D billboard at Cross Shinjuku Vision visible"},
+      {"name": "Cross Shinjuku Vision (3D Cat Billboard)", "kind": "sight", "city": "Tokyo", "timing_hint": "Day 4", "notes": "Famous 3D calico cat digital billboard at Shinjuku east exit"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7643.jpg",
+    "places": [
+      {"name": "Omoide Yokocho", "kind": "food", "city": "Tokyo", "timing_hint": "Day 4 (dinner)", "notes": "Narrow lantern-lit alley of yakitori/izakaya stalls in Shinjuku ('Memory Lane'); not very veg-friendly but atmospheric"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7645.jpg",
+    "places": [
+      {"name": "Kamakura", "kind": "neighborhood", "city": "Kamakura", "timing_hint": "Day 5 day trip option", "notes": "Coastal historic town with Great Buddha"},
+      {"name": "Nikko", "kind": "neighborhood", "city": "Nikko", "timing_hint": "Day 5 day trip option", "notes": "UNESCO shrine town - shown with Shinkyo bridge/autumn foliage"},
+      {"name": "Hakone", "kind": "neighborhood", "city": "Hakone", "timing_hint": "Day 5 day trip option", "notes": "Mt. Fuji view onsen town"},
+      {"name": "Kawaguchiko", "kind": "neighborhood", "city": "Kawaguchiko", "timing_hint": "Day 5 day trip option", "notes": "Fuji Five Lakes - classic Mt. Fuji reflection view"},
+      {"name": "Shibuya", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Bottom thumbnail re-listing Shibuya as alt option"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7646.jpg",
+    "places": [
+      {"name": "Omoide Yokocho", "kind": "food", "city": "Tokyo", "timing_hint": "Evening", "notes": "Cherry-blossom-decorated izakaya alley with red stools; reel headline '5 nights in Tokyo' then plan Osaka"},
+      {"name": "Tokyo", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "5 nights base", "notes": "Creator recommends 5 nights in Tokyo before moving to Osaka"},
+      {"name": "Osaka", "kind": "neighborhood", "city": "Osaka", "timing_hint": "After Tokyo", "notes": "Suggested follow-on city after Tokyo segment"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7647.jpg",
+    "places": [
+      {"name": "Sensoji Temple", "kind": "sight", "city": "Tokyo", "timing_hint": "Morning (avoid crowds)", "notes": "Iconic Asakusa temple with giant red lantern at Kaminarimon gate; flagged as a must-see iconic spot"},
+      {"name": "Asakusa", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Neighborhood around Sensoji Temple"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  }
+]

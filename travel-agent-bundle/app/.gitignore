@@ -1,0 +1,25 @@
+# local secrets — never committed
+.workspace/secrets.local.md
+trips/_shared/data/secrets.json
+
+# logs
+*.log
+~/Library/Logs/travel-agent/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editors
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Influencer ingestion caches
+.workspace/.influencer-cache/
+/tmp/yt-audio/

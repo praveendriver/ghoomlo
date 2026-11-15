@@ -1,0 +1,32 @@
+# The imported ZIP duplicates the extracted application and is too large for Git.
+/travel-agent-bundle.zip
+
+# Local machine and editor state
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+**/.claude/settings.local.json
+
+# Local credentials and secrets
+.env
+.env.*
+**/secrets.local.md
+**/data/secrets.json
+*.pem
+*.key
+
+# Rebuildable application caches
+**/__pycache__/
+**/*.py[cod]
+**/.venv/
+**/node_modules/
+**/*.log
+travel-agent-bundle/app/.workspace/.content-apis-cache/
+travel-agent-bundle/app/.workspace/.influencer-cache/
+travel-agent-bundle/app/.workspace/.japan-thumbs/
+
+# Saved third-party web bundles (their parent trip pages and local media stay tracked).
+travel-agent-bundle/app/trips/**/images/*_files/
+travel-agent-bundle/app/trips/**/images/*.html

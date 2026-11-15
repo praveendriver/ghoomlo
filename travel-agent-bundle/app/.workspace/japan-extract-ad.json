@@ -1,0 +1,112 @@
+[
+  {
+    "file": "IMG_7648.jpg",
+    "places": [
+      {"name": "Shibuya Sky", "kind": "sight", "city": "Tokyo", "timing_hint": "book in advance; sunset slots popular", "notes": "Open-air observation deck atop Shibuya Scramble Square with panoramic Tokyo skyline view"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7649.jpg",
+    "places": [
+      {"name": "Shinjuku", "kind": "neighborhood", "city": "Tokyo", "timing_hint": "evening for neon/nightlife", "notes": "Iconic neon-lit Shinjuku night scene with giant 3D cat billboard (Cross Shinjuku Vision); part of 5-night Tokyo plan"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7650.jpg",
+    "places": [
+      {"name": "Day trips from Tokyo (Shinkansen / limited express)", "kind": "transport", "city": "Tokyo", "timing_hint": null, "notes": "Reel suggests basing in Tokyo for 5 nights and taking a couple of day trips; train view toward snowy Mt Fuji area"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7651.jpg",
+    "places": [
+      {"name": "Kamakura", "kind": "neighborhood", "city": "Kamakura", "timing_hint": "day trip from Tokyo", "notes": "Caption says 'Kamakura' but image shows Mt Fuji with Chureito Pagoda (Fujiyoshida) - likely creator confusion; both are Tokyo day-trip options"},
+      {"name": "Chureito Pagoda / Mt Fuji viewpoint", "kind": "sight", "city": "Fujiyoshida", "timing_hint": "clear-weather mornings best for Fuji view", "notes": "Classic five-storey pagoda framing Mt Fuji"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7652.jpg",
+    "places": [
+      {"name": "Kamakura", "kind": "neighborhood", "city": "Kamakura", "timing_hint": "day trip from Tokyo", "notes": "Enoden (Enoshima Electric Railway) green-and-cream train at a coastal level crossing - iconic Kamakura/Enoshima scene"},
+      {"name": "Enoden Line", "kind": "transport", "city": "Kamakura", "timing_hint": null, "notes": "Scenic local train along the coast between Kamakura and Fujisawa"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7653.jpg",
+    "places": [
+      {"name": "Nikko", "kind": "neighborhood", "city": "Nikko", "timing_hint": "day trip from Tokyo; allow full day", "notes": "Shinkyo Bridge over Daiya River - sacred red bridge at entrance to Nikko shrines/temples; lush green forest setting"},
+      {"name": "Shinkyo Bridge", "kind": "sight", "city": "Nikko", "timing_hint": null, "notes": "Iconic red lacquered bridge - photo spot"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7654.jpg",
+    "places": [
+      {"name": "Kyoto", "kind": "neighborhood", "city": "Kyoto", "timing_hint": "3 nights recommended", "notes": "Reel transitions to '3 nights in Kyoto' - cafe/ryokan-style interior with garden and temple view through glass"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7655.jpg",
+    "places": [
+      {"name": "Fushimi Inari Taisha", "kind": "sight", "city": "Kyoto", "timing_hint": "go very early (sunrise) or after dark to avoid crowds; free", "notes": "Famous shrine with thousands of vermillion torii gates winding up Mt Inari"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7656.jpg",
+    "places": [
+      {"name": "Kiyomizu-dera", "kind": "sight", "city": "Kyoto", "timing_hint": "early morning best; allow 1-2 hrs", "notes": "Hilltop wooden temple with sweeping Kyoto view; Kyoto Tower visible in background; kimono-rental photo spot"},
+      {"name": "Kyoto Tower", "kind": "sight", "city": "Kyoto", "timing_hint": null, "notes": "Visible landmark from Kiyomizu-dera viewpoint"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7657.jpg",
+    "places": [
+      {"name": "Higashiyama district", "kind": "neighborhood", "city": "Kyoto", "timing_hint": "early morning or evening for atmosphere with fewer crowds", "notes": "Historic preserved streets with traditional machiya houses, pagoda (Yasaka/Hokan-ji) visible; great walking area"},
+      {"name": "Yasaka Pagoda (Hokan-ji)", "kind": "sight", "city": "Kyoto", "timing_hint": null, "notes": "Five-storey pagoda landmark of Higashiyama"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7658.jpg",
+    "places": [
+      {"name": "Day trip from Kyoto", "kind": "transport", "city": "Kyoto", "timing_hint": "leave one day open for a day trip", "notes": "Train cockpit view - reel recommends keeping one day for a Kyoto-area day trip (Nara or Ine)"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7659.jpg",
+    "places": [
+      {"name": "Nara", "kind": "activity", "city": "Nara", "timing_hint": "easy day trip from Kyoto (~45 min)", "notes": "Nara Park - feeding the famous free-roaming deer; great with kids"},
+      {"name": "Nara Park deer", "kind": "activity", "city": "Nara", "timing_hint": null, "notes": "Buy shika senbei crackers to feed the bowing deer"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7660.jpg",
+    "places": [
+      {"name": "Ine", "kind": "neighborhood", "city": "Ine (Kyoto Prefecture)", "timing_hint": "day trip from Kyoto; long but scenic - consider overnight", "notes": "Coastal fishing village on the Sea of Japan known for funaya (boathouses); overlooks Ine Bay"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  }
+]

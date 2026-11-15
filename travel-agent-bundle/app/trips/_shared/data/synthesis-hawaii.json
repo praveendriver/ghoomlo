@@ -1,0 +1,40 @@
+{
+  "destination": "Hawaii",
+  "country": "US",
+  "lat": 20.79,
+  "lon": -156.33,
+  "generated_at": "2026-05-30T03:50:42.488847+00:00",
+  "items_total": 2,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [
+      {
+        "name": "New York City",
+        "score": 2.25,
+        "creators": [
+          "The Planet D"
+        ],
+        "creator_count": 1,
+        "mentions": 1,
+        "positive": 0,
+        "negative": 0,
+        "city": "Hawaii",
+        "quote": "We’ll never forget the first time we visited New York City in December. We’d seen it in movies, but standing there, seeing the Rockefeller Center tree all lit up for the first time, with skaters below and festive music in the air… it was pu",
+        "quote_creator": "The Planet D",
+        "quote_source": "blog",
+        "quote_url": "https://theplanetd.com/best-places-to-visit-december-usa/",
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.7",
+          "review_count": "130",
+          "ranking": "#4 of 10 Tours in Makawao",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g60635-d2494501-Reviews-Local_Tastes_of_Maui-Makawao_Maui_Hawaii.html?m=66827",
+          "city": "Makawao"
+        }
+      }
+    ],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

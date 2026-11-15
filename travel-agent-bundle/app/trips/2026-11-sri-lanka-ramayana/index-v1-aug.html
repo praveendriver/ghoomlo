@@ -1,0 +1,2695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gama Adventures — Sri Lanka · Colombo Talk &amp; Ramayana Trail (Nov 2026)</title>
+<link rel="icon" type="image/svg+xml" href="../_shared/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_shared/style.css">
+<style>
+  /* Trip-page specific */
+  .hero {
+    position: relative;
+    padding: 80px 0 100px;
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 20%, rgba(217, 122, 58, 0.10), transparent 60%),
+      radial-gradient(ellipse 70% 50% at 20% 80%, rgba(31, 58, 61, 0.08), transparent 60%);
+    overflow: hidden;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .hero h1 { font-size: clamp(48px, 6vw, 84px); margin-bottom: 28px; }
+  .hero-sub {
+    font-size: 19px; color: var(--ink-soft);
+    margin-bottom: 40px; max-width: 480px;
+  }
+  .hero-meta {
+    display: grid; grid-template-columns: repeat(4, auto); gap: 36px;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 36px;
+  }
+  .meta-item .label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--ink-soft); margin-bottom: 6px;
+  }
+  .meta-item .value {
+    font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500;
+  }
+  .hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+
+  .hero-visual { position: relative; height: 560px; }
+  .h-card {
+    position: absolute;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    color: var(--cream);
+    transition: transform .4s cubic-bezier(.2,.8,.2,1);
+    display: flex;
+    flex-direction: column;
+  }
+  .h-card:hover { transform: translateY(-6px) scale(1.02); }
+  .h-card-1 { width: 290px; height: 380px; top: 20px; right: 60px; }
+  .h-card-2 { width: 240px; height: 320px; bottom: 20px; left: 0; }
+  .h-card-img { width: 100%; flex: 1 1 auto; position: relative; min-height: 0; }
+  .h-card-1 .h-card-img {
+    background-image: url('https://images.pexels.com/photos/13621055/pexels-photo-13621055.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+  }
+  .h-card-2 .h-card-img {
+    background-image: url('https://images.pexels.com/photos/36530015/pexels-photo-36530015.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+  }
+  .h-card-img::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.45) 100%);
+  }
+  .h-card-tag {
+    position: absolute; top: 18px; right: 18px;
+    background: rgba(255,255,255,0.92); color: var(--ink);
+    padding: 6px 12px; border-radius: 999px;
+    font-size: 11px; font-weight: 600;
+    backdrop-filter: blur(10px);
+  }
+  .h-card-body { padding: 18px 22px; background: var(--ink); flex: 0 0 auto; }
+  .h-card-body .place {
+    font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .h-card-body .meta { font-size: 13px; opacity: 0.7; }
+
+  .hero-decor {
+    position: absolute; top: 50%; left: -40px;
+    transform: translateY(-50%);
+    display: flex; flex-direction: column; gap: 24px;
+    z-index: 1;
+  }
+  .hero-decor .ring {
+    width: 12px; height: 12px; border-radius: 50%;
+    border: 2px solid var(--ink);
+  }
+  .hero-decor .ring.filled { background: var(--ink); }
+  .hero-decor .line { width: 2px; height: 60px; background: var(--ink); margin-left: 5px; }
+
+  /* ---------- HERO IMAGE STRIP ---------- */
+  .strip {
+    padding: 60px 0 40px;
+    overflow: hidden;
+    position: relative;
+  }
+  .strip-eyebrow {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--saffron);
+    font-weight: 600;
+  }
+  .strip-track {
+    display: flex;
+    gap: 18px;
+    width: max-content;
+    animation: strip-scroll 60s linear infinite;
+    will-change: transform;
+  }
+  .strip:hover .strip-track { animation-play-state: paused; }
+  @keyframes strip-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  /* Edge fade so the loop seam is invisible */
+  .strip::before,
+  .strip::after {
+    content: '';
+    position: absolute;
+    top: 60px; bottom: 40px;
+    width: 120px;
+    z-index: 5;
+    pointer-events: none;
+  }
+  .strip::before {
+    left: 0;
+    background: linear-gradient(to right, var(--cream) 0%, transparent 100%);
+  }
+  .strip::after {
+    right: 0;
+    background: linear-gradient(to left, var(--cream) 0%, transparent 100%);
+  }
+  .strip-card {
+    flex: 0 0 auto;
+    width: 280px;
+    height: 360px;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s;
+  }
+  .strip-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-lg);
+  }
+  .strip-card-img {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform .8s cubic-bezier(.2,.8,.2,1);
+  }
+  .strip-card:hover .strip-card-img { transform: scale(1.08); }
+  .strip-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 35%, rgba(0,0,0,0.75) 100%);
+  }
+  .strip-card-meta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 22px;
+    color: white;
+    z-index: 2;
+  }
+  .strip-card-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(10px);
+    border-radius: 999px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .strip-card-tag.alt {
+    background: rgba(255, 200, 130, 0.25);
+  }
+  .strip-card-name {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 4px;
+  }
+  .strip-card-loc {
+    font-size: 12px;
+    opacity: 0.85;
+  }
+
+  @media (max-width: 640px) {
+    .strip-card { width: 220px; height: 300px; }
+    .strip-card-name { font-size: 18px; }
+    .strip-track { animation-duration: 40s; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .strip-track { animation: none; }
+  }
+
+  /* ---------- COMPARE ---------- */
+  .compare { padding: 100px 0; }
+  .compare-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+  }
+  .opt-card {
+    background: var(--cream-dark);
+    border-radius: var(--r-xl);
+    padding: 8px;
+    transition: transform .3s;
+  }
+  .opt-card.recommended {
+    background: linear-gradient(135deg, #1f3a3d 0%, #122729 100%);
+    color: var(--cream);
+  }
+  .opt-card-image {
+    height: 240px;
+    border-radius: 36px;
+    background-size: cover; background-position: center;
+    position: relative; overflow: hidden;
+  }
+  .opt-card.recommended .opt-card-image {
+    background-image: url('https://images.pexels.com/photos/10271157/pexels-photo-10271157.jpeg?auto=compress&cs=tinysrgb&w=900');
+    background-size: cover;
+    background-position: center;
+  }
+  .opt-card:not(.recommended) .opt-card-image {
+    background-image: url('https://images.pexels.com/photos/23601365/pexels-photo-23601365.jpeg?auto=compress&cs=tinysrgb&w=900');
+    background-size: cover;
+    background-position: center;
+  }
+  .opt-card-image::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.5) 100%);
+  }
+  .opt-badge {
+    position: absolute; top: 20px; left: 20px;
+    background: rgba(255,255,255,0.95); color: var(--ink);
+    padding: 8px 14px; border-radius: 999px;
+    font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    z-index: 2;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .opt-badge.rec { background: var(--saffron); color: white; }
+  .opt-card-body { padding: 32px 28px 28px; }
+  .opt-card h3 { font-size: 32px; margin-bottom: 6px; }
+  .opt-card.recommended h3 { color: var(--cream); }
+  .opt-card .opt-sub { font-size: 14px; color: var(--ink-soft); margin-bottom: 24px; }
+  .opt-card.recommended .opt-sub { color: rgba(246, 241, 232, 0.65); }
+
+  .opt-stats {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+  }
+  .opt-card.recommended .opt-stats { border-color: rgba(246, 241, 232, 0.12); }
+  .stat .stat-val {
+    font-family: 'Fraunces', serif; font-size: 24px; font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .stat .stat-lbl {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-soft);
+  }
+  .opt-card.recommended .stat-lbl { color: rgba(246, 241, 232, 0.6); }
+  .opt-features { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+  .feature-pill {
+    padding: 6px 14px;
+    background: rgba(0,0,0,0.06);
+    border-radius: 999px;
+    font-size: 12px; color: var(--ink-soft);
+  }
+  .opt-card.recommended .feature-pill {
+    background: rgba(246, 241, 232, 0.10);
+    color: rgba(246, 241, 232, 0.85);
+  }
+  .feature-pill.warn { background: rgba(217, 122, 58, 0.15); color: var(--saffron); }
+  .opt-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-weight: 500; color: var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 4px;
+    transition: gap .2s;
+  }
+  .opt-card.recommended .opt-link {
+    color: var(--saffron-soft); border-color: var(--saffron-soft);
+  }
+  .opt-link:hover { gap: 14px; }
+
+  /* ---------- ITINERARY ---------- */
+  .itinerary {
+    padding: 100px 0;
+    background: var(--ink);
+    color: var(--cream);
+    border-radius: var(--r-xl);
+    margin: 0 32px 80px;
+  }
+  @media (min-width: 1300px) {
+    .itinerary {
+      margin-left: calc((100vw - 1240px) / 2 + 32px);
+      margin-right: calc((100vw - 1240px) / 2 + 32px);
+    }
+  }
+  .itinerary .section-eyebrow { color: var(--saffron-soft); }
+  .itinerary h2 { color: var(--cream); }
+  .itinerary .section-head p { color: rgba(246, 241, 232, 0.65); }
+
+  .tabs {
+    display: inline-flex;
+    background: rgba(246, 241, 232, 0.08);
+    border-radius: 999px;
+    padding: 6px;
+    margin-bottom: 56px;
+  }
+  .tab {
+    padding: 12px 28px;
+    background: transparent;
+    color: rgba(246, 241, 232, 0.6);
+    border: none; border-radius: 999px;
+    font-size: 14px; font-weight: 500;
+    transition: all .25s;
+  }
+  .tab.active {
+    background: var(--cream); color: var(--ink);
+  }
+
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; animation: fadeIn .4s; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* timeline */
+  .timeline { position: relative; padding-left: 60px; }
+  .timeline::before {
+    content: ''; position: absolute;
+    left: 16px; top: 14px; bottom: 14px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--saffron) 0%, var(--saffron) 90%, transparent 100%);
+    opacity: 0.3;
+  }
+  .day {
+    position: relative;
+    margin-bottom: 24px;
+    background: rgba(246, 241, 232, 0.04);
+    border: 1px solid rgba(246, 241, 232, 0.08);
+    border-radius: var(--r-md);
+    overflow: hidden;
+    transition: all .3s;
+  }
+  .day:hover {
+    background: rgba(246, 241, 232, 0.07);
+    border-color: rgba(246, 241, 232, 0.15);
+  }
+  .day-marker {
+    position: absolute; left: -52px; top: 22px;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--ink);
+    border: 2px solid var(--saffron);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--saffron-soft);
+    z-index: 2;
+  }
+  .day-marker .icon { width: 16px; height: 16px; }
+  .day summary {
+    padding: 22px 28px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 24px;
+    cursor: pointer;
+    list-style: none;
+  }
+  .day summary::-webkit-details-marker { display: none; }
+  .day-head { flex: 1; display: flex; align-items: center; gap: 24px; }
+  .day-date {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: rgba(246, 241, 232, 0.55);
+    min-width: 110px;
+  }
+  .day-title {
+    font-family: 'Fraunces', serif;
+    font-size: 22px; font-weight: 500;
+    color: var(--cream);
+  }
+  .day-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .day-tag {
+    padding: 3px 10px;
+    background: rgba(217, 122, 58, 0.18);
+    color: var(--saffron-soft);
+    font-size: 11px;
+    border-radius: 999px;
+  }
+  .chev {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: rgba(246, 241, 232, 0.06);
+    display: inline-flex; align-items: center; justify-content: center;
+    transition: transform .3s;
+    flex-shrink: 0;
+    color: var(--cream);
+  }
+  details[open] .chev { transform: rotate(180deg); }
+
+  .day-body {
+    padding: 0 28px 24px 28px;
+    border-top: 1px solid rgba(246, 241, 232, 0.08);
+  }
+
+  /* day rows with icon glyph */
+  .row {
+    padding: 18px 0;
+    display: grid;
+    grid-template-columns: 100px 32px 1fr;
+    gap: 18px;
+    border-bottom: 1px solid rgba(246, 241, 232, 0.05);
+    align-items: flex-start;
+  }
+  .row:last-child { border-bottom: none; }
+  .row-time {
+    font-family: 'Fraunces', serif;
+    font-size: 16px; font-weight: 500;
+    color: var(--saffron-soft);
+    padding-top: 2px;
+  }
+  .row-icon {
+    width: 32px; height: 32px;
+    border-radius: 10px;
+    background: rgba(246, 241, 232, 0.08);
+    color: var(--saffron-soft);
+    display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .row-icon .icon { width: 16px; height: 16px; }
+  .row-icon.transit { background: rgba(180, 200, 230, 0.15); color: #b8d4ee; }
+  .row-icon.temple { background: rgba(217, 122, 58, 0.18); color: var(--saffron-soft); }
+  .row-icon.food { background: rgba(200, 230, 180, 0.10); color: #c8e6b4; }
+  .row-icon.hotel { background: rgba(232, 165, 114, 0.15); color: var(--saffron-soft); }
+  .row-icon.outdoor { background: rgba(150, 200, 200, 0.15); color: #98d4d4; }
+  .row-icon.shopping { background: rgba(210, 180, 230, 0.12); color: #d4b8e6; }
+
+  .row-content {
+    font-size: 15px;
+    color: rgba(246, 241, 232, 0.85);
+    line-height: 1.65;
+  }
+  .row-title { color: var(--cream); font-weight: 500; }
+  .row-content .price {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 10px;
+    background: rgba(246, 241, 232, 0.08);
+    border-radius: 999px;
+    font-size: 12px;
+    color: rgba(246, 241, 232, 0.7);
+  }
+
+  /* ---------- COSTS ---------- */
+  .costs { padding: 100px 0; }
+  .costs-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+    margin-top: 48px;
+  }
+  .cost-card {
+    background: white;
+    border-radius: var(--r-lg);
+    padding: 36px;
+    box-shadow: var(--shadow-sm);
+  }
+  .cost-card.featured {
+    background: linear-gradient(135deg, var(--saffron) 0%, var(--gold) 100%);
+    color: white;
+  }
+  .cost-card h4 {
+    font-size: 24px; font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .cost-card .cost-sub {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+  }
+  .cost-card.featured .cost-sub { color: rgba(255,255,255,0.85); }
+  .cost-row {
+    display: flex; justify-content: space-between;
+    padding: 14px 0;
+    font-size: 15px;
+    border-bottom: 1px solid var(--line);
+  }
+  .cost-card.featured .cost-row { border-color: rgba(255,255,255,0.2); }
+  .cost-row:last-child { border: none; }
+  .cost-row.total {
+    font-family: 'Fraunces', serif;
+    font-size: 22px; font-weight: 500;
+    margin-top: 12px; padding-top: 22px;
+    border-top: 2px solid var(--ink);
+  }
+  .cost-card.featured .cost-row.total { border-color: rgba(255,255,255,0.3); }
+  .cap-bar {
+    height: 8px;
+    background: var(--cream-dark);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  .cap-fill {
+    height: 100%; background: var(--saffron);
+    border-radius: 999px;
+  }
+  .cost-card.featured .cap-bar { background: rgba(255,255,255,0.25); }
+  .cost-card.featured .cap-fill { background: white; }
+  .cap-meta {
+    display: flex; justify-content: space-between;
+    font-size: 12px; margin-top: 8px;
+    color: var(--ink-soft);
+  }
+  .cost-card.featured .cap-meta { color: rgba(255,255,255,0.85); }
+
+  .loyalty-strip {
+    margin-top: 56px;
+    background: var(--ink);
+    color: var(--cream);
+    border-radius: var(--r-lg);
+    padding: 48px;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .loyalty-strip h3 {
+    font-size: 32px;
+    color: var(--cream);
+    margin-bottom: 16px;
+  }
+  .loyalty-strip p {
+    color: rgba(246, 241, 232, 0.7);
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  .loyalty-points {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+  }
+  .lp-item {
+    background: rgba(246, 241, 232, 0.06);
+    padding: 22px; border-radius: var(--r-sm);
+  }
+  .lp-prog {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em;
+    color: rgba(246, 241, 232, 0.5);
+    margin-bottom: 10px;
+  }
+  .lp-bal {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    color: var(--saffron-soft);
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .lp-tier {
+    font-size: 13px;
+    color: rgba(246, 241, 232, 0.85);
+  }
+
+  /* ---------- TRANSPORT (CARS) ---------- */
+  .transport { padding: 100px 0; background: var(--cream-dark); }
+  .transport-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .car-card {
+    background: var(--cream);
+    border-radius: var(--r-lg);
+    padding: 32px;
+    transition: transform .25s, box-shadow .25s;
+    display: flex; flex-direction: column;
+  }
+  .car-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .car-head {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 20px;
+  }
+  .car-icon {
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    background: var(--ink);
+    color: var(--saffron-soft);
+    display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .car-icon .icon { width: 26px; height: 26px; }
+  .car-head h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  .car-leg {
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .car-detail {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+  .car-stats {
+    display: flex; gap: 24px;
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 18px;
+  }
+  .car-stat {
+    flex: 1;
+  }
+  .car-stat-lbl {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  .car-stat-val {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .car-providers {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-top: auto;
+  }
+  .provider-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 14px;
+    background: var(--cream-dark);
+    color: var(--ink);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all .2s;
+  }
+  .provider-link:hover {
+    background: var(--ink); color: var(--cream);
+  }
+  .provider-link .icon { width: 13px; height: 13px; }
+
+  /* ---------- PREP ---------- */
+  .prep { padding: 100px 0; }
+  .prep-grid {
+    display: grid; grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    margin-top: 48px;
+  }
+  .prep-list { display: flex; flex-direction: column; gap: 12px; }
+  .prep-item {
+    background: var(--cream-dark);
+    border-radius: var(--r-md);
+    padding: 24px 28px;
+    display: flex; align-items: center; gap: 24px;
+    transition: transform .25s, box-shadow .25s;
+  }
+  .prep-item:hover {
+    transform: translateX(4px); box-shadow: var(--shadow-sm);
+  }
+  .prep-num {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: var(--ink); color: var(--cream);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-size: 18px; font-weight: 500;
+    flex-shrink: 0;
+  }
+  .prep-item.urgent .prep-num { background: var(--saffron); }
+  .prep-text { flex: 1; }
+  .prep-when {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  .prep-what { font-size: 16px; font-weight: 500; }
+  .prep-what small {
+    display: block;
+    font-weight: 400;
+    color: var(--ink-soft);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .booking-card {
+    background: var(--cream-dark);
+    border-radius: var(--r-lg);
+    padding: 36px;
+    position: sticky;
+    top: 100px;
+  }
+  .booking-card h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .booking-link {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    border-radius: var(--r-sm);
+    background: var(--cream);
+    transition: all .2s;
+  }
+  .booking-link:hover {
+    background: var(--ink); color: var(--cream);
+  }
+  .bl-text { display: flex; flex-direction: column; }
+  .bl-cat {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin-bottom: 2px;
+  }
+  .booking-link:hover .bl-cat { color: rgba(246, 241, 232, 0.65); }
+  .bl-name { font-size: 14px; font-weight: 500; }
+
+  /* ---------- DOOR TO DOOR ---------- */
+  .door {
+    padding: 100px 0;
+    background: var(--ink);
+    color: var(--cream);
+    border-radius: var(--r-xl);
+    margin: 0 32px 80px;
+  }
+  @media (min-width: 1300px) {
+    .door {
+      margin-left: calc((100vw - 1240px) / 2 + 32px);
+      margin-right: calc((100vw - 1240px) / 2 + 32px);
+    }
+  }
+  .door .section-eyebrow { color: var(--saffron-soft); }
+  .door h2 { color: var(--cream); }
+  .door .section-head p { color: rgba(246, 241, 232, 0.65); }
+  .door-flow {
+    position: relative;
+    padding-left: 60px;
+    margin-top: 40px;
+  }
+  .door-flow::before {
+    content: ''; position: absolute;
+    left: 16px; top: 14px; bottom: 14px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--saffron) 0%, var(--saffron) 90%, transparent 100%);
+    opacity: 0.25;
+  }
+  .stage {
+    position: relative;
+    margin-bottom: 28px;
+    background: rgba(246, 241, 232, 0.04);
+    border: 1px solid rgba(246, 241, 232, 0.08);
+    border-radius: var(--r-md);
+    padding: 24px 28px;
+  }
+  .stage-marker {
+    position: absolute; left: -52px; top: 22px;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--ink);
+    border: 2px solid var(--saffron);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--saffron-soft);
+  }
+  .stage-marker .icon { width: 16px; height: 16px; }
+  .stage-head {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; margin-bottom: 12px; flex-wrap: wrap;
+  }
+  .stage-title {
+    font-family: 'Fraunces', serif;
+    font-size: 22px; font-weight: 500;
+    color: var(--cream);
+  }
+  .stage-when {
+    font-size: 12px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--saffron-soft);
+    background: rgba(217, 122, 58, 0.15);
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+  .stage-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 14px;
+  }
+  .stage-col h6 {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: rgba(246, 241, 232, 0.55);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .stage-col ul { list-style: none; }
+  .stage-col li {
+    padding-left: 20px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.55;
+    color: rgba(246, 241, 232, 0.85);
+    margin-bottom: 8px;
+  }
+  .stage-col li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 9px;
+    width: 8px; height: 2px;
+    background: var(--saffron-soft);
+  }
+  .stage .link-chips { margin-top: 12px; }
+
+  /* ---------- POST-TRIP UPDATE ---------- */
+  .post-trip { padding: 100px 0; }
+  .post-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    margin-top: 48px;
+  }
+  .post-prompt {
+    background: var(--cream-dark);
+    border-radius: var(--r-md);
+    padding: 28px;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--ink);
+    user-select: all;
+    white-space: pre-wrap;
+  }
+  .post-fields {
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .post-field {
+    background: white;
+    border-radius: var(--r-sm);
+    padding: 18px 20px;
+    box-shadow: var(--shadow-sm);
+  }
+  .post-field-lbl {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+  .post-field-val {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .post-field-help {
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  /* Pin button on trip nav */
+  .nav-pin-btn {
+    background: transparent;
+    border: 1px solid var(--line-strong);
+    color: var(--ink);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: all .2s;
+  }
+  .nav-pin-btn:hover, .nav-pin-btn.pinned {
+    background: var(--ink); color: var(--cream);
+    border-color: var(--ink);
+  }
+  .nav-pin-btn.pinned { background: var(--saffron); border-color: var(--saffron); color: white; }
+
+  /* ---------- WHY ---------- */
+  .why { padding: 80px 0 100px; background: var(--cream-dark); }
+  .why-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+    margin-top: 56px;
+  }
+  .why-card {
+    padding: 36px 28px;
+    background: var(--cream);
+    border-radius: var(--r-md);
+    transition: transform .25s, box-shadow .25s;
+  }
+  .why-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-sm);
+  }
+  .why-icon {
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    background: var(--ink); color: var(--saffron-soft);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 24px;
+  }
+  .why-icon .icon { width: 24px; height: 24px; }
+  .why-card h5 {
+    font-size: 22px; font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .why-card p { color: var(--ink-soft); font-size: 15px; }
+
+  @media (max-width: 980px) {
+    .hero-grid, .compare-grid, .costs-grid, .loyalty-strip, .prep-grid, .why-grid, .transport-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero-visual { height: 460px; margin-top: 40px; }
+    .h-card-1 { right: 0; }
+    .booking-card { position: static; }
+  }
+  @media (max-width: 640px) {
+    .hero { padding: 50px 0; }
+    .hero-meta { grid-template-columns: 1fr 1fr; gap: 20px; }
+    .timeline { padding-left: 44px; }
+    .day-marker { left: -38px; width: 28px; height: 28px; }
+    .day-marker .icon { width: 12px; height: 12px; }
+    .day-head { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .day-date { min-width: 0; }
+    .row { grid-template-columns: 1fr; gap: 8px; }
+    .row-icon { width: 28px; height: 28px; }
+    .itinerary { margin: 0 16px 60px; padding: 60px 0; }
+  }
+</style>
+</head>
+<body data-trip-slug="2026-11-sri-lanka-ramayana">
+
+<!-- ICONS (inline so a single page is portable) -->
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+  <defs>
+    <symbol id="i-plane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="i-utensils" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></symbol>
+    <symbol id="i-landmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></symbol>
+    <symbol id="i-sunrise" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m8 6 4-4 4 4"/><path d="M16 18a4 4 0 0 0-8 0"/></symbol>
+    <symbol id="i-sunset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10V2"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m16 6-4 4-4-4"/><path d="M16 18a4 4 0 0 0-8 0"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></symbol>
+    <symbol id="i-waves" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-shopping" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M3 21v-5h5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></symbol>
+    <symbol id="i-thermo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+    <symbol id="i-luggage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20h0a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h0"/><path d="M8 18V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14"/><path d="M10 20h4"/><circle cx="16" cy="20" r="2"/><circle cx="8" cy="20" r="2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+    <symbol id="i-passport" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 2h16.99c.55 0 1 .45 1 1v18c0 .55-.45 1-1 1H3.5c-.83 0-1.5-.67-1.5-1.5V3.5C2 2.67 2.67 2 3.5 2z"/><circle cx="12" cy="11" r="3"/><path d="M9 18h6"/></symbol>
+    <symbol id="i-camera-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-3"/><circle cx="12" cy="13" r="3"/><path d="M19 4v4"/><path d="M17 6h4"/></symbol>
+  </defs>
+</svg>
+
+<!-- ========== NAV ========== -->
+<nav class="site-nav">
+  <div class="container inner">
+    <a href="../index.html" class="logo">
+      <span class="logo-mark">◈</span>
+      <span class="logo-word"><span class="logo-line">gama<span class="logo-slash">/</span></span><span class="logo-line">adventures</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">All trips</a>
+      <a href="#options" class="active">This trip</a>
+      <a href="#itinerary">Timeline</a>
+      <a href="#veg-restaurants">Veg dining</a>
+      <a href="#influencer-voices">Influencers</a>
+      <a href="#door-to-door">Door to door</a>
+      <a href="#transport">Transport</a>
+      <a href="#must-include">Add items</a>
+      <a href="#post-trip">After</a>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-pin-btn" id="trip-pin-btn" data-pin-id="2026-11-sri-lanka-ramayana" aria-label="Pin trip" title="Pin trip">
+        <svg class="icon icon-sm"><use href="#i-bookmark"/></svg>
+      </button>
+      <button class="btn btn-saffron btn-sm" data-refresh-trigger
+        data-refresh-name="Sri Lanka Nov 2026"
+        data-refresh-prompt="Refresh the trip plan at trips/2026-11-sri-lanka-ramayana/index.html.&#10;&#10;Trip: Fri Nov 20 to Tue Nov 24 2026, family of 4 (kids b.2016 &amp; 2019), BLR origin. Fixed point: a talk in Colombo on the morning of Sat Nov 21. Then a condensed loop: Colombo gemstone/tea/handloom/jewellery shopping, Kandy (Temple of the Tooth), and the Ramayana core in the hill country (Seetha Amman temple + Ashok Vatika/Hakgala + Ramboda Hanuman).&#10;&#10;1. Re-check BLR to CMB direct fares (4 pax, eco) on Skyscanner/Google Flights. Mark as estimate if blocked.&#10;2. Re-verify Marriott Bonvoy option in Colombo (Sheraton Colombo) + Hilton Colombo fallback; Kandy + Nuwara Eliya best-available 5-star via Booking.com.&#10;3. Re-check the Marriott 40K free-night cert status (may already be consumed at Kyoto - verify before relying on it).&#10;4. Recompute budget vs the 7L Lux cap. Keep gemstone/jewellery PURCHASES out of the travel cap (they are shopping, not travel cost) and say so.&#10;5. Re-verify all booking + map links resolve (no 404s).&#10;6. Keep the Sri Lanka vegetarian hazard flagged throughout: Maldive fish flakes (umbalakada) and dried fish are hidden in many vegetable curries and sambols; egg is in hoppers/kottu. Advise asking every time.&#10;7. Per-traveller entry: Sri Lanka ETA needed for the Indian passports AND for the US-passport child - apply separately, verify current fee.&#10;8. Overwrite this page using trips/_shared/style.css + site.js. Keep the inline icon symbols and the data hooks. Update the card + total on trips/index.html.&#10;&#10;Read .workspace/user_travel_prefs.md and .workspace/loyalty.md first - never override hard constraints (school days, veg, hotel tier, cabin policy)."
+      >
+        <svg class="icon icon-sm"><use href="#i-refresh"/></svg>
+        Refresh
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<header class="hero">
+  <div class="hero-decor">
+    <div class="ring filled"></div>
+    <div class="line"></div>
+    <div class="ring"></div>
+    <div class="line"></div>
+    <div class="ring"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          November 2026 · Colombo talk + Ramayana trail
+        </div>
+        <h1 data-parallax="0.05">A Saturday talk,<br><em>then</em> the Ramayana trail.</h1>
+        <p class="hero-sub">
+          Fly in for the Colombo talk on Saturday morning, then a tight island loop — certified Ceylon gemstones, tea, spice &amp; handloom, Kandy's Temple of the Tooth, and the Sita–Ashok Vatika heart of the Ramayana up in the hill country. Family of four, vegetarian-safe, home in five days.
+        </p>
+
+        <div class="hero-meta">
+          <div class="meta-item">
+            <div class="label">Window</div>
+            <div class="value">Nov 20 – 24</div>
+          </div>
+          <div class="meta-item">
+            <div class="label">Travelers</div>
+            <div class="value">4</div>
+          </div>
+          <div class="meta-item">
+            <div class="label">Nights</div>
+            <div class="value">4</div>
+          </div>
+          <div class="meta-item">
+            <div class="label">From</div>
+            <div class="value">BLR</div>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#options" class="btn btn-primary">Shopping focus <svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></a>
+          <a href="#itinerary" class="btn btn-ghost">See timeline</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="h-card h-card-1" data-parallax="0.06">
+          <div class="h-card-img" style="background: radial-gradient(ellipse 90% 70% at 30% 20%, rgba(232,165,114,0.55), transparent 60%), linear-gradient(135deg, #1f3a3d 0%, #2b5457 55%, #d97a3a 130%);">
+            <span class="h-card-tag">
+              <svg class="icon icon-sm" style="display:inline; vertical-align: middle; margin-right: 4px;"><use href="#i-star"/></svg>
+              The talk
+            </span>
+          </div>
+          <div class="h-card-body">
+            <div class="place">Colombo</div>
+            <div class="meta">Sat AM talk · gem &amp; craft shopping</div>
+          </div>
+        </div>
+        <div class="h-card h-card-2" data-parallax="0.10">
+          <div class="h-card-img" style="background: radial-gradient(ellipse 80% 80% at 70% 80%, rgba(150,200,200,0.35), transparent 62%), linear-gradient(135deg, #122729 0%, #2b5457 60%, #98d4d4 140%);">
+            <span class="h-card-tag">Ramayana</span>
+          </div>
+          <div class="h-card-body">
+            <div class="place">Seetha Amman</div>
+            <div class="meta">Hill country · Ashok Vatika</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ========== HERO IMAGE STRIP ========== -->
+<section class="strip" aria-label="Trip highlights">
+  <div class="strip-eyebrow">What this trip is built around</div>
+  <div class="strip-track" id="strip-track">
+    <article class="strip-card">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(180,90,200,0.5), transparent 60%), linear-gradient(135deg,#2b1a3d,#5a2b70,#d4b8e6);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Gems</span>
+        <div class="strip-card-name">Ratnapura sapphires</div>
+        <div class="strip-card-loc">Ratnapura · Colombo · NGJA-certified</div>
+      </div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(232,165,114,0.55), transparent 60%), linear-gradient(135deg,#1f3a3d,#8a4a1f,#e8a572);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Temple</span>
+        <div class="strip-card-name">Temple of the Tooth</div>
+        <div class="strip-card-loc">Kandy · Sri Dalada Maligawa</div>
+      </div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(150,200,200,0.45), transparent 60%), linear-gradient(135deg,#122729,#2b5457,#98d4d4);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag alt">Ramayana</span>
+        <div class="strip-card-name">Seetha Amman Temple</div>
+        <div class="strip-card-loc">Nuwara Eliya · where Sita was held</div>
+      </div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(150,200,150,0.5), transparent 60%), linear-gradient(135deg,#123322,#2e6b3e,#a8d8a0);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Tea</span>
+        <div class="strip-card-name">Ceylon tea estates</div>
+        <div class="strip-card-loc">Hill country · leaf &amp; spice</div>
+      </div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(230,180,90,0.5), transparent 60%), linear-gradient(135deg,#3d2a12,#8a6a1f,#e8c572);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Craft</span>
+        <div class="strip-card-name">Ambalangoda masks</div>
+        <div class="strip-card-loc">South coast · handloom &amp; batik</div>
+      </div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(120,170,220,0.5), transparent 60%), linear-gradient(135deg,#0f2233,#2b5480,#a0c8e8);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag alt">Ramayana</span>
+        <div class="strip-card-name">Ashok Vatika (Hakgala)</div>
+        <div class="strip-card-loc">Nuwara Eliya · Sita's garden</div>
+      </div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(210,110,70,0.55), transparent 60%), linear-gradient(135deg,#3d1a12,#8a3a1f,#e88572);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Spice</span>
+        <div class="strip-card-name">Colombo spice markets</div>
+        <div class="strip-card-loc">Pettah · cinnamon &amp; cardamom</div>
+      </div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(232,165,114,0.4), transparent 60%), linear-gradient(135deg,#1f3a3d,#4a4a55,#d97a3a);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">City</span>
+        <div class="strip-card-name">Gangaramaya Temple</div>
+        <div class="strip-card-loc">Colombo · lakeside shrine</div>
+      </div>
+    </article>
+    <!-- duplicated set for seamless loop -->
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(180,90,200,0.5), transparent 60%), linear-gradient(135deg,#2b1a3d,#5a2b70,#d4b8e6);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Gems</span>
+        <div class="strip-card-name">Ratnapura sapphires</div>
+        <div class="strip-card-loc">Ratnapura · Colombo · NGJA-certified</div>
+      </div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(232,165,114,0.55), transparent 60%), linear-gradient(135deg,#1f3a3d,#8a4a1f,#e8a572);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Temple</span>
+        <div class="strip-card-name">Temple of the Tooth</div>
+        <div class="strip-card-loc">Kandy · Sri Dalada Maligawa</div>
+      </div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(150,200,200,0.45), transparent 60%), linear-gradient(135deg,#122729,#2b5457,#98d4d4);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag alt">Ramayana</span>
+        <div class="strip-card-name">Seetha Amman Temple</div>
+        <div class="strip-card-loc">Nuwara Eliya · where Sita was held</div>
+      </div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(150,200,150,0.5), transparent 60%), linear-gradient(135deg,#123322,#2e6b3e,#a8d8a0);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Tea</span>
+        <div class="strip-card-name">Ceylon tea estates</div>
+        <div class="strip-card-loc">Hill country · leaf &amp; spice</div>
+      </div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(230,180,90,0.5), transparent 60%), linear-gradient(135deg,#3d2a12,#8a6a1f,#e8c572);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Craft</span>
+        <div class="strip-card-name">Ambalangoda masks</div>
+        <div class="strip-card-loc">South coast · handloom &amp; batik</div>
+      </div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(120,170,220,0.5), transparent 60%), linear-gradient(135deg,#0f2233,#2b5480,#a0c8e8);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag alt">Ramayana</span>
+        <div class="strip-card-name">Ashok Vatika (Hakgala)</div>
+        <div class="strip-card-loc">Nuwara Eliya · Sita's garden</div>
+      </div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(210,110,70,0.55), transparent 60%), linear-gradient(135deg,#3d1a12,#8a3a1f,#e88572);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Spice</span>
+        <div class="strip-card-name">Colombo spice markets</div>
+        <div class="strip-card-loc">Pettah · cinnamon &amp; cardamom</div>
+      </div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background: radial-gradient(ellipse at 30% 20%, rgba(232,165,114,0.4), transparent 60%), linear-gradient(135deg,#1f3a3d,#4a4a55,#d97a3a);"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">City</span>
+        <div class="strip-card-name">Gangaramaya Temple</div>
+        <div class="strip-card-loc">Colombo · lakeside shrine</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ========== SHOPPING FOCUS ========== -->
+<section class="compare" id="options">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">The four things to buy</div>
+        <h2>Ceylon's <em>signature</em> purchases</h2>
+      </div>
+      <p>You asked for gemstones and unique shopping. Sri Lanka's four authentic categories — each with a "buy it right" note. <strong>Gem and jewellery spend is treated as shopping, not travel budget</strong>, so it sits outside the &#8377;7L trip cap. The one rule that protects you on stones: buy only with an <strong>NGJA</strong> (National Gem &amp; Jewellery Authority) certificate.</p>
+    </div>
+
+    <div class="compare-grid">
+      <div class="opt-card recommended" data-reveal>
+        <div class="opt-card-image" style="background: radial-gradient(ellipse 90% 70% at 25% 15%, rgba(232,165,114,0.5), transparent 60%), linear-gradient(135deg,#1f3a3d,#5a2b70 60%,#d4b8e6 140%);">
+          <span class="opt-badge rec"><svg class="icon icon-sm"><use href="#i-star"/></svg> Headline</span>
+        </div>
+        <div class="opt-card-body">
+          <h3>Certified loose gemstones</h3>
+          <p class="opt-sub">Blue sapphires, star sapphires, moonstone, padparadscha — Ratnapura is the source; Colombo is where you certify &amp; buy</p>
+          <div class="opt-stats">
+            <div class="stat"><div class="stat-val">NGJA</div><div class="stat-lbl">Get the cert</div></div>
+            <div class="stat"><div class="stat-val">Ratnapura</div><div class="stat-lbl">Gem capital</div></div>
+            <div class="stat"><div class="stat-val">Colombo</div><div class="stat-lbl">Safe buying</div></div>
+          </div>
+          <div class="opt-features">
+            <span class="feature-pill">Insist on an NGJA lab certificate</span>
+            <span class="feature-pill">Buy loose stones, set them at home</span>
+            <span class="feature-pill warn">Avoid street/hotel-lobby sellers</span>
+            <span class="feature-pill">Padparadscha = Sri Lanka's signature</span>
+          </div>
+          <a href="#itinerary" class="opt-link">Where in the plan <svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </div>
+      <div class="opt-card" data-reveal>
+        <div class="opt-card-image" style="background: linear-gradient(135deg,#1f3a3d,#2b5457 60%,#98d4d4 140%);">
+          <span class="opt-badge">Theme</span>
+        </div>
+        <div class="opt-card-body">
+          <h3>Ceylon tea &amp; spices</h3>
+          <p class="opt-sub">Single-estate high-grown tea, true cinnamon (Ceylon cinnamon, not cassia), cardamom, cloves, pepper</p>
+          <div class="opt-stats">
+            <div class="stat"><div class="stat-val">High-grown</div><div class="stat-lbl">Best tea</div></div>
+            <div class="stat"><div class="stat-val">True cinnamon</div><div class="stat-lbl">Buy here</div></div>
+            <div class="stat"><div class="stat-val">Sealed</div><div class="stat-lbl">Travel-safe</div></div>
+          </div>
+          <div class="opt-features">
+            <span class="feature-pill">Buy vacuum-sealed for the flight</span>
+            <span class="feature-pill">Ceylon cinnamon is the real thing</span>
+            <span class="feature-pill">Estate shops beat airport prices</span>
+          </div>
+          <a href="#itinerary" class="opt-link">Where in the plan <svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </div>
+      <div class="opt-card" data-reveal>
+        <div class="opt-card-image" style="background: linear-gradient(135deg,#1f3a3d,#2b5457 60%,#98d4d4 140%);">
+          <span class="opt-badge">Theme</span>
+        </div>
+        <div class="opt-card-body">
+          <h3>Handloom &amp; crafts</h3>
+          <p class="opt-sub">Batik, handloom cotton/sarong, Ambalangoda devil masks, lacquerware, brass — plus Laksala (state craft store) for fixed honest prices</p>
+          <div class="opt-stats">
+            <div class="stat"><div class="stat-val">Laksala</div><div class="stat-lbl">Fair price</div></div>
+            <div class="stat"><div class="stat-val">Batik</div><div class="stat-lbl">Signature</div></div>
+            <div class="stat"><div class="stat-val">Masks</div><div class="stat-lbl">Unique</div></div>
+          </div>
+          <div class="opt-features">
+            <span class="feature-pill">Laksala = government-run, no haggling</span>
+            <span class="feature-pill">Ambalangoda masks are one-of-a-kind</span>
+            <span class="feature-pill">Batik makes great kid-friendly gifts</span>
+          </div>
+          <a href="#itinerary" class="opt-link">Where in the plan <svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </div>
+      <div class="opt-card" data-reveal>
+        <div class="opt-card-image" style="background: linear-gradient(135deg,#1f3a3d,#2b5457 60%,#98d4d4 140%);">
+          <span class="opt-badge">Theme</span>
+        </div>
+        <div class="opt-card-body">
+          <h3>Finished jewellery</h3>
+          <p class="opt-sub">Set sapphire pieces if you'd rather not set stones yourself — reputable Colombo houses only, with certification</p>
+          <div class="opt-stats">
+            <div class="stat"><div class="stat-val">Certified</div><div class="stat-lbl">Non-negotiable</div></div>
+            <div class="stat"><div class="stat-val">Colombo</div><div class="stat-lbl">Trusted houses</div></div>
+            <div class="stat"><div class="stat-val">Compare</div><div class="stat-lbl">Take your time</div></div>
+          </div>
+          <div class="opt-features">
+            <span class="feature-pill">Only from established, certified houses</span>
+            <span class="feature-pill">Cross-check the stone's NGJA papers</span>
+            <span class="feature-pill warn">Higher markup than loose stones</span>
+          </div>
+          <a href="#itinerary" class="opt-link">Where in the plan <svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ITINERARY ========== -->
+<section class="itinerary" id="itinerary">
+  <div class="container with-map">
+    <aside class="section-with-map__map" data-trip-map="itinerary" aria-label="Map of itinerary stops"></aside>
+    <div class="with-map__main">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Day by day</div>
+        <h2>The <em>timeline</em></h2>
+      </div>
+      <p>One condensed loop: land Friday, talk Saturday morning, shop the gems &amp; crafts, then Kandy and the Sita–Ashok Vatika hill country before flying home Tuesday. The school-day cost (~3 days) is stated up front on Day 1 — it isn't hidden anywhere.</p>
+    </div>
+
+    <div class="timeline">
+        <details class="day" open>
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-plane"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Fri · Nov 20</div>
+                <div class="day-title">Fly BLR → Colombo</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Travel</span>
+                <span class="day-tag">School day 1</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">—</div>
+              <div class="row-icon shopping"><svg class="icon"><use href="#i-calendar"/></svg></div>
+              <div class="row-content">
+                <strong style="color:#ffb986;">School-day honesty:</strong> Nov 20 is a Friday school day. A real Colombo-talk-plus-Ramayana loop costs about <strong>3 school days</strong> (Fri Nov 20, Mon Nov 23, Tue Nov 24). The talk is fixed to Sat AM and the Ramayana core sits ~5h up in the hill country — there is no version of this that misses zero school. Flagging it plainly so you can decide; nothing below hides it.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">13:30</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-plane"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">BLR → CMB</span> — direct, ~1h 20m. <span class="price">₹40–55K rt × 4 est.</span> Afternoon flight so only a half school day is missed if needed.
+                <div data-route="flight" data-from="BLR" data-from-label="Bangalore" data-from-time="Fri · 13:30" data-to="CMB" data-to-label="Colombo" data-to-time="Fri · 15:00" data-duration="1h 20m · direct"></div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.skyscanner.co.in/transport/flights/blr/cmb/261120/261124/?adults=4" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Skyscanner</a>
+                  <a class="chip" href="https://www.google.com/travel/flights?q=Flights%20from%20BLR%20to%20CMB%20on%202026-11-20" target="_blank"><svg class="icon"><use href="#i-plane"/></svg> Google Flights</a>
+                  <a class="chip" href="https://www.srilankan.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> SriLankan</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">15:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-passport"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Colombo (CMB / Bandaranaike) arrival + ETA</span>. <strong>Per-traveller:</strong> all four need a Sri Lanka ETA — the three Indian passports <em>and</em> the US-passport child apply separately. Verify current fee + apply online before flying.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.eta.gov.lk/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Sri Lanka ETA</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">16:30</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                Airport → Colombo hotel, ~35 km. Pre-book hotel car or use PickMe (the local ride app).
+                <div data-route="car" data-from="CMB" data-from-label="CMB Airport" data-from-time="Fri · 16:30" data-to="COLOMBO" data-to-label="Colombo hotel" data-to-time="Fri · 17:30" data-duration="1h · ~35 km"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">18:00</div>
+              <div class="row-icon hotel"><svg class="icon"><use href="#i-bed"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Check in · Sheraton Colombo (Bonvoy)</span> — Marriott-family property for Titanium perks (breakfast, upgrade, lounge). Hilton Colombo is the fallback. Live rates in the Hotels widget below.
+                <div class="link-chips">
+                  <a class="chip" href="#hotels" target="_blank"><svg class="icon"><use href="#i-bed"/></svg> Live rates ↓</a>
+                  <a class="chip" href="https://www.booking.com/searchresults.html?ss=Colombo%2C+Sri+Lanka&checkin=2026-11-20&checkout=2026-11-22&group_adults=2&group_children=2&class=5" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Booking.com</a>
+                  <a class="chip" href="https://www.google.com/maps/search/Sheraton+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Colombo hotel" data-rest-city="Colombo">
+              <div class="row-time">20:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · hotel or a verified pure-veg spot</span> — settle in easy the first night.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;"><strong>Try (vegetarian):</strong> rice &amp; curry (ask for the veg-only spread, no Maldive fish), dhal, gotukola sambol, string hoppers with coconut milk (confirm no egg). <strong>Veg note:</strong> Sri Lankan "vegetable" curries and sambols often hide <strong>Maldive fish flakes (umbalakada)</strong> or dried fish; hoppers &amp; kottu often contain <strong>egg</strong>. Always say <em>"no fish, no Maldive fish, no egg"</em> and confirm before ordering.</div>
+              </div>
+            </div>
+          </div>
+        </details>
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-star"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Sat · Nov 21</div>
+                <div class="day-title">The talk, then gem &amp; craft shopping</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">The talk</span>
+                <span class="day-tag">Shopping</span>
+                <span class="day-tag">No school</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">07:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Breakfast · hotel (free for Titanium)</span> — light, before the talk.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;"><strong>Try (vegetarian):</strong> milk rice (kiribath), coconut roti, fresh papaya &amp; pineapple, Ceylon tea.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">09:00</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Your talk · Colombo (morning)</span> — the fixed point of the whole trip. Family can have a slow hotel morning (pool) and join you after.
+              </div>
+            </div>
+            <div class="row" data-rest-name="Colombo" data-rest-city="Colombo">
+              <div class="row-time">12:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · pure-veg near the venue</span> — regroup as a family.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;"><strong>Try (vegetarian):</strong> a South-Indian pure-veg thali (Colombo has several reliable ones) or a hotel veg rice &amp; curry. <strong>Veg note:</strong> Sri Lankan "vegetable" curries and sambols often hide <strong>Maldive fish flakes (umbalakada)</strong> or dried fish; hoppers &amp; kottu often contain <strong>egg</strong>. Always say <em>"no fish, no Maldive fish, no egg"</em> and confirm before ordering.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">14:00</div>
+              <div class="row-icon shopping"><svg class="icon"><use href="#i-sparkles"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Gemstones — the main event.</span> Colombo is where you buy safely and certify. Go to established houses; ask for the <strong>NGJA lab certificate</strong> on any stone. Buy stones <em>loose</em> and set them at home. Padparadscha (pink-orange sapphire) is Sri Lanka's signature.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.ngja.gov.lk/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> NGJA authority</a>
+                  <a class="chip" href="https://www.google.com/maps/search/gem+dealers+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Gem district map</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">16:00</div>
+              <div class="row-icon shopping"><svg class="icon"><use href="#i-shopping"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Laksala + handloom &amp; batik</span> — Laksala is the government craft store: fixed, honest prices, good for tea, batik, masks, brass, lacquerware. A no-haggle, kid-friendly stop.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Laksala+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Laksala map</a>
+                  <a class="chip" href="https://www.google.com/maps/search/Barefoot+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Barefoot (handloom)</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">17:30</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Gangaramaya Temple + Seema Malaka</span> — lakeside Colombo landmark, lovely at dusk, easy with kids.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Gangaramaya+Temple+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Colombo dinner" data-rest-city="Colombo">
+              <div class="row-time">19:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · verified pure-veg / hotel</span>.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;"><strong>Try (vegetarian):</strong> jackfruit (polos) curry, cashew curry, red rice, coconut sambol (ask: no Maldive fish). <strong>Veg note:</strong> Sri Lankan "vegetable" curries and sambols often hide <strong>Maldive fish flakes (umbalakada)</strong> or dried fish; hoppers &amp; kottu often contain <strong>egg</strong>. Always say <em>"no fish, no Maldive fish, no egg"</em> and confirm before ordering.</div>
+              </div>
+            </div>
+          </div>
+        </details>
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-route"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Sun · Nov 22</div>
+                <div class="day-title">Drive to Kandy · Temple of the Tooth</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Transit</span>
+                <span class="day-tag">Kandy</span>
+                <span class="day-tag">No school</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">08:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Breakfast · hotel</span> — fuel up; ~3–3.5h drive to Kandy.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;"><strong>Try (vegetarian):</strong> hoppers <em>without egg</em>, string hoppers, dhal, coconut sambol.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">09:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Colombo → Kandy</span> — 120 km, ~3–3.5h with a stop. Hire a car + driver for the whole loop (cheapest and easiest with kids in Sri Lanka).
+                <div data-route="car" data-from="COLOMBO" data-from-label="Colombo" data-from-time="Sun · 09:00" data-to="KANDY" data-to-label="Kandy" data-to-time="Sun · 12:30" data-duration="3.5h · 120 km"></div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/dir/Colombo/Kandy" target="_blank"><svg class="icon"><use href="#i-route"/></svg> Route</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">12:30</div>
+              <div class="row-icon hotel"><svg class="icon"><use href="#i-bed"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Check in · Kandy 5-star</span> (e.g. lakeside/hillside property — see live rates). Bonvoy footprint is thin in Kandy, so best-available 5-star; Titanium still helps where Marriott exists.
+                <div class="link-chips">
+                  <a class="chip" href="#hotels" target="_blank"><svg class="icon"><use href="#i-bed"/></svg> Live rates ↓</a>
+                  <a class="chip" href="https://www.booking.com/searchresults.html?ss=Kandy%2C+Sri+Lanka&checkin=2026-11-22&checkout=2026-11-23&group_adults=2&group_children=2&class=5" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Booking.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Kandy" data-rest-city="Kandy">
+              <div class="row-time">13:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · hotel or verified veg in Kandy</span>.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;"><strong>Try (vegetarian):</strong> Kandyan rice &amp; curry veg spread, gotukola, dhal, ash-plantain curry. <strong>Veg note:</strong> Sri Lankan "vegetable" curries and sambols often hide <strong>Maldive fish flakes (umbalakada)</strong> or dried fish; hoppers &amp; kottu often contain <strong>egg</strong>. Always say <em>"no fish, no Maldive fish, no egg"</em> and confirm before ordering.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">16:00</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Sri Dalada Maligawa — Temple of the Sacred Tooth Relic</span>. Kandy's heart; time it for the evening puja. Dress modestly (shoulders + knees covered), shoes off.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Temple+of+the+Tooth+Kandy" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                  <a class="chip" href="https://sridaladamaligawa.lk/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Temple site</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">18:30</div>
+              <div class="row-icon outdoor"><svg class="icon"><use href="#i-waves"/></svg></div>
+              <div class="row-content">
+                Walk by <span class="row-title">Kandy Lake</span> after the puja — calm, safe, good for the kids to stretch.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Kandy+Lake" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Kandy hotel" data-rest-city="Kandy">
+              <div class="row-time">20:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · hotel</span> — early night; hill-country Ramayana day tomorrow.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;"><strong>Try (vegetarian):</strong> veg rice &amp; curry, roti, tempered chickpeas (kadala — confirm no dried fish). <strong>Veg note:</strong> Sri Lankan "vegetable" curries and sambols often hide <strong>Maldive fish flakes (umbalakada)</strong> or dried fish; hoppers &amp; kottu often contain <strong>egg</strong>. Always say <em>"no fish, no Maldive fish, no egg"</em> and confirm before ordering.</div>
+              </div>
+            </div>
+          </div>
+        </details>
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-mountain"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Mon · Nov 23</div>
+                <div class="day-title">The Ramayana hill country — Seetha Amman &amp; Ashok Vatika</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Ramayana</span>
+                <span class="day-tag">Hill country</span>
+                <span class="day-tag">School day 2</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">07:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Breakfast · hotel</span> — scenic tea-country drive ahead.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;"><strong>Try (vegetarian):</strong> Ceylon tea, coconut roti, dhal, fruit.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">08:30</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Kandy → Nuwara Eliya</span> — 75 km but ~2.5–3h of winding tea-estate roads. This is the day the Ramayana core lives on.
+                <div data-route="car" data-from="KANDY" data-from-label="Kandy" data-from-time="Mon · 08:30" data-to="NUWARA" data-to-label="Nuwara Eliya" data-to-time="Mon · 11:30" data-duration="3h · 75 km"></div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/dir/Kandy/Nuwara+Eliya" target="_blank"><svg class="icon"><use href="#i-route"/></svg> Route</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">10:00</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Sri Bhakta Hanuman Temple, Ramboda</span> (en route) — hilltop Hanuman temple run by the Chinmaya Mission; sweeping valley views.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Sri+Bhakta+Hanuman+Temple+Ramboda" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">12:00</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Seetha Amman Temple</span> — the heart of the trip. Believed to be where Sita was held captive; the stream and the alleged footprints on the rock. Small, atmospheric, deeply significant.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Seetha+Amman+Temple+Nuwara+Eliya" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Nuwara Eliya" data-rest-city="Nuwara Eliya">
+              <div class="row-time">13:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · pure-veg / hotel in Nuwara Eliya</span>.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;"><strong>Try (vegetarian):</strong> hill-country veg rice &amp; curry, leeks curry, carrot &amp; bean tempered (ask: no Maldive fish, no egg). <strong>Veg note:</strong> Sri Lankan "vegetable" curries and sambols often hide <strong>Maldive fish flakes (umbalakada)</strong> or dried fish; hoppers &amp; kottu often contain <strong>egg</strong>. Always say <em>"no fish, no Maldive fish, no egg"</em> and confirm before ordering.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">15:00</div>
+              <div class="row-icon outdoor"><svg class="icon"><use href="#i-sparkles"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Hakgala Botanical Garden — Ashok Vatika</span>. Identified with the garden where Sita stayed; also just a gorgeous garden for the kids to roam.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Hakgala+Botanical+Garden" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">16:30</div>
+              <div class="row-icon shopping"><svg class="icon"><use href="#i-shopping"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Tea estate stop</span> — buy single-estate high-grown Ceylon tea + true cinnamon, vacuum-sealed for the flight. Fresher and cheaper than the airport.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/tea+factory+Nuwara+Eliya" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Tea factory map</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">18:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                Drive back toward Colombo/Kandy for the night (position for tomorrow's flight), or overnight Nuwara Eliya + early start. <em>Simplest with kids:</em> overnight closer to the airport.
+                <div data-route="car" data-from="NUWARA" data-from-label="Nuwara Eliya" data-from-time="Mon · 18:00" data-to="COLOMBO" data-to-label="Near CMB" data-to-time="Mon · 22:30" data-duration="~4.5h · position for flight"></div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="En route" data-rest-city="Colombo">
+              <div class="row-time">21:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · hotel</span> — late arrival; keep it simple.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;"><strong>Veg note:</strong> if eating late at a highway stop, stick to plain rice, dhal, and plain roti to stay safely veg. <strong>Veg note:</strong> Sri Lankan "vegetable" curries and sambols often hide <strong>Maldive fish flakes (umbalakada)</strong> or dried fish; hoppers &amp; kottu often contain <strong>egg</strong>. Always say <em>"no fish, no Maldive fish, no egg"</em> and confirm before ordering.</div>
+              </div>
+            </div>
+          </div>
+        </details>
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-plane"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Tue · Nov 24</div>
+                <div class="day-title">Last Colombo bits &amp; fly home</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Travel</span>
+                <span class="day-tag">School day 3</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">08:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Breakfast · hotel</span>.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;"><strong>Try (vegetarian):</strong> kiribath (milk rice) + jaggery, fruit, Ceylon tea.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">09:30</div>
+              <div class="row-icon shopping"><svg class="icon"><use href="#i-sparkles"/></svg></div>
+              <div class="row-content">
+                Optional last stop: <span class="row-title">any pending gem pickup / jewellery</span> — collect certified stones, or finished pieces from a reputable Colombo house (cross-check the NGJA papers). Or a final Laksala run for gifts.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Laksala+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Laksala</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Near CMB" data-rest-city="Colombo">
+              <div class="row-time">12:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · verified veg near the airport</span>.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;"><strong>Try (vegetarian):</strong> a quick veg rice &amp; curry; confirm no Maldive fish. <strong>Veg note:</strong> Sri Lankan "vegetable" curries and sambols often hide <strong>Maldive fish flakes (umbalakada)</strong> or dried fish; hoppers &amp; kottu often contain <strong>egg</strong>. Always say <em>"no fish, no Maldive fish, no egg"</em> and confirm before ordering.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">14:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                To CMB airport. Reach ~3h before an international flight.
+                <div data-route="car" data-from="COLOMBO" data-from-label="Colombo" data-from-time="Tue · 14:00" data-to="CMB" data-to-label="CMB Airport" data-to-time="Tue · 15:00" data-duration="1h · ~35 km"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">17:30</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-plane"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">CMB → BLR</span> — direct, ~1h 20m. Home by evening.
+                <div data-route="flight" data-from="CMB" data-from-label="Colombo" data-from-time="Tue · 17:30" data-to="BLR" data-to-label="Bangalore" data-to-time="Tue · 19:00" data-duration="1h 20m · direct"></div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.skyscanner.co.in/transport/flights/cmb/blr/261124/?adults=4" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Skyscanner</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">20:30</div>
+              <div class="row-icon hotel"><svg class="icon"><use href="#i-home"/></svg></div>
+              <div class="row-content">
+                Home. Declare gemstones honestly at Indian customs; keep the NGJA certs + purchase invoices handy.
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div><!-- /.with-map__main -->
+  </div>
+</section>
+
+<!-- ========== COSTS ========== -->
+<section class="costs" id="costs">
+  <div class="container">
+    <div id="holiday-alert-trip" data-trip-start="2026-11-20" data-trip-end="2026-11-24" style="display:none;"></div>
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">The numbers</div>
+        <h2>Travel cost sits <em>well under</em> the Lux cap</h2>
+      </div>
+      <p>Your per-trip cap is ₹7L (₹2.5L flights / ₹3L hotels / ₹1.5L other). The plan below is the <strong>travel</strong> cost only. <strong>Gemstones and jewellery are a separate shopping decision</strong> — they are not counted against the travel cap, because they're an asset purchase, not a trip expense. Set your own stone budget separately.</p>
+    </div>
+
+    <div class="costs-grid">
+      <div class="cost-card featured" data-reveal data-live-cost="A">
+        <h4>Sri Lanka · 4 nights</h4>
+        <p class="cost-sub">All-in travel estimate, family of 4 · <span data-live-stamp>live as of —</span></p>
+        <div class="cost-row" data-live-flight="BLR-CMB-2026-11-20-2026-11-24">
+          <span>Flights · BLR ⇄ CMB × 4 (direct) <span data-live-flight-note style="display:block;font-size:11px;color:rgba(255,255,255,.7);"></span></span>
+          <strong>₹50,000</strong>
+        </div>
+        <div class="cost-row" data-live-hotel="Colombo-Kandy-NuwaraEliya">
+          <span>Hotels · 2n Colombo + 1n Kandy + 1n hill/near-CMB <span data-live-hotel-note style="display:block;font-size:11px;color:rgba(255,255,255,.7);"></span></span>
+          <strong>₹1,10,000</strong>
+        </div>
+        <div class="cost-row"><span>Car + driver (whole loop, 4 days)</span><strong>₹35,000</strong></div>
+        <div class="cost-row"><span>Food (Titanium breakfast saves ~₹10K)</span><strong>₹35,000</strong></div>
+        <div class="cost-row"><span>ETAs × 4 + temple entries + guides</span><strong>₹15,000</strong></div>
+        <div class="cost-row"><span>Tea/spice/craft shopping + tips</span><strong>₹15,000</strong></div>
+        <div class="cost-row total"><span>Travel total</span><strong>₹2,60,000</strong></div>
+        <div style="margin-top: 28px;">
+          <div class="cap-bar"><div class="cap-fill" style="width: 37%"></div></div>
+          <div class="cap-meta"><span>37% of Lux cap</span><span>63% headroom</span></div>
+        </div>
+      </div>
+
+      <div class="cost-card" data-reveal>
+        <h4>Gemstones &amp; jewellery <span style="font-weight:400;font-size:14px;color:var(--ink-soft);">· separate</span></h4>
+        <p class="cost-sub">Your call — an asset purchase, not a travel cost</p>
+        <div class="cost-row"><span>Set your own stone budget</span><strong>You decide</strong></div>
+        <div class="cost-row"><span>Rule: NGJA lab cert on every stone</span><strong>Non-negotiable</strong></div>
+        <div class="cost-row"><span>Buy loose · set at home</span><strong>Lower markup</strong></div>
+        <div class="cost-row"><span>Finished jewellery</span><strong>Higher markup</strong></div>
+        <div class="cost-row"><span>Keep invoices + certs for customs</span><strong>Declare honestly</strong></div>
+        <div style="margin-top:20px;padding:16px;background:rgba(0,0,0,0.05);border-radius:12px;font-size:13px;color:var(--ink-soft);">
+          Why it's separate: a ₹2L sapphire isn't a ₹2L trip cost — it's a ₹2L asset you carry home. Folding it into the travel cap would make the trip look "over budget" when it isn't. Budget stones from savings, not from the ₹7L.
+        </div>
+      </div>
+    </div>
+
+    <div class="loyalty-strip" data-reveal>
+      <div>
+        <div class="section-eyebrow">Your leverage</div>
+        <h3>Bonvoy works <em>in Colombo</em></h3>
+        <p>Colombo has Marriott-family properties (Sheraton Colombo), so Titanium gives you breakfast, an upgrade, and lounge access for the two Colombo nights. Kandy + hill country are thin on Bonvoy — best-available 5-star there.</p>
+        <p style="color: rgba(246, 241, 232, 0.5); font-size: 13px;">Verify the 40K free-night cert before relying on it — it may already have been used on the Japan trip. Confirm balance post-Tokyo.</p>
+      </div>
+      <div class="loyalty-points">
+        <div class="lp-item"><div class="lp-prog">Marriott Bonvoy</div><div class="lp-bal">359,343</div><div class="lp-tier">Titanium · verify post-Tokyo</div></div>
+        <div class="lp-item"><div class="lp-prog">Free-night cert</div><div class="lp-bal">40K cap</div><div class="lp-tier">Confirm not yet used</div></div>
+        <div class="lp-item"><div class="lp-prog">Hilton Honors</div><div class="lp-bal">30,299</div><div class="lp-tier">Gold · Colombo fallback</div></div>
+        <div class="lp-item"><div class="lp-prog">Amex MR</div><div class="lp-bal">142,286</div><div class="lp-tier">Transferable</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LIVE HOTELS (SerpAPI Google Hotels) ========== -->
+<section class="hotels-section" id="hotels">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Live hotel rates</div>
+        <h2>What's <em>actually available</em></h2>
+      </div>
+      <p>Live rates from Google Hotels for your exact dates and family of 4. Featured cards = your loyalty plays. Click any to open the full booking flow.</p>
+    </div>
+
+    <div class="section-map-split">
+     <div class="section-map-split__list">
+    <div class="hotels-stops">
+
+      <div data-hotels-stop="colombo" data-dest="Colombo" data-checkin="2026-11-20" data-checkout="2026-11-22" data-adults="2" data-kids="2" data-kid-ages="7,10" data-class="5" data-featured-name="Sheraton">
+        <div class="hotels-stop-head">
+          <h3>Colombo</h3>
+          <span class="stop-meta">Fri Nov 20 → Sun Nov 22 · 2 nights · 5-star (Bonvoy)</span>
+        </div>
+        <div class="hotels-grid"><div class="veg-loading">Loading hotel rates…</div></div>
+      </div>
+
+      <div data-hotels-stop="kandy" data-dest="Kandy" data-checkin="2026-11-22" data-checkout="2026-11-23" data-adults="2" data-kids="2" data-kid-ages="7,10" data-class="5">
+        <div class="hotels-stop-head">
+          <h3>Kandy</h3>
+          <span class="stop-meta">Sun Nov 22 → Mon Nov 23 · 1 night · best-available 5-star</span>
+        </div>
+        <div class="hotels-grid"><div class="veg-loading">Loading hotel rates…</div></div>
+      </div>
+
+      <div data-hotels-stop="nuwara-eliya" data-dest="Nuwara Eliya" data-checkin="2026-11-23" data-checkout="2026-11-24" data-adults="2" data-kids="2" data-kid-ages="7,10" data-class="">
+        <div class="hotels-stop-head">
+          <h3>Nuwara Eliya / near CMB</h3>
+          <span class="stop-meta">Mon Nov 23 → Tue Nov 24 · 1 night · best available</span>
+        </div>
+        <div class="hotels-grid"><div class="veg-loading">Loading hotel rates…</div></div>
+      </div>
+
+    </div>
+     </div>
+     <aside class="section-map-split__map" data-trip-map="hotels" aria-label="Map of hotels"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TRANSPORT (CARS) ========== -->
+<section class="transport" id="transport">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Ground transport</div>
+        <h2>One car + driver, <em>the whole loop</em></h2>
+      </div>
+      <p>In Sri Lanka the easy, cheap, safe-with-kids move is to hire one car with an English-speaking driver-guide for the entire trip. Hill-country roads are winding — a local driver is worth it. In Colombo, PickMe (the local ride app) handles short hops.</p>
+    </div>
+
+    <div class="transport-grid">
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-route"/></svg></div>
+          <div>
+            <h4>Colombo → Kandy → Nuwara Eliya</h4>
+            <div class="car-leg">Sun–Mon · The main loop</div>
+          </div>
+        </div>
+        <p class="car-detail">Colombo–Kandy 120 km (~3.5h), Kandy–Nuwara Eliya 75 km of tea-country switchbacks (~3h). Book a car + driver-guide for all 4 days — one price, no per-leg haggling, driver waits at each temple.</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Vehicle</div><div class="car-stat-val">SUV / van</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">4-day est.</div><div class="car-stat-val">₹30–40K</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Driver</div><div class="car-stat-val">Included</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://www.google.com/maps/dir/Colombo/Kandy/Nuwara+Eliya" target="_blank"><svg class="icon"><use href="#i-route"/></svg> Route map</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-car"/></svg></div>
+          <div>
+            <h4>Colombo local hops</h4>
+            <div class="car-leg">Fri–Sat · Around town</div>
+          </div>
+        </div>
+        <p class="car-detail">Talk venue, gem district, Laksala, Gangaramaya — all short hops. PickMe is the local ride-hail app (like Uber); Uber also operates in Colombo. Hotel car for the evening temple run is safest with kids.</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Mode</div><div class="car-stat-val">App / tuk</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Per ride</div><div class="car-stat-val">₹150–500</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Tip</div><div class="car-stat-val">10%</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://pickme.lk/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> PickMe</a>
+          <a class="provider-link" href="https://m.uber.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Uber Colombo</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-plane"/></svg></div>
+          <div>
+            <h4>Airport transfers</h4>
+            <div class="car-leg">Fri arrival + Tue departure</div>
+          </div>
+        </div>
+        <p class="car-detail">CMB (Bandaranaike) is ~35 km / 1h north of Colombo. Pre-book the hotel car or your loop driver for both arrival and departure. Reach CMB ~3h before an international flight.</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Distance</div><div class="car-stat-val">~35 km</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Est.</div><div class="car-stat-val">₹2–3K</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Lead</div><div class="car-stat-val">Pre-book</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://pickme.lk/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> PickMe</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-bus"/></svg></div>
+          <div>
+            <h4>BLR airport transfers</h4>
+            <div class="car-leg">Day 1 + Day 5</div>
+          </div>
+        </div>
+        <p class="car-detail">BLR T2, family of 4 with luggage → Uber XL or Ola Prime SUV. Pre-book Uber Reserve 48h prior — Bangalore surge is brutal. Same for the tired Tuesday-evening homebound leg.</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Vehicle</div><div class="car-stat-val">XL / SUV</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Est.</div><div class="car-stat-val">₹1.5–2.5K</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Lead</div><div class="car-stat-val">Reserve 48h</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://m.uber.com/reserve/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Uber Reserve</a>
+          <a class="provider-link" href="https://www.savaari.com/airport-transfer/bengaluru-airport-cabs/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Savaari</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== LIVE VEG RESTAURANTS (Overpass / OpenStreetMap) ========== -->
+<section class="veg-section" id="veg-restaurants">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Live veg dining</div>
+        <h2>Pure-veg restaurants <em>near your stays</em></h2>
+      </div>
+      <p>Pulled live from OpenStreetMap (community-tagged with diet:vegetarian or diet:vegan). Click any to open in Google Maps for verified hours, photos, and directions.</p>
+    </div>
+
+    <div class="section-map-split">
+     <div class="section-map-split__list">
+    <div style="background:rgba(217,122,58,0.12);border-radius:12px;padding:16px 20px;margin-bottom:20px;font-size:14px;color:rgba(246,241,232,0.9);">
+      <strong style="color:#ffb986;">Sri Lanka veg hazard — read first.</strong> Many "vegetable" curries and coconut sambols are made with <strong>Maldive fish flakes (umbalakada)</strong> or dried fish, and hoppers/kottu usually contain <strong>egg</strong>. This isn't obvious from the menu. Every order: say <em>"no fish, no Maldive fish, no egg — pure vegetarian."</em> Pure-veg South Indian restaurants and hotel veg spreads are the safest bets.
+    </div>
+    <h3 style="font-family: Fraunces, serif; font-size: 20px; margin-bottom: 12px; margin-top: 16px;">Colombo</h3>
+    <div class="veg-grid" id="veg-colombo" data-lat="6.9271" data-lon="79.8612" data-radius="4000" data-city="Colombo">
+      <div class="veg-loading">Loading veg restaurants…</div>
+    </div>
+
+    <h3 style="font-family: Fraunces, serif; font-size: 20px; margin-bottom: 12px; margin-top: 48px;">Kandy</h3>
+    <div class="veg-grid" id="veg-kandy" data-lat="7.2906" data-lon="80.6337" data-radius="3000" data-city="Kandy">
+      <div class="veg-loading">Loading veg restaurants…</div>
+    </div>
+
+    <h3 style="font-family: Fraunces, serif; font-size: 20px; margin-bottom: 12px; margin-top: 48px;">Nuwara Eliya</h3>
+    <div class="veg-grid" id="veg-nuwara-eliya" data-lat="6.9497" data-lon="80.7891" data-radius="3000" data-city="Nuwara Eliya">
+      <div class="veg-loading">Loading veg restaurants…</div>
+    </div>
+
+    <p class="veg-attribution">
+      Data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>, ODbL.
+      Hours and contact details are community-contributed — verify on Google Maps before going, and always confirm no Maldive fish / no egg.
+    </p>
+     </div>
+     <aside class="section-map-split__map" data-trip-map="restaurants" aria-label="Map of vegetarian restaurants"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DOOR TO DOOR ========== -->
+<section class="door" id="door-to-door">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Door to door</div>
+        <h2>Front door to <em>front door</em></h2>
+      </div>
+      <p>Every leg with timing, links, and what to carry — including the two things unique to this trip: per-traveller ETAs (the US-passport child applies separately) and carrying certified gemstones home.</p>
+    </div>
+
+    <div class="door-flow">
+
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-passport"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">Before you fly — ETAs &amp; docs</div>
+          <span class="stage-when">T-2 weeks</span>
+        </div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Sri Lanka requires an ETA (Electronic Travel Authorization) per traveller. Apply online for all four — the three Indian passports and the one US passport go in as separate applications. Verify the current fee (it has changed a few times) before paying.</p>
+        <div class="stage-body">
+          <div class="stage-col">
+            <h6>Per-traveller (differs by passport)</h6>
+            <ul>
+              <li>3 × Indian passport → ETA each</li>
+              <li>1 × US passport (the child) → ETA separately</li>
+              <li>6-month passport validity for all four</li>
+              <li>Return ticket + hotel proof handy</li>
+            </ul>
+          </div>
+          <div class="stage-col">
+            <h6>Money &amp; connectivity</h6>
+            <ul>
+              <li>Some USD cash + a card; LKR from ATMs on arrival</li>
+              <li>Local eSIM (Dialog/Mobitel) at the airport</li>
+              <li>Card that works for gem purchases (or bank transfer)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="link-chips">
+          <a class="chip" href="https://www.eta.gov.lk/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Sri Lanka ETA</a>
+        </div>
+      </div>
+
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-home"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">Home → BLR T2 → CMB</div>
+          <span class="stage-when">Fri Nov 20 · afternoon flight</span>
+        </div>
+        <div data-route="flight" data-from="BLR" data-from-label="Bangalore" data-from-time="Fri · 13:30" data-to="CMB" data-to-label="Colombo" data-to-time="Fri · 15:00" data-duration="1h 20m · direct"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Direct BLR→CMB is a short hop. An afternoon flight means only a half school day missed on Friday. Pre-book Uber Reserve to BLR 48h prior.</p>
+        <div class="link-chips">
+          <a class="chip" href="https://www.skyscanner.co.in/transport/flights/blr/cmb/261120/261124/?adults=4" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Skyscanner</a>
+          <a class="chip" href="https://www.srilankan.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> SriLankan</a>
+        </div>
+      </div>
+
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-route"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">The island loop by car + driver</div>
+          <span class="stage-when">Sat–Mon</span>
+        </div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">One hired car + driver-guide for the whole loop: Colombo shopping runs, Colombo→Kandy, Kandy→Nuwara Eliya's Ramayana sites, then repositioning toward the airport. Driver waits at each temple.</p>
+        <div class="stage-body">
+          <div class="stage-col">
+            <h6>Colombo (Fri–Sat)</h6>
+            <ul>
+              <li>Talk venue · gem district · Laksala · Gangaramaya</li>
+              <li>PickMe / hotel car for short hops</li>
+            </ul>
+          </div>
+          <div class="stage-col">
+            <h6>Kandy → hill country (Sun–Mon)</h6>
+            <ul>
+              <li>Temple of the Tooth · Kandy Lake</li>
+              <li>Ramboda Hanuman · Seetha Amman · Hakgala/Ashok Vatika</li>
+              <li>Tea-estate stop for sealed Ceylon tea</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-shield"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">Health, food &amp; kid safety</div>
+          <span class="stage-when">Throughout</span>
+        </div>
+        <div class="stage-body">
+          <div class="stage-col">
+            <h6>Food (the veg risk)</h6>
+            <ul>
+              <li>Say "no fish, no Maldive fish, no egg" every order</li>
+              <li>Pure-veg South Indian + hotel veg spreads = safest</li>
+              <li>Sealed water only; carry kid ORS</li>
+              <li>Hill country is cool at night — pack a layer for the kids</li>
+            </ul>
+          </div>
+          <div class="stage-col">
+            <h6>Temple etiquette</h6>
+            <ul>
+              <li>Shoulders + knees covered; shoes off at temples</li>
+              <li>No turning your back to the Buddha for photos</li>
+              <li>Hold the kids close in temple crowds</li>
+              <li>112 = Sri Lanka emergency number</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-sparkles"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">Carrying gemstones home</div>
+          <span class="stage-when">Tue departure + BLR arrival</span>
+        </div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Keep every stone's <strong>NGJA certificate + purchase invoice</strong> with you, not in checked bags. Carry stones in your hand luggage. On arrival in India, declare them honestly at customs — certified stones with invoices are straightforward; undeclared high-value goods are the risk.</p>
+        <div class="link-chips">
+          <a class="chip" href="https://www.ngja.gov.lk/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> NGJA</a>
+        </div>
+      </div>
+
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-home"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">CMB → BLR → Home</div>
+          <span class="stage-when">Tue Nov 24 · evening</span>
+        </div>
+        <div data-route="flight" data-from="CMB" data-from-label="Colombo" data-from-time="Tue · 17:30" data-to="BLR" data-to-label="Bangalore" data-to-time="Tue · 19:00" data-duration="1h 20m · direct"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Home by Tuesday night. Kids back to school Wednesday. Pre-book the BLR homebound cab too.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CURATOR'S PICKS ========== -->
+<section class="curator-section" id="curator-picks">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Curator's picks</div>
+        <h2>Must-do, must-eat, must-buy <em>by city</em></h2>
+      </div>
+      <p>Synthesized from creator mentions + TripAdvisor ratings. Each pick shows why it made the list — creator validation, rank, or both.</p>
+    </div>
+
+    <div class="section-map-split">
+     <div class="section-map-split__list">
+    <div id="curator-picks-root" class="curator-cities">
+      <div class="influencer-empty">Loading picks…</div>
+    </div>
+     </div>
+     <aside class="section-map-split__map" data-trip-map="curator" aria-label="Map of curator picks"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== INFLUENCER VOICES ========== -->
+<section class="influencer-section" id="influencer-voices">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Influencer voices</div>
+        <h2>What creators say <em>about Colombo, Kandy &amp; the hill country</em></h2>
+      </div>
+      <p>Pull-quotes from travel bloggers and YouTubers in our watchlist. Refreshed weekly by <code>scripts/influencers/corpus_builder.py</code>.</p>
+    </div>
+
+    <div class="section-map-split">
+     <div class="section-map-split__list">
+    <div id="influencer-top-places" class="influencer-top-places"></div>
+    <div id="influencer-voices-grid" class="influencer-grid">
+      <div class="influencer-empty">Loading creator quotes…</div>
+    </div>
+     </div>
+     <aside class="section-map-split__map" data-trip-map="creators" aria-label="Map of creator-mentioned places"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MUST-INCLUDE (ADD-TO-NEXT-REFRESH) ========== -->
+<section class="must-include" id="must-include">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Add items · Your cart</div>
+        <h2>Build the trip <em>around what you actually want</em></h2>
+      </div>
+      <p>Hover any card on this page (restaurants, hotels, anchors, day rows, route segments, the two paths) and click <strong>+</strong> to drop it in your cart below. Or use the chip inputs to type new items, paste comma-separated lists, or paste a YouTube / Instagram / TripAdvisor / blog URL — the planner will fetch + transcribe it and extract every place mentioned. In the cart, drag to reorder and set <strong>Day + Time</strong> per item, or leave on "AI decides" and the planner will sequence everything by proximity, time saved, traveller effort, and cost. Hit <strong>Refresh with these items</strong> to rebuild this page around your cart — existing suggestions that don't fit the new flow are dropped. Items that genuinely can't be included show up in a callout at the top of the itinerary with the reason. Saved per-trip in this browser.</p>
+    </div>
+
+    <div class="mi-card">
+      <div class="mi-grid">
+        <div class="mi-category" data-mi-category="places">
+          <div class="mi-category-label">Places to visit</div>
+          <div class="mi-chip-input">
+            <input type="text" placeholder="Type and press Enter — e.g. Seetha Amman temple" autocomplete="off">
+          </div>
+        </div>
+        <div class="mi-category" data-mi-category="todo">
+          <div class="mi-category-label">Things to do</div>
+          <div class="mi-chip-input">
+            <input type="text" placeholder="Type and press Enter — e.g. Kandy Temple of the Tooth evening puja" autocomplete="off">
+          </div>
+        </div>
+        <div class="mi-category" data-mi-category="buy">
+          <div class="mi-category-label">Things to buy</div>
+          <div class="mi-chip-input">
+            <input type="text" placeholder="Type and press Enter — e.g. NGJA-certified blue sapphire" autocomplete="off">
+          </div>
+        </div>
+        <div class="mi-category" data-mi-category="eat">
+          <div class="mi-category-label">Things to eat</div>
+          <div class="mi-chip-input">
+            <input type="text" placeholder="Type or paste comma-separated — e.g. Shanmugas, Upali's (ask no fish/egg)" autocomplete="off">
+          </div>
+        </div>
+      </div>
+
+      <div class="mi-category mi-category--full" data-mi-category="links">
+        <div class="mi-category-label">Source links — YouTube · Instagram · TripAdvisor · blog</div>
+        <div class="mi-chip-input">
+          <input type="url" placeholder="Paste a URL and press Enter — the planner will fetch, transcribe, and extract place names" autocomplete="off">
+        </div>
+        <div class="mi-help">YouTube videos are auto-transcribed (Whisper fallback if no captions). Every place mentioned in a parsed source is researched and slotted just like a typed item.</div>
+      </div>
+
+      <div class="mi-notes">
+        <label class="mi-category-label" for="mi-notes">Notes / context (optional)</label>
+        <textarea id="mi-notes" placeholder="Anything the planner should know — e.g. 'avoid 5am temple visits with the 6yo'"></textarea>
+      </div>
+
+      <div class="mi-actions">
+        <button class="btn btn-saffron btn-sm" id="mi-submit">
+          <svg class="icon icon-sm"><use href="#i-refresh"/></svg>
+          Refresh with these items
+        </button>
+        <span class="mi-status" id="mi-status"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== POST-TRIP UPDATE ========== -->
+<section class="post-trip" id="post-trip">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">After the trip</div>
+        <h2>Log it, <em>so we plan better</em></h2>
+      </div>
+      <p>When you return: paste the prompt below into Claude Code. The system will append this trip to your visited journal, capture actual costs, save lessons learned, and update recommendation scoring for next time.</p>
+    </div>
+
+    <div class="post-grid">
+      <div>
+        <pre class="post-prompt" id="post-trip-prompt">Log my completed trip: 2026-11-sri-lanka-ramayana (Colombo talk + Kandy + Nuwara Eliya Ramayana trail, Nov 20-24 2026, family of 4).
+
+I'll provide:
+- Actual per-traveller ETA cost (3 Indian passports + 1 US passport)
+- Actual flight costs (₹)
+- Actual hotel costs (₹) — paid + points used
+- Bonvoy / Hilton / Hyatt nights stayed + points earned
+- Marriott 40K cert (expires 2026-12-31): used or unused
+- Actual activities + food + transfers spend
+- Top 3 highlights · top 1 regret
+- Gemstones bought + NGJA cert numbers (asset log, separate from trip cap)
+- Photos (URLs or local paths)
+- Anything that will help future planning (e.g., "the 6yo couldn't handle 5am temple visits, push to 7am")
+
+Then:
+1. Append a row to trips/_shared/data/visited.json with city, country, month, year.
+2. Update .workspace/loyalty.md with new balances + cert status.
+3. Append lessons-learned to .workspace/user_travel_prefs.md under a "Trip lessons" section if non-trivial.
+4. Update trips/2026-11-sri-lanka-ramayana/index.html: add a "Completed" status badge + actuals-vs-estimates row in costs section + a "Highlights" gallery.
+5. Update trips/index.html: change card status from Active to Archived; bump trips-logged counter.
+6. Trigger a regeneration of trips/_shared/data/recommendations.json so the next-trip suggestions reflect the new visit (12-month exclusion).
+
+Read .workspace/user_travel_prefs.md for hard rules.</pre>
+        <div style="margin-top: 16px; display: flex; gap: 12px;">
+          <button class="btn btn-saffron btn-sm" onclick="copyPostPrompt()">
+            <svg class="icon icon-sm"><use href="#i-sparkles"/></svg>
+            Copy post-trip prompt
+          </button>
+          <span id="post-copy-state" style="font-size: 13px; color: var(--ink-soft); align-self: center;"></span>
+        </div>
+      </div>
+      <div class="post-fields">
+        <div class="post-field">
+          <div class="post-field-lbl">What you'll capture</div>
+          <div class="post-field-val">Actual costs vs estimates</div>
+          <div class="post-field-help">Flight + hotel + activities + transfers + food. Each line item updates the budget envelope's lessons tab.</div>
+        </div>
+        <div class="post-field">
+          <div class="post-field-lbl">What you'll capture</div>
+          <div class="post-field-val">Loyalty deltas</div>
+          <div class="post-field-help">Bonvoy nights + points earned · cert used Y/N · Hilton/Hyatt earned · Avios redeemed if any.</div>
+        </div>
+        <div class="post-field">
+          <div class="post-field-lbl">What you'll capture</div>
+          <div class="post-field-val">Highlights + regrets</div>
+          <div class="post-field-help">Best meal · best moment · what to skip next time. The 6yo's pace tolerance is gold for future itineraries.</div>
+        </div>
+        <div class="post-field">
+          <div class="post-field-lbl">What you'll capture</div>
+          <div class="post-field-val">Photos + memories</div>
+          <div class="post-field-help">Drop URLs or local paths · the system embeds them into a gallery on this trip page.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHY ========== -->
+<section class="why">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Designed around</div>
+        <h2>Three things that <em>matter</em></h2>
+      </div>
+      <p>Built around the fixed Saturday talk, an honest school-day cost, and the two things you actually asked for: gemstones and the Ramayana circuit.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card" data-reveal>
+        <div class="why-icon"><svg class="icon"><use href="#i-sparkles"/></svg></div>
+        <h5>Buy stones the safe way</h5>
+        <p>NGJA-certified, loose, from established Colombo houses — set them at home. Gem spend is kept out of the ₹7L travel cap because it's an asset, not a trip cost.</p>
+      </div>
+      <div class="why-card" data-reveal>
+        <div class="why-icon"><svg class="icon"><use href="#i-mountain"/></svg></div>
+        <h5>The real Ramayana core</h5>
+        <p>Not a token stop — Seetha Amman, Ashok Vatika (Hakgala) and Ramboda Hanuman, the actual hill-country heart of the Sri Lanka Ramayana trail, done in one focused day.</p>
+      </div>
+      <div class="why-card" data-reveal>
+        <div class="why-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+        <h5>Vegetarian, honestly flagged</h5>
+        <p>Sri Lanka hides Maldive fish and egg in "veg" dishes. Every food row carries the exact phrase to say, so the family stays truly lacto-vegetarian.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-foot">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="../index.html" class="logo" style="color: var(--cream); margin-bottom: 16px;">
+          <span class="logo-mark">◈</span>
+          <span class="logo-word" style="color: var(--cream);"><span class="logo-line">gama<span class="logo-slash" style="color: var(--saffron-soft);">/</span></span><span class="logo-line">adventures</span></span>
+        </a>
+        <p style="max-width: 360px; margin-top: 16px;">Personal travel planner for the family. Each trip is regenerable, version-tracked, and tuned to BLR origin, school calendars, and Marriott/Hilton/Hyatt loyalty.</p>
+      </div>
+      <div>
+        <h6>This trip</h6>
+        <ul>
+          <li><a href="#options">Shopping</a></li>
+          <li><a href="#itinerary">Day-by-day</a></li>
+          <li><a href="#costs">Cost roll-up</a></li>
+          <li><a href="#transport">Transport</a></li>
+          <li><a href="#door-to-door">Door to door</a></li>
+          <li><a href="#post-trip">After the trip</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Source files</h6>
+        <ul>
+          <li><a href="../../.workspace/user_travel_prefs.md">Travel prefs</a></li>
+          <li><a href="../../.workspace/loyalty.md">Loyalty inventory</a></li>
+          <li><a href="../index.html">All trips</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Family travel agent · Built locally</span>
+      <span>Generated · Aug 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.YATRA_TRIP_DEFAULTS = {
+    country: 'LK',
+    cities: [
+      { name: 'Colombo',      lat: 6.93, lon: 79.86 },
+      { name: 'Kandy',        lat: 7.29, lon: 80.63 },
+      { name: 'Nuwara Eliya', lat: 6.95, lon: 80.79 }
+    ]
+  };
+</script>
+<script src="../_shared/data-sources.js"></script>
+<script src="../_shared/claude-agent.js"></script>
+<script src="../_shared/agent-toast.js"></script>
+<script src="../_shared/trip-map.js"></script>
+<script src="../_shared/site.js"></script>
+<script>
+  // Pin button for this trip page
+  document.addEventListener('DOMContentLoaded', () => {
+    const PIN_KEY = 'yatra:pinned-trips';
+    const btn = document.getElementById('trip-pin-btn');
+    if (!btn) return;
+    const id = btn.dataset.pinId;
+    const get = () => { try { return JSON.parse(localStorage.getItem(PIN_KEY) || '[]'); } catch (_) { return []; } };
+    const sync = () => {
+      const list = get();
+      const isPinned = list.includes(id);
+      btn.classList.toggle('pinned', isPinned);
+      const tip = isPinned ? 'Unpin trip' : 'Pin trip';
+      btn.setAttribute('aria-label', tip);
+      btn.setAttribute('title', tip);
+    };
+    btn.addEventListener('click', () => {
+      const list = get();
+      const idx = list.indexOf(id);
+      if (idx === -1) list.push(id); else list.splice(idx, 1);
+      localStorage.setItem(PIN_KEY, JSON.stringify(list));
+      sync();
+    });
+    sync();
+  });
+
+  // Post-trip prompt copy
+  function copyPostPrompt() {
+    const txt = document.getElementById('post-trip-prompt').innerText;
+    navigator.clipboard.writeText(txt).then(() => {
+      const s = document.getElementById('post-copy-state');
+      s.textContent = '✓ Copied — paste into Claude Code in ~/projects/personal/travel agent';
+      s.style.color = 'var(--saffron-deep)';
+      setTimeout(() => { s.textContent = ''; }, 4000);
+    });
+  }
+
+  // Curator's Picks — must-do/must-eat/must-buy/unique blocks per city
+  (async function renderCuratorPicks() {
+    const root = document.getElementById('curator-picks-root');
+    if (!root || !window.YatraData || !YatraData.CuratorsPicks) return;
+    const cities = ['Colombo', 'Kandy', 'Nuwara Eliya'];
+    function escapeHtml(s) {
+      return String(s || '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+    const labels = {
+      must_do:           { title: 'Must do',         icon: '◈' },
+      must_eat:          { title: 'Must eat',        icon: '◉' },
+      must_buy:          { title: 'Must buy',        icon: '◆' },
+      unique_experience: { title: 'Unique to here',  icon: '✦' },
+    };
+    function pickAttribution(p) {
+      const bits = [];
+      if (p.creator_count > 0) bits.push(`${p.creator_count} creator${p.creator_count > 1 ? 's' : ''}`);
+      if (p.tripadvisor && p.tripadvisor.rating) bits.push(`★ ${p.tripadvisor.rating}`);
+      if (p.tripadvisor && p.tripadvisor.ranking) {
+        const m = String(p.tripadvisor.ranking).match(/#(\d+)/);
+        if (m) bits.push(`#${m[1]} ranked`);
+      }
+      if (p.is_seed && p.creator_count === 0) bits.push('Editorial pick');
+      return bits.join(' · ');
+    }
+    function pickCard(p) {
+      const ta = p.tripadvisor || {};
+      const taLink = ta.url ? `<a class="tripadvisor-rating-pill" href="${ta.url}" target="_blank" rel="noopener" title="${escapeHtml(ta.ranking || '')}">TripAdvisor ★ ${escapeHtml(ta.rating || '')}${ta.review_count ? ' · ' + Number(ta.review_count).toLocaleString('en-IN') : ''}</a>` : '';
+      const quote = p.quote && p.quote.length >= 20
+        ? `<blockquote class="curator-quote">"${escapeHtml(p.quote.slice(0, 180))}${p.quote.length > 180 ? '…' : ''}"<cite>— ${escapeHtml(p.quote_creator || 'creator')}${p.quote_url ? ` <a href="${p.quote_url}" target="_blank" rel="noopener">↗</a>` : ''}</cite></blockquote>`
+        : '';
+      const attr = pickAttribution(p);
+      return `
+        <article class="curator-card">
+          <div class="curator-card-head">
+            <div class="curator-card-name">${escapeHtml(p.name)}</div>
+            ${attr ? `<div class="curator-card-attr">${attr}</div>` : ''}
+          </div>
+          ${quote}
+          <div class="curator-card-foot">
+            ${taLink}
+            <a href="https://www.google.com/maps/search/${encodeURIComponent(p.name + ' ' + (p.city || ''))}" target="_blank" rel="noopener">Map ↗</a>
+          </div>
+        </article>`;
+    }
+    const blocks = [];
+    for (const city of cities) {
+      const data = await YatraData.CuratorsPicks.forDestination(city);
+      if (!data || !data.buckets) continue;
+      const totalPicks = Object.values(data.buckets).reduce((a, b) => a + b.length, 0);
+      if (!totalPicks) continue;
+      const buckets = ['must_do', 'must_eat', 'must_buy', 'unique_experience']
+        .filter((k) => (data.buckets[k] || []).length)
+        .map((k) => `
+          <div class="curator-bucket">
+            <h4 class="curator-bucket-head"><span class="curator-bucket-icon">${labels[k].icon}</span> ${labels[k].title}</h4>
+            <div class="curator-bucket-grid">
+              ${data.buckets[k].map(pickCard).join('')}
+            </div>
+          </div>`).join('');
+      blocks.push(`
+        <div class="curator-city">
+          <h3 class="curator-city-head">${escapeHtml(city)} <span class="curator-city-meta">${data.creators_total} creators · ${totalPicks} picks</span></h3>
+          ${buckets}
+        </div>`);
+    }
+    if (!blocks.length) {
+      root.innerHTML = '<div class="influencer-empty">No curator picks cached yet. Run <code>scripts/influencers/synthesizer.py --all</code> to populate.</div>';
+      return;
+    }
+    root.innerHTML = blocks.join('');
+    // Stamp data-lat/lon on each curator card so they are clickable into the map.
+    try {
+      if (YatraData.Influencers && YatraData.Influencers._loadAll) {
+        const payload = await YatraData.Influencers._loadAll();
+        const lookup = {};
+        (payload.items || []).forEach((it) => {
+          (it.places_mentioned || []).forEach((pm) => {
+            if (typeof pm.lat === 'number' && typeof pm.lon === 'number' && pm.name) {
+              const k = pm.name.toLowerCase().trim();
+              if (!lookup[k]) lookup[k] = { lat: pm.lat, lon: pm.lon };
+            }
+          });
+        });
+        const tripCities = (window.YATRA_TRIP_DEFAULTS && window.YATRA_TRIP_DEFAULTS.cities) || [];
+        root.querySelectorAll('.curator-card').forEach((card) => {
+          const nameEl = card.querySelector('.curator-card-name');
+          if (!nameEl) return;
+          const name = nameEl.textContent.trim();
+          const cityWrap = card.closest('.curator-city');
+          const cityHeadEl = cityWrap ? cityWrap.querySelector('.curator-city-head') : null;
+          const cityName = cityHeadEl ? cityHeadEl.firstChild.textContent.trim() : null;
+          let coords = lookup[name.toLowerCase()];
+          if (!coords && cityName) {
+            const matched = tripCities.find((c) => c.name.toLowerCase() === cityName.toLowerCase());
+            if (matched) coords = { lat: matched.lat, lon: matched.lon };
+          }
+          if (!coords) return;
+          card.setAttribute('data-map-scope', 'curator');
+          card.setAttribute('data-lat', String(coords.lat));
+          card.setAttribute('data-lon', String(coords.lon));
+          card.setAttribute('data-name', name);
+          card.setAttribute('tabindex', '0');
+          card.setAttribute('role', 'button');
+        });
+      }
+    } catch (_) { /* fall through silently */ }
+    if (window.TripMap && typeof window.TripMap.refresh === 'function') window.TripMap.refresh();
+  })();
+
+  // Influencer voices: render quotes from corpus
+  (async function renderInfluencerVoices() {
+    const grid = document.getElementById('influencer-voices-grid');
+    const topPlacesRoot = document.getElementById('influencer-top-places');
+    if (!grid || !window.YatraData || !YatraData.Influencers) return;
+    const cities = ['Colombo', 'Kandy', 'Nuwara Eliya'];
+    const seen = new Set();
+    const merged = [];
+    for (const city of cities) {
+      const items = await YatraData.Influencers.forDestination(city, 12);
+      for (const it of items) {
+        if (seen.has(it.id)) continue;
+        seen.add(it.id);
+        merged.push({ ...it, _city: city });
+      }
+    }
+    if (!merged.length) {
+      grid.innerHTML = '<div class="influencer-empty">No creator content cached yet for these cities. Run <code>scripts/influencers/corpus_builder.py --full</code> to populate.</div>';
+      return;
+    }
+
+    function escapeHtml(s) {
+      return String(s || '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+
+    // Top recommended places
+    const placeScores = new Map();
+    merged.forEach((it) => {
+      (it.places_mentioned || []).forEach((p) => {
+        if (!p.name) return;
+        const e = placeScores.get(p.name) || { name: p.name, mentions: 0, positive: 0, negative: 0, creators: new Set(), city: p.city, firstQuote: null, firstUrl: null, firstCreator: null };
+        e.mentions += 1;
+        if (p.sentiment === 'positive') e.positive += 1;
+        if (p.sentiment === 'negative') e.negative += 1;
+        e.creators.add(it.creator);
+        if (!e.firstQuote && p.quote) { e.firstQuote = p.quote; e.firstUrl = it.url; e.firstCreator = it.creator; }
+        placeScores.set(p.name, e);
+      });
+    });
+    const ranked = [...placeScores.values()]
+      .sort((a, b) => (b.creators.size * 2 + b.positive - b.negative) - (a.creators.size * 2 + a.positive - a.negative))
+      .slice(0, 6);
+    if (ranked.length && topPlacesRoot) {
+      topPlacesRoot.innerHTML = `
+        <h3 class="influencer-top-heading">Most-recommended places by creators</h3>
+        <div class="influencer-top-grid">
+          ${ranked.map((p) => `
+            <article class="top-place-card">
+              <div class="top-place-name">${escapeHtml(p.name)}</div>
+              <div class="top-place-meta">
+                <span class="creator-count-pill">${p.creators.size} creator${p.creators.size === 1 ? '' : 's'}</span>
+                ${p.positive ? `<span class="sentiment-pill positive">${p.positive}+</span>` : ''}
+                ${p.negative ? `<span class="sentiment-pill negative">${p.negative}-</span>` : ''}
+              </div>
+              ${p.firstQuote ? `<blockquote class="top-place-quote">"${escapeHtml(p.firstQuote.slice(0, 160))}${p.firstQuote.length > 160 ? '…' : ''}"</blockquote>` : ''}
+              <div class="top-place-foot">
+                ${p.firstCreator ? `<span class="ink-mute">— ${escapeHtml(p.firstCreator)}</span>` : ''}
+                <a href="https://www.google.com/maps/search/${encodeURIComponent(p.name + (p.city ? ' ' + p.city : ''))}" target="_blank" rel="noopener">Map ↗</a>
+              </div>
+              <div class="top-place-ta" data-ta-place="${escapeHtml(p.name)}" data-ta-city="${escapeHtml(p.city || '')}"></div>
+            </article>`).join('')}
+        </div>`;
+      ranked.forEach(async (p) => {
+        const slot = document.querySelector(`.top-place-ta[data-ta-place="${CSS.escape(p.name)}"]`);
+        if (!slot || !YatraData.TripAdvisor) return;
+        const defaults = window.YATRA_TRIP_DEFAULTS || {};
+        const cityEntry = (defaults.cities || []).find((c) => c.name === p.city) || (defaults.cities || [])[0] || {};
+        const ta = await YatraData.TripAdvisor.search({
+          query: p.name,
+          type: 'attraction',
+          country: defaults.country,
+          city: cityEntry.name,
+          lat: cityEntry.lat,
+          lon: cityEntry.lon,
+        });
+        if (!ta || !ta.rating) return;
+        slot.innerHTML = `
+          <a class="tripadvisor-rating-pill" href="${ta.url}" target="_blank" rel="noopener" title="${escapeHtml(ta.ranking || '')}">
+            TripAdvisor ★ ${escapeHtml(ta.rating)}${ta.review_count ? ' · ' + Number(ta.review_count).toLocaleString('en-IN') : ''}
+          </a>`;
+      });
+    }
+    function pickQuote(item) {
+      const place = (item.places_mentioned || [])[0];
+      if (place && place.quote && place.quote.length >= 30) {
+        return { quote: place.quote, sentiment: place.sentiment, place: place.name, lat: place.lat, lon: place.lon };
+      }
+      return null;
+    }
+    const cards = merged.map((it) => ({ it, q: pickQuote(it) })).filter((x) => x.q).slice(0, 8);
+    if (!cards.length) {
+      grid.innerHTML = '<div class="influencer-empty">No place-specific creator excerpts cached yet for these cities. Re-run <code>scripts/influencers/corpus_builder.py --full --whisper-fallback</code>.</div>';
+      return;
+    }
+    grid.innerHTML = cards.map(({ it, q }) => {
+      const sentClass = q.sentiment === 'positive' ? 'positive' : q.sentiment === 'negative' ? 'negative' : 'neutral';
+      const placeNote = q.place ? `· <strong>${escapeHtml(q.place)}</strong>` : '';
+      const datePart = it.published ? new Date(it.published).toLocaleDateString('en-IN', { month: 'short', year: 'numeric' }) : '';
+      const hasCoords = typeof q.lat === 'number' && typeof q.lon === 'number';
+      const cardAttrs = hasCoords
+        ? ` data-map-scope="creators" data-lat="${q.lat}" data-lon="${q.lon}" data-name="${escapeHtml(q.place || '')}" tabindex="0" role="button"`
+        : '';
+      return `
+        <article class="influencer-card"${cardAttrs}>
+          <div class="creator-row">
+            <span class="creator-badge">${escapeHtml(it.creator || 'Unknown')}</span>
+            <span class="creator-source">${escapeHtml(it.source || '')}</span>
+          </div>
+          <blockquote class="influencer-quote compact">${escapeHtml(q.quote)}</blockquote>
+          <div class="influencer-meta">
+            <span class="sentiment-pill ${sentClass}">${q.sentiment}</span>
+            <span>${escapeHtml(it._city)}</span>${placeNote ? ' ' + placeNote : ''}
+            ${datePart ? `<span>· ${datePart}</span>` : ''}
+            ${it.url ? `<a href="${it.url}" target="_blank" rel="noopener">Source ↗</a>` : ''}
+          </div>
+        </article>`;
+    }).join('');
+    if (window.TripMap && typeof window.TripMap.refresh === 'function') window.TripMap.refresh();
+  })();
+</script>
+
+</body>
+</html>

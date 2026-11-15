@@ -1,0 +1,40 @@
+{
+  "destination": "Phuket",
+  "country": "TH",
+  "lat": 7.88,
+  "lon": 98.39,
+  "generated_at": "2026-05-30T03:51:16.415155+00:00",
+  "items_total": 1,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [
+      {
+        "name": "Ko Chang",
+        "score": 3.25,
+        "creators": [
+          "Nerd Nomads"
+        ],
+        "creator_count": 1,
+        "mentions": 1,
+        "positive": 1,
+        "negative": 0,
+        "city": "Phuket",
+        "quote": "border. It is one of 52 islands in Mu Ko Chang National Park. We first visited Ko Chang in 2013 when we celebrated Christmas here with friends and had a wonderful time. It took us ten years (!!) to return (which now seems ridiculously long)",
+        "quote_creator": "Nerd Nomads",
+        "quote_source": "blog",
+        "quote_url": "https://nerdnomads.com/koh-chang-travel-guide",
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.1",
+          "review_count": "13",
+          "ranking": "#2 of 9 things to do in Ratsada",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g2315815-d7059315-Reviews-Monkey_Viewpoint_on_Ko_Sirey-Ratsada_Phuket_Town_Phuket.html?m=66827",
+          "city": "Ratsada"
+        }
+      }
+    ],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

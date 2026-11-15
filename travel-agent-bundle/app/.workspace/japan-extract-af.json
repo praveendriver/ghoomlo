@@ -1,0 +1,133 @@
+[
+  {
+    "file": "IMG_7677.jpg",
+    "places": [
+      {"name": "Shibuya Sky", "kind": "sight", "city": "Tokyo", "timing_hint": "pre-book in advance", "notes": "Observation deck atop Shibuya Scramble Square; sunset slots sell out"},
+      {"name": "TeamLab Planets", "kind": "activity", "city": "Tokyo", "timing_hint": "pre-book in advance", "notes": "Immersive digital art museum (Toyosu); great for kids"},
+      {"name": "Ghibli Museum", "kind": "sight", "city": "Mitaka (Tokyo)", "timing_hint": "pre-book in advance; tickets via Lawson lottery", "notes": "Studio Ghibli museum; date-stamped tickets, sell out fast"},
+      {"name": "Mount Fuji Day Tour", "kind": "activity", "city": "Mt Fuji area", "timing_hint": "pre-book in advance", "notes": "Day trip from Tokyo to Fuji 5 lakes / Hakone area"},
+      {"name": "Sagano Romantic Train (Sagano Scenic Railway)", "kind": "activity", "city": "Kyoto (Arashiyama)", "timing_hint": "pre-book in advance", "notes": "Open-window scenic train through Hozugawa gorge"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7678.jpg",
+    "places": [
+      {"name": "Sagano Romantic Train (Sagano Scenic Railway)", "kind": "activity", "city": "Kyoto (Arashiyama)", "timing_hint": "pre-book in advance", "notes": "Visual of the scenic train in autumn foliage along the river"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7679.jpg",
+    "places": [
+      {"name": "Shibuya Sky", "kind": "sight", "city": "Tokyo", "timing_hint": "pre-book ~1 week in advance", "notes": "Same Mahir's Lens list, item 1"},
+      {"name": "TeamLab Planets", "kind": "activity", "city": "Tokyo", "timing_hint": "pre-book ~1 week in advance", "notes": "Same list, item 2"},
+      {"name": "Ghibli Museum", "kind": "sight", "city": "Mitaka (Tokyo)", "timing_hint": "pre-book ~1 week in advance (tickets release earlier)", "notes": "Same list, item 3"},
+      {"name": "Mount Fuji Day Tour", "kind": "activity", "city": "Mt Fuji area", "timing_hint": "pre-book ~1 week in advance", "notes": "Same list, item 4"},
+      {"name": "Sagano Romantic Train", "kind": "activity", "city": "Kyoto (Arashiyama)", "timing_hint": "pre-book ~1 week in advance", "notes": "Same list, item 5"},
+      {"name": "Hozugawa River Boat", "kind": "activity", "city": "Kyoto (Arashiyama/Kameoka)", "timing_hint": "pre-book ~1 week in advance", "notes": "Traditional wooden boat ride down the Hozu river to Arashiyama"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7680.jpg",
+    "places": [
+      {"name": "Hozugawa River Boat", "kind": "activity", "city": "Kyoto (Kameoka to Arashiyama)", "timing_hint": "pre-book in advance", "notes": "Photo of wooden boat with passengers and boatmen on rapids"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7681.jpg",
+    "places": [
+      {"name": "Shibuya Sky", "kind": "sight", "city": "Tokyo", "timing_hint": "pre-book 2-4 weeks in advance", "notes": "List item 1; tighter 2-4 wk window highlighted"},
+      {"name": "TeamLab Planets", "kind": "activity", "city": "Tokyo", "timing_hint": "pre-book 2-4 weeks in advance", "notes": "List item 2"},
+      {"name": "Ghibli Museum", "kind": "sight", "city": "Mitaka (Tokyo)", "timing_hint": "pre-book 2-4 weeks in advance", "notes": "List item 3"},
+      {"name": "Mount Fuji Day Tour", "kind": "activity", "city": "Mt Fuji area", "timing_hint": "pre-book 2-4 weeks in advance", "notes": "List item 4"},
+      {"name": "Sagano Romantic Train", "kind": "activity", "city": "Kyoto (Arashiyama)", "timing_hint": "pre-book 2-4 weeks in advance", "notes": "List item 5"},
+      {"name": "Hozugawa River Boat", "kind": "activity", "city": "Kyoto (Arashiyama/Kameoka)", "timing_hint": "pre-book 2-4 weeks in advance", "notes": "List item 6"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7683.jpg",
+    "places": [
+      {"name": "Shibuya Sky", "kind": "sight", "city": "Tokyo", "timing_hint": "pre-book ~1 week in advance", "notes": "List item 1"},
+      {"name": "TeamLab Planets", "kind": "activity", "city": "Tokyo", "timing_hint": "pre-book ~1 week in advance", "notes": "List item 2"},
+      {"name": "Ghibli Museum", "kind": "sight", "city": "Mitaka (Tokyo)", "timing_hint": "pre-book ~1 week in advance", "notes": "List item 3"},
+      {"name": "Mount Fuji Day Tour", "kind": "activity", "city": "Mt Fuji area", "timing_hint": "pre-book ~1 week in advance", "notes": "List item 4"},
+      {"name": "Sagano Romantic Train", "kind": "activity", "city": "Kyoto (Arashiyama)", "timing_hint": "pre-book ~1 week in advance", "notes": "List item 5"},
+      {"name": "Hozugawa River Boat", "kind": "activity", "city": "Kyoto (Arashiyama)", "timing_hint": "pre-book ~1 week in advance", "notes": "List item 6"},
+      {"name": "Universal Studios Japan", "kind": "activity", "city": "Osaka", "timing_hint": "pre-book ~1 week in advance", "notes": "Theme park, Super Nintendo World; very kid-friendly for 6 & 9"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7684.jpg",
+    "places": [
+      {"name": "Shibuya Sky", "kind": "sight", "city": "Tokyo", "timing_hint": "pre-book ~1 week in advance", "notes": "List item 1"},
+      {"name": "TeamLab Planets", "kind": "activity", "city": "Tokyo", "timing_hint": "pre-book ~1 week in advance", "notes": "List item 2"},
+      {"name": "Ghibli Museum", "kind": "sight", "city": "Mitaka (Tokyo)", "timing_hint": "pre-book ~1 week in advance", "notes": "List item 3"},
+      {"name": "Mount Fuji Day Tour", "kind": "activity", "city": "Mt Fuji area", "timing_hint": "pre-book ~1 week in advance", "notes": "List item 4"},
+      {"name": "Sagano Romantic Train", "kind": "activity", "city": "Kyoto (Arashiyama)", "timing_hint": "pre-book ~1 week in advance", "notes": "List item 5"},
+      {"name": "Hozugawa River Boat", "kind": "activity", "city": "Kyoto (Arashiyama)", "timing_hint": "pre-book ~1 week in advance", "notes": "List item 6"},
+      {"name": "Universal Studios Japan", "kind": "activity", "city": "Osaka", "timing_hint": "pre-book ~1 week in advance", "notes": "List item 7"},
+      {"name": "Tokyo Disneyland / Tokyo DisneySea", "kind": "activity", "city": "Tokyo (Urayasu)", "timing_hint": "pre-book ~1 week in advance", "notes": "List item 8; major kid draw, especially DisneySea (unique to Tokyo)"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7692.jpg",
+    "places": [
+      {"name": "Nike Mind (Nike flagship/concept store)", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo Nike experiential store featuring Nike Mind wellness shoe with pressure-point sole"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@aditiaryawellness"
+  },
+  {
+    "file": "IMG_7693.jpg",
+    "places": [
+      {"name": "Nike Mind (Nike flagship/concept store)", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Close-up of Nike Mind shoes with red 'Nike Mind Science Department' insoles; Tokyo purchase"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@aditiaryawellness"
+  },
+  {
+    "file": "IMG_7694.jpg",
+    "places": [
+      {"name": "Nike Mind (Nike flagship/concept store)", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Close-up of Nike Mind sole branding"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@aditiaryawellness"
+  },
+  {
+    "file": "IMG_7695.jpg",
+    "places": [
+      {"name": "Nike Mind (Nike flagship/concept store)", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "Hundreds of pressure-point nodes on the sole; designed for wellness/walking comfort"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@aditiaryawellness"
+  },
+  {
+    "file": "IMG_7696.jpg",
+    "places": [
+      {"name": "Nike Mind store / installation", "kind": "shop", "city": "Tokyo", "timing_hint": null, "notes": "In-store 'Wellness, for...' Nike Mind 001 display with mannequin and Japanese signage"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@aditiaryawellness"
+  },
+  {
+    "file": "IMG_7697.jpg",
+    "places": [
+      {"name": "Fibe-Mini (Otsuka digestion fiber drink)", "kind": "tip", "city": "Tokyo (Japan-wide convenience stores)", "timing_hint": null, "notes": "Japanese fiber drink found at convenience stores; creator says it 'does not work' as a digestion fix"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@jenniesuk"
+  }
+]

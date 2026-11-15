@@ -1,0 +1,656 @@
+{
+ "items": [
+  {
+   "kind": "buy",
+   "name": "Ceylon tea (Dilmah, Mlesna, Basilur, Laksala blends; look for the lion mark)",
+   "city": "Colombo / Nuwara Eliya",
+   "note": "Mlesna golden tips 6,400 LKR; Dilmah 100 bags 1,530",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.youtube.com/watch?v=4XCuhAJvPjg",
+    "https://www.youtube.com/watch?v=5Y7MEZu2BG0",
+    "https://www.youtube.com/watch?v=1kMChRSMCEE",
+    "https://www.youtube.com/watch?v=pHvtIil8yvA",
+    "https://www.youtube.com/watch?v=7I1UWY0aEXI"
+   ],
+   "creators": 5,
+   "status": "already in plan"
+  },
+  {
+   "kind": "buy",
+   "name": "Kithul treacle and jaggery (Edinburgh brand named)",
+   "city": "Colombo",
+   "note": "About LKR 1,200 a bottle; pure kithul bars are sold lightly sugared",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.youtube.com/watch?v=4XCuhAJvPjg",
+    "https://www.youtube.com/watch?v=1kMChRSMCEE",
+    "https://www.youtube.com/watch?v=pHvtIil8yvA"
+   ],
+   "creators": 3,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "buy",
+   "name": "Ceylon (true) cinnamon",
+   "city": "Colombo",
+   "note": "LKR 580 to 765 at Laksala-type stores",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.youtube.com/watch?v=4XCuhAJvPjg",
+    "https://www.youtube.com/watch?v=5Y7MEZu2BG0",
+    "https://www.youtube.com/watch?v=pHvtIil8yvA"
+   ],
+   "creators": 3,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "buy",
+   "name": "Wood apple jam / EGB ginger beer",
+   "city": "Colombo",
+   "note": "Local jam and non-alcoholic ginger beer",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.youtube.com/watch?v=1kMChRSMCEE",
+    "https://www.youtube.com/watch?v=X1GHTl1Cq9s",
+    "https://www.youtube.com/watch?v=3WYS6OmlCI0"
+   ],
+   "creators": 3,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "buy",
+   "name": "Laksala (government handicrafts, Thimbirigasyaya Rd)",
+   "city": "Colombo",
+   "note": "Masks, lacquerware, batik, tea; reasonable prices",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=4XCuhAJvPjg",
+    "https://www.youtube.com/watch?v=5Y7MEZu2BG0"
+   ],
+   "creators": 2,
+   "status": "already in plan"
+  },
+  {
+   "kind": "buy",
+   "name": "Raksha masks",
+   "city": "Colombo / Kandy",
+   "note": "Miniatures LKR 1,200; Kandy House of Craft masks about 6,000 after discount",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=4XCuhAJvPjg",
+    "https://www.youtube.com/watch?v=5Y7MEZu2BG0"
+   ],
+   "creators": 2,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "buy",
+   "name": "Gems (blue sapphire etc.)",
+   "city": "Colombo",
+   "note": "Ask for an independent lab report; avoid tuk-tuk driver referrals",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=4XCuhAJvPjg",
+    "https://www.youtube.com/watch?v=5Y7MEZu2BG0"
+   ],
+   "creators": 2,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "buy",
+   "name": "Ayurvedic balms and soaps (Siddhalepa, Samahan, Rani sandalwood soap, Spa Ceylon)",
+   "city": "Colombo",
+   "note": "Spa Ceylon is the premium gifting pick",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.youtube.com/watch?v=1kMChRSMCEE",
+    "https://www.youtube.com/watch?v=4XCuhAJvPjg"
+   ],
+   "creators": 2,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "buy",
+   "name": "Coconut milk powder",
+   "city": "Colombo",
+   "note": "LKR 990 at supermarket",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.youtube.com/watch?v=4XCuhAJvPjg",
+    "https://www.youtube.com/watch?v=1kMChRSMCEE"
+   ],
+   "creators": 2,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "buy",
+   "name": "Devilled cashews, spicy cassava chips, Maliban and Munchee biscuits, Kandos chocolate",
+   "city": "Colombo",
+   "note": "Arpico Supercentre named for these",
+   "veg_safety": "veg options",
+   "sources": [
+    "https://www.youtube.com/watch?v=4XCuhAJvPjg",
+    "https://www.youtube.com/watch?v=1kMChRSMCEE"
+   ],
+   "creators": 2,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "buy",
+   "name": "Batik and handloom",
+   "city": "Colombo",
+   "note": "Batik and silk store at the Kandy craft premises; Ko Lanka handloom store in Colombo 03 (Instagram bio only)",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=4XCuhAJvPjg",
+    "https://www.youtube.com/watch?v=5Y7MEZu2BG0",
+    "https://www.instagram.com/ko_lanka/"
+   ],
+   "creators": 2,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "buy",
+   "name": "Lakarcade, Arpico Supercentre, Spa Ceylon, House of Fashion",
+   "city": "Colombo",
+   "note": "Souvenir and supermarket stops",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=4XCuhAJvPjg",
+    "https://www.youtube.com/watch?v=5Y7MEZu2BG0"
+   ],
+   "creators": 2,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "buy",
+   "name": "Pettah wholesale (belts, handbags, A.R. Sweet shop chocolates)",
+   "city": "Colombo",
+   "note": "Wholesale market; some stalls won't sell single pieces",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=aeTIayUse9M",
+    "https://www.youtube.com/watch?v=3WnFbDz7Us8"
+   ],
+   "creators": 2,
+   "status": "already in plan"
+  },
+  {
+   "kind": "buy",
+   "name": "Seeni sambol mix",
+   "city": "Colombo",
+   "note": "Mix contains Maldive fish",
+   "veg_safety": "mixed or fish risk",
+   "sources": [
+    "https://www.youtube.com/watch?v=pHvtIil8yvA"
+   ],
+   "creators": 1,
+   "status": "off-route"
+  },
+  {
+   "kind": "eat",
+   "name": "Ranbath Organic (rice and curry)",
+   "city": "Colombo",
+   "note": "Fully vegan, organic rice and curry; small-rice option; shop with handwoven items next door",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.youtube.com/watch?v=Outu6k_fpaM",
+    "https://www.youtube.com/watch?v=3k3b2eyey0I"
+   ],
+   "creators": 2,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "eat",
+   "name": "Ambal's",
+   "city": "Nuwara Eliya",
+   "note": "Pure-veg South Indian restaurant near Central Market, packed with locals",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.youtube.com/watch?v=7I1UWY0aEXI",
+    "https://www.youtube.com/watch?v=eGf4mquqE0Q"
+   ],
+   "creators": 2,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "eat",
+   "name": "Balaji Dosai",
+   "city": "Kandy (Temple Street)",
+   "note": "Dosa shop near the Tooth temple; good veg options nearby",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.youtube.com/watch?v=PsZoYgB0pOQ",
+    "https://www.youtube.com/watch?v=229EbrJKt9w"
+   ],
+   "creators": 2,
+   "status": "already in plan"
+  },
+  {
+   "kind": "eat",
+   "name": "Ceylon Curry Club",
+   "city": "Colombo (Old Dutch Hospital)",
+   "note": "Pick any six veg curries with red or white rice, plus crisp hoppers; creator says everything he ate was veg",
+   "veg_safety": "veg options",
+   "sources": [
+    "https://www.youtube.com/watch?v=X1GHTl1Cq9s"
+   ],
+   "creators": 1,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "eat",
+   "name": "A2B (Adyar Ananda Bhavan)",
+   "city": "Colombo",
+   "note": "Indian vegetarian franchise, dinner review",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.youtube.com/watch?v=KQvikoMR5MA"
+   ],
+   "creators": 1,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "eat",
+   "name": "Pasta Mania (top floor, One Galle Face Mall)",
+   "city": "Colombo",
+   "note": "Veg mushroom pasta with a view, about LKR 1,200",
+   "veg_safety": "veg options",
+   "sources": [
+    "https://www.youtube.com/watch?v=X1GHTl1Cq9s"
+   ],
+   "creators": 1,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "eat",
+   "name": "Chambers (Park Street)",
+   "city": "Colombo",
+   "note": "Middle Eastern: falafel, hummus, pita, baklava",
+   "veg_safety": "veg options",
+   "sources": [
+    "https://www.youtube.com/watch?v=X1GHTl1Cq9s"
+   ],
+   "creators": 1,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "eat",
+   "name": "Burger Hut (Marine Drive)",
+   "city": "Colombo",
+   "note": "Veg patty burger; he asked for no egg",
+   "veg_safety": "veg options",
+   "sources": [
+    "https://www.youtube.com/watch?v=X1GHTl1Cq9s"
+   ],
+   "creators": 1,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "eat",
+   "name": "Golden Cafe (Pettah)",
+   "city": "Colombo",
+   "note": "Ghee dosa and Mysore pak, all veg",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.youtube.com/watch?v=KLImYzbWaE4"
+   ],
+   "creators": 1,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "eat",
+   "name": "Pettah street snacks (singhalese achcharu fruit pickle, veg roti)",
+   "city": "Colombo",
+   "note": "Cheap veg snacks",
+   "veg_safety": "veg options",
+   "sources": [
+    "https://www.youtube.com/watch?v=KLImYzbWaE4"
+   ],
+   "creators": 1,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "eat",
+   "name": "Gregory Lake snacks (coconut roti with chutney, veg samosa)",
+   "city": "Nuwara Eliya",
+   "note": "Cheap lakeside veg snacks",
+   "veg_safety": "veg options",
+   "sources": [
+    "https://www.youtube.com/watch?v=KLImYzbWaE4"
+   ],
+   "creators": 1,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "eat",
+   "name": "Shanmugas",
+   "city": "Colombo",
+   "note": "Vegetarian restaurant; Instagram reel found by Brave search, not read",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.instagram.com/reel/DNa5hUToUtA/"
+   ],
+   "creators": 1,
+   "status": "already in plan"
+  },
+  {
+   "kind": "eat",
+   "name": "Peshawri / Dal Bukhara (ITC)",
+   "city": "Colombo",
+   "note": "Creator loved the dal and kebabs; veg items available",
+   "veg_safety": "veg options",
+   "sources": [
+    "https://www.youtube.com/watch?v=X1GHTl1Cq9s"
+   ],
+   "creators": 1,
+   "status": "already in plan"
+  },
+  {
+   "kind": "eat",
+   "name": "Thalis Restaurant (155 Park Road, Colombo 5)",
+   "city": "Colombo",
+   "note": "Video titled vegetarian restaurant; caption is garbled and mentions chicken, so unclear",
+   "veg_safety": "unknown",
+   "sources": [
+    "https://www.youtube.com/watch?v=N18VHNyorPU"
+   ],
+   "creators": 1,
+   "status": "off-route"
+  },
+  {
+   "kind": "eat",
+   "name": "Sri Aiswariya Vegetarian Restaurant (Nugegoda)",
+   "city": "Colombo suburb",
+   "note": "South Indian thali, paneer biryani, dosa",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.youtube.com/watch?v=BCHFYXsux-E"
+   ],
+   "creators": 1,
+   "status": "off-route"
+  },
+  {
+   "kind": "eat",
+   "name": "Dwaraka North and South Indian Vegetarian",
+   "city": "Colombo (Bambalapitiya)",
+   "note": "Instagram profile bio only, found by Brave",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.instagram.com/dwaraka.colombo/"
+   ],
+   "creators": 1,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "eat",
+   "name": "Soul Food Kandy",
+   "city": "Kandy",
+   "note": "Instagram bio says vegetarian and vegan; found by Brave, not read further",
+   "veg_safety": "pure-veg",
+   "sources": [
+    "https://www.instagram.com/soulfoodkandy/"
+   ],
+   "creators": 1,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "eat",
+   "name": "Kings Court by Hideout Lounge",
+   "city": "Kandy",
+   "note": "Sri Lankan lunch, LKR 2,800 for two; veg not checked",
+   "veg_safety": "unknown",
+   "sources": [
+    "https://www.youtube.com/watch?v=229EbrJKt9w"
+   ],
+   "creators": 1,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "eat",
+   "name": "Hela Bojun Hala (Sahas Uyana)",
+   "city": "Kandy",
+   "note": "Sri Lankan breakfast (milk rice, kavum), LKR 440",
+   "veg_safety": "unknown",
+   "sources": [
+    "https://www.youtube.com/watch?v=229EbrJKt9w"
+   ],
+   "creators": 1,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "eat",
+   "name": "Mayura (Tamil rice and curry)",
+   "city": "Colombo",
+   "note": "Basic meal gives three veg curries, but the bean curry came with sprats",
+   "veg_safety": "mixed or fish risk",
+   "sources": [
+    "https://www.youtube.com/watch?v=3k3b2eyey0I"
+   ],
+   "creators": 1,
+   "status": "off-route"
+  },
+  {
+   "kind": "eat",
+   "name": "Curry Pot, Praneetha Foods, Beruwala eating house",
+   "city": "Colombo",
+   "note": "Rice and curry buffets with big veg choice but meat, fish and egg served alongside",
+   "veg_safety": "mixed or fish risk",
+   "sources": [
+    "https://www.youtube.com/watch?v=3k3b2eyey0I"
+   ],
+   "creators": 1,
+   "status": "off-route"
+  },
+  {
+   "kind": "eat",
+   "name": "Dutch Burgher Union lump rice",
+   "city": "Colombo",
+   "note": "Rice cooked in meat broth",
+   "veg_safety": "mixed or fish risk",
+   "sources": [
+    "https://www.youtube.com/watch?v=3k3b2eyey0I"
+   ],
+   "creators": 1,
+   "status": "off-route"
+  },
+  {
+   "kind": "place",
+   "name": "Seetha Amman Temple (Ashok Vatika)",
+   "city": "Nuwara Eliya",
+   "note": "Hanuman footprints, stream, Sita giving the jewel; photos not allowed inside",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=229EbrJKt9w",
+    "https://www.youtube.com/watch?v=7I1UWY0aEXI",
+    "https://www.youtube.com/watch?v=eGf4mquqE0Q",
+    "https://www.youtube.com/watch?v=ii1j6TIy6Qg",
+    "https://www.youtube.com/watch?v=nAEt_br60fA",
+    "https://www.youtube.com/watch?v=baGaOs1qX5w",
+    "https://www.youtube.com/watch?v=DnX_QL6APmE",
+    "https://www.youtube.com/watch?v=6wJYVPKerVQ"
+   ],
+   "creators": 8,
+   "status": "already in plan"
+  },
+  {
+   "kind": "place",
+   "name": "Gregory Lake",
+   "city": "Nuwara Eliya",
+   "note": "Boating LKR 1,000, sunset spot",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=229EbrJKt9w",
+    "https://www.youtube.com/watch?v=7I1UWY0aEXI",
+    "https://www.youtube.com/watch?v=eGf4mquqE0Q",
+    "https://www.youtube.com/watch?v=KLImYzbWaE4"
+   ],
+   "creators": 4,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "place",
+   "name": "Pettah market",
+   "city": "Colombo",
+   "note": "Wholesale-heavy; few real restaurants",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=aeTIayUse9M",
+    "https://www.youtube.com/watch?v=HuZDQYZwgOQ",
+    "https://www.youtube.com/watch?v=KLImYzbWaE4",
+    "https://www.youtube.com/watch?v=3WnFbDz7Us8"
+   ],
+   "creators": 4,
+   "status": "already in plan"
+  },
+  {
+   "kind": "place",
+   "name": "Munneswaram, Koneswaram, Ravana Falls, Ravana Cave, Ritigala, Habarana",
+   "city": "other regions",
+   "note": "Other Ramayana sites",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=DnX_QL6APmE",
+    "https://www.youtube.com/watch?v=6wJYVPKerVQ",
+    "https://www.youtube.com/watch?v=baGaOs1qX5w",
+    "https://www.youtube.com/watch?v=3WYS6OmlCI0"
+   ],
+   "creators": 4,
+   "status": "off-route"
+  },
+  {
+   "kind": "place",
+   "name": "Temple of the Tooth",
+   "city": "Kandy",
+   "note": "Ticket LKR 2,500 for SAARC visitors; cover shoulders and legs",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=PsZoYgB0pOQ",
+    "https://www.youtube.com/watch?v=229EbrJKt9w"
+   ],
+   "creators": 2,
+   "status": "already in plan"
+  },
+  {
+   "kind": "place",
+   "name": "Nuwara Eliya Post Office",
+   "city": "Nuwara Eliya",
+   "note": "Old colonial building",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=eGf4mquqE0Q",
+    "https://www.youtube.com/watch?v=7I1UWY0aEXI"
+   ],
+   "creators": 2,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "place",
+   "name": "Galle Face Green",
+   "city": "Colombo",
+   "note": "Evening spot; beach snacks",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=3k3b2eyey0I",
+    "https://www.youtube.com/watch?v=KLImYzbWaE4"
+   ],
+   "creators": 2,
+   "status": "already in plan"
+  },
+  {
+   "kind": "place",
+   "name": "Shri Bhakta Hanuman Temple, Ramboda",
+   "city": "Ramboda",
+   "note": "16 ft granite Hanuman; creator also bought a Ramayana book (LKR 2,300)",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=229EbrJKt9w"
+   ],
+   "creators": 1,
+   "status": "already in plan"
+  },
+  {
+   "kind": "place",
+   "name": "Ramboda Falls (walk through Ramboda Hotel, about 15 min)",
+   "city": "Ramboda",
+   "note": "109 m waterfall; tea at the hotel restaurant LKR 1,100",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=229EbrJKt9w"
+   ],
+   "creators": 1,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "place",
+   "name": "Hakgala Botanical Garden (Ashok Vatika area)",
+   "city": "Nuwara Eliya",
+   "note": "Named as the garden where the Ashok Vatika grove is placed",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=6wJYVPKerVQ"
+   ],
+   "creators": 1,
+   "status": "already in plan"
+  },
+  {
+   "kind": "place",
+   "name": "Gayatri Peedam",
+   "city": "Nuwara Eliya",
+   "note": "Described as first temple to Gayatri",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=6wJYVPKerVQ"
+   ],
+   "creators": 1,
+   "status": "already in plan"
+  },
+  {
+   "kind": "place",
+   "name": "Kandy Central Market, Queen's Hotel, Cafe 1886",
+   "city": "Kandy",
+   "note": "Heritage walk beside the lake",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=229EbrJKt9w"
+   ],
+   "creators": 1,
+   "status": "fits the route (suggest adding)"
+  },
+  {
+   "kind": "place",
+   "name": "Red Mosque",
+   "city": "Colombo (Pettah)",
+   "note": "Heritage mosque",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=aeTIayUse9M"
+   ],
+   "creators": 1,
+   "status": "already in plan"
+  },
+  {
+   "kind": "place",
+   "name": "Saturday Good Market (Racecourse)",
+   "city": "Colombo",
+   "note": "Saturday morning market for crafts and organic goods; you are in the conference until about 3pm",
+   "veg_safety": "n/a",
+   "sources": [
+    "https://www.youtube.com/watch?v=3k3b2eyey0I"
+   ],
+   "creators": 1,
+   "status": "off-route"
+  }
+ ],
+ "veg_red_flags": [
+  "Seeni sambol mix has Maldive fish (pHvtIil8yvA)",
+  "Ambul thiyal paste (fish) and black pork curry paste are sold as souvenirs (4XCuhAJvPjg)",
+  "Ask whether chilli paste has fish or shrimp (X1GHTl1Cq9s)",
+  "Bread and some hoppers can contain egg; ask for plain hopper (3WYS6OmlCI0)",
+  "Instant noodle and soya chunk packs are chicken or seafood flavour (pHvtIil8yvA)",
+  "Pettah snacks are mostly chicken samosa and fish rolls (aeTIayUse9M, HuZDQYZwgOQ)",
+  "Mixed rice-and-curry shops (3k3b2eyey0I)",
+  "Thalis Restaurant purity unclear (N18VHNyorPU)"
+ ]
+}

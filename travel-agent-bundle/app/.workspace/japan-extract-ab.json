@@ -1,0 +1,408 @@
+[
+  {
+    "file": "IMG_7615.jpg",
+    "places": [
+      {
+        "name": "Ghibli Park",
+        "kind": "activity",
+        "city": "Nagoya",
+        "timing_hint": "tickets typically need advance booking",
+        "notes": "#2 in a Japan theme parks list; Studio Ghibli theme park near Nagoya"
+      }
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@musyatravel"
+  },
+  {
+    "file": "IMG_7616.jpg",
+    "places": [
+      {
+        "name": "Universal Studios Japan",
+        "kind": "activity",
+        "city": "Osaka",
+        "timing_hint": "buy Express Pass in advance to skip lines",
+        "notes": "#3 in Japan theme parks list; major theme park in Osaka"
+      }
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@musyatravel"
+  },
+  {
+    "file": "IMG_7617.jpg",
+    "places": [
+      {
+        "name": "Fuji-Q Highland",
+        "kind": "activity",
+        "city": "Yamanashi",
+        "timing_hint": null,
+        "notes": "#4 in Japan theme parks list; thrill-ride park near Mt Fuji (most rides have height limits, may not suit a 6-yr-old)"
+      }
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@musyatravel"
+  },
+  {
+    "file": "IMG_7618.jpg",
+    "places": [
+      {
+        "name": "Hanayashiki",
+        "kind": "activity",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "#5 in Japan theme parks list; Japan's oldest amusement park, in Asakusa - small, retro, kid-friendly"
+      }
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@musyatravel"
+  },
+  {
+    "file": "IMG_7619.jpg",
+    "places": [
+      {
+        "name": "Sanrio Puroland",
+        "kind": "activity",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "#6 in Japan theme parks list; indoor Hello Kitty / Sanrio theme park in Tama, Tokyo - great for young kids"
+      }
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@musyatravel"
+  },
+  {
+    "file": "IMG_7622.jpg",
+    "places": [
+      {
+        "name": "Warner Bros. Studio Tour Tokyo - The Making of Harry Potter",
+        "kind": "activity",
+        "city": "Tokyo",
+        "timing_hint": "tickets sell out - book weeks in advance via official site",
+        "notes": "Studio tour in Toshimaen, Nerima - very popular with families"
+      }
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@musyatravel"
+  },
+  {
+    "file": "IMG_7626.jpg",
+    "places": [
+      {
+        "name": "Shibuya",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Day 1 of a 5-day Tokyo itinerary tier list"
+      },
+      {
+        "name": "Harajuku",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Day 1 of itinerary"
+      },
+      {
+        "name": "Shinjuku",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Listed in day-trip carousel at bottom"
+      },
+      {
+        "name": "Asakusa",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Listed in day-trip carousel"
+      },
+      {
+        "name": "Akihabara",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Listed in day-trip carousel - electronics/anime district"
+      },
+      {
+        "name": "Odaiba",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Listed in day-trip carousel - waterfront entertainment area"
+      },
+      {
+        "name": "Hakone",
+        "kind": "neighborhood",
+        "city": "Hakone",
+        "timing_hint": null,
+        "notes": "Day-trip option from Tokyo - hot springs and Mt Fuji views"
+      },
+      {
+        "name": "Kamakura",
+        "kind": "neighborhood",
+        "city": "Kamakura",
+        "timing_hint": null,
+        "notes": "Day-trip option from Tokyo - Great Buddha, temples, beach"
+      }
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7627.jpg",
+    "places": [
+      {
+        "name": "Shinjuku-ku",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Tokyo ward map showing all 23 wards - reference for trip planning"
+      },
+      {
+        "name": "Shibuya-ku",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Tokyo ward map"
+      },
+      {
+        "name": "Minato-ku",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Includes Roppongi, Tokyo Tower"
+      },
+      {
+        "name": "Chiyoda-ku",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Imperial Palace, Akihabara"
+      },
+      {
+        "name": "Taito-ku",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Asakusa, Ueno Park"
+      },
+      {
+        "name": "Sumida-ku",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Tokyo Skytree"
+      },
+      {
+        "name": "Haneda Airport",
+        "kind": "transport",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Closer airport to central Tokyo than Narita"
+      },
+      {
+        "name": "Tokyo Skytree",
+        "kind": "sight",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Marked on the ward map"
+      },
+      {
+        "name": "Tokyo Tower",
+        "kind": "sight",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Marked on the ward map"
+      },
+      {
+        "name": "Imperial Palace",
+        "kind": "sight",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Marked on the ward map"
+      },
+      {
+        "name": "Roppongi",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Marked on the ward map"
+      },
+      {
+        "name": "Ikebukuro",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Marked on the ward map"
+      },
+      {
+        "name": "Omotesando",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Marked on the ward map - upscale shopping street"
+      }
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7628.jpg",
+    "places": [
+      {
+        "name": "Takeshita Street",
+        "kind": "shop",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Day 1 - main shopping street in Harajuku, kawaii fashion and street food, very crowded"
+      },
+      {
+        "name": "Shibuya",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Day 1 itinerary destination"
+      },
+      {
+        "name": "Harajuku",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Day 1 itinerary destination"
+      }
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7629.jpg",
+    "places": [
+      {
+        "name": "Moffu",
+        "kind": "activity",
+        "city": "Tokyo",
+        "timing_hint": "reservation recommended",
+        "notes": "Samoyed dog cafe - kid-friendly experience in Harajuku/Shibuya area"
+      },
+      {
+        "name": "Angel Harajuku Crepe",
+        "kind": "food",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Iconic Harajuku crepe stand on Takeshita Street - photogenic, kid-friendly (vegetarian options available)"
+      }
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7630.jpg",
+    "places": [
+      {
+        "name": "Shibuya Crossing",
+        "kind": "sight",
+        "city": "Tokyo",
+        "timing_hint": "best at night for neon lights",
+        "notes": "Day 1 - world's busiest pedestrian scramble, neon-lit at night"
+      },
+      {
+        "name": "Shibuya Sky",
+        "kind": "sight",
+        "city": "Tokyo",
+        "timing_hint": "book tickets online in advance, sunset slots sell out",
+        "notes": "Day 1 - open-air observation deck on Shibuya Scramble Square, great sunset views"
+      }
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7631.jpg",
+    "places": [
+      {
+        "name": "Asakusa",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Day 2 itinerary - traditional Tokyo with Senso-ji temple"
+      },
+      {
+        "name": "Akihabara",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Day 2 itinerary - electronics, anime, gaming district"
+      },
+      {
+        "name": "Shinjuku",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Listed in day-trip carousel at bottom"
+      },
+      {
+        "name": "Ginza",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Listed in day-trip carousel - upscale shopping district"
+      },
+      {
+        "name": "Odaiba",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Listed in day-trip carousel - waterfront entertainment"
+      },
+      {
+        "name": "Kamakura",
+        "kind": "neighborhood",
+        "city": "Kamakura",
+        "timing_hint": null,
+        "notes": "Listed in day-trip carousel - day trip from Tokyo"
+      },
+      {
+        "name": "Mt Fuji",
+        "kind": "sight",
+        "city": "Hakone",
+        "timing_hint": "weather/clouds permitting",
+        "notes": "Visible in carousel thumbnail - iconic Japan view"
+      }
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7632.jpg",
+    "places": [
+      {
+        "name": "Tokyo Skytree",
+        "kind": "sight",
+        "city": "Tokyo",
+        "timing_hint": "book tickets online to skip lines",
+        "notes": "Day 2 - tallest tower in Japan, observation decks, near Asakusa"
+      },
+      {
+        "name": "Senso-ji Temple",
+        "kind": "sight",
+        "city": "Tokyo",
+        "timing_hint": "go early morning to avoid crowds",
+        "notes": "Day 2 - Tokyo's oldest temple in Asakusa; pagoda visible in image"
+      },
+      {
+        "name": "Asakusa",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Day 2 - kimono rental experience shown in image"
+      },
+      {
+        "name": "Akihabara",
+        "kind": "neighborhood",
+        "city": "Tokyo",
+        "timing_hint": null,
+        "notes": "Day 2 itinerary destination"
+      }
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mahirslens"
+  }
+]

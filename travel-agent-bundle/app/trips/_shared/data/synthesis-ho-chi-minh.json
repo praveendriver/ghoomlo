@@ -1,0 +1,15 @@
+{
+  "destination": "Ho Chi Minh",
+  "country": "VN",
+  "lat": 10.82,
+  "lon": 106.63,
+  "generated_at": "2026-05-30T03:51:07.933286+00:00",
+  "items_total": 1,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

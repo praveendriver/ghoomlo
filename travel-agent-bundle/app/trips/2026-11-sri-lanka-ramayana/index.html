@@ -1,0 +1,2429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gama Adventures — Sri Lanka: Colombo heritage · Kandy · Ramayana trail · Nov 20–24, 2026</title>
+<link rel="icon" type="image/svg+xml" href="../_shared/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_shared/style.css">
+<style>
+
+  /* Trip-page specific */
+  .hero {
+    position: relative;
+    padding: 80px 0 100px;
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 20%, rgba(217, 122, 58, 0.10), transparent 60%),
+      radial-gradient(ellipse 70% 50% at 20% 80%, rgba(31, 58, 61, 0.08), transparent 60%);
+    overflow: hidden;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .hero h1 { font-size: clamp(48px, 6vw, 84px); margin-bottom: 28px; }
+  .hero-sub {
+    font-size: 19px; color: var(--ink-soft);
+    margin-bottom: 40px; max-width: 480px;
+  }
+  .hero-meta {
+    display: grid; grid-template-columns: repeat(4, auto); gap: 36px;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 36px;
+  }
+  .meta-item .label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--ink-soft); margin-bottom: 6px;
+  }
+  .meta-item .value {
+    font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500;
+  }
+  .hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+
+  .hero-visual { position: relative; height: 560px; }
+  .h-card {
+    position: absolute;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    color: var(--cream);
+    transition: transform .4s cubic-bezier(.2,.8,.2,1);
+    display: flex;
+    flex-direction: column;
+  }
+  .h-card:hover { transform: translateY(-6px) scale(1.02); }
+  .h-card-1 { width: 290px; height: 380px; top: 20px; right: 60px; }
+  .h-card-2 { width: 240px; height: 320px; bottom: 20px; left: 0; }
+  .h-card-img { width: 100%; flex: 1 1 auto; position: relative; min-height: 0; }
+  .h-card-1 .h-card-img {
+    background-image: url('https://images.pexels.com/photos/13621055/pexels-photo-13621055.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+  }
+  .h-card-2 .h-card-img {
+    background-image: url('https://images.pexels.com/photos/36530015/pexels-photo-36530015.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+  }
+  .h-card-img::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.45) 100%);
+  }
+  .h-card-tag {
+    position: absolute; top: 18px; right: 18px;
+    background: rgba(255,255,255,0.92); color: var(--ink);
+    padding: 6px 12px; border-radius: 999px;
+    font-size: 11px; font-weight: 600;
+    backdrop-filter: blur(10px);
+  }
+  .h-card-body { padding: 18px 22px; background: var(--ink); flex: 0 0 auto; }
+  .h-card-body .place {
+    font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .h-card-body .meta { font-size: 13px; opacity: 0.7; }
+
+  .hero-decor {
+    position: absolute; top: 50%; left: -40px;
+    transform: translateY(-50%);
+    display: flex; flex-direction: column; gap: 24px;
+    z-index: 1;
+  }
+  .hero-decor .ring {
+    width: 12px; height: 12px; border-radius: 50%;
+    border: 2px solid var(--ink);
+  }
+  .hero-decor .ring.filled { background: var(--ink); }
+  .hero-decor .line { width: 2px; height: 60px; background: var(--ink); margin-left: 5px; }
+
+  /* ---------- HERO IMAGE STRIP ---------- */
+  .strip {
+    padding: 60px 0 40px;
+    overflow: hidden;
+    position: relative;
+  }
+  .strip-eyebrow {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--saffron);
+    font-weight: 600;
+  }
+  .strip-track {
+    display: flex;
+    gap: 18px;
+    width: max-content;
+    animation: strip-scroll 60s linear infinite;
+    will-change: transform;
+  }
+  .strip:hover .strip-track { animation-play-state: paused; }
+  @keyframes strip-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  /* Edge fade so the loop seam is invisible */
+  .strip::before,
+  .strip::after {
+    content: '';
+    position: absolute;
+    top: 60px; bottom: 40px;
+    width: 120px;
+    z-index: 5;
+    pointer-events: none;
+  }
+  .strip::before {
+    left: 0;
+    background: linear-gradient(to right, var(--cream) 0%, transparent 100%);
+  }
+  .strip::after {
+    right: 0;
+    background: linear-gradient(to left, var(--cream) 0%, transparent 100%);
+  }
+  .strip-card {
+    flex: 0 0 auto;
+    width: 280px;
+    height: 360px;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s;
+  }
+  .strip-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-lg);
+  }
+  .strip-card-img {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform .8s cubic-bezier(.2,.8,.2,1);
+  }
+  .strip-card:hover .strip-card-img { transform: scale(1.08); }
+  .strip-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 35%, rgba(0,0,0,0.75) 100%);
+  }
+  .strip-card-meta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 22px;
+    color: white;
+    z-index: 2;
+  }
+  .strip-card-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(10px);
+    border-radius: 999px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .strip-card-tag.alt {
+    background: rgba(255, 200, 130, 0.25);
+  }
+  .strip-card-name {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 4px;
+  }
+  .strip-card-loc {
+    font-size: 12px;
+    opacity: 0.85;
+  }
+
+  @media (max-width: 640px) {
+    .strip-card { width: 220px; height: 300px; }
+    .strip-card-name { font-size: 18px; }
+    .strip-track { animation-duration: 40s; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .strip-track { animation: none; }
+  }
+
+  /* ---------- COMPARE ---------- */
+  .compare { padding: 100px 0; }
+  .compare-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+  }
+  .opt-card {
+    background: var(--cream-dark);
+    border-radius: var(--r-xl);
+    padding: 8px;
+    transition: transform .3s;
+  }
+  .opt-card.recommended {
+    background: linear-gradient(135deg, #1f3a3d 0%, #122729 100%);
+    color: var(--cream);
+  }
+  .opt-card-image {
+    height: 240px;
+    border-radius: 36px;
+    background-size: cover; background-position: center;
+    position: relative; overflow: hidden;
+  }
+  .opt-card.recommended .opt-card-image {
+    background-image: url('https://images.pexels.com/photos/10271157/pexels-photo-10271157.jpeg?auto=compress&cs=tinysrgb&w=900');
+    background-size: cover;
+    background-position: center;
+  }
+  .opt-card:not(.recommended) .opt-card-image {
+    background-image: url('https://images.pexels.com/photos/23601365/pexels-photo-23601365.jpeg?auto=compress&cs=tinysrgb&w=900');
+    background-size: cover;
+    background-position: center;
+  }
+  .opt-card-image::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.5) 100%);
+  }
+  .opt-badge {
+    position: absolute; top: 20px; left: 20px;
+    background: rgba(255,255,255,0.95); color: var(--ink);
+    padding: 8px 14px; border-radius: 999px;
+    font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    z-index: 2;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .opt-badge.rec { background: var(--saffron); color: white; }
+  .opt-card-body { padding: 32px 28px 28px; }
+  .opt-card h3 { font-size: 32px; margin-bottom: 6px; }
+  .opt-card.recommended h3 { color: var(--cream); }
+  .opt-card .opt-sub { font-size: 14px; color: var(--ink-soft); margin-bottom: 24px; }
+  .opt-card.recommended .opt-sub { color: rgba(246, 241, 232, 0.65); }
+
+  .opt-stats {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+  }
+  .opt-card.recommended .opt-stats { border-color: rgba(246, 241, 232, 0.12); }
+  .stat .stat-val {
+    font-family: 'Fraunces', serif; font-size: 24px; font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .stat .stat-lbl {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-soft);
+  }
+  .opt-card.recommended .stat-lbl { color: rgba(246, 241, 232, 0.6); }
+  .opt-features { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+  .feature-pill {
+    padding: 6px 14px;
+    background: rgba(0,0,0,0.06);
+    border-radius: 999px;
+    font-size: 12px; color: var(--ink-soft);
+  }
+  .opt-card.recommended .feature-pill {
+    background: rgba(246, 241, 232, 0.10);
+    color: rgba(246, 241, 232, 0.85);
+  }
+  .feature-pill.warn { background: rgba(217, 122, 58, 0.15); color: var(--saffron); }
+  .opt-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-weight: 500; color: var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 4px;
+    transition: gap .2s;
+  }
+  .opt-card.recommended .opt-link {
+    color: var(--saffron-soft); border-color: var(--saffron-soft);
+  }
+  .opt-link:hover { gap: 14px; }
+
+  /* ---------- ITINERARY ---------- */
+  .itinerary {
+    padding: 100px 0;
+    background: var(--ink);
+    color: var(--cream);
+    border-radius: var(--r-xl);
+    margin: 0 32px 80px;
+  }
+  @media (min-width: 1300px) {
+    .itinerary {
+      margin-left: calc((100vw - 1240px) / 2 + 32px);
+      margin-right: calc((100vw - 1240px) / 2 + 32px);
+    }
+  }
+  .itinerary .section-eyebrow { color: var(--saffron-soft); }
+  .itinerary h2 { color: var(--cream); }
+  .itinerary .section-head p { color: rgba(246, 241, 232, 0.65); }
+
+  .tabs {
+    display: inline-flex;
+    background: rgba(246, 241, 232, 0.08);
+    border-radius: 999px;
+    padding: 6px;
+    margin-bottom: 56px;
+  }
+  .tab {
+    padding: 12px 28px;
+    background: transparent;
+    color: rgba(246, 241, 232, 0.6);
+    border: none; border-radius: 999px;
+    font-size: 14px; font-weight: 500;
+    transition: all .25s;
+  }
+  .tab.active {
+    background: var(--cream); color: var(--ink);
+  }
+
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; animation: fadeIn .4s; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* timeline */
+  .timeline { position: relative; padding-left: 60px; }
+  .timeline::before {
+    content: ''; position: absolute;
+    left: 16px; top: 14px; bottom: 14px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--saffron) 0%, var(--saffron) 90%, transparent 100%);
+    opacity: 0.3;
+  }
+  .day {
+    position: relative;
+    margin-bottom: 24px;
+    background: rgba(246, 241, 232, 0.04);
+    border: 1px solid rgba(246, 241, 232, 0.08);
+    border-radius: var(--r-md);
+    overflow: hidden;
+    transition: all .3s;
+  }
+  .day:hover {
+    background: rgba(246, 241, 232, 0.07);
+    border-color: rgba(246, 241, 232, 0.15);
+  }
+  .day-marker {
+    position: absolute; left: -52px; top: 22px;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--ink);
+    border: 2px solid var(--saffron);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--saffron-soft);
+    z-index: 2;
+  }
+  .day-marker .icon { width: 16px; height: 16px; }
+  .day summary {
+    padding: 22px 28px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 24px;
+    cursor: pointer;
+    list-style: none;
+  }
+  .day summary::-webkit-details-marker { display: none; }
+  .day-head { flex: 1; display: flex; align-items: center; gap: 24px; }
+  .day-date {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: rgba(246, 241, 232, 0.55);
+    min-width: 110px;
+  }
+  .day-title {
+    font-family: 'Fraunces', serif;
+    font-size: 22px; font-weight: 500;
+    color: var(--cream);
+  }
+  .day-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .day-tag {
+    padding: 3px 10px;
+    background: rgba(217, 122, 58, 0.18);
+    color: var(--saffron-soft);
+    font-size: 11px;
+    border-radius: 999px;
+  }
+  .chev {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: rgba(246, 241, 232, 0.06);
+    display: inline-flex; align-items: center; justify-content: center;
+    transition: transform .3s;
+    flex-shrink: 0;
+    color: var(--cream);
+  }
+  details[open] .chev { transform: rotate(180deg); }
+
+  .day-body {
+    padding: 0 28px 24px 28px;
+    border-top: 1px solid rgba(246, 241, 232, 0.08);
+  }
+
+  /* day rows with icon glyph */
+  .row {
+    padding: 18px 0;
+    display: grid;
+    grid-template-columns: 100px 32px 1fr;
+    gap: 18px;
+    border-bottom: 1px solid rgba(246, 241, 232, 0.05);
+    align-items: flex-start;
+  }
+  .row:last-child { border-bottom: none; }
+  .row-time {
+    font-family: 'Fraunces', serif;
+    font-size: 16px; font-weight: 500;
+    color: var(--saffron-soft);
+    padding-top: 2px;
+  }
+  .row-icon {
+    width: 32px; height: 32px;
+    border-radius: 10px;
+    background: rgba(246, 241, 232, 0.08);
+    color: var(--saffron-soft);
+    display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .row-icon .icon { width: 16px; height: 16px; }
+  .row-icon.transit { background: rgba(180, 200, 230, 0.15); color: #b8d4ee; }
+  .row-icon.temple { background: rgba(217, 122, 58, 0.18); color: var(--saffron-soft); }
+  .row-icon.food { background: rgba(200, 230, 180, 0.10); color: #c8e6b4; }
+  .row-icon.hotel { background: rgba(232, 165, 114, 0.15); color: var(--saffron-soft); }
+  .row-icon.outdoor { background: rgba(150, 200, 200, 0.15); color: #98d4d4; }
+  .row-icon.shopping { background: rgba(210, 180, 230, 0.12); color: #d4b8e6; }
+
+  .row-content {
+    font-size: 15px;
+    color: rgba(246, 241, 232, 0.85);
+    line-height: 1.65;
+  }
+  .row-title { color: var(--cream); font-weight: 500; }
+  .row-content .price {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 10px;
+    background: rgba(246, 241, 232, 0.08);
+    border-radius: 999px;
+    font-size: 12px;
+    color: rgba(246, 241, 232, 0.7);
+  }
+
+  /* ---------- COSTS ---------- */
+  .costs { padding: 100px 0; }
+  .costs-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+    margin-top: 48px;
+  }
+  .cost-card {
+    background: white;
+    border-radius: var(--r-lg);
+    padding: 36px;
+    box-shadow: var(--shadow-sm);
+  }
+  .cost-card.featured {
+    background: linear-gradient(135deg, var(--saffron) 0%, var(--gold) 100%);
+    color: white;
+  }
+  .cost-card h4 {
+    font-size: 24px; font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .cost-card .cost-sub {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+  }
+  .cost-card.featured .cost-sub { color: rgba(255,255,255,0.85); }
+  .cost-row {
+    display: flex; justify-content: space-between;
+    padding: 14px 0;
+    font-size: 15px;
+    border-bottom: 1px solid var(--line);
+  }
+  .cost-card.featured .cost-row { border-color: rgba(255,255,255,0.2); }
+  .cost-row:last-child { border: none; }
+  .cost-row.total {
+    font-family: 'Fraunces', serif;
+    font-size: 22px; font-weight: 500;
+    margin-top: 12px; padding-top: 22px;
+    border-top: 2px solid var(--ink);
+  }
+  .cost-card.featured .cost-row.total { border-color: rgba(255,255,255,0.3); }
+  .cap-bar {
+    height: 8px;
+    background: var(--cream-dark);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  .cap-fill {
+    height: 100%; background: var(--saffron);
+    border-radius: 999px;
+  }
+  .cost-card.featured .cap-bar { background: rgba(255,255,255,0.25); }
+  .cost-card.featured .cap-fill { background: white; }
+  .cap-meta {
+    display: flex; justify-content: space-between;
+    font-size: 12px; margin-top: 8px;
+    color: var(--ink-soft);
+  }
+  .cost-card.featured .cap-meta { color: rgba(255,255,255,0.85); }
+
+  .loyalty-strip {
+    margin-top: 56px;
+    background: var(--ink);
+    color: var(--cream);
+    border-radius: var(--r-lg);
+    padding: 48px;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .loyalty-strip h3 {
+    font-size: 32px;
+    color: var(--cream);
+    margin-bottom: 16px;
+  }
+  .loyalty-strip p {
+    color: rgba(246, 241, 232, 0.7);
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  .loyalty-points {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+  }
+  .lp-item {
+    background: rgba(246, 241, 232, 0.06);
+    padding: 22px; border-radius: var(--r-sm);
+  }
+  .lp-prog {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em;
+    color: rgba(246, 241, 232, 0.5);
+    margin-bottom: 10px;
+  }
+  .lp-bal {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    color: var(--saffron-soft);
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .lp-tier {
+    font-size: 13px;
+    color: rgba(246, 241, 232, 0.85);
+  }
+
+  /* ---------- TRANSPORT (CARS) ---------- */
+  .transport { padding: 100px 0; background: var(--cream-dark); }
+  .transport-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .car-card {
+    background: var(--cream);
+    border-radius: var(--r-lg);
+    padding: 32px;
+    transition: transform .25s, box-shadow .25s;
+    display: flex; flex-direction: column;
+  }
+  .car-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .car-head {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 20px;
+  }
+  .car-icon {
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    background: var(--ink);
+    color: var(--saffron-soft);
+    display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .car-icon .icon { width: 26px; height: 26px; }
+  .car-head h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  .car-leg {
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .car-detail {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+  .car-stats {
+    display: flex; gap: 24px;
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 18px;
+  }
+  .car-stat {
+    flex: 1;
+  }
+  .car-stat-lbl {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  .car-stat-val {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .car-providers {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-top: auto;
+  }
+  .provider-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 14px;
+    background: var(--cream-dark);
+    color: var(--ink);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all .2s;
+  }
+  .provider-link:hover {
+    background: var(--ink); color: var(--cream);
+  }
+  .provider-link .icon { width: 13px; height: 13px; }
+
+  /* ---------- PREP ---------- */
+  .prep { padding: 100px 0; }
+  .prep-grid {
+    display: grid; grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    margin-top: 48px;
+  }
+  .prep-list { display: flex; flex-direction: column; gap: 12px; }
+  .prep-item {
+    background: var(--cream-dark);
+    border-radius: var(--r-md);
+    padding: 24px 28px;
+    display: flex; align-items: center; gap: 24px;
+    transition: transform .25s, box-shadow .25s;
+  }
+  .prep-item:hover {
+    transform: translateX(4px); box-shadow: var(--shadow-sm);
+  }
+  .prep-num {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: var(--ink); color: var(--cream);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-size: 18px; font-weight: 500;
+    flex-shrink: 0;
+  }
+  .prep-item.urgent .prep-num { background: var(--saffron); }
+  .prep-text { flex: 1; }
+  .prep-when {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  .prep-what { font-size: 16px; font-weight: 500; }
+  .prep-what small {
+    display: block;
+    font-weight: 400;
+    color: var(--ink-soft);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .booking-card {
+    background: var(--cream-dark);
+    border-radius: var(--r-lg);
+    padding: 36px;
+    position: sticky;
+    top: 100px;
+  }
+  .booking-card h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .booking-link {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    border-radius: var(--r-sm);
+    background: var(--cream);
+    transition: all .2s;
+  }
+  .booking-link:hover {
+    background: var(--ink); color: var(--cream);
+  }
+  .bl-text { display: flex; flex-direction: column; }
+  .bl-cat {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin-bottom: 2px;
+  }
+  .booking-link:hover .bl-cat { color: rgba(246, 241, 232, 0.65); }
+  .bl-name { font-size: 14px; font-weight: 500; }
+
+  /* ---------- DOOR TO DOOR ---------- */
+  .door {
+    padding: 100px 0;
+    background: var(--ink);
+    color: var(--cream);
+    border-radius: var(--r-xl);
+    margin: 0 32px 80px;
+  }
+  @media (min-width: 1300px) {
+    .door {
+      margin-left: calc((100vw - 1240px) / 2 + 32px);
+      margin-right: calc((100vw - 1240px) / 2 + 32px);
+    }
+  }
+  .door .section-eyebrow { color: var(--saffron-soft); }
+  .door h2 { color: var(--cream); }
+  .door .section-head p { color: rgba(246, 241, 232, 0.65); }
+  .door-flow {
+    position: relative;
+    padding-left: 60px;
+    margin-top: 40px;
+  }
+  .door-flow::before {
+    content: ''; position: absolute;
+    left: 16px; top: 14px; bottom: 14px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--saffron) 0%, var(--saffron) 90%, transparent 100%);
+    opacity: 0.25;
+  }
+  .stage {
+    position: relative;
+    margin-bottom: 28px;
+    background: rgba(246, 241, 232, 0.04);
+    border: 1px solid rgba(246, 241, 232, 0.08);
+    border-radius: var(--r-md);
+    padding: 24px 28px;
+  }
+  .stage-marker {
+    position: absolute; left: -52px; top: 22px;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--ink);
+    border: 2px solid var(--saffron);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--saffron-soft);
+  }
+  .stage-marker .icon { width: 16px; height: 16px; }
+  .stage-head {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; margin-bottom: 12px; flex-wrap: wrap;
+  }
+  .stage-title {
+    font-family: 'Fraunces', serif;
+    font-size: 22px; font-weight: 500;
+    color: var(--cream);
+  }
+  .stage-when {
+    font-size: 12px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--saffron-soft);
+    background: rgba(217, 122, 58, 0.15);
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+  .stage-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 14px;
+  }
+  .stage-col h6 {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: rgba(246, 241, 232, 0.55);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .stage-col ul { list-style: none; }
+  .stage-col li {
+    padding-left: 20px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.55;
+    color: rgba(246, 241, 232, 0.85);
+    margin-bottom: 8px;
+  }
+  .stage-col li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 9px;
+    width: 8px; height: 2px;
+    background: var(--saffron-soft);
+  }
+  .stage .link-chips { margin-top: 12px; }
+
+  /* ---------- POST-TRIP UPDATE ---------- */
+  .post-trip { padding: 100px 0; }
+  .post-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    margin-top: 48px;
+  }
+  .post-prompt {
+    background: var(--cream-dark);
+    border-radius: var(--r-md);
+    padding: 28px;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--ink);
+    user-select: all;
+    white-space: pre-wrap;
+  }
+  .post-fields {
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .post-field {
+    background: white;
+    border-radius: var(--r-sm);
+    padding: 18px 20px;
+    box-shadow: var(--shadow-sm);
+  }
+  .post-field-lbl {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+  .post-field-val {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .post-field-help {
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  /* Pin button on trip nav */
+  .nav-pin-btn {
+    background: transparent;
+    border: 1px solid var(--line-strong);
+    color: var(--ink);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: all .2s;
+  }
+  .nav-pin-btn:hover, .nav-pin-btn.pinned {
+    background: var(--ink); color: var(--cream);
+    border-color: var(--ink);
+  }
+  .nav-pin-btn.pinned { background: var(--saffron); border-color: var(--saffron); color: white; }
+
+  /* ---------- WHY ---------- */
+  section.why { padding: 80px 0 100px; background: var(--cream-dark); }
+  .why-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+    margin-top: 56px;
+  }
+  .why-card {
+    padding: 36px 28px;
+    background: var(--cream);
+    border-radius: var(--r-md);
+    transition: transform .25s, box-shadow .25s;
+  }
+  .why-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-sm);
+  }
+  .why-icon {
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    background: var(--ink); color: var(--saffron-soft);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 24px;
+  }
+  .why-icon .icon { width: 24px; height: 24px; }
+  .why-card h5 {
+    font-size: 22px; font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .why-card p { color: var(--ink-soft); font-size: 15px; }
+
+  @media (max-width: 980px) {
+    .hero-grid, .compare-grid, .costs-grid, .loyalty-strip, .prep-grid, .why-grid, .transport-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero-visual { height: 460px; margin-top: 40px; }
+    .h-card-1 { right: 0; }
+    .booking-card { position: static; }
+  }
+  @media (max-width: 640px) {
+    .hero { padding: 50px 0; }
+    .hero-meta { grid-template-columns: 1fr 1fr; gap: 20px; }
+    .timeline { padding-left: 44px; }
+    .day-marker { left: -38px; width: 28px; height: 28px; }
+    .day-marker .icon { width: 12px; height: 12px; }
+    .day-head { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .day-date { min-width: 0; }
+    .row { grid-template-columns: 1fr; gap: 8px; }
+    .row-icon { width: 28px; height: 28px; }
+    .itinerary { margin: 0 16px 60px; padding: 60px 0; }
+  }
+
+  /* Trip-page custom additions for Japan */
+
+  /* Trip-specific tweaks */
+  .visa-grid, .health-grid {
+    display: grid; gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin-top: 28px;
+  }
+  .visa-card, .health-card {
+    background: white; border-radius: var(--r-md);
+    padding: 22px; box-shadow: var(--shadow-sm);
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .visa-card h5, .health-card h5 {
+    font-size: 16px; margin: 0; display: flex; align-items: center; gap: 8px;
+  }
+  .visa-card p, .health-card p { font-size: 13.5px; color: var(--ink-soft); margin: 0; line-height: 1.55; }
+  .visa-card .meta, .health-card .meta {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+    display: flex; gap: 14px; flex-wrap: wrap;
+  }
+  .visa-card .meta strong { color: var(--ink); }
+  .visa-card .links, .health-card .links {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px;
+  }
+  .visa-card .links a, .health-card .links a {
+    font-size: 12px; padding: 5px 10px; border-radius: 999px;
+    background: var(--cream-dark); color: var(--ink);
+    display: inline-flex; align-items: center; gap: 5px;
+  }
+  .visa-card .links a:hover { background: var(--saffron-soft); }
+
+  .anchor-grid {
+    display: grid; gap: 28px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 28px;
+  }
+  .anchor-card-wrap {
+    position: relative;
+    display: flex; flex-direction: column;
+  }
+  .anchor-card {
+    background: white;
+    border-radius: var(--r-md);
+    padding: 26px 26px 24px;
+    box-shadow: 0 4px 14px rgba(20, 20, 30, 0.06);
+    position: relative;
+    z-index: 2;
+    display: flex; flex-direction: column;
+  }
+  .anchor-head {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: 12px;
+  }
+  .anchor-card .name {
+    font-family: 'Fraunces', serif; font-size: 22px;
+    font-weight: 600; line-height: 1.2; margin: 0;
+  }
+  .anchor-card .where {
+    font-size: 13px; color: var(--ink-soft);
+    margin-top: 4px;
+  }
+  .anchor-kind {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em;
+    font-weight: 700;
+    padding: 5px 11px; border-radius: 999px;
+    background: rgba(214, 132, 60, 0.14);
+    color: var(--saffron-deep);
+    flex-shrink: 0;
+  }
+  .anchor-kind::before {
+    content: "★"; font-size: 10px;
+  }
+  .anchor-card-wrap.kind-heritage .anchor-kind {
+    background: rgba(20, 90, 71, 0.10); color: #145a47;
+  }
+  .anchor-card-wrap.kind-hotel .anchor-kind {
+    background: rgba(107, 70, 193, 0.10); color: #6b46c1;
+  }
+  .anchor-divider {
+    border: none;
+    border-top: 1px solid rgba(20, 20, 30, 0.08);
+    margin: 18px 0 16px;
+  }
+  .anchor-section-label {
+    font-size: 13px; font-weight: 600; color: var(--ink);
+    margin-bottom: 14px;
+  }
+  .anchor-checklist {
+    list-style: none; padding: 0; margin: 0 0 18px;
+    display: flex; flex-direction: column; gap: 11px;
+  }
+  .anchor-checklist li {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 14px; color: var(--ink); line-height: 1.45;
+  }
+  .anchor-checklist li::before {
+    content: "✓";
+    flex-shrink: 0;
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: rgba(214, 132, 60, 0.18);
+    color: var(--saffron-deep);
+    font-size: 12px; font-weight: 700;
+    display: inline-flex; align-items: center; justify-content: center;
+    margin-top: 1px;
+  }
+  .anchor-card-wrap.kind-heritage .anchor-checklist li::before {
+    background: rgba(20, 90, 71, 0.12); color: #145a47;
+  }
+  .anchor-card-wrap.kind-hotel .anchor-checklist li::before {
+    background: rgba(107, 70, 193, 0.12); color: #6b46c1;
+  }
+  .anchor-meta { margin-top: 4px; }
+  .anchor-meta-headline {
+    font-family: 'Fraunces', serif;
+    font-size: 18px; font-weight: 600;
+    color: var(--ink);
+    line-height: 1.25;
+  }
+  .anchor-meta-sub {
+    display: block;
+    font-size: 13px; color: var(--ink-soft);
+    margin-top: 4px;
+  }
+  .anchor-cta {
+    display: flex; align-items: center; justify-content: center;
+    gap: 8px;
+    background: var(--saffron);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; font-size: 15px;
+    text-decoration: none;
+    padding: 26px 24px 18px;
+    border-radius: 0 0 var(--r-md) var(--r-md);
+    margin: -14px 12px 0;
+    position: relative;
+    z-index: 1;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .anchor-cta::after {
+    content: "→"; font-weight: 600;
+    transition: transform 0.2s;
+  }
+  .anchor-cta:hover { background: var(--saffron-deep); }
+  .anchor-cta:hover::after { transform: translateX(3px); }
+  .anchor-card-wrap.kind-heritage .anchor-cta { background: #145a47; }
+  .anchor-card-wrap.kind-heritage .anchor-cta:hover { background: #0e3f31; }
+  .anchor-card-wrap.kind-hotel .anchor-cta { background: #6b46c1; }
+  .anchor-card-wrap.kind-hotel .anchor-cta:hover { background: #553691; }
+  .anchor-secondary-links {
+    margin-top: 12px;
+    display: flex; gap: 6px; flex-wrap: wrap;
+    justify-content: center;
+  }
+  .anchor-secondary-links a {
+    font-size: 12px; padding: 5px 11px; border-radius: 999px;
+    background: var(--cream); color: var(--ink);
+    text-decoration: none;
+  }
+  .anchor-secondary-links a:hover { background: var(--cream-dark); }
+
+  .heritage-section, .anchors-section, .visa-section, .restaurants-section {
+    padding: 80px 0; background: var(--cream);
+  }
+  .heritage-section { background: var(--cream-dark); }
+  .visa-section { background: var(--cream-dark); }
+
+  .leg-tabs-head {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px; margin-bottom: 18px;
+  }
+  .leg-summary {
+    font-size: 13px; color: var(--ink-soft);
+    display: inline-flex; align-items: center; gap: 14px;
+    flex-wrap: wrap;
+  }
+  .leg-summary strong { color: var(--ink); font-weight: 500; }
+
+  .stop-marker {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 4px 12px; border-radius: 999px;
+    background: var(--ink); color: var(--cream);
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+    margin-bottom: 18px;
+  }
+</style>
+</head>
+<body data-trip-slug="2026-11-sri-lanka-ramayana">
+
+<!-- ICONS -->
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+  <defs>
+    <symbol id="i-plane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="i-utensils" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></symbol>
+    <symbol id="i-landmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></symbol>
+    <symbol id="i-sunrise" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m8 6 4-4 4 4"/><path d="M16 18a4 4 0 0 0-8 0"/></symbol>
+    <symbol id="i-sunset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10V2"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m16 6-4 4-4-4"/><path d="M16 18a4 4 0 0 0-8 0"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></symbol>
+    <symbol id="i-waves" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-shopping" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M3 21v-5h5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></symbol>
+    <symbol id="i-thermo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></symbol>
+    <symbol id="i-train" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a8 8 0 0 1 8-8h0a8 8 0 0 1 8 8v5a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/><path d="M4 11h16"/><path d="M9 19l-2 3"/><path d="M15 19l2 3"/><circle cx="8.5" cy="15" r="1"/><circle cx="15.5" cy="15" r="1"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+    <symbol id="i-luggage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20h0a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h0"/><path d="M8 18V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14"/><path d="M10 20h4"/><circle cx="16" cy="20" r="2"/><circle cx="8" cy="20" r="2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+    <symbol id="i-passport" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 2h16.99c.55 0 1 .45 1 1v18c0 .55-.45 1-1 1H3.5c-.83 0-1.5-.67-1.5-1.5V3.5C2 2.67 2.67 2 3.5 2z"/><circle cx="12" cy="11" r="3"/><path d="M9 18h6"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></symbol>
+  </defs>
+</svg>
+
+<!-- ==== Sri Lanka-only extra styles (photo grid + info cards; everything else reuses the site CSS) ==== -->
+<style>
+  .lk-herogrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+  .lk-herocard { border-radius: var(--r-lg); overflow: hidden; background: var(--card);
+    border: 1px solid var(--line); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; }
+  .lk-herocard .ph { height: 170px; background-size: cover; background-position: center; }
+  .lk-herocard .bd { padding: 16px 18px; }
+  .lk-herocard .nm { font-family: 'Fraunces', serif; font-size: 18px; font-weight: 600; color: var(--teal-deep); }
+  .lk-herocard .lo { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--saffron-deep); font-weight: 600; margin: 3px 0 8px; }
+  .lk-herocard p { margin: 0; font-size: 13.5px; color: var(--ink-soft); line-height: 1.55; }
+  .lk-herocard .cap { font-size: 11.5px; color: var(--muted); margin-top: 8px; font-style: italic; }
+  .lk-herocard a { display: inline-block; margin-top: 10px; font-size: 12.5px; font-weight: 600; color: var(--saffron-deep); text-decoration: none; }
+  .lk-herocard.skip { opacity: .82; }
+  .lk-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 8px; }
+  .lk-cards .dc { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-md); padding: 16px 18px; }
+  .lk-cards .dc .leg { font-weight: 700; color: var(--ink); font-size: 14px; }
+  .lk-cards .dc .tm { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 600; color: var(--teal-deep); margin: 4px 0 2px; }
+  .lk-cards .dc .nt { font-size: 12.5px; color: var(--ink-soft); line-height: 1.5; }
+  .lk-cards .dc a { font-size: 12.5px; font-weight: 600; color: var(--saffron-deep); text-decoration: none; }
+  .lk-sub { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 600; color: var(--teal-deep); margin: 34px 0 10px; }
+  .lk-note { font-size: 12.5px; color: var(--muted); margin-top: 16px; line-height: 1.55; }
+  .lk-alert { background: #fff6ec; border: 1px solid #f1c48f; border-radius: var(--r-md); padding: 14px 18px; margin: 0 0 18px; font-size: 14px; line-height: 1.55; color: var(--ink); }
+  .est { font-size: 11px; font-weight: 700; letter-spacing: .04em; color: var(--saffron-deep); }
+</style>
+
+<!-- ========== NAV ========== -->
+<nav class="site-nav">
+  <div class="container inner">
+    <a href="../index.html" class="logo">
+      <span class="logo-mark">◈</span>
+      <span class="logo-word"><span class="logo-line">gama<span class="logo-slash">/</span></span><span class="logo-line">adventures</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">All trips</a>
+      <a href="#hero" class="active">This trip</a>
+      <a href="#itinerary">Timeline</a>
+      <a href="#ramayana">Ramayana</a>
+      <a href="#shopping">Shopping</a>
+      <a href="#veg-restaurants">Veg dining</a>
+      <a href="#before">Before you go</a>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-pin-btn" id="trip-pin-btn" data-pin-id="2026-11-sri-lanka-ramayana" aria-label="Pin trip" title="Pin trip">
+        <svg class="icon icon-sm"><use href="#i-bookmark"/></svg>
+      </button>
+      <a href="#before" class="btn btn-saffron btn-sm">
+        <svg class="icon icon-sm"><use href="#i-passport"/></svg>
+        Before you go
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<header class="hero" id="hero">
+  <div class="hero-decor">
+    <div class="ring filled"></div>
+    <div class="line"></div>
+    <div class="ring"></div>
+    <div class="line"></div>
+    <div class="ring"></div>
+  </div>
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          November 2026 · Colombo · Kandy · Hill country
+        </div>
+        <h1 data-parallax="0.05">Old Colombo, Kandy,<br>and the <em>Ramayana</em> trail.</h1>
+        <p class="hero-sub">
+          Two nights in Colombo around your Saturday conference — old Fort and Pettah on Friday, temples,
+          legacy pure-veg eating houses and the best shopping on Saturday afternoon. Then up to Kandy for the Temple of the Tooth, and into the hill country for the places
+          tradition links to Sita and Hanuman — the Ramboda Hanuman temple, the Seetha Amman temple and
+          Hakgala, said to be Ashok Vatika. A trip for two — strictly lacto-vegetarian, unhurried, home Tuesday night.
+        </p>
+        <div class="hero-meta">
+          <div class="meta-item"><div class="label">Window</div><div class="value">Nov 20 – 24</div></div>
+          <div class="meta-item"><div class="label">Travelers</div><div class="value">2</div></div>
+          <div class="meta-item"><div class="label">Nights</div><div class="value">4</div></div>
+          <div class="meta-item"><div class="label">From</div><div class="value">BLR</div></div>
+        </div>
+        <div class="hero-actions">
+          <a href="#itinerary" class="btn btn-primary">See timeline <svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></a>
+          <a href="#before" class="btn btn-ghost">Read the 5 things to fix first</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="h-card h-card-1" data-parallax="0.06">
+          <div class="h-card-img" style="background-image:url('images/seetha-amman.jpg'); background-size:cover; background-position:center;">
+            <span class="h-card-tag">
+              <svg class="icon icon-sm" style="display:inline; vertical-align: middle; margin-right: 4px;"><use href="#i-star"/></svg>
+              Day 4
+            </span>
+          </div>
+          <div class="h-card-body">
+            <div class="place">Seetha Amman Temple</div>
+            <div class="meta">Sita Eliya · where tradition says Sita was held</div>
+          </div>
+        </div>
+        <div class="h-card h-card-2" data-parallax="0.10">
+          <div class="h-card-img" style="background-image:url('images/temple-of-tooth.jpg'); background-size:cover; background-position:center;">
+            <span class="h-card-tag">Day 3</span>
+          </div>
+          <div class="h-card-body">
+            <div class="place">Temple of the Tooth</div>
+            <div class="meta">Kandy · evening puja 6:30 pm</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ========== HIGHLIGHTS STRIP ========== -->
+<section class="strip" aria-label="Trip highlights">
+  <div class="strip-eyebrow">Sites you'll see</div>
+  <div class="strip-track" id="strip-track">
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/galle-face.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Sunset</span><div class="strip-card-name">Galle Face Green</div><div class="strip-card-loc">Colombo · seafront</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/red-mosque.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Heritage</span><div class="strip-card-name">Red Mosque</div><div class="strip-card-loc">Pettah · Jami Ul-Alfar</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/gangaramaya.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Temple</span><div class="strip-card-name">Gangaramaya</div><div class="strip-card-loc">Colombo · Beira Lake</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/seema-malaka.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Bawa</span><div class="strip-card-name">Seema Malaka</div><div class="strip-card-loc">Colombo · on the lake</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/kelaniya.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Ramayana</span><div class="strip-card-name">Kelaniya Raja Maha Vihara</div><div class="strip-card-loc">Vibhishana's crowning</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/temple-of-tooth.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">UNESCO</span><div class="strip-card-name">Temple of the Tooth</div><div class="strip-card-loc">Kandy · evening puja</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/ramboda.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Hanuman</span><div class="strip-card-name">Ramboda</div><div class="strip-card-loc">Falls by the Hanuman temple</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/seetha-amman.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Sita</span><div class="strip-card-name">Seetha Amman Temple</div><div class="strip-card-loc">Sita Eliya</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/hakgala.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Ashok Vatika</span><div class="strip-card-name">Hakgala Gardens</div><div class="strip-card-loc">Near Nuwara Eliya</div></div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('images/grand-hotel-ne.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Stay</span><div class="strip-card-name">The Grand Hotel</div><div class="strip-card-loc">Nuwara Eliya</div></div>
+    </article>
+    <!-- Duplicates for seamless loop -->
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/galle-face.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Sunset</span><div class="strip-card-name">Galle Face Green</div><div class="strip-card-loc">Colombo · seafront</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/red-mosque.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Heritage</span><div class="strip-card-name">Red Mosque</div><div class="strip-card-loc">Pettah · Jami Ul-Alfar</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/gangaramaya.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Temple</span><div class="strip-card-name">Gangaramaya</div><div class="strip-card-loc">Colombo · Beira Lake</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/seema-malaka.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Bawa</span><div class="strip-card-name">Seema Malaka</div><div class="strip-card-loc">Colombo · on the lake</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/kelaniya.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Ramayana</span><div class="strip-card-name">Kelaniya Raja Maha Vihara</div><div class="strip-card-loc">Vibhishana's crowning</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/temple-of-tooth.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">UNESCO</span><div class="strip-card-name">Temple of the Tooth</div><div class="strip-card-loc">Kandy · evening puja</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/ramboda.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Hanuman</span><div class="strip-card-name">Ramboda</div><div class="strip-card-loc">Falls by the Hanuman temple</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/seetha-amman.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Sita</span><div class="strip-card-name">Seetha Amman Temple</div><div class="strip-card-loc">Sita Eliya</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/hakgala.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Ashok Vatika</span><div class="strip-card-name">Hakgala Gardens</div><div class="strip-card-loc">Near Nuwara Eliya</div></div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('images/grand-hotel-ne.jpg');"></div>
+      <div class="strip-card-meta"><span class="strip-card-tag">Stay</span><div class="strip-card-name">The Grand Hotel</div><div class="strip-card-loc">Nuwara Eliya</div></div>
+    </article>
+  </div>
+</section>
+
+<!-- ========== ITINERARY (with map) ========== -->
+<section class="itinerary" id="itinerary">
+  <div class="container with-map">
+    <aside class="section-with-map__map" data-trip-map="itinerary" aria-label="Map of itinerary stops"></aside>
+    <div class="with-map__main">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Day by day · grounded, with honest trust labels</div>
+        <h2>The <em>timeline</em></h2>
+      </div>
+      <p>Colombo for two nights, then one night each in Kandy and Nuwara Eliya, then a long drive to the
+        airport. Drive times are estimates <span class="est">(EST)</span>. The fast expressway does
+        <strong>not</strong> reach Kandy yet, so the hill legs are slow roads — the times below already
+        allow for that. Temple hours and fees that couldn't be checked are marked
+        <strong>⚠️ confirm</strong>, not invented. Strictly lacto-vegetarian throughout.</p>
+    </div>
+
+    <div class="leg-tabs-head">
+      <div class="leg-summary">
+        <span><strong>4 nights</strong> · Fri Nov 20 → Tue Nov 24, 2026</span>
+        <span>· <strong>2</strong> adults · BLR origin</span>
+        <span>· Vegetarian only · 5★ (Bonvoy in Colombo)</span>
+      </div>
+    </div>
+
+    <div class="tab-panel active">
+      <div class="timeline">
+
+        <!-- DAY 1 -->
+        <details class="day" open>
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-plane"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Fri · Nov 20</div>
+                <div class="day-title">Fly BLR → Colombo · old Fort &amp; Pettah · Galle Face at dusk</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Arrival</span>
+                <span class="day-tag">Heritage</span>
+                <span class="day-tag">ITC Ratnadipa</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">Why today</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-calendar"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Old Colombo moves to Friday afternoon</span> — your conference takes Saturday until the afternoon, and Pettah is closed on Sundays. So today is the only chance for the old bazaar. That makes the <strong>morning flight</strong> important.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Morning</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-plane"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">IndiGo 6E1167 BLR → CMB · direct, ~1h25–1h40</span> — <strong>⚠️ confirm the time:</strong> one site lists it at 10:45, another at 09:05. Same time zone. The evening IndiGo 6E1183 (18:45–19:15) would lose the whole Pettah afternoon.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.goindigo.in/" target="_blank"><svg class="icon"><use href="#i-plane"/></svg> IndiGo</a>
+                  <a class="chip" href="https://www.flightsfrom.com/BLR-CMB" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> All BLR→CMB flights</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Landing</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">CMB airport → ITC Ratnadipa · <span class="est">~45–75 min EST</span></span> — the airport is at Katunayake, north of the city. Meet your car and driver here; keep the same driver for all five days (see Getting around). Show your ETA approvals at immigration.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Check-in</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-key"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">ITC Ratnadipa, a Luxury Collection Hotel · <strong>✅ your Colombo base, Fri &amp; Sat nights</strong></span> — Marriott Bonvoy, opened April 2024, right next to Galle Face Green. Check in on Titanium: ask for an early room, a suite upgrade and lounge access. Two Indian restaurants: <strong>Peshawri</strong> (North-West Frontier) and <strong>Avartana</strong> (modern South Indian). <strong>⚠️ Ask in writing</strong> that your meals are cooked with no egg and no fish stock — one guest says they handled a Jain diet well, but that isn't a guarantee. Quick lunch here, then out.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.marriott.com/en-us/hotels/cmblc-itc-ratnadipa-a-luxury-collection-hotel-colombo/overview/" target="_blank"><svg class="icon"><use href="#i-bed"/></svg> ITC Ratnadipa</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">2:30</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Pettah walk: Red Mosque → Main Street → Wolvendaal Church · <span class="est">~15 min from the hotel EST</span></span> — the red-and-white striped Jami Ul-Alfar mosque, the chaotic old bazaar on Main Street, and Wolvendaal, a Dutch-era church on the hill. <strong>⚠️ Friday is the main prayer day</strong> — the mosque's visiting hours aren't verified, so plan to see it from outside (the striped front is the photo anyway). Modest dress.
+                <br><strong>Veg snack in Pettah: Golden Cafe</strong> — ghee dosa and Mysore pak, shown as all-veg by one YouTube creator. <span class="est">⚠️ One source only; address and hours not verified — ask before ordering.</span> Skip the street snacks here: most samosas and rolls are chicken or fish.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Golden+Cafe+Pettah+Colombo" target="_blank"><svg class="icon"><use href="#i-utensils"/></svg> Golden Cafe</a>
+                  <a class="chip" href="https://www.google.com/maps/search/Jami+Ul+Alfar+Mosque+Pettah" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Red Mosque</a>
+                  <a class="chip" href="https://www.google.com/maps/search/Wolvendaal+Church+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Wolvendaal</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">4:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-shopping"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Old Dutch Hospital + Dilmah t-Lounge, Fort</span> — the old colonial hospital, now a courtyard of shops (10 am–10 pm), with Barefoot and Spa Ceylon outlets. Two minutes away, the <strong>Dilmah t-Lounge</strong> (62/2 Chatham St) for tea and tea to take home.
+                <br><em>Hungry?</em> <strong>Ceylon Curry Club</strong>, inside Old Dutch Hospital — a creator picked six veg curries with rice. <span class="est">⚠️ Not a veg-only kitchen: say “no Maldive fish, no egg”, and ask for plain hoppers.</span>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Old+Dutch+Hospital+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Dutch Hospital</a>
+                  <a class="chip" href="https://www.google.com/maps/search/Dilmah+t-Lounge+Chatham+Street+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Dilmah t-Lounge</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">5:30</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">New Kathiresan Kovil, Sea Street — evening opening</span> — a busy Tamil Hindu temple on Colombo's gold street. Evening hours 5:30–8 pm. Sea Street is lined with jewellers — window-shop only (see the gem rules below).
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/New+Kathiresan+Kovil+Sea+Street+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Kathiresan Kovil</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">6:15</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-sunset"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Galle Face Green — the last light, steps from the hotel</span> — Colombo's big seafront lawn, liveliest from about 5 pm into the evening. <strong>⛔ Skip the food stalls</strong> — most fry seafood in the same oil.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Galle+Face+Green+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Galle Face Green</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Peshawri ITC Ratnadipa" data-rest-city="Colombo">
+              <div class="row-time">Dinner</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Peshawri at the hotel</span> — dal, paneer and tandoori breads, an early night before the conference. Say <strong>“no egg, no fish, no Maldive fish.”</strong>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 2 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-landmark"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Sat · Nov 21</div>
+                <div class="day-title">Colombo: conference, then Gangaramaya, shopping &amp; a legacy veg dinner</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Conference</span>
+                <span class="day-tag">Shopping</span>
+                <span class="day-tag">Legacy eats</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">Morning</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-users"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Your conference, until the afternoon</span> — the plan below assumes you're free by about <strong>3 pm</strong>. <span class="est">⚠️ Adjust once you know the finish time and venue.</span> This is the last shopping window: Sunday you leave Colombo, and Tuesday is a Poya holiday.
+              </div>
+            </div>
+            <div class="row" data-rest-name="Saraswathie Lodge" data-rest-city="Colombo">
+              <div class="row-time">Your wife</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">A free morning — National Museum, then a legacy lunch at Saraswathie Lodge</span> — with the car and driver. The <strong>National Museum</strong> (9–6, closed Mondays, foreigners $5) holds royal regalia and Kandyan treasures. Then <strong>Saraswathie Lodge</strong>, 191 Galle Rd, Bambalapitiya <strong>✅ pure-veg</strong> — an old-style Tamil eating house, “over 70 years” per a reviewer <span class="est">(⚠️ not verified)</span>: dosa, vada, string hoppers, banana-leaf meals. Or simply the spa and pool. Barefoot opens at 10 if she wants to scout before you go together.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Colombo+National+Museum" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> National Museum</a>
+                  <a class="chip" href="https://www.google.com/maps/search/Saraswathie+Lodge+191+Galle+Road+Bambalapitiya" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Saraswathie Lodge</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">3:00</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Seema Malaka, then Gangaramaya Temple</span> — <strong>Seema Malaka</strong> floats on Beira Lake, designed by Geoffrey Bawa, Sri Lanka's most famous architect; go first, as it may close at 4:30 <span class="est">(⚠️ unverified)</span>. Across the road, <strong>Gangaramaya</strong> is a Buddhist temple stuffed with a century of gifts, from Buddha statues to vintage cars — open about 6 am–8 pm. <span class="est">⚠️ Fees disputed — carry cash.</span> Covered shoulders and knees; shoes off.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Seema+Malaka+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Seema Malaka</a>
+                  <a class="chip" href="https://www.google.com/maps/search/Gangaramaya+Temple+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Gangaramaya</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">4:15</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-shopping"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Barefoot, 704 Galle Rd — the one not to miss</span> — bright handloom cotton, homeware and a bookshop. Closes at 7 on Saturdays, so go here first. Its garden café is fine for a tea.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Barefoot+704+Galle+Road+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Barefoot</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Paradise Road The Gallery Cafe" data-rest-city="Colombo">
+              <div class="row-time">5:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-sparkles"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Paradise Road shop + The Gallery Café, in Geoffrey Bawa's old office</span> — the design shop (138 Galle Rd, <span class="est">⚠️ hours not found</span>), then a drink at the café, opened 1998 in the architect's former office at 2 Alfred House Rd (open till midnight). <strong>⚠️ Mixed menu:</strong> egg is in the veg Phad Thai and Nasi Goreng — order drinks and egg-free desserts only.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Paradise+Road+The+Gallery+Cafe+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Gallery Café</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">6:30</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-shopping"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">ODEL, 5 Alexandra Place — until 8 pm</span> — Colombo's department store for clothes, gifts and tea. Skip it if you're tired; Laksala and tea shops are also in Kandy.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/ODEL+Alexandra+Place+Colombo" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> ODEL</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Shanmugas" data-rest-city="Colombo">
+              <div class="row-time">Dinner</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Shanmugas, Wellawatte · <strong>✅ pure-veg</strong> — or Avartana at the hotel</span> — Shanmugas (53/3 Ramakrishna Rd, since 1998, Saturday until 10:30 pm per HappyCow) is the legacy-style option. For a proper dinner out as a couple, book <strong>Avartana</strong> at the ITC — a modern South Indian tasting menu; ask for the vegetarian version, no egg.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Shanmugas+Ramakrishna+Road+Wellawatte" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Shanmugas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 3 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-landmark"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Sun · Nov 22</div>
+                <div class="day-title">Kelaniya (Vibhishana's temple) → Kandy · Temple of the Tooth evening puja</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Ramayana</span>
+                <span class="day-tag">Long drive</span>
+                <span class="day-tag">UNESCO</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">7:45</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Kelaniya Raja Maha Vihara · <span class="est">~15–25 min from the hotel EST</span></span> — the first Ramayana stop, and it's on the way to Kandy. Tradition says Ravana's brother <strong>Vibhishana</strong> was crowned king of Lanka here after the war. Look for the painted murals inside. Plan about an hour. White or light clothes, covered shoulders and knees, shoes off.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Kelaniya+Raja+Maha+Vihara" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Kelaniya</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">9:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Drive to Kandy on the old A1 road · <span class="est">~3–3.5 h realistic</span></span> — ignore apps that say under 2 hours; they assume an expressway that won't open until 2027–28. <strong>⚠️ Check the road the day before</strong> — there was a rockfall closure at Kadugannawa in August 2026. Pack water and snacks.
+              </div>
+            </div>
+            <div class="row" data-rest-name="Balaji Dosai" data-rest-city="Kandy">
+              <div class="row-time">12:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch: Balaji Dosai, 03 D.S. Senanayake Veediya · <strong>✅ “100% pure vegetarian”</strong> (its own site)</span> — a short walk from the Temple. Dosas and South Indian plates, open about 7:30 am–9:30 pm. Sri Krishna Dosai across the road is the backup.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Balaji+Dosai+Kandy" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Balaji Dosai</a>
+                  <a class="chip" href="http://balajidosai.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Website</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">2:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-key"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Check in: Earl's Regency, Kundasale · <strong>⚠️ no Marriott or Hilton exists in Kandy</strong></span> — the hotel calls itself five-star on its own site, has family rooms and a pool, and sits about 7 km from the Temple. <em>Heritage alternative:</em> <strong>Queen's Hotel</strong>, 45 Dalada Veediya — 150+ years old, facing the lake, a 5-minute walk to the Temple, but its star rating couldn't be verified. Choose Queen's for the walkability, Earl's for comfort.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.aitkenspencehotels.com/earlsregency/" target="_blank"><svg class="icon"><use href="#i-bed"/></svg> Earl's Regency</a>
+                  <a class="chip" href="https://queenshotel.lk/" target="_blank"><svg class="icon"><use href="#i-bed"/></svg> Queen's Hotel</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">5:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-sparkles"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Kandyan dance show, Kandy Lake Club · 5–6 pm daily</span> — drummers, dancers and fire-walking at the end. Touristy, but genuinely good. <span class="est">⚠️ Price not on the official page; third parties say LKR 1,500–2,000.</span>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.kandylakeclubdance.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Kandy Lake Club dance</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">6:30</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Temple of the Tooth — evening puja, 6:30–8 pm · <strong>✅ official FAQ</strong></span> — the temple that holds Sri Lanka's most sacred Buddhist relic, part of the UNESCO-listed sacred city of Kandy. The drums start the puja. <strong>Tickets:</strong> LKR 2,500 each on your Indian passports (the South Asian rate; foreigners pay LKR 3,000). Includes the museum. No shorts or sleeveless tops; shoes and big bags are handed in.
+                <div class="link-chips">
+                  <a class="chip" href="https://sridaladamaligawa.lk/faq/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Temple FAQ</a>
+                  <a class="chip" href="https://www.google.com/maps/search/Temple+of+the+Sacred+Tooth+Relic+Kandy" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Temple of the Tooth</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Nagalingam's Bhavan" data-rest-city="Kandy">
+              <div class="row-time">Dinner</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Nagalingam's Bhavan, 77 Colombo St · <strong>pure-veg, Jain style</strong></span> — no onion, garlic or leeks. About 3–10 pm daily per Wanderlog <span class="est">(⚠️ call to confirm)</span>. Then a short walk along Kandy Lake if anyone has energy left.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Nagalingams+Bhavan+Kandy" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Nagalingam's</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 4 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-mountain"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Mon · Nov 23</div>
+                <div class="day-title">Ramayana day: Ramboda Hanuman → tea → Sita Eliya &amp; Hakgala → Nuwara Eliya</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Hanuman</span>
+                <span class="day-tag">Sita</span>
+                <span class="day-tag">Tea country</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">8:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Leave Kandy on the A5 hill road · <span class="est">~2h45–3h to Nuwara Eliya, before stops</span></span> — winding and slow; give anyone prone to car-sickness the front seat. <em>Optional early start:</em> Peradeniya Botanic Gardens opens 7:30 am, 15 minutes from Kandy, if you want it.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">9:15</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Sri Bhakta Hanuman Temple, Ramboda · <span class="est">~1h–1h15 from Kandy EST</span></span> — run by the Chinmaya Mission, with a 16-ft black granite Hanuman. Tradition says this is where Hanuman searched for Sita. About 500 m uphill off the A5 near the 40 km post — the driver will know it. Views over the tea hills.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Sri+Bhakta+Hanuman+Temple+Ramboda" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Ramboda Hanuman</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">10:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Ramboda Falls · <span class="est">~40 min total EST</span></span> — a 109 m waterfall. A YouTube creator reached it with a ~15-minute walk down through the Ramboda Hotel, then had tea at the hotel (about LKR 1,100). Wear shoes with grip; skip it if it's raining.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Ramboda+Falls+Hotel" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Ramboda Falls</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">11:00</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-sparkles"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Tea break: Damro Labookellie Tea Centre, on the A5</span> — a tea factory and tasting room on the road (it used to be called Mackwoods Labookellie — same place). See the leaves being processed and buy fresh tea. <span class="est">⚠️ 8:30–5:30 per one secondary source.</span>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Damro+Labookellie+Tea+Centre" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Labookellie</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Ambaal's Pure Vegetarian" data-rest-city="Nuwara Eliya">
+              <div class="row-time">12:45</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch: Ambaal's Pure Vegetarian, 52 New Bazaar St · ✅ pure-veg</span> — South Indian, near the Central Market. Two YouTube creators ate here and said it was packed with locals. 7 am–10 pm per Wanderlog. <span class="est">⚠️ Some reviews flag cleanliness — if it looks off, go to Grand Indian instead.</span>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Ambaals+Pure+Vegetarian+Nuwara+Eliya" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Ambaal's</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Grand Indian, The Grand Hotel" data-rest-city="Nuwara Eliya">
+              <div class="row-time">1:45</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-bed"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Check in: The Grand Hotel, Nuwara Eliya · Grand Indian restaurant</span> — the hotel calls itself a “Heritage Grand 5-star”, and its <strong>Grand Indian</strong> restaurant is the best veg option in the hills: North Indian food plus an “Indian Vegan Menu” (lunch 12:00–3:30, dinner 6:30–10:30). No Marriott or Hilton exists in Nuwara Eliya.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.thegrandhotelnuwaraeliya.com/" target="_blank"><svg class="icon"><use href="#i-bed"/></svg> The Grand Hotel</a>
+                  <a class="chip" href="https://www.thegrandhotelnuwaraeliya.com/dining/grand-indian/" target="_blank"><svg class="icon"><use href="#i-utensils"/></svg> Grand Indian</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">2:30</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Seetha Amman Temple, Sita Eliya · <span class="est">~12 min from the hotel EST</span> — the heart of the trip</span> — tradition says this is where Ravana held Sita captive, and it is said to be the only temple dedicated to Sita alone. Beside it is a stream, and rock marks said to be <strong>Hanuman's footprints</strong>. Covered shoulders and knees, shoes off. <span class="est">⚠️ Hours not verified — afternoons are usually fine, but ask the hotel.</span>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Seetha+Amman+Temple+Nuwara+Eliya" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Seetha Amman</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">3:30</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-mountain"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Hakgala Botanical Garden — “Ashok Vatika” · 1.6 km on</span> — the garden tradition links to the grove where Sita waited. Today it's a cool, pretty hillside garden of roses and ferns. Open 7:30–5:30; foreigners Rs 1,500 per Wikivoyage <span class="est">(⚠️ undated — check)</span>. Be out by 5:15.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Hakgala+Botanical+Garden" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Hakgala</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">5:30</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Gregory Lake at sunset + the old Post Office · <span class="est">~15 min from Hakgala EST</span></span> — the lake was the most-filmed spot in Nuwara Eliya (4 creators). Boating about LKR 1,000; one creator snacked on coconut roti with chutney from the stalls. On the way back, the pink-brick colonial Post Office in town (2 creators) is a quick photo stop.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Gregory+Lake+Nuwara+Eliya" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Gregory Lake</a>
+                  <a class="chip" href="https://www.google.com/maps/search/Nuwara+Eliya+Post+Office" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Post Office</a>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-rest-name="Grand Indian, The Grand Hotel" data-rest-city="Nuwara Eliya">
+              <div class="row-time">Evening</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner back at Grand Indian · pack jackets</span> — Nuwara Eliya is high in the hills and evenings get cold.
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- DAY 5 -->
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-plane"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Tue · Nov 24 · Poya</div>
+                <div class="day-title">Nuwara Eliya → Colombo airport (long drive) → fly home</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Poya holiday</span>
+                <span class="day-tag">Drive day</span>
+                <span class="day-tag">Departure</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">Note</div>
+              <div class="row-icon"><svg class="icon"><use href="#i-calendar"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Nov 24 is Il Poya, a full-moon public holiday</span> — Buddhist temples get very busy and many shops close. Nothing on today's plan needs a shop, which is why all the shopping is on Saturday.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">7:15</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-sunrise"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Optional: a quiet morning visit back to Seetha Amman</span> — about 12 minutes from the hotel, if you want a prayer there without the afternoon crowd. Or Gayathri Peedam in town, linked by tradition to Ravana's son Meghanath. <span class="est">⚠️ hours unverified for both.</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">8:30</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Drive to CMB airport · <span class="est">~5–6 h with stops</span></span> — the longest leg of the trip. Aim to land at the airport between 2:30 and 3:30 pm. Ask the hotel to pack a veg lunch from Grand Indian — there are no verified veg places on this route. It may be slower with holiday traffic.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-time">Evening</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-plane"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">IndiGo 6E1184 CMB → BLR · listed at 21:50 · <strong>⚠️ confirm</strong></span> — this is the only realistic flight. The 13:25 IndiGo is too early from the hills, and SriLankan's 18:55 doesn't fly on Tuesdays. You land in Bangalore around 11:30 pm. <strong>Gems:</strong> declare any stones honestly at Indian customs; keep certificates and invoices in hand luggage.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.flightsfrom.com/CMB-BLR" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> All CMB→BLR flights</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== RAMAYANA TRAIL (photos) ========== -->
+<section class="anchors-section" id="ramayana">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Sita · Hanuman · Vibhishana · Rama</div>
+        <h2>The <em>Ramayana</em> trail</h2>
+      </div>
+      <p>Sri Lanka Tourism runs an official “Ramayanaya” trail of about fifty sites. They are places of
+        traditional belief, not proven history — treat them as pilgrimage, not archaeology. Four of them
+        sit on this route. The rest are a long way off, so they are listed honestly below with why they
+        were left out.</p>
+    </div>
+    <div class="lk-herogrid">
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/seetha-amman.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Seetha Amman Temple</div>
+          <div class="lo">Sita Eliya · Day 4 · Sita</div>
+          <p>Where tradition says Ravana held Sita. Said to be the only temple dedicated to Sita alone. A stream runs beside it, with rock marks said to be Hanuman's footprints.</p>
+          <a href="https://www.google.com/maps/search/Seetha+Amman+Temple+Nuwara+Eliya" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/hakgala.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Hakgala Gardens — Ashok Vatika</div>
+          <div class="lo">Near Nuwara Eliya · Day 4 · Sita</div>
+          <p>The hillside garden linked to the Ashoka grove where Sita waited for Rama, and where Hanuman first found her. 1.6 km from the Seetha Amman temple.</p>
+          <a href="https://www.google.com/maps/search/Hakgala+Botanical+Garden" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/ramboda.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Sri Bhakta Hanuman Temple</div>
+          <div class="lo">Ramboda · Day 4 · Hanuman</div>
+          <p>A Chinmaya Mission temple with a 16-ft black granite Hanuman, on the hill road. Tradition says Hanuman searched these hills for Sita.</p>
+          <div class="cap">Photo: Lower Ramboda Falls, just down the road. No free-to-use photo of the temple itself was found.</div>
+          <a href="https://www.google.com/maps/search/Sri+Bhakta+Hanuman+Temple+Ramboda" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/kelaniya.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Kelaniya Raja Maha Vihara</div>
+          <div class="lo">Near Colombo · Day 3 · Vibhishana</div>
+          <p>Where Ravana's brother Vibhishana is said to have been crowned king of Lanka after the war. A Buddhist temple with fine murals, 15–25 minutes from central Colombo.</p>
+          <a href="https://www.google.com/maps/search/Kelaniya+Raja+Maha+Vihara" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="lk-herocard skip">
+        <div class="ph" style="background-image:url('images/munneswaram.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Munneswaram Temple · ⛔ not on this trip</div>
+          <div class="lo">Chilaw · Rama</div>
+          <p>The Shiva temple where Rama is said to have prayed after the war. About an hour north of the airport — it would only fit straight off the Friday flight, and that afternoon is now needed for Pettah because of your conference.</p>
+          <a href="https://www.google.com/maps/search/Munneswaram+Temple+Chilaw" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="lk-herocard skip">
+        <div class="ph" style="background-image:url('images/ravana-falls.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Ravana Falls &amp; Ravana Cave</div>
+          <div class="lo">Ella · ⛔ not on this trip</div>
+          <p>Where tradition says Ravana hid Sita. Beautiful, but Ella is several more hours of hill road past Nuwara Eliya. It needs at least one extra night — save it for a longer trip.</p>
+          <a href="https://www.google.com/maps/search/Ravana+Falls+Ella" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="lk-sub">Left out, and why</div>
+    <div class="lk-cards">
+      <div class="dc"><div class="leg">Divurumpola</div><div class="nt">Said to be where Sita's fire test took place. Skipped: it adds 1.5–3 hours, and even the tourism board's map pin is wrong (it points to a different village).</div></div>
+      <div class="dc"><div class="leg">Manavari</div><div class="nt">Said to hold the first lingam Rama installed. North of Chilaw; only worth it paired with Munneswaram on a future trip. Open 6:30–12:30 and 4–7 pm.</div></div>
+      <div class="dc"><div class="leg">Sita Kotuwa, Ussangoda, Rumassala</div><div class="nt">Linked to Sita's captivity and Hanuman's flight. All far to the east or deep south — whole extra days each.</div></div>
+      <div class="dc"><div class="leg">Koneswaram, Mannar / Ram Setu</div><div class="nt">The far north and east. A separate trip. Sigiriya's Ravana link is only a fringe claim.</div></div>
+    </div>
+    <p class="lk-note">Official trail: <a href="https://www.srilanka.travel/ramayanaya" target="_blank" rel="noopener">srilanka.travel/ramayanaya</a>. Every Ramayana link on this page is traditional belief as told by the temples and the tourism board.</p>
+  </div>
+</section>
+
+<!-- ========== COLOMBO + KANDY HERITAGE (photos) ========== -->
+<section class="anchors-section" id="anchors">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">The beautiful &amp; the old</div>
+        <h2>Heritage <em>worth planning around</em></h2>
+      </div>
+      <p>Colonial Colombo, Buddhist temples, the Kandyan kingdom's sacred city and a hill station the
+        British built to escape the heat. Photos are of the actual places (Wikimedia Commons).</p>
+    </div>
+    <div class="lk-herogrid">
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/temple-of-tooth.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Temple of the Tooth</div>
+          <div class="lo">Kandy · Day 3</div>
+          <p>Home of the tooth relic of the Buddha and the centre of the UNESCO-listed sacred city of Kandy. Go for the 6:30 pm puja, when the drums start.</p>
+          <a href="https://sridaladamaligawa.lk/faq/" target="_blank" rel="noopener">Official FAQ ↗</a>
+        </div>
+      </div>
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/kandy-lake.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Kandy Lake</div>
+          <div class="lo">Kandy · Day 3</div>
+          <p>The lake in the middle of town, beside the Temple. A flat, easy walk at dusk after the puja.</p>
+          <a href="https://www.google.com/maps/search/Kandy+Lake" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/gangaramaya.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Gangaramaya Temple</div>
+          <div class="lo">Colombo · Day 2</div>
+          <p>A Buddhist temple packed with gifts from devotees — statues, relics, even vintage cars. The most eclectic temple in Colombo.</p>
+          <a href="https://www.google.com/maps/search/Gangaramaya+Temple+Colombo" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/seema-malaka.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Seema Malaka</div>
+          <div class="lo">Beira Lake, Colombo · Day 2</div>
+          <p>A small temple pavilion floating on the lake, designed by Geoffrey Bawa. <span class="est">⚠️ 9:00–4:30 and a small fee per one source — not verified.</span></p>
+          <a href="https://www.google.com/maps/search/Seema+Malaka+Colombo" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/red-mosque.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Red Mosque (Jami Ul-Alfar)</div>
+          <div class="lo">Pettah, Colombo · Day 1</div>
+          <p>Colombo's red-and-white striped landmark in the old bazaar district. Modest dress if you go in.</p>
+          <a href="https://www.google.com/maps/search/Jami+Ul+Alfar+Mosque+Pettah" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/wolvendaal.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Wolvendaal Church</div>
+          <div class="lo">Pettah, Colombo · Day 1</div>
+          <p>A Dutch-era church on the hill above Pettah — a quiet, cool break from the bazaar.</p>
+          <a href="https://www.google.com/maps/search/Wolvendaal+Church+Colombo" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/national-museum.jpg');"></div>
+        <div class="bd">
+          <div class="nm">National Museum · optional</div>
+          <div class="lo">Colombo · Day 2 morning</div>
+          <p>The country's main museum: royal regalia and Kandyan treasures. 9–6, last tickets 3 pm, closed Mondays. Foreigners $5 each. A good solo morning for your wife during the conference.</p>
+          <a href="https://www.google.com/maps/search/Colombo+National+Museum" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/peradeniya.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Peradeniya Botanic Gardens · optional</div>
+          <div class="lo">Near Kandy · Day 4 early</div>
+          <p>Sri Lanka's royal botanic garden, 7:30 am–6 pm daily. Only if you leave Kandy early. <span class="est">⚠️ Ticket prices not on the official page.</span></p>
+          <a href="https://www.botanicgardens.gov.lk/ticket/" target="_blank" rel="noopener">Official tickets ↗</a>
+        </div>
+      </div>
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/nuwara-eliya.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Nuwara Eliya</div>
+          <div class="lo">Hill country · Day 4</div>
+          <p>The cool hill station the British called “Little England”, surrounded by tea estates. Your base for the Sita sites.</p>
+          <a href="https://www.google.com/maps/search/Nuwara+Eliya" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/grand-hotel-ne.jpg');"></div>
+        <div class="bd">
+          <div class="nm">The Grand Hotel</div>
+          <div class="lo">Nuwara Eliya · Day 4 stay</div>
+          <p>The town's grand old colonial hotel and your night's stay, with the Grand Indian restaurant. <span class="est">⚠️ Its exact build date couldn't be verified.</span></p>
+          <a href="https://www.thegrandhotelnuwaraeliya.com/" target="_blank" rel="noopener">Hotel site ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SHOPPING ========== -->
+<section class="transport" id="shopping">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Handloom · tea · design · gems</div>
+        <h2>Where to <em>shop</em></h2>
+      </div>
+      <p>Friday afternoon (Fort and Pettah) and Saturday afternoon (Galle Road) are the shopping windows — most of these are within a short drive of each other
+        on Galle Road. Tea is easy to buy all along the route. Gems need care: the rules are at the
+        bottom.</p>
+    </div>
+    <div class="pettah-photo lk-herogrid" style="margin-bottom:18px;">
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/pettah.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Pettah</div>
+          <div class="lo">Old bazaar · closed Sundays</div>
+          <p>Sea Street for gold, Main Street for everything else. Crowded and loud — go early.</p>
+          <div class="cap">Photo: the Pettah Floating Market, at the edge of the bazaar district.</div>
+        </div>
+      </div>
+      <div class="lk-herocard">
+        <div class="ph" style="background-image:url('images/galle-face.jpg');"></div>
+        <div class="bd">
+          <div class="nm">Galle Road strip</div>
+          <div class="lo">Kollupitiya → Bambalapitiya</div>
+          <p>Barefoot, Paradise Road, ODEL and the legacy veg lunch houses are all on or just off this one road.</p>
+        </div>
+      </div>
+    </div>
+    <div class="lk-cards">
+      <div class="dc"><div class="leg">Barefoot · 704 Galle Rd</div><div class="tm">Must-do</div><div class="nt">Bright handloom cotton, toys, a bookshop and a café. Mon–Sat 10–7; Sundays &amp; Poya days 10–6.</div></div>
+      <div class="dc"><div class="leg">Paradise Road · 138 Galle Rd</div><div class="tm">Design</div><div class="nt">Homeware and gifts with Bawa-era style. <span class="est">⚠️ hours not found</span>.</div></div>
+      <div class="dc"><div class="leg">ODEL · 5 Alexandra Place</div><div class="tm">Department store</div><div class="nt">Clothes, gifts and souvenirs under one roof. 10 am–8 pm.</div></div>
+      <div class="dc"><div class="leg">Laksala</div><div class="tm">Fixed prices</div><div class="nt">The government handicraft store — masks, wood, brass, batik. No haggling. Colombo branch on Albert Crescent; also in Kandy.</div></div>
+      <div class="dc"><div class="leg">Old Dutch Hospital · Fort</div><div class="tm">Heritage mall</div><div class="nt">Barefoot and Spa Ceylon outlets in a restored colonial building. 10 am–10 pm.</div></div>
+      <div class="dc"><div class="leg">Tea: Dilmah t-Lounge · Mlesna</div><div class="tm">Ceylon tea</div><div class="nt">Dilmah t-Lounge at 62/2 Chatham St, Fort. Mlesna at Liberty Plaza. Or buy fresh at Labookellie on Day 4.</div></div>
+      <div class="dc"><div class="leg">Arcade Independence Square</div><div class="tm">Easy stop</div><div class="nt">A restored colonial complex with shops and cafés, by Independence Hall.</div></div>
+      <div class="dc"><div class="leg">Kandy City Centre · Laksala Kandy</div><div class="tm">Day 3</div><div class="nt">Mall at 5 Dalada Veediya, by the Temple. <span class="est">⚠️ hours conflict between sites (9–9 or 10–9:30)</span>.</div></div>
+    </div>
+
+    <div class="lk-sub">What YouTube creators actually bring home</div>
+    <div class="lk-cards">
+      <div class="dc"><div class="leg">Ceylon tea · 5 creators</div><div class="tm">Top pick</div><div class="nt">Dilmah, Mlesna, Basilur. Look for the <strong>lion logo</strong> — it marks real Ceylon tea. Prices seen: Dilmah 100 bags ~LKR 1,530; Mlesna golden tips ~LKR 6,400.</div></div>
+      <div class="dc"><div class="leg">True cinnamon · 3 creators</div><div class="tm">Spice</div><div class="nt">“Ceylon cinnamon” — softer and sweeter than the cassia sold in India. ~LKR 580–765 a pack at Laksala-type stores.</div></div>
+      <div class="dc"><div class="leg">Kithul treacle &amp; jaggery · 3 creators</div><div class="tm">Pantry</div><div class="nt">Palm syrup and palm jaggery. ~LKR 1,200 a bottle. Pack bottles in checked bags.</div></div>
+      <div class="dc"><div class="leg">Ayurvedic balms &amp; soaps · 2 creators</div><div class="tm">Gifts</div><div class="nt">Siddhalepa balm, Samahan, Rani sandalwood soap. Spa Ceylon for premium gift boxes (outlet at Old Dutch Hospital).</div></div>
+      <div class="dc"><div class="leg">Raksha masks · 2 creators</div><div class="tm">Craft</div><div class="nt">Painted wooden masks. Miniatures ~LKR 1,200. Laksala has fixed prices.</div></div>
+      <div class="dc"><div class="leg">Snacks · 2 creators</div><div class="tm">Pantry</div><div class="nt">Devilled cashews and coconut milk powder. <span class="est">⚠️ Check biscuit labels for egg.</span></div></div>
+      <div class="dc"><div class="leg">Easy one-stop shops</div><div class="tm">Shops</div><div class="nt">Lakarcade (crafts) and Arpico Supercentre (supermarket — good for tea, spices and snacks at local prices).</div></div>
+      <div class="dc"><div class="leg">⛔ Don't buy these</div><div class="tm">Hidden fish</div><div class="nt"><strong>Seeni sambol mix</strong> (has Maldive fish), <strong>ambul thiyal paste</strong> (fish), black pork curry paste, chilli pastes without a label, and “soya” or instant noodle packs — often chicken or seafood flavour.</div></div>
+    </div>
+
+    <div class="lk-sub">Gems — the rules that protect you</div>
+    <div class="lk-cards">
+      <div class="dc"><div class="leg">Only buy with a lab certificate</div><div class="nt">Insist on a certificate from the government lab, the <strong>NGJA</strong> (National Gem &amp; Jewellery Authority) — lab at No.12 Mackson's Tower, Alfred House Garden, Colombo 03. <span class="est">⚠️ Saturday hours unknown, may be shut.</span> Private lab: GIC, 115A Havelock Rd, +94 11 2506932.</div></div>
+      <div class="dc"><div class="leg">⛔ Never buy where the driver takes you</div><div class="nt">Drivers often earn a commission from “gem museums” and spice gardens. We could not verify any retail gem house, so none is named here.</div></div>
+      <div class="dc"><div class="leg">Keep it outside the trip budget</div><div class="nt">A stone is something you own, not a trip cost. Set its budget separately, keep the invoice and certificate, and declare it at Indian customs.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== VEG DINING (with map) ========== -->
+<section class="veg-section" id="veg-restaurants">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Eating safely · legacy eating houses</div>
+        <h2>Vegetarian anchors <em>to carry</em></h2>
+      </div>
+      <p>Sri Lanka's hidden problem is <strong>Maldive fish</strong> (dried tuna flakes, called
+        <em>umbalakada</em>). It goes into many “vegetable” curries and sambols. Egg hides in hoppers and
+        kottu. So stick to the pure-veg Tamil eating houses below, and everywhere else say
+        <strong>“no egg, no fish — <em>umbalakada epah</em>”</strong> (“no Maldive fish, please”).
+        Pins for the Kandy and hill eateries are approximate.</p>
+    </div>
+
+    <div class="section-map-split">
+      <div class="section-map-split__list">
+        <div class="veg-grid">
+
+          <article class="veg-card" data-reveal data-lat="6.8894" data-lon="79.8570" data-name="Saraswathie Lodge, Bambalapitiya" data-map-scope="restaurants" tabindex="0" role="button">
+            <div class="veg-card-head">
+              <div class="veg-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div style="flex:1">
+                <div class="veg-card-title">Saraswathie Lodge <span class="veg-card-source osm">✅ Pure-veg</span></div>
+                <div class="veg-card-cuisine">legacy Tamil eating house · dosa, vada, string hoppers, meals</div>
+              </div>
+            </div>
+            <div class="veg-card-hours"><svg class="icon"><use href="#i-clock"/></svg> 191 Galle Rd, Bambalapitiya · Day 2 lunch for your wife</div>
+            <div class="veg-card-actions">
+              <a class="chip" href="https://www.google.com/maps/search/Saraswathie+Lodge+191+Galle+Road+Bambalapitiya" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+            </div>
+          </article>
+
+          <article class="veg-card" data-reveal data-lat="6.8862" data-lon="79.8551" data-name="Dwaraka, Bambalapitiya" data-map-scope="restaurants" tabindex="0" role="button">
+            <div class="veg-card-head">
+              <div class="veg-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div style="flex:1">
+                <div class="veg-card-title">Dwaraka <span class="veg-card-source osm">✅ Pure-veg</span></div>
+                <div class="veg-card-cuisine">South Indian · backup to Saraswathie</div>
+              </div>
+            </div>
+            <div class="veg-card-hours unverified"><svg class="icon"><use href="#i-clock"/></svg> 37 Jaya Rd, Bambalapitiya · hours unverified</div>
+            <div class="veg-card-actions">
+              <a class="chip" href="https://www.google.com/maps/search/Dwaraka+37+Jaya+Road+Bambalapitiya" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+            </div>
+          </article>
+
+          <article class="veg-card" data-reveal data-lat="6.8649" data-lon="79.8603" data-name="Shanmugas, Wellawatte" data-map-scope="restaurants" tabindex="0" role="button">
+            <div class="veg-card-head">
+              <div class="veg-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div style="flex:1">
+                <div class="veg-card-title">Shanmugas <span class="veg-card-source osm">✅ Pure-veg</span></div>
+                <div class="veg-card-cuisine">since 1998 · South &amp; North Indian</div>
+              </div>
+            </div>
+            <div class="veg-card-hours"><svg class="icon"><use href="#i-clock"/></svg> 53/3 Ramakrishna Rd · Sat 7:30–22:30 (HappyCow)</div>
+            <div class="veg-card-actions">
+              <a class="chip" href="https://www.google.com/maps/search/Shanmugas+Ramakrishna+Road+Wellawatte" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+            </div>
+          </article>
+
+          <article class="veg-card" data-reveal data-lat="6.8848" data-lon="79.8580" data-name="Amirthaa Pure Vegetarian" data-map-scope="restaurants" tabindex="0" role="button">
+            <div class="veg-card-head">
+              <div class="veg-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div style="flex:1">
+                <div class="veg-card-title">Amirthaa Pure Vegetarian <span class="veg-card-source osm">✅ Pure-veg</span></div>
+                <div class="veg-card-cuisine">South Indian · Havelock Town</div>
+              </div>
+            </div>
+            <div class="veg-card-hours unverified"><svg class="icon"><use href="#i-clock"/></svg> 256A Galle Rd · hours unverified</div>
+            <div class="veg-card-actions">
+              <a class="chip" href="https://www.google.com/maps/search/Amirthaa+Pure+Vegetarian+Colombo" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+            </div>
+          </article>
+
+          <article class="veg-card" data-reveal data-lat="6.8724" data-lon="79.8616" data-name="Gandhi Lodge, Wellawatte" data-map-scope="restaurants" tabindex="0" role="button">
+            <div class="veg-card-head">
+              <div class="veg-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div style="flex:1">
+                <div class="veg-card-title">Gandhi Lodge <span class="veg-card-source osm">✅ Pure-veg</span></div>
+                <div class="veg-card-cuisine">old-style Tamil veg · Wellawatte</div>
+              </div>
+            </div>
+            <div class="veg-card-hours unverified"><svg class="icon"><use href="#i-clock"/></svg> 200A Galle Rd · hours unverified</div>
+            <div class="veg-card-actions">
+              <a class="chip" href="https://www.google.com/maps/search/Gandhi+Lodge+Wellawatte" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+            </div>
+          </article>
+
+          <article class="veg-card" data-reveal data-lat="6.8987" data-lon="79.8549" data-name="Paradise Road The Gallery Café" data-map-scope="restaurants" tabindex="0" role="button">
+            <div class="veg-card-head">
+              <div class="veg-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div style="flex:1">
+                <div class="veg-card-title">The Gallery Café <span class="veg-card-source google">⚠️ Mixed menu</span></div>
+                <div class="veg-card-cuisine">heritage café in Bawa's old office · tea &amp; dessert only</div>
+              </div>
+            </div>
+            <div class="veg-card-hours unverified"><svg class="icon"><use href="#i-clock"/></svg> 2 Alfred House Rd · 10 am–midnight · egg in some veg dishes</div>
+            <div class="veg-card-actions">
+              <a class="chip" href="https://www.google.com/maps/search/Paradise+Road+The+Gallery+Cafe+Colombo" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+            </div>
+          </article>
+
+          <article class="veg-card" data-reveal data-lat="7.2944" data-lon="80.6389" data-name="Balaji Dosai, Kandy" data-map-scope="restaurants" tabindex="0" role="button">
+            <div class="veg-card-head">
+              <div class="veg-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div style="flex:1">
+                <div class="veg-card-title">Balaji Dosai, Kandy <span class="veg-card-source osm">✅ Pure-veg</span></div>
+                <div class="veg-card-cuisine">dosa house near the Temple · “100% pure vegetarian”</div>
+              </div>
+            </div>
+            <div class="veg-card-hours"><svg class="icon"><use href="#i-clock"/></svg> 03 D.S. Senanayake Veediya · ~7:30–21:30 · Day 3 lunch</div>
+            <div class="veg-card-actions">
+              <a class="chip" href="https://www.google.com/maps/search/Balaji+Dosai+Kandy" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+            </div>
+          </article>
+
+          <article class="veg-card" data-reveal data-lat="7.2920" data-lon="80.6340" data-name="Nagalingam's Bhavan, Kandy" data-map-scope="restaurants" tabindex="0" role="button">
+            <div class="veg-card-head">
+              <div class="veg-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div style="flex:1">
+                <div class="veg-card-title">Nagalingam's Bhavan <span class="veg-card-source google">⚠️ Confirm</span></div>
+                <div class="veg-card-cuisine">Jain-style pure-veg · no onion, garlic or leeks</div>
+              </div>
+            </div>
+            <div class="veg-card-hours unverified"><svg class="icon"><use href="#i-clock"/></svg> 77 Colombo St · ~3–10 pm (Wanderlog) · Day 3 dinner</div>
+            <div class="veg-card-actions">
+              <a class="chip" href="https://www.google.com/maps/search/Nagalingams+Bhavan+Kandy" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+            </div>
+          </article>
+
+          <article class="veg-card" data-reveal data-lat="6.9684" data-lon="80.7647" data-name="Grand Indian, The Grand Hotel" data-map-scope="restaurants" tabindex="0" role="button">
+            <div class="veg-card-head">
+              <div class="veg-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div style="flex:1">
+                <div class="veg-card-title">Grand Indian, Nuwara Eliya <span class="veg-card-source osm">✅ Veg menu</span></div>
+                <div class="veg-card-cuisine">North Indian · “Indian Vegan Menu” · in your hotel</div>
+              </div>
+            </div>
+            <div class="veg-card-hours"><svg class="icon"><use href="#i-clock"/></svg> Lunch 12–3:30 · dinner 6:30–10:30 · +94 52 222 2881</div>
+            <div class="veg-card-actions">
+              <a class="chip" href="https://www.thegrandhotelnuwaraeliya.com/dining/grand-indian/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Menu</a>
+            </div>
+          </article>
+
+          <article class="veg-card" data-reveal data-lat="6.9700" data-lon="80.7680" data-name="Ambaal's Pure Vegetarian, Nuwara Eliya" data-map-scope="restaurants" tabindex="0" role="button">
+            <div class="veg-card-head">
+              <div class="veg-icon"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div style="flex:1">
+                <div class="veg-card-title">Ambaal's Pure Vegetarian <span class="veg-card-source google">⚠️ Confirm</span></div>
+                <div class="veg-card-cuisine">pure-veg · backup in Nuwara Eliya town</div>
+              </div>
+            </div>
+            <div class="veg-card-hours unverified"><svg class="icon"><use href="#i-clock"/></svg> 52 New Bazaar St · 7 am–10 pm · mixed hygiene reviews</div>
+            <div class="veg-card-actions">
+              <a class="chip" href="https://www.google.com/maps/search/Ambaals+Pure+Vegetarian+Nuwara+Eliya" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Maps</a>
+            </div>
+          </article>
+
+        </div>
+        <p class="veg-attribution">
+          ✅ = the source said pure-vegetarian (or showed a veg menu) and I read it. ⚠️ = the place is real
+          but a detail couldn't be checked. <strong>⛔ Skip:</strong> Greenlands Hotel (may have closed in
+          2023 — phone +94 11 258 5592 before going); Ministry of Crab and Pilawoos (seafood/meat
+          kitchens); Galle Face food stalls; Nuga Gama and Upali's (Maldive fish in the curries).
+        </p>
+      </div>
+      <aside class="section-map-split__map" data-trip-map="restaurants" aria-label="Map of vegetarian anchors"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== GETTING AROUND ========== -->
+<section class="transport" id="transport">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Getting around</div>
+        <h2>One car and driver, <em>all five days</em></h2>
+      </div>
+      <p>Book one air-conditioned car with an English-speaking driver from airport to airport — through the
+        ITC concierge or a licensed operator. Don't plan on trains: the line into Kandy is closed after a
+        landslip on Oct 25. Apps underestimate these roads, so the times below are realistic estimates
+        <span class="est">(EST)</span>, not best cases.</p>
+    </div>
+    <div class="lk-cards">
+      <div class="dc"><div class="leg">CMB airport → Colombo</div><div class="tm">~45–75 min</div><div class="nt">Day 1 · via the airport expressway</div></div>
+      <div class="dc"><div class="leg">Colombo → Kelaniya</div><div class="tm">~15–25 min</div><div class="nt">Day 3 · first stop, on the way out</div></div>
+      <div class="dc"><div class="leg">Kelaniya → Kandy</div><div class="tm">~3–3.5 h</div><div class="nt">Day 3 · old A1 road, no expressway yet</div></div>
+      <div class="dc"><div class="leg">Kandy → Ramboda Hanuman</div><div class="tm">~1h–1h15</div><div class="nt">Day 4 · A5 hill road</div></div>
+      <div class="dc"><div class="leg">Ramboda → Nuwara Eliya</div><div class="tm">~1h15–1h45</div><div class="nt">Day 4 · with the Labookellie tea stop</div></div>
+      <div class="dc"><div class="leg">Hotel → Seetha Amman → Hakgala</div><div class="tm">~12 min + 5 min</div><div class="nt">Day 4 · 8 km, then 1.6 km on</div></div>
+      <div class="dc"><div class="leg">Nuwara Eliya → CMB airport</div><div class="tm">~5–6 h</div><div class="nt">Day 5 · the long one, on a Poya holiday</div></div>
+    </div>
+    <p class="lk-note">⚠️ Roads in the hills are still being repaired after Cyclone Ditwah (Nov 2025). The Kandy–Nuwara Eliya road reopened in Dec 2025. Ask the driver to check the Kadugannawa stretch the evening before Day 3.</p>
+  </div>
+</section>
+
+<!-- ========== BEFORE YOU GO ========== -->
+<section class="costs" id="before">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Fix these first</div>
+        <h2>Five things <em>before you go</em></h2>
+      </div>
+      <p>The plan works, but these five decide whether it works smoothly. Most are one email or one form.</p>
+    </div>
+    <div class="lk-cards">
+      <div class="dc"><div class="leg">1 · Sort cover at home</div><div class="tm">5 days</div><div class="nt">The kids stay in Bangalore Fri Nov 20 to Tue Nov 24 — you land back around 11:30 pm on Tuesday. Line up who does school runs and who has the emergency numbers.</div></div>
+      <div class="dc"><div class="leg">2 · Get the free ETA for both of you</div><div class="tm">Free</div><div class="nt">Indian passports get a free 30-day ETA (from 25 May 2026), but you still must apply before flying. Use <a href="https://www.eta.gov.lk/slvisa/visainfo/fees.jsp?locale=en_US" target="_blank" rel="noopener">eta.gov.lk</a> only — other sites charge. One application per person; apply ~2 weeks ahead. Passports need 6+ months' validity.</div></div>
+      <div class="dc"><div class="leg">3 · Book the evening flight home</div><div class="tm">21:50</div><div class="nt">The plan only works with IndiGo 6E1184 on Tuesday evening. Confirm both flight times on <a href="https://www.goindigo.in/" target="_blank" rel="noopener">goindigo.in</a> before booking hotels.</div></div>
+      <div class="dc"><div class="leg">4 · Pick the Kandy hotel</div><div class="tm">Earl's or Queen's</div><div class="nt">No Marriott or Hilton exists in Kandy or Nuwara Eliya. Earl's Regency for comfort and a pool; Queen's Hotel for heritage and to walk to the Temple — as a couple, Queen's is the more charming pick.</div></div>
+      <div class="dc"><div class="leg">5 · Check the Bonvoy free night</div><div class="tm">40K cert</div><div class="nt">You have a 40K free-night certificate that expires Dec 31, 2026. <span class="est">⚠️ Check it wasn't used in Kyoto, and whether it can go on one of your two ITC Ratnadipa nights.</span></div></div>
+    </div>
+
+    <div class="lk-sub">Rough budget · not re-priced</div>
+    <div class="lk-cards">
+      <div class="dc"><div class="leg">Flights · 2 return, economy</div><div class="tm">₹25–35K</div><div class="nt"><span class="est">EST</span> · IndiGo direct</div></div>
+      <div class="dc"><div class="leg">Hotels · 4 nights, 1 room</div><div class="tm">₹1.0–1.5L</div><div class="nt"><span class="est">EST</span> · less if the Bonvoy cert or points cover a Colombo night</div></div>
+      <div class="dc"><div class="leg">Car + driver · 5 days</div><div class="tm">₹35–45K</div><div class="nt"><span class="est">EST</span> · airport to airport</div></div>
+      <div class="dc"><div class="leg">Food, entries, shows, tips</div><div class="tm">₹25–35K</div><div class="nt"><span class="est">EST</span> · ETAs are free</div></div>
+      <div class="dc"><div class="leg">Travel total</div><div class="tm">~₹1.9–2.6L</div><div class="nt">Well under a third of your ₹7L cap. Shopping and gems are on top.</div></div>
+    </div>
+    <p class="lk-note">The earlier August plan is saved at <a href="index-v1-aug.html">index-v1-aug.html</a> (with live hotel and restaurant widgets).</p>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-foot">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="../index.html" class="logo" style="color: var(--cream); margin-bottom: 16px;">
+          <span class="logo-mark">◈</span>
+          <span class="logo-word" style="color: var(--cream);"><span class="logo-line">gama<span class="logo-slash" style="color: var(--saffron-soft);">/</span></span><span class="logo-line">adventures</span></span>
+        </a>
+        <p style="max-width: 360px; margin-top: 16px;">Personal travel planner for the family. Each trip is regenerable, version-tracked, and tuned to BLR origin, school calendar, and Marriott / Hilton / Hyatt loyalty.</p>
+      </div>
+      <div>
+        <h6>This trip</h6>
+        <ul>
+          <li><a href="#itinerary">Day-by-day</a></li>
+          <li><a href="#ramayana">Ramayana trail</a></li>
+          <li><a href="#shopping">Shopping</a></li>
+          <li><a href="#veg-restaurants">Veg dining</a></li>
+          <li><a href="#before">Before you go</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Stays</h6>
+        <ul>
+          <li>ITC Ratnadipa · Colombo · Bonvoy</li>
+          <li>Earl's Regency or Queen's · Kandy</li>
+          <li>The Grand Hotel · Nuwara Eliya</li>
+          <li>Strict lacto-vegetarian</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Family travel agent · Built locally</span>
+      <span>Generated · Oct 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.YATRA_TRIP_DEFAULTS = {
+    country: 'LK',
+    cities: [
+      { name: 'Colombo',      lat: 6.9271, lon: 79.8612 },
+      { name: 'Kelaniya',     lat: 6.9514, lon: 79.9186 },
+      { name: 'Kandy',        lat: 7.2936, lon: 80.6413 },
+      { name: 'Ramboda',      lat: 7.0742, lon: 80.6803 },
+      { name: 'Sita Eliya',   lat: 6.9332, lon: 80.8105 },
+      { name: 'Hakgala',      lat: 6.9256, lon: 80.8215 },
+      { name: 'Nuwara Eliya', lat: 6.9684, lon: 80.7647 }
+    ]
+  };
+</script>
+<script src="../_shared/data-sources.js"></script>
+<script src="../_shared/claude-agent.js"></script>
+<script src="../_shared/agent-toast.js"></script>
+<script src="../_shared/trip-map.js"></script>
+<script src="../_shared/site.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+{
+  "destination": "Kyoto",
+  "country": "JP",
+  "lat": 35.01,
+  "lon": 135.77,
+  "generated_at": "2026-05-30T04:45:54.437754+00:00",
+  "items_total": 0,
+  "creators_total": 0,
+  "buckets": {
+    "must_do": [
+      {
+        "name": "Fushimi Inari Taisha",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Kyoto",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.6",
+          "review_count": "25215",
+          "ranking": "#1 of 2,230 things to do in Kyoto",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g298564-d321456-Reviews-Fushimi_Inari_taisha_Shrine-Kyoto_Kyoto_Prefecture_Kinki.html?m=66827",
+          "city": "Kyoto"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Kinkaku-ji",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Kyoto",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.5",
+          "review_count": "1040",
+          "ranking": "#14 of 2,230 things to do in Kyoto",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g298564-d1386175-Reviews-Kennin_ji_Temple-Kyoto_Kyoto_Prefecture_Kinki.html?m=66827",
+          "city": "Kyoto"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Tenryu-ji Temple",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Kyoto",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.5",
+          "review_count": "1040",
+          "ranking": "#14 of 2,230 things to do in Kyoto",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g298564-d1386175-Reviews-Kennin_ji_Temple-Kyoto_Kyoto_Prefecture_Kinki.html?m=66827",
+          "city": "Kyoto"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Kiyomizu-dera",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Kyoto",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.4",
+          "review_count": "11845",
+          "ranking": "#2 of 2,230 things to do in Kyoto",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g298564-d321401-Reviews-Kiyomizu_dera_Temple-Kyoto_Kyoto_Prefecture_Kinki.html?m=66827",
+          "city": "Kyoto"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Higashiyama District",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Kyoto",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.4",
+          "review_count": "31",
+          "ranking": "#286 of 2,230 things to do in Kyoto",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g298564-d8820249-Reviews-Higashiyama_Hanatouro-Kyoto_Kyoto_Prefecture_Kinki.html?m=66827",
+          "city": "Kyoto"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Gion",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Kyoto",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.3",
+          "review_count": "7384",
+          "ranking": "#28 of 2,230 things to do in Kyoto",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g298564-d321451-Reviews-Gion-Kyoto_Kyoto_Prefecture_Kinki.html?m=66827",
+          "city": "Kyoto"
+        },
+        "is_seed": true
+      }
+    ],
+    "must_eat": [
+      {
+        "name": "Nishiki Market",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Kyoto",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_eat",
+        "tripadvisor": {
+          "rating": "4.1",
+          "review_count": "46",
+          "ranking": "#829 of 16,741 Places to Eat in Kyoto",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g298564-d3752275-Reviews-Karikari_Hakase_Nishiki_Market-Kyoto_Kyoto_Prefecture_Kinki.html?m=66827",
+          "city": "Kyoto"
+        },
+        "is_seed": true
+      }
+    ],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

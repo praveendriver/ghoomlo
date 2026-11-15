@@ -1,0 +1,15 @@
+{
+  "destination": "Madrid",
+  "country": "ES",
+  "lat": 40.42,
+  "lon": -3.7,
+  "generated_at": "2026-05-30T03:51:07.931635+00:00",
+  "items_total": 1,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

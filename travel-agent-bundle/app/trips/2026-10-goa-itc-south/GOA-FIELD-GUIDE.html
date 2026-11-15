@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goa Field Guide — ITC Grand Goa · Oct 2026</title>
+<style>
+/* === Yatra. design system — self-hosted fonts so the PDF renders offline === */
+@font-face{ font-family:'Fraunces'; font-style:normal; font-weight:400 700;
+  src:url('images/fonts/fraunces-latin.woff2') format('woff2'); font-display:swap; }
+@font-face{ font-family:'InterGuide'; font-style:normal; font-weight:400 700;
+  src:url('images/fonts/inter-latin.woff2') format('woff2'); font-display:swap; }
+:root{
+  /* Palette lifted from trips/_shared/style.css (the "site") */
+  --ink:#1a2128; --ink-soft:#4a5560; --muted:#6a7480;
+  --paper:#f6f1e8; --card:#fffdf9; --sand:#efe7d6;
+  --line:#d9cfbc; --line-strong:#c3b8a1;
+  --teal:#1f3a3d; --teal-deep:#122729;
+  --saffron:#d97a3a; --saffron-deep:#b15f24; --saffron-soft:#e8a572;
+  --gold:#b07d2e;
+  /* semantic accents (kept for the color-coded system, but every use also has a
+     non-colour cue — border, weight, glyph or shape — so it survives B&W print) */
+  --accent:#b15f24; --accent2:#1f6f6b;
+}
+*{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; }
+body{ font-family:'InterGuide',-apple-system,"Helvetica Neue","Hiragino Sans",Arial,sans-serif;
+  color:var(--ink); line-height:1.58; max-width:820px; margin:0 auto; padding:34px 26px 64px;
+  background:#fff; font-size:14.5px; -webkit-font-smoothing:antialiased;
+  font-feature-settings:"liga" 1,"kern" 1; }
+@media screen{ body{ background:var(--paper); } }
+h1,h2,h3,.big,.serif{ font-family:'Fraunces','Times New Roman',Georgia,serif; }
+h1{ font-size:30px; line-height:1.14; margin:.25em 0 .12em; color:var(--teal-deep);
+  font-weight:600; letter-spacing:-.01em; border:0; }
+h1 + h3{ margin-top:0; color:var(--saffron-deep); font-weight:600; font-size:14px;
+  font-family:'InterGuide',sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+/* Section heads read like the site: a saffron eyebrow rule + serif title, not a filled bar */
+h2{ font-size:22px; font-weight:600; color:var(--teal-deep); margin:1.7em 0 .55em;
+  padding:0 0 8px; border-bottom:1.5px solid var(--line-strong); position:relative;
+  letter-spacing:-.01em; }
+h2::before{ content:""; position:absolute; left:0; bottom:-1.5px; width:56px; height:1.5px;
+  background:var(--saffron); }
+h3{ font-size:17.5px; margin:1.4em 0 .4em; color:var(--teal); font-weight:600; }
+h4{ font-size:14.5px; margin:1.15em 0 .3em; color:var(--ink); font-weight:700;
+  font-family:'InterGuide',sans-serif; }
+p,li{ font-size:14.5px; }
+a.u{ color:var(--saffron-deep); word-break:break-all; text-decoration:none; }
+a{ color:var(--saffron-deep); }
+code{ background:var(--sand); padding:1px 5px; border-radius:5px; font-size:12.5px;
+  font-family:"SF Mono",Menlo,Consolas,monospace; }
+pre{ background:var(--sand); border:1px solid var(--line); border-radius:10px; padding:12px 14px;
+  overflow-x:auto; font-size:12.5px; line-height:1.45; }
+pre code{ background:none; padding:0; }
+table{ border-collapse:collapse; width:100%; margin:.9em 0; font-size:13px; }
+th,td{ border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+th{ background:var(--sand); font-family:'InterGuide',sans-serif; font-weight:700;
+  color:var(--teal-deep); }
+hr{ border:0; border-top:1px solid var(--line-strong); margin:2.2em 0; }
+blockquote{ margin:1.1em 0; padding:12px 16px; background:var(--card);
+  border:1px solid var(--line); border-left:3px solid var(--saffron); border-radius:12px;
+  color:var(--ink-soft); }
+blockquote p{ margin:.3em 0; }
+ul,ol{ padding-left:22px; }
+li{ margin:.28em 0; }
+strong{ color:var(--ink); font-weight:700; }
+/* Figures: images with italic captions. The markdown emits <p><img><em>caption</em></p>. */
+img{ max-width:100%; height:auto; border:1px solid var(--line); border-radius:6px;
+  margin:.6em 0 .2em; display:inline-block; vertical-align:top; }
+p:has(img){ margin:1em 0 1.2em; }
+p:has(img) em{ display:block; font-size:12.5px; color:var(--muted); line-height:1.4;
+  margin-top:.15em; font-style:italic; }
+/* two side-by-side images in one paragraph (USJ steps) shrink to fit */
+p:has(img + img) img{ max-width:48%; }
+/* The Keikyu line map is a tall, narrow diagram only 456px wide at source.
+   Cap it at native width and center it so the PDF never upscales it (upscaling = blur). */
+img[src$="arr-08-keikyu-linemap.png"]{ max-width:300px; display:block; margin:.6em auto .2em;
+  image-rendering:-webkit-optimize-contrast; }
+/* Thumbnails of saved Instagram screenshots (tall phone caps). Keep small. */
+img[src*="/jul2/"]{ width:64px; max-width:64px; height:auto; border-radius:5px;
+  margin:2px 3px 2px 0; vertical-align:middle; }
+/* Appendix phone-screenshot dumps (tall 9:16 caps) — cap the height so a single
+   screenshot doesn't swallow a whole page in the PDF. */
+img[src*="/dumps/"]{ max-height:360px; width:auto; max-width:100%; display:block; }
+td img[src*="/jul2/"]{ width:52px; max-width:52px; }
+/* "Today's picks" photo strip inside day sections */
+.picks{ display:flex; flex-wrap:wrap; gap:12px; margin:.6em 0 1.1em; }
+.pick{ width:122px; font-size:11.5px; line-height:1.32; color:var(--muted); }
+.pick img{ width:122px; max-width:122px; height:150px; object-fit:cover; display:block;
+  border:1px solid var(--line); border-radius:12px; margin:0 0 4px; }
+.pick b{ color:var(--ink); display:block; font-size:11.5px; font-weight:700; }
+.pick .tagb{ display:inline-block; font-size:9px; font-weight:700; letter-spacing:.6px;
+  text-transform:uppercase; padding:2px 7px; border-radius:999px; margin-bottom:3px;
+  border:1px solid var(--line-strong); background:var(--card); color:var(--ink-soft); }
+.pick .buy{ border-color:var(--saffron); color:var(--saffron-deep); }
+.pick .eat{ border-color:var(--teal); color:var(--teal); }
+.pick .see{ border-color:var(--gold); color:var(--gold); }
+/* === Day TIMELINE === a vertical time-rail with sequenced stops ===
+   B&W-safe: node SHAPE + glyph distinguishes stop type, not just colour. */
+.tl{ position:relative; margin:1.2em 0 1.5em; }
+.stop{ display:grid; grid-template-columns:52px 1fr; }
+.stop .tmark{ text-align:right; padding:1px 13px 0 0; font-size:12px; font-weight:700;
+  color:var(--saffron-deep); white-space:nowrap; letter-spacing:-.2px;
+  font-family:'Fraunces',serif; }
+.stop .scard{ position:relative; border-left:2px solid var(--line-strong); padding:0 0 20px 22px; }
+.stop:last-child .scard{ border-left-color:transparent; }
+.stop .scard::before{ content:""; position:absolute; left:-8px; top:3px; width:14px; height:14px;
+  border-radius:50%; background:var(--teal); border:2px solid var(--card);
+  box-shadow:0 0 0 1.5px var(--line-strong); }
+.stop .stitle{ font-weight:700; font-size:14.5px; color:var(--ink); margin:0 0 3px; line-height:1.3; }
+.stop .sbody{ font-size:12.7px; line-height:1.52; color:var(--ink-soft); }
+.stop .sbody .warn{ color:var(--saffron-deep); font-weight:700; }
+.stop .sbody a{ color:var(--saffron-deep); word-break:break-all; }
+/* meal stop: teal ring + fork glyph; transit: gold square + arrow glyph */
+.stop.meal .scard::before{ background:var(--card); border-color:var(--teal);
+  box-shadow:0 0 0 1.5px var(--teal); }
+.stop.meal .scard::after{ content:"\1F374"; position:absolute; left:-6px; top:1px; font-size:8px;
+  line-height:1; }
+.stop.move .scard::before{ background:var(--gold); border-radius:3px; }
+/* OPTIONAL stop: hollow dashed node + skip route */
+.stop.opt .scard{ border-left-style:dashed; }
+.stop.opt .scard::before{ background:var(--card); border:2px dashed var(--saffron-deep);
+  box-shadow:none; }
+.stop.opt .tmark{ color:var(--muted); font-weight:700; font-size:10px; text-transform:uppercase;
+  padding-top:3px; }
+.stop.opt .stitle{ color:var(--saffron-deep); }
+.optbadge{ display:inline-block; font-size:9px; font-weight:700; letter-spacing:.6px;
+  text-transform:uppercase; background:var(--card); color:var(--saffron-deep);
+  border:1px solid var(--saffron); padding:1px 7px; border-radius:999px;
+  margin-right:6px; vertical-align:middle; }
+.skip{ margin-top:8px; font-size:11.5px; background:var(--sand); border:1px dashed var(--line-strong);
+  border-radius:10px; padding:6px 11px; color:var(--muted); }
+.skip b{ color:var(--teal); }
+.skip::before{ content:"\21B3 skip \2192 "; font-weight:700; color:var(--saffron-deep); }
+/* === Glanceable transport FACTS chips inside a move stop === */
+.facts{ display:flex; flex-wrap:wrap; gap:5px 6px; margin:6px 0 4px; }
+.facts .f{ font-size:11px; font-weight:600; background:var(--card); border:1px solid var(--line-strong);
+  border-radius:999px; padding:2px 9px; color:var(--ink-soft); white-space:nowrap; }
+.facts .f b{ color:var(--ink); font-weight:700; }
+.facts .f.tap{ border-color:var(--teal); color:var(--teal); }
+.facts .f.buy{ border-color:var(--saffron); color:var(--saffron-deep); }
+/* === Named pick list inside an eat/see/shop stop (replaces flip-to-Part-10/11) ===
+   B&W-safe: outline pills with a leading glyph per type instead of solid fills. */
+.picklist{ margin:7px 0 2px; padding:0; list-style:none; }
+.picklist li{ font-size:12px; line-height:1.48; margin:4px 0; padding-left:2px; }
+.picklist .nm{ font-weight:700; color:var(--ink); }
+.picklist .tg{ display:inline-block; font-size:8.5px; font-weight:700; letter-spacing:.5px;
+  text-transform:uppercase; padding:1px 7px; border-radius:999px; margin-right:6px;
+  vertical-align:middle; background:var(--card); border:1px solid var(--line-strong);
+  color:var(--ink-soft); }
+.picklist .tg::before{ font-weight:700; margin-right:3px; }
+.picklist .tg.veg{ border-color:var(--teal); color:var(--teal); }
+.picklist .tg.veg::before{ content:"\25C9 "; }        /* veg = filled ring */
+.picklist .tg.ind{ border-color:var(--saffron); color:var(--saffron-deep); }
+.picklist .tg.ind::before{ content:"\2691 "; }        /* india flag glyph */
+.picklist .tg.buy{ border-color:var(--gold); color:var(--gold); }
+.picklist .tg.buy::before{ content:"\25B8 "; }        /* buy = triangle */
+.picklist .tg.safe{ border-color:var(--teal); color:var(--teal); }
+.picklist .tg.safe::before{ content:"\2713 "; }       /* safe = check */
+.picklist .tg.see{ border-color:var(--ink-soft); color:var(--ink-soft); }
+.picklist .tg.see::before{ content:"\25C6 "; }        /* see = diamond */
+.picklist a{ color:var(--saffron-deep); word-break:break-all; }
+.maplink{ font-size:10.5px; color:var(--saffron-deep); }
+/* "Carry today" strip on each day divider */
+.daysep .carry{ margin-top:18px; font-size:12.5px; background:rgba(246,241,232,.10);
+  border:1px solid rgba(246,241,232,.35); border-radius:14px; padding:10px 16px; display:inline-block;
+  line-height:1.6; color:rgba(246,241,232,.9); }
+.daysep .carry b{ color:#fff; }
+/* photo inside a stop */
+.sphoto{ margin:8px 0 1px; display:flex; gap:11px; flex-wrap:wrap; align-items:flex-start; }
+.stop .sphoto img{ width:104px; max-width:104px; height:130px; object-fit:cover; margin:0;
+  border:1px solid var(--line); border-radius:12px; display:block; }
+.sphoto .cap{ font-size:10.5px; color:var(--muted); line-height:1.4; max-width:150px; }
+.sphoto .cap b{ color:var(--ink); display:block; font-weight:700; }
+/* Landmark ID photo — bigger than a thumbnail so the user can recognise the
+   place on the ground (used where a confusing Japanese name needs a picture). */
+.sphoto.idcard{ align-items:flex-start; }
+.stop .sphoto.idcard img{ width:264px; max-width:264px; height:auto; max-height:200px;
+  object-fit:cover; border-radius:14px; }
+.sphoto.idcard .cap{ max-width:220px; font-size:11px; }
+/* Day separator / divider pages — deep teal, editorial, grayscale-graceful */
+.daysep{ margin:0; padding:70px 34px; background:var(--teal-deep); color:var(--paper);
+  border-radius:20px; text-align:center; position:relative; overflow:hidden; }
+.daysep::before{ content:""; position:absolute; inset:14px; border:1px solid rgba(246,241,232,.28);
+  border-radius:12px; pointer-events:none; }
+.daysep .kicker{ font-size:12px; letter-spacing:.34em; text-transform:uppercase;
+  color:var(--saffron-soft); font-weight:600; position:relative; }
+.daysep .big{ font-family:'Fraunces',serif; font-size:46px; font-weight:600; line-height:1.08;
+  margin:10px 0 8px; color:var(--paper); letter-spacing:-.01em; position:relative; }
+.daysep .sub{ font-size:16.5px; color:rgba(246,241,232,.85); position:relative; }
+.daysep .tag{ display:inline-block; margin-top:18px; padding:6px 16px;
+  border:1px solid var(--saffron-soft); border-radius:999px; font-size:12.5px;
+  color:var(--saffron-soft); position:relative; }
+/* === Index / table of contents (tap-to-jump grid) — site card style === */
+.toc{ border:1px solid var(--line-strong); border-radius:20px; padding:20px 22px 22px;
+  margin:1.5em 0 1.3em; background:var(--card); scroll-margin-top:60px; }
+.toc-h{ font-family:'Fraunces',serif; font-size:22px; font-weight:600; color:var(--teal-deep);
+  margin-bottom:3px; }
+.toc-note{ font-size:11.5px; color:var(--muted); margin-bottom:15px; line-height:1.45; }
+.toc-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-bottom:10px; }
+.tci{ display:block; text-decoration:none; border:1px solid var(--line); border-radius:13px;
+  padding:9px 12px; background:#fff; line-height:1.28; break-inside:avoid; }
+.tci b{ display:block; font-size:13px; color:var(--ink); font-weight:700; }
+.tci span{ display:block; font-size:10px; color:var(--muted); margin-top:1px; }
+.tci.day{ border-left:3px solid var(--saffron); }
+.tci.day b{ color:var(--saffron-deep); }
+.tci.ref{ border-left:3px solid var(--teal); background:var(--card); }
+.tci.ref b{ color:var(--teal); }
+/* === Floating "back to index" chip — repeats on every printed page === */
+.idxchip{ position:fixed; top:6mm; right:6mm; z-index:999; text-decoration:none;
+  background:var(--teal-deep); color:var(--paper); font-size:12px; font-weight:700; letter-spacing:.3px;
+  padding:5px 13px; border-radius:999px; box-shadow:0 1px 4px rgba(0,0,0,.25);
+  border:1px solid var(--saffron-soft); }
+@media screen{ .idxchip{ position:fixed; } }
+@media print{
+  body{ padding:0 6mm; font-size:11.5pt; max-width:none; }
+  h2{ break-inside:avoid; }
+  h2,h3,h4{ break-after:avoid; }
+  table,pre,blockquote{ break-inside:avoid; }
+  p:has(img){ break-inside:avoid; }
+  img{ break-inside:avoid; }
+  .picks{ break-inside:avoid; } .pick{ break-inside:avoid; }
+  .stop{ break-inside:avoid; } .sphoto{ break-inside:avoid; } .skip{ break-inside:avoid; }
+  .facts{ break-inside:avoid; } .picklist li{ break-inside:avoid; }
+  a.u,a{ color:#0a58ca; }
+  /* Each day divider starts on a fresh page; force its dark ground to print */
+  .daysep{ break-before:page; break-inside:avoid; min-height:80vh;
+    display:flex; flex-direction:column; justify-content:center;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  th,.pick .tagb,.facts .f,.picklist .tg,blockquote,.toc,.tci{
+    -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  /* The index chip is position:fixed, so Chromium paints it on EVERY printed page.
+     In Chromium's print engine a fixed element lands in the BOTTOM-margin band of every
+     page (consistent), so we anchor it bottom-right as a repeating "back to index" tab. */
+  .idxchip{ position:fixed; bottom:-11mm; top:auto; right:0; font-size:9.5pt; padding:3px 10px;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .toc{ break-inside:avoid; }
+  .tci{ break-inside:avoid; }
+  @page{ margin:18mm 10mm 14mm; }
+}
+</style>
+</head>
+<body>
+<h1 id="goa-field-guide-itc-grand-goa-south-goa">🌴 Goa Field Guide — ITC Grand Goa, South Goa</h1>
+<h3 id="gupta-family-4-travellers-2-adults-2-kids-ages-6-9-strict-lacto-vegetarian-oct-1620-2026">Gupta family · 4 travellers (2 adults + 2 kids, ages 6 &amp; 9) · strict lacto-vegetarian · Oct 16–20, 2026</h3>
+<p><a class="idxchip" href="#index">☰ Index</a></p>
+<div class="toc" id="index">
+<div class="toc-h">Jump to…</div>
+<div class="toc-note">Tap any card. On the printed PDF the “☰ Index” tab repeats on every page.</div>
+<div class="toc-grid">
+<a class="tci ref" href="#cheat"><b>⭐ Cheat Card</b><span>panic page — screenshot this</span></a>
+<a class="tci ref" href="#p1"><b>Before you go</b><span>docs · apps · packing</span></a>
+<a class="tci ref" href="#p2"><b>Getting around</b><span>cars, drive times</span></a>
+<a class="tci ref" href="#p3"><b>Eating veg</b><span>the real challenge</span></a>
+<a class="tci ref" href="#p4"><b>Emergency</b><span>print this one</span></a>
+<a class="tci ref" href="#p5"><b>Confirm list</b><span>one concierge call</span></a>
+<a class="tci ref" href="#p6"><b>Gotchas</b><span>hard-won lessons</span></a>
+<a class="tci day" href="#d1"><b>Day 1 · Fri 16</b><span>fly in · settle</span></a>
+<a class="tci day" href="#d2"><b>Day 2 · Sat 17</b><span>Old Goa + Panjim</span></a>
+<a class="tci day" href="#d3"><b>Day 3 · Sun 18</b><span>Ponda temples</span></a>
+<a class="tci day" href="#d4"><b>Day 4 · Mon 19</b><span>Dudhsagar Falls</span></a>
+<a class="tci day" href="#d5"><b>Day 5 · Tue 20</b><span>slow · depart</span></a>
+<a class="tci ref" href="#master"><b>Master Sheet</b><span>carry every day</span></a>
+</div>
+</div>
+
+<hr />
+<div id="cheat"></div>
+
+<h1 id="one-screen-cheat-card-screenshot-this">⭐ ONE-SCREEN CHEAT CARD (screenshot this)</h1>
+<blockquote>
+<p>Everything you need in a panic, on one screen. Full detail is in the Emergency page.</p>
+</blockquote>
+<p><strong>Emergency numbers (India)</strong>
+- <strong>All-in-one emergency: 112</strong> · <strong>Police 100</strong> · <strong>Fire 101</strong> · <strong>Ambulance 102 / 108</strong>
+- <strong>Goa Tourist Police / helpline: 1363</strong> <em>(⚠️ confirm current number with the hotel on arrival)</em>
+- <strong>ITC Grand Goa front desk: ⚠️ write it on your booking confirmation at check-in</strong></p>
+<p><strong>Show a driver — "please take me here"</strong></p>
+<pre><code>ITC Grand Goa, a Luxury Collection Resort &amp; Spa
+Arossim Beach, Cansaulim, Mormugao, South Goa 403712
+(⚠️ confirm exact address + pincode on your booking email)
+</code></pre>
+<p><strong>Vegetarian — show at every restaurant / shack (English + Hindi)</strong></p>
+<pre><code>We are PURE VEGETARIAN. No meat, no fish, no seafood/prawn, NO EGG.
+No fish stock or shrimp paste in the gravy, please.
+Milk, cheese, paneer, butter are OK. Is this dish vegetarian?
+
+हम शुद्ध शाकाहारी हैं। मांस, मछली, झींगा और अंडा नहीं खाते।
+कृपया ग्रेवी में मछली/झींगा का पेस्ट न डालें।
+दूध, पनीर, मक्खन ठीक है। क्या यह व्यंजन शाकाहारी है?
+</code></pre>
+<p><strong>The 3 rules that prevent 90% of bad days</strong>
+1. <strong>Meeting point + an outfit photo</strong> of each kid before every crowded place (church, temple, falls). If separated: <em>stay put, find a guard/uniform, call the hotel.</em>
+2. <strong>Carry 2 cards (Visa + Mastercard) + ₹8,000–10,000 cash.</strong> Temples, church tickets, jeep rides and small eateries are <strong>cash-only</strong>.
+3. <strong>Start temple/church/Dudhsagar mornings EARLY</strong> — midday heat, humidity and crowds build fast, and some temples close for a midday break.</p>
+<hr />
+<div id="legend"></div>
+
+<h2 id="legend-for-link-trust-read-this-once">🔑 Legend for link trust (read this once)</h2>
+<p>Your standing rule is "double-check everything, never fabricate." Here's the honest status system used throughout:</p>
+<ul>
+<li><strong>✅ VERIFIED</strong> — I loaded the source myself; the fact was on the page.</li>
+<li><strong>⚠️ CONFIRM ON ARRIVAL / BY PHONE</strong> — the place is real, but the detail (hours, fee, drive time, veg-only option) changes or couldn't be machine-checked. The hotel concierge settles most of these in one call — see the <strong>Confirm List</strong>.</li>
+<li><strong>⛔ TRAP</strong> — a named hazard to avoid.</li>
+<li><strong>📍 EST</strong> — a drive time I estimated from Goa geography. No source gave door-to-door times from Arossim. <strong>Check Google Maps the morning of travel.</strong></li>
+</ul>
+<p>Goa's temple and church official sites were mostly down when this was built, so <strong>most hours/fees are ⚠️, not ✅</strong> — that's honest, not lazy. Nothing here is invented.</p>
+<hr />
+<div id="p1"></div>
+
+<h1 id="part-1-before-you-go">PART 1 — BEFORE YOU GO</h1>
+<h2 id="the-night-before-checklist">⏱️ The night-before checklist</h2>
+<ol>
+<li>Charge all phones + a power bank. Download <strong>offline Google Maps for Goa</strong>.</li>
+<li>Screenshot: this Cheat Card, the veg card, the hotel booking email (with address + confirmation number).</li>
+<li>Put <strong>₹10,000 cash</strong> + 2 cards in the day bag. Keep passports/IDs for all 4 in the hotel safe except when a site needs ID.</li>
+<li>Kids' <strong>sun hats, sunscreen, 2 water bottles</strong>, a change of clothes each (for Dudhsagar day).</li>
+<li>Light <strong>modest layers</strong> — a scarf/stole + something covering shoulders &amp; knees for temples and churches.</li>
+<li>Set a <strong>Saturday alarm</strong> — Day 2 wants an early, cool start at Old Goa.</li>
+</ol>
+<h2 id="documents-the-per-person-bit-that-matters">🛂 Documents — the per-person bit that matters</h2>
+<ul>
+<li><strong>Domestic flight (BLR→GOI):</strong> carry a <strong>government photo ID</strong> for each adult. For the kids, carry ID too.</li>
+<li><strong>⚠️ Your US-citizen child travels on a US passport.</strong> For <em>domestic</em> India travel that's fine as photo ID, but <strong>carry it</strong> (and ideally the child's OCI card if they hold one). It becomes relevant at <strong>two Ponda temples that reportedly bar foreigner entry</strong> — see Day 3. Decide in advance how you'll answer if asked.</li>
+<li>No visa/immigration anything — this is a domestic trip.</li>
+</ul>
+<h2 id="apps-to-install-before-you-fly">📱 Apps to install before you fly</h2>
+<ul>
+<li><strong>Google Maps</strong> (download the Goa offline area).</li>
+<li><strong>GoaMiles</strong> — Goa's official app-taxi service (useful backup to the hotel car). ⚠️ Availability in deep-south/rural spots is patchy; the hotel car is the reliable option for day trips.</li>
+<li><strong>A UPI app</strong> (GPay/PhonePe) — widely accepted even at small places, but still carry cash for temples/jeeps.</li>
+<li>Your <strong>Bonvoy app</strong> — for mobile check-in and to show Titanium status.</li>
+</ul>
+<h2 id="what-to-pack-for-the-day-trips">🧳 What to pack for the day trips</h2>
+<ul>
+<li><strong>Temples/churches:</strong> covered shoulders &amp; knees; slip-off shoes (you'll remove them at temples). A stole for everyone.</li>
+<li><strong>Dudhsagar (Day 4):</strong> non-slip sandals/shoes that can get wet, a full change of clothes per kid, towel, water, dry snacks, a zip-lock for phones (there's a stream crossing).</li>
+<li><strong>Everywhere:</strong> hats, high-SPF sunscreen, mosquito repellent, refillable water.</li>
+</ul>
+<hr />
+<div id="p2"></div>
+
+<h1 id="part-2-getting-around-goa">PART 2 — GETTING AROUND GOA</h1>
+<p><strong>Plain point:</strong> you won't use trains or buses. Everything is by <strong>private car</strong> — book the <strong>hotel car</strong> for each day trip (one driver, waits for you, knows the sites), with <strong>GoaMiles / taxi</strong> as backup for short hops.</p>
+<ul>
+<li><strong>Book day cars through the ITC concierge the night before.</strong> Agree the <strong>full-day rate and route</strong> up front (Old Goa+Panjim day; Ponda+Loutolim day; Dudhsagar day). ⚠️ Confirm price at the desk — Goa taxis are not metered and rates are negotiated.</li>
+<li><strong>Child seats</strong> are not standard — ⚠️ ask the concierge in advance if you want one for the 6-year-old.</li>
+<li>Keep the <strong>driver's mobile number</strong> saved each day; agree a pickup point and time at every stop.</li>
+</ul>
+<h3 id="drive-times-from-itc-grand-goa-arossim-all-estimates-verify-on-maps">Drive times from ITC Grand Goa (Arossim) — 📍 all ESTIMATES, verify on Maps</h3>
+<table>
+<thead>
+<tr>
+<th>To</th>
+<th>Approx time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dabolim airport (GOI)</td>
+<td>15–20 min</td>
+</tr>
+<tr>
+<td>Old Goa (churches)</td>
+<td>45–50 min</td>
+</tr>
+<tr>
+<td>Old Goa → Panjim/Fontainhas</td>
+<td>~15 min</td>
+</tr>
+<tr>
+<td>Ponda (Mangueshi temple)</td>
+<td>45–60 min</td>
+</tr>
+<tr>
+<td>Ponda → Loutolim (Ancestral Goa)</td>
+<td>30–40 min</td>
+</tr>
+<tr>
+<td>Loutolim → Arossim</td>
+<td>25–30 min</td>
+</tr>
+<tr>
+<td>Collem (Dudhsagar jeep base)</td>
+<td>1h15–1h45</td>
+</tr>
+<tr>
+<td>Margao (nearest town)</td>
+<td>20–30 min</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div id="p3"></div>
+
+<h1 id="part-3-eating-vegetarian-the-real-challenge-in-goa">PART 3 — EATING VEGETARIAN (the real challenge in Goa)</h1>
+<h2 id="the-hidden-fish-problem">The hidden-fish problem</h2>
+<p>Goan cuisine is built on <strong>fish, prawn and pork</strong>. Even "vegetable" dishes can hide <strong>fish stock, dried fish, or shrimp (balchão) paste</strong>, and beach-shack kitchens share woks. Baked goods and some breads can contain <strong>egg</strong>. So: <strong>always show the veg card, and always say "no fish stock, no egg."</strong></p>
+<h2 id="show-this-at-every-restaurant-also-on-the-cheat-card">Show this at every restaurant (also on the Cheat Card)</h2>
+<pre><code>We are PURE VEGETARIAN. No meat, no fish, no seafood/prawn, NO EGG.
+No fish stock or shrimp paste in the gravy, please.
+Milk, cheese, paneer, butter are OK. Is this dish vegetarian?
+</code></pre>
+<h2 id="where-youll-actually-eat-well-verified-anchors">Where you'll actually eat well (verified anchors)</h2>
+<ul class="picklist">
+<li><span class="tg veg">PURE VEG</span><span class="nm">Navtara</span> — 100% vegetarian chain; outlets in <b>Margao, Panjim (Municipal Market) and Ponda (opp. Municipal Garden)</b>. South Indian / North Indian / Chinese. ✅ VERIFIED (navtara.in). Your reliable fallback in every area. <span class="maplink">📍 Maps: "Navtara Veg Restaurant" + the town</span></li>
+<li><span class="tg veg">PURE VEG</span><span class="nm">The Rasoda, Old Goa</span> — pure-veg, North Indian/Rajasthani, right by the churches. ✅ VERIFIED (therasoda.com). ⚠️ no hours online → call <b>+91 84477 43753</b>. <span class="maplink">📍 Shop 20/21 Milroc Kadamba, off NH-748</span></li>
+<li><span class="tg safe">BACKUP</span><span class="nm">Udupi Pure Veg, Ella</span> — South Indian, ~1.3 km from Bom Jesus. ⚠️ listing only.</li>
+<li><span class="tg safe">PANJIM</span><span class="nm">Café Tato</span> / <span class="nm">Café Bhonsle</span> — old-school Goan <b>vegetarian</b> cafés (bhaji-puri, buns, samosas). ⚠️ listing/snippet; Café Tato near the Municipal Garden.</li>
+<li><span class="tg safe">NEAR HOTEL</span><span class="nm">The Veggies Pure Veg, Utorda</span> — pure veg, next to the hotel beach. ⚠️ listing (small review count).</li>
+</ul>
+
+<h2 id="goan-veg-dishes-worth-seeking-and-the-look-alikes">Goan VEG dishes worth seeking (and the look-alikes)</h2>
+<ul class="picklist">
+<li><span class="tg veg">VEG</span><span class="nm">Khatkhate</span> — mixed vegetables with toor & chana dal. Usually safe.</li>
+<li><span class="tg veg">VEG</span><span class="nm">Vegetable caldin</span> — veg in coconut milk — <b>only order when the menu literally says "vegetable"</b> (the classic caldine is fish). </li>
+<li><span class="tg veg">VEG</span><span class="nm">Vegetable xacuti</span> — the veg version of the famous xacuti (originally meat).</li>
+<li><span class="tg veg">VEG</span><span class="nm">Alsande tondak</span> — a cowpea (black-eyed-bean) dish.</li>
+</ul>
+
+<h2 id="traps-hazards">⛔ Traps &amp; hazards</h2>
+<ul>
+<li><strong>⛔ "Shantadurga Bhojanalay"</strong> next to <strong>Mangueshi</strong> temple <strong>serves a fish plate</strong> — it is NOT the temple canteen. Don't be fooled by the holy-sounding name. (Day 3 trap.)</li>
+<li><strong>Spice-farm buffets</strong> (Tropical, Sahakari) put <strong>fish/chicken on the same line</strong> → we're skipping those buffets (plan is Navtara + plantation walk only).</li>
+<li><strong>Beach shacks</strong> are seafood-first with shared kitchens — treat as snack/drinks only unless they clearly cook veg separately.</li>
+<li><strong>Egg</strong> hides in cakes, some breads and Portuguese pastries — always ask.</li>
+</ul>
+<h2 id="at-itc-grand-goa">🏨 At ITC Grand Goa</h2>
+<p>Six venues (✅ Marriott site): <strong>Pavilion</strong> (24h, all-day), <strong>Kebabs &amp; Kurries</strong> (Indian, 12:30–3 &amp; 7–11), <strong>Ottimo</strong> (Italian, 7–11), <strong>Tempero</strong> (⚠️ Goan/Portuguese — seafood-heavy), Farol bar, Pool Bar. The hotel makes <strong>no pure-veg claim</strong> online. ⚠️ <strong>At check-in, ask for: separate veg preparation, no egg, and Jain/veg-only options.</strong> Breakfast buffet is your easiest veg win each morning.</p>
+<hr />
+<div id="p4"></div>
+
+<h1 id="part-4-emergency-page-print-this-one">PART 4 — 🚨 EMERGENCY PAGE (print this one)</h1>
+<h2 id="numbers">Numbers</h2>
+<ul>
+<li><strong>All-in-one emergency: 112</strong></li>
+<li><strong>Police 100 · Fire 101 · Ambulance 102 / 108</strong></li>
+<li><strong>Goa Tourist helpline: 1363</strong> (⚠️ confirm on arrival)</li>
+<li><strong>ITC Grand Goa front desk / doctor-on-call: ⚠️ get at check-in and write here: <strong><em>_</em></strong>____</strong></li>
+<li><strong>Nearest hospital to Arossim/Cansaulim: ⚠️ ask the concierge at check-in and write it here: <strong><em>_</em></strong>____</strong> (do not rely on a guessed name — the concierge knows the closest 24h facility.)</li>
+</ul>
+<h2 id="if-a-child-gets-separated">If a child gets separated</h2>
+<ol>
+<li>Everyone <strong>stays where they are</strong> for 5 minutes; the adult who notices stays at the last-seen spot.</li>
+<li>Find a <strong>guard, temple/church attendant, or shop</strong> and call the hotel.</li>
+<li>Each kid carries an <strong>ID card</strong> (below) in a pocket.</li>
+</ol>
+<h3 id="kids-id-cards-print-one-per-child-fill-the-blanks">Kids' ID cards (print one per child; fill the blanks)</h3>
+<pre><code>Child: Arshi Gupta        | Parent mobile: ______________
+Staying at: ITC Grand Goa, Arossim Beach, Cansaulim
+&quot;I am lost. Please call my parents / the hotel.&quot;
+</code></pre>
+<pre><code>Child: Avyan Gupta        | Parent mobile: ______________
+Staying at: ITC Grand Goa, Arossim Beach, Cansaulim
+&quot;I am lost. Please call my parents / the hotel.&quot;
+</code></pre>
+<p><em>(⚠️ Which name maps to which age is unconfirmed in your profile — fix the names when you print.)</em></p>
+<h2 id="money-atms">Money &amp; ATMs</h2>
+<ul>
+<li>Carry <strong>₹8,000–10,000 cash</strong> daily. <strong>Temples, church (ASI) tickets, the Dudhsagar jeep, and small eateries are cash-only.</strong></li>
+<li>ATMs are in Margao/Panjim; fewer near the beach. Draw cash before temple/falls days.</li>
+<li>Carry <strong>2 cards</strong> (one will occasionally be declined).</li>
+</ul>
+<h2 id="weather-mid-oct-monsoon-just-withdrawn">Weather (mid-Oct, monsoon just withdrawn)</h2>
+<ul>
+<li>Warm &amp; humid; the odd short shower is possible. Mornings are coolest — do outdoor sights early.</li>
+<li>Occasional slippery steps at falls/temples after rain. Mind the kids.</li>
+</ul>
+<h2 id="beach-safety">Beach safety</h2>
+<ul>
+<li>Swim <strong>only on flagged stretches with lifeguards (Drishti)</strong>; obey red flags. The post-monsoon sea can have currents.</li>
+<li>The resort's <strong>Arossim/Utorda</strong> beach is the calm, family stretch — still check conditions daily.</li>
+</ul>
+<hr />
+<div id="p5"></div>
+
+<h1 id="part-5-confirm-list-one-concierge-call-does-most-of-it">PART 5 — ✅ CONFIRM LIST (one concierge call does most of it)</h1>
+<p>Give this list to the ITC concierge on <strong>arrival night</strong>:
+1. <strong>Veg kitchen</strong> — separate veg prep, <strong>no egg</strong>, Jain/veg-only availability across the restaurants + breakfast.
+2. <strong>Dudhsagar jeep safari (Mon 19)</strong> — running this week? price, booking, start time, pickup. (Official sites were unreachable — the concierge is the source.)
+3. <strong>Temple foreigner-entry rule</strong> at <strong>Shantadurga (Kavlem)</strong> &amp; <strong>Mahalasa (Mardol)</strong> for a <strong>US-passport child</strong> — is it enforced, does it apply to a child of Indian origin?
+4. <strong>Hours &amp; fees</strong> — Mangueshi temple; Old Goa churches (ASI tickets); <strong>Basilica of Bom Jesus mass times</strong> (so you visit around, not during, mass); Ancestral Goa Loutolim.
+5. <strong>The Rasoda, Old Goa</strong> lunch hours — <strong>+91 84477 43753</strong>.
+6. <strong>Day cars</strong> — full-day rate + route for Day 2, Day 3, Day 4; child seat for the 6-year-old if wanted.
+7. <strong>Nearest hospital + doctor-on-call</strong> number.</p>
+<hr />
+<div id="p6"></div>
+
+<h1 id="part-6-hard-won-gotchas">PART 6 — 🧠 HARD-WON GOTCHAS</h1>
+<h2 id="temples">⛩️ Temples</h2>
+<ul>
+<li><strong>Dress code</strong>: covered shoulders &amp; knees; <strong>shoes off</strong> before entering. Keep a stole handy.</li>
+<li><strong>Midday break</strong>: many Goan temples close for a few midday hours — go <strong>before ~12:30</strong> or confirm the day's timing.</li>
+<li><strong>⚠️ Foreigner-entry rule</strong> at Shantadurga (Kavlem) &amp; Mahalasa (Mardol) — see Day 3; we anchor on <strong>Mangueshi</strong> (no such rule) and call ahead for the others.</li>
+<li><strong>⛔ Don't eat at "Shantadurga Bhojanalay" by Mangueshi</strong> — it serves fish.</li>
+</ul>
+<h2 id="old-goa-churches">⛪ Old Goa churches</h2>
+<ul>
+<li><strong>Modest clothing</strong>; it's an active place of worship. <strong>Visit around Mass times</strong> at the Basilica (ask concierge).</li>
+<li>Lots of <strong>open, shadeless walking</strong> and <strong>little food at the site</strong> — carry water; eat right after at The Rasoda.</li>
+<li>Keep valuables close; it's a busy tourist cluster.</li>
+</ul>
+<h2 id="dudhsagar">💦 Dudhsagar</h2>
+<ul>
+<li><strong>Jeep only.</strong> <strong>⛔ Walking the railway track to the falls is banned and fined</strong> by the Forest Dept; getting on/off at the Dudhsagar railway stop is an offence. Don't improvise.</li>
+<li>The jeep track is <strong>bumpy</strong>; there's a <strong>short walk + stream crossing</strong> at the end — hence the change of clothes.</li>
+<li><strong>Food is sparse out there</strong> — carry a hotel-packed veg lunch/snacks.</li>
+</ul>
+<h2 id="cars-cash">🚕 Cars &amp; cash</h2>
+<ul>
+<li>Goa taxis are <strong>unmetered</strong> — agree the fare/route first; the hotel car avoids the haggling.</li>
+<li><strong>Cash-first</strong> at temples, church tickets, the jeep, and small veg eateries.</li>
+</ul>
+<h2 id="beaches-shacks">🏖️ Beaches &amp; shacks</h2>
+<ul>
+<li>Shacks are <strong>seafood-first with shared kitchens</strong> — snacks/drinks only unless veg is cooked separately.</li>
+<li>Swim only on <strong>flagged, lifeguarded</strong> stretches.</li>
+</ul>
+<hr />
+<div class="daysep" id="d1"><div class="kicker">Day 1 · Friday</div><div class="big">Oct 16</div><div class="sub">Fly in after school · settle at ITC Grand Goa</div><div class="tag">Sleep: ITC Grand Goa</div><div class="carry"><b>Carry today:</b> all 4 IDs (incl. US passport for the child) · booking email · ₹10,000 cash · 2 cards · veg card</div></div>
+
+<h1 id="part-7-day-by-day">PART 7 — 📅 DAY BY DAY</h1>
+<h2 id="day-1-fri-oct-16-fly-in-settle-in">Day 1 — Fri Oct 16 · Fly in, settle in</h2>
+<p><strong>Headline:</strong> no sightseeing — get there safely, check in, eat, sleep. School finishes first, so this is an evening arrival.</p>
+<div class="tl">
+
+<div class="stop move"><div class="tmark">Eve</div><div class="scard">
+<div class="stitle">✈️ BLR → GOI after school</div>
+<div class="sbody">Kids finish school, then head to BLR for an <b>evening flight</b> to Goa (~1h in the air). <b>No school missed</b> (Dussehra break starts tomorrow, Sat 17th). ⚠️ Exact flight to be booked separately — target a departure that clears the school day comfortably.
+<div class="facts"><span class="f">✈️ BLR→GOI</span><span class="f"><b>~1h flight</b></span><span class="f">carry IDs ×4</span></div></div>
+</div></div>
+
+<div class="stop move"><div class="tmark">~Night</div><div class="scard">
+<div class="stitle">🚗 Airport → ITC Grand Goa</div>
+<div class="sbody">Pre-book the <b>hotel car</b> for the arrival pickup (easiest with tired kids at night). Dabolim (GOI) to the resort is <b>15–20 min</b> 📍EST.
+<div class="facts"><span class="f">🚗 hotel car</span><span class="f"><b>15–20 min</b></span><span class="f">⚠️ confirm pickup</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">Arrive</div><div class="scard">
+<div class="stitle">🏨 Check in on Bonvoy Titanium</div>
+<div class="sbody">Ask about the <b>suite upgrade, late checkout (4pm) and lounge access</b> your Titanium status gives. <span class="warn">Hand the concierge the Confirm List tonight</span> (veg kitchen, Dudhsagar jeep, day cars) so everything's booked for the morning.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">Dinner</div><div class="scard">
+<div class="stitle">🍽️ Dinner at the resort</div>
+<div class="sbody">Easiest first night: <b>Kebabs & Kurries</b> (Indian) or the 24h <b>Pavilion</b>. <span class="warn">Ask for veg prep, no egg.</span> Skip <b>Tempero</b> tonight (seafood-heavy Goan).</div>
+</div></div>
+
+</div>
+
+<div class="daysep" id="d2"><div class="kicker">Day 2 · Saturday</div><div class="big">Oct 17</div><div class="sub">History day — Old Goa UNESCO churches + Panjim / Fontainhas</div><div class="tag">Sleep: ITC Grand Goa</div><div class="carry"><b>Carry today:</b> modest layers (shoulders/knees) · hats + water · ₹ cash for ASI tickets · veg card · Master Sheet</div></div>
+
+<h2 id="day-2-sat-oct-17-old-goa-churches-panjim-fontainhas">Day 2 — Sat Oct 17 · Old Goa churches + Panjim / Fontainhas</h2>
+<p><strong>Headline:</strong> Goa's UNESCO heart in the cool of the morning, the pretty Portuguese Latin Quarter in the afternoon. Early start beats heat + crowds.</p>
+<div class="tl">
+
+<div class="stop meal"><div class="tmark">07:30</div><div class="scard">
+<div class="stitle">🍳 Early breakfast at the resort</div>
+<div class="sbody">The buffet is your easy veg win. Eat and roll — Old Goa is best early and shadeless by midday.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">08:30</div><div class="scard">
+<div class="stitle">🚗 Drive to Old Goa (Velha Goa)</div>
+<div class="sbody">Hotel car, ~<b>45–50 min</b> 📍EST. Ask the driver to drop at the <b>Basilica of Bom Jesus</b> and wait for the church cluster (they're all walkable together).
+<div class="facts"><span class="f">🚗 hotel car</span><span class="f"><b>45–50 min</b></span><span class="f">📍 EST</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">09:30</div><div class="scard">
+<div class="stitle">⛪ Basilica of Bom Jesus</div>
+<div class="sbody">Goa's most important church (begun 1594) — holds <b>St Francis Xavier's remains</b> in a silver urn. ✅ <span class="warn">⚠️ Visit around Mass times (ask concierge). Don't use "bomjesus.org" — it now redirects elsewhere.</span> Modest dress.</div>
+</div></div>
+
+<div class="stop"><div class="tmark">10:15</div><div class="scard">
+<div class="stitle">⛪ Sé Cathedral + St Francis of Assisi</div>
+<div class="sbody">Across the road: the <b>Sé Cathedral</b> ✅ — largest church the Portuguese built in Asia (91 m), with the "Golden Bell." Then <b>St Francis of Assisi</b> ✅ and the <b>Archaeological Museum</b> alongside. <span class="warn">ASI tickets are cash.</span></div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">Optional</div><div class="scard">
+<div class="stitle"><span class="optbadge">See</span>⛪ St Cajetan + Our Lady of the Rosary</div>
+<div class="sbody"><b>St Cajetan</b> ✅ (modelled on St Peter's, Rome) and <b>Our Lady of the Rosary</b> ✅ (oldest surviving church here, 1543) — only if the kids are still fresh.</div>
+<div class="skip"><b>Kids fading?</b> Head straight to lunch — you've seen the big three.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">12:30</div><div class="scard">
+<div class="stitle">🍽️ Lunch — The Rasoda, Old Goa (pure veg)</div>
+<div class="sbody">Pure-veg, right by the churches — the safe anchor. ✅ VERIFIED. <span class="warn">⚠️ Call ahead for hours: +91 84477 43753.</span>
+<ul class="picklist">
+<li><span class="tg veg">PURE VEG</span><span class="nm">The Rasoda</span> — North Indian/Rajasthani; the Maharaja Thali feeds ~4. <span class="maplink">📍 off NH-748, Old Goa</span></li>
+<li><span class="tg safe">BACKUP</span><span class="nm">Udupi Pure Veg, Ella</span> — South Indian, ~1.3 km from Bom Jesus.</li>
+</ul></div>
+</div></div>
+
+<div class="stop move"><div class="tmark">14:00</div><div class="scard">
+<div class="stitle">🚗 To Panjim (Fontainhas)</div>
+<div class="sbody">Short hop, ~<b>15 min</b> 📍EST. Ask the driver for the <b>Fontainhas / Latin Quarter</b> edge of town.
+<div class="facts"><span class="f">🚗 hotel car</span><span class="f"><b>~15 min</b></span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">14:30</div><div class="scard">
+<div class="stitle">🏘️ Fontainhas — Panjim's Latin Quarter</div>
+<div class="sbody">Photogenic Portuguese quarter: ochre/blue/green houses, narrow lanes, little chapels and galleries. ✅ A lovely slow walk. Also see <b>Our Lady of the Immaculate Conception</b> (the white staircase church) and the riverfront.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">16:00</div><div class="scard">
+<div class="stitle">☕ Goan-veg café snack</div>
+<div class="sbody"><ul class="picklist">
+<li><span class="tg safe">GOAN VEG</span><span class="nm">Café Tato</span> — old-school Goan veg (bhaji-puri, buns). ⚠️ near the Municipal Garden. · <span class="nm">Café Bhonsle</span> — sweet buns. ⚠️ listing/snippet.</li>
+<li><span class="tg veg">PURE VEG</span><span class="nm">Navtara, Panjim</span> — 100% veg fallback (Municipal Market area). ✅ VERIFIED.</li>
+</ul></div>
+</div></div>
+
+<div class="stop move"><div class="tmark">~17:30</div><div class="scard">
+<div class="stitle">🚗 Back to ITC</div>
+<div class="sbody">~<b>45–60 min</b> 📍EST. Evening free — pool, beach, resort dinner (veg prep, no egg). Early-ish night; Day 3 is a temple morning.
+<div class="facts"><span class="f">🚗 hotel car</span><span class="f"><b>45–60 min</b></span></div></div>
+</div></div>
+
+</div>
+
+<div class="daysep" id="d3"><div class="kicker">Day 3 · Sunday</div><div class="big">Oct 18</div><div class="sub">Temples + nature — Ponda temple cluster · spice-farm walk · Ancestral Goa</div><div class="tag">Sleep: ITC Grand Goa</div><div class="carry"><b>Carry today:</b> stoles (shoulders/knees) · slip-off shoes · US passport for the child · ₹ cash · veg card · Master Sheet</div></div>
+
+<h2 id="day-3-sun-oct-18-ponda-temples-spice-farm-ancestral-goa">Day 3 — Sun Oct 18 · Ponda temples + spice farm + Ancestral Goa</h2>
+<p><strong>Headline:</strong> Goa's living Hindu temples in the morning, a kid-friendly spice-plantation walk and a verified pure-veg lunch, then a recreated old-Goa village the kids will love — slow evening back at the resort.</p>
+<div class="tl">
+
+<div class="stop meal"><div class="tmark">07:30</div><div class="scard">
+<div class="stitle">🍳 Early breakfast</div>
+<div class="sbody">Temples take a <b>midday break</b> and get hot/busy — aim to be at Mangueshi by ~09:00.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">08:15</div><div class="scard">
+<div class="stitle">🚗 Drive to Ponda (Priol)</div>
+<div class="sbody">Hotel car, ~<b>45–60 min</b> 📍EST.
+<div class="facts"><span class="f">🚗 hotel car</span><span class="f"><b>45–60 min</b></span><span class="f">📍 EST</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">09:00</div><div class="scard">
+<div class="stitle">🛕 Shri Mangueshi Temple (Priol) — the anchor</div>
+<div class="sbody">Shiva temple with a seven-storey <b>lamp tower</b>, a sacred <b>tank</b> and a <b>Nandi bull</b> — easy and lovely for kids. ✅ <b>Dress code</b> (shoulders/knees), <b>shoes off</b>; <b>no foreigner ban here.</b> Temple prasad is vegetarian. <span class="warn">⚠️ Hours/fees confirm with concierge.</span>
+<span class="warn"> ⛔ Do NOT eat at "Shantadurga Bhojanalay" next to the temple — it serves fish, it is not the temple canteen.</span></div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">Optional</div><div class="scard">
+<div class="stitle"><span class="optbadge">See</span>🛕 Bandora pair — Naguesh & Mahalaxmi</div>
+<div class="sbody">~4 km away in Bandora: <b>Shri Naguesh</b> ✅ (Ramayana wood carvings) and <b>Shri Mahalaxmi</b> ✅ (rare wooden Vishnu images). Quick, quiet add-ons.</div>
+<div class="skip"><b>Temple'd out?</b> Go straight to the spice-farm walk + lunch.</div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">⚠️ Call first</div><div class="scard">
+<div class="stitle"><span class="optbadge">Check</span>🛕 Shantadurga (Kavlem) / Mahalasa (Mardol)</div>
+<div class="sbody"><span class="warn">⚠️ Both reportedly BAR foreigner entry.</span> With your <b>US-passport child</b>, only add these if the concierge confirms entry is fine. Otherwise skip without worry — Mangueshi + Bandora cover the temple experience.</div>
+</div></div>
+
+<div class="stop"><div class="tmark">11:00</div><div class="scard">
+<div class="stitle">🌿 Spice-plantation walk (walk only)</div>
+<div class="sbody">A guided plantation walk is very kid-friendly (vanilla, nutmeg, cardamom, pepper vines). <b>Tropical Spice Plantation (Keri)</b> ✅ (9–4, +91 80808 15898) or <b>Sahakari (Curti)</b> ✅. <span class="warn">⚠️ We skip their buffets (fish/chicken on the same line) — do the walk, eat at Navtara.</span></div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">13:00</div><div class="scard">
+<div class="stitle">🍽️ Lunch — Navtara, Ponda (100% veg)</div>
+<div class="sbody">Zero-risk pure-veg: South Indian / North Indian / Chinese. ✅ VERIFIED. <span class="maplink">📍 opp. Ponda Municipal Garden</span></div>
+</div></div>
+
+<div class="stop move"><div class="tmark">14:30</div><div class="scard">
+<div class="stitle">🚗 To Ancestral Goa (Loutolim)</div>
+<div class="sbody">~<b>30–40 min</b> 📍EST toward home.
+<div class="facts"><span class="f">🚗 hotel car</span><span class="f"><b>30–40 min</b></span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">15:00</div><div class="scard">
+<div class="stitle">🏡 Ancestral Goa / Big Foot (Loutolim) — kid favourite</div>
+<div class="sbody">A recreated traditional Goan village with a handicrafts outlet — the <b>best single stop for the kids</b>. ✅ (exists) <span class="warn">⚠️ Hours/fee confirm with concierge.</span></div>
+</div></div>
+
+<div class="stop move"><div class="tmark">~16:30</div><div class="scard">
+<div class="stitle">🚗 Back to ITC — slow evening</div>
+<div class="sbody">~<b>25–30 min</b> 📍EST. Pool / Arossim beach, resort dinner. <span class="warn">Early night — Day 4 (Dudhsagar) starts early.</span>
+<div class="facts"><span class="f">🚗 hotel car</span><span class="f"><b>25–30 min</b></span></div></div>
+</div></div>
+
+</div>
+
+<div class="daysep" id="d4"><div class="kicker">Day 4 · Monday</div><div class="big">Oct 19</div><div class="sub">The beautiful day — Dudhsagar Falls jeep safari + Tambdi Surla temple</div><div class="tag">Sleep: ITC Grand Goa</div><div class="carry"><b>Carry today:</b> change of clothes + towel per kid · non-slip wet shoes · zip-lock for phones · hotel-packed veg lunch · ₹ cash for jeep · Master Sheet</div></div>
+
+<h2 id="day-4-mon-oct-19-dudhsagar-falls-tambdi-surla">Day 4 — Mon Oct 19 · Dudhsagar Falls + Tambdi Surla</h2>
+<p><strong>Headline:</strong> Goa's 300 m waterfall at near-peak October flow, by bumpy jeep safari — the trip's wow day. Long and early; pack the kid kit.</p>
+<div class="tl">
+
+<div class="stop meal"><div class="tmark">06:30</div><div class="scard">
+<div class="stitle">🍳 Early breakfast + collect packed lunch</div>
+<div class="sbody">Food is sparse out at Mollem — <span class="warn">collect the hotel-packed veg lunch/snacks + water</span> before you leave.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">07:00</div><div class="scard">
+<div class="stitle">🚗 Drive to Collem (Kulem)</div>
+<div class="sbody">Hotel car, ~<b>1h15–1h45</b> 📍EST. This is the jeep-safari base.
+<div class="facts"><span class="f">🚗 hotel car</span><span class="f"><b>1h15–1h45</b></span><span class="f">📍 EST</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">08:45</div><div class="scard">
+<div class="stitle">🚙 Jeep safari to Dudhsagar Falls</div>
+<div class="sbody">Hire a <b>4WD jeep</b> at the Collem counter (local association) for the ~10 km forest track inside Bhagwan Mahaveer Sanctuary. ✅ Falls are at <b>near-peak flow in October</b>. <span class="warn">⚠️ Jeep price/booking/this-week's status → confirm via concierge. Cash for the jeep.</span>
+<span class="warn"> ⛔ Do NOT walk the railway track — it's banned and fined.</span>
+<div class="facts"><span class="f">🚙 4WD jeep</span><span class="f">cash only</span><span class="f">bumpy + stream crossing</span></div></div>
+</div></div>
+
+<div class="stop"><div class="tmark">10:00</div><div class="scard">
+<div class="stitle">💦 At the falls</div>
+<div class="sbody">Short walk + a <b>stream crossing</b> at the end (hence the change of clothes + non-slip shoes). Keep the kids within arm's reach on wet rocks; follow the guards/flags on whether wading is allowed that day.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">12:30</div><div class="scard">
+<div class="stitle">🍽️ Packed veg lunch</div>
+<div class="sbody">Eat the hotel-packed lunch (there's no reliable veg food out here). Dispose of litter responsibly — it's a protected sanctuary.</div>
+</div></div>
+
+<div class="stop opt"><div class="tmark">Optional</div><div class="scard">
+<div class="stitle"><span class="optbadge">See</span>🛕 Tambdi Surla Mahadev Temple</div>
+<div class="sbody">A <b>12th-century stone Shiva temple</b> — the oldest in Goa, quiet and beautiful, in the Mollem area. ✅ A lovely, uncrowded contrast to the jeep crowds. <span class="warn">⚠️ Confirm road + timing with the driver; it's a detour, not on the jeep route.</span></div>
+<div class="skip"><b>Kids wiped out?</b> Skip it and head home to the pool.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">~15:00</div><div class="scard">
+<div class="stitle">🚗 Back to ITC</div>
+<div class="sbody">~<b>1h15–1h45</b> 📍EST. Hot showers, early relaxed dinner. A big day — keep the evening gentle.
+<div class="facts"><span class="f">🚗 hotel car</span><span class="f"><b>1h15–1h45</b></span></div></div>
+</div></div>
+
+</div>
+
+<div class="daysep" id="d5"><div class="kicker">Day 5 · Tuesday</div><div class="big">Oct 20</div><div class="sub">Slow resort / beach morning · fly home</div><div class="tag">Depart: GOI</div><div class="carry"><b>Carry today:</b> all IDs ×4 · nothing left in the safe · ₹ cash for tips · veg card for the airport</div></div>
+
+<h2 id="day-5-tue-oct-20-slow-morning-fly-home">Day 5 — Tue Oct 20 · Slow morning, fly home</h2>
+<p><strong>Headline:</strong> no rushing — pool, beach, pack, fly out. Your Titanium late checkout buys a relaxed morning.</p>
+<div class="tl">
+
+<div class="stop meal"><div class="tmark">Late</div><div class="scard">
+<div class="stitle">🍳 Lazy breakfast</div>
+<div class="sbody">Sleep in after the Dudhsagar day. Big veg breakfast; no alarm.</div>
+</div></div>
+
+<div class="stop"><div class="tmark">AM</div><div class="scard">
+<div class="stitle">🏖️ Arossim / Utorda beach + pool</div>
+<div class="sbody">The resort's own calm South-Goa stretch. ✅ <span class="warn">Swim only on flagged, lifeguarded sand.</span> Last ice-creams, last photos.</div>
+</div></div>
+
+<div class="stop"><div class="tmark">~13:00</div><div class="scard">
+<div class="stitle">🧳 Late checkout (Titanium 4pm)</div>
+<div class="sbody">Use the <b>4pm late checkout</b> your status gives. Sweep the room safe — IDs, the US passport, chargers.</div>
+</div></div>
+
+<div class="stop meal"><div class="tmark">Lunch</div><div class="scard">
+<div class="stitle">🍽️ Lunch — resort or The Veggies Pure Veg (Utorda)</div>
+<div class="sbody">Easy veg lunch at the resort, or <b>The Veggies Pure Veg</b> ⚠️ next to the hotel beach.</div>
+</div></div>
+
+<div class="stop move"><div class="tmark">Dep</div><div class="scard">
+<div class="stitle">🚗 → GOI, fly home</div>
+<div class="sbody">Hotel car ~<b>15–20 min</b> 📍EST to Dabolim. Carry a veg snack for the kids — airport veg options are limited.
+<div class="facts"><span class="f">🚗 hotel car</span><span class="f"><b>15–20 min</b></span><span class="f">✈️ GOI→BLR</span></div></div>
+</div></div>
+
+</div>
+
+<hr />
+<div id="master"></div>
+
+<h2 id="master-sheet-carry-this-every-day">🆘 MASTER SHEET — carry this every day</h2>
+<h3 id="numbers_1">☎️ Numbers</h3>
+<ul>
+<li><strong>Emergency 112</strong> · Police <strong>100</strong> · Fire <strong>101</strong> · Ambulance <strong>102/108</strong> · Goa tourist helpline <strong>1363</strong> (⚠️)</li>
+<li><strong>ITC Grand Goa front desk: <strong><em>_</em></strong>___</strong> · <strong>Doctor-on-call: <strong><em>_</em></strong>___</strong> · <strong>Nearest hospital: <strong><em>_</em></strong>___</strong></li>
+<li><strong>Today's driver: <strong><em>_</em></strong>___</strong></li>
+</ul>
+<h3 id="veg-card-show-everywhere">🥗 Veg card (show everywhere)</h3>
+<blockquote>
+<p>Pure vegetarian. <strong>No meat, fish, seafood/prawn, EGG. No fish stock/shrimp paste.</strong> Milk/cheese/paneer/butter OK. <em>हम शुद्ध शाकाहारी हैं — मांस, मछली, झींगा, अंडा नहीं। ग्रेवी में मछली/झींगा पेस्ट न डालें।</em></p>
+</blockquote>
+<h3 id="verified-veg-anchors">✅ Verified veg anchors</h3>
+<ul>
+<li><strong>Navtara</strong> (Margao / Panjim / Ponda) — 100% veg ✅</li>
+<li><strong>The Rasoda, Old Goa</strong> — pure veg ✅ · <strong>+91 84477 43753</strong></li>
+<li>Panjim: <strong>Café Tato / Café Bhonsle</strong> ⚠️ · Near hotel: <strong>The Veggies Pure Veg, Utorda</strong> ⚠️</li>
+</ul>
+<h3 id="dont-forget-warnings">⛔ Don't-forget warnings</h3>
+<ul>
+<li>⛔ "Shantadurga <strong>Bhojanalay</strong>" by Mangueshi serves <strong>fish</strong> — avoid.</li>
+<li>⛔ Dudhsagar: <strong>jeep only</strong>, never walk the railway track.</li>
+<li>⚠️ US-passport child: Shantadurga (Kavlem) &amp; Mahalasa (Mardol) temples may bar entry — Mangueshi is fine.</li>
+<li>💵 Cash for temples, church tickets, the jeep, small eateries.</li>
+<li>⛩️⛪ Covered shoulders &amp; knees; shoes off at temples.</li>
+</ul>
+<h3 id="drive-times-from-arossim-est-verify-on-maps">📍 Drive times from Arossim (EST — verify on Maps)</h3>
+<p>GOI 15–20m · Old Goa 45–50m · Panjim +15m · Ponda 45–60m · Loutolim 25–40m · Collem/Dudhsagar 1h15–1h45m</p>
+</body>
+</html>

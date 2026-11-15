@@ -1,0 +1,119 @@
+[
+  {
+    "file": "IMG_7661.jpg",
+    "places": [
+      {"name": "Tsutenkaku Tower", "kind": "sight", "city": "Osaka", "timing_hint": null, "notes": "Iconic tower in Shinsekai district, visible above bustling shopping street"},
+      {"name": "Shinsekai", "kind": "neighborhood", "city": "Osaka", "timing_hint": null, "notes": "Retro neon-lit shopping/food district around Tsutenkaku Tower"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7662.jpg",
+    "places": [
+      {"name": "Dotonbori", "kind": "neighborhood", "city": "Osaka", "timing_hint": null, "notes": "Famous Osaka food/nightlife district with giant gyoza and Osaka Ohsho signage"},
+      {"name": "Osaka Ohsho (Dotonbori)", "kind": "food", "city": "Osaka", "timing_hint": null, "notes": "Gyoza chain restaurant in Dotonbori (vegetarian gyoza availability uncertain - check menu)"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7663.jpg",
+    "places": [
+      {"name": "Shinsekai", "kind": "neighborhood", "city": "Osaka", "timing_hint": null, "notes": "Retro shopping/food street with Tsutenkaku Tower view, crowded daytime scene"},
+      {"name": "Tsutenkaku Tower", "kind": "sight", "city": "Osaka", "timing_hint": null, "notes": "Landmark tower at heart of Shinsekai"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7664.jpg",
+    "places": [
+      {"name": "Hozenji Yokocho", "kind": "neighborhood", "city": "Osaka", "timing_hint": "Evening - lanterns lit", "notes": "Atmospheric narrow stone-paved alley with red lanterns; described as 'some of the best' food spots"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7665.jpg",
+    "places": [
+      {"name": "Nara (alternate side)", "kind": "neighborhood", "city": "Nara", "timing_hint": null, "notes": "Torii gate with shimenawa rope at a shrine - 'visit a different side of Nara' (likely off-the-beaten-path shrine, possibly Mt Wakakusa or Tamukeyama area)"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7666.jpg",
+    "places": [
+      {"name": "Nara", "kind": "neighborhood", "city": "Nara", "timing_hint": null, "notes": "Pagoda and traditional temple buildings in forested setting near Ikoma area"},
+      {"name": "Ikoma cable car area", "kind": "transport", "city": "Nara", "timing_hint": null, "notes": "Mention of charming little Ikoma cable car (Mt Ikoma)"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7667.jpg",
+    "places": [
+      {"name": "Ikoma Cable Car (Blacky/Mike-chan)", "kind": "transport", "city": "Nara", "timing_hint": null, "notes": "Whimsical dog-shaped cable car on Mt Ikoma - kid-friendly photo op"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7668.jpg",
+    "places": [
+      {"name": "Katsuoji Temple", "kind": "sight", "city": "Osaka (Minoh)", "timing_hint": null, "notes": "Temple covered in countless red Daruma dolls - distinctive photo spot in mountains north of Osaka"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@global.and.beyond.travel"
+  },
+  {
+    "file": "IMG_7670.jpg",
+    "places": [
+      {"name": "Shibuya Sky", "kind": "activity", "city": "Tokyo", "timing_hint": "Pre-book 2 weeks in advance", "notes": "Top of list for must-pre-book Japan activities"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7671.jpg",
+    "places": [
+      {"name": "Shibuya Sky", "kind": "activity", "city": "Tokyo", "timing_hint": "Pre-book 2 weeks in advance", "notes": "Activity #1 on pre-book list"},
+      {"name": "TeamLab Planets", "kind": "activity", "city": "Tokyo", "timing_hint": "Pre-book 2-3 months in advance", "notes": "Immersive digital art museum - kid-friendly, books out far ahead"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7673.jpg",
+    "places": [
+      {"name": "Shibuya Sky", "kind": "activity", "city": "Tokyo", "timing_hint": "Pre-book 2 weeks in advance", "notes": "Pre-book list item #1"},
+      {"name": "TeamLab Planets", "kind": "activity", "city": "Tokyo", "timing_hint": "Pre-book 2-3 months in advance", "notes": "Pre-book list item #2"},
+      {"name": "Ghibli Museum", "kind": "activity", "city": "Tokyo (Mitaka)", "timing_hint": "Pre-book 1 month in advance", "notes": "Studio Ghibli museum - tickets release monthly, sell out fast; great for kids 6 & 9"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7675.jpg",
+    "places": [
+      {"name": "Shibuya Sky", "kind": "activity", "city": "Tokyo", "timing_hint": "Pre-book 2 weeks in advance", "notes": "Pre-book list item #1"},
+      {"name": "TeamLab Planets", "kind": "activity", "city": "Tokyo", "timing_hint": "Pre-book 2-3 months in advance", "notes": "Pre-book list item #2"},
+      {"name": "Ghibli Museum", "kind": "activity", "city": "Tokyo", "timing_hint": "Pre-book 1 month in advance", "notes": "Pre-book list item #3"},
+      {"name": "Mount Fuji Day Tour", "kind": "activity", "city": "Tokyo (day trip)", "timing_hint": "Pre-book 1 week in advance", "notes": "Day tour to Mt Fuji area - bookable closer to date"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@mahirslens"
+  },
+  {
+    "file": "IMG_7676.jpg",
+    "places": [
+      {"name": "Shibuya Sky", "kind": "activity", "city": "Tokyo", "timing_hint": "Pre-book 2 weeks in advance", "notes": "Same pre-book list - tip: Klook code MAHIRSLENS for discount"},
+      {"name": "TeamLab Planets", "kind": "activity", "city": "Tokyo", "timing_hint": "Pre-book 2-3 months in advance", "notes": "Klook code MAHIRSLENS available"},
+      {"name": "Ghibli Museum", "kind": "activity", "city": "Tokyo", "timing_hint": "Pre-book 1 month in advance", "notes": "Klook code MAHIRSLENS available"},
+      {"name": "Mount Fuji Day Tour", "kind": "activity", "city": "Tokyo (day trip)", "timing_hint": "Pre-book 1 week in advance", "notes": "Klook code MAHIRSLENS available"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@mahirslens (Klook code: MAHIRSLENS)"
+  }
+]

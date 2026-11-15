@@ -1,0 +1,40 @@
+{
+  "destination": "Darjeeling",
+  "country": "IN",
+  "lat": 27.04,
+  "lon": 88.27,
+  "generated_at": "2026-05-30T03:50:34.132877+00:00",
+  "items_total": 1,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [
+      {
+        "name": "the Guru Padmasambhava",
+        "score": 2.25,
+        "creators": [
+          "@Visa2explore"
+        ],
+        "creator_count": 1,
+        "mentions": 1,
+        "positive": 0,
+        "negative": 0,
+        "city": "Bhutan",
+        "quote": "e here now. Dorji bhai said me there are 9 temples in the monastery. We visited the Guru Padmasambhava ji visited here on a This was a flying tigress. He came and meditated here. There was a temple that had an idol of 6-7 gods and goddesses",
+        "quote_creator": "@Visa2explore",
+        "quote_source": "youtube",
+        "quote_url": "https://www.youtube.com/watch?v=0Yg7W9jg5AI",
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "5.0",
+          "review_count": "3",
+          "ranking": "#3 of 6 Nightlife in Darjeeling",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g304557-d23023286-Reviews-The_Yellow_Box-Darjeeling_Darjeeling_District_West_Bengal.html?m=66827",
+          "city": "Darjeeling"
+        }
+      }
+    ],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

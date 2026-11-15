@@ -1,0 +1,109 @@
+[
+  {
+    "file": "IMG_7698.jpg",
+    "places": [
+      {"name": "Fibe-Mini digestion fiber drink", "kind": "food", "city": "Tokyo", "timing_hint": null, "notes": "Japanese convenience store digestion/fiber drinks recommended for daily consumption"},
+      {"name": "Pokka Sapporo Kireto Lemon 2700", "kind": "food", "city": "unknown", "timing_hint": null, "notes": "Japanese citric acid fatigue-relief drink"},
+      {"name": "Chocola BB vitamin drink", "kind": "food", "city": "unknown", "timing_hint": null, "notes": "Vitamin drink for active days"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@jenniesuk"
+  },
+  {
+    "file": "IMG_7699.jpg",
+    "places": [
+      {"name": "7-Eleven (Seven Cafe) Japan", "kind": "food", "city": "Tokyo", "timing_hint": null, "notes": "7-Eleven Seven Cafe DIY drink hack - jelly/syrup poured into cup with ice, very vegetarian-friendly konbini option"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@jenniesuk"
+  },
+  {
+    "file": "IMG_7700.jpg",
+    "places": [
+      {"name": "7-Eleven (Seven Cafe) Japan", "kind": "food", "city": "Tokyo", "timing_hint": null, "notes": "7-Eleven Seven Cafe drink - tastes amazing, cheap konbini snack idea kids may enjoy"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@jenniesuk"
+  },
+  {
+    "file": "IMG_7701.jpg",
+    "places": [
+      {"name": "Atago Jinja Shrine", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Tokyo hidden gem shrine with steep red torii gate stairs (Otoko-zaka, Stairs of Success) in Toranomon area"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mcstops"
+  },
+  {
+    "file": "IMG_7702.jpg",
+    "places": [
+      {"name": "Atago Jinja Shrine", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Serene shrine setting with red gate at top of stairs - great quick stop near Toranomon Hills"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mcstops"
+  },
+  {
+    "file": "IMG_7703.jpg",
+    "places": [
+      {"name": "Atago Jinja Shrine - Ema (wishing plaques)", "kind": "activity", "city": "Tokyo", "timing_hint": null, "notes": "Ema wooden plaques with wishes; activity for kids - write a wish (handwritten note mentions Tokyu Corporation interview, Shibuya 2026)"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@mcstops"
+  },
+  {
+    "file": "IMG_7704.jpg",
+    "places": [
+      {"name": "Atago Jinja Shrine", "kind": "sight", "city": "Tokyo", "timing_hint": null, "notes": "Omikuji (paper fortunes) tied to ropes near torii - in the Toranomon Hills area"},
+      {"name": "Toranomon Hills", "kind": "neighborhood", "city": "Tokyo", "timing_hint": null, "notes": "Modern business/shopping district near Atago Jinja Shrine"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@mcstops"
+  },
+  {
+    "file": "IMG_7705.jpg",
+    "places": [
+      {"name": "Katsuoji Temple", "kind": "sight", "city": "Osaka", "timing_hint": null, "notes": "Hidden gem near Osaka famous for thousands of Daruma dolls (luck/perseverance), kid-friendly novelty"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@travelwithkashika"
+  },
+  {
+    "file": "IMG_7706.jpg",
+    "places": [
+      {"name": "Katsuoji Temple", "kind": "sight", "city": "Osaka", "timing_hint": "About 2 hours from Osaka", "notes": "Mountain temple with koi pond, cherry blossoms; offbeat place near Osaka"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@travelwithkashika"
+  },
+  {
+    "file": "IMG_7707.jpg",
+    "places": [
+      {"name": "Katsuoji Temple", "kind": "sight", "city": "Osaka", "timing_hint": null, "notes": "Legendary wind-wishing pagoda/temple with rows of small Daruma dolls along stone path"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@travelwithkashika"
+  },
+  {
+    "file": "IMG_7708.jpg",
+    "places": [
+      {"name": "Katsuoji Temple - Daruma dolls", "kind": "activity", "city": "Osaka", "timing_hint": null, "notes": "Thousands of red Daruma luck dolls displayed - photogenic and fun for kids"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@travelwithkashika"
+  },
+  {
+    "file": "IMG_7709.jpg",
+    "places": [
+      {"name": "Katsuoji Temple - Daruma Mikuji fortune", "kind": "activity", "city": "Osaka", "timing_hint": null, "notes": "Mikuji paper fortune scroll (with QR code) drawn at temple - hidden fortune inside small Daruma doll"}
+    ],
+    "is_text_screenshot": true,
+    "source_url_hint": "@travelwithkashika"
+  },
+  {
+    "file": "IMG_7710.jpg",
+    "places": [
+      {"name": "Katsuoji Temple", "kind": "shop", "city": "Osaka", "timing_hint": null, "notes": "Temple-branded Daruma souvenir frame/postcard called the coolest Japanese souvenir - good gift idea"}
+    ],
+    "is_text_screenshot": false,
+    "source_url_hint": "@travelwithkashika"
+  }
+]

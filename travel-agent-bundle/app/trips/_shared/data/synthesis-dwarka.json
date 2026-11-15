@@ -1,0 +1,85 @@
+{
+  "destination": "Dwarka",
+  "country": "IN",
+  "lat": 22.24,
+  "lon": 68.97,
+  "generated_at": "2026-05-30T04:49:02.537726+00:00",
+  "items_total": 0,
+  "creators_total": 0,
+  "buckets": {
+    "must_do": [
+      {
+        "name": "Dwarakadhish Temple",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Dwarka",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.6",
+          "review_count": "1214",
+          "ranking": "#1 of 21 things to do in Dwarka",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g660182-d3184202-Reviews-Dwarkadhish_Temple-Dwarka_Devbhumi_Dwarka_District_Gujarat.html?m=66827",
+          "city": "Dwarka"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Bet Dwarka",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Dwarka",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.6",
+          "review_count": "1214",
+          "ranking": "#1 of 21 things to do in Dwarka",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g660182-d3184202-Reviews-Dwarkadhish_Temple-Dwarka_Devbhumi_Dwarka_District_Gujarat.html?m=66827",
+          "city": "Dwarka"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Nageshwar Jyotirlinga",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Dwarka",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "3.1",
+          "review_count": "201",
+          "ranking": "#15 of 21 things to do in Dwarka",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g660182-d6889588-Reviews-Gopi_Talab-Dwarka_Devbhumi_Dwarka_District_Gujarat.html?m=66827",
+          "city": "Dwarka"
+        },
+        "is_seed": true
+      }
+    ],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

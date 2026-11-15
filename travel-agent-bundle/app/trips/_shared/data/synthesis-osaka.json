@@ -1,0 +1,132 @@
+{
+  "destination": "Osaka",
+  "country": "JP",
+  "lat": 34.69,
+  "lon": 135.5,
+  "generated_at": "2026-05-30T04:47:41.440788+00:00",
+  "items_total": 1,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [
+      {
+        "name": "Umeda Sky Building",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Osaka",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.2",
+          "review_count": "1261",
+          "ranking": "#8 of 1,821 things to do in Osaka",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g298566-d10240005-Reviews-Umeda_Sky_Building-Osaka_Osaka_Prefecture_Kinki.html?m=66827",
+          "city": "Osaka"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Osaka Castle",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Osaka",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.1",
+          "review_count": "8306",
+          "ranking": "#7 of 407 things to do in Chuo",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g14127623-d320970-Reviews-Osaka_Castle-Chuo_Osaka_Osaka_Prefecture_Kinki.html?m=66827",
+          "city": "Osaka"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Universal Studios Japan",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Osaka",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.1",
+          "review_count": "11343",
+          "ranking": "#61 of 1,821 things to do in Osaka",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g298566-d320976-Reviews-Universal_Studios_Japan-Osaka_Osaka_Prefecture_Kinki.html?m=66827",
+          "city": "Osaka"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Dotonbori",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Osaka",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.0",
+          "review_count": "101",
+          "ranking": "#5 of 18 things to do in Dotombori",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g14135010-d1752374-Reviews-Dotonbori_Tsuribori-Dotombori_Chuo_Osaka_Osaka_Prefecture_Kinki.html?m=66827",
+          "city": "Dotombori"
+        },
+        "is_seed": true
+      }
+    ],
+    "must_eat": [],
+    "must_buy": [
+      {
+        "name": "Kuromon Ichiba Market",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Osaka",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_buy",
+        "tripadvisor": {
+          "rating": "4.1",
+          "review_count": "3331",
+          "ranking": "#1 of 7 things to do in Nippombashi",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g14134994-d1896861-Reviews-Kuromon_Market-Nippombashi_Chuo_Osaka_Osaka_Prefecture_Kinki.html?m=66827",
+          "city": "Nippombashi"
+        },
+        "is_seed": true
+      }
+    ],
+    "unique_experience": []
+  }
+}

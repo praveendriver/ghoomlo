@@ -1,0 +1,3521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gama Adventures — June 2026 Pilgrimage</title>
+<link rel="icon" type="image/svg+xml" href="../_shared/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_shared/style.css">
+<style>
+  /* Trip-page specific */
+  .hero {
+    position: relative;
+    padding: 80px 0 100px;
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 20%, rgba(217, 122, 58, 0.10), transparent 60%),
+      radial-gradient(ellipse 70% 50% at 20% 80%, rgba(31, 58, 61, 0.08), transparent 60%);
+    overflow: hidden;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .hero h1 { font-size: clamp(48px, 6vw, 84px); margin-bottom: 28px; }
+  .hero-sub {
+    font-size: 19px; color: var(--ink-soft);
+    margin-bottom: 40px; max-width: 480px;
+  }
+  .hero-meta {
+    display: grid; grid-template-columns: repeat(4, auto); gap: 36px;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 36px;
+  }
+  .meta-item .label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--ink-soft); margin-bottom: 6px;
+  }
+  .meta-item .value {
+    font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500;
+  }
+  .hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+
+  .hero-visual { position: relative; height: 560px; }
+  .h-card {
+    position: absolute;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    color: var(--cream);
+    transition: transform .4s cubic-bezier(.2,.8,.2,1);
+    display: flex;
+    flex-direction: column;
+  }
+  .h-card:hover { transform: translateY(-6px) scale(1.02); }
+  .h-card-1 { width: 290px; height: 380px; top: 20px; right: 60px; }
+  .h-card-2 { width: 240px; height: 320px; bottom: 20px; left: 0; }
+  .h-card-img { width: 100%; flex: 1 1 auto; position: relative; min-height: 0; }
+  .h-card-1 .h-card-img {
+    background-image: url('https://images.pexels.com/photos/13621055/pexels-photo-13621055.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+  }
+  .h-card-2 .h-card-img {
+    background-image: url('https://images.pexels.com/photos/36530015/pexels-photo-36530015.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+  }
+  .h-card-img::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.45) 100%);
+  }
+  .h-card-tag {
+    position: absolute; top: 18px; right: 18px;
+    background: rgba(255,255,255,0.92); color: var(--ink);
+    padding: 6px 12px; border-radius: 999px;
+    font-size: 11px; font-weight: 600;
+    backdrop-filter: blur(10px);
+  }
+  .h-card-body { padding: 18px 22px; background: var(--ink); flex: 0 0 auto; }
+  .h-card-body .place {
+    font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .h-card-body .meta { font-size: 13px; opacity: 0.7; }
+
+  .hero-decor {
+    position: absolute; top: 50%; left: -40px;
+    transform: translateY(-50%);
+    display: flex; flex-direction: column; gap: 24px;
+    z-index: 1;
+  }
+  .hero-decor .ring {
+    width: 12px; height: 12px; border-radius: 50%;
+    border: 2px solid var(--ink);
+  }
+  .hero-decor .ring.filled { background: var(--ink); }
+  .hero-decor .line { width: 2px; height: 60px; background: var(--ink); margin-left: 5px; }
+
+  /* ---------- HERO IMAGE STRIP ---------- */
+  .strip {
+    padding: 60px 0 40px;
+    overflow: hidden;
+    position: relative;
+  }
+  .strip-eyebrow {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--saffron);
+    font-weight: 600;
+  }
+  .strip-track {
+    display: flex;
+    gap: 18px;
+    width: max-content;
+    animation: strip-scroll 60s linear infinite;
+    will-change: transform;
+  }
+  .strip:hover .strip-track { animation-play-state: paused; }
+  @keyframes strip-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  /* Edge fade so the loop seam is invisible */
+  .strip::before,
+  .strip::after {
+    content: '';
+    position: absolute;
+    top: 60px; bottom: 40px;
+    width: 120px;
+    z-index: 5;
+    pointer-events: none;
+  }
+  .strip::before {
+    left: 0;
+    background: linear-gradient(to right, var(--cream) 0%, transparent 100%);
+  }
+  .strip::after {
+    right: 0;
+    background: linear-gradient(to left, var(--cream) 0%, transparent 100%);
+  }
+  .strip-card {
+    flex: 0 0 auto;
+    width: 280px;
+    height: 360px;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s;
+  }
+  .strip-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-lg);
+  }
+  .strip-card-img {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform .8s cubic-bezier(.2,.8,.2,1);
+  }
+  .strip-card:hover .strip-card-img { transform: scale(1.08); }
+  .strip-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 35%, rgba(0,0,0,0.75) 100%);
+  }
+  .strip-card-meta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 22px;
+    color: white;
+    z-index: 2;
+  }
+  .strip-card-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(10px);
+    border-radius: 999px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .strip-card-tag.alt {
+    background: rgba(255, 200, 130, 0.25);
+  }
+  .strip-card-name {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 4px;
+  }
+  .strip-card-loc {
+    font-size: 12px;
+    opacity: 0.85;
+  }
+
+  @media (max-width: 640px) {
+    .strip-card { width: 220px; height: 300px; }
+    .strip-card-name { font-size: 18px; }
+    .strip-track { animation-duration: 40s; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .strip-track { animation: none; }
+  }
+
+  /* ---------- COMPARE ---------- */
+  .compare { padding: 100px 0; }
+  .compare-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+  }
+  .opt-card {
+    background: var(--cream-dark);
+    border-radius: var(--r-xl);
+    padding: 8px;
+    transition: transform .3s;
+  }
+  .opt-card.recommended {
+    background: linear-gradient(135deg, #1f3a3d 0%, #122729 100%);
+    color: var(--cream);
+  }
+  .opt-card-image {
+    height: 240px;
+    border-radius: 36px;
+    background-size: cover; background-position: center;
+    position: relative; overflow: hidden;
+  }
+  .opt-card.recommended .opt-card-image {
+    background-image: url('https://images.pexels.com/photos/10271157/pexels-photo-10271157.jpeg?auto=compress&cs=tinysrgb&w=900');
+    background-size: cover;
+    background-position: center;
+  }
+  .opt-card:not(.recommended) .opt-card-image {
+    background-image: url('https://images.pexels.com/photos/23601365/pexels-photo-23601365.jpeg?auto=compress&cs=tinysrgb&w=900');
+    background-size: cover;
+    background-position: center;
+  }
+  .opt-card-image::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.5) 100%);
+  }
+  .opt-badge {
+    position: absolute; top: 20px; left: 20px;
+    background: rgba(255,255,255,0.95); color: var(--ink);
+    padding: 8px 14px; border-radius: 999px;
+    font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    z-index: 2;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .opt-badge.rec { background: var(--saffron); color: white; }
+  .opt-card-body { padding: 32px 28px 28px; }
+  .opt-card h3 { font-size: 32px; margin-bottom: 6px; }
+  .opt-card.recommended h3 { color: var(--cream); }
+  .opt-card .opt-sub { font-size: 14px; color: var(--ink-soft); margin-bottom: 24px; }
+  .opt-card.recommended .opt-sub { color: rgba(246, 241, 232, 0.65); }
+
+  .opt-stats {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+  }
+  .opt-card.recommended .opt-stats { border-color: rgba(246, 241, 232, 0.12); }
+  .stat .stat-val {
+    font-family: 'Fraunces', serif; font-size: 24px; font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .stat .stat-lbl {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-soft);
+  }
+  .opt-card.recommended .stat-lbl { color: rgba(246, 241, 232, 0.6); }
+  .opt-features { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+  .feature-pill {
+    padding: 6px 14px;
+    background: rgba(0,0,0,0.06);
+    border-radius: 999px;
+    font-size: 12px; color: var(--ink-soft);
+  }
+  .opt-card.recommended .feature-pill {
+    background: rgba(246, 241, 232, 0.10);
+    color: rgba(246, 241, 232, 0.85);
+  }
+  .feature-pill.warn { background: rgba(217, 122, 58, 0.15); color: var(--saffron); }
+  .opt-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-weight: 500; color: var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 4px;
+    transition: gap .2s;
+  }
+  .opt-card.recommended .opt-link {
+    color: var(--saffron-soft); border-color: var(--saffron-soft);
+  }
+  .opt-link:hover { gap: 14px; }
+
+  /* ---------- ITINERARY ---------- */
+  .itinerary {
+    padding: 100px 0;
+    background: var(--ink);
+    color: var(--cream);
+    border-radius: var(--r-xl);
+    margin: 0 32px 80px;
+  }
+  @media (min-width: 1300px) {
+    .itinerary {
+      margin-left: calc((100vw - 1240px) / 2 + 32px);
+      margin-right: calc((100vw - 1240px) / 2 + 32px);
+    }
+  }
+  .itinerary .section-eyebrow { color: var(--saffron-soft); }
+  .itinerary h2 { color: var(--cream); }
+  .itinerary .section-head p { color: rgba(246, 241, 232, 0.65); }
+
+  .tabs {
+    display: inline-flex;
+    background: rgba(246, 241, 232, 0.08);
+    border-radius: 999px;
+    padding: 6px;
+    margin-bottom: 56px;
+  }
+  .tab {
+    padding: 12px 28px;
+    background: transparent;
+    color: rgba(246, 241, 232, 0.6);
+    border: none; border-radius: 999px;
+    font-size: 14px; font-weight: 500;
+    transition: all .25s;
+  }
+  .tab.active {
+    background: var(--cream); color: var(--ink);
+  }
+
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; animation: fadeIn .4s; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* timeline */
+  .timeline { position: relative; padding-left: 60px; }
+  .timeline::before {
+    content: ''; position: absolute;
+    left: 16px; top: 14px; bottom: 14px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--saffron) 0%, var(--saffron) 90%, transparent 100%);
+    opacity: 0.3;
+  }
+  .day {
+    position: relative;
+    margin-bottom: 24px;
+    background: rgba(246, 241, 232, 0.04);
+    border: 1px solid rgba(246, 241, 232, 0.08);
+    border-radius: var(--r-md);
+    overflow: hidden;
+    transition: all .3s;
+  }
+  .day:hover {
+    background: rgba(246, 241, 232, 0.07);
+    border-color: rgba(246, 241, 232, 0.15);
+  }
+  .day-marker {
+    position: absolute; left: -52px; top: 22px;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--ink);
+    border: 2px solid var(--saffron);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--saffron-soft);
+    z-index: 2;
+  }
+  .day-marker .icon { width: 16px; height: 16px; }
+  .day summary {
+    padding: 22px 28px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 24px;
+    cursor: pointer;
+    list-style: none;
+  }
+  .day summary::-webkit-details-marker { display: none; }
+  .day-head { flex: 1; display: flex; align-items: center; gap: 24px; }
+  .day-date {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: rgba(246, 241, 232, 0.55);
+    min-width: 110px;
+  }
+  .day-title {
+    font-family: 'Fraunces', serif;
+    font-size: 22px; font-weight: 500;
+    color: var(--cream);
+  }
+  .day-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .day-tag {
+    padding: 3px 10px;
+    background: rgba(217, 122, 58, 0.18);
+    color: var(--saffron-soft);
+    font-size: 11px;
+    border-radius: 999px;
+  }
+  .chev {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: rgba(246, 241, 232, 0.06);
+    display: inline-flex; align-items: center; justify-content: center;
+    transition: transform .3s;
+    flex-shrink: 0;
+    color: var(--cream);
+  }
+  details[open] .chev { transform: rotate(180deg); }
+
+  .day-body {
+    padding: 0 28px 24px 28px;
+    border-top: 1px solid rgba(246, 241, 232, 0.08);
+  }
+
+  /* day rows with icon glyph */
+  .row {
+    padding: 18px 0;
+    display: grid;
+    grid-template-columns: 100px 32px 1fr;
+    gap: 18px;
+    border-bottom: 1px solid rgba(246, 241, 232, 0.05);
+    align-items: flex-start;
+  }
+  .row:last-child { border-bottom: none; }
+  .row-time {
+    font-family: 'Fraunces', serif;
+    font-size: 16px; font-weight: 500;
+    color: var(--saffron-soft);
+    padding-top: 2px;
+  }
+  .row-icon {
+    width: 32px; height: 32px;
+    border-radius: 10px;
+    background: rgba(246, 241, 232, 0.08);
+    color: var(--saffron-soft);
+    display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .row-icon .icon { width: 16px; height: 16px; }
+  .row-icon.transit { background: rgba(180, 200, 230, 0.15); color: #b8d4ee; }
+  .row-icon.temple { background: rgba(217, 122, 58, 0.18); color: var(--saffron-soft); }
+  .row-icon.food { background: rgba(200, 230, 180, 0.10); color: #c8e6b4; }
+  .row-icon.hotel { background: rgba(232, 165, 114, 0.15); color: var(--saffron-soft); }
+  .row-icon.outdoor { background: rgba(150, 200, 200, 0.15); color: #98d4d4; }
+  .row-icon.shopping { background: rgba(210, 180, 230, 0.12); color: #d4b8e6; }
+
+  .row-content {
+    font-size: 15px;
+    color: rgba(246, 241, 232, 0.85);
+    line-height: 1.65;
+  }
+  .row-title { color: var(--cream); font-weight: 500; }
+  .row-content .price {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 10px;
+    background: rgba(246, 241, 232, 0.08);
+    border-radius: 999px;
+    font-size: 12px;
+    color: rgba(246, 241, 232, 0.7);
+  }
+
+  /* ---------- COSTS ---------- */
+  .costs { padding: 100px 0; }
+  .costs-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+    margin-top: 48px;
+  }
+  .cost-card {
+    background: white;
+    border-radius: var(--r-lg);
+    padding: 36px;
+    box-shadow: var(--shadow-sm);
+  }
+  .cost-card.featured {
+    background: linear-gradient(135deg, var(--saffron) 0%, var(--gold) 100%);
+    color: white;
+  }
+  .cost-card h4 {
+    font-size: 24px; font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .cost-card .cost-sub {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+  }
+  .cost-card.featured .cost-sub { color: rgba(255,255,255,0.85); }
+  .cost-row {
+    display: flex; justify-content: space-between;
+    padding: 14px 0;
+    font-size: 15px;
+    border-bottom: 1px solid var(--line);
+  }
+  .cost-card.featured .cost-row { border-color: rgba(255,255,255,0.2); }
+  .cost-row:last-child { border: none; }
+  .cost-row.total {
+    font-family: 'Fraunces', serif;
+    font-size: 22px; font-weight: 500;
+    margin-top: 12px; padding-top: 22px;
+    border-top: 2px solid var(--ink);
+  }
+  .cost-card.featured .cost-row.total { border-color: rgba(255,255,255,0.3); }
+  .cap-bar {
+    height: 8px;
+    background: var(--cream-dark);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  .cap-fill {
+    height: 100%; background: var(--saffron);
+    border-radius: 999px;
+  }
+  .cost-card.featured .cap-bar { background: rgba(255,255,255,0.25); }
+  .cost-card.featured .cap-fill { background: white; }
+  .cap-meta {
+    display: flex; justify-content: space-between;
+    font-size: 12px; margin-top: 8px;
+    color: var(--ink-soft);
+  }
+  .cost-card.featured .cap-meta { color: rgba(255,255,255,0.85); }
+
+  .loyalty-strip {
+    margin-top: 56px;
+    background: var(--ink);
+    color: var(--cream);
+    border-radius: var(--r-lg);
+    padding: 48px;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .loyalty-strip h3 {
+    font-size: 32px;
+    color: var(--cream);
+    margin-bottom: 16px;
+  }
+  .loyalty-strip p {
+    color: rgba(246, 241, 232, 0.7);
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  .loyalty-points {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+  }
+  .lp-item {
+    background: rgba(246, 241, 232, 0.06);
+    padding: 22px; border-radius: var(--r-sm);
+  }
+  .lp-prog {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em;
+    color: rgba(246, 241, 232, 0.5);
+    margin-bottom: 10px;
+  }
+  .lp-bal {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    color: var(--saffron-soft);
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .lp-tier {
+    font-size: 13px;
+    color: rgba(246, 241, 232, 0.85);
+  }
+
+  /* ---------- TRANSPORT (CARS) ---------- */
+  .transport { padding: 100px 0; background: var(--cream-dark); }
+  .transport-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .car-card {
+    background: var(--cream);
+    border-radius: var(--r-lg);
+    padding: 32px;
+    transition: transform .25s, box-shadow .25s;
+    display: flex; flex-direction: column;
+  }
+  .car-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .car-head {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 20px;
+  }
+  .car-icon {
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    background: var(--ink);
+    color: var(--saffron-soft);
+    display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .car-icon .icon { width: 26px; height: 26px; }
+  .car-head h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  .car-leg {
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .car-detail {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+  .car-stats {
+    display: flex; gap: 24px;
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 18px;
+  }
+  .car-stat {
+    flex: 1;
+  }
+  .car-stat-lbl {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  .car-stat-val {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .car-providers {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-top: auto;
+  }
+  .provider-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 14px;
+    background: var(--cream-dark);
+    color: var(--ink);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all .2s;
+  }
+  .provider-link:hover {
+    background: var(--ink); color: var(--cream);
+  }
+  .provider-link .icon { width: 13px; height: 13px; }
+
+  /* ---------- PREP ---------- */
+  .prep { padding: 100px 0; }
+  .prep-grid {
+    display: grid; grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    margin-top: 48px;
+  }
+  .prep-list { display: flex; flex-direction: column; gap: 12px; }
+  .prep-item {
+    background: var(--cream-dark);
+    border-radius: var(--r-md);
+    padding: 24px 28px;
+    display: flex; align-items: center; gap: 24px;
+    transition: transform .25s, box-shadow .25s;
+  }
+  .prep-item:hover {
+    transform: translateX(4px); box-shadow: var(--shadow-sm);
+  }
+  .prep-num {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: var(--ink); color: var(--cream);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-size: 18px; font-weight: 500;
+    flex-shrink: 0;
+  }
+  .prep-item.urgent .prep-num { background: var(--saffron); }
+  .prep-text { flex: 1; }
+  .prep-when {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  .prep-what { font-size: 16px; font-weight: 500; }
+  .prep-what small {
+    display: block;
+    font-weight: 400;
+    color: var(--ink-soft);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .booking-card {
+    background: var(--cream-dark);
+    border-radius: var(--r-lg);
+    padding: 36px;
+    position: sticky;
+    top: 100px;
+  }
+  .booking-card h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .booking-link {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    border-radius: var(--r-sm);
+    background: var(--cream);
+    transition: all .2s;
+  }
+  .booking-link:hover {
+    background: var(--ink); color: var(--cream);
+  }
+  .bl-text { display: flex; flex-direction: column; }
+  .bl-cat {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin-bottom: 2px;
+  }
+  .booking-link:hover .bl-cat { color: rgba(246, 241, 232, 0.65); }
+  .bl-name { font-size: 14px; font-weight: 500; }
+
+  /* ---------- DOOR TO DOOR ---------- */
+  .door {
+    padding: 100px 0;
+    background: var(--ink);
+    color: var(--cream);
+    border-radius: var(--r-xl);
+    margin: 0 32px 80px;
+  }
+  @media (min-width: 1300px) {
+    .door {
+      margin-left: calc((100vw - 1240px) / 2 + 32px);
+      margin-right: calc((100vw - 1240px) / 2 + 32px);
+    }
+  }
+  .door .section-eyebrow { color: var(--saffron-soft); }
+  .door h2 { color: var(--cream); }
+  .door .section-head p { color: rgba(246, 241, 232, 0.65); }
+  .door-flow {
+    position: relative;
+    padding-left: 60px;
+    margin-top: 40px;
+  }
+  .door-flow::before {
+    content: ''; position: absolute;
+    left: 16px; top: 14px; bottom: 14px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--saffron) 0%, var(--saffron) 90%, transparent 100%);
+    opacity: 0.25;
+  }
+  .stage {
+    position: relative;
+    margin-bottom: 28px;
+    background: rgba(246, 241, 232, 0.04);
+    border: 1px solid rgba(246, 241, 232, 0.08);
+    border-radius: var(--r-md);
+    padding: 24px 28px;
+  }
+  .stage-marker {
+    position: absolute; left: -52px; top: 22px;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--ink);
+    border: 2px solid var(--saffron);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--saffron-soft);
+  }
+  .stage-marker .icon { width: 16px; height: 16px; }
+  .stage-head {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; margin-bottom: 12px; flex-wrap: wrap;
+  }
+  .stage-title {
+    font-family: 'Fraunces', serif;
+    font-size: 22px; font-weight: 500;
+    color: var(--cream);
+  }
+  .stage-when {
+    font-size: 12px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--saffron-soft);
+    background: rgba(217, 122, 58, 0.15);
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+  .stage-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 14px;
+  }
+  .stage-col h6 {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: rgba(246, 241, 232, 0.55);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .stage-col ul { list-style: none; }
+  .stage-col li {
+    padding-left: 20px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.55;
+    color: rgba(246, 241, 232, 0.85);
+    margin-bottom: 8px;
+  }
+  .stage-col li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 9px;
+    width: 8px; height: 2px;
+    background: var(--saffron-soft);
+  }
+  .stage .link-chips { margin-top: 12px; }
+
+  /* ---------- POST-TRIP UPDATE ---------- */
+  .post-trip { padding: 100px 0; }
+  .post-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    margin-top: 48px;
+  }
+  .post-prompt {
+    background: var(--cream-dark);
+    border-radius: var(--r-md);
+    padding: 28px;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--ink);
+    user-select: all;
+    white-space: pre-wrap;
+  }
+  .post-fields {
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .post-field {
+    background: white;
+    border-radius: var(--r-sm);
+    padding: 18px 20px;
+    box-shadow: var(--shadow-sm);
+  }
+  .post-field-lbl {
+    font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+  .post-field-val {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .post-field-help {
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  /* Pin button on trip nav */
+  .nav-pin-btn {
+    background: transparent;
+    border: 1px solid var(--line-strong);
+    color: var(--ink);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: all .2s;
+  }
+  .nav-pin-btn:hover, .nav-pin-btn.pinned {
+    background: var(--ink); color: var(--cream);
+    border-color: var(--ink);
+  }
+  .nav-pin-btn.pinned { background: var(--saffron); border-color: var(--saffron); color: white; }
+
+  /* ---------- WHY ---------- */
+  .why { padding: 80px 0 100px; background: var(--cream-dark); }
+  .why-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+    margin-top: 56px;
+  }
+  .why-card {
+    padding: 36px 28px;
+    background: var(--cream);
+    border-radius: var(--r-md);
+    transition: transform .25s, box-shadow .25s;
+  }
+  .why-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-sm);
+  }
+  .why-icon {
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    background: var(--ink); color: var(--saffron-soft);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 24px;
+  }
+  .why-icon .icon { width: 24px; height: 24px; }
+  .why-card h5 {
+    font-size: 22px; font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .why-card p { color: var(--ink-soft); font-size: 15px; }
+
+  @media (max-width: 980px) {
+    .hero-grid, .compare-grid, .costs-grid, .loyalty-strip, .prep-grid, .why-grid, .transport-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero-visual { height: 460px; margin-top: 40px; }
+    .h-card-1 { right: 0; }
+    .booking-card { position: static; }
+  }
+  @media (max-width: 640px) {
+    .hero { padding: 50px 0; }
+    .hero-meta { grid-template-columns: 1fr 1fr; gap: 20px; }
+    .timeline { padding-left: 44px; }
+    .day-marker { left: -38px; width: 28px; height: 28px; }
+    .day-marker .icon { width: 12px; height: 12px; }
+    .day-head { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .day-date { min-width: 0; }
+    .row { grid-template-columns: 1fr; gap: 8px; }
+    .row-icon { width: 28px; height: 28px; }
+    .itinerary { margin: 0 16px 60px; padding: 60px 0; }
+  }
+</style>
+</head>
+<body data-trip-slug="2026-06-Jun3rdWeek">
+
+<!-- ICONS (inline so a single page is portable) -->
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+  <defs>
+    <symbol id="i-plane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="i-utensils" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></symbol>
+    <symbol id="i-landmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></symbol>
+    <symbol id="i-sunrise" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m8 6 4-4 4 4"/><path d="M16 18a4 4 0 0 0-8 0"/></symbol>
+    <symbol id="i-sunset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10V2"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m16 6-4 4-4-4"/><path d="M16 18a4 4 0 0 0-8 0"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></symbol>
+    <symbol id="i-waves" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-shopping" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M3 21v-5h5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></symbol>
+    <symbol id="i-thermo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+    <symbol id="i-luggage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20h0a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h0"/><path d="M8 18V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14"/><path d="M10 20h4"/><circle cx="16" cy="20" r="2"/><circle cx="8" cy="20" r="2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+    <symbol id="i-passport" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 2h16.99c.55 0 1 .45 1 1v18c0 .55-.45 1-1 1H3.5c-.83 0-1.5-.67-1.5-1.5V3.5C2 2.67 2.67 2 3.5 2z"/><circle cx="12" cy="11" r="3"/><path d="M9 18h6"/></symbol>
+    <symbol id="i-camera-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-3"/><circle cx="12" cy="13" r="3"/><path d="M19 4v4"/><path d="M17 6h4"/></symbol>
+  </defs>
+</svg>
+
+<!-- ========== NAV ========== -->
+<nav class="site-nav">
+  <div class="container inner">
+    <a href="../index.html" class="logo">
+      <span class="logo-mark">◈</span>
+      <span class="logo-word"><span class="logo-line">gama<span class="logo-slash">/</span></span><span class="logo-line">adventures</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">All trips</a>
+      <a href="#options" class="active">This trip</a>
+      <a href="#itinerary">Timeline</a>
+      <a href="#veg-restaurants">Veg dining</a>
+      <a href="#influencer-voices">Influencers</a>
+      <a href="#door-to-door">Door to door</a>
+      <a href="#transport">Transport</a>
+      <a href="#must-include">Add items</a>
+      <a href="#post-trip">After</a>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-pin-btn" id="trip-pin-btn" data-pin-id="2026-06-Jun3rdWeek" aria-label="Pin trip" title="Pin trip">
+        <svg class="icon icon-sm"><use href="#i-bookmark"/></svg>
+      </button>
+      <button class="btn btn-saffron btn-sm" data-refresh-trigger
+        data-refresh-name="June 2026 Pilgrimage"
+        data-refresh-prompt="Refresh the trip plan at trips/2026-06-Jun3rdWeek/index.html.
+
+Re-run the full planner chain for Mon Jun 15 → Sun Jun 21, 2026, family of 4 (kids 6, 9), BLR origin:
+
+1. Re-check current fares for BLR ↔ IXM and BLR ↔ JGA via BOM (4 pax, eco). Use Skyscanner/Google Flights to confirm price ranges. Mark snapshots as estimates if anti-bot blocks live scrape.
+2. Re-verify Marriott Madurai availability + award rate; re-search Booking.com for top Rameswaram and Dwarka 4-5 star options.
+3. Re-evaluate Marriott 40K free-night cert candidacy (cert expires 2026-12-31).
+4. Recompute budget envelope vs ₹7L Lux cap.
+5. Update the day-by-day timelines if any festival/event/temple-hours info has changed.
+6. Re-verify all booking links resolve (no 404s). Replace any broken hotel page with a Booking.com search URL.
+7. Overwrite trips/2026-06-Jun3rdWeek/index.html using the existing trips/_shared/style.css and trips/_shared/site.js. Keep the inline icon symbols. Maintain the structure: Hero → Compare → Itinerary tabs → Costs → Transport → Prep.
+8. Update the card on trips/index.html with the new total cost.
+
+Read .workspace/user_travel_prefs.md and .workspace/loyalty.md before recommending — never override constraints (school days, hotel tier, cabin policy)."
+      >
+        <svg class="icon icon-sm"><use href="#i-refresh"/></svg>
+        Refresh
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<header class="hero">
+  <div class="hero-decor">
+    <div class="ring filled"></div>
+    <div class="line"></div>
+    <div class="ring"></div>
+    <div class="line"></div>
+    <div class="ring"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          June 2026 · Family Pilgrimage
+        </div>
+        <h1 data-parallax="0.05">A southern coast<br><em>or</em> a western shore.</h1>
+        <p class="hero-sub">
+          Two pilgrimage circuits, one open week of summer break, family of four. Crafted around your loyalty status, the kids' pace, and the heat.
+        </p>
+
+        <div class="hero-meta">
+          <div class="meta-item">
+            <div class="label">Window</div>
+            <div class="value">Jun 15 – 21</div>
+          </div>
+          <div class="meta-item">
+            <div class="label">Travelers</div>
+            <div class="value">4</div>
+          </div>
+          <div class="meta-item">
+            <div class="label">Nights</div>
+            <div class="value">6</div>
+          </div>
+          <div class="meta-item">
+            <div class="label">From</div>
+            <div class="value">BLR</div>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#options" class="btn btn-primary">Compare options <svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></a>
+          <a href="#itinerary" class="btn btn-ghost">See timeline</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="h-card h-card-1" data-parallax="0.06">
+          <div class="h-card-img">
+            <span class="h-card-tag">
+              <svg class="icon icon-sm" style="display:inline; vertical-align: middle; margin-right: 4px;"><use href="#i-star"/></svg>
+              Recommended
+            </span>
+          </div>
+          <div class="h-card-body">
+            <div class="place">Rameswaram &amp; Madurai</div>
+            <div class="meta">Tamil Nadu · 1h 15m · ₹1.84L</div>
+          </div>
+        </div>
+        <div class="h-card h-card-2" data-parallax="0.10">
+          <div class="h-card-img">
+            <span class="h-card-tag">Alternative</span>
+          </div>
+          <div class="h-card-body">
+            <div class="place">Dwarka &amp; Somnath</div>
+            <div class="meta">Gujarat · via BOM · ₹2.15L</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ========== HERO IMAGE STRIP ========== -->
+<section class="strip" aria-label="Trip highlights">
+  <div class="strip-eyebrow">Sites you'll see</div>
+  <div class="strip-track" id="strip-track">
+    <!-- 8 cards × duplicated → 16 for seamless loop -->
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/13621055/pexels-photo-13621055.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Bridge</span>
+        <div class="strip-card-name">Pamban Bridge</div>
+        <div class="strip-card-loc">Rameswaram · sunset crossing</div>
+      </div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/10271157/pexels-photo-10271157.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Temple</span>
+        <div class="strip-card-name">Meenakshi Amman</div>
+        <div class="strip-card-loc">Madurai · 1000-pillar hall</div>
+      </div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/5690494/pexels-photo-5690494.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Heritage</span>
+        <div class="strip-card-name">Thirumalai Mahal</div>
+        <div class="strip-card-loc">Madurai · 17th-c palace</div>
+      </div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/19792431/pexels-photo-19792431.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Coast</span>
+        <div class="strip-card-name">Dhanushkodi</div>
+        <div class="strip-card-loc">Southern tip · ghost town</div>
+      </div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/15571574/pexels-photo-15571574/free-photo-of-wooden-pier-in-sunlight.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Beach</span>
+        <div class="strip-card-name">Agnitheertham</div>
+        <div class="strip-card-loc">Rameswaram · sacred sea</div>
+      </div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/36530015/pexels-photo-36530015.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag alt">Char Dham</span>
+        <div class="strip-card-name">Dwarkadhish</div>
+        <div class="strip-card-loc">Dwarka · Krishna's shrine</div>
+      </div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/32604468/pexels-photo-32604468.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag alt">Sunset</span>
+        <div class="strip-card-name">Dwarka Coast</div>
+        <div class="strip-card-loc">Gujarat · west shore</div>
+      </div>
+    </article>
+    <article class="strip-card">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/23601365/pexels-photo-23601365.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag alt">Pier</span>
+        <div class="strip-card-name">Sudama Setu</div>
+        <div class="strip-card-loc">Dwarka · footbridge to Panchkui</div>
+      </div>
+    </article>
+    <!-- Duplicated set for seamless loop -->
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/13621055/pexels-photo-13621055.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Bridge</span>
+        <div class="strip-card-name">Pamban Bridge</div>
+        <div class="strip-card-loc">Rameswaram · sunset crossing</div>
+      </div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/10271157/pexels-photo-10271157.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Temple</span>
+        <div class="strip-card-name">Meenakshi Amman</div>
+        <div class="strip-card-loc">Madurai · 1000-pillar hall</div>
+      </div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/5690494/pexels-photo-5690494.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Heritage</span>
+        <div class="strip-card-name">Thirumalai Mahal</div>
+        <div class="strip-card-loc">Madurai · 17th-c palace</div>
+      </div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/19792431/pexels-photo-19792431.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Coast</span>
+        <div class="strip-card-name">Dhanushkodi</div>
+        <div class="strip-card-loc">Southern tip · ghost town</div>
+      </div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/15571574/pexels-photo-15571574/free-photo-of-wooden-pier-in-sunlight.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag">Beach</span>
+        <div class="strip-card-name">Agnitheertham</div>
+        <div class="strip-card-loc">Rameswaram · sacred sea</div>
+      </div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/36530015/pexels-photo-36530015.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag alt">Char Dham</span>
+        <div class="strip-card-name">Dwarkadhish</div>
+        <div class="strip-card-loc">Dwarka · Krishna's shrine</div>
+      </div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/32604468/pexels-photo-32604468.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag alt">Sunset</span>
+        <div class="strip-card-name">Dwarka Coast</div>
+        <div class="strip-card-loc">Gujarat · west shore</div>
+      </div>
+    </article>
+    <article class="strip-card" aria-hidden="true">
+      <div class="strip-card-img" style="background-image: url('https://images.pexels.com/photos/23601365/pexels-photo-23601365.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+      <div class="strip-card-meta">
+        <span class="strip-card-tag alt">Pier</span>
+        <div class="strip-card-name">Sudama Setu</div>
+        <div class="strip-card-loc">Dwarka · footbridge to Panchkui</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ========== COMPARE ========== -->
+<section class="compare" id="options">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">The two paths</div>
+        <h2>Char Dham, <em>two ways</em></h2>
+      </div>
+      <p>Both options earn you a Char Dham + Jyotirlinga combination. They diverge sharply on weather, travel days, and what your loyalty status can actually do for you.</p>
+    </div>
+
+    <div class="compare-grid">
+      <div class="opt-card recommended" data-reveal>
+        <div class="opt-card-image">
+          <span class="opt-badge rec">
+            <svg class="icon icon-sm"><use href="#i-star"/></svg>
+            Recommended
+          </span>
+        </div>
+        <div class="opt-card-body">
+          <h3>Rameswaram &amp; Madurai</h3>
+          <p class="opt-sub">Tamil Nadu · Char Dham + Jyotirlinga combined in Ramanathaswamy</p>
+          <div class="opt-stats">
+            <div class="stat"><div class="stat-val">₹1.84L</div><div class="stat-lbl">Total est.</div></div>
+            <div class="stat"><div class="stat-val">1h 15m</div><div class="stat-lbl">Direct flight</div></div>
+            <div class="stat"><div class="stat-val">3 + 3</div><div class="stat-lbl">Hotel nights</div></div>
+          </div>
+          <div class="opt-features">
+            <span class="feature-pill">Bonvoy Titanium suite + breakfast</span>
+            <span class="feature-pill">40K cert candidate</span>
+            <span class="feature-pill">Aquarium + beach + bridge</span>
+            <span class="feature-pill">Char Dham 1/4</span>
+          </div>
+          <a href="#itin-a" class="opt-link">See full itinerary <svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </div>
+
+      <div class="opt-card" data-reveal>
+        <div class="opt-card-image">
+          <span class="opt-badge">Alternative</span>
+        </div>
+        <div class="opt-card-body">
+          <h3>Dwarka &amp; Somnath</h3>
+          <p class="opt-sub">Gujarat · Krishna's western shore + Jyotirlinga</p>
+          <div class="opt-stats">
+            <div class="stat"><div class="stat-val">₹2.15L</div><div class="stat-lbl">Total est.</div></div>
+            <div class="stat"><div class="stat-val">5–6h</div><div class="stat-lbl">Via BOM</div></div>
+            <div class="stat"><div class="stat-val">5 + 1</div><div class="stat-lbl">Hotel nights</div></div>
+          </div>
+          <div class="opt-features">
+            <span class="feature-pill warn">No Marriott on island</span>
+            <span class="feature-pill warn">Hot &amp; humid 65%</span>
+            <span class="feature-pill">Bet Dwarka boat</span>
+            <span class="feature-pill">Char Dham 1/4</span>
+          </div>
+          <a href="#itin-b" class="opt-link">See full itinerary <svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ITINERARY ========== -->
+<section class="itinerary" id="itinerary">
+  <div class="container with-map">
+    <aside class="section-with-map__map" data-trip-map="itinerary" aria-label="Map of itinerary stops"></aside>
+    <div class="with-map__main">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Day by day</div>
+        <h2>The <em>timeline</em></h2>
+      </div>
+      <p>One anchor activity per day. Mornings are early — temple visits before 9am, when the kids and the heat are both manageable. Click any line item to book directly.</p>
+    </div>
+
+    <div class="tabs" data-tabs role="tablist">
+      <button class="tab active" data-tab="a">Rameswaram &amp; Madurai</button>
+      <button class="tab" data-tab="b">Dwarka &amp; Somnath</button>
+    </div>
+
+    <!-- =========== OPTION A =========== -->
+    <div class="tab-panel active" data-panel="a" id="itin-a">
+      <div class="timeline">
+
+        <details class="day" open>
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-plane"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Mon · Jun 15</div>
+                <div class="day-title">Arrive Madurai</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Travel</span>
+                <span class="day-tag">Settle</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">10:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-plane"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">BLR → IXM</span> — IndiGo / Air India Express, direct.
+                <span class="price">₹46K rt × 4 est.</span>
+                <div data-route="flight"
+                  data-from="BLR" data-from-label="Bangalore" data-from-time="Mon · 10:00"
+                  data-to="IXM" data-to-label="Madurai" data-to-time="Mon · 11:15"
+                  data-duration="1h 15m"></div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.skyscanner.co.in/transport/flights/blr/ixm/260615/260621/?adults=4" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Skyscanner</a>
+                  <a class="chip" href="https://www.google.com/travel/flights?q=Flights%20from%20BLR%20to%20IXM%20on%202026-06-15%20through%202026-06-21" target="_blank"><svg class="icon"><use href="#i-plane"/></svg> Google Flights</a>
+                  <a class="chip" href="https://www.goindigo.in/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> IndiGo</a>
+                  <a class="chip" href="https://www.airindiaexpress.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> AI Express</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">14:00</div>
+              <div class="row-icon hotel"><svg class="icon"><use href="#i-bed"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Courtyard by Marriott Madurai</span> — Titanium check-in. Suite upgrade likely; pool + welcome drinks.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.marriott.com/en-us/hotels/maaco-courtyard-madurai/overview/" target="_blank"><svg class="icon"><use href="#i-bed"/></svg> Marriott direct</a>
+                  <a class="chip" href="https://www.booking.com/searchresults.html?ss=Madurai&checkin=2026-06-15&checkout=2026-06-18&group_adults=2&group_children=2" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Booking.com</a>
+                  <a class="chip" href="https://www.google.com/maps/search/Courtyard+by+Marriott+Madurai" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">13:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Hotel restaurant (MoMo Café, Courtyard Madurai)</span> — easy first-day pure-veg multi-cuisine. Kid menu available.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> South Indian thali · Margherita pizza · paneer butter masala · idiyappam.
+                  <em style="opacity: .8;">Hours: hotel restaurants typically run all-day; verify on the property page.</em>
+                </div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.marriott.com/en-us/hotels/maaco-courtyard-madurai/dining/" target="_blank"><svg class="icon"><use href="#i-bed"/></svg> Hotel dining</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" data-rest-name="Murugan Idli" data-rest-city="Madurai">
+              <div class="row-time">19:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · Murugan Idli Shop, West Masi Street</span> — Madurai's most famous idli chain (pure-veg). Kid-friendly. <span class="price">₹250–400/head</span>
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> idli · vada · pongal · the signature ghee-filled "ghee podi idli" · filter coffee.
+                  <em style="opacity: .8;">Hours: typically open 06:00–22:30 daily; verify on Maps before going.</em>
+                </div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Murugan+Idli+Shop+Madurai" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Google Maps</a>
+                  <a class="chip" href="https://www.zomato.com/madurai/restaurants/murugan-idli-shop" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Zomato</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-sunrise"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Tue · Jun 16</div>
+                <div class="day-title">Meenakshi at sunrise</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Temple</span>
+                <span class="day-tag">Heritage</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">05:30</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Meenakshi Amman Temple</span> — early darshan with a guide (₹500–800). Thousand-pillar hall, Tamil iconography for the kids.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Meenakshi+Amman+Temple+Madurai" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                  <a class="chip" href="https://maduraimeenakshi.org/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Temple site</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">09:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Breakfast · Hotel (free for Titanium)</span>
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> dosa with sambar &amp; chutney · idli · upma · ven pongal · uttapam · paratha · fresh fruit · filter coffee.
+                </div>
+              </div>
+            </div>
+
+            <div class="row" data-rest-name="Konar Kadai" data-rest-city="Madurai">
+              <div class="row-time">13:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Konar Kadai Mess, Simmakkal</span> — landmark Madurai mess serving traditional banana-leaf veg meals (kalakki / kadayal). Pure-veg.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> Tamil meals on banana leaf · sambar rice · rasam rice · curd rice · poriyal · kootu · paruppu vadai. Famous for sweet-tinged "kalakki" eggless variations.
+                  <em style="opacity: .8;">Hours: lunch service typically 11:30–15:00; verify on Maps.</em>
+                </div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Konar+Kadai+Madurai" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Google Maps</a>
+                  <a class="chip" href="https://www.zomato.com/madurai/restaurants?q=konar+kadai" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Zomato</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">16:30</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Thirumalai Nayakkar Mahal</span> — 17th-century palace + sound &amp; light show 18:45 (English).
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Thirumalai+Nayakkar+Mahal" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" data-rest-name="Sangam" data-rest-city="Madurai">
+              <div class="row-time">20:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · Hotel restaurant or Sangam Restaurant (West Veli St)</span> — Sangam is a long-running pure-veg multi-cuisine spot near the temple complex.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> South-Indian thali · Chettinad veg gravies · tandoori paneer · butter naan · gulab jamun.
+                  <em style="opacity: .8;">Hours: most Madurai pure-veg restaurants run 11:00–23:00; verify on Maps.</em>
+                </div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Sangam+Restaurant+West+Veli+Madurai" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Sangam Map</a>
+                  <a class="chip" href="https://www.zomato.com/madurai/sangam-restaurant-west-veli-street" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Zomato</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-route"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Wed · Jun 17</div>
+                <div class="day-title">Drive to Rameswaram</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Transit</span>
+                <span class="day-tag">Pamban Bridge</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">08:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Breakfast · Hotel (Titanium = free)</span>
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">Pack a heavy breakfast — Day 3 has a 4-hour drive ahead. South Indian + Continental spread.</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">10:00</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                Optional <span class="row-title">Gandhi Memorial Museum</span> (well-curated, kid-friendly) or pool morning. 4pm guaranteed late checkout (Titanium).
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Gandhi+Memorial+Museum+Madurai" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" data-rest-name="Konar Kadai" data-rest-city="Madurai">
+              <div class="row-time">13:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Konar Kadai</span> — Tamil veg meals on banana leaf. Heritage spot. <span class="price">₹400/head</span>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Konar+Kadai+Madurai" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">15:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Madurai → Rameswaram</span> — 175km via NH87. Toyota Innova / Crysta with driver. <span class="price">₹4.5–6K one-way</span>
+                <div data-route="car"
+                  data-from="MDU" data-from-label="Madurai" data-from-time="Wed · 15:00"
+                  data-to="RMM" data-to-label="Rameswaram" data-to-time="Wed · 19:00"
+                  data-duration="4h · 175 km"></div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.savaari.com/outstation-cabs/madurai-to-rameshwaram-cabs/" target="_blank"><svg class="icon"><use href="#i-car"/></svg> Savaari</a>
+                  <a class="chip" href="https://www.google.com/maps/dir/Madurai/Rameswaram" target="_blank"><svg class="icon"><use href="#i-route"/></svg> Route</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">19:30</div>
+              <div class="row-icon outdoor"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Pamban Bridge</span> at sunset. New road bridge — stunning. Old rail bridge iconic in the distance.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Pamban+Bridge" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">21:00</div>
+              <div class="row-icon hotel"><svg class="icon"><use href="#i-bed"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Hotel check-in Rameswaram</span> — limited 5-star inventory; live rates in the Hotels widget below.
+                <div class="link-chips">
+                  <a class="chip" href="#hotels"><svg class="icon"><use href="#i-bed"/></svg> Live rates ↓</a>
+                  <a class="chip" href="https://www.booking.com/searchresults.html?ss=Rameswaram&checkin=2026-06-17&checkout=2026-06-20&group_adults=2&group_children=2&class=4" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Booking.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" data-rest-name="Ahaan" data-rest-city="Rameswaram">
+              <div class="row-time">21:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · Ahaan Restaurant (Daiwik Hotel) or hotel restaurant</span> — Ahaan is one of the highest-rated pure-veg in Rameswaram (4.3★ · 1.6K reviews on Google).
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> Tamil thali · pongal · uttapam · paneer butter masala · chapati. Family menu friendly to younger kids.
+                </div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Ahaan+Restaurant+Daiwik+Rameswaram" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-landmark"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Thu · Jun 18</div>
+                <div class="day-title">Ramanathaswamy &amp; the wells</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Char Dham</span>
+                <span class="day-tag">Jyotirlinga</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">05:00</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Ramanathaswamy Temple</span> + the 22-well sacred bath (3h). Hire a priest (₹500–1K). Skip the bath if uncomfortable — darshan alone is the core.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Ramanathaswamy+Temple" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                  <a class="chip" href="https://rameswaramtemple.tnhrce.in/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Temple site</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">10:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Breakfast · Hotel</span> — big spread after the early temple visit.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">South Indian + Continental. Filter coffee here can be exceptional.</div>
+              </div>
+            </div>
+
+            <div class="row" data-rest-name="Ganesh Mess" data-rest-city="Rameswaram">
+              <div class="row-time">13:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Ganesh Mess</span> — local pure-veg mess (4.2★ · 800+ reviews). Tamil thali + breeze of pilgrim crowds.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> Tamil meals · sambar rice · curd rice · papad · payasam.
+                </div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Ganesh+Mess+Rameswaram" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">17:00</div>
+              <div class="row-icon outdoor"><svg class="icon"><use href="#i-waves"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Agnitheertham</span> sunset — sacred sea-bath area, gentle waves. Beach time for the kids.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Agnitheertham" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" data-rest-name="Urban Veggie" data-rest-city="Rameswaram">
+              <div class="row-time">20:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · Urban Veggie Restaurant</span> — modern pure-veg in Rameswaram (4.3★ · 240+ reviews).
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> North Indian + South Indian mix · paneer dishes · Indo-Chinese for kids.
+                </div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Urban+Veggie+Rameswaram" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-camera"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Fri · Jun 19</div>
+                <div class="day-title">Dhanushkodi &amp; the aquarium</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Coastal</span>
+                <span class="day-tag">Kid-anchor</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">06:30</div>
+              <div class="row-icon outdoor"><svg class="icon"><use href="#i-waves"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dhanushkodi</span> — 18km drive + 4WD beach jeep last 5km. Ghost town + southern tip; Sri Lanka faintly visible. <span class="price">Jeep ₹500–800</span>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Dhanushkodi+Beach" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">11:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Late breakfast · Hotel</span> — recovery + hydration after the early Dhanushkodi 4WD.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">Big breakfast spread + filter coffee. Long siesta block follows.</div>
+              </div>
+            </div>
+
+            <div class="row" data-rest-name="Lakshmi villas" data-rest-city="Rameswaram">
+              <div class="row-time">14:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Hotel Lakshmi Villas Pure Veg</span> — pilgrim-staple pure-veg (3.9★ · 380+ reviews).
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> Tamil meals · sambar rice · idli platter for kids.
+                </div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Hotel+Lakshmi+villas+pure+veg+Rameswaram" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">16:00</div>
+              <div class="row-icon outdoor"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Sea World Aquarium</span> (1h, the only one in TN) + <span class="row-title">APJ Abdul Kalam Memorial</span> (1h, beautifully designed).
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Sea+World+Aquarium+Rameswaram" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Aquarium</a>
+                  <a class="chip" href="https://www.google.com/maps/search/Abdul+Kalam+Memorial" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Memorial</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" data-rest-name="Annapoorna" data-rest-city="Rameswaram">
+              <div class="row-time">19:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · Hotel sdm Sri Annapoorna or hotel</span> — long-running pure-veg near the temple area (3.9★).
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> Tamil dinner thali · uttapam · kesari for dessert.
+                </div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Sri+Annapoorna+Rameswaram" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-mountain"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Sat · Jun 20</div>
+                <div class="day-title">Slow day &amp; final temple</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Slow</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">07:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Breakfast · Hotel</span> — relaxed Saturday morning.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">09:00</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                Optional second darshan at <span class="row-title">Ramanathaswamy</span> — quieter Saturday morning.
+              </div>
+            </div>
+
+            <div class="row" data-rest-name="Sai Sabari" data-rest-city="Rameswaram">
+              <div class="row-time">13:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Sai Sabari Restaurant or hotel</span> — pure-veg Tamil mess (3.8★).
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> Tamil banana-leaf meals · paruppu vadai · payasam.
+                </div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Sai+Sabari+Restaurant+Rameswaram" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">16:00</div>
+              <div class="row-icon outdoor"><svg class="icon"><use href="#i-mountain"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Gandhamadana Parvatham</span> — highest point on the island; Ramarpatham temple with Rama's footprint. Short climb, big view.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Gandhamadana+Parvatham" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">18:30</div>
+              <div class="row-icon outdoor"><svg class="icon"><use href="#i-sunset"/></svg></div>
+              <div class="row-content">
+                Sunset at <span class="row-title">Kothandaramaswamy Temple</span> — southernmost point.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Kothandaramaswamy+Temple" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">20:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                Final-night dinner at the hotel — pre-book.
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-plane"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Sun · Jun 21</div>
+                <div class="day-title">Return to Bangalore</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Travel</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">08:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Breakfast · Hotel</span> — fuel up before the long drive. Pack an extra parcel for the road if available.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">09:30</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                Drive Rameswaram → Madurai (4h).
+                <div data-route="car"
+                  data-from="RMM" data-from-label="Rameswaram" data-from-time="Sun · 09:30"
+                  data-to="MDU" data-to-label="Madurai" data-to-time="Sun · 13:30"
+                  data-duration="4h · 175 km"></div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.savaari.com/outstation-cabs/rameshwaram-to-madurai-cabs/" target="_blank"><svg class="icon"><use href="#i-car"/></svg> Savaari</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" data-rest-name="Sree Sabarees" data-rest-city="Madurai">
+              <div class="row-time">14:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Sree Sabarees, Town Hall Rd</span> — Madurai institution (4.2★ · 10K reviews on Google). Quick service, kid-friendly.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> mini meals · sambar rice · curd rice · masala dosa · filter coffee.
+                </div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Sree+Sabarees+Madurai" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">15:30</div>
+              <div class="row-icon shopping"><svg class="icon"><use href="#i-shopping"/></svg></div>
+              <div class="row-content">
+                Optional pickup of <span class="row-title">Sungudi sarees</span> or brass at Pudhu Mandapam.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Pudhu+Mandapam+Madurai" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Pudhu Mandapam</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">17:30</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-plane"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">IXM → BLR</span>. Home by evening.
+                <div data-route="flight"
+                  data-from="IXM" data-from-label="Madurai" data-from-time="Sun · 17:30"
+                  data-to="BLR" data-to-label="Bangalore" data-to-time="Sun · 18:45"
+                  data-duration="1h 15m"></div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.skyscanner.co.in/transport/flights/ixm/blr/260621/?adults=4" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Skyscanner</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+
+    <!-- =========== OPTION B =========== -->
+    <div class="tab-panel" data-panel="b" id="itin-b">
+      <div class="timeline">
+
+        <details class="day" open>
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-plane"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Mon · Jun 15</div>
+                <div class="day-title">Travel to Dwarka</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Travel</span>
+                <span class="day-tag">Long day</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">07:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-plane"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">BLR → BOM</span>. Lounge layover (Plaza Premium / OneWorld Sapphire).
+                <div data-route="flight"
+                  data-from="BLR" data-from-label="Bangalore" data-from-time="Mon · 07:00"
+                  data-to="BOM" data-to-label="Mumbai" data-to-time="Mon · 09:00"
+                  data-duration="2h"></div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.skyscanner.co.in/transport/flights/blr/bom/260615/?adults=4" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Skyscanner</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">12:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-plane"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">BOM → JGA</span>. <span class="price">₹86K rt × 4 est. (combined)</span>
+                <div data-route="flight"
+                  data-from="BOM" data-from-label="Mumbai" data-from-time="Mon · 12:00"
+                  data-to="JGA" data-to-label="Jamnagar" data-to-time="Mon · 13:30"
+                  data-duration="1h 30m"></div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.skyscanner.co.in/transport/flights/blr/jga/260615/260621/?adults=4" target="_blank"><svg class="icon"><use href="#i-search"/></svg> BLR-JGA combined</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">15:30</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Jamnagar → Dwarka</span> by car, 131km on NH947. <span class="price">₹3–4K</span>
+                <div data-route="car"
+                  data-from="JGA" data-from-label="Jamnagar" data-from-time="Mon · 15:30"
+                  data-to="DWK" data-to-label="Dwarka" data-to-time="Mon · 18:00"
+                  data-duration="2.5h · 131 km"></div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.savaari.com/outstation-cabs/jamnagar-to-dwarka-cabs/" target="_blank"><svg class="icon"><use href="#i-car"/></svg> Savaari</a>
+                  <a class="chip" href="https://www.google.com/maps/dir/Jamnagar+Airport/Dwarka" target="_blank"><svg class="icon"><use href="#i-route"/></svg> Route</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">19:00</div>
+              <div class="row-icon hotel"><svg class="icon"><use href="#i-bed"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Hotel check-in Dwarka</span> — see live rates in the Hotels widget below.
+                <div class="link-chips">
+                  <a class="chip" href="#hotels"><svg class="icon"><use href="#i-bed"/></svg> Live rates ↓</a>
+                  <a class="chip" href="https://www.booking.com/searchresults.html?ss=Dwarka%2C+Gujarat&checkin=2026-06-15&checkout=2026-06-19&group_adults=2&group_children=2" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Booking.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">20:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · Hotel restaurant</span> — light first night after the long travel.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> Gujarati thali · undhiyu (if seasonal) · khichdi · roti. <em style="opacity:.8;">Dwarka has thin Google Maps coverage — most pure-veg dining is at hotels or pilgrim messes near the temple.</em>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-sunrise"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Tue · Jun 16</div>
+                <div class="day-title">Dwarkadhish &amp; Gomti Ghat</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Char Dham</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">05:30</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dwarkadhish (Jagat Mandir)</span> — 5-storey, 78m spire. ~2h darshan + aarti.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Dwarkadhish+Temple" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">09:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                Breakfast at <span class="row-title">Gomti Ghat</span>.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Gomti+Ghat+Dwarka" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">11:00</div>
+              <div class="row-icon hotel"><svg class="icon"><use href="#i-thermo"/></svg></div>
+              <div class="row-content">
+                Hotel pool + long midday rest. <strong style="color:#ffb986;">Heat is real here</strong> — 32–37°C, 65% humidity.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">13:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Hotel restaurant</span> — most veg-friendly stable option in Dwarka.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> Gujarati thali · dal-bhati · khaman dhokla · shrikhand. Hotel kitchens here often run a strict pure-veg menu given pilgrim clientele.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">17:30</div>
+              <div class="row-icon outdoor"><svg class="icon"><use href="#i-sunset"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Sudama Setu</span> footbridge to Panchkui island — sunset over the Gomti meeting the Arabian Sea.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Sudama+Setu+Dwarka" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">20:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · Local pure-veg dhaba near hotel</span> — ask reception for nearest pilgrim-rated thali. Most options are walk-up dhabas serving full Gujarati/Punjabi spreads.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> chole-bhature · paneer dishes · jeera rice · roti. <em style="opacity:.8;">Verify hours on Google Maps before going — Dwarka has thin Maps coverage and stalls close earlier on monsoon evenings.</em>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-waves"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Wed · Jun 17</div>
+                <div class="day-title">Bet Dwarka &amp; Nageshvara</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Jyotirlinga</span>
+                <span class="day-tag">Boat</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">05:30</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Sudarshan Setu</span> bridge → <span class="row-title">Bet Dwarka</span>. Original Krishna residence. 2.5h round-trip.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Bet+Dwarka" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">10:30</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Nageshvara Jyotirlinga</span> — 16km from Dwarka. One of 12 Jyotirlingas.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Nageshvara+Jyotirlinga" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">08:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Breakfast · Hotel</span> — quick fuel after the early Bet Dwarka boat.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> thepla · poha · jalebi-fafda · masala chai. Pilgrim-strong hotels in Dwarka serve traditional Gujarati breakfast.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">12:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Hotel + pool + long siesta</span> — Gujarati thali at hotel + cold drinks. Heat is real outside.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">17:30</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Rukmini Devi Temple</span> — 2km away, 12th century.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Rukmini+Devi+Temple+Dwarka" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">20:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · Hotel restaurant</span> — kids will be tired after the long temple-day. Easy hotel option wins.
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-waves"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Thu · Jun 18</div>
+                <div class="day-title">Beach &amp; lighthouse</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Slow</span>
+                <span class="day-tag">Coastal</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">06:00</div>
+              <div class="row-icon outdoor"><svg class="icon"><use href="#i-waves"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Shivrajpur Beach</span> — Blue Flag, 14.5km away. Gentle waves; kid swim time before heat.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Shivrajpur+Beach" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">10:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Brunch · Hotel</span> — back from the beach with appetites.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> Gujarati breakfast spread · methi-thepla · upma · mango lassi.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">11:00</div>
+              <div class="row-icon hotel"><svg class="icon"><use href="#i-thermo"/></svg></div>
+              <div class="row-content">
+                Hotel rest, deep AC, nap.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">14:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Light hotel meal</span> — keep it simple between brunch and the planned 20:00 dinner. Skipping or going lighter at one meal is fine on heat-trip days.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> dal-rice · curd · papad. Or just snack on fruit + thepla.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">17:00</div>
+              <div class="row-icon outdoor"><svg class="icon"><use href="#i-sunset"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dwarka Lighthouse</span> — climb at sunset. Light visible 16km out.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Dwarka+Lighthouse" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">20:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Sangam Family Restaurant</span> — local Gujarati thali.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Gujarati+thali+restaurant+Dwarka" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-sparkles"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Fri · Jun 19</div>
+                <div class="day-title">Day trip or move to Somnath</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Optional</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">06:00</div>
+              <div class="row-icon temple"><svg class="icon"><use href="#i-landmark"/></svg></div>
+              <div class="row-content">
+                <strong>Recommended:</strong> second Dwarkadhish darshan (Friday morning often special). Skip the Somnath drive — it's a 4h+ each way day-killer.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">09:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Breakfast · Hotel</span> after the early darshan. Heavy fuel for the day.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">11:00</div>
+              <div class="row-icon outdoor"><svg class="icon"><use href="#i-camera"/></svg></div>
+              <div class="row-content">
+                Optional: <span class="row-title">submarine underwater tourism</span> if launched (recently announced).
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">13:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · Hotel restaurant</span> — Gujarati thali. Mid-day heat indoor.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">14:00</div>
+              <div class="row-icon hotel"><svg class="icon"><use href="#i-thermo"/></svg></div>
+              <div class="row-content">
+                Hotel pool, slow afternoon. Pack for tomorrow's drive.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">19:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Early dinner · Hotel + early sleep</span> — long drive tomorrow.
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-route"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Sat · Jun 20</div>
+                <div class="day-title">Drive to Jamnagar</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Transit</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">08:30</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Breakfast · Hotel</span> — pack a parcel for the road.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">10:00</div>
+              <div class="row-icon shopping"><svg class="icon"><use href="#i-shopping"/></svg></div>
+              <div class="row-content">
+                Slow morning. Last shopping at Dwarka markets — silver, sea-shell craft.
+                <div class="link-chips">
+                  <a class="chip" href="https://www.google.com/maps/search/Dwarka+markets" target="_blank"><svg class="icon"><use href="#i-pin"/></svg> Map</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">14:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-car"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dwarka → Jamnagar</span>.
+                <div data-route="car"
+                  data-from="DWK" data-from-label="Dwarka" data-from-time="Sat · 14:00"
+                  data-to="JGA" data-to-label="Jamnagar" data-to-time="Sat · 16:30"
+                  data-duration="2.5h · 131 km"></div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.savaari.com/outstation-cabs/dwarka-to-jamnagar-cabs/" target="_blank"><svg class="icon"><use href="#i-car"/></svg> Savaari</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">13:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Lunch · highway dhaba mid-route or arrival in Jamnagar</span> — Gujarati thali at any reputable dhaba on NH947.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> dal-rice · gatta curry · roti · chaas. Check Google Maps for current ratings before stopping.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">18:00</div>
+              <div class="row-icon hotel"><svg class="icon"><use href="#i-bed"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Hotel near Jamnagar airport</span> overnight.
+                <div class="link-chips">
+                  <a class="chip" href="#hotels"><svg class="icon"><use href="#i-bed"/></svg> Live rates ↓</a>
+                  <a class="chip" href="https://www.booking.com/searchresults.html?ss=Jamnagar&checkin=2026-06-20&checkout=2026-06-21&group_adults=2&group_children=2" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Booking.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">20:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">Dinner · Hotel restaurant or Gujarati thali nearby</span> — Jamnagar's airport-area hotels typically offer pure-veg Gujarati menus.
+                <div style="font-size:13px; color: rgba(246,241,232,0.65); margin-top: 4px;">
+                  <strong>Try (vegetarian):</strong> Kathiawadi thali · sev-tameta · roti · jeera rice. Sleep early — early flight tomorrow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="day">
+          <summary>
+            <span class="day-marker"><svg class="icon"><use href="#i-plane"/></svg></span>
+            <div class="day-head">
+              <div>
+                <div class="day-date">Sun · Jun 21</div>
+                <div class="day-title">Return to Bangalore</div>
+              </div>
+              <div class="day-tags">
+                <span class="day-tag">Travel</span>
+              </div>
+            </div>
+            <span class="chev"><svg class="icon icon-sm"><use href="#i-arrow-right"/></svg></span>
+          </summary>
+          <div class="day-body">
+            <div class="row">
+              <div class="row-time">09:00</div>
+              <div class="row-icon food"><svg class="icon"><use href="#i-utensils"/></svg></div>
+              <div class="row-content">
+                Breakfast. Check-out.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">11:00</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-plane"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">JGA → BOM</span>.
+                <div data-route="flight"
+                  data-from="JGA" data-from-label="Jamnagar" data-from-time="Sun · 11:00"
+                  data-to="BOM" data-to-label="Mumbai" data-to-time="Sun · 12:30"
+                  data-duration="1h 30m"></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">14:30</div>
+              <div class="row-icon transit"><svg class="icon"><use href="#i-plane"/></svg></div>
+              <div class="row-content">
+                <span class="row-title">BOM → BLR</span>. Layover at BOM lounge between legs.
+                <div data-route="flight"
+                  data-from="BOM" data-from-label="Mumbai" data-from-time="Sun · 14:30"
+                  data-to="BLR" data-to-label="Bangalore" data-to-time="Sun · 16:30"
+                  data-duration="2h"></div>
+                <div class="link-chips">
+                  <a class="chip" href="https://www.skyscanner.co.in/transport/flights/jga/blr/260621/?adults=4" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Skyscanner</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row-time">19:00</div>
+              <div class="row-icon hotel"><svg class="icon"><use href="#i-bed"/></svg></div>
+              <div class="row-content">Home.</div>
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+    </div><!-- /.with-map__main -->
+  </div>
+</section>
+
+<!-- ========== COSTS ========== -->
+<section class="costs" id="costs">
+  <div class="container">
+    <div id="holiday-alert-trip" data-trip-start="2026-06-15" data-trip-end="2026-06-21" style="display:none;"></div>
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">The numbers</div>
+        <h2>Both come in <em>well under</em> Lux cap</h2>
+      </div>
+      <p>Your per-trip cap is ₹7L (₹2.5L flights / ₹3L hotels / ₹1.5L other). Either option leaves significant room — meaning you can elevate the hotel tier or extend a night without breaking budget.</p>
+    </div>
+
+    <div class="costs-grid">
+      <div class="cost-card featured" data-reveal data-live-cost="A">
+        <h4>Rameswaram &amp; Madurai</h4>
+        <p class="cost-sub">All-in estimate, family of 4 · <span data-live-stamp>live as of —</span></p>
+        <div class="cost-row" data-live-flight="BLR-IXM-2026-06-15-2026-06-21">
+          <span>Flights · BLR ⇄ IXM × 4 <span data-live-flight-note style="display:block;font-size:11px;color:rgba(255,255,255,.7);"></span></span>
+          <strong>₹46,000</strong>
+        </div>
+        <div class="cost-row" data-live-hotel="Madurai-Rameswaram">
+          <span>Hotels · 3n Marriott + 3n best avail. <span data-live-hotel-note style="display:block;font-size:11px;color:rgba(255,255,255,.7);"></span></span>
+          <strong>₹70,000</strong>
+        </div>
+        <div class="cost-row"><span>Cars (full week)</span><strong>₹15,000</strong></div>
+        <div class="cost-row"><span>Food (Titanium breakfast saves ~12K)</span><strong>₹30,000</strong></div>
+        <div class="cost-row"><span>Activities + temple guides</span><strong>₹8,000</strong></div>
+        <div class="cost-row"><span>Misc + shopping + tips</span><strong>₹15,000</strong></div>
+        <div class="cost-row total"><span>Total</span><strong>₹1,84,000</strong></div>
+        <div style="margin-top: 28px;">
+          <div class="cap-bar"><div class="cap-fill" style="width: 26%"></div></div>
+          <div class="cap-meta"><span>26% of Lux cap</span><span>74% headroom</span></div>
+        </div>
+      </div>
+
+      <div class="cost-card" data-reveal data-live-cost="B">
+        <h4>Dwarka &amp; Somnath</h4>
+        <p class="cost-sub">All-in estimate, family of 4 · <span data-live-stamp>live as of —</span></p>
+        <div class="cost-row" data-live-flight="BLR-JGA-2026-06-15-2026-06-21">
+          <span>Flights · BLR ⇄ JGA via BOM × 4 <span data-live-flight-note style="display:block;font-size:11px;color:var(--ink-soft);"></span></span>
+          <strong>₹86,000</strong>
+        </div>
+        <div class="cost-row" data-live-hotel="Dwarka-Jamnagar">
+          <span>Hotels · Fern + airport overnight <span data-live-hotel-note style="display:block;font-size:11px;color:var(--ink-soft);"></span></span>
+          <strong>₹50,000</strong>
+        </div>
+        <div class="cost-row"><span>Cars (longer routes)</span><strong>₹35,000</strong></div>
+        <div class="cost-row"><span>Food (Gujarati cheaper)</span><strong>₹26,000</strong></div>
+        <div class="cost-row"><span>Activities + guides</span><strong>₹6,000</strong></div>
+        <div class="cost-row"><span>Misc + shopping + tips</span><strong>₹12,000</strong></div>
+        <div class="cost-row total"><span>Total</span><strong>₹2,15,000</strong></div>
+        <div style="margin-top: 28px;">
+          <div class="cap-bar"><div class="cap-fill" style="width: 31%"></div></div>
+          <div class="cap-meta"><span>31% of Lux cap</span><span>69% headroom</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="loyalty-strip" data-reveal>
+      <div>
+        <div class="section-eyebrow">Your leverage</div>
+        <h3>Your loyalty <em>actually pays</em> on Option A</h3>
+        <p>Bonvoy Titanium gives you suite upgrades, free breakfast, and 4pm checkout at Courtyard Marriott Madurai. The 40K free-night cert (expires 2026-12-31) is a strong play here.</p>
+        <p style="color: rgba(246, 241, 232, 0.5); font-size: 13px;">Dwarka has no Marriott / Hilton / Hyatt 5-star on-island — none of this kicks in.</p>
+      </div>
+      <div class="loyalty-points">
+        <div class="lp-item"><div class="lp-prog">Marriott Bonvoy</div><div class="lp-bal">359,343</div><div class="lp-tier">Titanium Elite</div></div>
+        <div class="lp-item"><div class="lp-prog">Free-night cert</div><div class="lp-bal">40K cap</div><div class="lp-tier">Expires Dec 31, 2026</div></div>
+        <div class="lp-item"><div class="lp-prog">Qatar Avios</div><div class="lp-bal">24,507</div><div class="lp-tier">OW Sapphire</div></div>
+        <div class="lp-item"><div class="lp-prog">Amex MR</div><div class="lp-bal">142,286</div><div class="lp-tier">Transferable</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LIVE HOTELS (SerpAPI Google Hotels) ========== -->
+<section class="hotels-section" id="hotels">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Live hotel rates</div>
+        <h2>What's <em>actually available</em></h2>
+      </div>
+      <p>Live rates from Google Hotels for your exact dates and family of 4. Featured cards = your loyalty plays. Click any to open in Google Hotels for the full booking flow.</p>
+    </div>
+
+    <div class="section-map-split">
+     <div class="section-map-split__list">
+    <div class="hotels-stops">
+
+      <div data-hotels-stop="madurai" data-dest="Madurai" data-checkin="2026-06-15" data-checkout="2026-06-18" data-adults="2" data-kids="2" data-kid-ages="6,9" data-class="4,5" data-featured-name="Courtyard">
+        <div class="hotels-stop-head">
+          <h3>Madurai</h3>
+          <span class="stop-meta">Mon Jun 15 → Thu Jun 18 · 3 nights · 4-5 star</span>
+        </div>
+        <div class="hotels-grid"><div class="veg-loading">Loading hotel rates…</div></div>
+      </div>
+
+      <div data-hotels-stop="rameswaram" data-dest="Rameswaram" data-checkin="2026-06-18" data-checkout="2026-06-21" data-adults="2" data-kids="2" data-kid-ages="6,9" data-class="">
+        <div class="hotels-stop-head">
+          <h3>Rameswaram</h3>
+          <span class="stop-meta">Thu Jun 18 → Sun Jun 21 · 3 nights · best available</span>
+        </div>
+        <div class="hotels-grid"><div class="veg-loading">Loading hotel rates…</div></div>
+      </div>
+
+      <div data-hotels-stop="dwarka" data-dest="Dwarka" data-checkin="2026-06-15" data-checkout="2026-06-19" data-adults="2" data-kids="2" data-kid-ages="6,9" data-class="">
+        <div class="hotels-stop-head">
+          <h3>Dwarka <span style="font-weight:400;font-size:14px;color:var(--ink-soft);">· Option B</span></h3>
+          <span class="stop-meta">Mon Jun 15 → Fri Jun 19 · 4 nights · best available</span>
+        </div>
+        <div class="hotels-grid"><div class="veg-loading">Loading hotel rates…</div></div>
+      </div>
+
+    </div>
+     </div>
+     <aside class="section-map-split__map" data-trip-map="hotels" aria-label="Map of hotels"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TRANSPORT (CARS) ========== -->
+<section class="transport" id="transport">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Ground transport</div>
+        <h2>Every drive, <em>booked in advance</em></h2>
+      </div>
+      <p>Outstation cabs via Savaari (best for inter-city, set price, Innova/Crysta options). Local rides via Uber / Ola. Always pre-book outstation 48h+ ahead — same-day is hard in pilgrimage towns.</p>
+    </div>
+
+    <div class="transport-grid">
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-route"/></svg></div>
+          <div>
+            <h4>Madurai → Rameswaram</h4>
+            <div class="car-leg">Wed Jun 17 · Inter-city · Option A</div>
+          </div>
+        </div>
+        <p class="car-detail">175km via NH87. Toyota Innova / Crysta (family of 4 + luggage). Driver included; toll + fuel typically bundled in outstation rate. Stop at Pamban Bridge for sunset.</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Distance</div><div class="car-stat-val">175 km</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Drive</div><div class="car-stat-val">~4 hr</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Est.</div><div class="car-stat-val">₹4.5–6K</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://www.savaari.com/outstation-cabs/madurai-to-rameshwaram-cabs/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Savaari</a>
+          <a class="provider-link" href="https://www.makemytrip.com/cabs/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> MakeMyTrip Cabs</a>
+          <a class="provider-link" href="https://www.google.com/maps/dir/Madurai/Rameswaram" target="_blank"><svg class="icon"><use href="#i-route"/></svg> Route map</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-route"/></svg></div>
+          <div>
+            <h4>Jamnagar → Dwarka</h4>
+            <div class="car-leg">Mon Jun 15 · Airport → hotel · Option B</div>
+          </div>
+        </div>
+        <p class="car-detail">131km on NH947. Innova/Crysta with driver. After a long day with two flight legs, prefer a single confirmed pickup over taxi-rank chance.</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Distance</div><div class="car-stat-val">131 km</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Drive</div><div class="car-stat-val">~2.5 hr</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Est.</div><div class="car-stat-val">₹3–4K</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://www.savaari.com/outstation-cabs/jamnagar-to-dwarka-cabs/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Savaari</a>
+          <a class="provider-link" href="https://www.gozocabs.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Gozo</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-car"/></svg></div>
+          <div>
+            <h4>Local rides — Madurai &amp; Rameswaram</h4>
+            <div class="car-leg">Tue–Sat · Around-town hops</div>
+          </div>
+        </div>
+        <p class="car-detail">Hotel ↔ temple, hotel ↔ restaurant, short hops to Dhanushkodi (then 4WD jeep last 5km). Uber operates in Madurai; Rameswaram is mostly auto-rickshaws + hotel cars. Hotel concierge faster + safer than street autos for evening rides.</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Mode</div><div class="car-stat-val">App / Auto</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Per ride</div><div class="car-stat-val">₹100–400</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Tip</div><div class="car-stat-val">10%</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://m.uber.com/?action=setPickup&pickup=my_location&dropoff%5Bformatted_address%5D=Meenakshi%20Amman%20Temple%2C%20Madurai" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Uber</a>
+          <a class="provider-link" href="https://book.olacabs.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Ola</a>
+        </div>
+      </div>
+
+      <div class="car-card" data-reveal>
+        <div class="car-head">
+          <div class="car-icon"><svg class="icon"><use href="#i-bus"/></svg></div>
+          <div>
+            <h4>Airport transfers (BLR)</h4>
+            <div class="car-leg">Both options · Day 1 + Day 7</div>
+          </div>
+        </div>
+        <p class="car-detail">BLR T2 has dedicated cab pickup zones. For a family of 4 with luggage, Uber XL or Ola Prime SUV is the cleanest option. <strong>Pre-book 48h prior</strong> via Uber Reserve — Bangalore early-morning surge is brutal.</p>
+        <div class="car-stats">
+          <div class="car-stat"><div class="car-stat-lbl">Vehicle</div><div class="car-stat-val">XL / SUV</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Est.</div><div class="car-stat-val">₹1.5–2.5K</div></div>
+          <div class="car-stat"><div class="car-stat-lbl">Lead</div><div class="car-stat-val">Reserve 48h</div></div>
+        </div>
+        <div class="car-providers">
+          <a class="provider-link" href="https://m.uber.com/reserve/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Uber Reserve</a>
+          <a class="provider-link" href="https://book.olacabs.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Ola Prime</a>
+          <a class="provider-link" href="https://www.savaari.com/airport-transfer/bengaluru-airport-cabs/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Savaari</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== LIVE VEG RESTAURANTS (Overpass / OpenStreetMap) ========== -->
+<section class="veg-section" id="veg-restaurants">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Live veg dining</div>
+        <h2>Pure-veg restaurants <em>near your stays</em></h2>
+      </div>
+      <p>Pulled live from OpenStreetMap (community-tagged with diet:vegetarian or diet:vegan). Click any to open in Google Maps for verified hours, photos, and directions.</p>
+    </div>
+
+    <div class="section-map-split">
+     <div class="section-map-split__list">
+    <h3 style="font-family: Fraunces, serif; font-size: 20px; margin-bottom: 12px; margin-top: 16px;">Near Courtyard Marriott Madurai</h3>
+    <div class="veg-grid" id="veg-madurai" data-lat="9.9195" data-lon="78.1193" data-radius="2000" data-city="Madurai">
+      <div class="veg-loading">Loading veg restaurants…</div>
+    </div>
+
+    <h3 style="font-family: Fraunces, serif; font-size: 20px; margin-bottom: 12px; margin-top: 48px;">Near Ramanathaswamy Temple, Rameswaram</h3>
+    <div class="veg-grid" id="veg-rameswaram" data-lat="9.2884" data-lon="79.3174" data-radius="3000" data-city="Rameswaram">
+      <div class="veg-loading">Loading veg restaurants…</div>
+    </div>
+
+    <h3 style="font-family: Fraunces, serif; font-size: 20px; margin-bottom: 12px; margin-top: 48px;">Near Dwarkadhish Temple, Dwarka</h3>
+    <div class="veg-grid" id="veg-dwarka" data-lat="22.2378" data-lon="68.9685" data-radius="2000" data-city="Dwarka">
+      <div class="veg-loading">Loading veg restaurants…</div>
+    </div>
+
+    <p class="veg-attribution">
+      Data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>, ODbL.
+      Hours and contact details are community-contributed — verify on Google Maps before going.
+    </p>
+     </div>
+     <aside class="section-map-split__map" data-trip-map="restaurants" aria-label="Map of vegetarian restaurants"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DOOR TO DOOR ========== -->
+<section class="door" id="door-to-door">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Door to door</div>
+        <h2>Front door to <em>front door</em></h2>
+      </div>
+      <p>Every leg of the trip with timing, links, and what to carry. Built for Option A (Madurai + Rameswaram). Same template applies to Option B with the JGA via BOM swap.</p>
+    </div>
+
+    <div class="door-flow">
+
+      <!-- Stage 1: Home → BLR airport -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-home"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">Home → BLR T2</div>
+          <span class="stage-when">Mon Jun 15 · 06:30 dep · 08:00 arrival</span>
+        </div>
+        <div data-route="car"
+          data-from="HOME" data-from-label="Indiranagar" data-from-time="Mon · 06:30"
+          data-to="BLR" data-to-label="BLR T2" data-to-time="Mon · 08:00"
+          data-duration="1h 30m · ~40 km"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Pre-book Uber Reserve 48h prior — Bangalore early-morning surge is brutal. Family of 4 + luggage = Uber XL or Ola Prime SUV. Allow 90 min for traffic + 90 min at airport before boarding.</p>
+        <div class="stage-body">
+          <div class="stage-col">
+            <h6>Check before leaving</h6>
+            <ul>
+              <li>Aadhaar / passport for all 4 (originals + photocopies)</li>
+              <li>Hotel + flight confirmations on phone + 1 printed copy</li>
+              <li>Web check-in done T-1 day · seat selection confirmed</li>
+              <li>Wallet · ₹15K cash · cards · forex card not needed (domestic)</li>
+              <li>Power: phones + power bank ≤10K mAh in carry-on</li>
+            </ul>
+          </div>
+          <div class="stage-col">
+            <h6>Carry vs check</h6>
+            <ul>
+              <li>Carry-on: docs, electronics, ORS, kid snacks, change of clothes for 6yo</li>
+              <li>Checked: bulk clothes, toiletries, gifts</li>
+              <li>Each adult 15kg + each kid 15kg = 60kg checked allowance (IndiGo)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="link-chips">
+          <a class="chip" href="https://m.uber.com/reserve/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Uber Reserve</a>
+          <a class="chip" href="https://book.olacabs.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Ola Prime</a>
+          <a class="chip" href="https://www.savaari.com/airport-transfer/bengaluru-airport-cabs/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Savaari</a>
+        </div>
+      </div>
+
+      <!-- Stage 2: BLR airport -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-luggage"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">BLR T2 — check-in to gate</div>
+          <span class="stage-when">08:00 → 10:00 boarding</span>
+        </div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Domestic terminal T2 at BLR. Use IndiGo / AI Express counters or self check-in kiosks. Family-with-kids has dedicated security lane in T2.</p>
+        <div class="stage-body">
+          <div class="stage-col">
+            <h6>Lounges (Amex Plat covers all 4)</h6>
+            <ul>
+              <li>Plaza Premium Lounge T2 — domestic departures, level 3</li>
+              <li>Adani Lounge One — Amex Platinum + Priority Pass</li>
+              <li>Light breakfast + work corner + kid play area</li>
+            </ul>
+          </div>
+          <div class="stage-col">
+            <h6>Practical</h6>
+            <ul>
+              <li>Liquids ≤100ml each in transparent pouch (carry-on rule)</li>
+              <li>Power banks must be in carry-on, not checked</li>
+              <li>Strollers tag-on-aircraft if needed for 6yo</li>
+              <li>Boarding 30 min before; gates close 10 min before departure</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 3: BLR → IXM Flight -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-plane"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">BLR → IXM in flight</div>
+          <span class="stage-when">10:00 → 11:15 · 1h 15m</span>
+        </div>
+        <div data-route="flight"
+          data-from="BLR" data-from-label="Bangalore" data-from-time="Mon · 10:00"
+          data-to="IXM" data-to-label="Madurai" data-to-time="Mon · 11:15"
+          data-duration="1h 15m · direct"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Direct IndiGo or AI Express. Short hop — kids will mostly be fine; pack a tablet for the 6yo as backup. No meal service worth paying for; eat at the BLR lounge before boarding.</p>
+        <div class="link-chips">
+          <a class="chip" href="https://www.skyscanner.co.in/transport/flights/blr/ixm/260615/260621/?adults=4" target="_blank"><svg class="icon"><use href="#i-search"/></svg> Skyscanner</a>
+          <a class="chip" href="https://www.goindigo.in/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> IndiGo</a>
+          <a class="chip" href="https://www.airindiaexpress.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> AI Express</a>
+        </div>
+      </div>
+
+      <!-- Stage 4: IXM → Hotel -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-car"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">IXM → Courtyard Marriott Madurai</div>
+          <span class="stage-when">11:30 → 12:00 · 25 min</span>
+        </div>
+        <div data-route="car"
+          data-from="IXM" data-from-label="Madurai Airport" data-from-time="Mon · 11:30"
+          data-to="HOTEL" data-to-label="Courtyard Marriott" data-to-time="Mon · 12:00"
+          data-duration="25 min · ~10 km"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Pre-book hotel pickup (Bonvoy Titanium often gets complimentary or discounted). Otherwise Uber from Madurai airport works — lower surge than BLR.</p>
+        <div class="link-chips">
+          <a class="chip" href="https://www.marriott.com/en-us/hotels/maaco-courtyard-madurai/overview/" target="_blank"><svg class="icon"><use href="#i-bed"/></svg> Hotel concierge</a>
+          <a class="chip" href="https://m.uber.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Uber</a>
+          <a class="chip" href="https://book.olacabs.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Ola</a>
+        </div>
+      </div>
+
+      <!-- Stage 5: Daily intra-city -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-route"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">Daily intra-city + outstation transit</div>
+          <span class="stage-when">Tue Jun 16 → Sat Jun 20</span>
+        </div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Mostly hotel concierge cars (safer with kids), Uber for short Madurai hops, and one Savaari outstation booking for the 4h drive to Rameswaram.</p>
+        <div class="stage-body">
+          <div class="stage-col">
+            <h6>Madurai (Tue-Wed)</h6>
+            <ul>
+              <li>Hotel ↔ Meenakshi Temple: 10 min car · ₹150-300 Uber</li>
+              <li>Hotel ↔ Thirumalai palace: 12 min car · same</li>
+              <li>Hotel concierge for evening rides — safer than street auto</li>
+            </ul>
+          </div>
+          <div class="stage-col">
+            <h6>Rameswaram (Thu-Sat)</h6>
+            <ul>
+              <li>Hotel ↔ Ramanathaswamy: 8 min · auto-rickshaw or hotel car</li>
+              <li>Hotel ↔ Dhanushkodi: 30 min car + 4WD beach jeep last 5km</li>
+              <li>Hotel ↔ Sea World/Kalam Memorial: 15 min</li>
+              <li>Madurai → Rameswaram: 4h Innova/Crysta with Savaari (₹4.5-6K)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="link-chips">
+          <a class="chip" href="https://www.savaari.com/outstation-cabs/madurai-to-rameshwaram-cabs/" target="_blank"><svg class="icon"><use href="#i-car"/></svg> Madurai-Rameswaram Savaari</a>
+          <a class="chip" href="https://m.uber.com/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Uber Madurai</a>
+        </div>
+      </div>
+
+      <!-- Stage 6: Health + Safety -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-shield"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">Health + safety considerations</div>
+          <span class="stage-when">Throughout</span>
+        </div>
+        <div class="stage-body">
+          <div class="stage-col">
+            <h6>Heat (real risk)</h6>
+            <ul>
+              <li>Madurai 38°C peak / Rameswaram 32-34°C with sea breeze</li>
+              <li>ORS sachets daily for kids · 3L water/adult/day</li>
+              <li>Activities only 5:30-09:30 and after 17:00</li>
+              <li>Watch for signs of heat exhaustion in 6yo: lethargy, no urination 4hr+</li>
+            </ul>
+          </div>
+          <div class="stage-col">
+            <h6>Food + water</h6>
+            <ul>
+              <li>Hotel water + sealed bottles only · no street water</li>
+              <li>Eat at hotel breakfast + verified veg restaurants only</li>
+              <li>Skip street food for kids — adult discretion</li>
+              <li>Carry kid medicines: paracetamol syrup, ORS, anti-diarrhea</li>
+            </ul>
+          </div>
+          <div class="stage-col">
+            <h6>Temple safety</h6>
+            <ul>
+              <li>Crowds: keep kids on shoulders or in firm grip · pre-trip practice "stay together"</li>
+              <li>Footwear: lockers at major temples cost ₹10-50 — use them</li>
+              <li>Temple steps can be slippery wet; supervise the 6yo</li>
+              <li>Phone in front pocket only · pickpocket-aware</li>
+            </ul>
+          </div>
+          <div class="stage-col">
+            <h6>Emergency</h6>
+            <ul>
+              <li>Pediatric hospital Madurai: Apollo Speciality (24h)</li>
+              <li>Rameswaram: Government Hospital + private clinics on Beach Road</li>
+              <li>Pharmacy chains: Apollo + MedPlus everywhere</li>
+              <li>India emergency: 112 · Travel insurance papers in hand</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 7: Return → IXM -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-route"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">Rameswaram → IXM airport</div>
+          <span class="stage-when">Sun Jun 21 · 09:30 dep · 14:00 arrival at IXM</span>
+        </div>
+        <div data-route="car"
+          data-from="RMM" data-from-label="Rameswaram" data-from-time="Sun · 09:30"
+          data-to="IXM" data-to-label="Madurai Airport" data-to-time="Sun · 14:00"
+          data-duration="4h 30m · 175 km + lunch buffer"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Same Savaari driver as the inbound leg if you can arrange it — they know your luggage volume + family rhythm. Build in 30 min lunch buffer in Madurai before heading to airport. Reach IXM <strong style="color:var(--saffron-soft);">90 min before flight</strong>.</p>
+        <div class="link-chips">
+          <a class="chip" href="https://www.savaari.com/outstation-cabs/rameshwaram-to-madurai-cabs/" target="_blank"><svg class="icon"><use href="#i-car"/></svg> Savaari</a>
+        </div>
+      </div>
+
+      <!-- Stage 8: IXM airport return -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-luggage"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">IXM airport — return leg</div>
+          <span class="stage-when">Sun Jun 21 · 14:00 → 17:30</span>
+        </div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">IXM is small — security in 15 min on a Sunday. No lounge, but a basic café upstairs. Use the 90 min buffer to relax + tablet for kids.</p>
+      </div>
+
+      <!-- Stage 9: IXM → BLR -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-plane"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">IXM → BLR flight</div>
+          <span class="stage-when">17:30 → 18:45 · 1h 15m</span>
+        </div>
+        <div data-route="flight"
+          data-from="IXM" data-from-label="Madurai" data-from-time="Sun · 17:30"
+          data-to="BLR" data-to-label="Bangalore" data-to-time="Sun · 18:45"
+          data-duration="1h 15m · direct"></div>
+      </div>
+
+      <!-- Stage 10: BLR → Home -->
+      <div class="stage" data-reveal>
+        <div class="stage-marker"><svg class="icon"><use href="#i-home"/></svg></div>
+        <div class="stage-head">
+          <div class="stage-title">BLR → Home</div>
+          <span class="stage-when">19:30 dep airport · 21:00 home</span>
+        </div>
+        <div data-route="car"
+          data-from="BLR" data-from-label="BLR T2" data-from-time="Sun · 19:30"
+          data-to="HOME" data-to-label="Indiranagar" data-to-time="Sun · 21:00"
+          data-duration="1h 30m · ~40 km"></div>
+        <p style="font-size: 14px; color: rgba(246, 241, 232, 0.85);">Sunday evening BLR is often surge-priced. Pre-book Uber Reserve from the airport for the homebound leg too. Pre-stocked groceries at home (set this on T-1) saves a tired-Sunday-evening problem.</p>
+        <div class="link-chips">
+          <a class="chip" href="https://m.uber.com/reserve/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Uber Reserve</a>
+          <a class="chip" href="https://www.savaari.com/airport-transfer/bengaluru-airport-cabs/" target="_blank"><svg class="icon"><use href="#i-arrow-up-right"/></svg> Savaari</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CURATOR'S PICKS ========== -->
+<section class="curator-section" id="curator-picks">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Curator's picks</div>
+        <h2>Must-do, must-eat, must-buy <em>by city</em></h2>
+      </div>
+      <p>Synthesized from creator mentions + TripAdvisor ratings. Each pick shows why it made the list — creator validation, rank, or both.</p>
+    </div>
+
+    <div class="section-map-split">
+     <div class="section-map-split__list">
+    <div id="curator-picks-root" class="curator-cities">
+      <div class="influencer-empty">Loading picks…</div>
+    </div>
+     </div>
+     <aside class="section-map-split__map" data-trip-map="curator" aria-label="Map of curator picks"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== INFLUENCER VOICES ========== -->
+<section class="influencer-section" id="influencer-voices">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Influencer voices</div>
+        <h2>What creators say <em>about Madurai, Rameswaram, Dwarka</em></h2>
+      </div>
+      <p>Pull-quotes from travel bloggers and YouTubers in our watchlist. Refreshed weekly by <code>scripts/influencers/corpus_builder.py</code>.</p>
+    </div>
+
+    <div class="section-map-split">
+     <div class="section-map-split__list">
+    <div id="influencer-top-places" class="influencer-top-places"></div>
+    <div id="influencer-voices-grid" class="influencer-grid">
+      <div class="influencer-empty">Loading creator quotes…</div>
+    </div>
+     </div>
+     <aside class="section-map-split__map" data-trip-map="creators" aria-label="Map of creator-mentioned places"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MUST-INCLUDE (ADD-TO-NEXT-REFRESH) ========== -->
+<section class="must-include" id="must-include">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Add items · Your cart</div>
+        <h2>Build the trip <em>around what you actually want</em></h2>
+      </div>
+      <p>Hover any card on this page (restaurants, hotels, anchors, day rows, route segments, the two paths) and click <strong>+</strong> to drop it in your cart below. Or use the chip inputs to type new items, paste comma-separated lists, or paste a YouTube / Instagram / TripAdvisor / blog URL — the planner will fetch + transcribe it and extract every place mentioned. In the cart, drag to reorder and set <strong>Day + Time</strong> per item, or leave on "AI decides" and the planner will sequence everything by proximity, time saved, traveller effort, and cost. Hit <strong>Refresh with these items</strong> to rebuild this page around your cart — existing suggestions that don't fit the new flow are dropped. Items that genuinely can't be included show up in a callout at the top of the itinerary with the reason. Saved per-trip in this browser.</p>
+    </div>
+
+    <div class="mi-card">
+      <div class="mi-grid">
+        <div class="mi-category" data-mi-category="places">
+          <div class="mi-category-label">Places to visit</div>
+          <div class="mi-chip-input">
+            <input type="text" placeholder="Type and press Enter — e.g. Thiruparankundram temple" autocomplete="off">
+          </div>
+        </div>
+        <div class="mi-category" data-mi-category="todo">
+          <div class="mi-category-label">Things to do</div>
+          <div class="mi-chip-input">
+            <input type="text" placeholder="Type and press Enter — e.g. Pamban bridge train ride" autocomplete="off">
+          </div>
+        </div>
+        <div class="mi-category" data-mi-category="buy">
+          <div class="mi-category-label">Things to buy</div>
+          <div class="mi-chip-input">
+            <input type="text" placeholder="Type and press Enter — e.g. Madurai sungudi sarees" autocomplete="off">
+          </div>
+        </div>
+        <div class="mi-category" data-mi-category="eat">
+          <div class="mi-category-label">Things to eat</div>
+          <div class="mi-chip-input">
+            <input type="text" placeholder="Type or paste comma-separated — e.g. Murugan Idli Shop, Amma Mess" autocomplete="off">
+          </div>
+        </div>
+      </div>
+
+      <div class="mi-category mi-category--full" data-mi-category="links">
+        <div class="mi-category-label">Source links — YouTube · Instagram · TripAdvisor · blog</div>
+        <div class="mi-chip-input">
+          <input type="url" placeholder="Paste a URL and press Enter — the planner will fetch, transcribe, and extract place names" autocomplete="off">
+        </div>
+        <div class="mi-help">YouTube videos are auto-transcribed (Whisper fallback if no captions). Every place mentioned in a parsed source is researched and slotted just like a typed item.</div>
+      </div>
+
+      <div class="mi-notes">
+        <label class="mi-category-label" for="mi-notes">Notes / context (optional)</label>
+        <textarea id="mi-notes" placeholder="Anything the planner should know — e.g. 'avoid 5am temple visits with the 6yo'"></textarea>
+      </div>
+
+      <div class="mi-actions">
+        <button class="btn btn-saffron btn-sm" id="mi-submit">
+          <svg class="icon icon-sm"><use href="#i-refresh"/></svg>
+          Refresh with these items
+        </button>
+        <span class="mi-status" id="mi-status"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== POST-TRIP UPDATE ========== -->
+<section class="post-trip" id="post-trip">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">After the trip</div>
+        <h2>Log it, <em>so we plan better</em></h2>
+      </div>
+      <p>When you return: paste the prompt below into Claude Code. The system will append this trip to your visited journal, capture actual costs, save lessons learned, and update recommendation scoring for next time.</p>
+    </div>
+
+    <div class="post-grid">
+      <div>
+        <pre class="post-prompt" id="post-trip-prompt">Log my completed trip: 2026-06-Jun3rdWeek (Rameswaram + Madurai or Dwarka, Jun 15-21 2026, family of 4).
+
+I'll provide:
+- Which option I actually went with (A or B)
+- Actual flight costs (₹)
+- Actual hotel costs (₹) — paid + points used
+- Bonvoy / Hilton / Hyatt nights stayed + points earned
+- Marriott 40K cert: used or unused
+- Actual activities + food + transfers spend
+- Top 3 highlights · top 1 regret
+- Photos (URLs or local paths)
+- Anything that will help future planning (e.g., "the 6yo couldn't handle 5am temple visits, push to 7am")
+
+Then:
+1. Append a row to trips/_shared/data/visited.json with city, country, month, year.
+2. Update .workspace/loyalty.md with new balances + cert status.
+3. Append lessons-learned to .workspace/user_travel_prefs.md under a "Trip lessons" section if non-trivial.
+4. Update trips/2026-06-Jun3rdWeek/index.html: add a "Completed" status badge + actuals-vs-estimates row in costs section + a "Highlights" gallery.
+5. Update trips/index.html: change card status from Active to Archived; bump trips-logged counter.
+6. Trigger a regeneration of trips/_shared/data/recommendations.json so the next-trip suggestions reflect the new visit (12-month exclusion).
+
+Read .workspace/user_travel_prefs.md for hard rules.</pre>
+        <div style="margin-top: 16px; display: flex; gap: 12px;">
+          <button class="btn btn-saffron btn-sm" onclick="copyPostPrompt()">
+            <svg class="icon icon-sm"><use href="#i-sparkles"/></svg>
+            Copy post-trip prompt
+          </button>
+          <span id="post-copy-state" style="font-size: 13px; color: var(--ink-soft); align-self: center;"></span>
+        </div>
+      </div>
+      <div class="post-fields">
+        <div class="post-field">
+          <div class="post-field-lbl">What you'll capture</div>
+          <div class="post-field-val">Actual costs vs estimates</div>
+          <div class="post-field-help">Flight + hotel + activities + transfers + food. Each line item updates the budget envelope's lessons tab.</div>
+        </div>
+        <div class="post-field">
+          <div class="post-field-lbl">What you'll capture</div>
+          <div class="post-field-val">Loyalty deltas</div>
+          <div class="post-field-help">Bonvoy nights + points earned · cert used Y/N · Hilton/Hyatt earned · Avios redeemed if any.</div>
+        </div>
+        <div class="post-field">
+          <div class="post-field-lbl">What you'll capture</div>
+          <div class="post-field-val">Highlights + regrets</div>
+          <div class="post-field-help">Best meal · best moment · what to skip next time. The 6yo's pace tolerance is gold for future itineraries.</div>
+        </div>
+        <div class="post-field">
+          <div class="post-field-lbl">What you'll capture</div>
+          <div class="post-field-val">Photos + memories</div>
+          <div class="post-field-help">Drop URLs or local paths · the system embeds them into a gallery on this trip page.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHY ========== -->
+<section class="why">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Designed around</div>
+        <h2>Three things that <em>matter</em></h2>
+      </div>
+      <p>The plan defaults to your family pace, not a generic itinerary. Heat, kid energy, and loyalty leverage shape every recommendation.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card" data-reveal>
+        <div class="why-icon"><svg class="icon"><use href="#i-thermo"/></svg></div>
+        <h5>Heat-aware</h5>
+        <p>Anchor activities run 5:30am–9:30am or after 5pm. Mid-day is pool, AC, and quiet — designed for the 6yo to recover, not push.</p>
+      </div>
+      <div class="why-card" data-reveal>
+        <div class="why-icon"><svg class="icon"><use href="#i-sparkles"/></svg></div>
+        <h5>Kid-anchor variety</h5>
+        <p>Temple + aquarium + bridge + memorial + ghost town. Pilgrimage depth without a kid revolt by day three.</p>
+      </div>
+      <div class="why-card" data-reveal>
+        <div class="why-icon"><svg class="icon"><use href="#i-key"/></svg></div>
+        <h5>Loyalty leverage</h5>
+        <p>Bonvoy Titanium upgrades + 40K cert + Amex Plat lounges turn your existing balances into real value, not points-hoarding.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-foot">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="../index.html" class="logo" style="color: var(--cream); margin-bottom: 16px;">
+          <span class="logo-mark">◈</span>
+          <span class="logo-word" style="color: var(--cream);"><span class="logo-line">gama<span class="logo-slash" style="color: var(--saffron-soft);">/</span></span><span class="logo-line">adventures</span></span>
+        </a>
+        <p style="max-width: 360px; margin-top: 16px;">Personal travel planner for the family. Each trip is regenerable, version-tracked, and tuned to BLR origin, school calendars, and Marriott/Hilton/Hyatt loyalty.</p>
+      </div>
+      <div>
+        <h6>This trip</h6>
+        <ul>
+          <li><a href="#options">Both options</a></li>
+          <li><a href="#itinerary">Day-by-day</a></li>
+          <li><a href="#costs">Cost roll-up</a></li>
+          <li><a href="#transport">Transport</a></li>
+          <li><a href="#door-to-door">Door to door</a></li>
+          <li><a href="#post-trip">After the trip</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Source files</h6>
+        <ul>
+          <li><a href="deep-dive-comparison.md">Comparison.md</a></li>
+          <li><a href="itinerary-rameswaram-madurai.md">Itinerary A.md</a></li>
+          <li><a href="itinerary-dwarka.md">Itinerary B.md</a></li>
+          <li><a href="prep-checklist.md">Prep.md</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Family travel agent · Built locally</span>
+      <span>Generated · May 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.YATRA_TRIP_DEFAULTS = {
+    country: 'IN',
+    cities: [
+      { name: 'Madurai',    lat:  9.93, lon: 78.12 },
+      { name: 'Rameswaram', lat:  9.29, lon: 79.31 },
+      { name: 'Dwarka',     lat: 22.24, lon: 68.97 }
+    ]
+  };
+</script>
+<script src="../_shared/data-sources.js"></script>
+<script src="../_shared/claude-agent.js"></script>
+<script src="../_shared/agent-toast.js"></script>
+<script src="../_shared/trip-map.js"></script>
+<script src="../_shared/site.js"></script>
+<script>
+  // Pin button for this trip page
+  document.addEventListener('DOMContentLoaded', () => {
+    const PIN_KEY = 'yatra:pinned-trips';
+    const btn = document.getElementById('trip-pin-btn');
+    if (!btn) return;
+    const id = btn.dataset.pinId;
+    const get = () => { try { return JSON.parse(localStorage.getItem(PIN_KEY) || '[]'); } catch (_) { return []; } };
+    const sync = () => {
+      const list = get();
+      const isPinned = list.includes(id);
+      btn.classList.toggle('pinned', isPinned);
+      const tip = isPinned ? 'Unpin trip' : 'Pin trip';
+      btn.setAttribute('aria-label', tip);
+      btn.setAttribute('title', tip);
+    };
+    btn.addEventListener('click', () => {
+      const list = get();
+      const idx = list.indexOf(id);
+      if (idx === -1) list.push(id); else list.splice(idx, 1);
+      localStorage.setItem(PIN_KEY, JSON.stringify(list));
+      sync();
+    });
+    sync();
+  });
+
+  // Post-trip prompt copy
+  function copyPostPrompt() {
+    const txt = document.getElementById('post-trip-prompt').innerText;
+    navigator.clipboard.writeText(txt).then(() => {
+      const s = document.getElementById('post-copy-state');
+      s.textContent = '✓ Copied — paste into Claude Code in ~/projects/personal/travel agent';
+      s.style.color = 'var(--saffron-deep)';
+      setTimeout(() => { s.textContent = ''; }, 4000);
+    });
+  }
+
+  // Curator's Picks — must-do/must-eat/must-buy/unique blocks per city
+  (async function renderCuratorPicks() {
+    const root = document.getElementById('curator-picks-root');
+    if (!root || !window.YatraData || !YatraData.CuratorsPicks) return;
+    const cities = ['Madurai', 'Rameswaram', 'Dwarka'];
+    function escapeHtml(s) {
+      return String(s || '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+    const labels = {
+      must_do:           { title: 'Must do',         icon: '◈' },
+      must_eat:          { title: 'Must eat',        icon: '◉' },
+      must_buy:          { title: 'Must buy',        icon: '◆' },
+      unique_experience: { title: 'Unique to here',  icon: '✦' },
+    };
+    function pickAttribution(p) {
+      const bits = [];
+      if (p.creator_count > 0) bits.push(`${p.creator_count} creator${p.creator_count > 1 ? 's' : ''}`);
+      if (p.tripadvisor && p.tripadvisor.rating) bits.push(`★ ${p.tripadvisor.rating}`);
+      if (p.tripadvisor && p.tripadvisor.ranking) {
+        const m = String(p.tripadvisor.ranking).match(/#(\d+)/);
+        if (m) bits.push(`#${m[1]} ranked`);
+      }
+      if (p.is_seed && p.creator_count === 0) bits.push('Editorial pick');
+      return bits.join(' · ');
+    }
+    function pickCard(p) {
+      const ta = p.tripadvisor || {};
+      const taLink = ta.url ? `<a class="tripadvisor-rating-pill" href="${ta.url}" target="_blank" rel="noopener" title="${escapeHtml(ta.ranking || '')}">TripAdvisor ★ ${escapeHtml(ta.rating || '')}${ta.review_count ? ' · ' + Number(ta.review_count).toLocaleString('en-IN') : ''}</a>` : '';
+      const quote = p.quote && p.quote.length >= 20
+        ? `<blockquote class="curator-quote">"${escapeHtml(p.quote.slice(0, 180))}${p.quote.length > 180 ? '…' : ''}"<cite>— ${escapeHtml(p.quote_creator || 'creator')}${p.quote_url ? ` <a href="${p.quote_url}" target="_blank" rel="noopener">↗</a>` : ''}</cite></blockquote>`
+        : '';
+      const attr = pickAttribution(p);
+      return `
+        <article class="curator-card">
+          <div class="curator-card-head">
+            <div class="curator-card-name">${escapeHtml(p.name)}</div>
+            ${attr ? `<div class="curator-card-attr">${attr}</div>` : ''}
+          </div>
+          ${quote}
+          <div class="curator-card-foot">
+            ${taLink}
+            <a href="https://www.google.com/maps/search/${encodeURIComponent(p.name + ' ' + (p.city || ''))}" target="_blank" rel="noopener">Map ↗</a>
+          </div>
+        </article>`;
+    }
+    const blocks = [];
+    for (const city of cities) {
+      const data = await YatraData.CuratorsPicks.forDestination(city);
+      if (!data || !data.buckets) continue;
+      const totalPicks = Object.values(data.buckets).reduce((a, b) => a + b.length, 0);
+      if (!totalPicks) continue;
+      const buckets = ['must_do', 'must_eat', 'must_buy', 'unique_experience']
+        .filter((k) => (data.buckets[k] || []).length)
+        .map((k) => `
+          <div class="curator-bucket">
+            <h4 class="curator-bucket-head"><span class="curator-bucket-icon">${labels[k].icon}</span> ${labels[k].title}</h4>
+            <div class="curator-bucket-grid">
+              ${data.buckets[k].map(pickCard).join('')}
+            </div>
+          </div>`).join('');
+      blocks.push(`
+        <div class="curator-city">
+          <h3 class="curator-city-head">${escapeHtml(city)} <span class="curator-city-meta">${data.creators_total} creators · ${totalPicks} picks</span></h3>
+          ${buckets}
+        </div>`);
+    }
+    if (!blocks.length) {
+      root.innerHTML = '<div class="influencer-empty">No curator picks cached yet. Run <code>scripts/influencers/synthesizer.py --all</code> to populate.</div>';
+      return;
+    }
+    root.innerHTML = blocks.join('');
+    // Stamp data-lat/lon on each curator card so they are clickable into the map.
+    try {
+      if (YatraData.Influencers && YatraData.Influencers._loadAll) {
+        const payload = await YatraData.Influencers._loadAll();
+        const lookup = {};
+        (payload.items || []).forEach((it) => {
+          (it.places_mentioned || []).forEach((pm) => {
+            if (typeof pm.lat === 'number' && typeof pm.lon === 'number' && pm.name) {
+              const k = pm.name.toLowerCase().trim();
+              if (!lookup[k]) lookup[k] = { lat: pm.lat, lon: pm.lon };
+            }
+          });
+        });
+        const tripCities = (window.YATRA_TRIP_DEFAULTS && window.YATRA_TRIP_DEFAULTS.cities) || [];
+        root.querySelectorAll('.curator-card').forEach((card) => {
+          const nameEl = card.querySelector('.curator-card-name');
+          if (!nameEl) return;
+          const name = nameEl.textContent.trim();
+          const cityWrap = card.closest('.curator-city');
+          const cityHeadEl = cityWrap ? cityWrap.querySelector('.curator-city-head') : null;
+          const cityName = cityHeadEl ? cityHeadEl.firstChild.textContent.trim() : null;
+          let coords = lookup[name.toLowerCase()];
+          if (!coords && cityName) {
+            const matched = tripCities.find((c) => c.name.toLowerCase() === cityName.toLowerCase());
+            if (matched) coords = { lat: matched.lat, lon: matched.lon };
+          }
+          if (!coords) return;
+          card.setAttribute('data-map-scope', 'curator');
+          card.setAttribute('data-lat', String(coords.lat));
+          card.setAttribute('data-lon', String(coords.lon));
+          card.setAttribute('data-name', name);
+          card.setAttribute('tabindex', '0');
+          card.setAttribute('role', 'button');
+        });
+      }
+    } catch (_) { /* fall through silently */ }
+    if (window.TripMap && typeof window.TripMap.refresh === 'function') window.TripMap.refresh();
+  })();
+
+  // Influencer voices: render quotes from corpus
+  (async function renderInfluencerVoices() {
+    const grid = document.getElementById('influencer-voices-grid');
+    const topPlacesRoot = document.getElementById('influencer-top-places');
+    if (!grid || !window.YatraData || !YatraData.Influencers) return;
+    const cities = ['Madurai', 'Rameswaram', 'Dwarka'];
+    const seen = new Set();
+    const merged = [];
+    for (const city of cities) {
+      const items = await YatraData.Influencers.forDestination(city, 12);
+      for (const it of items) {
+        if (seen.has(it.id)) continue;
+        seen.add(it.id);
+        merged.push({ ...it, _city: city });
+      }
+    }
+    if (!merged.length) {
+      grid.innerHTML = '<div class="influencer-empty">No creator content cached yet for these cities. Run <code>scripts/influencers/corpus_builder.py --full</code> to populate.</div>';
+      return;
+    }
+
+    function escapeHtml(s) {
+      return String(s || '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+
+    // Top recommended places
+    const placeScores = new Map();
+    merged.forEach((it) => {
+      (it.places_mentioned || []).forEach((p) => {
+        if (!p.name) return;
+        const e = placeScores.get(p.name) || { name: p.name, mentions: 0, positive: 0, negative: 0, creators: new Set(), city: p.city, firstQuote: null, firstUrl: null, firstCreator: null };
+        e.mentions += 1;
+        if (p.sentiment === 'positive') e.positive += 1;
+        if (p.sentiment === 'negative') e.negative += 1;
+        e.creators.add(it.creator);
+        if (!e.firstQuote && p.quote) { e.firstQuote = p.quote; e.firstUrl = it.url; e.firstCreator = it.creator; }
+        placeScores.set(p.name, e);
+      });
+    });
+    const ranked = [...placeScores.values()]
+      .sort((a, b) => (b.creators.size * 2 + b.positive - b.negative) - (a.creators.size * 2 + a.positive - a.negative))
+      .slice(0, 6);
+    if (ranked.length && topPlacesRoot) {
+      topPlacesRoot.innerHTML = `
+        <h3 class="influencer-top-heading">Most-recommended places by creators</h3>
+        <div class="influencer-top-grid">
+          ${ranked.map((p) => `
+            <article class="top-place-card">
+              <div class="top-place-name">${escapeHtml(p.name)}</div>
+              <div class="top-place-meta">
+                <span class="creator-count-pill">${p.creators.size} creator${p.creators.size === 1 ? '' : 's'}</span>
+                ${p.positive ? `<span class="sentiment-pill positive">${p.positive}+</span>` : ''}
+                ${p.negative ? `<span class="sentiment-pill negative">${p.negative}-</span>` : ''}
+              </div>
+              ${p.firstQuote ? `<blockquote class="top-place-quote">"${escapeHtml(p.firstQuote.slice(0, 160))}${p.firstQuote.length > 160 ? '…' : ''}"</blockquote>` : ''}
+              <div class="top-place-foot">
+                ${p.firstCreator ? `<span class="ink-mute">— ${escapeHtml(p.firstCreator)}</span>` : ''}
+                <a href="https://www.google.com/maps/search/${encodeURIComponent(p.name + (p.city ? ' ' + p.city : ''))}" target="_blank" rel="noopener">Map ↗</a>
+              </div>
+              <div class="top-place-ta" data-ta-place="${escapeHtml(p.name)}" data-ta-city="${escapeHtml(p.city || '')}"></div>
+            </article>`).join('')}
+        </div>`;
+      ranked.forEach(async (p) => {
+        const slot = document.querySelector(`.top-place-ta[data-ta-place="${CSS.escape(p.name)}"]`);
+        if (!slot || !YatraData.TripAdvisor) return;
+        const defaults = window.YATRA_TRIP_DEFAULTS || {};
+        const cityEntry = (defaults.cities || []).find((c) => c.name === p.city) || (defaults.cities || [])[0] || {};
+        const ta = await YatraData.TripAdvisor.search({
+          query: p.name,
+          type: 'attraction',
+          country: defaults.country,
+          city: cityEntry.name,
+          lat: cityEntry.lat,
+          lon: cityEntry.lon,
+        });
+        if (!ta || !ta.rating) return;
+        slot.innerHTML = `
+          <a class="tripadvisor-rating-pill" href="${ta.url}" target="_blank" rel="noopener" title="${escapeHtml(ta.ranking || '')}">
+            TripAdvisor ★ ${escapeHtml(ta.rating)}${ta.review_count ? ' · ' + Number(ta.review_count).toLocaleString('en-IN') : ''}
+          </a>`;
+      });
+    }
+    function pickQuote(item) {
+      const place = (item.places_mentioned || [])[0];
+      if (place && place.quote && place.quote.length >= 30) {
+        return { quote: place.quote, sentiment: place.sentiment, place: place.name, lat: place.lat, lon: place.lon };
+      }
+      return null;
+    }
+    const cards = merged.map((it) => ({ it, q: pickQuote(it) })).filter((x) => x.q).slice(0, 8);
+    if (!cards.length) {
+      grid.innerHTML = '<div class="influencer-empty">No place-specific creator excerpts cached yet for these cities. Re-run <code>scripts/influencers/corpus_builder.py --full --whisper-fallback</code>.</div>';
+      return;
+    }
+    grid.innerHTML = cards.map(({ it, q }) => {
+      const sentClass = q.sentiment === 'positive' ? 'positive' : q.sentiment === 'negative' ? 'negative' : 'neutral';
+      const placeNote = q.place ? `· <strong>${escapeHtml(q.place)}</strong>` : '';
+      const datePart = it.published ? new Date(it.published).toLocaleDateString('en-IN', { month: 'short', year: 'numeric' }) : '';
+      const hasCoords = typeof q.lat === 'number' && typeof q.lon === 'number';
+      const cardAttrs = hasCoords
+        ? ` data-map-scope="creators" data-lat="${q.lat}" data-lon="${q.lon}" data-name="${escapeHtml(q.place || '')}" tabindex="0" role="button"`
+        : '';
+      return `
+        <article class="influencer-card"${cardAttrs}>
+          <div class="creator-row">
+            <span class="creator-badge">${escapeHtml(it.creator || 'Unknown')}</span>
+            <span class="creator-source">${escapeHtml(it.source || '')}</span>
+          </div>
+          <blockquote class="influencer-quote compact">${escapeHtml(q.quote)}</blockquote>
+          <div class="influencer-meta">
+            <span class="sentiment-pill ${sentClass}">${q.sentiment}</span>
+            <span>${escapeHtml(it._city)}</span>${placeNote ? ' ' + placeNote : ''}
+            ${datePart ? `<span>· ${datePart}</span>` : ''}
+            ${it.url ? `<a href="${it.url}" target="_blank" rel="noopener">Source ↗</a>` : ''}
+          </div>
+        </article>`;
+    }).join('');
+    if (window.TripMap && typeof window.TripMap.refresh === 'function') window.TripMap.refresh();
+  })();
+</script>
+
+</body>
+</html>

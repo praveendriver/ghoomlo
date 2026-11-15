@@ -1,0 +1,85 @@
+{
+  "destination": "Madurai",
+  "country": "IN",
+  "lat": 9.93,
+  "lon": 78.12,
+  "generated_at": "2026-05-30T04:48:08.479172+00:00",
+  "items_total": 0,
+  "creators_total": 0,
+  "buckets": {
+    "must_do": [
+      {
+        "name": "Meenakshi Amman Temple",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Madurai",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.7",
+          "review_count": "4339",
+          "ranking": "#1 of 53 things to do in Madurai",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g297677-d321131-Reviews-Madurai_Meenakshi_Amman_Temple-Madurai_Madurai_District_Tamil_Nadu.html?m=66827",
+          "city": "Madurai"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Gandhi Memorial Museum",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Madurai",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.2",
+          "review_count": "691",
+          "ranking": "#5 of 53 things to do in Madurai",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g297677-d325411-Reviews-Gandhi_Memorial_Museum-Madurai_Madurai_District_Tamil_Nadu.html?m=66827",
+          "city": "Madurai"
+        },
+        "is_seed": true
+      },
+      {
+        "name": "Thirumalai Nayakkar Mahal",
+        "score": 0.0,
+        "creators": [],
+        "creator_count": 0,
+        "mentions": 0,
+        "positive": 0,
+        "negative": 0,
+        "city": "Madurai",
+        "quote": null,
+        "quote_creator": null,
+        "quote_source": null,
+        "quote_url": null,
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "3.7",
+          "review_count": "962",
+          "ranking": "#8 of 53 things to do in Madurai",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g297677-d1896773-Reviews-Thirumalai_Nayakar_Mahal-Madurai_Madurai_District_Tamil_Nadu.html?m=66827",
+          "city": "Madurai"
+        },
+        "is_seed": true
+      }
+    ],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

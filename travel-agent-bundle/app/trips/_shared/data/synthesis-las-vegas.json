@@ -1,0 +1,15 @@
+{
+  "destination": "Las Vegas",
+  "country": "US",
+  "lat": 36.17,
+  "lon": -115.14,
+  "generated_at": "2026-05-30T03:50:51.040473+00:00",
+  "items_total": 1,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

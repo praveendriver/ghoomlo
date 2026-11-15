@@ -1,0 +1,64 @@
+{
+  "destination": "Bhutan",
+  "country": "BT",
+  "lat": 27.51,
+  "lon": 90.43,
+  "generated_at": "2026-05-30T03:50:25.679335+00:00",
+  "items_total": 4,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [
+      {
+        "name": "the Guru Padmasambhava",
+        "score": 2.25,
+        "creators": [
+          "@Visa2explore"
+        ],
+        "creator_count": 1,
+        "mentions": 1,
+        "positive": 0,
+        "negative": 0,
+        "city": "Bhutan",
+        "quote": "e here now. Dorji bhai said me there are 9 temples in the monastery. We visited the Guru Padmasambhava ji visited here on a This was a flying tigress. He came and meditated here. There was a temple that had an idol of 6-7 gods and goddesses",
+        "quote_creator": "@Visa2explore",
+        "quote_source": "youtube",
+        "quote_url": "https://www.youtube.com/watch?v=0Yg7W9jg5AI",
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.0",
+          "review_count": "152",
+          "ranking": "#3 of 14 things to do in Bumthang",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g469426-d3140537-Reviews-Burning_Lake-Bumthang_Bumthang_District.html?m=66827",
+          "city": "Bumthang"
+        }
+      },
+      {
+        "name": "Kalachakra Temple",
+        "score": 2.25,
+        "creators": [
+          "@Visa2explore"
+        ],
+        "creator_count": 1,
+        "mentions": 1,
+        "positive": 0,
+        "negative": 0,
+        "city": "Bhutan",
+        "quote": "on coming out. I prayed to the past, present and future Buddha. We then visited Kalachakra Temple which has been a one of the most important things. Kalachakra is also known as Buddha’s manifestation. Kalachakra represents union of compassi",
+        "quote_creator": "@Visa2explore",
+        "quote_source": "youtube",
+        "quote_url": "https://www.youtube.com/watch?v=VLyE347rZrU",
+        "category": "must_do",
+        "tripadvisor": {
+          "rating": "4.5",
+          "review_count": "71",
+          "ranking": "#10 of 24 things to do in Paro",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g321541-d3641362-Reviews-Dzongdrakha_Temple-Paro_Paro_District.html?m=66827",
+          "city": "Paro"
+        }
+      }
+    ],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

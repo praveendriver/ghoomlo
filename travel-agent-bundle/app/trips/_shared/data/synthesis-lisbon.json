@@ -1,0 +1,15 @@
+{
+  "destination": "Lisbon",
+  "country": "PT",
+  "lat": 38.72,
+  "lon": -9.14,
+  "generated_at": "2026-05-30T03:51:07.929603+00:00",
+  "items_total": 1,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}

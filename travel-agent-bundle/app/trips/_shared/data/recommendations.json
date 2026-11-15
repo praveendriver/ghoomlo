@@ -1,0 +1,336 @@
+{
+  "generated_at": "2026-11-01",
+  "horizon_months": 6,
+  "next_refresh": "2026-11-08T09:00:00+05:30",
+  "school_calendar_pdf": "https://www.tisb.org/assets/doc/Term%20Dates%202026%20-%2027.pdf",
+  "school_calendar_pdf_label": "TISB Term Dates 2026-27 (PDF)",
+  "scoring_signals": [
+    "TISB school calendar — kids must not miss school (verified against 2026-27 term-dates PDF)",
+    "Indian + Karnataka public holidays (Diwali falls Sun Nov 8, 2026)",
+    "Destination weather + monsoon clearance",
+    "Shoulder-season + peak-dry-season pricing windows",
+    "Wishlist priority + favorites repeat candidacy",
+    "12-month visited exclusion. Lookback = Nov 1, 2025 → today (Nov 1, 2026). Blocks Jaipur Dec'25 (ages out Dec 2026), Las Vegas Feb'26, Delhi Apr'26, Jammu Apr'26, Tokyo+Kyoto Jul'26, and — NEW this cycle — Goa Oct'26. Tokyo and Goa are excluded on their trip records; neither is in visited.json yet.",
+    "THIS CYCLE — CORRECTIONS FROM THE TRIP FOLDERS. Two trips the last ten refreshes didn't account for: (1) the family stayed at ITC Grand Goa Oct 16–21 over Dussehra — so Dussehra was used, not 'forfeited', and Goa can't take the Feb slot; (2) the adults have a Sri Lanka trip Nov 20–24. Result: family Sri Lanka at Diwali is dropped (duplicate destination, ~10 days out), Kochi (wishlist) takes the Feb mid-term, and Coorg (drive-to) is surfaced as the only low-friction Diwali option.",
+    "HORIZON: today is Sunday Nov 1, 2026 (Rajyotsava holiday); Term 1 in session. Edge ~May 1, 2027 — the full Spring Break (Apr 3–18) stays in-window. Diwali break Nov 7–15 starts in 6 days. Winter Break (Dec 12 → Jan 3) is ~41 days out and is now the acute book-soon item.",
+    "KIDS' AGES CORRECTED: the younger child turned 7 on Jul 15, 2026 (prior refreshes still said 6); the older turns 10 on Nov 28, 2026 (a Saturday — no trip window, school either side). Ages used below: 7 & 9 for Nov trips, 7 & 10 from December.",
+    "MARRIOTT 40K CERT — STATUS UNCLEAR, NOT CONFIRMED USED: loyalty.md lists it as active (expires 2026-12-31). The Tokyo plan applied it at Westin Miyako Kyoto (Jul 7–13), but the post-trip 'cert used Y/N' capture was never filled in, and the Sri Lanka plan also says 'check it wasn't used in Kyoto'. Check the Bonvoy app. If still live, it must be used in a booking by Dec 31 — Thailand (Bangkok, ≤40K night) is the best home.",
+    "LOYALTY BALANCE CAVEAT: loyalty.md is still the PRE-Tokyo snapshot (Bonvoy 359K, 2026-05-26). The Tokyo plan put ~240K on Kyoto from a combined ~477K (you 359K + spouse 118K), leaving roughly ~235K combined — an estimate. Goa's payment method is unknown. Refresh loyalty.md before any points commit.",
+    "Spring Break choice: Bali vs Seoul (same window, pick one). Paris+Rome is viable again on visa timing but held in passed_over on budget + repeat grounds.",
+    "Sequencing for the forward set: (Coorg Diwali, optional) → adults' Sri Lanka Nov 20–24 (planned) → Thailand Dec 12–20 → Mumbai Jan 22–26 → Kochi Feb 18–22 → Bali OR Seoul Apr 3–10+.",
+    "ACTION ITEMS STILL OPEN: (1) log Tokyo/Kyoto (Jul 2026) and Goa (Oct 16–21, 2026) to visited.json; (2) refresh loyalty.md with post-Tokyo Bonvoy balances incl. spouse's account; (3) confirm in the Bonvoy app whether the 40K cert is used.",
+    "Visa simplicity from India (Schengen lead-time vs visa-free/e-visa/ETA/VoA short-hauls)",
+    "Vegetarian food density (strict lacto-veg — no egg/fish/dashi)"
+  ],
+  "recommendations": [
+    {
+      "id": "dec-winter-thailand",
+      "destination": "Bangkok + Phuket, Thailand",
+      "country": "Thailand",
+      "iata": "BKK / HKT",
+      "lat": 13.76,
+      "lon": 100.5,
+      "window": "Sat Dec 12 → Sun Dec 20, 2026 (extendable toward Jan 3 — full break in-window)",
+      "school_status": "TISB Winter Break Dec 12, 2026 → Jan 3, 2027; Term 1 ends Fri Dec 11. Dec 12–20 is the 8-night core, 0 PTO, weekend-bookended at the front; can stretch up to 21 nights (verified against 2026-27 PDF).",
+      "school_verify_url": "https://www.tisb.org/assets/doc/Term%20Dates%202026%20-%2027.pdf",
+      "nights": 8,
+      "type": "international",
+      "wishlist": false,
+      "visited_in_last_12_months": false,
+      "score": 88,
+      "headline": "Winter Break flagship · peak dry season · visa-free · Marriott-deep · book in the next 2 weeks",
+      "rationale": [
+        "Now the nearest real family trip in the set (~41 days out) — Dec 12–20 lands in Thailand's peak dry season (Nov–Feb): 28–32°C, low rain, calm Andaman sea for kids 7 & 9 (the older one turns 10 on Nov 28)",
+        "Visa exemption for Indian passports, and the US-passport child is visa-exempt too — zero lead-time risk; the only thing closing is Dec-peak hotel and fare inventory, so book flights + the Phuket leg within ~2 weeks",
+        "Best loyalty footprint of any international pick: Bangkok Marriott Marquis Queen's Park, JW Marriott Bangkok + JW Marriott Phuket / Phuket Marriott Merlin Beach — Titanium suite/lounge/breakfast AND a real points-burn opportunity",
+        "Strong vegetarian density: Bangkok has dense pure-veg + Jain + Indian options; Thai veg via 'jay' (เจ) menus — som tam, green curry, mango sticky rice all veg-adaptable",
+        "Family pace: BKK city + temples (Grand Palace, Wat Pho), then a 1.5h hop to Phuket/Krabi for a 3–4 night beach decompress — balanced two-base week"
+      ],
+      "est_cost": "₹3.5 – 5L (₹5 – 6L if extended past Dec 20)",
+      "loyalty_play": "Last chance for the Marriott 40K free-night cert IF it is still live (the Tokyo plan applied it at Westin Miyako Kyoto — check the Bonvoy app): it must be used in a booking by Dec 31, and a Bangkok Marriott night at or under 40K is the obvious home. Otherwise ~4 award nights in Phuket (JW Phuket / Marriott Merlin, ~50–60K/night) with 5th-night-free if extended, or cash on Titanium perks. Combined Bonvoy is roughly ~235K after Kyoto (you + spouse, estimate) — verify before committing. BLR–BKK best on cash (cheap dry-season fares).",
+      "warnings": [
+        "Trip stacking: Goa (Oct 16–21) is done and the adults' Sri Lanka trip is Nov 20–24 — this would be the third trip in ~9 weeks; still the cheapest, lowest-effort international in the set",
+        "Phuket beaches are busy over the Dec peak — book hotel + island day-trips early",
+        "Fish sauce hides in many 'vegetable' Thai dishes — say jay/no fish sauce explicitly every order",
+        "Thailand's arrival rules have been changing (e.g. an online arrival card filed before landing) — re-check entry requirements ~1 week before flying",
+        "If extending toward Jan 3, book award nights now — Dec 26–Jan 2 is the busiest, priciest stretch"
+      ],
+      "tags": [
+        "winter-break",
+        "school-clear-mega-window",
+        "loyalty-strong",
+        "visa-free",
+        "peak-dry-season",
+        "book-soon"
+      ]
+    },
+    {
+      "id": "apr-spring-bali",
+      "destination": "Bali (Ubud + Nusa Dua), Indonesia",
+      "country": "Indonesia",
+      "iata": "DPS",
+      "lat": -8.65,
+      "lon": 115.22,
+      "window": "Sat Apr 3 → Sat Apr 10, 2027 (7-night core; full Spring Break Apr 3–18 in-horizon — extendable toward ~14 nights)",
+      "school_status": "TISB Spring Break Apr 3–18, 2027, fully in-horizon (edge ~May 1). Apr 3 is a Saturday — depart after the Apr 2 school day, 7-night core, 0 PTO; the whole 16-day break is available to extend (verified against 2026-27 PDF).",
+      "school_verify_url": "https://www.tisb.org/assets/doc/Term%20Dates%202026%20-%2027.pdf",
+      "nights": 7,
+      "type": "international",
+      "wishlist": true,
+      "visited_in_last_12_months": false,
+      "score": 82,
+      "headline": "Spring Break wishlist · dry-season start · visa on arrival · Bonvoy-deep · superb veg",
+      "rationale": [
+        "Early April is the START of Bali's dry season — weather turns in your favour exactly in this window, and the full 16-day break lets you stretch it",
+        "Wishlist destination (beach + culture + wellness — hits trip theme 4 directly) with visa-on-arrival for Indian passports; ~153 days out, so nothing to lock yet beyond watching fares",
+        "One of the best vegetarian-density profiles anywhere: Balinese-Hindu food culture, Ubud's dense plant-based scene, gado-gado, tempeh/tofu, and Indian restaurants in Seminyak",
+        "Deep Bonvoy footprint: The Ritz-Carlton Bali & St. Regis Bali (Nusa Dua), W Bali Seminyak, The Laguna Luxury Collection, Westin Nusa Dua, Renaissance Bali Uluwatu",
+        "Family pace: culture + rice-terrace + wellness base in Ubud, then a calm-beach decompress at Nusa Dua for kids 7 & 10"
+      ],
+      "est_cost": "₹4.5 – 6.5L (upper half of the ₹7L Lux cap — keep cabin economy and watch the resort tier)",
+      "loyalty_play": "Strongest Spring Break Bonvoy burn: ~4–5 award nights at Westin Nusa Dua / The Laguna (~45–60K/night) with 5th-night-free, OR cash on Titanium perks at The Ritz-Carlton / St. Regis to preserve balance. The 40K cert expires Dec 31, 2026 and cannot reach this trip. Combined Bonvoy ~235K post-Kyoto (estimate) — refresh loyalty.md first. No direct BLR–DPS — best on cash via SIN/KUL.",
+      "warnings": [
+        "Mutually exclusive with Seoul — same Spring Break window; Bali is the warm beach+wellness option, Seoul the cooler culture-city one",
+        "Bali charges a one-time tourist levy per person (IDR 150,000 when last checked), paid online or on arrival — budget it for all 4",
+        "Early April is the dry-season transition — mostly dry but plan one flexible indoor/spa day",
+        "Veg hazards: nasi goreng/mie goreng usually contain egg, and some dishes use shrimp paste (terasi) or fish sauce — specify lacto-veg, no egg, every time"
+      ],
+      "tags": [
+        "wishlist",
+        "spring-break",
+        "full-break-in-horizon",
+        "loyalty-strong",
+        "visa-simple",
+        "wellness",
+        "dry-season"
+      ]
+    },
+    {
+      "id": "jan-republic-day-mumbai",
+      "destination": "Mumbai, India",
+      "country": "India",
+      "iata": "BOM",
+      "lat": 19.08,
+      "lon": 72.88,
+      "window": "Fri Jan 22 → Tue Jan 26, 2027",
+      "school_status": "Republic Day (Tue Jan 26) is a TISB holiday and Mon Jan 25 is an INSET/staff day (no pupils) — together they bookend the Jan 23–24 weekend. Depart Fri Jan 22 evening after school, return Tue evening = 0 school days lost, 0 PTO (verified against 2026-27 PDF).",
+      "school_verify_url": "https://www.tisb.org/assets/doc/Term%20Dates%202026%20-%2027.pdf",
+      "nights": 4,
+      "type": "domestic",
+      "wishlist": true,
+      "visited_in_last_12_months": false,
+      "score": 77,
+      "headline": "Mumbai wishlist · cool-dry Jan · Bonvoy-deep · 0 PTO",
+      "rationale": [
+        "Mumbai is on the wishlist (never done as a family trip) with a long runway (~82 days), no festival surge pricing, no monsoon",
+        "Republic Day long weekend Jan 22–26 — a clean 4-night domestic slot, 0 school days, 0 PTO",
+        "Weather: late Jan is Mumbai's cool-dry peak (~18–30°C) — comfortable Elephanta ferry + Marine Drive walks with kids 7 & 10",
+        "Heritage anchors: Gateway of India, Elephanta caves (kid-friendly ferry), CST, Marine Drive sunset, Bandra street art",
+        "Vegetarian: Swati Snacks, Soam, Shree Thaker Bhojanalay — Gujarati-thali heartland; loyalty genuinely deep for a domestic city (JW Marriott Sahar, St. Regis BKC, Westin Powai)"
+      ],
+      "est_cost": "₹1.4 – 1.9L",
+      "loyalty_play": "JW Marriott Sahar or St. Regis BKC on cash for Titanium perks (suite upgrade + lounge + breakfast) — a 4-night domestic doesn't justify a big points burn. If award is the call, ~2 nights at JW Sahar is the measured option. Air India FR 40K covers the BLR–BOM round-trip in economy. The 40K cert expires before this trip.",
+      "warnings": [
+        "Swap candidate: Hyderabad (W Hyderabad / Sheraton Hitec City) is the non-wishlist alternate for this window — see passed_over",
+        "Jan 22 is a school day — Fri-evening-after-school departure only",
+        "Re-check the 2026-27 PDF for any mid-year amendment (incl. the Jan 25 INSET day) before booking",
+        "Elephanta ferries stop in rough weather — unlikely in January, but keep a museum backup (CSMVS / Dr. Bhau Daji Lad)"
+      ],
+      "tags": [
+        "wishlist",
+        "long-weekend",
+        "no-PTO",
+        "loyalty-strong",
+        "domestic"
+      ]
+    },
+    {
+      "id": "feb-midterm-kochi",
+      "destination": "Kochi (Fort Kochi + backwaters day), India",
+      "country": "India",
+      "iata": "COK",
+      "lat": 9.93,
+      "lon": 76.27,
+      "window": "Thu Feb 18 (eve) → Mon Feb 22, 2027",
+      "school_status": "TISB mid-term break Feb 19–22, 2027 (Fri–Mon). Depart Thu Feb 18 evening after school, return Mon Feb 22 = 0 school days lost, 0 PTO (verified against 2026-27 PDF).",
+      "school_verify_url": "https://www.tisb.org/assets/doc/Term%20Dates%202026%20-%2027.pdf",
+      "nights": 4,
+      "type": "domestic",
+      "wishlist": true,
+      "visited_in_last_12_months": false,
+      "score": 76,
+      "headline": "Wishlist Kerala at last · dry-season Feb · 1h flight · 0 PTO",
+      "rationale": [
+        "Kochi is on the wishlist and keeps missing its slot (the Dussehra Kerala pick went unused — Goa took that week); late Feb is Kerala's dry season, with the monsoons well clear",
+        "Takes over the Feb mid-term from Goa, which is now inside the 12-month block after the Oct 16–21 ITC Grand Goa trip",
+        "Short and easy: ~1h BLR–COK, a 4-night 0-PTO slot, balanced pace — Fort Kochi heritage one day, a backwaters day trip another, a Kathakali show one evening",
+        "Heritage anchors for kids 7 & 10: Chinese fishing nets, Mattancherry (Dutch) Palace murals, the Jew Town lanes, St Francis Church, spice warehouses",
+        "Vegetarian: Kerala sadya on a banana leaf, appam with vegetable stew, puttu-kadala, avial, thoran — a genuine regional veg anchor"
+      ],
+      "est_cost": "₹1.3 – 1.9L",
+      "loyalty_play": "Kochi Marriott Hotel or Le Méridien Kochi on cash for Titanium perks; Grand Hyatt Kochi Bolgatty is the nicer waterfront option but Hyatt is opportunistic only for this family. Air India FR 40K covers the BLR–COK round-trip in economy. No points burn needed.",
+      "warnings": [
+        "Kerala parotta and some bakery items often contain egg, and many 'vegetable' curries share kitchens with fish — ask every time",
+        "Late Feb is warm and humid (low 30s °C) — plan heritage walks for mornings and late afternoons",
+        "Houseboats: confirm a vegetarian-only menu in writing before booking, and life jackets for both kids",
+        "Feb 18 is a school day — Thu-evening departure only; re-check the 2026-27 PDF for amendments before booking"
+      ],
+      "tags": [
+        "wishlist",
+        "long-weekend",
+        "no-PTO",
+        "domestic",
+        "dry-season",
+        "heritage"
+      ]
+    },
+    {
+      "id": "apr-spring-seoul",
+      "destination": "Seoul, South Korea",
+      "country": "South Korea",
+      "iata": "ICN",
+      "lat": 37.57,
+      "lon": 126.98,
+      "window": "Sat Apr 3 → Sat Apr 10, 2027 (full Spring Break Apr 3–18 in-horizon; cherry blossoms usually peak early–mid April)",
+      "school_status": "TISB Spring Break Apr 3–18, 2027, fully in-horizon. Apr 3 is a Saturday — depart after the Apr 2 school day, 7 nights, 0 PTO (verified against 2026-27 PDF).",
+      "school_verify_url": "https://www.tisb.org/assets/doc/Term%20Dates%202026%20-%2027.pdf",
+      "nights": 7,
+      "type": "international",
+      "wishlist": true,
+      "visited_in_last_12_months": false,
+      "score": 75,
+      "headline": "Spring Break alt · wishlist · cherry-blossom season · mutually exclusive with Bali · visa needed",
+      "rationale": [
+        "~153-day runway leaves plenty of time for the Korean visa that is Seoul's main knock — genuinely viable as the culture-city alternate to Bali",
+        "Wishlist city; early–mid April is usually cherry-blossom peak (Yeouido, Seokchon Lake, the palace grounds) — a strong seasonal hook",
+        "Culture-heavy and kid-friendly: Gyeongbokgung + changing of the guard, Bukchon Hanok village, N Seoul Tower cable car, a Hangang-park day",
+        "Vegetarian: Korean Buddhist temple cuisine in Insadong + Itaewon/Gangnam Indian; bibimbap/japchae/tofu stews are veg-adaptable but ask — many use anchovy or beef stock, fish sauce or jeotgal",
+        "Loyalty: Josun Palace (Luxury Collection), JW Marriott Dongdaemun Square, Seoul Marriott — Titanium perks or a measured award burn"
+      ],
+      "est_cost": "₹4.5 – 6.8L (runs toward the ₹7L Lux cap — keep cabin economy, watch hotel tier)",
+      "loyalty_play": "Josun Palace or JW Marriott Dongdaemun on Titanium perks, or a 2–3 night award burn (~50–60K/night) if the post-Kyoto balance allows. The 40K cert expires before this trip. BLR–ICN best on cash via SIN/HKG.",
+      "warnings": [
+        "Indian passports need a South Korea visa — file around Jan–Feb (check the VFS lead time); the US-passport child follows different rules (K-ETA or exemption) — check per traveller",
+        "Mutually exclusive with Bali — same Spring Break window",
+        "Early April is cool (highs ~13–17°C, chilly mornings) — pack layers",
+        "Thinner strict-lacto-veg density than Bali, and bloom dates shift year to year — check the 2027 bloom forecast before locking"
+      ],
+      "tags": [
+        "wishlist",
+        "spring-break",
+        "cherry-blossom",
+        "visa-needed",
+        "loyalty-strong"
+      ]
+    },
+    {
+      "id": "nov-diwali-coorg",
+      "destination": "Coorg (Madikeri), Karnataka, India",
+      "country": "India",
+      "iata": "— (drive from BLR, ~5–6h)",
+      "lat": 12.42,
+      "lon": 75.74,
+      "window": "Wed Nov 11 → Sun Nov 15, 2026",
+      "school_status": "Inside TISB Diwali break Nov 7–15 — 4 nights, 0 PTO, back the night before school resumes Mon Nov 16. Starts after the Diwali weekend (Diwali falls Sun Nov 8) — shift by a day if family festivities need it (verified against 2026-27 PDF).",
+      "school_verify_url": "https://www.tisb.org/assets/doc/Term%20Dates%202026%20-%2027.pdf",
+      "nights": 4,
+      "type": "domestic",
+      "wishlist": false,
+      "visited_in_last_12_months": false,
+      "score": 68,
+      "headline": "Only realistic Diwali option · drive, no flights · cool post-monsoon hills · Bonvoy resort",
+      "rationale": [
+        "Diwali starts in 6 days. Flights and resorts that week are expensive and thin, so a drive-to Bonvoy resort is the one option that still works without a scramble",
+        "Mid-November is just after the monsoon in Coorg: green, cool (~15–27°C), waterfalls still running — very different from the Goa beach trip in October",
+        "Coorg Marriott Resort & Spa (Madikeri) gives Titanium perks on a short notice, cash stay — no flights to book at Diwali prices",
+        "Easy wins for kids 7 & 9: the Tibetan Golden Temple at Bylakuppe on the drive in, a coffee-estate walk, Abbey Falls, Raja's Seat sunset",
+        "A slow 4-day pace that fits the gap between Goa (done) and the adults' Sri Lanka trip (Nov 20)"
+      ],
+      "est_cost": "₹0.9 – 1.4L",
+      "loyalty_play": "Cash on Titanium perks (suite upgrade, lounge, breakfast) at Coorg Marriott Resort & Spa — check the Diwali-week award rate in the app; if it is ≤40K and the cert is somehow still live, this is a candidate (Thailand is the better use). Fuel + driver only for transport; no airline points needed.",
+      "warnings": [
+        "Optional, not a must — this is the third trip in ~5 weeks for the adults (Goa, Coorg, Sri Lanka). Skipping Diwali travel and putting the energy into Thailand is a perfectly good choice",
+        "Kodava cooking is pork-heavy — eat at the resort and pure-veg Udupi-style places; at Bylakuppe confirm the momos are veg-filled",
+        "Book the resort today if you want it — Diwali-week inventory at a 6-day lead is the main risk; confirm the property and rate in the Bonvoy app",
+        "Ghat roads after rain can be slow; leave BLR early and avoid driving the last stretch after dark"
+      ],
+      "tags": [
+        "diwali",
+        "school-clear-mega-window",
+        "drive-to",
+        "domestic",
+        "book-now",
+        "nature"
+      ]
+    }
+  ],
+  "planned": [
+    {
+      "id": "nov-sri-lanka-ramayana-adults",
+      "destination": "Colombo + Kandy + Nuwara Eliya, Sri Lanka",
+      "window": "Fri Nov 20 → Tue Nov 24, 2026",
+      "nights": 4,
+      "travelers": "2 adults (kids stay home — Nov 20 and 23–24 are school days)",
+      "status": "Planned; trip site built. Flights + Kandy hotel not yet confirmed as booked.",
+      "trip_url": "2026-11-sri-lanka-ramayana/index.html"
+    }
+  ],
+  "passed_over": [
+    {
+      "destination": "Colombo + Galle + Bentota, Sri Lanka (family, Diwali Nov 11–15)",
+      "reason": "DROPPED this cycle. The adults are already going to Sri Lanka Nov 20–24 (Colombo · Kandy · Ramayana trail, trip site at trips/2026-11-sri-lanka-ramayana/), so a family Sri Lanka trip one week earlier duplicates the destination — and at ~10 days out, Diwali-week fares and beach-resort suites are already thin. Keep the family's south-coast beach version (Galle/Bentota, Sheraton Kosgoda / Le Méridien Bentota) for a 2027 window; it stays on the wishlist."
+    },
+    {
+      "destination": "Goa, India (Feb mid-term Feb 19–22)",
+      "reason": "NOW BLOCKED by the 12-month rule. The family stayed at ITC Grand Goa Oct 16–21, 2026 (Dussehra break; trip site at trips/2026-10-goa-itc-south/). Last cycle's ranking missed this because the trip isn't in visited.json yet. Re-eligible from ~Oct 2027. Kochi takes the Feb slot."
+    },
+    {
+      "destination": "Paris + Rome (Spring Break Apr 3–18, 2027)",
+      "reason": "VIABLE AGAIN on timing — with ~153 days of runway a Schengen visa is easy (apply by mid-January for a calm 90-day lead). Held back because both cities were done in Apr 2024 and a family of 4 in Europe in April runs at or over the ₹7L cap (~₹6.5–8L). Promote it over Bali/Seoul if the family would rather repeat favourites than try a new wishlist place; Qatar Avios 24K + an Amex MR transfer would be the flight lever."
+    },
+    {
+      "destination": "Hyderabad, India (Republic Day Jan 22–26 swap-in)",
+      "reason": "Non-wishlist alternate for the Republic Day window — Mumbai (wishlist) holds the slot. Strong Bonvoy (W Hyderabad, Sheraton Hitec City), cool-dry late-Jan weather, Golconda/Charminar/Salar Jung. Promote if the family prefers city-fort culture + Andhra tiffin over Mumbai's coast."
+    },
+    {
+      "destination": "Hanoi + Halong Bay + Ninh Binh, Vietnam (Winter Break alt)",
+      "reason": "Cooler, cheaper, culture-led alternate to Thailand for Dec 12–Jan 3; e-visa easy. Thailand stays the visa-free, deep-Bonvoy flagship. Promote — or grow to a 10+ night Vietnam + Angkor loop — if the family wants a longer, more adventurous Winter Break."
+    },
+    {
+      "destination": "Jaipur / Udaipur (Feb mid-term heritage alt)",
+      "reason": "Late Feb is ideal Rajasthan weather, and Jaipur ages out of the 12-month block in Dec 2026 (last visit Dec 2025), with deep Bonvoy (JW Marriott Jaipur, ITC Rajputana, Jaipur Marriott). Held back because it would be the family's third Jaipur trip in ~4 years; Kochi is new and on the wishlist. Udaipur's Bonvoy footprint remains thin."
+    },
+    {
+      "destination": "Paro + Thimphu + Punakha, Bhutan",
+      "reason": "Strong kid-safe culture trip (no visa for Indian passports, temple-veg deep), but the Sustainable Development Fee (~₹50K/night for a family of 4) pushes it near the ₹7L cap and Winter Break is cold at altitude. Park as a Dussehra 2027 idea."
+    },
+    {
+      "destination": "Maldives (Winter Break / Spring Break loyalty play)",
+      "reason": "Strongest theoretical Bonvoy burn (W / Sheraton / JW / St. Regis Maldives), but peak-season overwater rates push a family of 4 well past the ₹7L cap even on points + cash. Revisit as a dedicated points-led trip in a shoulder month, or override the cap explicitly."
+    },
+    {
+      "destination": "Andaman Islands, India (Winter Break alt)",
+      "reason": "Dry-season December fits Winter Break and is kid-friendly, but there is essentially no Marriott/Hilton footprint (boutique resorts only). Loses the slot to Thailand. Park as a no-loyalty fallback."
+    },
+    {
+      "destination": "Kedarnath / Badrinath",
+      "reason": "Wishlist, but altitude (3,500m) + a 16km trek, and the shrines are closed for winter now. The older child turns 10 on Nov 28; the younger is 7 — keep waiting until both are ≥10 (summer 2029+)."
+    },
+    {
+      "destination": "Rameshwaram / Dwarka",
+      "reason": "Wishlist pilgrimages, compared for June 2026 (trips/2026-06-Jun3rdWeek/) but nothing in visited.json says either was taken. If one was, log it. Otherwise better for a longer summer 2027 window."
+    },
+    {
+      "destination": "Nasik (pilgrimage + wine)",
+      "reason": "Wishlist. Jan–Mar is grape-harvest season, but the Jan and Feb long weekends are claimed by Mumbai and Kochi and the Bonvoy footprint is thin. Re-look if either of those drops."
+    },
+    {
+      "destination": "Pune",
+      "reason": "On wishlist with note 'already visited Apr 2023' — better as a work-trip extension."
+    },
+    {
+      "destination": "Doha (standalone)",
+      "reason": "Qatar Avios sweet spot, but works better as a stopover on a Europe trip than as a standalone family vacation."
+    }
+  ]
+}

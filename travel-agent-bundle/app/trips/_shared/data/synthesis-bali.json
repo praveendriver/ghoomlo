@@ -1,0 +1,15 @@
+{
+  "destination": "Bali",
+  "country": "ID",
+  "lat": -8.39,
+  "lon": 115.18,
+  "generated_at": "2026-05-30T03:50:51.039895+00:00",
+  "items_total": 2,
+  "creators_total": 1,
+  "buckets": {
+    "must_do": [],
+    "must_eat": [],
+    "must_buy": [],
+    "unique_experience": []
+  }
+}
