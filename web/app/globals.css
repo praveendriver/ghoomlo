@@ -133,3 +133,25 @@ footer.site { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--l
   .card, .item { border-color: #999; break-inside: avoid; }
   .shell { max-width: none; padding: 0; }
 }
+
+/* Home: free-text start box and sample-plan carousel */
+.start-box { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 16px; }
+.start-box textarea { font-size: 1.05rem; border-color: var(--line); }
+.chip {
+  font: inherit; font-size: 0.875rem; text-align: left; color: var(--ink); background: var(--green-soft);
+  border: 1px solid transparent; border-radius: 12px; padding: 8px 12px; min-height: 44px; cursor: pointer;
+}
+.chip:hover { border-color: var(--green); }
+.carousel {
+  list-style: none; margin: 0; padding: 4px 16px 12px; display: flex; gap: 14px; overflow-x: auto;
+  scroll-snap-type: x mandatory; margin-inline: -16px; scroll-padding-inline: 16px;
+}
+.carousel li { flex: 0 0 min(78%, 260px); scroll-snap-align: start; }
+.idea-card {
+  display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; height: 210px; padding: 18px;
+  border-radius: 18px; color: #fff; text-decoration: none;
+}
+.idea-card:hover .idea-cta, .idea-card:focus-visible .idea-cta { text-decoration: underline; }
+.idea-kicker { font-size: 0.85rem; opacity: 0.92; }
+.idea-title { font-size: 1.3rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; }
+.idea-cta { font-size: 0.9rem; font-weight: 600; margin-top: 4px; }

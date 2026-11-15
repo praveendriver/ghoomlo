@@ -47,7 +47,8 @@ npm run build
 | `lib/db/` | Schema and connection; migrations are generated into `drizzle/` |
 | `lib/data/` | All database access. Every function takes the owner's user id and filters on it |
 | `lib/auth/` | Password hashing (scrypt) and cookie sessions stored hashed in Postgres |
-| `lib/itinerary/` | Prompt, output schema, and the model call |
+| `lib/itinerary/` | Prompt, output schema, the plan-drafting call, and the free-text reader |
+| `lib/ideas.ts` | The sample plans shown on the home page |
 | `lib/dates.ts` | Blocked-date clash detection and nearby feasible windows |
 | `tests/` | Vitest suites, including cross-account isolation |
 
@@ -55,6 +56,7 @@ After changing `lib/db/schema.ts`, run `npm run db:generate` and commit the new 
 
 ## Product rules the code enforces
 
+- Sample plans show no prices and are labelled as samples, not as AI drafts or verified plans.
 - A plan never claims to be verified. Places carry a "not verified" badge, costs and durations an "estimate" badge, and each plan lists what to confirm.
 - The app never invents links. The only outbound link is a Google Maps search for a place name.
 - A plan cannot be drafted for dates that include a day the traveller marked unavailable.

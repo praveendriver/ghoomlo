@@ -9,7 +9,7 @@ export type FormState = {
   saved?: boolean;
 };
 
-export function textValues(form: FormData, omit: string[] = ["password"]): Record<string, string> {
+export function textValues(form: FormData, omit: string[] = ["password", "next"]): Record<string, string> {
   const out: Record<string, string> = {};
   for (const [k, v] of form.entries()) {
     if (typeof v === "string" && !omit.includes(k) && !k.startsWith("$")) out[k] = v;

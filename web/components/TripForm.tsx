@@ -10,11 +10,20 @@ import { SubmitButton } from "./SubmitButton";
 
 const KIND_LABELS: Record<BlockedDate["kind"], string> = { school: "School", work: "Work", other: "Other" };
 
-export function TripForm({ defaultOrigin, today }: { defaultOrigin: string; today: string }) {
+export function TripForm({
+  defaultOrigin,
+  today,
+  initial = {},
+}: {
+  defaultOrigin: string;
+  today: string;
+  /** Values read from a free-text description, shown for the traveller to check. */
+  initial?: Partial<Record<string, string>>;
+}) {
   const [state, action] = useActionState<FormState, FormData>(createTripAction, {});
   const [blocked, setBlocked] = useState<BlockedDate[]>([]);
   const fe = state.fieldErrors ?? {};
-  const v = state.values ?? {};
+  const v: Partial<Record<string, string>> = state.values ?? initial;
   const update = (i: number, patch: Partial<BlockedDate>) =>
     setBlocked(blocked.map((b, j) => (j === i ? { ...b, ...patch } : b)));
 

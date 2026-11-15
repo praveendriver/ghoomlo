@@ -1,5 +1,5 @@
 import "server-only";
-import { and, count, desc, eq, gt } from "drizzle-orm";
+import { and, count, desc, eq, gt, ne } from "drizzle-orm";
 import { db, schema } from "@/lib/db";
 import type { Itinerary } from "@/lib/itinerary/schema";
 import type { TripInput } from "@/lib/validation";
@@ -90,11 +90,34 @@ export async function removeItineraryItem(
 
 export const DAILY_PLAN_LIMIT = 10;
 
+/** AI-drafted plans in the last 24 hours. Copies of sample plans do not count. */
 export async function plansInLastDay(userId: string): Promise<number> {
   const since = new Date(Date.now() - 86_400_000);
   const rows = await db
     .select({ n: count() })
     .from(schema.itineraries)
-    .where(and(eq(schema.itineraries.userId, userId), gt(schema.itineraries.createdAt, since)));
+    .where(
+      and(
+        eq(schema.itineraries.userId, userId),
+        gt(schema.itineraries.createdAt, since),
+        ne(schema.itineraries.model, "sample"),
+      ),
+    );
   return rows[0].n;
+}
+
+export const DAILY_READ_LIMIT = 30;
+
+/** Records one free-text read and reports whether the user is still within the daily limit. */
+export async function allowTextRead(userId: string): Promise<boolean> {
+  const since = new Date(Date.now() - 86_400_000);
+  const where = and(
+    eq(schema.usageEvents.userId, userId),
+    eq(schema.usageEvents.kind, "text_read"),
+    gt(schema.usageEvents.createdAt, since),
+  );
+  const rows = await db.select({ n: count() }).from(schema.usageEvents).where(where);
+  if (rows[0].n >= DAILY_READ_LIMIT) return false;
+  await db.insert(schema.usageEvents).values({ userId, kind: "text_read" });
+  return true;
 }

@@ -16,6 +16,7 @@ import {
 } from "@/lib/data/trips";
 import { conflicts, feasibleWindows, todayIso } from "@/lib/dates";
 import { generateItinerary } from "@/lib/itinerary/generate";
+import { clearPrefill } from "@/lib/start-cookies";
 import { fieldErrors, householdSchema, tripSchema } from "@/lib/validation";
 import { textValues } from "./state";
 import type { FormState } from "./state";
@@ -46,6 +47,7 @@ export async function createTripAction(_prev: FormState, form: FormData): Promis
   }
 
   const id = await createTrip(user.id, parsed.data);
+  await clearPrefill();
   redirect(`/trips/${id}`);
 }
 

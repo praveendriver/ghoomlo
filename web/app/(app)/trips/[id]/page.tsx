@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { deleteTripAction, moveTripAction, removeItemAction } from "@/app/actions/trips";
+import { deleteTripAction, moveTripAction } from "@/app/actions/trips";
 import { GeneratePlan } from "@/components/GeneratePlan";
+import { PlanDays, VerifyList } from "@/components/PlanView";
 import { PrintButton } from "@/components/PrintButton";
 import { SubmitButton } from "@/components/SubmitButton";
 import { requireUser } from "@/lib/auth/session";
@@ -10,7 +11,7 @@ import { getHousehold } from "@/lib/data/household";
 import { getTrip, latestItinerary } from "@/lib/data/trips";
 import { conflicts, feasibleWindows, formatDate, formatRange, todayIso, tripLengthDays } from "@/lib/dates";
 import { isGenerationConfigured } from "@/lib/itinerary/generate";
-import type { ItineraryItem } from "@/lib/itinerary/schema";
+import { SAMPLE_MODEL } from "@/lib/ideas";
 
 export const metadata: Metadata = { title: "Trip" };
 // Drafting a plan can take a couple of minutes.
@@ -18,68 +19,6 @@ export const maxDuration = 300;
 
 const inr = new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 });
 const KIND_LABEL = { school: "school", work: "work", other: "other commitment" } as const;
-const TIME_LABEL = { morning: "Morning", midday: "Midday", afternoon: "Afternoon", evening: "Evening" } as const;
-
-function duration(minutes: number): string {
-  const h = Math.floor(minutes / 60);
-  const m = Math.round(minutes % 60);
-  return [h ? `${h} h` : "", m ? `${m} min` : ""].filter(Boolean).join(" ") || "0 min";
-}
-
-function mapsSearchUrl(place: string, destination: string): string {
-  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place}, ${destination}`)}`;
-}
-
-function Item({ item, destination, tripId, itineraryId }: { item: ItineraryItem; destination: string; tripId: string; itineraryId: string }) {
-  return (
-    <li className="item">
-      <div className="item-head">
-        <h4 style={{ margin: 0, fontSize: "1rem" }}>
-          <span className="muted small">{TIME_LABEL[item.timeOfDay]} · </span>
-          {item.title}
-        </h4>
-        <form action={removeItemAction} className="no-print">
-          <input type="hidden" name="tripId" value={tripId} />
-          <input type="hidden" name="itineraryId" value={itineraryId} />
-          <input type="hidden" name="itemId" value={item.id} />
-          <SubmitButton className="btn quiet" pendingLabel="Removing…">
-            Remove<span className="sr-only"> {item.title}</span>
-          </SubmitButton>
-        </form>
-      </div>
-      <div className="item-meta">
-        <span className="badge kind">{item.kind}</span>
-        {item.placeName && <span className="badge unverified">Place not verified</span>}
-        {item.durationMinutes != null && <span className="badge est">Est. {duration(item.durationMinutes)}</span>}
-        {item.estimatedCostInr != null && <span className="badge est">Est. {inr.format(item.estimatedCostInr)}</span>}
-      </div>
-      <p>{item.description}</p>
-      {item.placeName && (
-        <p className="small" style={{ marginTop: 6 }}>
-          {item.placeName} ·{" "}
-          <a href={mapsSearchUrl(item.placeName, destination)} target="_blank" rel="noopener noreferrer">
-            Search on Google Maps<span className="sr-only"> (opens in a new tab)</span>
-          </a>
-        </p>
-      )}
-      {item.fitNote && (
-        <p className="small muted" style={{ marginTop: 6 }}>
-          {item.fitNote}
-        </p>
-      )}
-      {item.checkBeforeYouGo.length > 0 && (
-        <div className="small" style={{ marginTop: 8 }}>
-          <strong>Check before you go</strong>
-          <ul>
-            {item.checkBeforeYouGo.map((c, i) => (
-              <li key={i}>{c}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </li>
-  );
-}
 
 export default async function TripPage({ params }: { params: Promise<{ id: string }> }) {
   const user = await requireUser();
@@ -202,47 +141,26 @@ export default async function TripPage({ params }: { params: Promise<{ id: strin
             </p>
           )}
           <div className="notice warn">
-            <strong>Drafted by AI — nothing here has been checked against live sources.</strong>
+            <strong>
+              {plan.model === SAMPLE_MODEL
+                ? "A sample plan — a starting point, not checked against live sources."
+                : "Drafted by AI — nothing here has been checked against live sources."}
+            </strong>
             <p className="small" style={{ marginTop: 4 }}>
               Places may have closed or moved, and costs and durations are rough estimates. Confirm opening
-              hours, prices, bookings, and entry rules with the provider before you rely on them. Drafted{" "}
-              {formatDate(plan.createdAt.toISOString().slice(0, 10))}.
+              hours, prices, bookings, and entry rules with the provider before you rely on them.{" "}
+              {plan.model === SAMPLE_MODEL
+                ? "It was not written for your household; draft a new plan below to fit it to you."
+                : `Drafted ${formatDate(plan.createdAt.toISOString().slice(0, 10))}.`}
             </p>
           </div>
           <p>{plan.data.summary}</p>
-
-          {plan.data.days.map((day) => (
-            <section className="day" key={day.dayNumber} aria-labelledby={`day-${day.dayNumber}`}>
-              <div className="day-head">
-                <h3 id={`day-${day.dayNumber}`}>
-                  Day {day.dayNumber} · {day.title}
-                </h3>
-                <span className="muted small">{formatDate(day.date)}</span>
-              </div>
-              {day.items.length === 0 ? (
-                <p className="muted small">Nothing planned for this day.</p>
-              ) : (
-                <ul className="stack-sm" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                  {day.items.map((item) => (
-                    <Item key={item.id} item={item} destination={trip.destination} tripId={trip.id} itineraryId={plan.id} />
-                  ))}
-                </ul>
-              )}
-            </section>
-          ))}
-
-          {plan.data.thingsToVerify.length > 0 && (
-            <div className="card stack-sm">
-              <h3>Confirm before you book</h3>
-              <ul style={{ margin: 0, paddingLeft: 20 }}>
-                {plan.data.thingsToVerify.map((t, i) => (
-                  <li key={i}>
-                    <strong>{t.topic}</strong> — {t.why}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+          <PlanDays
+            days={plan.data.days}
+            destination={trip.destination}
+            removable={{ tripId: trip.id, itineraryId: plan.id }}
+          />
+          <VerifyList items={plan.data.thingsToVerify} />
           {plan.data.assumptions.length > 0 && (
             <div className="card stack-sm">
               <h3>What this plan assumed</h3>
@@ -253,7 +171,11 @@ export default async function TripPage({ params }: { params: Promise<{ id: strin
               </ul>
             </div>
           )}
-          <GeneratePlan tripId={trip.id} label="Draft a new plan" disabledReason={disabledReason} />
+          <GeneratePlan
+            tripId={trip.id}
+            label={plan.model === SAMPLE_MODEL ? "Redraft this for my household" : "Draft a new plan"}
+            disabledReason={disabledReason}
+          />
         </section>
       )}
 

@@ -105,3 +105,17 @@ export const itineraries = pgTable(
     index("itineraries_user_idx").on(t.userId, t.createdAt),
   ],
 );
+
+/** One row per metered action, used for per-user daily limits. */
+export const usageEvents = pgTable(
+  "usage_events",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    kind: text("kind").notNull(),
+    createdAt,
+  },
+  (t) => [index("usage_events_user_idx").on(t.userId, t.kind, t.createdAt)],
+);

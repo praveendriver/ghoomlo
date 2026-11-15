@@ -6,7 +6,7 @@ import type { FormState } from "@/app/actions/state";
 import { describe, Field } from "./Field";
 import { SubmitButton } from "./SubmitButton";
 
-export function AuthForm({ mode }: { mode: "login" | "signup" }) {
+export function AuthForm({ mode, next }: { mode: "login" | "signup"; next?: string }) {
   const [state, action] = useActionState<FormState, FormData>(
     mode === "signup" ? signupAction : loginAction,
     {},
@@ -15,6 +15,7 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
   const v = state.values ?? {};
   return (
     <form action={action} className="stack" noValidate>
+      {next && <input type="hidden" name="next" value={next} />}
       {state.error && (
         <p className="notice error" role="alert">
           {state.error}

@@ -11,9 +11,25 @@ import {
   recentLoginFailures,
   recordLoginFailure,
 } from "@/lib/data/users";
+import { safeNext } from "@/lib/prefill";
+import { prepareTripFromText } from "@/lib/start";
+import { takeIntent } from "@/lib/start-cookies";
 import { fieldErrors, loginSchema, signupSchema } from "@/lib/validation";
 import { textValues } from "./state";
 import type { FormState } from "./state";
+
+/**
+ * Where to send someone who has just signed in. If they typed a trip
+ * description before signing in, that takes priority over everything else.
+ */
+async function continueAfterAuth(userId: string, next: unknown, fallback: string): Promise<never> {
+  const intent = await takeIntent();
+  if (intent) {
+    await prepareTripFromText(userId, intent);
+    redirect("/trips/new");
+  }
+  redirect(safeNext(next) ?? fallback);
+}
 
 export async function signupAction(_prev: FormState, form: FormData): Promise<FormState> {
   const values = textValues(form);
@@ -26,7 +42,7 @@ export async function signupAction(_prev: FormState, form: FormData): Promise<Fo
     return { fieldErrors: { email: "An account with this email already exists. Try signing in." }, values };
   }
   await startSession(user.id);
-  redirect("/household?welcome=1");
+  return continueAfterAuth(user.id, form.get("next"), "/");
 }
 
 // Verified against when the email is unknown, so response time does not reveal
@@ -50,7 +66,7 @@ export async function loginAction(_prev: FormState, form: FormData): Promise<For
   }
   await clearLoginFailures(email);
   await startSession(user.id);
-  redirect("/trips");
+  return continueAfterAuth(user.id, form.get("next"), "/trips");
 }
 
 export async function logoutAction(): Promise<void> {
