@@ -10,7 +10,8 @@
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate"
+    "db:migrate": "drizzle-kit migrate",
+    "start:prod": "node scripts/migrate.mjs && next start"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.8.0",

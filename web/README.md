@@ -25,6 +25,10 @@ To work on the plan screen without a key, attach placeholder content to a trip:
 node --env-file=.env.local scripts/dev-sample-plan.mjs <trip-id>
 ```
 
+## Deploy
+
+`render.yaml` at the repo root describes a Render web service and Postgres database. `npm run start:prod` applies migrations and then starts the server, so any Node host with a `DATABASE_URL` works the same way.
+
 ## Checks
 
 ```bash

@@ -1,0 +1,29 @@
+# Render blueprint: one web service plus a Postgres database.
+# Deploy: https://render.com/deploy?repo=https://github.com/praveendriver/ghoomlo/tree/claude/eager-sagan-hzq8ov
+databases:
+  - name: ghoomlo-db
+    plan: free
+    databaseName: ghoomlo
+    user: ghoomlo
+
+services:
+  - type: web
+    name: ghoomlo
+    runtime: node
+    plan: free
+    # Deploys from the working branch until it is merged; then change to main.
+    branch: claude/eager-sagan-hzq8ov
+    rootDir: web
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm run start:prod
+    healthCheckPath: /login
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: ghoomlo-db
+          property: connectionString
+      # Needed to draft plans. Entered in the Render dashboard, never committed.
+      - key: ANTHROPIC_API_KEY
+        sync: false
