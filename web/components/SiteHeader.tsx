@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { logoutAction } from "@/app/actions/auth";
+import { isRecordingUsage } from "./Clarity";
 
 export function Brand() {
   return (
@@ -59,6 +60,12 @@ export function SiteFooter({ narrow = false }: { narrow?: boolean }) {
           Ghoomlo drafts trip plans; it does not sell or book travel. Always confirm prices, opening hours,
           and entry rules with the provider or an official source.
         </p>
+        {isRecordingUsage() && (
+          <p className="small">
+            To improve the site we record how pages are used (taps, scrolling, and screens visited) with
+            Microsoft Clarity. What you type into forms is masked.
+          </p>
+        )}
       </div>
     </footer>
   );

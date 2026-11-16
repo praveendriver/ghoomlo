@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "@fontsource-variable/fraunces";
 import "@fontsource-variable/fraunces/wght-italic.css";
 import "@fontsource-variable/dm-sans";
+import { Clarity } from "@/components/Clarity";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +15,10 @@ export const viewport: Viewport = { themeColor: "#15211c" };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-IN">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Clarity />
+      </body>
     </html>
   );
 }
