@@ -24,6 +24,9 @@ services:
         fromDatabase:
           name: ghoomlo-db
           property: connectionString
+      # Microsoft Clarity project ID (public; it appears in the page source).
+      - key: CLARITY_PROJECT_ID
+        value: zeieo9j3r7
       # Needed to draft plans. Entered in the Render dashboard, never committed.
       - key: ANTHROPIC_API_KEY
         sync: false
