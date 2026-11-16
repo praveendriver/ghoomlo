@@ -227,12 +227,16 @@ legend { padding: 0; }
 
 /* Plan: one sketch map per day, then time-rail cards */
 .day { padding-top: 14px; display: flex; flex-direction: column; gap: 16px; }
-.sketch { position: relative; margin: 0; border-radius: 26px; overflow: hidden; border: 1px solid var(--line); background: #efe8da; }
-.sketch svg { display: block; width: 100%; height: clamp(180px, 30vw, 250px); }
-.sketch figcaption {
-  position: absolute; left: 14px; bottom: 10px; font-family: "Caveat", cursive; font-size: 1.15rem; line-height: 1;
-  color: var(--ink); background: rgba(255, 253, 248, 0.85); border-radius: 999px; padding: 5px 12px;
-}
+.daymap { margin: 0; }
+.daymap-frame { position: relative; border-radius: 26px; overflow: hidden; border: 1px solid var(--line); background: #efe8da; isolation: isolate; }
+.daymap-canvas { height: clamp(210px, 32vw, 300px); background: #efe8da; font-family: var(--body); }
+/* Give the street map a hand-drawn, printed-paper look: wobbly lines and muted ink. */
+.daymap-canvas .leaflet-tile-pane { filter: url(#map-sketch) sepia(0.42) saturate(0.72) contrast(0.96) brightness(1.03); }
+.daymap-canvas .leaflet-control-attribution { font-size: 10px; background: rgba(255, 253, 248, 0.85); }
+.daymap-canvas .leaflet-bar a { color: var(--ink); }
+.map-pin { background: none; border: 0; }
+.map-pin svg { display: block; filter: drop-shadow(0 3px 3px rgba(21, 33, 28, 0.35)); }
+.daymap figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 6px; }
 .day-head h3 { font-family: var(--display); font-weight: 500; font-size: 1.6rem; letter-spacing: -0.02em; line-height: 1.15; }
 .day-num { font-family: var(--body); font-size: 0.74rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 4px; }
 .timeline { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
@@ -291,7 +295,7 @@ footer.site p { max-width: 62ch; }
   .banner { color: var(--ink); background: none; min-height: 0; padding: 0; }
   .banner > img, .banner::after { display: none !important; }
   .card, .item { border: 1px solid #999; break-inside: avoid; box-shadow: none; }
-  .sketch { break-inside: avoid; }
+  .daymap { break-inside: avoid; }
   .stop-time { background: none; }
   .shell { max-width: none; padding: 0; }
 }

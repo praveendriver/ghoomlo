@@ -50,15 +50,26 @@ npm run build
 | `lib/itinerary/` | Prompt, output schema, the plan-drafting call, and the free-text reader |
 | `lib/ideas.ts` | The sample plans shown on the home page |
 | `images/` | Destination photos and their sources (`images/README.md`); `lib/photos.ts` maps them to destinations |
+| `lib/geo.ts`, `lib/geocode.ts` | Place search for map pins (OpenStreetMap Nominatim), cached in Postgres |
 | `lib/dates.ts` | Blocked-date clash detection and nearby feasible windows |
 | `tests/` | Vitest suites, including cross-account isolation |
 
 After changing `lib/db/schema.ts`, run `npm run db:generate` and commit the new file in `drizzle/`.
+
+## Maps
+
+Each plan day shows a real map (Leaflet on OpenStreetMap tiles, restyled to look hand-drawn) with a numbered pin for every place the search could find near the destination. Places it cannot find, or finds implausibly far away, get no pin.
+
+- AI-drafted plans are looked up when drafted, about one second per place, and results are cached in the `geocodes` table.
+- Sample plans use coordinates committed in `lib/idea-locations.json`. After editing `lib/ideas.ts`, run `npx tsx scripts/geocode-ideas.ts` and check the printed matches.
+- Set `GEOCODING=off` to skip lookups.
+- The public OpenStreetMap search and tile servers are for light use only. Move both to a paid provider before launch traffic; the search is isolated in `searchNominatim` and the tile URL in `components/DayMap.tsx`.
 
 ## Product rules the code enforces
 
 - Sample plans show no prices and are labelled as samples, not as AI drafts or verified plans.
 - A plan never claims to be verified. Places carry a "not verified" badge, costs and durations an "estimate" badge, and each plan lists what to confirm.
 - The app never invents links. The only outbound link is a Google Maps search for a place name.
+- Map pins come only from a place search, never from the model, and the map says they may be off.
 - A plan cannot be drafted for dates that include a day the traveller marked unavailable.
 - Travellers are stored as age groups only. Users can download or delete everything from the Account page.

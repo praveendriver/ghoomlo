@@ -15,6 +15,7 @@ import {
   saveItinerary,
 } from "@/lib/data/trips";
 import { conflicts, feasibleWindows, todayIso } from "@/lib/dates";
+import { addLocations } from "@/lib/geocode";
 import { generateItinerary } from "@/lib/itinerary/generate";
 import { clearPrefill } from "@/lib/start-cookies";
 import { fieldErrors, householdSchema, tripSchema } from "@/lib/validation";
@@ -101,7 +102,7 @@ export async function generatePlanAction(_prev: PlanState, form: FormData): Prom
     model: result.model,
     startDate: trip.startDate,
     endDate: trip.endDate,
-    data: result.itinerary,
+    data: await addLocations(result.itinerary, trip.destination),
   });
   revalidatePath(`/trips/${tripId}`);
   return {};

@@ -41,7 +41,11 @@ export const draftSchema = z.object({
 export type ItineraryDraft = z.infer<typeof draftSchema>;
 
 /** What we store: the draft plus stable ids and the calendar date of each day. */
-export type ItineraryItem = z.infer<typeof draftItemSchema> & { id: string };
+export type ItineraryItem = z.infer<typeof draftItemSchema> & {
+  id: string;
+  /** Map coordinates from a place search, when the place was found near the destination. */
+  location?: { lat: number; lng: number } | null;
+};
 export type ItineraryDay = { dayNumber: number; date: string; title: string; items: ItineraryItem[] };
 export type Itinerary = {
   summary: string;

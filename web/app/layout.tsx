@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import "@fontsource-variable/fraunces";
 import "@fontsource-variable/fraunces/wght-italic.css";
 import "@fontsource-variable/dm-sans";
-import "@fontsource/caveat/600.css";
 import "./globals.css";
 
 export const metadata: Metadata = {

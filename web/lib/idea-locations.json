@@ -1,0 +1,120 @@
+{
+  "goa-easy-beach-break": {
+    "Fort Aguada": {
+      "lat": 15.4923866,
+      "lng": 73.7735976
+    },
+    "Candolim Beach": {
+      "lat": 15.5180748,
+      "lng": 73.7629238
+    },
+    "Basilica of Bom Jesus": {
+      "lat": 15.5006961,
+      "lng": 73.9117039
+    },
+    "Se Cathedral, Old Goa": {
+      "lat": 15.5037349,
+      "lng": 73.9121938
+    },
+    "Fontainhas, Panaji": {
+      "lat": 15.496656,
+      "lng": 73.831081
+    }
+  },
+  "udaipur-lakes-and-palaces": {
+    "Lake Pichola": {
+      "lat": 24.5696218,
+      "lng": 73.6721833
+    },
+    "City Palace, Udaipur": {
+      "lat": 24.5760597,
+      "lng": 73.6835668
+    },
+    "Jagdish Temple": {
+      "lat": 24.580712,
+      "lng": 73.6846434
+    },
+    "Saheliyon ki Bari": {
+      "lat": 24.6030656,
+      "lng": 73.6854635
+    },
+    "Ambrai Ghat": {
+      "lat": 24.5777259,
+      "lng": 73.6799321
+    }
+  },
+  "jaipur-forts-and-bazaars": {
+    "Hawa Mahal": {
+      "lat": 26.923932,
+      "lng": 75.8268652
+    },
+    "Amber Fort": {
+      "lat": 26.9860728,
+      "lng": 75.8500797
+    },
+    "Jal Mahal": {
+      "lat": 26.9534672,
+      "lng": 75.8461309
+    },
+    "Nahargarh Fort": {
+      "lat": 26.9400336,
+      "lng": 75.8165299
+    },
+    "City Palace, Jaipur": {
+      "lat": 26.9262096,
+      "lng": 75.8238346
+    },
+    "Jantar Mantar, Jaipur": {
+      "lat": 26.9247694,
+      "lng": 75.8245002
+    }
+  },
+  "kerala-hills-and-backwaters": {
+    "Fort Kochi": {
+      "lat": 9.967569,
+      "lng": 76.2421901
+    },
+    "Eravikulam National Park": {
+      "lat": 10.2275083,
+      "lng": 77.0743183
+    },
+    "Tea Museum, Munnar": {
+      "lat": 10.0942253,
+      "lng": 77.0506535
+    },
+    "Mattupetty Dam": {
+      "lat": 10.1063025,
+      "lng": 77.1239054
+    },
+    "Alappuzha Beach": {
+      "lat": 9.4843775,
+      "lng": 76.3194978
+    }
+  },
+  "ladakh-leh-and-nubra": {
+    "Leh Palace": {
+      "lat": 34.1659476,
+      "lng": 77.5862029
+    },
+    "Leh Main Bazaar": {
+      "lat": 34.1641603,
+      "lng": 77.5872518
+    },
+    "Shanti Stupa": {
+      "lat": 34.1737628,
+      "lng": 77.5749375
+    },
+    "Thiksey Monastery": {
+      "lat": 34.0565625,
+      "lng": 77.6667387
+    },
+    "Shey Palace": {
+      "lat": 34.0716174,
+      "lng": 77.632758
+    },
+    "Hunder": {
+      "lat": 34.5840883,
+      "lng": 77.4718253
+    }
+  }
+}

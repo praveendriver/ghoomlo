@@ -1,5 +1,7 @@
 import { randomUUID } from "node:crypto";
 import { addDays } from "@/lib/dates";
+import type { LatLng } from "@/lib/geo";
+import locations from "@/lib/idea-locations.json";
 import type { Itinerary, ItineraryItem } from "@/lib/itinerary/schema";
 
 type Time = ItineraryItem["timeOfDay"];
@@ -39,7 +41,7 @@ function it(
   };
 }
 
-export const IDEAS: Idea[] = [
+const RAW_IDEAS: Idea[] = [
   {
     slug: "goa-easy-beach-break",
     destination: "Goa",
@@ -375,6 +377,20 @@ export const IDEAS: Idea[] = [
     ],
   },
 ];
+
+// Coordinates come from scripts/geocode-ideas.ts; places it could not find have no pin.
+const LOCATIONS: Record<string, Record<string, LatLng>> = locations;
+
+export const IDEAS: Idea[] = RAW_IDEAS.map((idea) => ({
+  ...idea,
+  days: idea.days.map((day) => ({
+    ...day,
+    items: day.items.map((item) => ({
+      ...item,
+      location: (item.placeName && LOCATIONS[idea.slug]?.[item.placeName]) || null,
+    })),
+  })),
+}));
 
 export function findIdea(slug: string): Idea | undefined {
   return IDEAS.find((i) => i.slug === slug);

@@ -1,7 +1,7 @@
 import { removeItemAction } from "@/app/actions/trips";
 import { formatDate } from "@/lib/dates";
 import type { ItineraryItem } from "@/lib/itinerary/schema";
-import { DaySketch } from "./DaySketch";
+import { DayMap, MapSketchFilter } from "./DayMap";
 import { SubmitButton } from "./SubmitButton";
 
 const inr = new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 });
@@ -30,8 +30,8 @@ function mapsSearchUrl(place: string, destination: string): string {
 type Removable = { tripId: string; itineraryId: string };
 type Item = Omit<ItineraryItem, "id"> & { id?: string };
 
-/** Activities and meals are the day's stops: they get a numbered pin on the sketch. */
-const isStop = (item: Item) => item.kind === "activity" || item.kind === "meal";
+/** Items whose place was found by the place search get a numbered pin on the day's map. */
+const isStop = (item: Item) => Boolean(item.location);
 
 function ItemCard({
   item,
@@ -120,12 +120,18 @@ export function PlanDays({
 }) {
   return (
     <>
+      <MapSketchFilter />
       {days.map((day, i) => {
         const stops = day.items.filter(isStop);
         let stopCount = 0;
         return (
           <section className="day" key={i} aria-labelledby={`day-${i + 1}`}>
-            <DaySketch id={`sketch-${i + 1}`} seed={`${destination}-${i}-${day.title}`} stops={stops.map((s) => s.title)} />
+            {stops.length > 0 && (
+              <DayMap
+                day={i + 1}
+                pins={stops.map((s, n) => ({ n: n + 1, title: s.title, lat: s.location!.lat, lng: s.location!.lng }))}
+              />
+            )}
             <div className="day-head">
               <h3 id={`day-${i + 1}`}>
                 <span className="day-num">

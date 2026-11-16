@@ -1,6 +1,7 @@
 import { sql } from "drizzle-orm";
 import {
   date,
+  doublePrecision,
   index,
   integer,
   jsonb,
@@ -119,3 +120,11 @@ export const usageEvents = pgTable(
   },
   (t) => [index("usage_events_user_idx").on(t.userId, t.kind, t.createdAt)],
 );
+
+/** Cache of place-search results, shared by all users. Null coordinates mean "searched, not found". */
+export const geocodes = pgTable("geocodes", {
+  query: text("query").primaryKey(),
+  lat: doublePrecision("lat"),
+  lng: doublePrecision("lng"),
+  createdAt,
+});
