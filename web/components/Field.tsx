@@ -14,12 +14,13 @@ export function Field({
   return (
     <div className="field">
       <label htmlFor={id}>{label}</label>
+      {children}
+      {/* Below the input, so side-by-side fields line up whether or not they have a hint. */}
       {hint && (
         <span className="hint" id={`${id}-hint`}>
           {hint}
         </span>
       )}
-      {children}
       {error && (
         <span className="error-text" id={`${id}-error`} role="alert">
           {error}
