@@ -1,0 +1,11 @@
+# Idea log
+
+Every direction considered for Ghoomlo, newest first. Status is one of `untested`, `testing`, `supported`, `dropped`. Full reviews are in `idea-reviews/`.
+
+| Date | Idea | Verdict | Riskiest assumption | Status |
+|---|---|---|---|---|
+| 2026-11-16 | **Year-ahead planner.** For families, Ghoomlo takes the year's school dates, leave and budget, lays out the trips worth taking, watches prices and adjusts the plan. | Promising, with a hard dependency on price data | Families will plan months ahead and hand over their calendar, when most plan trip by trip | untested |
+| 2026-11-16 | **Visual feed.** A picture-and-video-first experience with very little text that gathers the best vlog, blog and influencer content into categories for quick planning. | Mixed: attractive, but hard to defend and legally constrained | People want an organised set of clips more than they want the synthesis in words, and we can show the clips within platform rules | untested |
+| 2026-11-16 | **Family-fit itinerary** (what is built). A day-by-day plan around food rules, ages and pace, with honest labels. | Weak as a reason to come; useful as a foundation | A tailored plan is enough to choose Ghoomlo over a free chatbot | testing (Maze study 01) |
+| 2026-11-16 | **Dates and price watch.** Find the cheapest dates that fit school and work, and alert on drops. | Promising; folded into the year-ahead planner | People will act on an alert from a new, unknown product | testing (Maze study 01) |
+| 2026-11-16 | **Vlog digest.** Summarise what travel vloggers agree and disagree on for a destination. | Promising; overlaps with the visual feed | A written digest saves enough time to replace watching | testing (Maze study 01) |
