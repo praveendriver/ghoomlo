@@ -14,10 +14,10 @@ export function StartBox({ maxLength }: { maxLength: number }) {
   const [state, action, pending] = useActionState<FormState, FormData>(startFromTextAction, {});
   const [text, setText] = useState("");
   return (
-    <form action={action} className="start-box stack-sm">
-      <label htmlFor="start-text" className="sr-only">
-        Describe the trip you have in mind
-      </label>
+    <form action={action} className="start-box stack-sm" id="start">
+      <h2>
+        <label htmlFor="start-text">Tell us about the trip</label>
+      </h2>
       <textarea
         id="start-text"
         name="text"
@@ -25,7 +25,7 @@ export function StartBox({ maxLength }: { maxLength: number }) {
         onChange={(e) => setText(e.target.value)}
         maxLength={maxLength}
         rows={3}
-        placeholder="Describe your trip: where, when, who is going, and anything that matters to you…"
+        placeholder="Where, when, who is going, and anything that matters to you…"
         aria-describedby={state.error ? "start-error" : undefined}
       />
       {state.error && (
@@ -33,14 +33,12 @@ export function StartBox({ maxLength }: { maxLength: number }) {
           {state.error}
         </span>
       )}
-      <div className="row between">
-        <span className="small muted" role="status">
-          {pending ? "Reading your trip…" : "We turn this into a trip you can check and edit."}
-        </span>
-        <button type="submit" className="btn primary" disabled={pending} aria-busy={pending}>
-          Start planning
-        </button>
-      </div>
+      <button type="submit" className="btn primary" disabled={pending} aria-busy={pending}>
+        Start planning
+      </button>
+      <span className="small muted" role="status">
+        {pending ? "Reading your trip…" : "We turn this into a trip you can check and edit."}
+      </span>
       <div className="stack-sm">
         <span className="small muted">Or try one of these:</span>
         <div className="checks">

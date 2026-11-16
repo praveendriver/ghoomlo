@@ -6,7 +6,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
   return (
     <>
       <SiteHeader signedIn />
-      <main>{children}</main>
+      <main className="shell narrow page">{children}</main>
       <SiteFooter />
     </>
   );

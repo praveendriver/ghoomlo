@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { requireUser } from "@/lib/auth/session";
 import { getHousehold } from "@/lib/data/household";
 import { listTrips } from "@/lib/data/trips";
 import { formatRange, tripLengthDays } from "@/lib/dates";
+import { photoFor } from "@/lib/photos";
 
 export const metadata: Metadata = { title: "Your trips" };
 
@@ -33,16 +35,24 @@ export default async function TripsPage() {
         </div>
       ) : (
         <ul className="stack-sm" style={{ listStyle: "none", padding: 0, margin: 0 }}>
-          {trips.map((t) => (
-            <li key={t.id}>
-              <Link href={`/trips/${t.id}`} className="card card-link">
-                <h2>{t.destination}</h2>
-                <p className="muted">
-                  {formatRange(t.startDate, t.endDate)} · {tripLengthDays(t.startDate, t.endDate)} days · from {t.origin}
-                </p>
-              </Link>
-            </li>
-          ))}
+          {trips.map((t) => {
+            const photo = photoFor(t.destination);
+            return (
+              <li key={t.id}>
+                <Link href={`/trips/${t.id}`} className="card card-link trip-row">
+                  <span className="trip-thumb">
+                    {photo && <Image src={photo} alt="" fill sizes="132px" />}
+                  </span>
+                  <span className="stack-sm" style={{ gap: 4 }}>
+                    <h2>{t.destination}</h2>
+                    <span className="muted">
+                      {formatRange(t.startDate, t.endDate)} · {tripLengthDays(t.startDate, t.endDate)} days · from {t.origin}
+                    </span>
+                  </span>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       )}
     </div>

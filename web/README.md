@@ -49,6 +49,7 @@ npm run build
 | `lib/auth/` | Password hashing (scrypt) and cookie sessions stored hashed in Postgres |
 | `lib/itinerary/` | Prompt, output schema, the plan-drafting call, and the free-text reader |
 | `lib/ideas.ts` | The sample plans shown on the home page |
+| `images/` | Destination photos and their sources (`images/README.md`); `lib/photos.ts` maps them to destinations |
 | `lib/dates.ts` | Blocked-date clash detection and nearby feasible windows |
 | `tests/` | Vitest suites, including cross-account isolation |
 

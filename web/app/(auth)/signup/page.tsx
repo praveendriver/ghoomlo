@@ -9,7 +9,7 @@ export default async function SignupPage({ searchParams }: { searchParams: Promi
   const params = await searchParams;
   const next = safeNext(params.next) ?? undefined;
   return (
-    <div className="card stack">
+    <div className="stack">
       <h1>Create your account</h1>
       {(params.start || next) && (
         <p className="notice info small">

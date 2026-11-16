@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PlanDays, VerifyList } from "@/components/PlanView";
@@ -8,6 +9,7 @@ import { currentUser } from "@/lib/auth/session";
 import { getHousehold } from "@/lib/data/household";
 import { todayIso } from "@/lib/dates";
 import { findIdea } from "@/lib/ideas";
+import { photoFor } from "@/lib/photos";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -23,19 +25,31 @@ export default async function IdeaPage({ params }: Props) {
   const user = await currentUser();
   const household = user ? await getHousehold(user.id) : null;
 
+  const photo = photoFor(idea.destination);
+
   return (
     <>
-      <SiteHeader signedIn={Boolean(user)} />
-      <main className="stack">
-        <div className="stack-sm">
-          <p>
-            <Link href="/">← All sample plans</Link>
-          </p>
-          <h1>{idea.title}</h1>
-          <p className="muted">{idea.tagline}</p>
+      <main>
+        <div className="hero compact on-photo" style={{ background: idea.tone }}>
+          {photo && <Image src={photo} alt="" fill priority placeholder="blur" sizes="100vw" />}
+          <SiteHeader signedIn={Boolean(user)} overlay />
+          <div className="shell narrow hero-grid">
+            <div className="stack-sm">
+              <p>
+                <Link href="/" style={{ color: "#fff" }}>
+                  ← All sample plans
+                </Link>
+              </p>
+              <p className="eyebrow">Sample plan · {idea.days.length} days</p>
+              <h1>{idea.title}</h1>
+              <p className="hero-lede" style={{ marginTop: 0 }}>
+                {idea.tagline}
+              </p>
+            </div>
+          </div>
         </div>
-
-        <section className="card stack" aria-labelledby="use-h">
+        <div className="shell narrow page stack" style={{ paddingTop: 0 }}>
+        <section className="card raised lift stack" aria-labelledby="use-h">
           <h2 id="use-h">Make this plan yours</h2>
           {user ? (
             <UseIdeaForm slug={idea.slug} defaultOrigin={household?.homeCity ?? ""} today={todayIso()} days={idea.days.length} />
@@ -67,6 +81,7 @@ export default async function IdeaPage({ params }: Props) {
         <p>{idea.summary}</p>
         <PlanDays days={idea.days} destination={idea.destination} />
         <VerifyList items={idea.thingsToVerify} />
+        </div>
       </main>
       <SiteFooter />
     </>

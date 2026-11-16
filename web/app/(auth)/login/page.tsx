@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "Sign in" };
 export default async function LoginPage({ searchParams }: { searchParams: Promise<{ next?: string }> }) {
   const next = safeNext((await searchParams).next) ?? undefined;
   return (
-    <div className="card stack">
+    <div className="stack">
       <h1>Sign in</h1>
       <AuthForm mode="login" next={next} />
       <p className="small muted">

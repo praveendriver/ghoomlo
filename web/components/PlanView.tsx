@@ -88,14 +88,15 @@ export function PlanDays({
         <section className="day" key={i} aria-labelledby={`day-${i + 1}`}>
           <div className="day-head">
             <h3 id={`day-${i + 1}`}>
-              Day {i + 1} · {day.title}
+              <span className="day-num">Day {i + 1}</span>
+              {day.title}
             </h3>
             {day.date && <span className="muted small">{formatDate(day.date)}</span>}
           </div>
           {day.items.length === 0 ? (
             <p className="muted small">Nothing planned for this day.</p>
           ) : (
-            <ul className="stack-sm" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+            <ul className="timeline">
               {day.items.map((item, j) => (
                 <ItemCard key={item.id ?? j} item={item} destination={destination} removable={removable} />
               ))}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { deleteTripAction, moveTripAction } from "@/app/actions/trips";
@@ -10,6 +11,7 @@ import { requireUser } from "@/lib/auth/session";
 import { getHousehold } from "@/lib/data/household";
 import { getTrip, latestItinerary } from "@/lib/data/trips";
 import { conflicts, feasibleWindows, formatDate, formatRange, todayIso, tripLengthDays } from "@/lib/dates";
+import { photoFor } from "@/lib/photos";
 import { isGenerationConfigured } from "@/lib/itinerary/generate";
 import { SAMPLE_MODEL } from "@/lib/ideas";
 
@@ -38,9 +40,12 @@ export default async function TripPage({ params }: { params: Promise<{ id: strin
       ? "Plan drafting is not set up on this server yet."
       : undefined;
 
+  const photo = photoFor(trip.destination);
+
   return (
     <div className="stack">
-      <div className="stack-sm">
+      <div className={photo ? "banner has-photo on-photo" : "banner on-photo"}>
+        {photo && <Image src={photo} alt="" fill priority placeholder="blur" sizes="(max-width: 860px) 100vw, 860px" />}
         <p className="no-print">
           <Link href="/trips">← Your trips</Link>
         </p>
