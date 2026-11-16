@@ -5,9 +5,9 @@ export default async function AppLayout({ children }: { children: React.ReactNod
   await requireUser();
   return (
     <>
-      <SiteHeader signedIn />
+      <SiteHeader signedIn narrow />
       <main className="shell narrow page">{children}</main>
-      <SiteFooter />
+      <SiteFooter narrow />
     </>
   );
 }

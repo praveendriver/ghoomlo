@@ -9,13 +9,24 @@ export function Brand() {
   );
 }
 
-/** `overlay` places the header on top of a photo hero instead of on the page background. */
-export function SiteHeader({ signedIn, overlay = false }: { signedIn: boolean; overlay?: boolean }) {
+/**
+ * `overlay` places the header on top of a photo hero instead of on the page background.
+ * `narrow` matches the header's width to a narrow page so the logo lines up with the content.
+ */
+export function SiteHeader({
+  signedIn,
+  overlay = false,
+  narrow = false,
+}: {
+  signedIn: boolean;
+  overlay?: boolean;
+  narrow?: boolean;
+}) {
   return (
-    <div className="shell">
+    <div className={narrow ? "shell narrow" : "shell"}>
       <header className={overlay ? "topbar" : "topbar solid"}>
         <Brand />
-        <nav className="nav" aria-label="Main">
+        <nav className={signedIn ? "nav signed-in" : "nav"} aria-label="Main">
           {signedIn ? (
             <>
               <Link href="/trips">Trips</Link>
@@ -39,10 +50,10 @@ export function SiteHeader({ signedIn, overlay = false }: { signedIn: boolean; o
   );
 }
 
-export function SiteFooter() {
+export function SiteFooter({ narrow = false }: { narrow?: boolean }) {
   return (
     <footer className="site">
-      <div className="shell stack-sm">
+      <div className={narrow ? "shell narrow stack-sm" : "shell stack-sm"}>
         <Brand />
         <p className="small">
           Ghoomlo drafts trip plans; it does not sell or book travel. Always confirm prices, opening hours,

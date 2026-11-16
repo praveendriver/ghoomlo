@@ -62,6 +62,12 @@ p { margin: 0; }
 }
 .nav a:hover, .nav button:hover { background: rgba(31, 77, 58, 0.09); }
 .nav .pill { border-color: currentColor; }
+.nav.signed-in { margin-right: -14px; }
+@media (max-width: 520px) {
+  .topbar:has(.signed-in) { gap: 4px; padding-bottom: 10px; }
+  .nav.signed-in { width: 100%; margin: 0 -12px; gap: 0; }
+  .nav.signed-in a, .nav.signed-in button { padding: 9px 12px; }
+}
 .on-photo .brand, .on-photo .nav a, .on-photo .nav button { color: #fff; }
 .on-photo .brand span { color: #ffb48f; }
 .on-photo .nav a:hover, .on-photo .nav button:hover { background: rgba(255, 255, 255, 0.16); }
@@ -224,7 +230,7 @@ legend { padding: 0; }
 .day-head { display: flex; flex-direction: column; gap: 2px; margin-bottom: 14px; }
 .day-head h3 { font-family: var(--display); font-weight: 500; font-size: 1.45rem; letter-spacing: -0.02em; }
 .day-num { font-family: var(--body); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 2px; }
-.timeline { list-style: none; margin: 0; padding: 0 0 0 22px; border-left: 2px solid var(--line); display: flex; flex-direction: column; gap: 12px; }
+.timeline { list-style: none; margin: 0 0 0 6px; padding: 0 0 0 22px; border-left: 2px solid var(--line); display: flex; flex-direction: column; gap: 12px; }
 .item { position: relative; border: 1px solid var(--line); border-radius: 18px; background: var(--card); padding: 16px 18px; }
 .item::before { content: ""; position: absolute; left: -30px; top: 22px; width: 12px; height: 12px; border-radius: 50%; background: var(--paper); border: 2px solid var(--accent); }
 .item-head { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }

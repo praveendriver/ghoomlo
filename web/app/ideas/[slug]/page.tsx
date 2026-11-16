@@ -32,7 +32,7 @@ export default async function IdeaPage({ params }: Props) {
       <main>
         <div className="hero compact on-photo" style={{ background: idea.tone }}>
           {photo && <Image src={photo} alt="" fill priority placeholder="blur" sizes="100vw" />}
-          <SiteHeader signedIn={Boolean(user)} overlay />
+          <SiteHeader signedIn={Boolean(user)} overlay narrow />
           <div className="shell narrow hero-grid">
             <div className="stack-sm">
               <p>
@@ -83,7 +83,7 @@ export default async function IdeaPage({ params }: Props) {
         <VerifyList items={idea.thingsToVerify} />
         </div>
       </main>
-      <SiteFooter />
+      <SiteFooter narrow />
     </>
   );
 }
