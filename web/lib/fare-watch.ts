@@ -1,5 +1,7 @@
 import { z } from "zod";
+import { CITIES } from "@/lib/schools";
 
+/** Every sign-up is watched for all of these; alerts are tagged with one. */
 export const BREAKS = [
   "Winter break (December)",
   "Summer break (April to June)",
@@ -7,46 +9,45 @@ export const BREAKS = [
   "Long weekends",
 ] as const;
 
-export const BOARDS = ["CBSE", "ICSE", "IB", "IGCSE", "State board", "Other"] as const;
-
-export const HOME_CITIES = [
-  "Bengaluru",
-  "Mumbai",
-  "Delhi NCR",
-  "Hyderabad",
-  "Chennai",
-  "Pune",
-  "Kolkata",
-  "Ahmedabad",
-  "Kochi",
+/** Places offered as picture cards. Photos are matched by name in lib/photos.ts. */
+export const DESTINATIONS = [
+  "Goa",
+  "Kerala",
+  "Jaipur",
+  "Udaipur",
+  "Kashmir",
+  "Ladakh",
+  "Manali",
+  "Andamans",
+  "Agra",
+  "Varanasi",
+  "Dubai",
+  "Singapore",
+  "Thailand",
+  "Bali",
+  "Maldives",
+  "Vietnam",
 ] as const;
-
-export const WISHLIST_IDEAS = ["Goa", "Kerala", "Jaipur", "Udaipur", "Ladakh", "Andamans", "Dubai", "Singapore"] as const;
 export const MAX_WISHLIST = 5;
 
-const place = z.string().trim().min(2).max(60);
+const city = z.enum(CITIES, { error: "Pick your city" });
+const destination = z.enum(DESTINATIONS);
 
 export const signupSchema = z.object({
   email: z.string().trim().toLowerCase().pipe(z.email("Enter a valid email address").max(254)),
-  homeCity: z.string().trim().min(2, "Enter the city you fly from").max(60),
-  school: z.string().trim().min(2, "Enter your child's school").max(120),
-  board: z.union([z.literal(""), z.enum(BOARDS)]).transform((v) => v || null),
-  breaks: z.array(z.enum(BREAKS)).min(1, "Pick at least one break"),
+  homeCity: city,
+  school: z.string().trim().min(2, "Pick or type your child's school").max(120),
   wishlist: z
-    .array(place)
-    .min(1, "Add at least one place")
-    .max(MAX_WISHLIST, `Add up to ${MAX_WISHLIST} places`)
-    .transform((list) => [...new Map(list.map((p) => [p.toLowerCase(), p])).values()]),
-  travellers: z
-    .union([z.literal(""), z.coerce.number().int().min(1).max(12)])
-    .transform((v) => (v === "" ? null : v)),
-  consent: z.literal("yes", { error: "Please agree so we can email you" }),
+    .array(destination)
+    .min(1, "Pick at least one place")
+    .max(MAX_WISHLIST, `Pick up to ${MAX_WISHLIST} places`)
+    .transform((list) => [...new Set(list)]),
 });
 export type SignupInput = z.infer<typeof signupSchema>;
 
 export const alertSchema = z.object({
-  origin: z.string().trim().min(2).max(60),
-  destination: z.string().trim().min(2).max(60),
+  origin: city,
+  destination,
   breakLabel: z.enum(BREAKS),
   priceInr: z.coerce.number().int().min(100, "Enter the fare in rupees").max(10_000_000),
   seenOn: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Enter the date you saw this fare"),
@@ -66,7 +67,7 @@ export const alertSchema = z.object({
 });
 export type AlertInput = z.infer<typeof alertSchema>;
 
-/** A signup should hear about an alert when it leaves from their city for a place on their wishlist. */
+/** A sign-up should hear about an alert when it leaves from their city for a place on their wishlist. */
 export function matches(
   signup: { homeCity: string; wishlist: string[]; breaks: string[] },
   alert: { origin: string; destination: string; breakLabel: string },

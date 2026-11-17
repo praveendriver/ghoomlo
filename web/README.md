@@ -58,7 +58,10 @@ After changing `lib/db/schema.ts`, run `npm run db:generate` and commit the new 
 
 ## Fare watch
 
-A public sign-up at `/fare-watch` (no account needed) for school-holiday fare alerts: email, home city, school, breaks and a wishlist of up to five places. People can stop and delete their details from the link shown at sign-up.
+A public one-screen sign-up at `/fare-watch` (no account needed): pick a city, pick a school from that city's list (or type one), tap up to five destination cards, and enter an email. Every sign-up is watched for all school breaks. People can stop and delete their details from the link shown at sign-up.
+
+- City and school lists are in `lib/schools.ts`: a starter list of well-known schools, not a ranking. School holiday dates are not stored; add them only from each school's own published calendar.
+- Destination cards and their photos are in `lib/fare-watch.ts` (`DESTINATIONS`) and `lib/photos.ts`.
 
 - `/admin/fare-watch` lists sign-ups, lets an admin record a fare they have seen, shows who matches it, and gives ready-to-send email text and a recipient list. It is visible only to signed-in accounts whose email is in `ADMIN_EMAILS`; create the account before listing its email.
 - `/go/<code>` is the tracked link in each alert: it records the open and redirects to the booking link. Adding `?s=<token>` (as the recipient download does) records which subscriber opened it.

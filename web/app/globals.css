@@ -316,3 +316,25 @@ table.data tr:last-child td { border-bottom: 0; }
 .stat { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; }
 .stat b { display: block; font-family: var(--display); font-size: 1.9rem; font-weight: 500; line-height: 1.1; }
 pre.copy { white-space: pre-wrap; word-break: break-word; background: var(--sand); border-radius: 12px; padding: 12px; font: inherit; font-size: 0.875rem; margin: 0; }
+
+/* Fare watch: short sign-up with picture cards */
+.fw-step { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-size: 1.35rem; font-weight: 500; letter-spacing: -0.02em; padding: 0; }
+.fw-step span { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: #fff; font-family: var(--body); font-size: 0.9rem; font-weight: 700; display: grid; place-items: center; }
+.fw-form.stack-lg { gap: 34px; }
+.pick-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+@media (max-width: 420px) { .pick-grid { grid-template-columns: 1fr 1fr; } }
+.pick { position: relative; isolation: isolate; overflow: hidden; display: flex; align-items: flex-end; aspect-ratio: 4 / 5; border-radius: 20px; cursor: pointer; color: #fff; background: #26362f; outline: 3px solid transparent; outline-offset: 2px; transition: transform 0.15s, outline-color 0.15s; }
+.pick img { object-fit: cover; z-index: -2; transition: transform 0.4s; }
+.pick::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(10, 18, 15, 0) 45%, rgba(10, 18, 15, 0.8) 100%); }
+.pick:hover img { transform: scale(1.05); }
+.pick input { position: absolute; opacity: 0; inset: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; z-index: 2; }
+.pick-name { padding: 12px 14px; font-family: var(--display); font-size: 1.25rem; font-weight: 500; letter-spacing: -0.01em; }
+.pick-tick { position: absolute; top: 10px; right: 10px; width: 30px; height: 30px; border-radius: 50%; background: rgba(255, 253, 248, 0.9); color: transparent; display: grid; place-items: center; font-weight: 700; border: 2px solid rgba(255, 255, 255, 0.9); }
+.pick:has(input:checked) { outline-color: var(--accent); }
+.pick:has(input:checked) .pick-tick { background: var(--accent); color: #fff; border-color: var(--accent); }
+.pick:has(input:focus-visible) { outline-color: var(--blue); }
+.pick:has(input:disabled) { opacity: 0.45; cursor: not-allowed; }
+.pick:has(input:disabled) input { cursor: not-allowed; }
+.fw-submit { display: grid; grid-template-columns: 1fr auto; gap: 10px; }
+.fw-submit .btn { min-height: 48px; padding-inline: 28px; }
+@media (max-width: 520px) { .fw-submit { grid-template-columns: 1fr; } }

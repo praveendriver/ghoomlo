@@ -20,14 +20,10 @@ const form = {
   email: " Asha@Example.com ",
   homeCity: "Bengaluru",
   school: "Example Public School, Whitefield",
-  board: "CBSE",
-  breaks: [BREAKS[0]],
-  wishlist: ["Goa", "goa", "Kerala"],
-  travellers: "4",
-  consent: "yes",
+  wishlist: ["Goa", "Goa", "Kerala"],
 };
 const alert = {
-  origin: "bengaluru",
+  origin: "Bengaluru",
   destination: "Goa",
   breakLabel: BREAKS[0],
   priceInr: "4200",
@@ -37,22 +33,23 @@ const alert = {
 };
 
 describe("sign-up form rules", () => {
-  it("normalises email, removes duplicate places and reads the traveller count", () => {
+  it("normalises email and removes duplicate places", () => {
     const parsed = signupSchema.parse(form);
     expect(parsed.email).toBe("asha@example.com");
-    expect(parsed.wishlist).toEqual(["goa", "Kerala"]);
-    expect(parsed.travellers).toBe(4);
+    expect(parsed.wishlist).toEqual(["Goa", "Kerala"]);
   });
 
-  it("requires consent, a break, a place, and at most five places", () => {
-    expect(signupSchema.safeParse({ ...form, consent: "" }).success).toBe(false);
-    expect(signupSchema.safeParse({ ...form, breaks: [] }).success).toBe(false);
+  it("needs a listed city, a school, one to five listed places", () => {
+    expect(signupSchema.safeParse({ ...form, homeCity: "Atlantis" }).success).toBe(false);
+    expect(signupSchema.safeParse({ ...form, school: "" }).success).toBe(false);
     expect(signupSchema.safeParse({ ...form, wishlist: [] }).success).toBe(false);
-    expect(signupSchema.safeParse({ ...form, wishlist: ["A1", "B2", "C3", "D4", "E5", "F6"] }).success).toBe(false);
+    expect(signupSchema.safeParse({ ...form, wishlist: ["Narnia"] }).success).toBe(false);
+    expect(signupSchema.safeParse({ ...form, wishlist: ["Goa", "Kerala", "Jaipur", "Udaipur", "Agra", "Bali"] }).success).toBe(false);
   });
 
-  it("accepts only https booking links for alerts", () => {
+  it("accepts only listed places and https booking links for alerts", () => {
     expect(alertSchema.safeParse(alert).success).toBe(true);
+    expect(alertSchema.safeParse({ ...alert, destination: "Narnia" }).success).toBe(false);
     for (const targetUrl of ["http://example.com", "javascript:alert(1)", "example.com", ""]) {
       expect(alertSchema.safeParse({ ...alert, targetUrl }).success).toBe(false);
     }
@@ -62,7 +59,7 @@ describe("sign-up form rules", () => {
 describe("matching alerts to people", () => {
   const person = { homeCity: "Bengaluru ", wishlist: ["goa", "Kerala"], breaks: [BREAKS[0]] };
   it("needs the same city, a wishlist place and a chosen break, ignoring case", () => {
-    expect(matches(person, { origin: "bengaluru", destination: "Goa", breakLabel: BREAKS[0] })).toBe(true);
+    expect(matches(person, { origin: "Bengaluru", destination: "Goa", breakLabel: BREAKS[0] })).toBe(true);
     expect(matches(person, { origin: "Mumbai", destination: "Goa", breakLabel: BREAKS[0] })).toBe(false);
     expect(matches(person, { origin: "Bengaluru", destination: "Jaipur", breakLabel: BREAKS[0] })).toBe(false);
     expect(matches(person, { origin: "Bengaluru", destination: "Goa", breakLabel: BREAKS[1] })).toBe(false);
@@ -86,13 +83,14 @@ describe("stored sign-ups and tracked links", () => {
     await db.$client.end();
   });
 
-  it("keeps one record per email and updates it on a second sign-up", async () => {
+  it("keeps one record per email, updates it on a second sign-up, and watches every break", async () => {
     const token = await saveSignup(signupSchema.parse(form));
     const again = await saveSignup(signupSchema.parse({ ...form, wishlist: ["Ladakh"] }));
     expect(again).toBe(token);
     const all = await listSignups();
     expect(all).toHaveLength(1);
     expect(all[0].wishlist).toEqual(["Ladakh"]);
+    expect(all[0].breaks).toEqual([...BREAKS]);
   });
 
   it("deletes the record on unsubscribe and rejects unknown tokens", async () => {

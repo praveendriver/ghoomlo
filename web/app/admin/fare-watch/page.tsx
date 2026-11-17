@@ -79,9 +79,7 @@ export default async function FareWatchAdminPage() {
                     <th>Email</th>
                     <th>From</th>
                     <th>School</th>
-                    <th>Breaks</th>
                     <th>Wishlist</th>
-                    <th>People</th>
                     <th>Joined</th>
                   </tr>
                 </thead>
@@ -90,13 +88,8 @@ export default async function FareWatchAdminPage() {
                     <tr key={s.id}>
                       <td>{s.email}</td>
                       <td>{s.homeCity}</td>
-                      <td>
-                        {s.school}
-                        {s.board ? ` (${s.board})` : ""}
-                      </td>
-                      <td>{s.breaks.join(", ")}</td>
+                      <td>{s.school}</td>
                       <td>{s.wishlist.join(", ")}</td>
-                      <td>{s.travellers ?? "—"}</td>
                       <td>{formatDate(s.createdAt.toISOString().slice(0, 10))}</td>
                     </tr>
                   ))}

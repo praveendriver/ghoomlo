@@ -3,7 +3,8 @@
 import { useActionState } from "react";
 import { createAlertAction } from "@/app/actions/fare-watch";
 import type { FormState } from "@/app/actions/state";
-import { BREAKS } from "@/lib/fare-watch";
+import { BREAKS, DESTINATIONS } from "@/lib/fare-watch";
+import { CITIES } from "@/lib/schools";
 import { describe, Field } from "./Field";
 import { SubmitButton } from "./SubmitButton";
 
@@ -19,11 +20,19 @@ export function AlertForm({ today }: { today: string }) {
         </p>
       )}
       <div className="grid-2">
-        <Field id="origin" label="From (city)" hint="Must match the city people typed, e.g. Bengaluru." error={fe.origin}>
-          <input type="text" name="origin" defaultValue={v.origin} required {...describe("origin", true, fe.origin)} />
+        <Field id="origin" label="From" error={fe.origin}>
+          <select name="origin" defaultValue={v.origin ?? CITIES[0]} {...describe("origin", false, fe.origin)}>
+            {CITIES.map((c) => (
+              <option key={c}>{c}</option>
+            ))}
+          </select>
         </Field>
-        <Field id="destination" label="To (place)" hint="Must match a wishlist place, e.g. Goa." error={fe.destination}>
-          <input type="text" name="destination" defaultValue={v.destination} required {...describe("destination", true, fe.destination)} />
+        <Field id="destination" label="To" error={fe.destination}>
+          <select name="destination" defaultValue={v.destination ?? DESTINATIONS[0]} {...describe("destination", false, fe.destination)}>
+            {DESTINATIONS.map((d) => (
+              <option key={d}>{d}</option>
+            ))}
+          </select>
         </Field>
       </div>
       <div className="grid-2">

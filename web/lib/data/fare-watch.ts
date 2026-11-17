@@ -2,14 +2,15 @@ import "server-only";
 import { randomBytes } from "node:crypto";
 import { count, countDistinct, desc, eq } from "drizzle-orm";
 import { db, schema } from "@/lib/db";
+import { BREAKS } from "@/lib/fare-watch";
 import type { AlertInput, SignupInput } from "@/lib/fare-watch";
 
 const { fareWatchSignups: signups, fareAlerts: alerts, fareAlertClicks: clicks } = schema;
 
 /** Creates the signup, or updates the preferences if this email signed up before. Returns the token. */
 export async function saveSignup(input: SignupInput): Promise<string> {
-  const { consent: _consent, ...values } = input;
-  void _consent;
+  // The short form does not ask about breaks, board or party size: everyone is watched for every break.
+  const values = { ...input, breaks: [...BREAKS], board: null, travellers: null };
   const [row] = await db
     .insert(signups)
     .values({ ...values, token: randomBytes(24).toString("base64url") })

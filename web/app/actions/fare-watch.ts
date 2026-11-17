@@ -14,21 +14,12 @@ export async function fareWatchSignupAction(_prev: FormState, form: FormData): P
   // A field real people never see or fill in; automated form-fillers usually do.
   if (String(form.get("website") ?? "") !== "") redirect("/fare-watch/thanks");
 
-  let wishlist: unknown = null;
-  try {
-    wishlist = JSON.parse(String(form.get("wishlist") ?? "[]"));
-  } catch {
-    /* falls through to a validation error */
-  }
+  const listed = String(form.get("school") ?? "");
   const parsed = signupSchema.safeParse({
     email: form.get("email"),
-    homeCity: form.get("homeCity"),
-    school: form.get("school"),
-    board: form.get("board") ?? "",
-    breaks: form.getAll("breaks"),
-    wishlist,
-    travellers: form.get("travellers") ?? "",
-    consent: form.get("consent") ?? "",
+    homeCity: form.get("homeCity") ?? "",
+    school: listed === "other" ? form.get("schoolOther") : listed,
+    wishlist: form.getAll("wishlist"),
   });
   if (!parsed.success) return { fieldErrors: fieldErrors(parsed.error), values };
 

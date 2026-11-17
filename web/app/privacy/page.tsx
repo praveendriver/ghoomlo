@@ -18,9 +18,8 @@ export default async function PrivacyPage() {
         <section className="stack-sm">
           <h2>Fare watch</h2>
           <p>
-            When you sign up we keep your email address, the city you fly from, your child&apos;s school and
-            board, the breaks you picked, your wishlist of places, and the number of travellers if you gave
-            it. We use these only to decide which fare alerts to email you.
+            When you sign up we keep your email address, the city you fly from, your child&apos;s school, and
+            your wishlist of places. We use these only to decide which fare alerts to email you.
           </p>
           <p>
             When you open a link in one of our alerts, we record that it was opened and, where the link is
