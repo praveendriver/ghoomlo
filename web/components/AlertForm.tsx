@@ -3,7 +3,7 @@
 import { useActionState } from "react";
 import { createAlertAction } from "@/app/actions/fare-watch";
 import type { FormState } from "@/app/actions/state";
-import { BREAKS, DESTINATIONS } from "@/lib/fare-watch";
+import { DESTINATIONS } from "@/lib/fare-watch";
 import { CITIES } from "@/lib/schools";
 import { describe, Field } from "./Field";
 import { SubmitButton } from "./SubmitButton";
@@ -36,15 +36,14 @@ export function AlertForm({ today }: { today: string }) {
         </Field>
       </div>
       <div className="grid-2">
-        <Field id="breakLabel" label="For which break" error={fe.breakLabel}>
-          <select name="breakLabel" defaultValue={v.breakLabel ?? BREAKS[0]} {...describe("breakLabel", false, fe.breakLabel)}>
-            {BREAKS.map((b) => (
-              <option key={b} value={b}>
-                {b}
-              </option>
-            ))}
-          </select>
+        <Field id="travelStart" label="Departure date" error={fe.travelStart}>
+          <input type="date" name="travelStart" min={today} defaultValue={v.travelStart} required {...describe("travelStart", false, fe.travelStart)} />
         </Field>
+        <Field id="travelEnd" label="Return date" error={fe.travelEnd}>
+          <input type="date" name="travelEnd" min={today} defaultValue={v.travelEnd} required {...describe("travelEnd", false, fe.travelEnd)} />
+        </Field>
+      </div>
+      <div className="grid-2">
         <Field id="priceInr" label="Fare per person (₹)" error={fe.priceInr}>
           <input type="number" name="priceInr" inputMode="numeric" min={100} defaultValue={v.priceInr} required {...describe("priceInr", false, fe.priceInr)} />
         </Field>

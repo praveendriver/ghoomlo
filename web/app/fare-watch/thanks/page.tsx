@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SiteFooter, SiteHeader } from "@/components/SiteHeader";
 import { currentUser } from "@/lib/auth/session";
 import { findSignupByToken } from "@/lib/data/fare-watch";
+import { formatWindow } from "@/lib/windows";
 
 export const metadata: Metadata = { title: "You are on the fare watch", robots: { index: false } };
 
@@ -19,8 +20,15 @@ export default async function ThanksPage({ searchParams }: { searchParams: Promi
           <>
             <p>
               We will email <strong>{signup.email}</strong> when we spot a good fare from {signup.homeCity} to{" "}
-              {signup.wishlist.join(", ")} for the breaks you picked.
+              {signup.wishlist.join(", ")} that fits one of these times:
             </p>
+            <ul className="stack-sm" style={{ margin: 0, paddingLeft: 20 }}>
+              {signup.windows.map((w) => (
+                <li key={w.id}>
+                  <strong>{w.label}</strong> · {formatWindow(w)}
+                </li>
+              ))}
+            </ul>
             <div className="card stack-sm">
               <h3>Keep this link</h3>
               <p className="muted">

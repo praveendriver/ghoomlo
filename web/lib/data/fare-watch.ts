@@ -4,13 +4,21 @@ import { count, countDistinct, desc, eq } from "drizzle-orm";
 import { db, schema } from "@/lib/db";
 import { BREAKS } from "@/lib/fare-watch";
 import type { AlertInput, SignupInput } from "@/lib/fare-watch";
+import type { TravelWindow } from "@/lib/windows";
 
 const { fareWatchSignups: signups, fareAlerts: alerts, fareAlertClicks: clicks } = schema;
 
 /** Creates the signup, or updates the preferences if this email signed up before. Returns the token. */
-export async function saveSignup(input: SignupInput): Promise<string> {
-  // The short form does not ask about breaks, board or party size: everyone is watched for every break.
-  const values = { ...input, breaks: [...BREAKS], board: null, travellers: null };
+export async function saveSignup(input: SignupInput, windows: TravelWindow[]): Promise<string> {
+  const { windowIds: _ids, ...rest } = input;
+  void _ids;
+  const values = {
+    ...rest,
+    breaks: [...BREAKS],
+    board: null,
+    travellers: null,
+    windows: windows.map(({ id, label, start, end, kind }) => ({ id, label, start, end, kind })),
+  };
   const [row] = await db
     .insert(signups)
     .values({ ...values, token: randomBytes(24).toString("base64url") })

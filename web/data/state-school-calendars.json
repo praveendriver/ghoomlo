@@ -1,0 +1,41 @@
+{
+  "about": "School breaks announced by state education departments, as reported in the news. They apply to state board and government schools and, where the report says so, private schools. Many CBSE, ICSE and international schools set their own dates. Not checked against the official circular.",
+  "breaks": [
+    {
+      "city": "Delhi NCR",
+      "name": "Winter break (Delhi DoE)",
+      "start": "2027-01-01",
+      "end": "2027-01-15",
+      "appliesTo": "Schools under the Delhi Directorate of Education, including recognised private schools (as reported)",
+      "sourceUrl": "https://hindinews.careers360.com/delhi-school-calendar-2026-27-out-cuet-applications-in-april-first-week-check-summer-vacation-dates/amp",
+      "quote": "Winter break 1 to 15 January 2027, per the Delhi DoE 2026-27 academic calendar as reported by PTI"
+    },
+    {
+      "city": "Hyderabad",
+      "name": "Sankranti break (Telangana)",
+      "start": "2027-01-13",
+      "end": "2027-01-17",
+      "appliesTo": "Telangana schools under the state school education calendar (as reported)",
+      "sourceUrl": "https://www.sakshipost.com/news/education/telangana-announces-new-school-calendar-2026-27-480162",
+      "quote": "Sankranti holidays from January 13 to 17, 2027"
+    },
+    {
+      "city": "Hyderabad",
+      "name": "Christmas break, missionary schools (Telangana)",
+      "start": "2026-12-23",
+      "end": "2026-12-27",
+      "appliesTo": "Missionary schools in Telangana (as reported)",
+      "sourceUrl": "https://www.sakshipost.com/news/education/telangana-announces-new-school-calendar-2026-27-480162",
+      "quote": "Christmas holidays for missionary schools from December 23 to 27, 2026"
+    },
+    {
+      "city": "Bengaluru",
+      "name": "Summer break begins (Karnataka)",
+      "start": "2027-04-11",
+      "end": null,
+      "appliesTo": "Karnataka state calendar schools (as reported). The end date has not been published.",
+      "sourceUrl": "https://newsable.asianetnews.com/karnataka-news/karnataka-schools-to-reopen-on-may-29-for-2026-27-session-government-releases-academic-calendar-articleshow-7vcgryv",
+      "quote": "The second term will continue until April 10, 2027, after which the summer vacation is scheduled to begin on April 11"
+    }
+  ]
+}

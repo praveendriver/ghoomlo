@@ -25,9 +25,9 @@ export async function GET(request: Request): Promise<Response> {
     ];
   } else {
     rows = [
-      csvRow(["email", "home_city", "school", "wishlist", "signed_up", "stop_link"]),
+      csvRow(["email", "home_city", "school", "wishlist", "travel_windows", "signed_up", "stop_link"]),
       ...signups.map((s) =>
-        csvRow([s.email, s.homeCity, s.school, s.wishlist.join("; "), s.createdAt.toISOString().slice(0, 10), stop(s.token)]),
+        csvRow([s.email, s.homeCity, s.school, s.wishlist.join("; "), s.windows.map((w) => `${w.label} (${w.start} to ${w.end ?? "?"})`).join("; "), s.createdAt.toISOString().slice(0, 10), stop(s.token)]),
       ),
     ];
   }

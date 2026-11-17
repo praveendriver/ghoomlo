@@ -37,6 +37,7 @@ export const signupSchema = z.object({
   email: z.string().trim().toLowerCase().pipe(z.email("Enter a valid email address").max(254)),
   homeCity: city,
   school: z.string().trim().min(2, "Pick or type your child's school").max(120),
+  windowIds: z.array(z.string().max(40)).min(1, "Pick at least one time you could travel").max(40),
   wishlist: z
     .array(destination)
     .min(1, "Pick at least one place")
@@ -45,39 +46,51 @@ export const signupSchema = z.object({
 });
 export type SignupInput = z.infer<typeof signupSchema>;
 
-export const alertSchema = z.object({
-  origin: city,
-  destination,
-  breakLabel: z.enum(BREAKS),
-  priceInr: z.coerce.number().int().min(100, "Enter the fare in rupees").max(10_000_000),
-  seenOn: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Enter the date you saw this fare"),
-  source: z.string().trim().min(2, "Say where you saw it").max(80),
-  // Where the tracked link sends people. Only secure web addresses are accepted.
-  targetUrl: z
-    .string()
-    .trim()
-    .max(1000)
-    .refine((u) => {
-      try {
-        return new URL(u).protocol === "https:";
-      } catch {
-        return false;
-      }
-    }, "Enter a full https:// booking link"),
-});
+const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Enter a date");
+
+export const alertSchema = z
+  .object({
+    origin: city,
+    destination,
+    travelStart: isoDate,
+    travelEnd: isoDate,
+    priceInr: z.coerce.number().int().min(100, "Enter the fare in rupees").max(10_000_000),
+    seenOn: isoDate,
+    source: z.string().trim().min(2, "Say where you saw it").max(80),
+    // Where the tracked link sends people. Only secure web addresses are accepted.
+    targetUrl: z
+      .string()
+      .trim()
+      .max(1000)
+      .refine((u) => {
+        try {
+          return new URL(u).protocol === "https:";
+        } catch {
+          return false;
+        }
+      }, "Enter a full https:// booking link"),
+  })
+  .refine((a) => a.travelEnd >= a.travelStart, { path: ["travelEnd"], message: "Return is before departure" });
 export type AlertInput = z.infer<typeof alertSchema>;
 
-/** A sign-up should hear about an alert when it leaves from their city for a place on their wishlist. */
+type WindowLike = { start: string; end: string | null };
+
+/**
+ * A sign-up should hear about an alert when it leaves from their city for a
+ * place on their wishlist, and the trip fits a window they picked. People who
+ * picked no windows (older sign-ups) hear about every date.
+ */
 export function matches(
-  signup: { homeCity: string; wishlist: string[]; breaks: string[] },
-  alert: { origin: string; destination: string; breakLabel: string },
+  signup: { homeCity: string; wishlist: string[]; windows?: WindowLike[] },
+  alert: { origin: string; destination: string; travelStart?: string | null; travelEnd?: string | null },
 ): boolean {
   const same = (a: string, b: string) => a.trim().toLowerCase() === b.trim().toLowerCase();
-  return (
-    same(signup.homeCity, alert.origin) &&
-    signup.wishlist.some((w) => same(w, alert.destination)) &&
-    signup.breaks.includes(alert.breakLabel)
-  );
+  if (!same(signup.homeCity, alert.origin) || !signup.wishlist.some((w) => same(w, alert.destination))) return false;
+  const windows = signup.windows ?? [];
+  if (!windows.length || !alert.travelStart) return true;
+  const end = alert.travelEnd ?? alert.travelStart;
+  // Departure must fall inside the window, and the return no later than its end when the end is known.
+  return windows.some((w) => alert.travelStart! >= w.start && alert.travelStart! <= (w.end ?? "9999-12-31") && (!w.end || end <= w.end));
 }
 
 /** How many of these records were created in the last `days` days. */

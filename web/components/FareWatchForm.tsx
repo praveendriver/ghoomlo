@@ -1,20 +1,28 @@
 "use client";
 
 import Image from "next/image";
-import { useActionState, useState } from "react";
+import { useActionState, useMemo, useState } from "react";
 import { fareWatchSignupAction } from "@/app/actions/fare-watch";
 import type { FormState } from "@/app/actions/state";
 import { DESTINATIONS, MAX_WISHLIST } from "@/lib/fare-watch";
 import { DESTINATION_PHOTOS } from "@/lib/photos";
 import { CITIES, SCHOOLS } from "@/lib/schools";
 import type { City } from "@/lib/schools";
+import { calendarMonths, schoolEntry, windowsFor } from "@/lib/windows";
+import { YearCalendar } from "./YearCalendar";
 import { SubmitButton } from "./SubmitButton";
 
-export function FareWatchForm() {
+export function FareWatchForm({ today }: { today: string }) {
   const [state, action] = useActionState<FormState, FormData>(fareWatchSignupAction, {});
   const [city, setCity] = useState<City | "">("");
   const [school, setSchool] = useState("");
   const [picked, setPicked] = useState<string[]>([]);
+  const [chosen, setChosen] = useState<string[]>([]);
+  const schoolName = school === "other" ? "" : school;
+  const windows = useMemo(() => (city ? windowsFor(city, schoolName, today) : []), [city, schoolName, today]);
+  const months = useMemo(() => calendarMonths(today), [today]);
+  const hasSchoolDates = Boolean(city && schoolName && schoolEntry(city, schoolName)?.status === "found");
+  const toggleWindow = (id: string) => setChosen(chosen.includes(id) ? chosen.filter((c) => c !== id) : [...chosen, id]);
   const fe = state.fieldErrors ?? {};
   const full = picked.length >= MAX_WISHLIST;
 
@@ -43,6 +51,7 @@ export function FareWatchForm() {
                 onChange={() => {
                   setCity(c);
                   setSchool("");
+                  setChosen([]);
                 }}
               />
               {c}
@@ -65,7 +74,10 @@ export function FareWatchForm() {
           name="school"
           value={school}
           disabled={!city}
-          onChange={(e) => setSchool(e.target.value)}
+          onChange={(e) => {
+            setSchool(e.target.value);
+            setChosen([]);
+          }}
           aria-invalid={fe.school ? true : undefined}
           aria-describedby={fe.school ? "school-error" : "school-hint"}
         >
@@ -88,7 +100,30 @@ export function FareWatchForm() {
 
       <fieldset className="stack-sm">
         <legend className="fw-step">
-          <span>3</span> Where would you love to go?
+          <span>3</span> When could you travel?
+        </legend>
+        {!city ? (
+          <span className="hint">Pick your city first.</span>
+        ) : (
+          <>
+            <span className="hint">
+              {hasSchoolDates
+                ? "We found your school's holiday dates. Tick the breaks and long weekends you'd travel in."
+                : "We don't have your school's own dates yet, so these are long weekends and any state school breaks announced. Tick the ones that suit you."}
+            </span>
+            <YearCalendar months={months} windows={windows} selected={chosen} onToggle={toggleWindow} />
+          </>
+        )}
+        {fe.windowIds && (
+          <span className="error-text" role="alert">
+            {fe.windowIds}
+          </span>
+        )}
+      </fieldset>
+
+      <fieldset className="stack-sm">
+        <legend className="fw-step">
+          <span>4</span> Where would you love to go?
         </legend>
         <span className="hint" role="status">
           Pick up to {MAX_WISHLIST}. {picked.length > 0 && `${picked.length} picked.`}
@@ -124,7 +159,7 @@ export function FareWatchForm() {
 
       <div className="stack-sm">
         <label htmlFor="email" className="fw-step">
-          <span>4</span> Where should we send alerts?
+          <span>5</span> Where should we send alerts?
         </label>
         <div className="fw-submit">
           <input

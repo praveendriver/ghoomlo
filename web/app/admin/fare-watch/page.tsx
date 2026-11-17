@@ -11,6 +11,11 @@ import { siteUrl } from "@/lib/site-url";
 
 export const metadata: Metadata = { title: "Fare watch admin", robots: { index: false } };
 
+function when(a: { travelStart: string | null; travelEnd: string | null; breakLabel: string | null }): string {
+  if (a.travelStart) return `${formatDate(a.travelStart)} to ${formatDate(a.travelEnd ?? a.travelStart)}`;
+  return a.breakLabel ?? "Any dates";
+}
+
 const inr = new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 });
 
 function tally(values: string[]): [string, number][] {
@@ -80,6 +85,7 @@ export default async function FareWatchAdminPage() {
                     <th>From</th>
                     <th>School</th>
                     <th>Wishlist</th>
+                    <th>Travel windows</th>
                     <th>Joined</th>
                   </tr>
                 </thead>
@@ -90,6 +96,7 @@ export default async function FareWatchAdminPage() {
                       <td>{s.homeCity}</td>
                       <td>{s.school}</td>
                       <td>{s.wishlist.join(", ")}</td>
+                      <td>{s.windows.length ? s.windows.map((w) => w.label).join("; ") : "Any"}</td>
                       <td>{formatDate(s.createdAt.toISOString().slice(0, 10))}</td>
                     </tr>
                   ))}
@@ -132,7 +139,7 @@ export default async function FareWatchAdminPage() {
                   </form>
                 </div>
                 <p className="muted small">
-                  {alert.breakLabel} · seen {formatDate(alert.seenOn)} at {alert.source}
+                  {when(alert)} · seen {formatDate(alert.seenOn)} at {alert.source}
                 </p>
                 <div className="stat-row">
                   <div className="stat">
@@ -152,11 +159,11 @@ export default async function FareWatchAdminPage() {
                       Send from your own email with recipients in BCC. For a personal link per person (so you
                       can see who opened it), download the recipient list and use mail merge.
                     </p>
-                    <pre className="copy">{`Subject: ${alert.destination} from ${alert.origin}: ${inr.format(alert.priceInr)} for the ${alert.breakLabel}
+                    <pre className="copy">{`Subject: ${alert.destination} from ${alert.origin}: ${inr.format(alert.priceInr)}, ${when(alert)}
 
 Hello,
 
-We spotted a fare from ${alert.origin} to ${alert.destination} for the ${alert.breakLabel}: ${inr.format(alert.priceInr)} per person, seen on ${formatDate(alert.seenOn)} at ${alert.source}.
+We spotted a fare from ${alert.origin} to ${alert.destination}, travelling ${when(alert)}, which fits a time you told us you could travel: ${inr.format(alert.priceInr)} per person, seen on ${formatDate(alert.seenOn)} at ${alert.source}.
 
 Fares change quickly, so the price may differ when you look. The booking site confirms the final price.
 

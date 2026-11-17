@@ -338,3 +338,40 @@ pre.copy { white-space: pre-wrap; word-break: break-word; background: var(--sand
 .fw-submit { display: grid; grid-template-columns: 1fr auto; gap: 10px; }
 .fw-submit .btn { min-height: 48px; padding-inline: 28px; }
 @media (max-width: 520px) { .fw-submit { grid-template-columns: 1fr; } }
+
+/* Year calendar for picking travel windows */
+.ycal { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+@media (max-width: 760px) {
+  .ycal { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 -20px; padding: 0 20px 6px; gap: 12px; }
+  .ycal-month { flex: 0 0 min(72%, 230px); scroll-snap-align: start; }
+}
+.ycal-month { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 10px 10px 8px; }
+.ycal-title { font-weight: 650; font-size: 0.85rem; margin-bottom: 6px; }
+.ycal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; }
+.ycal-dow { font-size: 0.62rem; color: var(--muted); text-align: center; }
+.ycal-day { position: relative; font: inherit; font-size: 0.7rem; line-height: 1; text-align: center; padding: 5px 0; border-radius: 6px; border: 0; background: none; color: var(--ink); }
+button.ycal-day { cursor: pointer; }
+.ycal-day.on.school { background: var(--accent-soft); }
+.ycal-day.on.state { background: repeating-linear-gradient(135deg, var(--accent-soft) 0 3px, #fff 3px 6px); }
+.ycal-day.on.long-weekend { background: var(--blue-soft); }
+.ycal-day.picked.school, .ycal-day.picked.state { background: var(--accent); color: #fff; }
+.ycal-day.picked.long-weekend { background: var(--blue); color: #fff; }
+.ycal-day.holiday::after { content: ""; position: absolute; left: 50%; bottom: 1px; width: 4px; height: 4px; margin-left: -2px; border-radius: 50%; background: var(--green); }
+.ycal-key { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.ycal-key span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { display: inline-block; width: 14px; height: 14px; border-radius: 4px; }
+.sw.school { background: var(--accent-soft); border: 1px solid var(--accent); }
+.sw.state { background: repeating-linear-gradient(135deg, var(--accent-soft) 0 3px, #fff 3px 6px); border: 1px solid var(--accent); }
+.sw.long-weekend { background: var(--blue-soft); border: 1px solid var(--blue); }
+.sw.dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+.win-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.win { display: flex; gap: 12px; align-items: flex-start; border: 1px solid var(--line); background: #fff; border-radius: 16px; padding: 12px 14px; cursor: pointer; height: 100%; }
+.win input { width: 20px; height: 20px; margin-top: 2px; flex: none; accent-color: var(--accent); }
+.win:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+.win.long-weekend:has(input:checked) { border-color: var(--blue); background: var(--blue-soft); }
+.win-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.win-top { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.win-dates { font-weight: 600; font-size: 0.95rem; }
+.win-tag { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; border-radius: 999px; padding: 2px 8px; background: var(--sand); }
+.win-tag.school { background: var(--accent); color: #fff; }
+.win-tag.long-weekend { background: var(--blue-soft); color: var(--blue); }

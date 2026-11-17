@@ -139,6 +139,11 @@ export const fareWatchSignups = pgTable("fare_watch_signups", {
   breaks: jsonb("breaks").$type<string[]>().notNull(),
   wishlist: jsonb("wishlist").$type<string[]>().notNull(),
   travellers: integer("travellers"),
+  /** Travel windows the parent picked on the year calendar. Empty means "any time". */
+  windows: jsonb("windows")
+    .$type<{ id: string; label: string; start: string; end: string | null; kind: string }[]>()
+    .notNull()
+    .default(sql`'[]'::jsonb`),
   // Random secret used in the unsubscribe link and in personal tracked links.
   token: text("token").notNull().unique(),
   createdAt,
@@ -150,7 +155,10 @@ export const fareAlerts = pgTable("fare_alerts", {
   code: text("code").notNull().unique(),
   origin: text("origin").notNull(),
   destination: text("destination").notNull(),
-  breakLabel: text("break_label").notNull(),
+  // Older alerts were tagged with a school break; newer ones carry travel dates.
+  breakLabel: text("break_label"),
+  travelStart: date("travel_start", { mode: "string" }),
+  travelEnd: date("travel_end", { mode: "string" }),
   priceInr: integer("price_inr").notNull(),
   seenOn: date("seen_on", { mode: "string" }).notNull(),
   source: text("source").notNull(),
