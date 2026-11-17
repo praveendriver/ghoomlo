@@ -13,7 +13,7 @@ export type TravelWindow = {
   start: string;
   /** Null when only the start has been published. */
   end: string | null;
-  kind: "school" | "state" | "long-weekend" | "custom";
+  kind: "school" | "state" | "typical" | "long-weekend" | "custom";
   /** Short line for the parent: who says so and how sure we are. */
   basis: string;
   sourceUrl?: string;
@@ -62,6 +62,25 @@ export function longWeekends(holidays: Holiday[], today: string): TravelWindow[]
   return out;
 }
 
+const TYPICAL: TravelWindow[] = [
+  {
+    id: "typical-2026-12",
+    label: "Christmas and New Year",
+    start: "2026-12-24",
+    end: "2027-01-03",
+    kind: "typical",
+    basis: "Many schools close for some of these days; exact dates vary by school.",
+  },
+  {
+    id: "typical-2027-summer",
+    label: "Summer holidays",
+    start: "2027-05-01",
+    end: "2027-06-30",
+    kind: "typical",
+    basis: "Most schools close for several weeks between May and June; exact dates vary by school.",
+  },
+];
+
 const overlaps = (a: { start: string; end: string | null }, b: { start: string; end: string | null }) =>
   a.start <= (b.end ?? "9999-12-31") && b.start <= (a.end ?? "9999-12-31");
 
@@ -98,7 +117,13 @@ export function windowsFor(city: string, school: string, today: string): TravelW
           sourceUrl: b.sourceUrl,
         }));
 
-  const breaks = [...schoolWindows, ...stateWindows];
+  // When the school's own dates are unknown, offer the two times most Indian
+  // schools are closed, framed as typical rather than as anyone's dates.
+  const typicalWindows: TravelWindow[] = schoolWindows.length
+    ? []
+    : TYPICAL.filter((t) => t.end! >= today).filter((t) => !stateWindows.some((s) => overlaps(s, t)));
+
+  const breaks = [...schoolWindows, ...stateWindows, ...typicalWindows];
   const weekends = longWeekends(HOLIDAYS, today).filter((w) => !breaks.some((b) => overlaps(b, w)));
   return [...breaks, ...weekends].sort((a, b) => a.start.localeCompare(b.start));
 }

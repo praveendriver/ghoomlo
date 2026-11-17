@@ -42,9 +42,9 @@ describe("sign-up form rules", () => {
     expect(parsed.wishlist).toEqual(["Goa", "Kerala"]);
   });
 
-  it("needs a listed city, a school, one to five listed places", () => {
+  it("needs a listed city and one to five listed places; the school is optional", () => {
     expect(signupSchema.safeParse({ ...form, homeCity: "Atlantis" }).success).toBe(false);
-    expect(signupSchema.safeParse({ ...form, school: "" }).success).toBe(false);
+    expect(signupSchema.safeParse({ ...form, school: "" }).success).toBe(true);
     expect(signupSchema.safeParse({ ...form, wishlist: [] }).success).toBe(false);
     expect(signupSchema.safeParse({ ...form, wishlist: ["Narnia"] }).success).toBe(false);
     expect(signupSchema.safeParse({ ...form, wishlist: ["Goa", "Kerala", "Jaipur", "Udaipur", "Agra", "Bali"] }).success).toBe(false);

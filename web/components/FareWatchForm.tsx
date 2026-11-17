@@ -1,24 +1,91 @@
 "use client";
 
-import { useActionState, useMemo, useState } from "react";
+import { useActionState, useEffect, useMemo, useRef, useState } from "react";
 import { fareWatchSignupAction } from "@/app/actions/fare-watch";
 import type { FormState } from "@/app/actions/state";
 import { DESTINATIONS, MAX_CUSTOM_DAYS, MAX_CUSTOM_WINDOWS, MAX_WISHLIST } from "@/lib/fare-watch";
+import { nearestCity, pointFor } from "@/lib/places";
+import type { Point } from "@/lib/places";
 import { CITIES, SCHOOLS } from "@/lib/schools";
 import type { City } from "@/lib/schools";
 import { calendarMonths, schoolEntry, windowsFor } from "@/lib/windows";
+import { FareMap } from "./FareMap";
 import { PlacePicker } from "./PlacePicker";
+import { SubmitButton } from "./SubmitButton";
 import { YearCalendar } from "./YearCalendar";
 import type { CustomWindow } from "./YearCalendar";
-import { SubmitButton } from "./SubmitButton";
+
+const CITY_KEY = "ghoomlo-city";
+
+function readSavedCity(): City | "" {
+  try {
+    const saved = localStorage.getItem(CITY_KEY);
+    return saved && (CITIES as readonly string[]).includes(saved) ? (saved as City) : "";
+  } catch {
+    return "";
+  }
+}
 
 export function FareWatchForm({ today }: { today: string }) {
   const [state, action] = useActionState<FormState, FormData>(fareWatchSignupAction, {});
   const [city, setCity] = useState<City | "">("");
+  const [locating, setLocating] = useState<"idle" | "busy" | "failed" | "far">("idle");
   const [school, setSchool] = useState("");
   const [picked, setPicked] = useState<string[]>([]);
-  const [chosen, setChosen] = useState<string[]>([]);
+  // Every offered window starts picked; parents untick what doesn't suit them.
+  const [unpicked, setUnpicked] = useState<string[]>([]);
   const [custom, setCustom] = useState<CustomWindow[]>([]);
+  const datesDialog = useRef<HTMLDialogElement>(null);
+
+  const schoolName = school === "other" ? "" : school;
+  const windows = useMemo(() => (city ? windowsFor(city, schoolName, today) : []), [city, schoolName, today]);
+  const chosen = windows.filter((w) => !unpicked.includes(w.id)).map((w) => w.id);
+  const months = useMemo(() => calendarMonths(today), [today]);
+  const hasSchoolDates = Boolean(city && schoolName && schoolEntry(city, schoolName)?.status === "found");
+  const fe = state.fieldErrors ?? {};
+
+  const pickCity = (c: City | "") => {
+    setCity(c);
+    setSchool("");
+    setUnpicked([]);
+    try {
+      if (c) localStorage.setItem(CITY_KEY, c);
+    } catch {
+      /* storage can be unavailable; the choice still works for this visit */
+    }
+  };
+
+  const locate = (quiet: boolean) => {
+    if (!("geolocation" in navigator)) return setLocating(quiet ? "idle" : "failed");
+    setLocating("busy");
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const near = nearestCity(CITIES, { lat: pos.coords.latitude, lon: pos.coords.longitude });
+        pickCity(near.city);
+        setLocating(near.km > 250 ? "far" : "idle");
+      },
+      () => setLocating(quiet ? "idle" : "failed"),
+      { maximumAge: 3_600_000, timeout: 10_000 },
+    );
+  };
+
+  // Use a city chosen before, or the browser's location if the visitor has
+  // already allowed it. Never trigger a permission prompt without a tap.
+  useEffect(() => {
+    const saved = readSavedCity();
+    if (saved) {
+      queueMicrotask(() => setCity(saved));
+      return;
+    }
+    navigator.permissions
+      ?.query({ name: "geolocation" as PermissionName })
+      .then((p) => {
+        if (p.state === "granted") locate(true);
+      })
+      .catch(() => {});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const addCustom = (start: string, end: string): string | null => {
     if (start < today) return "Pick dates from today onwards";
     if (end < start) return "The last day is before the first";
@@ -29,15 +96,14 @@ export function FareWatchForm({ today }: { today: string }) {
     setCustom([...custom, { id, start, end }].sort((a, b) => a.start.localeCompare(b.start)));
     return null;
   };
-  const schoolName = school === "other" ? "" : school;
-  const windows = useMemo(() => (city ? windowsFor(city, schoolName, today) : []), [city, schoolName, today]);
-  const months = useMemo(() => calendarMonths(today), [today]);
-  const hasSchoolDates = Boolean(city && schoolName && schoolEntry(city, schoolName)?.status === "found");
-  const toggleWindow = (id: string) => setChosen(chosen.includes(id) ? chosen.filter((c) => c !== id) : [...chosen, id]);
-  const fe = state.fieldErrors ?? {};
+  const toggleWindow = (id: string) => setUnpicked(unpicked.includes(id) ? unpicked.filter((u) => u !== id) : [...unpicked, id]);
+
+  const origin = city ? pointFor(city) : null;
+  const placePoints = picked.map(pointFor).filter((p): p is Point => Boolean(p));
+  const chosenLabels = [...custom.map(() => "your dates"), ...windows.filter((w) => chosen.includes(w.id)).map((w) => w.label.replace(/ \(take .*\)$/, ""))];
 
   return (
-    <form action={action} className="stack-lg fw-form" noValidate>
+    <form action={action} className="stack fw-form" noValidate>
       {/* Hidden from people; catches automated form-fillers. */}
       <div aria-hidden="true" style={{ position: "absolute", left: "-9999px" }}>
         <label>
@@ -45,108 +111,41 @@ export function FareWatchForm({ today }: { today: string }) {
           <input type="text" name="website" tabIndex={-1} autoComplete="off" />
         </label>
       </div>
+      <input type="hidden" name="school" value={school} />
 
-      <fieldset className="stack-sm">
-        <legend className="fw-step">
-          <span>1</span> Where do you fly from?
-        </legend>
-        <div className="checks">
-          {CITIES.map((c) => (
-            <label className="check" key={c}>
-              <input
-                type="radio"
-                name="homeCity"
-                value={c}
-                checked={city === c}
-                onChange={() => {
-                  setCity(c);
-                  setSchool("");
-                  setChosen([]);
-                }}
-              />
-              {c}
-            </label>
-          ))}
+      <div className="fare-map-wrap">
+        <FareMap origin={origin} places={placePoints} />
+        <div className="city-pill">
+          <label htmlFor="homeCity">Flying from</label>
+          <select
+            id="homeCity"
+            name="homeCity"
+            value={city}
+            onChange={(e) => pickCity(e.target.value as City | "")}
+            aria-invalid={fe.homeCity ? true : undefined}
+          >
+            <option value="">Choose your city</option>
+            {CITIES.map((c) => (
+              <option key={c}>{c}</option>
+            ))}
+          </select>
+          <button type="button" className="locate" onClick={() => locate(false)} aria-label="Use my location" title="Use my location">
+            {locating === "busy" ? "…" : "📍"}
+          </button>
         </div>
-        {fe.homeCity && (
-          <span className="error-text" role="alert">
-            {fe.homeCity}
-          </span>
-        )}
-      </fieldset>
-
-      <div className="stack-sm">
-        <label htmlFor="school" className="fw-step">
-          <span>2</span> Your child&apos;s school
-        </label>
-        <select
-          id="school"
-          name="school"
-          value={school}
-          disabled={!city}
-          onChange={(e) => {
-            setSchool(e.target.value);
-            setChosen([]);
-          }}
-          aria-invalid={fe.school ? true : undefined}
-          aria-describedby={fe.school ? "school-error" : "school-hint"}
-        >
-          <option value="">{city ? "Choose a school" : "Pick your city first"}</option>
-          {city && SCHOOLS[city].map((s) => <option key={s}>{s}</option>)}
-          {city && <option value="other">My school isn&apos;t listed</option>}
-        </select>
-        {school === "other" && (
-          <input type="text" name="schoolOther" aria-label="School name" placeholder="Type the school's name" maxLength={120} autoFocus />
-        )}
-        <span className="hint" id="school-hint">
-          So we can time alerts around its holidays.
-        </span>
-        {fe.school && (
-          <span className="error-text" id="school-error" role="alert">
-            {fe.school}
-          </span>
-        )}
       </div>
+      {(fe.homeCity || locating === "failed" || locating === "far") && (
+        <p className={fe.homeCity ? "error-text" : "hint"} role="status">
+          {fe.homeCity
+            ? "Choose the city you fly from, or tap 📍."
+            : locating === "failed"
+              ? "We couldn't get your location. Choose your city instead."
+              : `We picked ${city}, the nearest city we cover. Change it if that's wrong.`}
+        </p>
+      )}
 
       <fieldset className="stack-sm">
-        <legend className="fw-step">
-          <span>3</span> When could you travel?
-        </legend>
-        {!city ? (
-          <span className="hint">Pick your city first.</span>
-        ) : (
-          <>
-            <span className="hint">
-              {hasSchoolDates
-                ? "We found your school's holiday dates. Tick the breaks and long weekends you'd travel in."
-                : "We don't have your school's own dates yet, so these are long weekends and any state school breaks announced. Tick the ones that suit you."}
-            </span>
-            <YearCalendar
-              months={months}
-              windows={windows}
-              custom={custom}
-              selected={chosen}
-              today={today}
-              origin={city}
-              wishlist={picked}
-              destinations={DESTINATIONS}
-              onToggle={toggleWindow}
-              onAddCustom={addCustom}
-              onRemoveCustom={(id) => setCustom(custom.filter((c) => c.id !== id))}
-            />
-          </>
-        )}
-        {fe.windowIds && (
-          <span className="error-text" role="alert">
-            {fe.windowIds}
-          </span>
-        )}
-      </fieldset>
-
-      <fieldset className="stack-sm">
-        <legend className="fw-step">
-          <span>4</span> Where would you love to go?
-        </legend>
+        <legend className="fw-q">Where would you love to go?</legend>
         <PlacePicker places={DESTINATIONS} picked={picked} max={MAX_WISHLIST} onChange={setPicked} />
         {fe.wishlist && (
           <span className="error-text" role="alert">
@@ -155,9 +154,33 @@ export function FareWatchForm({ today }: { today: string }) {
         )}
       </fieldset>
 
+      {city && (
+        <div className="dates-line">
+          <span className="dates-icon" aria-hidden="true">
+            🗓️
+          </span>
+          <span className="dates-text">
+            <strong>
+              {chosenLabels.length ? `${chosenLabels.length} holiday ${chosenLabels.length === 1 ? "window" : "windows"} picked` : "No dates picked yet"}
+            </strong>
+            <span className="small muted">
+              {chosenLabels.length ? chosenLabels.slice(0, 4).join(", ") + (chosenLabels.length > 4 ? ` and ${chosenLabels.length - 4} more` : "") : "Pick at least one."}
+            </span>
+          </span>
+          <button type="button" className="btn quiet" onClick={() => datesDialog.current?.showModal()}>
+            Change
+          </button>
+        </div>
+      )}
+      {fe.windowIds && (
+        <span className="error-text" role="alert">
+          {fe.windowIds}
+        </span>
+      )}
+
       <div className="stack-sm">
-        <label htmlFor="email" className="fw-step">
-          <span>5</span> Where should we send alerts?
+        <label htmlFor="email" className="fw-q">
+          Where should we send alerts?
         </label>
         <div className="fw-submit">
           <input
@@ -184,6 +207,64 @@ export function FareWatchForm({ today }: { today: string }) {
           By setting alerts you agree to get fare emails from Ghoomlo. Stop any time. <a href="/privacy">Privacy notice</a>.
         </span>
       </div>
+
+      {city && (
+        <dialog
+          ref={datesDialog}
+          className="ycal-dialog"
+          aria-labelledby="dates-title"
+          onClick={(e) => {
+            if (e.target === datesDialog.current) datesDialog.current?.close();
+          }}
+        >
+          <div className="ycal-panel stack">
+            <div className="row between">
+              <h3 id="dates-title">When could you travel?</h3>
+              <button type="button" className="btn quiet" onClick={() => datesDialog.current?.close()}>
+                Done
+              </button>
+            </div>
+            <div className="stack-sm">
+              <label htmlFor="school-pick" className="small">
+                <strong>Your child&apos;s school</strong> (optional, for exact holiday dates)
+              </label>
+              <select
+                id="school-pick"
+                value={school}
+                onChange={(e) => {
+                  setSchool(e.target.value);
+                  setUnpicked([]);
+                }}
+              >
+                <option value="">Not now</option>
+                {SCHOOLS[city].map((s) => (
+                  <option key={s}>{s}</option>
+                ))}
+                <option value="other">My school isn&apos;t listed</option>
+              </select>
+              {school === "other" && <input type="text" name="schoolOther" aria-label="School name" placeholder="Type the school's name" maxLength={120} />}
+              <span className="hint">
+                {hasSchoolDates
+                  ? "We found your school's holiday dates and picked them for you."
+                  : "We've picked the usual school holidays and long weekends for you. Untick any that don't suit, or add your own dates."}
+              </span>
+            </div>
+            <YearCalendar
+              months={months}
+              windows={windows}
+              custom={custom}
+              selected={chosen}
+              today={today}
+              origin={city}
+              wishlist={picked}
+              destinations={DESTINATIONS}
+              onToggle={toggleWindow}
+              onAddCustom={addCustom}
+              onRemoveCustom={(id) => setCustom(custom.filter((c) => c.id !== id))}
+            />
+          </div>
+        </dialog>
+      )}
     </form>
   );
 }

@@ -21,7 +21,7 @@ export async function fareWatchSignupAction(_prev: FormState, form: FormData): P
   const parsed = signupSchema.safeParse({
     email: form.get("email"),
     homeCity: form.get("homeCity") ?? "",
-    school: listed === "other" ? form.get("schoolOther") : listed,
+    school: listed === "other" ? String(form.get("schoolOther") ?? "") : listed,
     wishlist: form.getAll("wishlist"),
     windowIds: form.getAll("window"),
   });

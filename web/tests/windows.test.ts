@@ -1,4 +1,6 @@
 import { describe, expect, it } from "vitest";
+import { nearestCity } from "@/lib/places";
+import { CITIES } from "@/lib/schools";
 import { calendarMonths, formatWindow, longWeekends, windowsFor } from "@/lib/windows";
 
 describe("longWeekends", () => {
@@ -48,5 +50,23 @@ describe("calendar helpers", () => {
   it("formats open-ended and single-day windows", () => {
     expect(formatWindow({ start: "2027-04-11", end: null })).toMatch(/^from 11 Apr/);
     expect(formatWindow({ start: "2027-03-26", end: "2027-03-28" })).toMatch(/26 Mar.*28 Mar/);
+  });
+});
+
+
+describe("typical windows and location", () => {
+  it("offers Christmas and summer as typical windows when a school's dates are unknown", () => {
+    const w = windowsFor("Mumbai", "", "2026-11-17");
+    expect(w.filter((x) => x.kind === "typical").map((x) => x.label)).toEqual(["Christmas and New Year", "Summer holidays"]);
+  });
+  it("skips typical windows that the state calendar already covers, and when the school's dates are known", () => {
+    expect(windowsFor("Delhi NCR", "", "2026-11-17").some((x) => x.id === "typical-2026-12")).toBe(false);
+    expect(windowsFor("Delhi NCR", "Sardar Patel Vidyalaya", "2026-11-17").some((x) => x.kind === "typical")).toBe(false);
+  });
+  it("finds the nearest supported city", () => {
+    expect(nearestCity(CITIES, { lat: 28.46, lon: 77.03 }).city).toBe("Delhi NCR"); // Gurugram
+    expect(nearestCity(CITIES, { lat: 19.2, lon: 72.97 }).city).toBe("Mumbai"); // Thane
+    const far = nearestCity(CITIES, { lat: 26.85, lon: 80.95 }); // Lucknow
+    expect(far.km).toBeGreaterThan(250);
   });
 });

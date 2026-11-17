@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const STEPS = [
-  ["Pick your school, dates and places", "We show your school's breaks and the year's long weekends. Tick the ones you'd travel in, and up to five places."],
+  ["Pick places and leave your email", "We pick the usual school holidays and long weekends for your city. Change them, add your own dates, or add your school for exact ones."],
   ["We keep an eye on fares", "A person on our team checks fares for those places around the school holidays."],
   ["You get an email when we spot a good one", "It says the fare, where and when we saw it, and has a link to book. The booking site confirms the final price."],
 ] as const;
@@ -42,7 +42,7 @@ export default async function FareWatchPage() {
           <section className="card raised lift stack" aria-labelledby="signup-h">
             <div className="stack-sm">
               <h2 id="signup-h">Start your fare watch</h2>
-              <p className="muted">Free. No account needed. Takes a minute.</p>
+              <p className="muted">Free. No account needed. Takes 20 seconds.</p>
             </div>
             <FareWatchForm today={todayIso()} />
           </section>

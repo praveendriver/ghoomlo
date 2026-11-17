@@ -356,9 +356,9 @@ pre.copy { white-space: pre-wrap; word-break: break-word; background: var(--sand
 .ycal-day { position: relative; font: inherit; font-size: 0.7rem; line-height: 1; text-align: center; padding: 5px 0; border-radius: 6px; border: 0; background: none; color: var(--ink); }
 button.ycal-day { cursor: pointer; }
 .ycal-day.on.school { background: var(--accent-soft); }
-.ycal-day.on.state { background: repeating-linear-gradient(135deg, var(--accent-soft) 0 3px, #fff 3px 6px); }
+.ycal-day.on.typical, .ycal-day.on.state { background: repeating-linear-gradient(135deg, var(--accent-soft) 0 3px, #fff 3px 6px); }
 .ycal-day.on.long-weekend { background: var(--blue-soft); }
-.ycal-day.picked.school, .ycal-day.picked.state { background: var(--accent); color: #fff; }
+.ycal-day.picked.school, .ycal-day.picked.state, .ycal-day.picked.typical { background: var(--accent); color: #fff; }
 .ycal-day.picked.long-weekend { background: var(--blue); color: #fff; }
 .ycal-day.on.custom, .ycal-day.picked.custom { background: var(--green); color: #fff; }
 .ycal-day.first-tap { background: var(--green); color: #fff; box-shadow: 0 0 0 2px var(--green-soft); }
@@ -440,3 +440,31 @@ button.ycal-day:disabled { cursor: default; }
   .ycal-panel .ycal-month { flex: none; }
 }
 @media (max-width: 380px) { .ycal-panel .ycal { grid-template-columns: 1fr; } }
+
+/* Fare watch: sketch map with home city and picked places */
+.fare-map-wrap { position: relative; border-radius: 22px; overflow: hidden; border: 1px solid var(--line); background: #efe8da; isolation: isolate; }
+.fare-map { height: clamp(220px, 34vw, 300px); background: #efe8da; }
+.fare-map .leaflet-tile-pane { filter: url(#map-sketch) sepia(0.5) saturate(0.6) contrast(0.92) brightness(1.05); }
+.fare-map .leaflet-control-attribution { font-size: 9px; background: rgba(255, 253, 248, 0.8); }
+.city-pill { position: absolute; z-index: 500; top: 12px; left: 12px; right: 12px; display: flex; align-items: center; gap: 8px; width: max-content; max-width: calc(100% - 24px); background: rgba(255, 253, 248, 0.96); border-radius: 999px; padding: 4px 4px 4px 14px; box-shadow: 0 6px 18px -8px rgba(21, 33, 28, 0.4); }
+.city-pill label { font-size: 0.78rem; color: var(--muted); white-space: nowrap; }
+.city-pill select { min-height: 36px; border: 0; background: transparent; font-weight: 650; padding: 4px 26px 4px 2px; width: auto; }
+.city-pill .locate { width: 36px; height: 36px; border-radius: 50%; border: 0; background: var(--green-soft); font-size: 1rem; cursor: pointer; flex: none; }
+.sketch-pin { position: relative; }
+.sketch-dot { position: absolute; left: -6px; top: -6px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); border: 2px solid #fffdf8; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35); }
+.sketch-dot.home { background: var(--ink); width: 14px; height: 14px; left: -7px; top: -7px; }
+.sketch-label { position: absolute; left: 10px; top: -14px; white-space: nowrap; font-family: "Caveat", cursive; font-size: 1.25rem; font-weight: 600; color: var(--ink); text-shadow: 0 0 3px #fffdf8, 0 0 6px #fffdf8, 0 0 9px #fffdf8; }
+.fw-q { font-family: var(--display); font-size: 1.3rem; font-weight: 500; letter-spacing: -0.02em; padding: 0; }
+.dates-line { display: flex; align-items: center; gap: 12px; border: 1px solid var(--line); background: #fff; border-radius: 18px; padding: 10px 12px; }
+.dates-icon { font-size: 1.4rem; width: 40px; height: 40px; border-radius: 12px; background: var(--accent-soft); display: grid; place-items: center; flex: none; }
+.dates-text { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+.dates-text .small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+@media (max-width: 520px) {
+  .city-pill { gap: 4px; padding-left: 12px; }
+  .city-pill label { font-size: 0.7rem; }
+  .city-pill select { min-width: 0; max-width: 46vw; padding-right: 22px; }
+  .dates-line { gap: 10px; padding: 10px; }
+  .dates-icon { width: 34px; height: 34px; font-size: 1.15rem; }
+  .dates-text strong { font-size: 0.95rem; }
+}

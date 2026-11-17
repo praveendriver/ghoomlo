@@ -10,7 +10,7 @@ export type CustomWindow = { id: string; start: string; end: string };
 
 const MONTH = new Intl.DateTimeFormat("en-IN", { month: "short", year: "numeric", timeZone: "UTC" });
 const pad = (n: number) => String(n).padStart(2, "0");
-const KIND_TEXT = { school: "Your school", state: "State calendar", "long-weekend": "Long weekend", custom: "Your dates" } as const;
+const KIND_TEXT = { school: "Your school", state: "State calendar", typical: "Typical", "long-weekend": "Long weekend", custom: "Your dates" } as const;
 const FIRST = 6;
 
 type Props = {
@@ -199,6 +199,7 @@ export function YearCalendar(props: Props) {
       <p className="win-basis muted">
         {kinds.has("school") && "School breaks come from your school's published calendar and haven't been checked by us yet. "}
         {kinds.has("state") && "State breaks are what the state announced for its schools; your school may differ. "}
+        {kinds.has("typical") && "Typical windows are when most schools close; your school's exact dates may differ. "}
         {kinds.has("long-weekend") && "Long weekends are built from the central government holiday list, so check your school is closed. "}
         {CLIMATE_CREDIT}
       </p>
@@ -285,7 +286,7 @@ export function YearCalendar(props: Props) {
           </div>
           <div className="ycal-key small muted">
             <span><i className="sw school" /> Your school&apos;s break</span>
-            <span><i className="sw state" /> State calendar (guide)</span>
+            <span><i className="sw state" /> State or typical break (guide)</span>
             <span><i className="sw long-weekend" /> Long weekend</span>
             <span><i className="sw custom" /> Your dates</span>
             <span><i className="sw dot" /> Public holiday</span>

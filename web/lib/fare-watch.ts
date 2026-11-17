@@ -36,7 +36,8 @@ const destination = z.enum(DESTINATIONS);
 export const signupSchema = z.object({
   email: z.string().trim().toLowerCase().pipe(z.email("Enter a valid email address").max(254)),
   homeCity: city,
-  school: z.string().trim().min(2, "Pick or type your child's school").max(120),
+  // Optional: only used to look up the school's own holiday dates.
+  school: z.string().trim().max(120).default(""),
   windowIds: z.array(z.string().max(40)).max(40),
   wishlist: z
     .array(destination)
