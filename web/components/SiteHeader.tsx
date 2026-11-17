@@ -30,6 +30,7 @@ export function SiteHeader({
         <nav className={signedIn ? "nav signed-in" : "nav"} aria-label="Main">
           {signedIn ? (
             <>
+              <Link href="/fare-watch">Fare watch</Link>
               <Link href="/trips">Trips</Link>
               <Link href="/household">Household</Link>
               <Link href="/account">Account</Link>
@@ -39,6 +40,7 @@ export function SiteHeader({
             </>
           ) : (
             <>
+              <Link href="/fare-watch">Fare watch</Link>
               <Link href="/login">Sign in</Link>
               <Link href="/signup" className="pill">
                 Create account
@@ -59,6 +61,11 @@ export function SiteFooter({ narrow = false }: { narrow?: boolean }) {
         <p className="small">
           Ghoomlo drafts trip plans; it does not sell or book travel. Always confirm prices, opening hours,
           and entry rules with the provider or an official source.
+        </p>
+        <p className="small">
+          <Link href="/privacy" style={{ color: "#fff" }}>
+            Privacy notice
+          </Link>
         </p>
         {isRecordingUsage() && (
           <p className="small">

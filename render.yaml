@@ -27,6 +27,9 @@ services:
       # Microsoft Clarity project ID (public; it appears in the page source).
       - key: CLARITY_PROJECT_ID
         value: zeieo9j3r7
+      # Emails of accounts allowed to open /admin/fare-watch. Entered in the Render dashboard.
+      - key: ADMIN_EMAILS
+        sync: false
       # Needed to draft plans. Entered in the Render dashboard, never committed.
       - key: ANTHROPIC_API_KEY
         sync: false

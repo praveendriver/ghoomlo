@@ -56,6 +56,14 @@ npm run build
 
 After changing `lib/db/schema.ts`, run `npm run db:generate` and commit the new file in `drizzle/`.
 
+## Fare watch
+
+A public sign-up at `/fare-watch` (no account needed) for school-holiday fare alerts: email, home city, school, breaks and a wishlist of up to five places. People can stop and delete their details from the link shown at sign-up.
+
+- `/admin/fare-watch` lists sign-ups, lets an admin record a fare they have seen, shows who matches it, and gives ready-to-send email text and a recipient list. It is visible only to signed-in accounts whose email is in `ADMIN_EMAILS`; create the account before listing its email.
+- `/go/<code>` is the tracked link in each alert: it records the open and redirects to the booking link. Adding `?s=<token>` (as the recipient download does) records which subscriber opened it.
+- Nothing is sent automatically. Sending email needs a provider and a domain; SMS and WhatsApp need registration. Phone numbers are not collected until they can be used.
+
 ## Maps
 
 Each plan day shows a real map (Leaflet on OpenStreetMap tiles, restyled to look hand-drawn) with a numbered pin for every place the search could find near the destination. Places it cannot find, or finds implausibly far away, get no pin.

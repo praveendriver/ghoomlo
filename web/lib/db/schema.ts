@@ -128,3 +128,46 @@ export const geocodes = pgTable("geocodes", {
   lng: doublePrecision("lng"),
   createdAt,
 });
+
+/** People who asked for school-holiday fare alerts. No account is needed to sign up. */
+export const fareWatchSignups = pgTable("fare_watch_signups", {
+  id: uuid("id").primaryKey().defaultRandom(),
+  email: text("email").notNull().unique(),
+  homeCity: text("home_city").notNull(),
+  school: text("school").notNull(),
+  board: text("board"),
+  breaks: jsonb("breaks").$type<string[]>().notNull(),
+  wishlist: jsonb("wishlist").$type<string[]>().notNull(),
+  travellers: integer("travellers"),
+  // Random secret used in the unsubscribe link and in personal tracked links.
+  token: text("token").notNull().unique(),
+  createdAt,
+});
+
+/** A fare someone on the team saw, with where and when, and the link people are sent to. */
+export const fareAlerts = pgTable("fare_alerts", {
+  id: uuid("id").primaryKey().defaultRandom(),
+  code: text("code").notNull().unique(),
+  origin: text("origin").notNull(),
+  destination: text("destination").notNull(),
+  breakLabel: text("break_label").notNull(),
+  priceInr: integer("price_inr").notNull(),
+  seenOn: date("seen_on", { mode: "string" }).notNull(),
+  source: text("source").notNull(),
+  targetUrl: text("target_url").notNull(),
+  createdAt,
+});
+
+export const fareAlertClicks = pgTable(
+  "fare_alert_clicks",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    alertId: uuid("alert_id")
+      .notNull()
+      .references(() => fareAlerts.id, { onDelete: "cascade" }),
+    // Null when the link was opened without a personal token, or the person later unsubscribed.
+    signupId: uuid("signup_id").references(() => fareWatchSignups.id, { onDelete: "set null" }),
+    createdAt,
+  },
+  (t) => [index("fare_alert_clicks_alert_idx").on(t.alertId)],
+);

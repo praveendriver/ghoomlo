@@ -53,6 +53,20 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ d
             <IdeaCarousel />
           </section>
 
+          <section className="card raised stack-sm" aria-labelledby="fw-h">
+            <p className="eyebrow">New</p>
+            <h2 id="fw-h">School-holiday fare watch</h2>
+            <p className="muted" style={{ maxWidth: "60ch" }}>
+              Tell us your child&apos;s school and where you would love to go. We email you when we spot a good
+              fare for the holidays.
+            </p>
+            <div>
+              <Link href="/fare-watch" className="btn accent">
+                Start my fare watch
+              </Link>
+            </div>
+          </section>
+
           <p className="statement">
             Plans shaped around
             <span className="pill-photo">
