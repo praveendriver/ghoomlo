@@ -1,0 +1,1166 @@
+{
+  "about": "School holiday breaks found on schools' public websites by tools/school-calendars. Every entry is unverified until a person checks it against the school's own calendar. Each break quotes the source wording.",
+  "schools": [
+    {
+      "city": "Bengaluru",
+      "school": "Baldwin Boys' High School",
+      "website": "https://baldwinboyshighschool.edu.in",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Baldwin Girls' High School",
+      "website": "https://baldwingirls.edu.in",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Bishop Cotton Boys' School",
+      "website": "https://bishopcottonboysschool.edu.in/",
+      "status": "needs-review",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "The home page events list shows Christmas Vacation Begins in December with no exact date.",
+      "sourceUrl": "https://bishopcottonboysschool.edu.in/"
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Bishop Cotton Girls' School",
+      "website": "http://www.bishopcottongirls.com",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Canadian International School",
+      "website": "https://www.canadianinternationalschool.com",
+      "status": "found",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://resources.finalsite.net/images/v1792996733/canadianinternationalschoolcom/bokkihfce7eedxkfttay/AcademicCalendar26-27.pdf",
+      "retrievedOn": "2026-11-17",
+      "breaks": [
+        {
+          "name": "Dussehra break",
+          "start": "2026-10-19",
+          "end": "2026-10-23",
+          "quote": "19-23 Dussehra"
+        },
+        {
+          "name": "Diwali break",
+          "start": "2026-11-08",
+          "end": "2026-11-10",
+          "quote": "8-10 Diwali"
+        },
+        {
+          "name": "Spring holiday",
+          "start": "2027-03-29",
+          "end": "2027-04-02",
+          "quote": "Mar 29–Apr 2 School Holiday"
+        }
+      ],
+      "notes": "Calendar and Holidays 2026-2027 PDF, laid out as a grid; months were inferred from the row order and should be checked. A winter break is on the calendar but its dates did not read clearly."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Clarence High School",
+      "website": "https://clarencehighschool.in",
+      "status": "needs-review",
+      "sourceUrl": "https://clarencehighschool.in/academics/academic-calendar/",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "The academic calendar page names a FIRST TERM BREAK ending Monday 26 October 2026 and a SECOND TERM BREAK ending Sunday 3 January 2027, but the start dates are not readable in the page text."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Delhi Public School, Bangalore East",
+      "website": "https://east.dpsbangalore.edu.in",
+      "status": "found",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://dpsbangaloreeast.edu.in/storage/2026/06/Academic-Calendar-2026-27.pdf",
+      "retrievedOn": "2026-11-17",
+      "breaks": [
+        {
+          "name": "Dussehra break",
+          "start": "2026-10-17",
+          "end": "2026-10-26",
+          "quote": "SAT 17 Holiday; Dussehra Vacation begins ... TUE 27 School reopens"
+        },
+        {
+          "name": "Diwali break",
+          "start": "2026-11-07",
+          "end": "2026-11-10",
+          "quote": "SAT 7 Holiday ... Diwali Break ... WED 11 School reopens after Diwali Break"
+        },
+        {
+          "name": "Winter break",
+          "start": "2026-12-24",
+          "end": "2027-01-03",
+          "quote": "THU 24 Christmas Vacation Begins ... Winter Break ... School Reopens after Winter Break; MON 4"
+        },
+        {
+          "name": "Summer break",
+          "start": "2027-04-10",
+          "end": "2027-05-23",
+          "quote": "SAT 10 Holiday; Summer Vacation Begins ... MON 24 School reopens for Classes IX, X and XII"
+        }
+      ],
+      "notes": "Academic Calendar 2026-27 PDF. Summer reopening is staggered by class from 24 to 31 May 2027; the end date uses the earliest. Classes IX, X and XII finish on 6 April 2027."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Delhi Public School, Bangalore North",
+      "website": "https://www.dpsbangalorenorth.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Delhi Public School, Bangalore South",
+      "website": "https://www.dpsbangaloresouth.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Ebenezer International School",
+      "website": "https://www.eisbangalore.com",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Greenwood High International School",
+      "website": "https://greenwoodhigh.edu.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Harrow International School Bengaluru",
+      "website": "https://www.harrowbengaluru.in",
+      "status": "found",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://www.harrowbengaluru.in/learning/academic-calendar",
+      "retrievedOn": "2026-11-17",
+      "breaks": [
+        {
+          "name": "Dasara break",
+          "start": "2026-10-17",
+          "end": "2026-10-25",
+          "quote": "17 Oct - 25 Oct: Dasara Break"
+        },
+        {
+          "name": "Diwali break",
+          "start": "2026-11-07",
+          "end": "2026-11-15",
+          "quote": "7 Nov - 15 Nov: Diwali Break"
+        },
+        {
+          "name": "Winter break",
+          "start": "2026-12-12",
+          "end": "2027-01-04",
+          "quote": "12 Dec - 04 Jan: Winter Break"
+        },
+        {
+          "name": "Spring break",
+          "start": "2027-03-20",
+          "end": "2027-03-29",
+          "quote": "20th March - 29th March: Spring Break"
+        }
+      ],
+      "notes": "Page lists School Holidays (Inclusive) without years; the year is taken from the calendar months shown on the same page (August 2026 onward). Summer vacation starts 11 June 2027."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Indus International School",
+      "website": "https://indusschool.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Inventure Academy",
+      "website": "https://www.inventureacademy.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Mallya Aditi International School",
+      "website": "https://www.aditi.edu.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "National Public School, HSR Layout",
+      "website": "https://www.npshsr.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "National Public School, Indiranagar",
+      "website": "https://www.npsinr.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "National Public School, Koramangala",
+      "website": "https://www.npskrm.com",
+      "status": "needs-review",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "Only the 2025-26 year-end circular (summer vacation schedule) was found; nothing for the rest of 2026-27.",
+      "sourceUrl": "https://www.npskrm.com/pdfs/2025-2026/Year-End-Circular-2025-2026.pdf"
+    },
+    {
+      "city": "Bengaluru",
+      "school": "National Public School, Rajajinagar",
+      "website": "https://www.npsrnr.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Presidency School, Bangalore South",
+      "website": "https://presidencyschools.org/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Sophia High School",
+      "website": "https://sophiahighschool.org",
+      "status": "found",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://sophiahighschool.org/calendar.php",
+      "retrievedOn": "2026-11-17",
+      "breaks": [
+        {
+          "name": "Dussehra break",
+          "start": "2026-10-10",
+          "end": "2026-10-21",
+          "quote": "October 10th, 2026 Dussehra Holidays Starts ... October 22nd, 2026 School Reopens"
+        },
+        {
+          "name": "Diwali break",
+          "start": "2026-11-07",
+          "end": "2026-11-10",
+          "quote": "November 7th 2026 Diwali Holidays Starts ... November 10th 2026 Diwali Holidays Ends"
+        },
+        {
+          "name": "Christmas break",
+          "start": "2026-12-19",
+          "end": "2027-01-03",
+          "quote": "December 19th, 2026 Christmas Holidays Starts ... January 3rd, 2027 Christmas Holidays end"
+        }
+      ],
+      "notes": "From the school calendar page."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Sri Kumaran Children's Home",
+      "website": "https://kumarans.org",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "St. Joseph's Boys' High School",
+      "website": "https://sjbhs.edu.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Stonehill International School",
+      "website": "https://www.stonehill.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "The Frank Anthony Public School",
+      "website": "https://fapsbangalore.org",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "The International School Bangalore (TISB)",
+      "website": "https://www.tisb.org/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "The Valley School",
+      "website": "https://www.thevalleyschool.info/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Bengaluru",
+      "school": "Vidyashilp Academy",
+      "website": "https://vidyashilpacademy.edu.in",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Chennai",
+      "school": "American International School Chennai",
+      "website": "https://www.aischennai.org/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Chennai",
+      "school": "Chennai Public School",
+      "website": "https://www.chennaipublicschool.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Chennai",
+      "school": "KC High",
+      "website": "https://www.kchigh.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Chennai",
+      "school": "Padma Seshadri Bala Bhavan, K.K. Nagar",
+      "website": "https://www.psbbschools.ac.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Chennai",
+      "school": "Padma Seshadri Bala Bhavan, Nungambakkam",
+      "website": "https://www.psbbschools.ac.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Chennai",
+      "school": "Sishya School",
+      "website": "https://www.sishya.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Chennai",
+      "school": "The School KFI",
+      "website": "https://theschoolkfi.org/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Bal Bharati Public School",
+      "website": "https://bbpspp.balbharati.org",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Delhi Public School, Gurgaon",
+      "website": "https://www.dpsgurgaon.org/",
+      "status": "needs-review",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "List of Holidays 2026-27 gives single-day holidays (e.g. Diwali 8 November 2026, Christmas 25 December 2026) but no vacation dates.",
+      "sourceUrl": "https://www.dpsgurgaon.org/list-of-holidays.php"
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Delhi Public School, Mathura Road",
+      "website": "https://www.dpsmathuraroad.org/",
+      "status": "needs-review",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "2026-27 academic calendar and almanacs are published as PDFs, but laid out as a month grid that does not read reliably as text. Summer, Dussehra, Diwali and winter breaks are marked on it; read the dates from the PDF.",
+      "sourceUrl": "https://dpsmathuraroad.org/pdfs/2026-2027-Academic-Calendar.pdf"
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Delhi Public School, Noida",
+      "website": "https://dpsnoida.co.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Delhi Public School, R.K. Puram",
+      "website": "https://dpsrkp.net",
+      "status": "needs-review",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://dpsrkp.net/regarding-closure-of-school-nursery-viii-for-summer-vacation/",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "Only a notice that summer vacation for Nursery to Class VIII began on 21 May 2026 (already past). No published dates for the remaining 2026-27 breaks were found on public pages."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Heritage Xperiential Learning School, Gurgaon",
+      "website": "https://www.heritagexperiential.org",
+      "status": "found",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://www.heritagexperiential.org/holiday-list-2026-27",
+      "retrievedOn": "2026-11-17",
+      "breaks": [
+        {
+          "name": "Summer break",
+          "start": "2026-05-21",
+          "end": "2026-07-01",
+          "quote": "Summer Break 21-May-26 1-Jul-26 Nur – VII, SEN"
+        },
+        {
+          "name": "Autumn break",
+          "start": "2026-10-17",
+          "end": "2026-10-20",
+          "quote": "Autumn Break 17-October-26 20-October-26 Nursery to Grade XII, SEN"
+        },
+        {
+          "name": "Diwali break",
+          "start": "2026-11-07",
+          "end": "2026-11-11",
+          "quote": "Diwali Break 07-November-26 11-November-26 Nursery to Grade XII, SEN"
+        },
+        {
+          "name": "Winter break",
+          "start": "2026-12-31",
+          "end": "2027-01-17",
+          "quote": "Winter Break 31-December-26 17-January-27 Nursery to Grade IX and XI, SEN"
+        }
+      ],
+      "notes": "Sector 62 campus, CBSE. The page says both days inclusive. Grades VIII to XII have a shorter summer break; Grades X and XII are not listed for the winter break."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Lotus Valley International School, Noida",
+      "website": "https://www.lotusvalley.com",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Modern School, Barakhamba Road",
+      "website": "https://www.modernschool.net/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Modern School, Vasant Vihar",
+      "website": "https://www.modernschoolvasantvihar.org",
+      "status": "needs-review",
+      "sourceUrl": "https://www.modernschoolvasantvihar.org/pdfs/26/Final Calendar 2026-27.pdf",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "Final Calendar 2026-27 PDF marks summer vacation, Dussehra and winter vacation, but it is a month grid that does not read reliably as text."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Nirmal Bhartia School",
+      "website": "https://nibs.edu.in",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Pathways School, Gurgaon",
+      "website": "https://www.pathways.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Sanskriti School",
+      "website": "https://www.sanskritischool.edu.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Sardar Patel Vidyalaya",
+      "website": "https://spvdelhi.org",
+      "status": "found",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://spvdelhi.org/upload/attach/241291771851336_TENTATIVE_CALENDAR_(2026-27).pdf",
+      "retrievedOn": "2026-11-17",
+      "breaks": [
+        {
+          "name": "Summer break",
+          "start": "2026-05-11",
+          "end": "2026-06-30",
+          "quote": "11/05/2026 Monday Summer Vacation Begins from Nursery to Class VIII ... 01/07/2026 Wednesday School Reopen after Summer Break"
+        },
+        {
+          "name": "Dussehra break",
+          "start": "2026-10-16",
+          "end": "2026-10-20",
+          "quote": "16/10/2026 Friday Holiday – Dussehra Break Begin ... 21/10/2026 Wednesday School Reopen after Dussehra Break"
+        },
+        {
+          "name": "Diwali break",
+          "start": "2026-11-05",
+          "end": "2026-11-11",
+          "quote": "05/11/2026 Thursday Diwali Break Begin ... 12/11/2026 Thursday School Reopen after Diwali break"
+        },
+        {
+          "name": "Winter break",
+          "start": "2027-01-01",
+          "end": "2027-01-17",
+          "quote": "01/01/2027 Friday Winter Break Begin ... 18/01/2027 Monday School Reopen after Winter Break"
+        }
+      ],
+      "notes": "Marked Tentative Calendar. Classes IX to XII start summer vacation on 23/05/2026. End dates are the day before the stated reopening."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Shiv Nadar School, Gurgaon",
+      "website": "https://shivnadarschool.edu.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Shiv Nadar School, Noida",
+      "website": "https://shivnadarschool.edu.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Springdales School, Dhaula Kuan",
+      "website": "https://springdales.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Springdales School, Pusa Road",
+      "website": "https://springdales.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "St. Columba's School",
+      "website": "https://www.stcolumbas.edu.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Step by Step School, Noida",
+      "website": "https://stepbystep.school",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "The British School",
+      "website": "https://www.british-school.org/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "The Mother's International School",
+      "website": "https://www.tmis.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "The Shri Ram School",
+      "website": "https://www.tsrs.org/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Delhi NCR",
+      "school": "Vasant Valley School",
+      "website": "https://www.vasantvalley.org",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Hyderabad",
+      "school": "CHIREC International School",
+      "website": "https://www.chirec.ac.in/",
+      "status": "needs-review",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "The public events calendar shows Diwali Holidays on 7 November 2026 only. No other break dates were found.",
+      "sourceUrl": "https://www.chirec.ac.in/calendar-events/month/"
+    },
+    {
+      "city": "Hyderabad",
+      "school": "Delhi Public School, Nacharam",
+      "website": "https://www.dpsnacharam.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Hyderabad",
+      "school": "Glendale Academy",
+      "website": "https://glendaleschool.org/in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Hyderabad",
+      "school": "Indus International School, Hyderabad",
+      "website": "https://indusschool.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Hyderabad",
+      "school": "International School of Hyderabad",
+      "website": "https://www.ishyd.org/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Hyderabad",
+      "school": "Manthan School",
+      "website": "https://www.manthanschool.org",
+      "status": "found",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://www.manthanschool.org/IN%20-%20Manthan%20International%20School/Calendar/Manthan%20School%20Diary%20AY%202026-%2027.pdf",
+      "retrievedOn": "2026-11-17",
+      "breaks": [
+        {
+          "name": "Dussehra break",
+          "start": "2026-10-10",
+          "end": "2026-10-21",
+          "quote": "Oct 10, 2026 to Oct 21, 2026 Saturday -Wednesday Dussehra Break"
+        },
+        {
+          "name": "Diwali break",
+          "start": "2026-11-06",
+          "end": "2026-11-09",
+          "quote": "Nov 6 to Nov 9, 2026 Friday to Monday Diwali Break"
+        },
+        {
+          "name": "Christmas break",
+          "start": "2026-12-23",
+          "end": "2026-12-27",
+          "quote": "Dec 23 to Dec 27 Wednesday to Sunday Christmas Break"
+        },
+        {
+          "name": "Pongal break",
+          "start": "2027-01-13",
+          "end": "2027-01-17",
+          "quote": "Jan 13 to Jan 17 Wednesday to Sunday Pongal Break"
+        }
+      ],
+      "notes": "From the school diary holiday list. Summer break 2027 dates are not stated in the list; the diary grid shows a break in May."
+    },
+    {
+      "city": "Hyderabad",
+      "school": "Meridian School",
+      "website": "https://www.meridianschool.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Hyderabad",
+      "school": "Oakridge International School, Bachupally",
+      "website": "https://www.oakridge.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Hyderabad",
+      "school": "Oakridge International School, Gachibowli",
+      "website": "https://www.oakridge.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Hyderabad",
+      "school": "The Aga Khan Academy",
+      "website": "https://www.agakhanacademies.org/hyderabad",
+      "status": "found",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://www.agakhanacademies.org/hyderabad/calendar",
+      "retrievedOn": "2026-11-17",
+      "breaks": [
+        {
+          "name": "Mid-term break",
+          "start": "2026-10-12",
+          "end": "2026-10-25",
+          "quote": "12-23 Oct Mid-term break (school resumes on Monday 26 October)"
+        },
+        {
+          "name": "Winter break",
+          "start": "2026-12-21",
+          "end": "2027-01-17",
+          "quote": "21-Dec Winter Break starts ... 18-Jan First day of school"
+        },
+        {
+          "name": "Spring mid-term break",
+          "start": "2027-03-22",
+          "end": "2027-03-28",
+          "quote": "22-26 Mar Mid-Term break (School resumes on Monday 29th March)"
+        }
+      ],
+      "notes": "Key Calendar Dates 2026-2027. Diwali is listed only as 9 November. Breaks run to the day before the stated resumption, including the weekend. Final day for Grades 1-9 is 21 May 2027."
+    },
+    {
+      "city": "Hyderabad",
+      "school": "The Hyderabad Public School, Begumpet",
+      "website": "https://www.hpsbegumpet.org.in/",
+      "status": "needs-review",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "Only the 2025-26 calendar was found; nothing for 2026-27 yet.",
+      "sourceUrl": "https://www.hpsbegumpet.org.in/wp-content/uploads/2025/09/Cambridge-Calendar-2025-2026-.pdf"
+    },
+    {
+      "city": "Kolkata",
+      "school": "La Martiniere for Boys",
+      "website": "https://lamartiniere.co",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Kolkata",
+      "school": "La Martiniere for Girls",
+      "website": "https://lamartiniere.co",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Kolkata",
+      "school": "South Point High School",
+      "website": "https://www.southpoint.edu.in",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Kolkata",
+      "school": "Sri Sri Academy",
+      "website": "https://www.srisriacademy.org/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Kolkata",
+      "school": "The Heritage School",
+      "website": "https://www.theheritageschool.org/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Aditya Birla World Academy",
+      "website": "https://www.adityabirlaworldacademy.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "American School of Bombay",
+      "website": "https://www.asbindia.org/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Bombay International School",
+      "website": "https://bis.edu.in",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Bombay Scottish School, Mahim",
+      "website": "https://bombayscottish.in/mahim/home.php",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Campion School",
+      "website": "http://www.campionschool.in",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Dhirubhai Ambani International School",
+      "website": "https://www.dais.edu.in",
+      "status": "needs-review",
+      "sourceUrl": "https://www.dais.edu.in/calender",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "The calendar page gives only approximate guidance: summer vacation typically mid-June to the fourth week of July, about 10 days for Diwali and about a fortnight at Christmas. No exact dates."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Don Bosco High School, Matunga",
+      "website": "https://donboscomatunga.com",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Ecole Mondiale World School",
+      "website": "https://www.ecolemondiale.org/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Greenlawns High School",
+      "website": "https://greenlawns.org",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Hiranandani Foundation School, Powai",
+      "website": "https://www.hiranandanifoundationschoolpowai.com",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "JBCN International School",
+      "website": "https://www.jbcnschool.edu.in/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Jamnabai Narsee International School",
+      "website": "https://www.jnis.ac.in",
+      "status": "found",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://www.jnis.ac.in/",
+      "retrievedOn": "2026-11-17",
+      "breaks": [
+        {
+          "name": "Diwali break",
+          "start": "2026-10-31",
+          "end": "2026-11-15",
+          "quote": "October 31 – November 15, 2026 Diwali Break"
+        },
+        {
+          "name": "Christmas break",
+          "start": "2026-12-24",
+          "end": "2027-01-03",
+          "quote": "December 24, 2026 – January 3, 2027 Christmas Break"
+        },
+        {
+          "name": "Spring break",
+          "start": "2027-03-20",
+          "end": "2027-03-28",
+          "quote": "March 20-28, 2027 Spring Break"
+        },
+        {
+          "name": "Summer break",
+          "start": "2027-05-29",
+          "end": "2027-07-11",
+          "quote": "May 29, 2027 – 11 July, 2027 Summer Break"
+        }
+      ],
+      "notes": "From the key dates list on the school home page."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Jamnabai Narsee School",
+      "website": "https://jns.ac.in",
+      "status": "found",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://jns.ac.in/upcoming-events.php",
+      "retrievedOn": "2026-11-17",
+      "breaks": [
+        {
+          "name": "Summer break",
+          "start": "2026-05-30",
+          "end": "2026-07-12",
+          "quote": "Summer Vacation Begins (30th May - 12th July, 2026)"
+        },
+        {
+          "name": "Diwali break",
+          "start": "2026-10-31",
+          "end": "2026-11-15",
+          "quote": "Diwali Vacation Begins [31st Oct - 15th Nov]"
+        },
+        {
+          "name": "Christmas break",
+          "start": "2026-12-24",
+          "end": "2027-01-03",
+          "quote": "Christmas Vacation [24th Dec 2026 - 3rd Jan 2026]"
+        }
+      ],
+      "notes": "From the upcoming events page. The page prints the Christmas end year as 2026; it is listed here as 3 January 2027, which is the only date that makes sense."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Oberoi International School",
+      "website": "https://www.oberoi-is.org",
+      "status": "found",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://resources.finalsite.net/images/v1776081594/oberoiisorg/xw4zog064v4aoxe6kndn/OISAcademicCalendar-AY2026-27.pdf",
+      "retrievedOn": "2026-11-17",
+      "breaks": [
+        {
+          "name": "Diwali break",
+          "start": "2026-11-06",
+          "end": "2026-11-15",
+          "quote": "Nov 6 - 15: Diwali Break"
+        },
+        {
+          "name": "Winter break",
+          "start": "2026-12-19",
+          "end": "2027-01-03",
+          "quote": "Dec 19 - Jan 3: Winter Break"
+        },
+        {
+          "name": "Spring break",
+          "start": "2027-03-20",
+          "end": "2027-03-28",
+          "quote": "Mar 20 - 28 : Spring Break"
+        }
+      ],
+      "notes": "PDF linked from the school website. Last day for students is 2 June 2027. Holidays may be subject to change."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Podar International School",
+      "website": "https://www.podareducation.org/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Smt. Sulochanadevi Singhania School, Thane",
+      "website": "https://www.singhaniaschool.org/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "The Cathedral and John Connon School",
+      "website": "https://cathedral-school.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Utpal Shanghvi Global School",
+      "website": "https://ppsijc.org",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Mumbai",
+      "school": "Vibgyor High",
+      "website": "https://www.vibgyorhigh.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Pune",
+      "school": "Delhi Public School, Pune",
+      "website": "https://www.dpspune.com",
+      "status": "needs-review",
+      "sourceUrl": "https://resources.edunexttechnologies.com/web-data/takshila/dpspune/pdf/almanac-2026-27-pune.pdf",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "Almanac 2026-27 PDF found; break dates did not read clearly as text."
+    },
+    {
+      "city": "Pune",
+      "school": "Indus International School, Pune",
+      "website": "https://indusschool.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Pune",
+      "school": "The Bishop's School, Camp",
+      "website": "https://www.thebishopsschool.org/tbsweb/Public/Home.aspx",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Pune",
+      "school": "The Orchid School",
+      "website": "https://theorchidschool.org/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    },
+    {
+      "city": "Pune",
+      "school": "Vibgyor High",
+      "website": "https://www.vibgyorhigh.com/",
+      "status": "not-found",
+      "retrievedOn": "2026-11-17",
+      "breaks": [],
+      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+    }
+  ]
+}

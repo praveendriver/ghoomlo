@@ -29,7 +29,8 @@ What is the reason someone would come to Ghoomlo instead of a chatbot or YouTube
 ## Rules the product keeps
 
 - Never invent places, prices, hours, links, or coordinates. Label what is unverified or estimated.
-- Respect content and data rights: no scraping, no rehosting creators' videos, provider terms for prices and maps.
+- Respect content and data rights: no scraping of price, booking or content providers, no rehosting creators' videos, provider terms for prices and maps.
+- Exception (founder's decision, 17 Nov 2026): schools' public pages may be fetched to find holiday calendars, politely. Obey robots.txt, identify the crawler, wait between requests, read only a few pages per school, never log in or get past a portal, and keep only the holiday dates with a link to where each came from. Dates found this way are unverified until checked.
 - Collect the least personal data needed; travellers are stored as age groups only.
 
 ## Working conventions
