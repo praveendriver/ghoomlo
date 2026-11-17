@@ -45,7 +45,6 @@ describe("sign-up form rules", () => {
   it("needs a listed city, a school, one to five listed places", () => {
     expect(signupSchema.safeParse({ ...form, homeCity: "Atlantis" }).success).toBe(false);
     expect(signupSchema.safeParse({ ...form, school: "" }).success).toBe(false);
-    expect(signupSchema.safeParse({ ...form, windowIds: [] }).success).toBe(false);
     expect(signupSchema.safeParse({ ...form, wishlist: [] }).success).toBe(false);
     expect(signupSchema.safeParse({ ...form, wishlist: ["Narnia"] }).success).toBe(false);
     expect(signupSchema.safeParse({ ...form, wishlist: ["Goa", "Kerala", "Jaipur", "Udaipur", "Agra", "Bali"] }).success).toBe(false);

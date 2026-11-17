@@ -1,15 +1,15 @@
 "use client";
 
-import Image from "next/image";
 import { useActionState, useMemo, useState } from "react";
 import { fareWatchSignupAction } from "@/app/actions/fare-watch";
 import type { FormState } from "@/app/actions/state";
-import { DESTINATIONS, MAX_WISHLIST } from "@/lib/fare-watch";
-import { DESTINATION_PHOTOS } from "@/lib/photos";
+import { DESTINATIONS, MAX_CUSTOM_DAYS, MAX_CUSTOM_WINDOWS, MAX_WISHLIST } from "@/lib/fare-watch";
 import { CITIES, SCHOOLS } from "@/lib/schools";
 import type { City } from "@/lib/schools";
 import { calendarMonths, schoolEntry, windowsFor } from "@/lib/windows";
+import { PlacePicker } from "./PlacePicker";
 import { YearCalendar } from "./YearCalendar";
+import type { CustomWindow } from "./YearCalendar";
 import { SubmitButton } from "./SubmitButton";
 
 export function FareWatchForm({ today }: { today: string }) {
@@ -18,13 +18,23 @@ export function FareWatchForm({ today }: { today: string }) {
   const [school, setSchool] = useState("");
   const [picked, setPicked] = useState<string[]>([]);
   const [chosen, setChosen] = useState<string[]>([]);
+  const [custom, setCustom] = useState<CustomWindow[]>([]);
+  const addCustom = (start: string, end: string): string | null => {
+    if (start < today) return "Pick dates from today onwards";
+    if (end < start) return "The last day is before the first";
+    if ((Date.parse(end) - Date.parse(start)) / 86_400_000 + 1 > MAX_CUSTOM_DAYS) return `Keep each trip to ${MAX_CUSTOM_DAYS} days or fewer`;
+    if (custom.length >= MAX_CUSTOM_WINDOWS) return `Add up to ${MAX_CUSTOM_WINDOWS} of your own dates`;
+    const id = `custom-${start}-${end}`;
+    if (custom.some((c) => c.id === id)) return "You've already added those dates";
+    setCustom([...custom, { id, start, end }].sort((a, b) => a.start.localeCompare(b.start)));
+    return null;
+  };
   const schoolName = school === "other" ? "" : school;
   const windows = useMemo(() => (city ? windowsFor(city, schoolName, today) : []), [city, schoolName, today]);
   const months = useMemo(() => calendarMonths(today), [today]);
   const hasSchoolDates = Boolean(city && schoolName && schoolEntry(city, schoolName)?.status === "found");
   const toggleWindow = (id: string) => setChosen(chosen.includes(id) ? chosen.filter((c) => c !== id) : [...chosen, id]);
   const fe = state.fieldErrors ?? {};
-  const full = picked.length >= MAX_WISHLIST;
 
   return (
     <form action={action} className="stack-lg fw-form" noValidate>
@@ -111,7 +121,19 @@ export function FareWatchForm({ today }: { today: string }) {
                 ? "We found your school's holiday dates. Tick the breaks and long weekends you'd travel in."
                 : "We don't have your school's own dates yet, so these are long weekends and any state school breaks announced. Tick the ones that suit you."}
             </span>
-            <YearCalendar months={months} windows={windows} selected={chosen} onToggle={toggleWindow} />
+            <YearCalendar
+              months={months}
+              windows={windows}
+              custom={custom}
+              selected={chosen}
+              today={today}
+              origin={city}
+              wishlist={picked}
+              destinations={DESTINATIONS}
+              onToggle={toggleWindow}
+              onAddCustom={addCustom}
+              onRemoveCustom={(id) => setCustom(custom.filter((c) => c.id !== id))}
+            />
           </>
         )}
         {fe.windowIds && (
@@ -125,31 +147,7 @@ export function FareWatchForm({ today }: { today: string }) {
         <legend className="fw-step">
           <span>4</span> Where would you love to go?
         </legend>
-        <span className="hint" role="status">
-          Pick up to {MAX_WISHLIST}. {picked.length > 0 && `${picked.length} picked.`}
-        </span>
-        <div className="pick-grid">
-          {DESTINATIONS.map((place) => {
-            const on = picked.includes(place);
-            return (
-              <label className="pick" key={place}>
-                <input
-                  type="checkbox"
-                  name="wishlist"
-                  value={place}
-                  checked={on}
-                  disabled={!on && full}
-                  onChange={(e) => setPicked(e.target.checked ? [...picked, place] : picked.filter((p) => p !== place))}
-                />
-                <Image src={DESTINATION_PHOTOS[place]} alt="" fill sizes="(max-width: 600px) 45vw, 190px" />
-                <span className="pick-tick" aria-hidden="true">
-                  ✓
-                </span>
-                <span className="pick-name">{place}</span>
-              </label>
-            );
-          })}
-        </div>
+        <PlacePicker places={DESTINATIONS} picked={picked} max={MAX_WISHLIST} onChange={setPicked} />
         {fe.wishlist && (
           <span className="error-text" role="alert">
             {fe.wishlist}

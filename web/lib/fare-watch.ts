@@ -37,7 +37,7 @@ export const signupSchema = z.object({
   email: z.string().trim().toLowerCase().pipe(z.email("Enter a valid email address").max(254)),
   homeCity: city,
   school: z.string().trim().min(2, "Pick or type your child's school").max(120),
-  windowIds: z.array(z.string().max(40)).min(1, "Pick at least one time you could travel").max(40),
+  windowIds: z.array(z.string().max(40)).max(40),
   wishlist: z
     .array(destination)
     .min(1, "Pick at least one place")
@@ -97,4 +97,24 @@ export function matches(
 export function countRecent(rows: { createdAt: Date }[], days: number): number {
   const cutoff = Date.now() - days * 86_400_000;
   return rows.filter((r) => r.createdAt.getTime() > cutoff).length;
+}
+
+/** Dates a parent adds themselves on the year calendar or the cards. */
+export const MAX_CUSTOM_WINDOWS = 6;
+export const MAX_CUSTOM_DAYS = 60;
+
+export function customWindowsSchema(today: string) {
+  const last = new Date(Date.parse(`${today}T00:00:00Z`) + 400 * 86_400_000).toISOString().slice(0, 10);
+  return z
+    .array(
+      z
+        .object({ start: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), end: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) })
+        .refine((w) => w.end >= w.start, "The last day is before the first")
+        .refine((w) => w.start >= today && w.end <= last, "Pick dates within the next year")
+        .refine(
+          (w) => (Date.parse(w.end) - Date.parse(w.start)) / 86_400_000 + 1 <= MAX_CUSTOM_DAYS,
+          `Keep each trip to ${MAX_CUSTOM_DAYS} days or fewer`,
+        ),
+    )
+    .max(MAX_CUSTOM_WINDOWS, `Add up to ${MAX_CUSTOM_WINDOWS} of your own dates`);
 }

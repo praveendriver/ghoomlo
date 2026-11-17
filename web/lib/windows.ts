@@ -13,7 +13,7 @@ export type TravelWindow = {
   start: string;
   /** Null when only the start has been published. */
   end: string | null;
-  kind: "school" | "state" | "long-weekend";
+  kind: "school" | "state" | "long-weekend" | "custom";
   /** Short line for the parent: who says so and how sure we are. */
   basis: string;
   sourceUrl?: string;

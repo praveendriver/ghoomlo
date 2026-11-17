@@ -330,11 +330,15 @@ pre.copy { white-space: pre-wrap; word-break: break-word; background: var(--sand
 .pick input { position: absolute; opacity: 0; inset: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; z-index: 2; }
 .pick-name { padding: 12px 14px; font-family: var(--display); font-size: 1.25rem; font-weight: 500; letter-spacing: -0.01em; }
 .pick-tick { position: absolute; top: 10px; right: 10px; width: 30px; height: 30px; border-radius: 50%; background: rgba(255, 253, 248, 0.9); color: transparent; display: grid; place-items: center; font-weight: 700; border: 2px solid rgba(255, 255, 255, 0.9); }
-.pick:has(input:checked) { outline-color: var(--accent); }
-.pick:has(input:checked) .pick-tick { background: var(--accent); color: #fff; border-color: var(--accent); }
-.pick:has(input:focus-visible) { outline-color: var(--blue); }
-.pick:has(input:disabled) { opacity: 0.45; cursor: not-allowed; }
-.pick:has(input:disabled) input { cursor: not-allowed; }
+.pick { border: 0; padding: 0; font: inherit; text-align: left; }
+.pick.on { outline-color: var(--accent); }
+.pick.on .pick-tick { background: var(--accent); color: #fff; border-color: var(--accent); }
+.pick:focus-visible { outline-color: var(--blue); }
+.pick:disabled { opacity: 0.45; cursor: not-allowed; }
+.pick-row { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 -20px; padding: 4px 20px 8px; scrollbar-width: thin; }
+.pick-row .pick { flex: 0 0 128px; aspect-ratio: 4 / 5; scroll-snap-align: start; }
+.pick.more { background: var(--sand); color: var(--ink); align-items: center; justify-content: center; text-align: center; }
+.pick.more::after { display: none; }
 .fw-submit { display: grid; grid-template-columns: 1fr auto; gap: 10px; }
 .fw-submit .btn { min-height: 48px; padding-inline: 28px; }
 @media (max-width: 520px) { .fw-submit { grid-template-columns: 1fr; } }
@@ -356,6 +360,11 @@ button.ycal-day { cursor: pointer; }
 .ycal-day.on.long-weekend { background: var(--blue-soft); }
 .ycal-day.picked.school, .ycal-day.picked.state { background: var(--accent); color: #fff; }
 .ycal-day.picked.long-weekend { background: var(--blue); color: #fff; }
+.ycal-day.on.custom, .ycal-day.picked.custom { background: var(--green); color: #fff; }
+.ycal-day.first-tap { background: var(--green); color: #fff; box-shadow: 0 0 0 2px var(--green-soft); }
+.ycal-day.past { color: #b8b2a6; }
+button.ycal-day:not(:disabled):hover { box-shadow: inset 0 0 0 1.5px var(--ink); }
+button.ycal-day:disabled { cursor: default; }
 .ycal-day.holiday::after { content: ""; position: absolute; left: 50%; bottom: 1px; width: 4px; height: 4px; margin-left: -2px; border-radius: 50%; background: var(--green); }
 .ycal-key { display: flex; flex-wrap: wrap; gap: 6px 16px; }
 .ycal-key span { display: inline-flex; align-items: center; gap: 6px; }
@@ -363,13 +372,52 @@ button.ycal-day { cursor: pointer; }
 .sw.school { background: var(--accent-soft); border: 1px solid var(--accent); }
 .sw.state { background: repeating-linear-gradient(135deg, var(--accent-soft) 0 3px, #fff 3px 6px); border: 1px solid var(--accent); }
 .sw.long-weekend { background: var(--blue-soft); border: 1px solid var(--blue); }
+.sw.custom { background: var(--green); }
 .sw.dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
 .win-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; }
-.win { display: flex; gap: 10px; align-items: flex-start; border: 1px solid var(--line); background: #fff; border-radius: 14px; padding: 10px 12px; cursor: pointer; height: 100%; }
+.win { position: relative; display: flex; gap: 12px; align-items: flex-start; border: 1px solid var(--line); background: #fff; border-radius: 18px; padding: 12px 14px; height: 100%; width: 100%; font: inherit; text-align: left; color: var(--ink); overflow: hidden; transition: transform 0.15s, box-shadow 0.15s; }
+.win:hover { transform: translateY(-1px); box-shadow: 0 8px 20px -12px rgba(21, 33, 28, 0.35); }
+.win-emoji { flex: none; width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; font-size: 1.5rem; background: var(--sand); }
+.win-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.win-label { display: flex; gap: 8px; align-items: flex-start; cursor: pointer; }
+.win-label input { width: 20px; height: 20px; margin-top: 1px; flex: none; accent-color: var(--accent); }
+.win-remove { font: inherit; font-size: 1.2rem; line-height: 1; width: 30px; height: 30px; border-radius: 50%; border: 0; background: rgba(21, 33, 28, 0.08); cursor: pointer; flex: none; }
+.win-tip { font-size: 0.78rem; line-height: 1.4; margin-top: 4px; color: var(--ink); }
+.win-tip .warn { color: #8a4a12; }
+.win.add { border-style: dashed; cursor: pointer; background: transparent; }
+.win.add .win-emoji { background: var(--green-soft); color: var(--green); font-weight: 700; }
+.win.add-form { background: #fff; }
+.add-dates { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.add-dates label { display: flex; flex-direction: column; gap: 4px; }
+.add-dates input { min-height: 42px; padding: 8px 10px; }
+/* Holiday themes: a tint when picked, and a coloured emoji tile always */
+.tone-christmas .win-emoji { background: linear-gradient(135deg, #e7f2e9, #fbe4e4); }
+.tone-christmas.on { background: linear-gradient(135deg, #eef7f0 0%, #fdeeee 100%); border-color: #2f7a4b; }
+.tone-diwali .win-emoji { background: linear-gradient(135deg, #fff1cf, #ffd9b8); }
+.tone-diwali.on { background: radial-gradient(circle at 90% 10%, #ffe7a6 0, transparent 40%), linear-gradient(135deg, #fff8e6, #ffeedd); border-color: #d18a16; }
+.tone-holi .win-emoji { background: conic-gradient(from 45deg, #ffd1e8, #fff1b8, #c9f2d4, #cfe3ff, #ffd1e8); }
+.tone-holi.on { background: linear-gradient(120deg, #fff0f7, #fffbe6 35%, #eefcf2 65%, #eef4ff); border-color: #d14e8c; }
+.tone-dussehra .win-emoji { background: linear-gradient(135deg, #ffe9d6, #ffd2b3); }
+.tone-dussehra.on { background: linear-gradient(135deg, #fff4ea, #ffe7d6); border-color: #c2562d; }
+.tone-kite .win-emoji { background: linear-gradient(135deg, #e3f1ff, #fff3d1); }
+.tone-kite.on { background: linear-gradient(135deg, #eef7ff, #fff9e8); border-color: #2f5674; }
+.tone-tricolour .win-emoji { background: linear-gradient(180deg, #ffe0c2 33%, #fff 33% 66%, #d6efd9 66%); }
+.tone-tricolour.on { background: linear-gradient(180deg, #fff3e8, #fff 45%, #eef8ef); border-color: #e07b22; }
+.tone-moon .win-emoji { background: linear-gradient(135deg, #e3e8f7, #f4ecff); }
+.tone-moon.on { background: linear-gradient(135deg, #eef1fb, #f8f3ff); border-color: #4a4f8c; }
+.tone-winter .win-emoji { background: linear-gradient(135deg, #e6f3fb, #f4f9ff); }
+.tone-winter.on { background: linear-gradient(135deg, #eef7fd, #f9fcff); border-color: #3c7aa6; }
+.tone-summer .win-emoji { background: linear-gradient(135deg, #fff3c4, #ffe0b0); }
+.tone-summer.on { background: linear-gradient(135deg, #fffae4, #fff0d8); border-color: #d48b1a; }
+.tone-spring .win-emoji, .tone-lotus .win-emoji { background: linear-gradient(135deg, #ffe7f0, #f2f7e6); }
+.tone-spring.on, .tone-lotus.on { background: linear-gradient(135deg, #fff2f7, #f7fbef); border-color: #c45a86; }
+.tone-peacock .win-emoji { background: linear-gradient(135deg, #dff5f1, #e3e8ff); }
+.tone-peacock.on { background: linear-gradient(135deg, #eefaf7, #eff2ff); border-color: #1f7a72; }
+.tone-term .win-emoji, .tone-plain .win-emoji { background: var(--sand); }
+.tone-term.on, .tone-plain.on { background: var(--accent-soft); border-color: var(--accent); }
+.tone-custom .win-emoji { background: var(--green-soft); }
+.tone-custom.on { background: var(--green-soft); border-color: var(--green); }
 .win-basis { font-size: 0.78rem; line-height: 1.4; }
-.win input { width: 20px; height: 20px; margin-top: 2px; flex: none; accent-color: var(--accent); }
-.win:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
-.win.long-weekend:has(input:checked) { border-color: var(--blue); background: var(--blue-soft); }
 .win-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .win-top { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .win-dates { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 0.88rem; color: var(--muted); }
@@ -378,6 +426,7 @@ button.ycal-day { cursor: pointer; }
 .win-tag { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; border-radius: 999px; padding: 2px 8px; background: var(--sand); }
 .win-tag.school { background: var(--accent); color: #fff; }
 .win-tag.long-weekend { background: var(--blue-soft); color: var(--blue); }
+.win-tag.custom { background: var(--green); color: #fff; }
 
 /* Year calendar pop-up */
 .ycal-dialog { border: 0; padding: 0; background: transparent; width: min(1100px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); }
