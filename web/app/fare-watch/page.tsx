@@ -32,8 +32,8 @@ export default async function FareWatchPage() {
                 Holiday flights, <em>before the prices climb.</em>
               </h1>
               <p className="hero-lede" style={{ marginTop: 0 }}>
-                Tell us your child&apos;s school and where you would love to go. We email you when we spot a
-                good fare for the holidays.
+                Pick where you&apos;d love to go. We email you when we spot a good fare for the school
+                holidays.
               </p>
             </div>
           </div>

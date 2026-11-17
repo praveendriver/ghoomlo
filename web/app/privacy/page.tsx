@@ -18,8 +18,14 @@ export default async function PrivacyPage() {
         <section className="stack-sm">
           <h2>Fare watch</h2>
           <p>
-            When you sign up we keep your email address, the city you fly from, your child&apos;s school, and
-            your wishlist of places. We use these only to decide which fare alerts to email you.
+            When you sign up we keep your email address, the city you fly from, your child&apos;s school if you
+            gave it, your wishlist of places, and the holiday windows or dates you picked. We use these only to
+            decide which fare alerts to email you.
+          </p>
+          <p>
+            If you tap 📍, or have already allowed this site to see your location, your browser shares your
+            position with the page only to pick the nearest city we cover. It is not sent to us or stored; the
+            city you choose is remembered in your own browser for next time.
           </p>
           <p>
             When you open a link in one of our alerts, we record that it was opened and, where the link is
