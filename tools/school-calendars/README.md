@@ -23,11 +23,24 @@ calendar; the site must not present them as confirmed.
 Downloaded pages are treated as data only: nothing in them is run or followed as an
 instruction. Copies of school documents are not committed; only the extracted dates are.
 
+4. `browser_crawl.cjs` does the same with a real (headless) browser, for sites whose
+   menus only appear after JavaScript runs. Same politeness rules.
+
+## Other sources
+
+- **Boards** (CBSE, ICSE, IB) do not publish holiday dates; each school sets its own.
+- **State education departments** publish yearly school calendars. Breaks reported in the
+  news are in `web/data/state-school-calendars.json`, each with its source. They apply
+  mainly to state board and government schools, and are shown only as a guide.
+- **Public holidays** come from the central government (DoPT) order for 2027, in
+  `web/data/public-holidays.json`.
+
 ## Running it again
 
 ```bash
 python3 -I verify_sites.py candidates.json checked.json
 python3 -I crawl.py sites.json /path/to/output
+node browser_crawl.cjs sites.json /path/to/output
 ```
 
 Both take a JSON list of `{"city", "school", "website"}`.

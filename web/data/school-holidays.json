@@ -5,10 +5,19 @@
       "city": "Bengaluru",
       "school": "Baldwin Boys' High School",
       "website": "https://baldwinboyshighschool.edu.in",
-      "status": "not-found",
+      "status": "found",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://baldwinboyshighschool.edu.in/news-events",
       "retrievedOn": "2026-11-17",
-      "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "breaks": [
+        {
+          "name": "Winter break",
+          "start": "2026-12-21",
+          "end": "2027-01-03",
+          "quote": "Dec 21 – Jan 03 Winter Vacation & Christmas Recess ... Jan 04 School Reopens After Winter Vacation"
+        }
+      ],
+      "notes": "From the news and events page (found by the browser-based crawler). Year taken from the January 2027 heading that follows."
     },
     {
       "city": "Bengaluru",
@@ -17,7 +26,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -36,7 +45,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -121,7 +130,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -130,7 +139,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -139,7 +148,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -148,7 +157,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -193,7 +202,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -202,7 +211,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -211,7 +220,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -220,7 +229,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -229,7 +238,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -248,7 +257,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -257,7 +266,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -296,7 +305,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -305,7 +314,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -314,7 +323,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -323,16 +332,17 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
       "school": "The International School Bangalore (TISB)",
-      "website": "https://www.tisb.org/",
-      "status": "not-found",
+      "website": "https://www.tisb.org",
+      "status": "needs-review",
+      "sourceUrl": "https://www.tisb.org/tisb-school-calendar.html",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "The school calendar page (loaded by the browser-based crawler) marks Winter Break - School Holidays from 12 December 2026 and Diwali school holidays in November, but the end of the winter break is on a later month view the crawler did not open. The page offers an iCal subscription that a reviewer could use."
     },
     {
       "city": "Bengaluru",
@@ -341,7 +351,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Bengaluru",
@@ -350,7 +360,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Chennai",
@@ -359,7 +369,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Chennai",
@@ -368,7 +378,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Chennai",
@@ -377,7 +387,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Chennai",
@@ -386,7 +396,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Chennai",
@@ -395,7 +405,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Chennai",
@@ -404,7 +414,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Chennai",
@@ -413,7 +423,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -422,7 +432,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -451,7 +461,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -507,7 +517,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -516,7 +526,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -535,7 +545,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -544,7 +554,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -553,7 +563,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -598,7 +608,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -607,7 +617,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -616,7 +626,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -625,7 +635,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -634,7 +644,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -643,7 +653,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -652,7 +662,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -661,7 +671,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -670,7 +680,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Delhi NCR",
@@ -679,7 +689,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Hyderabad",
@@ -698,7 +708,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Hyderabad",
@@ -707,7 +717,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Hyderabad",
@@ -716,7 +726,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Hyderabad",
@@ -725,7 +735,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Hyderabad",
@@ -770,7 +780,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Hyderabad",
@@ -779,7 +789,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Hyderabad",
@@ -788,7 +798,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Hyderabad",
@@ -837,7 +847,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Kolkata",
@@ -846,7 +856,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Kolkata",
@@ -855,7 +865,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Kolkata",
@@ -864,7 +874,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Kolkata",
@@ -873,7 +883,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -882,7 +892,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -891,7 +901,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -900,7 +910,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -909,7 +919,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -918,7 +928,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -937,7 +947,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -946,7 +956,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -955,7 +965,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -964,7 +974,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -973,7 +983,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -1078,7 +1088,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -1087,7 +1097,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -1096,7 +1106,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -1105,7 +1115,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Mumbai",
@@ -1114,7 +1124,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Pune",
@@ -1133,16 +1143,25 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Pune",
       "school": "The Bishop's School, Camp",
-      "website": "https://www.thebishopsschool.org/tbsweb/Public/Home.aspx",
-      "status": "not-found",
+      "website": "https://www.thebishopsschool.org",
+      "status": "found",
+      "academicYear": "2026-27",
+      "sourceUrl": "https://www.thebishopsschool.org/tbsweb/public/Calendar.aspx",
       "retrievedOn": "2026-11-17",
-      "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "breaks": [
+        {
+          "name": "Diwali break",
+          "start": "2026-11-04",
+          "end": "2026-11-11",
+          "quote": "November 2026 ... 4 Diwali Break CMP ... 11 Diwali Break CMP"
+        }
+      ],
+      "notes": "From the public calendar page for the Camp campus (CMP), found by the browser-based crawler. Only November 2026 was readable; later months need a reviewer."
     },
     {
       "city": "Pune",
@@ -1151,7 +1170,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     },
     {
       "city": "Pune",
@@ -1160,7 +1179,7 @@
       "status": "not-found",
       "retrievedOn": "2026-11-17",
       "breaks": [],
-      "notes": "No public holiday calendar was found on the pages the crawler could read. The site may load its menus with JavaScript, or publish calendars only in a parent app or portal."
+      "notes": "No public holiday calendar was found, either by the text crawler or by the browser-based crawler that runs each site's JavaScript. The school may publish calendars only in a parent app or portal, or not until nearer the time."
     }
   ]
 }

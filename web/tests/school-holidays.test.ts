@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
+import publicHolidays from "@/data/public-holidays.json";
 import data from "@/data/school-holidays.json";
+import stateCalendars from "@/data/state-school-calendars.json";
 import { SCHOOLS } from "@/lib/schools";
 
 type Entry = (typeof data.schools)[number];
@@ -32,5 +34,28 @@ describe("school holiday data", () => {
   it("has one entry per school", () => {
     const keys = (data.schools as Entry[]).map((s) => `${s.city}|${s.school}`);
     expect(new Set(keys).size).toBe(keys.length);
+  });
+});
+
+
+describe("public holidays and state calendars", () => {
+  it("has real dates, matching weekdays for fixed national days, and known sources", () => {
+    const sources = new Set([...publicHolidays.sources.map((s) => s.id), "fixed-date"]);
+    for (const h of publicHolidays.holidays) {
+      expect(h.date).toMatch(iso);
+      expect(sources.has(h.source), h.name).toBe(true);
+    }
+    const day = (d: string) => new Date(`${d}T00:00:00Z`).getUTCDay();
+    expect(day("2027-01-26")).toBe(2); // the DoPT order says Republic Day 2027 is a Tuesday
+    expect(day("2027-10-29")).toBe(5); // and Diwali a Friday
+  });
+
+  it("gives every state break a source, a quote and a start, with ends after starts", () => {
+    for (const b of stateCalendars.breaks) {
+      expect(b.start).toMatch(iso);
+      if (b.end) expect(b.end >= b.start).toBe(true);
+      expect(b.sourceUrl).toMatch(/^https:\/\//);
+      expect(b.quote.length).toBeGreaterThan(5);
+    }
   });
 });
